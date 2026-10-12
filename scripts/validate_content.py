@@ -122,15 +122,15 @@ def private_checks(root, manifest):
             must(found is not None and sid in found["subtopic_ids"], f"reverse link missing: {sid}/{exid}")
 
     # Lock the source questions and publisher answers against silent editorial drift.
-    raw_key_lines = [f"{q['id']}\\t{q['source_raw_prompt']}\\t{q['answer']['source_key']}"
+    raw_key_lines = [f"{q['id']}\t{q['source_raw_prompt']}\t{q['answer']['source_key']}"
                      for ex in exercises for q in ex["questions"]]
-    locked = hashlib.sha256(("\\n".join(raw_key_lines) + "\\n").encode("utf-8")).hexdigest()
+    locked = hashlib.sha256(("\n".join(raw_key_lines) + "\n").encode("utf-8")).hexdigest()
     must(locked == "6c92a82c2f9faa3edf26f8a179bb792853b7317f08c427602da17df9c5709a15",
          "the original 100 source prompts or publisher answers changed")
 
     # Retain exact previous extraction even as theory.md becomes human-readable.
     raw_theory = (ch / "theory-source.md").read_bytes()
-    git_blob_sha = hashlib.sha1(b"blob " + str(len(raw_theory)).encode() + b"\\0" + raw_theory).hexdigest()
+    git_blob_sha = hashlib.sha1(b"blob " + str(len(raw_theory)).encode() + b"\0" + raw_theory).hexdigest()
     must(git_blob_sha == "5b1861900d00dc84b5ea116d3995c225354aea46",
          "original theory extraction no longer matches the preserved Git blob")
     must("&#" not in theory and "```text" not in theory, "theory still contains raw code blocks")
