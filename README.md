@@ -1,29 +1,52 @@
-# French Grammar Quest — Content Foundation (Phase A)
+# French Grammar Quest — Content Foundation
 
-This public repository contains **metadata and tools**, not the copyrighted book text. Future app: React/Vite + Supabase + Vercel (not implemented in Phase A).
+**Phase A: chapter 01 conversion and structural validation implemented.** This is a content-first project, **not** a React application yet.
 
-## Phase A status
+## Public repository
 
-- PDF indexed: 527 pages, 28 chapters, 233 exercise-group markers (one duplicate exercise number in chapter 26).
-- Chapters and top-level topics inventoried with PDF page ranges.
-- Chapter 1 private extraction pilot prepared separately; it has **not** passed full question-by-question or visual validation.
-- Schemas and coverage checks in this repository define expected structures for future clean content.
-- No game, UI, database or authentication has been implemented.
+- `manifest.json`: chapter-level inventory of 28 chapters and source PDF page locations.
+- `schemas/chapter.schema.json`: chapter metadata and topic/exercise relationships.
+- `schemas/exercise.schema.json`: instructions, individual questions, publisher answers, source locations and future interaction types.
+- `scripts/validate_content.py`: inventory validation and optional private chapter-01 validation.
+- `reports/coverage.md`, `reports/validation.md`: evidence and limitations.
+- `.github/workflows/content-validation.yml`: structural checks on pushes and pull requests.
 
-## Structure
+## Phase A verified outputs
 
-- `manifest.json` — public index of chapter titles, topic headings, page ranges, and exercise group counts.
-- `schemas/` — contract for chapter and exercise data.
-- `reports/` — audit results and remaining verification tasks.
-- `scripts/validate_content.py` — pure-stdlib structural and manifest checks.
-- `.gitignore` — excludes private extracted text and source PDFs.
+- 527-page PDF inventoried: 28 chapters; 233 detected exercise **markers** (one known duplicated/misnumbered marker in chapter 26). These are not individual questions.
+- Chapter 1 private package: 17/17 chapter pages, three primary theory topics, ten groups, **100 individual questions**, 100 publisher answer-key entries, and source page references.
+- Source text is partitioned into theory/exercise fragments without losing extracted characters. Chapter 1 Markdown retains text-aligned tables and chapter headings.
+- Source-specific exceptions are documented; visual fidelity and alternative acceptable translations are **not** claimed as completely human-certified.
 
-Run: `python scripts/validate_content.py`.
+## Validate
+
+Public-only (requires Python 3.10+):
+
+```bash
+python scripts/validate_content.py
+```
+
+With a **separately downloaded, unzipped private source-content package**:
+
+```bash
+python -m pip install 'jsonschema>=4.23,<5'
+python scripts/validate_content.py --private /path/to/french-grammar-content-private-phase-a-final
+```
+
+The optional `jsonschema` package enables full schema checking. The private package is **not** and must never be published to this repository.
+
+## Phase A scope and known exceptions
+
+- Original PDF page 28 contains clipped right-side English translation examples; missing text has **not** been invented.
+- Chapter 1 exercise 1·6 question 6 has a publisher answer-key scope mismatch: printed `J’habite` vs a single blank following `Je`. The source key is preserved and the slot answer is identified with a review flag.
+- Publisher answers may not exhaust valid paraphrases; avoid using strict single-string grading for free responses without an editorial review.
+- Chapter 26 contains a duplicated/misnumbered exercise marker requiring later visual confirmation.
+- This is a machine-audited extraction, not a full manual proofreading certificate for every glyph.
 
 ## Copyright and access
 
-The source textbook is copyrighted. **Do not upload the source PDF, full theory, book examples, answers, raw page dumps, or reproduced question sets to this public repository.** Keep those in private local storage (or a separate private repository) and obtain appropriate permission before sharing reproductions with others. This public inventory contains only brief headings and references for traceability.
+This **public repo must contain only tools, documentation, schemas, source references and original example fixtures**. Do not commit original book chapters, images, full exercises, answer keys, or derived private exports. `.gitignore` excludes their expected paths. The private study package is distributed separately for the user's authorized personal use; redistributing substantial book content to other users may require permission.
 
-## Next gate
+## Next phase
 
-Phase A is a **partial implementation awaiting editorial approval**: the chapter 1 pilot must still separate theory from exercise text, parse individual questions, link answer keys, and receive page-by-page visual proofreading. Report status must remain explicit until these pass.
+Do not build React, Supabase or Vercel in Phase A. Phase B may extend the validated chapter 01 pattern to chapters 02–28, with chapter-by-chapter extraction, source review, and reporting. See `docs/content-workflow.md`.
