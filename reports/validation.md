@@ -14,7 +14,7 @@
 ## Important exceptions
 
 - **PDF page 28 source defect:** English glosses visibly extend beyond the right edge and are clipped in the original PDF rendering. The unavailable parts are not inferred or silently repaired.
-- **Exercise 1·6 item 6:** the publisher key lists `J’habite`, but the item displays `Je` followed by a single blank. Machine-readable accepted slot form is `habite`, with the publisher text and exception preserved.
+- **Exercise 1·6 item 6:** the publisher key lists `J’habite`, while the item prints `Je` before the blank. A correct sentence requires elision to `J’`. The key `J’habite` is preserved as accepted, and the item is flagged for special gameplay rendering.
 - **Translation flexibility:** publisher keys are reference responses, not exhaustive sets of valid grammatical alternatives. Some alternatives explicitly printed for gender are represented, but others need editorial review.
 - **Visual proofing:** all machine-readable text is accounted for, but no full word-by-word human comparison of all 17 rendered pages is certified.
 - **Chapter 26:** duplicate `26·1` marker needs verification before Phase B.
