@@ -10,6 +10,7 @@ import argparse
 import json
 import re
 import sys
+import hashlib
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -86,6 +87,84 @@ def private_checks(root, manifest):
     must(len({q["parallel_option"]["label"] for q in exercises[6]["questions"]}) == 10, "matching choices")
     must(exercises[5]["questions"][8]["prompt"].endswith("pause-café."), "French hyphen lost")
     must(exercises[5]["questions"][5]["answer"]["source_key"] == "J’habite", "source-key anomaly lost")
+    # Page-level partition must be lossless, ordered and uniquely addressable.
+    spans = {}
+    fragment_ids = set()
+    for item in seq:
+        page = item["pdf_page"]
+        fid = item["content_id"]
+        must(fid not in fragment_ids, f"duplicate fragment ID: {fid}")
+        fragment_ids.add(fid)
+        left, right = item["page_char_start"], item["page_char_end"]
+        must(left == spans.get(page, 0), f"gap or overlap on PDF page {page}")
+        must(right - left == item["chars"], f"span length mismatch for {fid}")
+        must(right <= len(pages[page]), f"span out of bounds for {fid}")
+        spans[page] = right
+    must(all(spans[p] == len(pages[p]) for p in pages), "not all page characters traced")
+
+    # Hierarchical subtopics and chapter/exercise bidirectional cross-references.
+    topics = {t["id"] for t in metadata["topics"]}
+    subtopics = {s["id"]: s for s in metadata["subtopics"]}
+    must(len(subtopics) == 13, "expected 13 specific chapter-01 subtopics")
+    must(all(s["parent_topic_id"] in topics for s in subtopics.values()),
+         "orphan subtopic")
+    must(all(len(s["pdf_pages"]) == 2 and 14 <= s["pdf_pages"][0] <= s["pdf_pages"][1] <= 30
+             for s in subtopics.values()), "invalid subtopic PDF page range")
+    for ex in exercises:
+        must(len(ex["subtopic_ids"]) > 0 and len(set(ex["subtopic_ids"])) == len(ex["subtopic_ids"]),
+             "missing/duplicate exercise-to-subtopic link")
+        for sid in ex["subtopic_ids"]:
+            must(sid in subtopics and ex["id"] in subtopics[sid]["exercise_ids"],
+                 f"broken bidirectional subtopic link: {ex['id']} -> {sid}")
+    for sid, section in subtopics.items():
+        for exid in section["exercise_ids"]:
+            found = next((e for e in exercises if e["id"] == exid), None)
+            must(found is not None and sid in found["subtopic_ids"], f"reverse link missing: {sid}/{exid}")
+
+    # Lock the source questions and publisher answers against silent editorial drift.
+    raw_key_lines = [f"{q['id']}\\t{q['source_raw_prompt']}\\t{q['answer']['source_key']}"
+                     for ex in exercises for q in ex["questions"]]
+    locked = hashlib.sha256(("\\n".join(raw_key_lines) + "\\n").encode("utf-8")).hexdigest()
+    must(locked == "6c92a82c2f9faa3edf26f8a179bb792853b7317f08c427602da17df9c5709a15",
+         "the original 100 source prompts or publisher answers changed")
+
+    # Retain exact previous extraction even as theory.md becomes human-readable.
+    raw_theory = (ch / "theory-source.md").read_bytes()
+    git_blob_sha = hashlib.sha1(b"blob " + str(len(raw_theory)).encode() + b"\\0" + raw_theory).hexdigest()
+    must(git_blob_sha == "5b1861900d00dc84b5ea116d3995c225354aea46",
+         "original theory extraction no longer matches the preserved Git blob")
+    must("&#" not in theory and "```text" not in theory, "theory still contains raw code blocks")
+    must(theory.count("| French | English") >= 10 and theory.count("| --- |") >= 25,
+         "not enough semantic Markdown tables")
+    must("<!-- PDF page 28:" in theory and "[source clipped]" in theory,
+         "lost original page-28 clipping warning")
+    for section in subtopics:
+        must(f"<!-- subtopic_id: {section} -->" in theory,
+             f"no theory anchor for {section}")
+
+    # Gameplay exceptions must be explicit and safe for future grading.
+    e7 = exercises[6]
+    must(set(x["label"] for x in e7["choices"]) == set("abcdefghij"),
+         "matching options incomplete or duplicated")
+    must(set(q["answer"]["source_key"] for q in e7["questions"]) == set("abcdefghij"),
+         "matching answer mapping not a bijection")
+    special = exercises[5]["questions"][5]
+    must(special["answer"]["source_key"] == "J’habite", "publisher elision altered")
+    must(special["presentation"]["mode"] == "replace_subject_and_blank"
+         and special["presentation"]["complete_sentence"] == "J’habite au dixième étage.",
+         "elision-aware rendering not configured")
+    informal = exercises[9]["questions"][5]
+    must(informal["presentation"]["register"] == "informal"
+         and informal["presentation"]["pronoun"] == "tu",
+         "question-specific informal form missing")
+    for ex in exercises:
+        if ex["interaction_type"] in ("translation", "sentence_rewrite", "free_response"):
+            must(ex["grading_policy"]["strategy"] == "semantic_review_required"
+                 and ex["grading_policy"]["publisher_key_is_exhaustive"] is False,
+                 f"unsafe exact-match grading on {ex['id']}")
+    print("PASS chapter 01: 31 unique fragments; contiguous source spans; 13 subtopics")
+    print("PASS chapter 01: original 100 question/key texts locked; exceptions and tables covered")
+
     try:
         from jsonschema import Draft202012Validator
     except ImportError:
