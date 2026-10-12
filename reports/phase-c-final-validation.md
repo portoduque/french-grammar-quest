@@ -49,3 +49,11 @@ python scripts/audit_phase_c.py --pdf /caminho/para/livro.pdf --check-report
 
 **Gate de máquina:** passível de aprovação pelo CI.  
 **Gate editorial:** **PENDENTE**. O projeto ainda não deve declarar fidelidade de 100% ao PDF nem estar pronto para correção automática indiscriminada. Ver `docs/editorial-qa-checklist.md`.
+
+## Correção descoberta pela auditoria profunda: 29 enunciados contaminados
+
+A verificação encontrou **29 enunciados** que tinham trechos de explicação teórica anexados, em 15 capítulos (03, 04, 07, 08, 09, 11, 12, 13, 14, 18, 21, 23, 24, 25 e 26). Foram corrigidos para que `question.prompt` contenha somente a pergunta. Cada `source_raw_prompt` foi preservado, e o texto teórico foi recuperado em seções adicionais de `theory.md`, com referência ao exercício.
+
+Os trechos recuperados estão **pendentes de posicionamento editorial na ordem didática do livro e de revisão de tabelas multicolunas**. O esquema registra `editorial_recovery`; os testes verificam a existência das 29 ocorrências e rejeitam novas questões excessivamente longas.
+
+Na auditoria local do PDF, os **2.127 trechos `source_raw_prompt` dos capítulos 02–28** foram encontrados literalmente no texto extraído das páginas. Isso confirma a procedência do texto bruto, não a qualidade do enunciado editado nem a resposta.
