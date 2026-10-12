@@ -41,3 +41,9 @@ python scripts/audit_phase_c.py --pdf /path/to/original.pdf --check-report
 ```
 
 O comando com `--pdf` verifica SHA e texto extraível; não substitui análise humana da imagem, formatação ou correção gramatical.
+
+## Recuperação de teoria após questões (Fase C)
+
+**29 questões tiveram parágrafos teóricos incorporados indevidamente ao `prompt` pelo parser inicial.** O `prompt` foi reparado para uso em jogos; o texto teórico removido foi preservado em uma seção `Source theory recovered from exercise-boundary parsing` do `theory.md` correspondente. O campo `editorial_recovery` na questão registra a intervenção, sem modificar `source_raw_prompt` ou `answer.source_key`.
+
+**Antes de exibir a teoria a estudantes**, as seções recuperadas devem ser inseridas no ponto pedagógico adequado e confrontadas com a imagem de origem. Não as considerar revisadas apenas porque passaram no CI.
