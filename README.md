@@ -2,6 +2,14 @@
 
 A private, content-first base for a French grammar learning game. **No React frontend, Supabase backend, Vercel deployment or game engine has been implemented.**
 
+## Product planning — complete PRD
+
+- **[PRD completo — especificação do French Grammar Quest](docs/PRD.md)**: visão, personas, 73 requisitos, 28 mundos, UX, motor de jogos, pedagogia, auth, banco, segurança, XP e critérios de aceite.
+- **[Plano de implementação e testes](docs/PRD-IMPLEMENTATION-PLAN.md)**: roadmap, dependências, histórias, 30 cenários de teste e instruções para Antigravity/Codex.
+- **[Mapa de conteúdo e jogos por capítulo](docs/PRD-CONTENT-MAP.md)**: títulos, 233 conjuntos de exercícios, 2.227 questões, referências e pendências.
+
+**Importante:** esses documentos são planejamento, não implementação. A revisão editorial integral e a autorização de compartilhamento do livro permanecem pendentes.
+
 ## Repository content
 
 - `manifest.json`: 527-page source index, 28 chapters and 233 detected exercise-group markers (chapter 26 includes a duplicate marker).
