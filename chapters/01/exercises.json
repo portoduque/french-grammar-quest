@@ -1,6 +1,6 @@
 {
   "chapter": 1,
-  "status": "structured_answer_key_matched_visual_spot_check",
+  "status": "chapter_01_structurally_mapped_editorial_visual_review_pending",
   "exercises": [
     {
       "id": "ch01-ex01",
@@ -183,6 +183,16 @@
         "source_partition_checked": true,
         "answer_key_aligned": true,
         "manual_visual_review": "pending"
+      },
+      "subtopic_ids": [
+        "ch01-s01",
+        "ch01-s02",
+        "ch01-s03"
+      ],
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false,
+        "notes": "Validate source-specific contractions and inflections before exact-answer comparison."
       }
     },
     {
@@ -370,6 +380,16 @@
         "source_partition_checked": true,
         "answer_key_aligned": true,
         "manual_visual_review": "pending"
+      },
+      "subtopic_ids": [
+        "ch01-s01",
+        "ch01-s02",
+        "ch01-s03"
+      ],
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false,
+        "notes": "Never reject an alternative grammatical answer solely because it differs from the publisher key."
       }
     },
     {
@@ -553,6 +573,15 @@
         "source_partition_checked": true,
         "answer_key_aligned": true,
         "manual_visual_review": "pending"
+      },
+      "subtopic_ids": [
+        "ch01-s05",
+        "ch01-s06"
+      ],
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false,
+        "notes": "Validate source-specific contractions and inflections before exact-answer comparison."
       }
     },
     {
@@ -738,6 +767,15 @@
         "source_partition_checked": true,
         "answer_key_aligned": true,
         "manual_visual_review": "pending"
+      },
+      "subtopic_ids": [
+        "ch01-s05",
+        "ch01-s07"
+      ],
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false,
+        "notes": "Validate source-specific contractions and inflections before exact-answer comparison."
       }
     },
     {
@@ -921,6 +959,17 @@
         "source_partition_checked": true,
         "answer_key_aligned": true,
         "manual_visual_review": "pending"
+      },
+      "subtopic_ids": [
+        "ch01-s05",
+        "ch01-s08",
+        "ch01-s09",
+        "ch01-s10"
+      ],
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false,
+        "notes": "Validate source-specific contractions and inflections before exact-answer comparison."
       }
     },
     {
@@ -1033,6 +1082,13 @@
               "J’habite"
             ],
             "review_status": "source_requires_prefix_elision_Je_to_J_apostrophe_manual_game_rendering"
+          },
+          "presentation": {
+            "mode": "replace_subject_and_blank",
+            "source_subject": "Je",
+            "required_subject": "J’",
+            "complete_sentence": "J’habite au dixième étage.",
+            "reason": "Publisher answer replaces Je + blank with the elided J’habite; it must not be appended literally after Je."
           }
         },
         {
@@ -1106,6 +1162,17 @@
         "source_partition_checked": true,
         "answer_key_aligned": true,
         "manual_visual_review": "pending"
+      },
+      "subtopic_ids": [
+        "ch01-s05",
+        "ch01-s08",
+        "ch01-s09",
+        "ch01-s10"
+      ],
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false,
+        "notes": "Validate source-specific contractions and inflections before exact-answer comparison."
       }
     },
     {
@@ -1329,6 +1396,58 @@
         "source_partition_checked": true,
         "answer_key_aligned": true,
         "manual_visual_review": "pending"
+      },
+      "subtopic_ids": [
+        "ch01-s05",
+        "ch01-s06",
+        "ch01-s07",
+        "ch01-s10"
+      ],
+      "choices": [
+        {
+          "label": "a",
+          "text": "dans l’Atlantique"
+        },
+        {
+          "label": "b",
+          "text": "à midi et demi"
+        },
+        {
+          "label": "c",
+          "text": "la comédienne malade"
+        },
+        {
+          "label": "d",
+          "text": "Amélie"
+        },
+        {
+          "label": "e",
+          "text": "la télévision"
+        },
+        {
+          "label": "f",
+          "text": "son voyage au Japon"
+        },
+        {
+          "label": "g",
+          "text": "à la fin du mois"
+        },
+        {
+          "label": "h",
+          "text": "au troisième étage"
+        },
+        {
+          "label": "i",
+          "text": "le mot"
+        },
+        {
+          "label": "j",
+          "text": "une belle chanson"
+        }
+      ],
+      "grading_policy": {
+        "strategy": "choice_label",
+        "publisher_key_is_exhaustive": true
       }
     },
     {
@@ -1512,6 +1631,15 @@
         "source_partition_checked": true,
         "answer_key_aligned": true,
         "manual_visual_review": "pending"
+      },
+      "subtopic_ids": [
+        "ch01-s11",
+        "ch01-s12"
+      ],
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false,
+        "notes": "Never reject an alternative grammatical answer solely because it differs from the publisher key."
       }
     },
     {
@@ -1697,6 +1825,14 @@
         "source_partition_checked": true,
         "answer_key_aligned": true,
         "manual_visual_review": "pending"
+      },
+      "subtopic_ids": [
+        "ch01-s13"
+      ],
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false,
+        "notes": "Never reject an alternative grammatical answer solely because it differs from the publisher key."
       }
     },
     {
@@ -1811,6 +1947,12 @@
               "Tu répètes la phrase."
             ],
             "review_status": "publisher_key_transcribed_not_independently_regraded"
+          },
+          "presentation": {
+            "register": "informal",
+            "pronoun": "tu",
+            "overrides_instruction_default": "vous",
+            "reason": "(informal) in the individual prompt takes precedence over the exercise-level vous instruction."
           }
         },
         {
@@ -1883,6 +2025,15 @@
         "source_partition_checked": true,
         "answer_key_aligned": true,
         "manual_visual_review": "pending"
+      },
+      "subtopic_ids": [
+        "ch01-s11",
+        "ch01-s13"
+      ],
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false,
+        "notes": "Never reject an alternative grammatical answer solely because it differs from the publisher key."
       }
     }
   ]
