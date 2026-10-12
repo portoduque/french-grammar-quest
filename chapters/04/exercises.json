@@ -357,7 +357,7 @@
         {
           "id": "ch04-ex02-q10",
           "number": 10,
-          "prompt": "Elle travaille au centre-ville. __ The verb venir (to come)The verb venir (to come) and its derivatives, devenir (to become), prévenir (to warn, to inform), survenir (to occur), are all commonly used verbs. First, let’s look at the conjugation: je viens I come nous venons we come tu viens you come vous venez you come il/elle vient he/she comes ils/elles viennent they come Vous venez à huit heures ce soir? Are you coming at eight this evening? D’où viennent-ils? Where are they coming from? N’oubliez pas de nous prévenir. Don’t forget to inform us.",
+          "prompt": "Elle travaille au centre-ville. __",
           "source_raw_prompt": "Elle travaille au centre-ville.\n    _____________________________________________________________\n\n\nThe verb venir (to come)The verb venir (to come) and its derivatives, devenir (to become), prévenir (to\nwarn, to inform), survenir (to occur), are all commonly used verbs. First, let’s look\nat the conjugation:\n\n        je viens            I come            nous venons          we come\n        tu viens        you come         vous venez             you come\n         il/elle vient      he/she comes         ils/elles viennent         they come\n\n      Vous venez à huit heures ce soir?    Are you coming at eight this evening?\n      D’où viennent-ils?               Where are they coming from?\n       N’oubliez pas de nous prévenir.     Don’t forget to inform us.",
           "pdf_pages": [
             63,
@@ -369,6 +369,11 @@
               "Elle va travailler au centre-ville."
             ],
             "review_status": "publisher_source_not_independently_regraded"
+          },
+          "editorial_recovery": {
+            "moved_theory_to": "theory.md",
+            "source_text_retained_in": "source_raw_prompt",
+            "status": "recovered_requires_visual_editing"
           }
         }
       ],
@@ -1279,7 +1284,7 @@
         {
           "id": "ch04-ex07-q10",
           "number": 10,
-          "prompt": "Il (faire) __ des grimaces devant le miroir.The causative form The causative form is, in most cases, used to express the idea of having something done by someone or of causing something to happen. It is formed with the verb faire followed by an infinitive. Elle écrit la lettre elle-même. She writes the letter herself. Elle fait écrire la lettre par sa She has the letter written by her secrétaire. secretary. Ils envoient le document. They send the document. Ils font envoyer le document. They have the document sent. Elle fait la robe. She is making the dress. Elle fait faire la robe. She is having the dress made.",
+          "prompt": "Il (faire) __ des grimaces devant le miroir.",
           "source_raw_prompt": "Il (faire) ________________ des grimaces devant le miroir.The causative form\nThe causative form is, in most cases, used to express the idea of having something\ndone by someone or of causing something to happen. It is formed with the verb faire\nfollowed by an infinitive.\n\n       Elle écrit la lettre elle-même.         She writes the letter herself.\n       Elle fait écrire la lettre par sa        She has the letter written by her\n           secrétaire.                              secretary.\n         Ils envoient le document.            They send the document.\n         Ils font envoyer le document.        They have the document sent.\n       Elle fait la robe.                   She is making the dress.\n       Elle fait faire la robe.               She is having the dress made.\n\n\n\n  ",
           "pdf_pages": [
             69,
@@ -1291,6 +1296,11 @@
               "fait"
             ],
             "review_status": "publisher_source_not_independently_regraded"
+          },
+          "editorial_recovery": {
+            "moved_theory_to": "theory.md",
+            "source_text_retained_in": "source_raw_prompt",
+            "status": "recovered_requires_visual_editing"
           }
         }
       ],

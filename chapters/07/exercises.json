@@ -166,7 +166,7 @@
         {
           "id": "ch07-ex01-q10",
           "number": 10,
-          "prompt": "Tu (assister) __ à la pièce de théâtre. Remember that the past participle of regular -ir and -re verbs is formed by dropping the infinitive endings -ir and -re and adding the appropriate ending -i or -u. finir to finish fini finished choisir to choose choisi chosen vendre to sell vendu sold perdre to lose perdu lost In the passé composé of verbs conjugated with avoir, the past participle agrees with the direct object of the verb, but only in sentences where the direct object noun or pronoun precedes the verb. For example: Il a pris la bonne décision. He made the right decision. Il l’a prise. He made it. Elle a compris ses erreurs. She understood her mistakes. Elle les a comprises. She understood them.",
+          "prompt": "Tu (assister) __ à la pièce de théâtre.",
           "source_raw_prompt": "Tu (assister) ________________ à la pièce de théâtre.\n\n\n  Remember that the past participle of regular -ir and -re verbs is formed by\ndropping the infinitive endings -ir and -re and adding the appropriate ending -i or -u.\n\n        finir               to finish                  fini             finished\n       choisir            to choose               choisi         chosen\n      vendre            to sell              vendu          sold\n      perdre            to lose              perdu            lost\n\n   In the passé composé of verbs conjugated with avoir, the past participle agrees\nwith the direct object of the verb, but only in sentences where the direct object noun\nor pronoun precedes the verb. For example:\n\n          Il a pris la bonne décision.        He made the right decision.\n          Il l’a prise.                   He made it.\n       Elle a compris ses erreurs.          She understood her mistakes.\n       Elle les a comprises.               She understood them.\n\n\n\n  ",
           "pdf_pages": [
             92
@@ -177,6 +177,11 @@
               "as assisté"
             ],
             "review_status": "publisher_source_not_independently_regraded"
+          },
+          "editorial_recovery": {
+            "moved_theory_to": "theory.md",
+            "source_text_retained_in": "source_raw_prompt",
+            "status": "recovered_requires_visual_editing"
           }
         }
       ],
@@ -550,7 +555,7 @@
         {
           "id": "ch07-ex03-q10",
           "number": 10,
-          "prompt": "They applauded the actor. __ Irregular past participles Many verbs conjugated with avoir in the passé composé have irregular past participles that you simply have to learn by heart. Il a appris le français à Strasbourg. He learned French in Strasbourg. Nous avons compris la situation. We understood the situation. Elle m’a dit bonjour. She said hello to me. Here is a sample list of irregular past participles: acquérir to acquire acquis acquired apprendre to learn appris learned avoir to have eu had boire to drink bu drunk comprendre to understand compris understood conduire to drive conduit driven craindre to fear craint feared devoir must, to have to dû had to dire to say dit said écrire to write écrit written être to be été been, was faire to do, to make fait done, made falloir to have to fallu had to lire to read lu read mettre to put mis put mourir to die mort dead naître to be born né born offrir to offer offert offered ouvrir to open ouvert opened peindre to paint peint painted plaire to please plu pleased pleuvoir to rain plu rained pouvoir can, to be able to pu could prendre to take pris taken recevoir to receive reçu received rire to laugh ri laughed savoir to know su known suivre to follow suivi followed vivre to live vécu lived voir to see vu seen vouloir to want voulu wanted",
+          "prompt": "They applauded the actor. __",
           "source_raw_prompt": "They applauded the actor.\n   _____________________________________________________________Irregular past participles\nMany verbs conjugated with avoir in the passé composé have  irregular past\nparticiples that you simply have to learn by heart.\n\n          Il a appris le français à Strasbourg.    He learned French in Strasbourg.\n      Nous avons compris la situation.     We understood the situation.\n       Elle m’a dit bonjour.                 She said hello to me.\n\n  Here is a sample list of irregular past participles:\n\n       acquérir            to acquire                acquis      acquired\n      apprendre          to learn                  appris      learned\n       avoir                to have                eu         had\n       boire                to drink              bu         drunk\n      comprendre        to understand           compris     understood\n      conduire            to drive                 conduit     driven\n       craindre            to fear                    craint       feared\n       devoir             must, to have to         dû         had to\n       dire                 to say                       dit          said\n       écrire               to write                     écrit         written\n       être                 to be                      été          been, was\n        faire                to do, to make               fait         done, made\n        falloir               to have to                  fallu       had to\n        lire                  to read                    lu          read\n      mettre              to put                  mis         put\n      mourir              to die                 mort       dead\n       naître               to be born              né          born\n        offrir               to offer                     offert        offered\n       ouvrir              to open                  ouvert      opened\n      peindre             to paint                   peint        painted\n       plaire               to please                plu          pleased\n       pleuvoir            to rain                  plu          rained\n      pouvoir            can, to be able to        pu          could\n      prendre             to take                    pris         taken\n       recevoir            to receive                reçu         received      rire                 to laugh                      ri          laughed\n      savoir               to know                 su         known\n      suivre               to follow                   suivi        followed\n      vivre                to live                  vécu         lived\n      voir                 to see                 vu          seen\n      vouloir              to want                 voulu       wanted\n\n\n\n ",
           "pdf_pages": [
             93,
@@ -563,6 +568,11 @@
               "Ils (Elles) ont applaudi le comédien."
             ],
             "review_status": "publisher_source_not_independently_regraded"
+          },
+          "editorial_recovery": {
+            "moved_theory_to": "theory.md",
+            "source_text_retained_in": "source_raw_prompt",
+            "status": "recovered_requires_visual_editing"
           }
         }
       ],

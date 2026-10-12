@@ -184,3 +184,16 @@ faire.
           Il bruine.                              It is drizzling.
 ```
 
+
+
+## Source theory recovered from exercise-boundary parsing
+
+> The paragraphs below were accidentally attached to the last exercise item in the automatic extraction. They are preserved here for learning-content completeness, but paragraph/table formatting and placement require visual editorial review against the PDF.
+
+### After ch04-ex02-q10 (source PDF pages 63,64)
+
+The verb venir (to come)The verb venir (to come) and its derivatives, devenir (to become), prévenir (to warn, to inform), survenir (to occur), are all commonly used verbs. First, let’s look at the conjugation: je viens I come nous venons we come tu viens you come vous venez you come il/elle vient he/she comes ils/elles viennent they come Vous venez à huit heures ce soir? Are you coming at eight this evening? D’où viennent-ils? Where are they coming from? N’oubliez pas de nous prévenir. Don’t forget to inform us.
+
+### After ch04-ex07-q10 (source PDF pages 69,70)
+
+The causative form The causative form is, in most cases, used to express the idea of having something done by someone or of causing something to happen. It is formed with the verb faire followed by an infinitive. Elle écrit la lettre elle-même. She writes the letter herself. Elle fait écrire la lettre par sa She has the letter written by her secrétaire. secretary. Ils envoient le document. They send the document. Ils font envoyer le document. They have the document sent. Elle fait la robe. She is making the dress. Elle fait faire la robe. She is having the dress made.

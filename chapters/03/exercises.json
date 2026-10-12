@@ -1779,7 +1779,7 @@
         {
           "id": "ch03-ex09-q10",
           "number": 10,
-          "prompt": "Est-ce qu’ils (pouvoir) __ arriver un peu plus tôt? A number of other verbs ending in -oir are irregular. Let’s look at a few examples in their first-person singular and plural forms: apercevoir to see, to perceive j’aperçois I see, I perceive nous apercevons we see, we perceive décevoir to disappoint je déçois I disappoint nous décevons we disappoint devoir must, to have to je dois I must, I have to nous devons we must, we have to émouvoir to move, to stir j’émeus I move, I stir nous émouvons we move, we stir prévoir to foresee, to predict je prévois I foresee nous prévoyons we foresee promouvoir to promote je promeus I promote nous promouvons we promote recevoir to receive je reçois I receive nous recevons we receive valoir to be worth cela vaut it is worth nous valons we are worth voir to see je vois I see nous voyons we see Falloir and pleuvoir are used only in the third-person singular. falloir to be necessary il faut it is necessary pleuvoir to rain il pleut it is raining",
+          "prompt": "Est-ce qu’ils (pouvoir) __ arriver un peu plus tôt?",
           "source_raw_prompt": "Est-ce qu’ils (pouvoir) _________________ arriver un peu plus tôt?\n\n\n\n  A number of other verbs ending in -oir are irregular. Let’s look at a few examples\nin their first-person singular and plural forms:\n\n       apercevoir to see, to perceive\n        j’aperçois    I see, I perceive    nous apercevons   we see, we perceive\n\n       décevoir to disappoint\n        je déçois       I disappoint      nous décevons       we disappoint\n\n       devoir must, to have to\n        je dois    I must, I have to      nous devons    we must, we have to      émouvoir to move, to stir\n      j’émeus     I move, I stir     nous émouvons      we move, we stir\n\n      prévoir to foresee, to predict\n       je prévois          I foresee     nous prévoyons         we foresee\n\n     promouvoir to promote\n       je promeus        I promote     nous promouvons       we promote\n\n      recevoir to receive\n       je reçois          I receive      nous recevons         we receive\n\n       valoir to be worth\n      cela vaut           it is worth      nous valons       we are worth\n\n       voir to see\n       je vois             I see       nous voyons              we see\n\n  Falloir and pleuvoir are used only in the third-person singular.\n\n       falloir         to be necessary                 il faut          it is necessary\n      pleuvoir       to rain                             il pleut        it is raining\n\n\n\n ",
           "pdf_pages": [
             56,
@@ -1791,6 +1791,11 @@
               "peuvent"
             ],
             "review_status": "publisher_source_not_independently_regraded"
+          },
+          "editorial_recovery": {
+            "moved_theory_to": "theory.md",
+            "source_text_retained_in": "source_raw_prompt",
+            "status": "recovered_requires_visual_editing"
           }
         }
       ],
