@@ -1,0 +1,80 @@
+{
+  "chapter": 15,
+  "title": "Chapter 15",
+  "source": {
+    "pdf_pages": [
+      188,
+      194
+    ],
+    "source_sha256": "297b92bc48e075449713c3b408ccf47de2466cfc6c4f4a25687a2a974276ae4d",
+    "answer_key_pdf_pages": [
+      512,
+      513
+    ]
+  },
+  "topics": [
+    {
+      "id": "ch15-t01",
+      "title": "The present participle",
+      "exercise_ids": [
+        "ch15-ex01"
+      ]
+    },
+    {
+      "id": "ch15-t02",
+      "title": "The gerundive",
+      "exercise_ids": [
+        "ch15-ex02",
+        "ch15-ex03"
+      ]
+    }
+  ],
+  "exercise_ids": [
+    "ch15-ex01",
+    "ch15-ex02",
+    "ch15-ex03"
+  ],
+  "question_total": 30,
+  "validation": {
+    "source_pages": 7,
+    "source_chars": 10692,
+    "source_partition_complete": true,
+    "exercise_group_markers_detected": 3,
+    "questions_structured": 30,
+    "answer_key_entries_associated": 30,
+    "editorial_visual_review": "pending_glyph_by_glyph_check",
+    "theory_semantic_format": "partially_indexed_source_text_preserved",
+    "theory_source_segments": 2,
+    "text_semantic_format": "source-aligned_markdown_fenced_text_pending_table_visual_proof",
+    "answer_key_count": 30
+  },
+  "subtopics": [
+    {
+      "id": "ch15-s01",
+      "title": "The present participle",
+      "parent_topic_id": "ch15-t01",
+      "pdf_pages": [
+        188,
+        188
+      ],
+      "exercise_ids": [
+        "ch15-ex01"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch15-s02",
+      "title": "The gerundive",
+      "parent_topic_id": "ch15-t02",
+      "pdf_pages": [
+        192,
+        192
+      ],
+      "exercise_ids": [
+        "ch15-ex02",
+        "ch15-ex03"
+      ],
+      "kind": "grammar"
+    }
+  ]
+}

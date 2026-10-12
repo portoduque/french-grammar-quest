@@ -1,0 +1,1696 @@
+{
+  "chapter": 4,
+  "status": "machine_transcribed_editorial_visual_review_pending",
+  "exercises": [
+    {
+      "id": "ch04-ex01",
+      "source": {
+        "chapter": 4,
+        "exercise": "4.1",
+        "pdf_pages": [
+          62,
+          63
+        ]
+      },
+      "topic_ids": [
+        "ch04-t02"
+      ],
+      "instruction": "Mettre au présent les verbes entre parenthèses.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch04-ex01-q01",
+          "number": 1,
+          "prompt": "Nous (aller) __ à la plage cet après-midi.",
+          "source_raw_prompt": "Nous (aller) ________________ à la plage cet après-midi.\n\n   ",
+          "pdf_pages": [
+            62
+          ],
+          "answer": {
+            "source_key": "allons",
+            "accepted": [
+              "allons"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex01-q02",
+          "number": 2,
+          "prompt": "Ils (aller) __ à Tahiti en décembre.",
+          "source_raw_prompt": "Ils (aller) ________________ à Tahiti en décembre.\n\n   ",
+          "pdf_pages": [
+            62
+          ],
+          "answer": {
+            "source_key": "vont",
+            "accepted": [
+              "vont"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex01-q03",
+          "number": 3,
+          "prompt": "Je (aller) __ chez le dentiste demain matin.",
+          "source_raw_prompt": "Je (aller) ________________ chez le dentiste demain matin.\n\n   ",
+          "pdf_pages": [
+            62
+          ],
+          "answer": {
+            "source_key": "vais",
+            "accepted": [
+              "vais"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex01-q04",
+          "number": 4,
+          "prompt": "Le lundi, il (aller) __ à son cours d’anglais.",
+          "source_raw_prompt": "Le lundi, il (aller) ________________ à son cours d’anglais.\n\n   ",
+          "pdf_pages": [
+            62
+          ],
+          "answer": {
+            "source_key": "va",
+            "accepted": [
+              "va"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex01-q05",
+          "number": 5,
+          "prompt": "Vous (aller) __ en vacances à la fin de la semaine.",
+          "source_raw_prompt": "Vous (aller) ________________ en vacances à la fin de la semaine.\n\n   ",
+          "pdf_pages": [
+            62
+          ],
+          "answer": {
+            "source_key": "allez",
+            "accepted": [
+              "allez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex01-q06",
+          "number": 6,
+          "prompt": "Ça (aller) __ ?",
+          "source_raw_prompt": "Ça (aller) ________________ ?\n\n   ",
+          "pdf_pages": [
+            62
+          ],
+          "answer": {
+            "source_key": "va",
+            "accepted": [
+              "va"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex01-q07",
+          "number": 7,
+          "prompt": "Elle (aller) __ à la banque cet après-midi.",
+          "source_raw_prompt": "Elle (aller) ________________ à la banque cet après-midi.\n\n   ",
+          "pdf_pages": [
+            62
+          ],
+          "answer": {
+            "source_key": "va",
+            "accepted": [
+              "va"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex01-q08",
+          "number": 8,
+          "prompt": "Je (aller) __ en Afrique avec mes amis.",
+          "source_raw_prompt": "Je (aller) ________________ en Afrique avec mes amis.\n\n   ",
+          "pdf_pages": [
+            62
+          ],
+          "answer": {
+            "source_key": "vais",
+            "accepted": [
+              "vais"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex01-q09",
+          "number": 9,
+          "prompt": "Il (aller) __ au match de base-ball ce soir.",
+          "source_raw_prompt": "Il (aller) ________________ au match de base-ball ce soir. ",
+          "pdf_pages": [
+            62,
+            63
+          ],
+          "answer": {
+            "source_key": "va",
+            "accepted": [
+              "va"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex01-q10",
+          "number": 10,
+          "prompt": "Comment (aller) __ -vous?",
+          "source_raw_prompt": "Comment (aller) ________________ -vous?\n\n\n\n\n  ",
+          "pdf_pages": [
+            63
+          ],
+          "answer": {
+            "source_key": "allez",
+            "accepted": [
+              "allez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch04-s02"
+      ]
+    },
+    {
+      "id": "ch04-ex02",
+      "source": {
+        "chapter": 4,
+        "exercise": "4.2",
+        "pdf_pages": [
+          63,
+          64
+        ]
+      },
+      "topic_ids": [
+        "ch04-t02"
+      ],
+      "instruction": "Mettre les phrases suivantes au futur immédiat.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch04-ex02-q01",
+          "number": 1,
+          "prompt": "Nous achetons une nouvelle machine à laver. __",
+          "source_raw_prompt": "Nous achetons une nouvelle machine à laver.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            63
+          ],
+          "answer": {
+            "source_key": "Nous allons acheter une nouvelle machine à laver.",
+            "accepted": [
+              "Nous allons acheter une nouvelle machine à laver."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex02-q02",
+          "number": 2,
+          "prompt": "Il prend des vacances cet automne. __",
+          "source_raw_prompt": "Il prend des vacances cet automne.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            63
+          ],
+          "answer": {
+            "source_key": "Il va prendre des vacances cet automne.",
+            "accepted": [
+              "Il va prendre des vacances cet automne."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex02-q03",
+          "number": 3,
+          "prompt": "Vous investissez au Japon. __",
+          "source_raw_prompt": "Vous investissez au Japon.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            63
+          ],
+          "answer": {
+            "source_key": "Vous allez investir au Japon.",
+            "accepted": [
+              "Vous allez investir au Japon."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex02-q04",
+          "number": 4,
+          "prompt": "Elle a vingt ans. __",
+          "source_raw_prompt": "Elle a vingt ans.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            63
+          ],
+          "answer": {
+            "source_key": "Elle va avoir vingt ans.",
+            "accepted": [
+              "Elle va avoir vingt ans."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex02-q05",
+          "number": 5,
+          "prompt": "Cette agence promeut cette marchandise. __",
+          "source_raw_prompt": "Cette agence promeut cette marchandise.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            63
+          ],
+          "answer": {
+            "source_key": "Cette agence va promouvoir cette marchandise.",
+            "accepted": [
+              "Cette agence va promouvoir cette marchandise."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex02-q06",
+          "number": 6,
+          "prompt": "Il est président. __",
+          "source_raw_prompt": "Il est président.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            63
+          ],
+          "answer": {
+            "source_key": "Il va être président.",
+            "accepted": [
+              "Il va être président."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex02-q07",
+          "number": 7,
+          "prompt": "Nous choisissons un cadeau. __",
+          "source_raw_prompt": "Nous choisissons un cadeau.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            63
+          ],
+          "answer": {
+            "source_key": "Nous allons choisir un cadeau.",
+            "accepted": [
+              "Nous allons choisir un cadeau."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex02-q08",
+          "number": 8,
+          "prompt": "Tu dînes au restaurant. __",
+          "source_raw_prompt": "Tu dînes au restaurant.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            63
+          ],
+          "answer": {
+            "source_key": "Tu vas dîner au restaurant.",
+            "accepted": [
+              "Tu vas dîner au restaurant."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex02-q09",
+          "number": 9,
+          "prompt": "Ils déménagent en janvier. __",
+          "source_raw_prompt": "Ils déménagent en janvier.\n    _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            63
+          ],
+          "answer": {
+            "source_key": "Ils vont déménager en janvier.",
+            "accepted": [
+              "Ils vont déménager en janvier."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex02-q10",
+          "number": 10,
+          "prompt": "Elle travaille au centre-ville. __ The verb venir (to come)The verb venir (to come) and its derivatives, devenir (to become), prévenir (to warn, to inform), survenir (to occur), are all commonly used verbs. First, let’s look at the conjugation: je viens I come nous venons we come tu viens you come vous venez you come il/elle vient he/she comes ils/elles viennent they come Vous venez à huit heures ce soir? Are you coming at eight this evening? D’où viennent-ils? Where are they coming from? N’oubliez pas de nous prévenir. Don’t forget to inform us.",
+          "source_raw_prompt": "Elle travaille au centre-ville.\n    _____________________________________________________________\n\n\nThe verb venir (to come)The verb venir (to come) and its derivatives, devenir (to become), prévenir (to\nwarn, to inform), survenir (to occur), are all commonly used verbs. First, let’s look\nat the conjugation:\n\n        je viens            I come            nous venons          we come\n        tu viens        you come         vous venez             you come\n         il/elle vient      he/she comes         ils/elles viennent         they come\n\n      Vous venez à huit heures ce soir?    Are you coming at eight this evening?\n      D’où viennent-ils?               Where are they coming from?\n       N’oubliez pas de nous prévenir.     Don’t forget to inform us.",
+          "pdf_pages": [
+            63,
+            64
+          ],
+          "answer": {
+            "source_key": "Elle va travailler au centre-ville.",
+            "accepted": [
+              "Elle va travailler au centre-ville."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch04-s02"
+      ]
+    },
+    {
+      "id": "ch04-ex03",
+      "source": {
+        "chapter": 4,
+        "exercise": "4.3",
+        "pdf_pages": [
+          64,
+          65
+        ]
+      },
+      "topic_ids": [
+        "ch04-t04"
+      ],
+      "instruction": "Mettre au présent les verbes entre parenthèses.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch04-ex03-q01",
+          "number": 1,
+          "prompt": "Il (venir) __ d’Espagne.",
+          "source_raw_prompt": "Il (venir) ________________ d’Espagne.\n\n   ",
+          "pdf_pages": [
+            64
+          ],
+          "answer": {
+            "source_key": "vient",
+            "accepted": [
+              "vient"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex03-q02",
+          "number": 2,
+          "prompt": "Est-ce qu’elles (venir) __ ce midi?",
+          "source_raw_prompt": "Est-ce qu’elles (venir) ________________ ce midi?\n\n   ",
+          "pdf_pages": [
+            64
+          ],
+          "answer": {
+            "source_key": "viennent",
+            "accepted": [
+              "viennent"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex03-q03",
+          "number": 3,
+          "prompt": "Tu (venir) __ avec nous?",
+          "source_raw_prompt": "Tu (venir) ________________ avec nous?\n\n   ",
+          "pdf_pages": [
+            64
+          ],
+          "answer": {
+            "source_key": "viens",
+            "accepted": [
+              "viens"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex03-q04",
+          "number": 4,
+          "prompt": "Elle (venir) __ du Canada.",
+          "source_raw_prompt": "Elle (venir) ________________ du Canada.\n\n   ",
+          "pdf_pages": [
+            64
+          ],
+          "answer": {
+            "source_key": "vient",
+            "accepted": [
+              "vient"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex03-q05",
+          "number": 5,
+          "prompt": "Vous (revenir) __ des Maldives?",
+          "source_raw_prompt": "Vous (revenir) ________________ des Maldives?\n\n   ",
+          "pdf_pages": [
+            64
+          ],
+          "answer": {
+            "source_key": "revenez",
+            "accepted": [
+              "revenez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex03-q06",
+          "number": 6,
+          "prompt": "Elle nous (prévenir) __ toujours à la dernière minute.",
+          "source_raw_prompt": "Elle nous (prévenir) ________________ toujours à la dernière minute.\n\n   ",
+          "pdf_pages": [
+            64
+          ],
+          "answer": {
+            "source_key": "prévient",
+            "accepted": [
+              "prévient"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex03-q07",
+          "number": 7,
+          "prompt": "Nous (venir) __ tous ce soir.",
+          "source_raw_prompt": "Nous (venir) ________________ tous ce soir.\n\n   ",
+          "pdf_pages": [
+            64
+          ],
+          "answer": {
+            "source_key": "venons",
+            "accepted": [
+              "venons"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex03-q08",
+          "number": 8,
+          "prompt": "Il (devenir) __ fou avec tout ce travail.",
+          "source_raw_prompt": "Il (devenir) ________________ fou avec tout ce travail. ",
+          "pdf_pages": [
+            64,
+            65
+          ],
+          "answer": {
+            "source_key": "devient",
+            "accepted": [
+              "devient"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex03-q09",
+          "number": 9,
+          "prompt": "Vous (revenir) __ cet après-midi?",
+          "source_raw_prompt": "Vous (revenir) ________________ cet après-midi?\n\n",
+          "pdf_pages": [
+            65
+          ],
+          "answer": {
+            "source_key": "revenez",
+            "accepted": [
+              "revenez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex03-q10",
+          "number": 10,
+          "prompt": "Je (venir) __ de la contacter.",
+          "source_raw_prompt": "Je (venir) ________________ de la contacter.\n\n\n\n\n ",
+          "pdf_pages": [
+            65
+          ],
+          "answer": {
+            "source_key": "viens",
+            "accepted": [
+              "viens"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch04-s04"
+      ]
+    },
+    {
+      "id": "ch04-ex04",
+      "source": {
+        "chapter": 4,
+        "exercise": "4.4",
+        "pdf_pages": [
+          65,
+          66
+        ]
+      },
+      "topic_ids": [
+        "ch04-t04"
+      ],
+      "instruction": "Mettre les phrases suivantes au passé immédiat.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch04-ex04-q01",
+          "number": 1,
+          "prompt": "Je téléphone à Bernard. __",
+          "source_raw_prompt": "Je téléphone à Bernard.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            65
+          ],
+          "answer": {
+            "source_key": "Je viens de téléphoner à Bernard.",
+            "accepted": [
+              "Je viens de téléphoner à Bernard."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex04-q02",
+          "number": 2,
+          "prompt": "Il annule son vol. __",
+          "source_raw_prompt": "Il annule son vol.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            65
+          ],
+          "answer": {
+            "source_key": "Il vient d’annuler son vol.",
+            "accepted": [
+              "Il vient d’annuler son vol."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex04-q03",
+          "number": 3,
+          "prompt": "Elle remplace tous ses meubles. __",
+          "source_raw_prompt": "Elle remplace tous ses meubles.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            65
+          ],
+          "answer": {
+            "source_key": "Elle vient de remplacer tous ses meubles.",
+            "accepted": [
+              "Elle vient de remplacer tous ses meubles."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex04-q04",
+          "number": 4,
+          "prompt": "La police révèle le secret. __",
+          "source_raw_prompt": "La police révèle le secret.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            65
+          ],
+          "answer": {
+            "source_key": "La police vient de révéler le secret.",
+            "accepted": [
+              "La police vient de révéler le secret."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex04-q05",
+          "number": 5,
+          "prompt": "Vous commencez à travailler. __",
+          "source_raw_prompt": "Vous commencez à travailler.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            65
+          ],
+          "answer": {
+            "source_key": "Vous venez de commencer à travailler.",
+            "accepted": [
+              "Vous venez de commencer à travailler."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex04-q06",
+          "number": 6,
+          "prompt": "Elle manque le train. __",
+          "source_raw_prompt": "Elle manque le train.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            65
+          ],
+          "answer": {
+            "source_key": "Elle vient de manquer le train.",
+            "accepted": [
+              "Elle vient de manquer le train."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex04-q07",
+          "number": 7,
+          "prompt": "Tu as trente ans. __",
+          "source_raw_prompt": "Tu as trente ans.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            65
+          ],
+          "answer": {
+            "source_key": "Tu viens d’avoir trente ans.",
+            "accepted": [
+              "Tu viens d’avoir trente ans."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex04-q08",
+          "number": 8,
+          "prompt": "Il achève ses études. __",
+          "source_raw_prompt": "Il achève ses études.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            65
+          ],
+          "answer": {
+            "source_key": "Il vient d’achever ses études.",
+            "accepted": [
+              "Il vient d’achever ses études."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex04-q09",
+          "number": 9,
+          "prompt": "Nous parlons à la directrice. __",
+          "source_raw_prompt": "Nous parlons à la directrice.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            65
+          ],
+          "answer": {
+            "source_key": "Nous venons de parler à la directrice.",
+            "accepted": [
+              "Nous venons de parler à la directrice."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex04-q10",
+          "number": 10,
+          "prompt": "Ils voient un bon film. __",
+          "source_raw_prompt": "Ils voient un bon film.\n   _____________________________________________________________  ",
+          "pdf_pages": [
+            65,
+            66
+          ],
+          "answer": {
+            "source_key": "Ils viennent de voir un bon film.",
+            "accepted": [
+              "Ils viennent de voir un bon film."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch04-s04"
+      ]
+    },
+    {
+      "id": "ch04-ex05",
+      "source": {
+        "chapter": 4,
+        "exercise": "4.5",
+        "pdf_pages": [
+          66
+        ]
+      },
+      "topic_ids": [
+        "ch04-t04"
+      ],
+      "instruction": "Traduire les phrases suivantes en utilisant tu et l’inversion si nécessaire.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch04-ex05-q01",
+          "number": 1,
+          "prompt": "Are you going to the movies on Sunday? __",
+          "source_raw_prompt": "Are you going to the movies on Sunday?\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            66
+          ],
+          "answer": {
+            "source_key": "Vas-tu au cinéma dimanche?",
+            "accepted": [
+              "Vas-tu au cinéma dimanche?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex05-q02",
+          "number": 2,
+          "prompt": "They are going to move soon. __",
+          "source_raw_prompt": "They are going to move soon.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            66
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) vont bientôt déménager.",
+            "accepted": [
+              "Ils (Elles) vont bientôt déménager."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex05-q03",
+          "number": 3,
+          "prompt": "How are you doing? __",
+          "source_raw_prompt": "How are you doing?\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            66
+          ],
+          "answer": {
+            "source_key": "Comment vas-tu?",
+            "accepted": [
+              "Comment vas-tu?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex05-q04",
+          "number": 4,
+          "prompt": "They are going to invest in Portugal. __",
+          "source_raw_prompt": "They are going to invest in Portugal.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            66
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) vont investir au Portugal.",
+            "accepted": [
+              "Ils (Elles) vont investir au Portugal."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex05-q05",
+          "number": 5,
+          "prompt": "She’s just started a new job. __",
+          "source_raw_prompt": "She’s just started a new job.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            66
+          ],
+          "answer": {
+            "source_key": "Elle vient de commencer un nouveau travail.",
+            "accepted": [
+              "Elle vient de commencer un nouveau travail."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex05-q06",
+          "number": 6,
+          "prompt": "This hat looks good on you. __",
+          "source_raw_prompt": "This hat looks good on you.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            66
+          ],
+          "answer": {
+            "source_key": "Ce chapeau te va bien.",
+            "accepted": [
+              "Ce chapeau te va bien."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex05-q07",
+          "number": 7,
+          "prompt": "They just canceled my flight. __",
+          "source_raw_prompt": "They just canceled my flight.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            66
+          ],
+          "answer": {
+            "source_key": "Ils viennent d’annuler mon vol.",
+            "accepted": [
+              "Ils viennent d’annuler mon vol."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex05-q08",
+          "number": 8,
+          "prompt": "He goes to the library on Saturdays. __",
+          "source_raw_prompt": "He goes to the library on Saturdays.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            66
+          ],
+          "answer": {
+            "source_key": "Il va à la bibliothèque le samedi.",
+            "accepted": [
+              "Il va à la bibliothèque le samedi."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex05-q09",
+          "number": 9,
+          "prompt": "She just called François. __",
+          "source_raw_prompt": "She just called François.\n    _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            66
+          ],
+          "answer": {
+            "source_key": "Elle vient d’appeler François.",
+            "accepted": [
+              "Elle vient d’appeler François."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex05-q10",
+          "number": 10,
+          "prompt": "She is going to finish the book this afternoon. __",
+          "source_raw_prompt": "She is going to finish the book this afternoon.\n    _____________________________________________________________",
+          "pdf_pages": [
+            66,
+            67
+          ],
+          "answer": {
+            "source_key": "Elle va finir le livre cet après-midi.",
+            "accepted": [
+              "Elle va finir le livre cet après-midi."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch04-s04"
+      ]
+    },
+    {
+      "id": "ch04-ex06",
+      "source": {
+        "chapter": 4,
+        "exercise": "4.6",
+        "pdf_pages": [
+          67,
+          68
+        ]
+      },
+      "topic_ids": [
+        "ch04-t05"
+      ],
+      "instruction": "Faire correspondre les deux colonnes. ______",
+      "interaction_type": "matching",
+      "questions": [
+        {
+          "id": "ch04-ex06-q01",
+          "number": 1,
+          "prompt": "Il tient à sa voiture. a. Il ressemble à sa parente. __",
+          "source_raw_prompt": "Il tient à sa voiture.         a. Il ressemble à sa parente. ______ ",
+          "pdf_pages": [
+            67,
+            68
+          ],
+          "answer": {
+            "source_key": "c",
+            "accepted": [
+              "c"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "a",
+            "text": "Il ressemble à sa parente. ______"
+          }
+        },
+        {
+          "id": "ch04-ex06-q02",
+          "number": 2,
+          "prompt": "Il ne tient compte de rien. b. Il veut discuter avec toi. __",
+          "source_raw_prompt": "Il ne tient compte de rien.  b. Il veut discuter avec toi.\n\n ______ ",
+          "pdf_pages": [
+            68
+          ],
+          "answer": {
+            "source_key": "d",
+            "accepted": [
+              "d"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "b",
+            "text": "Il veut discuter avec toi."
+          }
+        },
+        {
+          "id": "ch04-ex06-q03",
+          "number": 3,
+          "prompt": "Il ne tient pas ses c. Il est attaché à cette chose. promesses. __",
+          "source_raw_prompt": "Il ne tient pas ses            c. Il est attaché à cette chose.\n    promesses.\n\n ______ ",
+          "pdf_pages": [
+            68
+          ],
+          "answer": {
+            "source_key": "e",
+            "accepted": [
+              "e"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "c",
+            "text": "Il est attaché à cette chose."
+          }
+        },
+        {
+          "id": "ch04-ex06-q04",
+          "number": 4,
+          "prompt": "Il tient de sa sœur. d. Il ignore tout. __",
+          "source_raw_prompt": "Il tient de sa sœur.          d. Il ignore tout.\n\n ______ ",
+          "pdf_pages": [
+            68
+          ],
+          "answer": {
+            "source_key": "a",
+            "accepted": [
+              "a"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "d",
+            "text": "Il ignore tout."
+          }
+        },
+        {
+          "id": "ch04-ex06-q05",
+          "number": 5,
+          "prompt": "Il tient à te parler. e. Il ne respecte pas ses engagements.",
+          "source_raw_prompt": "Il tient à te parler.           e. Il ne respecte pas ses\n                                     engagements.",
+          "pdf_pages": [
+            68,
+            69
+          ],
+          "answer": {
+            "source_key": "b",
+            "accepted": [
+              "b"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "e",
+            "text": "Il ne respecte pas ses"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 5,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "choice_label",
+        "publisher_key_is_exhaustive": true
+      },
+      "subtopic_ids": [
+        "ch04-s05"
+      ],
+      "choices": [
+        {
+          "label": "a",
+          "text": "Il ressemble à sa parente. ______"
+        },
+        {
+          "label": "b",
+          "text": "Il veut discuter avec toi."
+        },
+        {
+          "label": "c",
+          "text": "Il est attaché à cette chose."
+        },
+        {
+          "label": "d",
+          "text": "Il ignore tout."
+        },
+        {
+          "label": "e",
+          "text": "Il ne respecte pas ses"
+        }
+      ]
+    },
+    {
+      "id": "ch04-ex07",
+      "source": {
+        "chapter": 4,
+        "exercise": "4.7",
+        "pdf_pages": [
+          69,
+          70
+        ]
+      },
+      "topic_ids": [
+        "ch04-t06"
+      ],
+      "instruction": "Mettre au présent les verbes entre parenthèses.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch04-ex07-q01",
+          "number": 1,
+          "prompt": "Qui (faire) __ quoi dans cette entreprise?",
+          "source_raw_prompt": "Qui (faire) ________________ quoi dans cette entreprise?\n\n   ",
+          "pdf_pages": [
+            69
+          ],
+          "answer": {
+            "source_key": "fait",
+            "accepted": [
+              "fait"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex07-q02",
+          "number": 2,
+          "prompt": "Ils (faire) __ un grand voyage chaque année.",
+          "source_raw_prompt": "Ils (faire) ________________ un grand voyage chaque année.\n\n   ",
+          "pdf_pages": [
+            69
+          ],
+          "answer": {
+            "source_key": "font",
+            "accepted": [
+              "font"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex07-q03",
+          "number": 3,
+          "prompt": "Tu (faire) __ la cuisine?",
+          "source_raw_prompt": "Tu (faire) ________________ la cuisine?\n\n   ",
+          "pdf_pages": [
+            69
+          ],
+          "answer": {
+            "source_key": "fais",
+            "accepted": [
+              "fais"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex07-q04",
+          "number": 4,
+          "prompt": "Quel temps (faire) __ -il à Rome aujourd’hui?",
+          "source_raw_prompt": "Quel temps (faire) ________________-il à Rome aujourd’hui?\n\n   ",
+          "pdf_pages": [
+            69
+          ],
+          "answer": {
+            "source_key": "fait",
+            "accepted": [
+              "fait"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex07-q05",
+          "number": 5,
+          "prompt": "Nous (faire) __ une promenade dans les jardins du Luxembourg.",
+          "source_raw_prompt": "Nous (faire) ________________ une promenade dans les jardins du\n    Luxembourg.\n\n   ",
+          "pdf_pages": [
+            69
+          ],
+          "answer": {
+            "source_key": "faisons",
+            "accepted": [
+              "faisons"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex07-q06",
+          "number": 6,
+          "prompt": "Elle (faire) __ le marché le samedi matin.",
+          "source_raw_prompt": "Elle (faire) ________________ le marché le samedi matin.\n\n   ",
+          "pdf_pages": [
+            69
+          ],
+          "answer": {
+            "source_key": "fait",
+            "accepted": [
+              "fait"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex07-q07",
+          "number": 7,
+          "prompt": "On (faire) __ la queue depuis une demi-heure!",
+          "source_raw_prompt": "On (faire) ________________ la queue depuis une demi-heure!\n\n   ",
+          "pdf_pages": [
+            69
+          ],
+          "answer": {
+            "source_key": "fait",
+            "accepted": [
+              "fait"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex07-q08",
+          "number": 8,
+          "prompt": "Ils (faire) __ la sieste de trois à cinq heures.",
+          "source_raw_prompt": "Ils (faire) ________________ la sieste de trois à cinq heures.\n\n   ",
+          "pdf_pages": [
+            69
+          ],
+          "answer": {
+            "source_key": "font",
+            "accepted": [
+              "font"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex07-q09",
+          "number": 9,
+          "prompt": "Vous (faire) __ de l’exercice pour rester en forme?",
+          "source_raw_prompt": "Vous (faire) ________________ de l’exercice pour rester en forme?\n\n ",
+          "pdf_pages": [
+            69
+          ],
+          "answer": {
+            "source_key": "faites",
+            "accepted": [
+              "faites"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex07-q10",
+          "number": 10,
+          "prompt": "Il (faire) __ des grimaces devant le miroir.The causative form The causative form is, in most cases, used to express the idea of having something done by someone or of causing something to happen. It is formed with the verb faire followed by an infinitive. Elle écrit la lettre elle-même. She writes the letter herself. Elle fait écrire la lettre par sa She has the letter written by her secrétaire. secretary. Ils envoient le document. They send the document. Ils font envoyer le document. They have the document sent. Elle fait la robe. She is making the dress. Elle fait faire la robe. She is having the dress made.",
+          "source_raw_prompt": "Il (faire) ________________ des grimaces devant le miroir.The causative form\nThe causative form is, in most cases, used to express the idea of having something\ndone by someone or of causing something to happen. It is formed with the verb faire\nfollowed by an infinitive.\n\n       Elle écrit la lettre elle-même.         She writes the letter herself.\n       Elle fait écrire la lettre par sa        She has the letter written by her\n           secrétaire.                              secretary.\n         Ils envoient le document.            They send the document.\n         Ils font envoyer le document.        They have the document sent.\n       Elle fait la robe.                   She is making the dress.\n       Elle fait faire la robe.               She is having the dress made.\n\n\n\n  ",
+          "pdf_pages": [
+            69,
+            70
+          ],
+          "answer": {
+            "source_key": "fait",
+            "accepted": [
+              "fait"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch04-s06"
+      ]
+    },
+    {
+      "id": "ch04-ex08",
+      "source": {
+        "chapter": 4,
+        "exercise": "4.8",
+        "pdf_pages": [
+          70,
+          71
+        ]
+      },
+      "topic_ids": [
+        "ch04-t07"
+      ],
+      "instruction": "Mettre les phrases suivantes à la forme causative.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch04-ex08-q01",
+          "number": 1,
+          "prompt": "Je lis le dossier. __",
+          "source_raw_prompt": "Je lis le dossier.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            70
+          ],
+          "answer": {
+            "source_key": "Je fais lire le dossier.",
+            "accepted": [
+              "Je fais lire le dossier."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex08-q02",
+          "number": 2,
+          "prompt": "Vous lavez la voiture. __",
+          "source_raw_prompt": "Vous lavez la voiture.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            70
+          ],
+          "answer": {
+            "source_key": "Vous faites laver la voiture.",
+            "accepted": [
+              "Vous faites laver la voiture."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex08-q03",
+          "number": 3,
+          "prompt": "Il répare la télévision. __",
+          "source_raw_prompt": "Il répare la télévision.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            70
+          ],
+          "answer": {
+            "source_key": "Il fait réparer la télévision.",
+            "accepted": [
+              "Il fait réparer la télévision."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex08-q04",
+          "number": 4,
+          "prompt": "Elle investit sa fortune. __",
+          "source_raw_prompt": "Elle investit sa fortune.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            70
+          ],
+          "answer": {
+            "source_key": "Elle fait investir sa fortune.",
+            "accepted": [
+              "Elle fait investir sa fortune."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex08-q05",
+          "number": 5,
+          "prompt": "J’envoie le paquet. __",
+          "source_raw_prompt": "J’envoie le paquet.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            70
+          ],
+          "answer": {
+            "source_key": "Je fais envoyer le paquet.",
+            "accepted": [
+              "Je fais envoyer le paquet."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex08-q06",
+          "number": 6,
+          "prompt": "Il annule le voyage. __",
+          "source_raw_prompt": "Il annule le voyage.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            70
+          ],
+          "answer": {
+            "source_key": "Il fait annuler le voyage.",
+            "accepted": [
+              "Il fait annuler le voyage."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex08-q07",
+          "number": 7,
+          "prompt": "Tu remplaces l’employé malade. __",
+          "source_raw_prompt": "Tu remplaces l’employé malade.\n    _____________________________________________________________ ",
+          "pdf_pages": [
+            70,
+            71
+          ],
+          "answer": {
+            "source_key": "Tu fais remplacer l’employé malade.",
+            "accepted": [
+              "Tu fais remplacer l’employé malade."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex08-q08",
+          "number": 8,
+          "prompt": "Il visite l’entreprise. __",
+          "source_raw_prompt": "Il visite l’entreprise.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            71
+          ],
+          "answer": {
+            "source_key": "Il fait visiter l’entreprise.",
+            "accepted": [
+              "Il fait visiter l’entreprise."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex08-q09",
+          "number": 9,
+          "prompt": "Je corrige les copies des étudiants. __",
+          "source_raw_prompt": "Je corrige les copies des étudiants.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            71
+          ],
+          "answer": {
+            "source_key": "Je fais corriger les copies des étudiants.",
+            "accepted": [
+              "Je fais corriger les copies des étudiants."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex08-q10",
+          "number": 10,
+          "prompt": "Je chante la chanson. __",
+          "source_raw_prompt": "Je chante la chanson.\n   _____________________________________________________________\n\n\n\n\n ",
+          "pdf_pages": [
+            71
+          ],
+          "answer": {
+            "source_key": "Je fais chanter la chanson.",
+            "accepted": [
+              "Je fais chanter la chanson."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch04-s07"
+      ]
+    },
+    {
+      "id": "ch04-ex09",
+      "source": {
+        "chapter": 4,
+        "exercise": "4.9",
+        "pdf_pages": [
+          71,
+          72
+        ]
+      },
+      "topic_ids": [
+        "ch04-t07"
+      ],
+      "instruction": "Traduire les phrases suivantes en utilisant vous et la forme est-ce que si nécessaire.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch04-ex09-q01",
+          "number": 1,
+          "prompt": "They have the letter sent to Paris. __",
+          "source_raw_prompt": "They have the letter sent to Paris.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            71
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) font envoyer la lettre à Paris.",
+            "accepted": [
+              "Ils (Elles) font envoyer la lettre à Paris."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex09-q02",
+          "number": 2,
+          "prompt": "I have been standing in line for ten minutes. __",
+          "source_raw_prompt": "I have been standing in line for ten minutes.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            71
+          ],
+          "answer": {
+            "source_key": "Je fais la queue depuis dix minutes.",
+            "accepted": [
+              "Je fais la queue depuis dix minutes."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex09-q03",
+          "number": 3,
+          "prompt": "They are attached to their friends. __",
+          "source_raw_prompt": "They are attached to their friends.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            71
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) tiennent à leurs amis.",
+            "accepted": [
+              "Ils (Elles) tiennent à leurs amis."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex09-q04",
+          "number": 4,
+          "prompt": "He really wants to sing this song. __",
+          "source_raw_prompt": "He really wants to sing this song.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            71
+          ],
+          "answer": {
+            "source_key": "Il tient à chanter cette chanson.",
+            "accepted": [
+              "Il tient à chanter cette chanson."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex09-q05",
+          "number": 5,
+          "prompt": "She is holding a vase. __",
+          "source_raw_prompt": "She is holding a vase.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            71
+          ],
+          "answer": {
+            "source_key": "Elle tient un vase.",
+            "accepted": [
+              "Elle tient un vase."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex09-q06",
+          "number": 6,
+          "prompt": "He looks like his father. __",
+          "source_raw_prompt": "He looks like his father.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            71
+          ],
+          "answer": {
+            "source_key": "Il tient de son père.",
+            "accepted": [
+              "Il tient de son père."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex09-q07",
+          "number": 7,
+          "prompt": "It’s raining. __",
+          "source_raw_prompt": "It’s raining.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            71
+          ],
+          "answer": {
+            "source_key": "Il pleut.",
+            "accepted": [
+              "Il pleut."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex09-q08",
+          "number": 8,
+          "prompt": "Can you cook? __",
+          "source_raw_prompt": "Can you cook?\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            71
+          ],
+          "answer": {
+            "source_key": "Est-ce que vous savez faire la cuisine?",
+            "accepted": [
+              "Est-ce que vous savez faire la cuisine?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex09-q09",
+          "number": 9,
+          "prompt": "She has her car washed. __",
+          "source_raw_prompt": "She has her car washed.   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            71,
+            72
+          ],
+          "answer": {
+            "source_key": "Elle fait laver sa voiture.",
+            "accepted": [
+              "Elle fait laver sa voiture."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch04-ex09-q10",
+          "number": 10,
+          "prompt": "It’s cold. __",
+          "source_raw_prompt": "It’s cold.\n   _____________________________________________________________",
+          "pdf_pages": [
+            72
+          ],
+          "answer": {
+            "source_key": "Il fait froid.",
+            "accepted": [
+              "Il fait froid."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch04-s07"
+      ]
+    }
+  ]
+}

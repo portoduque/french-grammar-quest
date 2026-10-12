@@ -1,0 +1,77 @@
+{
+  "chapter": 16,
+  "title": "Chapter 16",
+  "source": {
+    "pdf_pages": [
+      195,
+      202
+    ],
+    "source_sha256": "297b92bc48e075449713c3b408ccf47de2466cfc6c4f4a25687a2a974276ae4d",
+    "answer_key_pdf_pages": [
+      513
+    ]
+  },
+  "topics": [
+    {
+      "id": "ch16-t01",
+      "title": "Formation of the passé simple",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch16-t02",
+      "title": "The passé simple of irregular verbs",
+      "exercise_ids": [
+        "ch16-ex01",
+        "ch16-ex02",
+        "ch16-ex03"
+      ]
+    }
+  ],
+  "exercise_ids": [
+    "ch16-ex01",
+    "ch16-ex02",
+    "ch16-ex03"
+  ],
+  "question_total": 30,
+  "validation": {
+    "source_pages": 8,
+    "source_chars": 12309,
+    "source_partition_complete": true,
+    "exercise_group_markers_detected": 3,
+    "questions_structured": 30,
+    "answer_key_entries_associated": 30,
+    "editorial_visual_review": "pending_glyph_by_glyph_check",
+    "theory_semantic_format": "partially_indexed_source_text_preserved",
+    "theory_source_segments": 1,
+    "text_semantic_format": "source-aligned_markdown_fenced_text_pending_table_visual_proof",
+    "answer_key_count": 30
+  },
+  "subtopics": [
+    {
+      "id": "ch16-s01",
+      "title": "Formation of the passé simple",
+      "parent_topic_id": "ch16-t01",
+      "pdf_pages": [
+        195,
+        195
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch16-s02",
+      "title": "The passé simple of irregular verbs",
+      "parent_topic_id": "ch16-t02",
+      "pdf_pages": [
+        198,
+        198
+      ],
+      "exercise_ids": [
+        "ch16-ex01",
+        "ch16-ex02",
+        "ch16-ex03"
+      ],
+      "kind": "grammar"
+    }
+  ]
+}

@@ -1,0 +1,887 @@
+{
+  "chapter": 27,
+  "status": "machine_transcribed_editorial_visual_review_pending",
+  "exercises": [
+    {
+      "id": "ch27-ex01",
+      "source": {
+        "chapter": 27,
+        "exercise": "27.1",
+        "pdf_pages": [
+          343
+        ]
+      },
+      "topic_ids": [
+        "ch27-t01"
+      ],
+      "instruction": "Compléter avec la préposition appropriée.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch27-ex01-q01",
+          "number": 1,
+          "prompt": "Elle aime jouer __ la clarinette.",
+          "source_raw_prompt": "Elle aime jouer _______ la clarinette.\n\n   ",
+          "pdf_pages": [
+            343
+          ],
+          "answer": {
+            "source_key": "de",
+            "accepted": [
+              "de"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex01-q02",
+          "number": 2,
+          "prompt": "Paul a décidé __ partir tôt.",
+          "source_raw_prompt": "Paul a décidé _______ partir tôt.\n\n   ",
+          "pdf_pages": [
+            343
+          ],
+          "answer": {
+            "source_key": "de",
+            "accepted": [
+              "de"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex01-q03",
+          "number": 3,
+          "prompt": "La chambre donne __ une cour très calme.",
+          "source_raw_prompt": "La chambre donne _______ une cour très calme.\n\n   ",
+          "pdf_pages": [
+            343
+          ],
+          "answer": {
+            "source_key": "sur",
+            "accepted": [
+              "sur"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex01-q04",
+          "number": 4,
+          "prompt": "Je crois __ la vertu médicinale des plantes.",
+          "source_raw_prompt": "Je crois _______ la vertu médicinale des plantes.\n\n   ",
+          "pdf_pages": [
+            343
+          ],
+          "answer": {
+            "source_key": "à",
+            "accepted": [
+              "à"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex01-q05",
+          "number": 5,
+          "prompt": "J’ai rêvé __ toi.",
+          "source_raw_prompt": "J’ai rêvé _______ toi.\n\n   ",
+          "pdf_pages": [
+            343
+          ],
+          "answer": {
+            "source_key": "de",
+            "accepted": [
+              "de"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex01-q06",
+          "number": 6,
+          "prompt": "Émilie tient __ ses livres.",
+          "source_raw_prompt": "Émilie tient _______ ses livres.\n\n   ",
+          "pdf_pages": [
+            343
+          ],
+          "answer": {
+            "source_key": "à",
+            "accepted": [
+              "à"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex01-q07",
+          "number": 7,
+          "prompt": "Hier, nous avons parlé __ toi.",
+          "source_raw_prompt": "Hier, nous avons parlé _______ toi.\n\n   ",
+          "pdf_pages": [
+            343
+          ],
+          "answer": {
+            "source_key": "de",
+            "accepted": [
+              "de"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex01-q08",
+          "number": 8,
+          "prompt": "Est-ce qu’il croit __ Dieu?",
+          "source_raw_prompt": "Est-ce qu’il croit _______ Dieu?\n\n   ",
+          "pdf_pages": [
+            343
+          ],
+          "answer": {
+            "source_key": "en",
+            "accepted": [
+              "en"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex01-q09",
+          "number": 9,
+          "prompt": "Nous nous sommes décidés __ prendre de très longues vacances.",
+          "source_raw_prompt": "Nous nous sommes décidés _______ prendre de très longues vacances.\n\n ",
+          "pdf_pages": [
+            343
+          ],
+          "answer": {
+            "source_key": "à",
+            "accepted": [
+              "à"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex01-q10",
+          "number": 10,
+          "prompt": "Elle m’a demandé __ fermer la porte.",
+          "source_raw_prompt": "Elle m’a demandé _______ fermer la porte.",
+          "pdf_pages": [
+            343,
+            344
+          ],
+          "answer": {
+            "source_key": "de",
+            "accepted": [
+              "de"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch27-s01"
+      ]
+    },
+    {
+      "id": "ch27-ex02",
+      "source": {
+        "chapter": 27,
+        "exercise": "27.2",
+        "pdf_pages": [
+          344
+        ]
+      },
+      "topic_ids": [
+        "ch27-t02"
+      ],
+      "instruction": "Traduire en anglais les phrases suivantes.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch27-ex02-q01",
+          "number": 1,
+          "prompt": "Paul me manque. __",
+          "source_raw_prompt": "Paul me manque.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            344
+          ],
+          "answer": {
+            "source_key": "I miss Paul.",
+            "accepted": [
+              "I miss Paul."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex02-q02",
+          "number": 2,
+          "prompt": "Mon frère a manqué à sa parole. __",
+          "source_raw_prompt": "Mon frère a manqué à sa parole.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            344
+          ],
+          "answer": {
+            "source_key": "My brother did not keep his word.",
+            "accepted": [
+              "My brother did not keep his word."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex02-q03",
+          "number": 3,
+          "prompt": "Cet écrivain manque de talent. __",
+          "source_raw_prompt": "Cet écrivain manque de talent.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            344
+          ],
+          "answer": {
+            "source_key": "This writer lacks talent.",
+            "accepted": [
+              "This writer lacks talent."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex02-q04",
+          "number": 4,
+          "prompt": "J’ai manqué le début du cours. __",
+          "source_raw_prompt": "J’ai manqué le début du cours.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            344
+          ],
+          "answer": {
+            "source_key": "I missed the beginning of the course.",
+            "accepted": [
+              "I missed the beginning of the course."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex02-q05",
+          "number": 5,
+          "prompt": "Le patron a manqué à ses devoirs. __",
+          "source_raw_prompt": "Le patron a manqué à ses devoirs.\n    _____________________________________________________________",
+          "pdf_pages": [
+            344,
+            345
+          ],
+          "answer": {
+            "source_key": "The boss failed to do his duty.",
+            "accepted": [
+              "The boss failed to do his duty."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 5,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch27-s02"
+      ]
+    },
+    {
+      "id": "ch27-ex03",
+      "source": {
+        "chapter": 27,
+        "exercise": "27.3",
+        "pdf_pages": [
+          345,
+          346
+        ]
+      },
+      "topic_ids": [
+        "ch27-t03"
+      ],
+      "instruction": "Traduire les phrases entre parenthèses en utilisant tu si nécessaire.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch27-ex03-q01",
+          "number": 1,
+          "prompt": "(Whatever you say), je reste sur ma position. __",
+          "source_raw_prompt": "(Whatever you say), je reste sur ma position.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            345
+          ],
+          "answer": {
+            "source_key": "Quoi que tu dises...",
+            "accepted": [
+              "Quoi que tu dises..."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex03-q02",
+          "number": 2,
+          "prompt": "(Whatever her decision), la mienne est prise. __",
+          "source_raw_prompt": "(Whatever her decision), la mienne est prise.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            345
+          ],
+          "answer": {
+            "source_key": "Quelle que soit sa décision...",
+            "accepted": [
+              "Quelle que soit sa décision..."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex03-q03",
+          "number": 3,
+          "prompt": "(Whoever you are), je ne t’autorise pas à me parler sur ce ton. __",
+          "source_raw_prompt": "(Whoever you are), je ne t’autorise pas à me parler sur ce ton.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            345
+          ],
+          "answer": {
+            "source_key": "Qui que tu sois...",
+            "accepted": [
+              "Qui que tu sois..."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex03-q04",
+          "number": 4,
+          "prompt": "(Wherever you go), j’irai avec toi. __",
+          "source_raw_prompt": "(Wherever you go), j’irai avec toi.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            345
+          ],
+          "answer": {
+            "source_key": "Où que tu ailles...",
+            "accepted": [
+              "Où que tu ailles..."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex03-q05",
+          "number": 5,
+          "prompt": "(Whoever she is), elle n’est pas autorisée à venir! __",
+          "source_raw_prompt": "(Whoever she is), elle n’est pas autorisée à venir!\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            345
+          ],
+          "answer": {
+            "source_key": "Qui qu’elle soit...",
+            "accepted": [
+              "Qui qu’elle soit..."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex03-q06",
+          "number": 6,
+          "prompt": "(Whatever you think), je m’en moque. __",
+          "source_raw_prompt": "(Whatever you think), je m’en moque.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            345
+          ],
+          "answer": {
+            "source_key": "Quoi que tu penses...",
+            "accepted": [
+              "Quoi que tu penses..."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex03-q07",
+          "number": 7,
+          "prompt": "(Wherever they live), je les retrouverai. __",
+          "source_raw_prompt": "(Wherever they live), je les retrouverai.\n    _____________________________________________________________   ",
+          "pdf_pages": [
+            345,
+            346
+          ],
+          "answer": {
+            "source_key": "Où qu’ils (elles) habitent...",
+            "accepted": [
+              "Où qu’ils (elles) habitent..."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex03-q08",
+          "number": 8,
+          "prompt": "(Whatever their suggestion), je trouve mon idée très bonne. __",
+          "source_raw_prompt": "(Whatever their suggestion), je trouve mon idée très bonne.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            346
+          ],
+          "answer": {
+            "source_key": "Quelle que soit leur suggestion...",
+            "accepted": [
+              "Quelle que soit leur suggestion..."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex03-q09",
+          "number": 9,
+          "prompt": "(Whoever you are), aide-moi. __",
+          "source_raw_prompt": "(Whoever you are), aide-moi.\n    _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            346
+          ],
+          "answer": {
+            "source_key": "Qui que tu sois...",
+            "accepted": [
+              "Qui que tu sois..."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex03-q10",
+          "number": 10,
+          "prompt": "(Whatever your mother may think), c’est ta décision. __",
+          "source_raw_prompt": "(Whatever your mother may think), c’est ta décision.\n    _____________________________________________________________",
+          "pdf_pages": [
+            346
+          ],
+          "answer": {
+            "source_key": "Quoi que ta mère puisse penser (Quoi que pense ta mère)...",
+            "accepted": [
+              "Quoi que ta mère puisse penser (Quoi que pense ta mère)..."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch27-s03"
+      ]
+    },
+    {
+      "id": "ch27-ex04",
+      "source": {
+        "chapter": 27,
+        "exercise": "27.4",
+        "pdf_pages": [
+          346,
+          347
+        ]
+      },
+      "topic_ids": [
+        "ch27-t04"
+      ],
+      "instruction": "Traduire les phrases suivantes en utilisant tu si nécessaire.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch27-ex04-q01",
+          "number": 1,
+          "prompt": "Even if it means not sleeping, I am going with you to that party. __",
+          "source_raw_prompt": "Even if it means not sleeping, I am going with you to that party.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            347
+          ],
+          "answer": {
+            "source_key": "Quitte à ne pas dormir, je vais avec toi à cette soirée.",
+            "accepted": [
+              "Quitte à ne pas dormir, je vais avec toi à cette soirée."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex04-q02",
+          "number": 2,
+          "prompt": "He will resign even if it means having financial problems. __",
+          "source_raw_prompt": "He will resign even if it means having financial problems.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            347
+          ],
+          "answer": {
+            "source_key": "Il démissionnera quitte à avoir des problèmes financiers.",
+            "accepted": [
+              "Il démissionnera quitte à avoir des problèmes financiers."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex04-q03",
+          "number": 3,
+          "prompt": "However intelligent he is, he is very lonely. __",
+          "source_raw_prompt": "However intelligent he is, he is very lonely.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            347
+          ],
+          "answer": {
+            "source_key": "Il a beau être intelligent, il est très seul.",
+            "accepted": [
+              "Il a beau être intelligent, il est très seul."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex04-q04",
+          "number": 4,
+          "prompt": "Although they are friends, they cannot talk politics together. __",
+          "source_raw_prompt": "Although they are friends, they cannot talk politics together.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            347
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) ont beau être ami(e)s, ils (elles) ne peuvent pas parler politique ensemble.",
+            "accepted": [
+              "Ils (Elles) ont beau être ami(e)s, ils (elles) ne peuvent pas parler politique ensemble."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex04-q05",
+          "number": 5,
+          "prompt": "I’ll take two years off even if it means losing my position. __",
+          "source_raw_prompt": "I’ll take two years off even if it means losing my position.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            347
+          ],
+          "answer": {
+            "source_key": "Je prendrai deux ans de congé quitte à perdre mon poste.",
+            "accepted": [
+              "Je prendrai deux ans de congé quitte à perdre mon poste."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex04-q06",
+          "number": 6,
+          "prompt": "However hard they tried, they failed. __",
+          "source_raw_prompt": "However hard they tried, they failed.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            347
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) ont eu beau essayer, ils (elles) ont échoué.",
+            "accepted": [
+              "Ils (Elles) ont eu beau essayer, ils (elles) ont échoué."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex04-q07",
+          "number": 7,
+          "prompt": "However magnificent this teapot is, it is not worth 200 euros. __",
+          "source_raw_prompt": "However magnificent this teapot is, it is not worth 200 euros.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            347
+          ],
+          "answer": {
+            "source_key": "Cette théière a beau être magnifique, elle ne vaut pas 200 euros.",
+            "accepted": [
+              "Cette théière a beau être magnifique, elle ne vaut pas 200 euros."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex04-q08",
+          "number": 8,
+          "prompt": "Although you are swearing to tell the truth, I still have doubts. __",
+          "source_raw_prompt": "Although you are swearing to tell the truth, I still have doubts.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            347
+          ],
+          "answer": {
+            "source_key": "Tu as beau jurer de dire la vérité, j’ai toujours des doutes.",
+            "accepted": [
+              "Tu as beau jurer de dire la vérité, j’ai toujours des doutes."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex04-q09",
+          "number": 9,
+          "prompt": "Even if it means bothering you, I need to ask you a few questions. __",
+          "source_raw_prompt": "Even if it means bothering you, I need to ask you a few questions.\n    _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            347
+          ],
+          "answer": {
+            "source_key": "Quitte à t’ennuyer, j’ai besoin de te poser quelques questions.",
+            "accepted": [
+              "Quitte à t’ennuyer, j’ai besoin de te poser quelques questions."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex04-q10",
+          "number": 10,
+          "prompt": "He will not leave the room even if it means bothering everyone. __",
+          "source_raw_prompt": "He will not leave the room even if it means bothering everyone.\n    _____________________________________________________________",
+          "pdf_pages": [
+            347,
+            348,
+            349,
+            350,
+            351
+          ],
+          "answer": {
+            "source_key": "Il ne quittera pas la pièce quitte à déranger tout le monde.",
+            "accepted": [
+              "Il ne quittera pas la pièce quitte à déranger tout le monde."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch27-s04"
+      ]
+    },
+    {
+      "id": "ch27-ex05",
+      "source": {
+        "chapter": 27,
+        "exercise": "27.5",
+        "pdf_pages": [
+          351,
+          352
+        ]
+      },
+      "topic_ids": [
+        "ch27-t16"
+      ],
+      "instruction": "Relier les deux propositions par l’élément qui convient: afin que, avant que, bien que, car, de façon que, où, pendant que, plus... moins, quand bien même, que, trop… pour que... . Plusieurs réponses sont parfois possibles.",
+      "interaction_type": "free_response",
+      "questions": [
+        {
+          "id": "ch27-ex05-q01",
+          "number": 1,
+          "prompt": "Victoire écoute toujours de la musique __ elle fait du yoga.",
+          "source_raw_prompt": "Victoire écoute toujours de la musique ________________ elle fait du yoga.\n\n   ",
+          "pdf_pages": [
+            351
+          ],
+          "answer": {
+            "source_key": "pendant que; quand",
+            "accepted": [
+              "pendant que; quand"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex05-q02",
+          "number": 2,
+          "prompt": "Je suis heureux __ vous me rendiez visite.",
+          "source_raw_prompt": "Je suis heureux ________________ vous me rendiez visite.\n\n   ",
+          "pdf_pages": [
+            351
+          ],
+          "answer": {
+            "source_key": "que",
+            "accepted": [
+              "que"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex05-q03",
+          "number": 3,
+          "prompt": "Les comédiens répètent souvent la pièce __ la représentation soit parfaite.",
+          "source_raw_prompt": "Les comédiens répètent souvent la pièce ________________ la représentation\n      soit parfaite.\n\n   ",
+          "pdf_pages": [
+            351
+          ],
+          "answer": {
+            "source_key": "afin que; pour que",
+            "accepted": [
+              "afin que; pour que"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex05-q04",
+          "number": 4,
+          "prompt": "Le musée __ j’ai perdu ma montre est immense.",
+          "source_raw_prompt": "Le musée ________________ j’ai perdu ma montre est immense. ",
+          "pdf_pages": [
+            351,
+            352
+          ],
+          "answer": {
+            "source_key": "où",
+            "accepted": [
+              "où"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex05-q05",
+          "number": 5,
+          "prompt": "L’orateur se placera sur une estrade __ tout le monde l’entende.",
+          "source_raw_prompt": "L’orateur se placera sur une estrade ________________ tout le monde\n    l’entende.\n\n ",
+          "pdf_pages": [
+            352
+          ],
+          "answer": {
+            "source_key": "de manière que; de sorte que; en sorte que; si bien que; de façon que",
+            "accepted": [
+              "de manière que; de sorte que; en sorte que; si bien que; de façon que"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex05-q06",
+          "number": 6,
+          "prompt": "__ on lui offrirait cette voiture, Joséphine n’en voudrait pas.",
+          "source_raw_prompt": "________________ on lui offrirait cette voiture, Joséphine n’en voudrait pas.\n\n ",
+          "pdf_pages": [
+            352
+          ],
+          "answer": {
+            "source_key": "Quand bien même",
+            "accepted": [
+              "Quand bien même"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex05-q07",
+          "number": 7,
+          "prompt": "Tu voulais voir cette exposition __ __ nous quittions la ville.",
+          "source_raw_prompt": "Tu voulais voir cette exposition _______ _______ nous quittions la ville.\n\n ",
+          "pdf_pages": [
+            352
+          ],
+          "answer": {
+            "source_key": "avant que",
+            "accepted": [
+              "avant que"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex05-q08",
+          "number": 8,
+          "prompt": "Les journalistes sont __ nombreux __ le ministre les reçoive tous.",
+          "source_raw_prompt": "Les journalistes sont ________________ nombreux ________________ le\n    ministre les reçoive tous.\n\n ",
+          "pdf_pages": [
+            352
+          ],
+          "answer": {
+            "source_key": "trop... pour que",
+            "accepted": [
+              "trop... pour que"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex05-q09",
+          "number": 9,
+          "prompt": "__ Héléna fait les magasins __ elle a d’argent.",
+          "source_raw_prompt": "________________ Héléna fait les magasins ________________ elle a\n    d’argent.\n\n",
+          "pdf_pages": [
+            352
+          ],
+          "answer": {
+            "source_key": "Plus... moins",
+            "accepted": [
+              "Plus... moins"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch27-ex05-q10",
+          "number": 10,
+          "prompt": "__ le Cirque du Soleil arrive demain, je ne pourrai assister à aucune représentation, __ je suis malade.",
+          "source_raw_prompt": "________________ le Cirque du Soleil arrive demain, je ne pourrai assister à\n   aucune représentation, ________________ je suis malade.",
+          "pdf_pages": [
+            352
+          ],
+          "answer": {
+            "source_key": "Bien que... car",
+            "accepted": [
+              "Bien que... car"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch27-s16"
+      ]
+    }
+  ]
+}

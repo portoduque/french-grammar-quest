@@ -27,3 +27,5 @@ jobs:
         run: |
           python scripts/validate_content.py
           python scripts/validate_content.py --private .
+      - name: Verify Phase B Chapters 02–28 and reference coverage
+        run: python scripts/validate_phase_b.py

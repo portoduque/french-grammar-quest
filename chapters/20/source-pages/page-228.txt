@@ -1,0 +1,34 @@
+ une carte                 a map
+ une route                 a road
+ une autoroute             a highway
+ une côte                  a coast(line)
+ une plaine                a plain
+ une vallée                a valley
+ une montagne             a mountain
+ une colline                a hill
+ une île                   an island
+ un pont                  a bridge
+ la mer                        the sea
+ un océan                 an ocean
+ une rivière                a river (tributary)
+ un fleuve                 a river (flowing into the sea)
+ un ruisseau               a brook, a stream
+ le nord                      north
+ le sud                       south
+ l’est (m.)                      east
+ l’ouest (m.)                 west
+ un peuple                a people, a nation
+ une tribu                 a tribe
+ autochtone                   native
+ étranger, étrangère          foreign
+ inconnu(e)                    foreign, unknown
+
+
+The indefinite and partitive articles with nouns
+The indefinite articles are un (masculine singular) (a), une (feminine singular) (a),
+and des (both masculine and feminine plural) (some).
+
+     Masculine
+     un projet                      a project, a plan
+     un bâtiment                    a building
+     un immeuble                   an apartment building

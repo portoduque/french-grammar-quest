@@ -1,0 +1,135 @@
+{
+  "chapter": 11,
+  "title": "Chapter 11",
+  "source": {
+    "pdf_pages": [
+      134,
+      147
+    ],
+    "source_sha256": "297b92bc48e075449713c3b408ccf47de2466cfc6c4f4a25687a2a974276ae4d",
+    "answer_key_pdf_pages": [
+      508,
+      509
+    ]
+  },
+  "topics": [
+    {
+      "id": "ch11-t01",
+      "title": "The present conditional",
+      "exercise_ids": [
+        "ch11-ex01"
+      ]
+    },
+    {
+      "id": "ch11-t02",
+      "title": "Uses of the present conditional",
+      "exercise_ids": [
+        "ch11-ex02",
+        "ch11-ex03",
+        "ch11-ex04",
+        "ch11-ex05",
+        "ch11-ex06"
+      ]
+    },
+    {
+      "id": "ch11-t03",
+      "title": "The past conditional",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch11-t04",
+      "title": "Uses of the past conditional",
+      "exercise_ids": [
+        "ch11-ex07",
+        "ch11-ex08",
+        "ch11-ex09",
+        "ch11-ex10"
+      ]
+    }
+  ],
+  "exercise_ids": [
+    "ch11-ex01",
+    "ch11-ex02",
+    "ch11-ex03",
+    "ch11-ex04",
+    "ch11-ex05",
+    "ch11-ex06",
+    "ch11-ex07",
+    "ch11-ex08",
+    "ch11-ex09",
+    "ch11-ex10"
+  ],
+  "question_total": 90,
+  "validation": {
+    "source_pages": 14,
+    "source_chars": 21791,
+    "source_partition_complete": true,
+    "exercise_group_markers_detected": 10,
+    "questions_structured": 90,
+    "answer_key_entries_associated": 90,
+    "editorial_visual_review": "pending_glyph_by_glyph_check",
+    "theory_semantic_format": "partially_indexed_source_text_preserved",
+    "theory_source_segments": 3,
+    "text_semantic_format": "source-aligned_markdown_fenced_text_pending_table_visual_proof",
+    "answer_key_count": 90
+  },
+  "subtopics": [
+    {
+      "id": "ch11-s01",
+      "title": "The present conditional",
+      "parent_topic_id": "ch11-t01",
+      "pdf_pages": [
+        134,
+        134
+      ],
+      "exercise_ids": [
+        "ch11-ex01"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch11-s02",
+      "title": "Uses of the present conditional",
+      "parent_topic_id": "ch11-t02",
+      "pdf_pages": [
+        137,
+        137
+      ],
+      "exercise_ids": [
+        "ch11-ex02",
+        "ch11-ex03",
+        "ch11-ex04",
+        "ch11-ex05",
+        "ch11-ex06"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch11-s03",
+      "title": "The past conditional",
+      "parent_topic_id": "ch11-t03",
+      "pdf_pages": [
+        142,
+        142
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch11-s04",
+      "title": "Uses of the past conditional",
+      "parent_topic_id": "ch11-t04",
+      "pdf_pages": [
+        143,
+        143
+      ],
+      "exercise_ids": [
+        "ch11-ex07",
+        "ch11-ex08",
+        "ch11-ex09",
+        "ch11-ex10"
+      ],
+      "kind": "grammar"
+    }
+  ]
+}

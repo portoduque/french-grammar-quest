@@ -1,0 +1,116 @@
+{
+  "chapter": 24,
+  "title": "Chapter 24",
+  "source": {
+    "pdf_pages": [
+      298,
+      312
+    ],
+    "source_sha256": "297b92bc48e075449713c3b408ccf47de2466cfc6c4f4a25687a2a974276ae4d",
+    "answer_key_pdf_pages": [
+      519,
+      520
+    ]
+  },
+  "topics": [
+    {
+      "id": "ch24-t01",
+      "title": "Lequel",
+      "exercise_ids": [
+        "ch24-ex01",
+        "ch24-ex02",
+        "ch24-ex03",
+        "ch24-ex04"
+      ]
+    },
+    {
+      "id": "ch24-t02",
+      "title": "Dont",
+      "exercise_ids": [
+        "ch24-ex05",
+        "ch24-ex06"
+      ]
+    },
+    {
+      "id": "ch24-t03",
+      "title": "Ce que, ce qui, ce dont, ce à quoi",
+      "exercise_ids": [
+        "ch24-ex07",
+        "ch24-ex08",
+        "ch24-ex09"
+      ]
+    }
+  ],
+  "exercise_ids": [
+    "ch24-ex01",
+    "ch24-ex02",
+    "ch24-ex03",
+    "ch24-ex04",
+    "ch24-ex05",
+    "ch24-ex06",
+    "ch24-ex07",
+    "ch24-ex08",
+    "ch24-ex09"
+  ],
+  "question_total": 85,
+  "validation": {
+    "source_pages": 15,
+    "source_chars": 25078,
+    "source_partition_complete": true,
+    "exercise_group_markers_detected": 9,
+    "questions_structured": 85,
+    "answer_key_entries_associated": 85,
+    "editorial_visual_review": "pending_glyph_by_glyph_check",
+    "theory_semantic_format": "partially_indexed_source_text_preserved",
+    "theory_source_segments": 4,
+    "text_semantic_format": "source-aligned_markdown_fenced_text_pending_table_visual_proof",
+    "answer_key_count": 85
+  },
+  "subtopics": [
+    {
+      "id": "ch24-s01",
+      "title": "Lequel",
+      "parent_topic_id": "ch24-t01",
+      "pdf_pages": [
+        303,
+        303
+      ],
+      "exercise_ids": [
+        "ch24-ex01",
+        "ch24-ex02",
+        "ch24-ex03",
+        "ch24-ex04"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch24-s02",
+      "title": "Dont",
+      "parent_topic_id": "ch24-t02",
+      "pdf_pages": [
+        306,
+        306
+      ],
+      "exercise_ids": [
+        "ch24-ex05",
+        "ch24-ex06"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch24-s03",
+      "title": "Ce que, ce qui, ce dont, ce à quoi",
+      "parent_topic_id": "ch24-t03",
+      "pdf_pages": [
+        308,
+        308
+      ],
+      "exercise_ids": [
+        "ch24-ex07",
+        "ch24-ex08",
+        "ch24-ex09"
+      ],
+      "kind": "grammar"
+    }
+  ]
+}

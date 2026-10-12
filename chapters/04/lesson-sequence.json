@@ -1,0 +1,219 @@
+[
+  {
+    "pdf_page": 60,
+    "kind": "theory",
+    "content_id": "ch04-p060-f01",
+    "page_char_start": 0,
+    "page_char_end": 1317,
+    "chars": 1317
+  },
+  {
+    "pdf_page": 61,
+    "kind": "theory",
+    "content_id": "ch04-p061-f01",
+    "page_char_start": 0,
+    "page_char_end": 1440,
+    "chars": 1440
+  },
+  {
+    "pdf_page": 62,
+    "kind": "theory",
+    "content_id": "ch04-p062-f01",
+    "page_char_start": 0,
+    "page_char_end": 973,
+    "chars": 973
+  },
+  {
+    "pdf_page": 62,
+    "kind": "exercise",
+    "content_id": "ch04-p062-f02",
+    "page_char_start": 973,
+    "page_char_end": 1594,
+    "chars": 621,
+    "exercise_id": "ch04-ex01"
+  },
+  {
+    "pdf_page": 63,
+    "kind": "exercise",
+    "content_id": "ch04-p063-f01",
+    "page_char_start": 0,
+    "page_char_end": 51,
+    "chars": 51,
+    "exercise_id": "ch04-ex01"
+  },
+  {
+    "pdf_page": 63,
+    "kind": "exercise",
+    "content_id": "ch04-p063-f02",
+    "page_char_start": 51,
+    "page_char_end": 1163,
+    "chars": 1112,
+    "exercise_id": "ch04-ex02"
+  },
+  {
+    "pdf_page": 64,
+    "kind": "exercise",
+    "content_id": "ch04-p064-f01",
+    "page_char_start": 0,
+    "page_char_end": 641,
+    "chars": 641,
+    "exercise_id": "ch04-ex02"
+  },
+  {
+    "pdf_page": 64,
+    "kind": "theory",
+    "content_id": "ch04-p064-f02",
+    "page_char_start": 641,
+    "page_char_end": 1058,
+    "chars": 417
+  },
+  {
+    "pdf_page": 64,
+    "kind": "exercise",
+    "content_id": "ch04-p064-f03",
+    "page_char_start": 1058,
+    "page_char_end": 1561,
+    "chars": 503,
+    "exercise_id": "ch04-ex03"
+  },
+  {
+    "pdf_page": 65,
+    "kind": "exercise",
+    "content_id": "ch04-p065-f01",
+    "page_char_start": 0,
+    "page_char_end": 107,
+    "chars": 107,
+    "exercise_id": "ch04-ex03"
+  },
+  {
+    "pdf_page": 65,
+    "kind": "exercise",
+    "content_id": "ch04-p065-f02",
+    "page_char_start": 107,
+    "page_char_end": 1117,
+    "chars": 1010,
+    "exercise_id": "ch04-ex04"
+  },
+  {
+    "pdf_page": 66,
+    "kind": "exercise",
+    "content_id": "ch04-p066-f01",
+    "page_char_start": 0,
+    "page_char_end": 2,
+    "chars": 2,
+    "exercise_id": "ch04-ex04"
+  },
+  {
+    "pdf_page": 66,
+    "kind": "exercise",
+    "content_id": "ch04-p066-f02",
+    "page_char_start": 2,
+    "page_char_end": 1150,
+    "chars": 1148,
+    "exercise_id": "ch04-ex05"
+  },
+  {
+    "pdf_page": 66,
+    "kind": "theory",
+    "content_id": "ch04-p066-f03",
+    "page_char_start": 1150,
+    "page_char_end": 1210,
+    "chars": 60
+  },
+  {
+    "pdf_page": 67,
+    "kind": "theory",
+    "content_id": "ch04-p067-f01",
+    "page_char_start": 0,
+    "page_char_end": 1757,
+    "chars": 1757
+  },
+  {
+    "pdf_page": 67,
+    "kind": "exercise",
+    "content_id": "ch04-p067-f02",
+    "page_char_start": 1757,
+    "page_char_end": 1881,
+    "chars": 124,
+    "exercise_id": "ch04-ex06"
+  },
+  {
+    "pdf_page": 68,
+    "kind": "exercise",
+    "content_id": "ch04-p068-f01",
+    "page_char_start": 0,
+    "page_char_end": 344,
+    "chars": 344,
+    "exercise_id": "ch04-ex06"
+  },
+  {
+    "pdf_page": 68,
+    "kind": "theory",
+    "content_id": "ch04-p068-f02",
+    "page_char_start": 344,
+    "page_char_end": 1696,
+    "chars": 1352
+  },
+  {
+    "pdf_page": 69,
+    "kind": "theory",
+    "content_id": "ch04-p069-f01",
+    "page_char_start": 0,
+    "page_char_end": 755,
+    "chars": 755
+  },
+  {
+    "pdf_page": 69,
+    "kind": "exercise",
+    "content_id": "ch04-p069-f02",
+    "page_char_start": 755,
+    "page_char_end": 1487,
+    "chars": 732,
+    "exercise_id": "ch04-ex07"
+  },
+  {
+    "pdf_page": 70,
+    "kind": "exercise",
+    "content_id": "ch04-p070-f01",
+    "page_char_start": 0,
+    "page_char_end": 732,
+    "chars": 732,
+    "exercise_id": "ch04-ex07"
+  },
+  {
+    "pdf_page": 70,
+    "kind": "exercise",
+    "content_id": "ch04-p070-f02",
+    "page_char_start": 732,
+    "page_char_end": 1474,
+    "chars": 742,
+    "exercise_id": "ch04-ex08"
+  },
+  {
+    "pdf_page": 71,
+    "kind": "exercise",
+    "content_id": "ch04-p071-f01",
+    "page_char_start": 0,
+    "page_char_end": 297,
+    "chars": 297,
+    "exercise_id": "ch04-ex08"
+  },
+  {
+    "pdf_page": 71,
+    "kind": "exercise",
+    "content_id": "ch04-p071-f02",
+    "page_char_start": 297,
+    "page_char_end": 1217,
+    "chars": 920,
+    "exercise_id": "ch04-ex09"
+  },
+  {
+    "pdf_page": 72,
+    "kind": "exercise",
+    "content_id": "ch04-p072-f01",
+    "page_char_start": 0,
+    "page_char_end": 145,
+    "chars": 145,
+    "exercise_id": "ch04-ex09"
+  }
+]

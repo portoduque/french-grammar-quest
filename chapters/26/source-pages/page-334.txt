@@ -1,0 +1,41 @@
+  EXERCICE  26·4
+
+ Écrire les nombres suivants en toutes lettres.
+
+   1. 101 ____________________________________________
+
+   2. 114 ____________________________________________
+
+   3. 126 ____________________________________________
+
+   4. 139 ____________________________________________
+
+   5. 145 ____________________________________________
+
+   6. 156 ____________________________________________
+
+   7. 160 ____________________________________________
+
+   8. 178 ____________________________________________
+
+   9. 181 ____________________________________________
+
+ 10. 199 ____________________________________________
+
+
+
+  Add an -s to cent greater than one hundred (deux cents, trois cents), except when
+cent is followed by another number.
+
+      deux cents                       two hundred
+        trois cents                           three hundred
+      quatre cents                        four hundred
+       cinq cents                               five hundred
+        six cents                                six hundred
+       sept cents                         seven hundred
+       huit cents                            eight hundred
+      neuf cents                          nine hundred
+
+  Note the following examples:
+
+       huit cent vingt-quatre                    eight hundred twenty-four

@@ -1,0 +1,1849 @@
+{
+  "chapter": 7,
+  "status": "machine_transcribed_editorial_visual_review_pending",
+  "exercises": [
+    {
+      "id": "ch07-ex01",
+      "source": {
+        "chapter": 7,
+        "exercise": "7.1",
+        "pdf_pages": [
+          91,
+          92
+        ]
+      },
+      "topic_ids": [
+        "ch07-t02"
+      ],
+      "instruction": "Mettre les verbes entre parenthèses au passé composé.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch07-ex01-q01",
+          "number": 1,
+          "prompt": "Il (inviter) __ beaucoup de monde.",
+          "source_raw_prompt": "Il (inviter) ________________ beaucoup de monde.\n\n   ",
+          "pdf_pages": [
+            91
+          ],
+          "answer": {
+            "source_key": "a invité",
+            "accepted": [
+              "a invité"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex01-q02",
+          "number": 2,
+          "prompt": "Nous (refuser) __ leur invitation.",
+          "source_raw_prompt": "Nous (refuser) ________________ leur invitation.\n\n   ",
+          "pdf_pages": [
+            91
+          ],
+          "answer": {
+            "source_key": "avons refusé",
+            "accepted": [
+              "avons refusé"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex01-q03",
+          "number": 3,
+          "prompt": "Tu (travailler) __ hier matin?",
+          "source_raw_prompt": "Tu (travailler) ________________ hier matin?\n\n   ",
+          "pdf_pages": [
+            91
+          ],
+          "answer": {
+            "source_key": "as travaillé",
+            "accepted": [
+              "as travaillé"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex01-q04",
+          "number": 4,
+          "prompt": "Il (comprendre) __ l’intrigue.",
+          "source_raw_prompt": "Il (comprendre) ________________ l’intrigue.\n\n   ",
+          "pdf_pages": [
+            91
+          ],
+          "answer": {
+            "source_key": "a compris",
+            "accepted": [
+              "a compris"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex01-q05",
+          "number": 5,
+          "prompt": "Elle (apporter) __ un joli cadeau.",
+          "source_raw_prompt": "Elle (apporter) ________________ un joli cadeau.\n\n   ",
+          "pdf_pages": [
+            91
+          ],
+          "answer": {
+            "source_key": "a apporté",
+            "accepted": [
+              "a apporté"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex01-q06",
+          "number": 6,
+          "prompt": "Je (voyager) __ avec Rémi.",
+          "source_raw_prompt": "Je (voyager) ________________ avec Rémi.\n\n   ",
+          "pdf_pages": [
+            91
+          ],
+          "answer": {
+            "source_key": "J’ai voyagé",
+            "accepted": [
+              "J’ai voyagé"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex01-q07",
+          "number": 7,
+          "prompt": "Vous (louer) __ une voiture?",
+          "source_raw_prompt": "Vous (louer) ________________ une voiture?\n\n   ",
+          "pdf_pages": [
+            91
+          ],
+          "answer": {
+            "source_key": "avez loué",
+            "accepted": [
+              "avez loué"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex01-q08",
+          "number": 8,
+          "prompt": "Elle (sous-titrer) __ le film.",
+          "source_raw_prompt": "Elle (sous-titrer) ________________ le film.\n\n   ",
+          "pdf_pages": [
+            91
+          ],
+          "answer": {
+            "source_key": "a sous-titré",
+            "accepted": [
+              "a sous-titré"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex01-q09",
+          "number": 9,
+          "prompt": "Vous (téléphoner) __ à vos cousins.",
+          "source_raw_prompt": "Vous (téléphoner) ________________ à vos cousins. ",
+          "pdf_pages": [
+            91,
+            92
+          ],
+          "answer": {
+            "source_key": "avez téléphoné",
+            "accepted": [
+              "avez téléphoné"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex01-q10",
+          "number": 10,
+          "prompt": "Tu (assister) __ à la pièce de théâtre. Remember that the past participle of regular -ir and -re verbs is formed by dropping the infinitive endings -ir and -re and adding the appropriate ending -i or -u. finir to finish fini finished choisir to choose choisi chosen vendre to sell vendu sold perdre to lose perdu lost In the passé composé of verbs conjugated with avoir, the past participle agrees with the direct object of the verb, but only in sentences where the direct object noun or pronoun precedes the verb. For example: Il a pris la bonne décision. He made the right decision. Il l’a prise. He made it. Elle a compris ses erreurs. She understood her mistakes. Elle les a comprises. She understood them.",
+          "source_raw_prompt": "Tu (assister) ________________ à la pièce de théâtre.\n\n\n  Remember that the past participle of regular -ir and -re verbs is formed by\ndropping the infinitive endings -ir and -re and adding the appropriate ending -i or -u.\n\n        finir               to finish                  fini             finished\n       choisir            to choose               choisi         chosen\n      vendre            to sell              vendu          sold\n      perdre            to lose              perdu            lost\n\n   In the passé composé of verbs conjugated with avoir, the past participle agrees\nwith the direct object of the verb, but only in sentences where the direct object noun\nor pronoun precedes the verb. For example:\n\n          Il a pris la bonne décision.        He made the right decision.\n          Il l’a prise.                   He made it.\n       Elle a compris ses erreurs.          She understood her mistakes.\n       Elle les a comprises.               She understood them.\n\n\n\n  ",
+          "pdf_pages": [
+            92
+          ],
+          "answer": {
+            "source_key": "as assisté",
+            "accepted": [
+              "as assisté"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch07-s02"
+      ]
+    },
+    {
+      "id": "ch07-ex02",
+      "source": {
+        "chapter": 7,
+        "exercise": "7.2",
+        "pdf_pages": [
+          92,
+          93
+        ]
+      },
+      "topic_ids": [
+        "ch07-t02"
+      ],
+      "instruction": "Mettre les verbes entre parenthèses au passé composé.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch07-ex02-q01",
+          "number": 1,
+          "prompt": "Ils (investir) __ une grosse somme.",
+          "source_raw_prompt": "Ils (investir) ________________ une grosse somme.\n\n   ",
+          "pdf_pages": [
+            92
+          ],
+          "answer": {
+            "source_key": "ont investi",
+            "accepted": [
+              "ont investi"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex02-q02",
+          "number": 2,
+          "prompt": "Le public (applaudir) __ les comédiens.",
+          "source_raw_prompt": "Le public (applaudir) ________________ les comédiens.\n\n   ",
+          "pdf_pages": [
+            92
+          ],
+          "answer": {
+            "source_key": "a applaudi",
+            "accepted": [
+              "a applaudi"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex02-q03",
+          "number": 3,
+          "prompt": "Elles (réfléchir) __ toute la journée.",
+          "source_raw_prompt": "Elles (réfléchir) ________________ toute la journée.\n\n   ",
+          "pdf_pages": [
+            92
+          ],
+          "answer": {
+            "source_key": "ont réfléchi",
+            "accepted": [
+              "ont réfléchi"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex02-q04",
+          "number": 4,
+          "prompt": "La voiture (ralentir) __ au carrefour.",
+          "source_raw_prompt": "La voiture (ralentir) ________________ au carrefour.\n\n   ",
+          "pdf_pages": [
+            92
+          ],
+          "answer": {
+            "source_key": "a ralenti",
+            "accepted": [
+              "a ralenti"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex02-q05",
+          "number": 5,
+          "prompt": "Ils (attendre) __ le train une demi-heure.",
+          "source_raw_prompt": "Ils (attendre) ________________ le train une demi-heure.\n\n   ",
+          "pdf_pages": [
+            92
+          ],
+          "answer": {
+            "source_key": "ont attendu",
+            "accepted": [
+              "ont attendu"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex02-q06",
+          "number": 6,
+          "prompt": "Nous (réussir) __ à les convaincre.",
+          "source_raw_prompt": "Nous (réussir) ________________ à les convaincre.\n\n   ",
+          "pdf_pages": [
+            92
+          ],
+          "answer": {
+            "source_key": "avons réussi",
+            "accepted": [
+              "avons réussi"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex02-q07",
+          "number": 7,
+          "prompt": "Elle (perdre) __ ses bijoux en vacances.",
+          "source_raw_prompt": "Elle (perdre) ________________ ses bijoux en vacances.\n\n   ",
+          "pdf_pages": [
+            92
+          ],
+          "answer": {
+            "source_key": "a perdu",
+            "accepted": [
+              "a perdu"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex02-q08",
+          "number": 8,
+          "prompt": "Tu (grandir) __ en Europe?",
+          "source_raw_prompt": "Tu (grandir) ________________ en Europe? ",
+          "pdf_pages": [
+            92,
+            93
+          ],
+          "answer": {
+            "source_key": "as grandi",
+            "accepted": [
+              "as grandi"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex02-q09",
+          "number": 9,
+          "prompt": "Elle (sentir) __ une bonne odeur venant de la cuisine.",
+          "source_raw_prompt": "Elle (sentir) ________________ une bonne odeur venant de la cuisine.\n\n",
+          "pdf_pages": [
+            93
+          ],
+          "answer": {
+            "source_key": "a senti",
+            "accepted": [
+              "a senti"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex02-q10",
+          "number": 10,
+          "prompt": "Le théâtre (vendre) __ beaucoup de billets.",
+          "source_raw_prompt": "Le théâtre (vendre) ________________ beaucoup de billets.\n\n\n\n\n ",
+          "pdf_pages": [
+            93
+          ],
+          "answer": {
+            "source_key": "a vendu",
+            "accepted": [
+              "a vendu"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch07-s02"
+      ]
+    },
+    {
+      "id": "ch07-ex03",
+      "source": {
+        "chapter": 7,
+        "exercise": "7.3",
+        "pdf_pages": [
+          93,
+          94,
+          95
+        ]
+      },
+      "topic_ids": [
+        "ch07-t02"
+      ],
+      "instruction": "Traduire les phrases suivantes.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch07-ex03-q01",
+          "number": 1,
+          "prompt": "They sold the house in France. __",
+          "source_raw_prompt": "They sold the house in France.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            93
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) ont vendu la maison en France.",
+            "accepted": [
+              "Ils (Elles) ont vendu la maison en France."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex03-q02",
+          "number": 2,
+          "prompt": "I waited ten minutes. __",
+          "source_raw_prompt": "I waited ten minutes.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            93
+          ],
+          "answer": {
+            "source_key": "J’ai attendu dix minutes.",
+            "accepted": [
+              "J’ai attendu dix minutes."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex03-q03",
+          "number": 3,
+          "prompt": "He finished the novel. __",
+          "source_raw_prompt": "He finished the novel.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            93
+          ],
+          "answer": {
+            "source_key": "Il a fini le roman.",
+            "accepted": [
+              "Il a fini le roman."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex03-q04",
+          "number": 4,
+          "prompt": "She lost her dictionary. __",
+          "source_raw_prompt": "She lost her dictionary.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            93
+          ],
+          "answer": {
+            "source_key": "Elle a perdu son dictionnaire.",
+            "accepted": [
+              "Elle a perdu son dictionnaire."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex03-q05",
+          "number": 5,
+          "prompt": "I called Marc. __",
+          "source_raw_prompt": "I called Marc.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            93
+          ],
+          "answer": {
+            "source_key": "J’ai appelé Marc.",
+            "accepted": [
+              "J’ai appelé Marc."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex03-q06",
+          "number": 6,
+          "prompt": "They served an elegant dinner. __",
+          "source_raw_prompt": "They served an elegant dinner.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            93
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) ont servi un dîner élégant.",
+            "accepted": [
+              "Ils (Elles) ont servi un dîner élégant."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex03-q07",
+          "number": 7,
+          "prompt": "He bought a car. __",
+          "source_raw_prompt": "He bought a car.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            93
+          ],
+          "answer": {
+            "source_key": "Il a acheté une voiture.",
+            "accepted": [
+              "Il a acheté une voiture."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex03-q08",
+          "number": 8,
+          "prompt": "I chose a very good cheese. __",
+          "source_raw_prompt": "I chose a very good cheese.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            93
+          ],
+          "answer": {
+            "source_key": "J’ai choisi un très bon fromage.",
+            "accepted": [
+              "J’ai choisi un très bon fromage."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex03-q09",
+          "number": 9,
+          "prompt": "We watched the film. __",
+          "source_raw_prompt": "We watched the film.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            93
+          ],
+          "answer": {
+            "source_key": "Nous avons regardé le film.",
+            "accepted": [
+              "Nous avons regardé le film."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex03-q10",
+          "number": 10,
+          "prompt": "They applauded the actor. __ Irregular past participles Many verbs conjugated with avoir in the passé composé have irregular past participles that you simply have to learn by heart. Il a appris le français à Strasbourg. He learned French in Strasbourg. Nous avons compris la situation. We understood the situation. Elle m’a dit bonjour. She said hello to me. Here is a sample list of irregular past participles: acquérir to acquire acquis acquired apprendre to learn appris learned avoir to have eu had boire to drink bu drunk comprendre to understand compris understood conduire to drive conduit driven craindre to fear craint feared devoir must, to have to dû had to dire to say dit said écrire to write écrit written être to be été been, was faire to do, to make fait done, made falloir to have to fallu had to lire to read lu read mettre to put mis put mourir to die mort dead naître to be born né born offrir to offer offert offered ouvrir to open ouvert opened peindre to paint peint painted plaire to please plu pleased pleuvoir to rain plu rained pouvoir can, to be able to pu could prendre to take pris taken recevoir to receive reçu received rire to laugh ri laughed savoir to know su known suivre to follow suivi followed vivre to live vécu lived voir to see vu seen vouloir to want voulu wanted",
+          "source_raw_prompt": "They applauded the actor.\n   _____________________________________________________________Irregular past participles\nMany verbs conjugated with avoir in the passé composé have  irregular past\nparticiples that you simply have to learn by heart.\n\n          Il a appris le français à Strasbourg.    He learned French in Strasbourg.\n      Nous avons compris la situation.     We understood the situation.\n       Elle m’a dit bonjour.                 She said hello to me.\n\n  Here is a sample list of irregular past participles:\n\n       acquérir            to acquire                acquis      acquired\n      apprendre          to learn                  appris      learned\n       avoir                to have                eu         had\n       boire                to drink              bu         drunk\n      comprendre        to understand           compris     understood\n      conduire            to drive                 conduit     driven\n       craindre            to fear                    craint       feared\n       devoir             must, to have to         dû         had to\n       dire                 to say                       dit          said\n       écrire               to write                     écrit         written\n       être                 to be                      été          been, was\n        faire                to do, to make               fait         done, made\n        falloir               to have to                  fallu       had to\n        lire                  to read                    lu          read\n      mettre              to put                  mis         put\n      mourir              to die                 mort       dead\n       naître               to be born              né          born\n        offrir               to offer                     offert        offered\n       ouvrir              to open                  ouvert      opened\n      peindre             to paint                   peint        painted\n       plaire               to please                plu          pleased\n       pleuvoir            to rain                  plu          rained\n      pouvoir            can, to be able to        pu          could\n      prendre             to take                    pris         taken\n       recevoir            to receive                reçu         received      rire                 to laugh                      ri          laughed\n      savoir               to know                 su         known\n      suivre               to follow                   suivi        followed\n      vivre                to live                  vécu         lived\n      voir                 to see                 vu          seen\n      vouloir              to want                 voulu       wanted\n\n\n\n ",
+          "pdf_pages": [
+            93,
+            94,
+            95
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) ont applaudi le comédien.",
+            "accepted": [
+              "Ils (Elles) ont applaudi le comédien."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch07-s02"
+      ]
+    },
+    {
+      "id": "ch07-ex04",
+      "source": {
+        "chapter": 7,
+        "exercise": "7.4",
+        "pdf_pages": [
+          95
+        ]
+      },
+      "topic_ids": [
+        "ch07-t03"
+      ],
+      "instruction": "Mettre les verbes entre parenthèses au passé composé.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch07-ex04-q01",
+          "number": 1,
+          "prompt": "Je (prendre) __ le train à Lille.",
+          "source_raw_prompt": "Je (prendre) ________________ le train à Lille.\n\n ",
+          "pdf_pages": [
+            95
+          ],
+          "answer": {
+            "source_key": "J’ai pris",
+            "accepted": [
+              "J’ai pris"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex04-q02",
+          "number": 2,
+          "prompt": "Nous (ne pas pouvoir) __ joindre les Quentin.",
+          "source_raw_prompt": "Nous (ne pas pouvoir) ________________ joindre les Quentin.\n\n ",
+          "pdf_pages": [
+            95
+          ],
+          "answer": {
+            "source_key": "n’avons pas pu",
+            "accepted": [
+              "n’avons pas pu"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex04-q03",
+          "number": 3,
+          "prompt": "Ils (suivre) __ un cours d’anglais en Angleterre.",
+          "source_raw_prompt": "Ils (suivre) ________________ un cours d’anglais en Angleterre.\n\n ",
+          "pdf_pages": [
+            95
+          ],
+          "answer": {
+            "source_key": "ont suivi",
+            "accepted": [
+              "ont suivi"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex04-q04",
+          "number": 4,
+          "prompt": "Elle (peindre) __ un paysage breton.",
+          "source_raw_prompt": "Elle (peindre) ________________ un paysage breton.\n\n ",
+          "pdf_pages": [
+            95
+          ],
+          "answer": {
+            "source_key": "a peint",
+            "accepted": [
+              "a peint"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex04-q05",
+          "number": 5,
+          "prompt": "Il (pleuvoir) __ tout l’après-midi.",
+          "source_raw_prompt": "Il (pleuvoir) ________________ tout l’après-midi.\n\n ",
+          "pdf_pages": [
+            95
+          ],
+          "answer": {
+            "source_key": "a plu",
+            "accepted": [
+              "a plu"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex04-q06",
+          "number": 6,
+          "prompt": "Vous (recevoir) __ beaucoup de compliments.",
+          "source_raw_prompt": "Vous (recevoir) ________________ beaucoup de compliments.\n\n ",
+          "pdf_pages": [
+            95
+          ],
+          "answer": {
+            "source_key": "avez reçu",
+            "accepted": [
+              "avez reçu"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex04-q07",
+          "number": 7,
+          "prompt": "Nous (lire) __ un roman de Zola.",
+          "source_raw_prompt": "Nous (lire) ________________ un roman de Zola.\n\n ",
+          "pdf_pages": [
+            95
+          ],
+          "answer": {
+            "source_key": "avons lu",
+            "accepted": [
+              "avons lu"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex04-q08",
+          "number": 8,
+          "prompt": "Je (faire) __ la cuisine pour toute la famille.",
+          "source_raw_prompt": "Je (faire) ________________ la cuisine pour toute la famille.\n\n ",
+          "pdf_pages": [
+            95
+          ],
+          "answer": {
+            "source_key": "J’ai fait",
+            "accepted": [
+              "J’ai fait"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex04-q09",
+          "number": 9,
+          "prompt": "Il (mettre) __ son chapeau gris.",
+          "source_raw_prompt": "Il (mettre) ________________ son chapeau gris.\n\n",
+          "pdf_pages": [
+            95
+          ],
+          "answer": {
+            "source_key": "a mis",
+            "accepted": [
+              "a mis"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex04-q10",
+          "number": 10,
+          "prompt": "Elle (ouvrir) __ les fenêtres.",
+          "source_raw_prompt": "Elle (ouvrir) ________________ les fenêtres.\n\n\n\n\n ",
+          "pdf_pages": [
+            95
+          ],
+          "answer": {
+            "source_key": "a ouvert",
+            "accepted": [
+              "a ouvert"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch07-s03"
+      ]
+    },
+    {
+      "id": "ch07-ex05",
+      "source": {
+        "chapter": 7,
+        "exercise": "7.5",
+        "pdf_pages": [
+          95,
+          96
+        ]
+      },
+      "topic_ids": [
+        "ch07-t03"
+      ],
+      "instruction": "Faire correspondre les deux colonnes. ______",
+      "interaction_type": "matching",
+      "questions": [
+        {
+          "id": "ch07-ex05-q01",
+          "number": 1,
+          "prompt": "Elle a conduit a. le journal __",
+          "source_raw_prompt": "Elle a conduit                       a. le journal ______ ",
+          "pdf_pages": [
+            95,
+            96
+          ],
+          "answer": {
+            "source_key": "e",
+            "accepted": [
+              "e"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "a",
+            "text": "le journal ______"
+          }
+        },
+        {
+          "id": "ch07-ex05-q02",
+          "number": 2,
+          "prompt": "Tu as compris b. un accident __",
+          "source_raw_prompt": "Tu as compris                     b. un accident\n\n ______ ",
+          "pdf_pages": [
+            96
+          ],
+          "answer": {
+            "source_key": "d",
+            "accepted": [
+              "d"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "b",
+            "text": "un accident"
+          }
+        },
+        {
+          "id": "ch07-ex05-q03",
+          "number": 3,
+          "prompt": "Vous avez lu c. une promenade __",
+          "source_raw_prompt": "Vous avez lu                        c. une promenade\n\n ______ ",
+          "pdf_pages": [
+            96
+          ],
+          "answer": {
+            "source_key": "a",
+            "accepted": [
+              "a"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "c",
+            "text": "une promenade"
+          }
+        },
+        {
+          "id": "ch07-ex05-q04",
+          "number": 4,
+          "prompt": "Il a eu d. les explications __",
+          "source_raw_prompt": "Il a eu                             d. les explications\n\n ______ ",
+          "pdf_pages": [
+            96
+          ],
+          "answer": {
+            "source_key": "b",
+            "accepted": [
+              "b"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "d",
+            "text": "les explications"
+          }
+        },
+        {
+          "id": "ch07-ex05-q05",
+          "number": 5,
+          "prompt": "Nous avons fait e. à toute vitesse",
+          "source_raw_prompt": "Nous avons fait                     e. à toute vitesse",
+          "pdf_pages": [
+            96,
+            97
+          ],
+          "answer": {
+            "source_key": "c",
+            "accepted": [
+              "c"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "e",
+            "text": "à toute vitesse"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 5,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "choice_label",
+        "publisher_key_is_exhaustive": true
+      },
+      "subtopic_ids": [
+        "ch07-s03"
+      ],
+      "choices": [
+        {
+          "label": "a",
+          "text": "le journal ______"
+        },
+        {
+          "label": "b",
+          "text": "un accident"
+        },
+        {
+          "label": "c",
+          "text": "une promenade"
+        },
+        {
+          "label": "d",
+          "text": "les explications"
+        },
+        {
+          "label": "e",
+          "text": "à toute vitesse"
+        }
+      ]
+    },
+    {
+      "id": "ch07-ex06",
+      "source": {
+        "chapter": 7,
+        "exercise": "7.6",
+        "pdf_pages": [
+          97
+        ]
+      },
+      "topic_ids": [
+        "ch07-t04"
+      ],
+      "instruction": "Mettre les verbes entre parenthèses au passé composé en utilisant l’inversion si nécessaire.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch07-ex06-q01",
+          "number": 1,
+          "prompt": "À quel âge ce comédien (monter) __ sur scène?",
+          "source_raw_prompt": "À quel âge ce comédien (monter) ________________ sur scène?\n\n ",
+          "pdf_pages": [
+            97
+          ],
+          "answer": {
+            "source_key": "est-il monté",
+            "accepted": [
+              "est-il monté"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex06-q02",
+          "number": 2,
+          "prompt": "Nous (rentrer) __ du théâtre à minuit.",
+          "source_raw_prompt": "Nous (rentrer) ________________ du théâtre à minuit.\n\n ",
+          "pdf_pages": [
+            97
+          ],
+          "answer": {
+            "source_key": "sommes rentré(e)s",
+            "accepted": [
+              "sommes rentré(e)s"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex06-q03",
+          "number": 3,
+          "prompt": "La voiture (tomber) __ en panne près de Madrid.",
+          "source_raw_prompt": "La voiture (tomber) ________________ en panne près de Madrid.\n\n ",
+          "pdf_pages": [
+            97
+          ],
+          "answer": {
+            "source_key": "est tombée",
+            "accepted": [
+              "est tombée"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex06-q04",
+          "number": 4,
+          "prompt": "Ils (descendre) __ par l’escalier.",
+          "source_raw_prompt": "Ils (descendre) ________________ par l’escalier.\n\n ",
+          "pdf_pages": [
+            97
+          ],
+          "answer": {
+            "source_key": "sont descendus",
+            "accepted": [
+              "sont descendus"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex06-q05",
+          "number": 5,
+          "prompt": "Elles (revenir) __ de vacances mardi.",
+          "source_raw_prompt": "Elles (revenir) ________________ de vacances mardi.\n\n ",
+          "pdf_pages": [
+            97
+          ],
+          "answer": {
+            "source_key": "sont revenues",
+            "accepted": [
+              "sont revenues"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex06-q06",
+          "number": 6,
+          "prompt": "Quel jour (il; partir) __ ?",
+          "source_raw_prompt": "Quel jour (il; partir) ________________ ?\n\n ",
+          "pdf_pages": [
+            97
+          ],
+          "answer": {
+            "source_key": "est-il parti",
+            "accepted": [
+              "est-il parti"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex06-q07",
+          "number": 7,
+          "prompt": "Elle (aller) __ à l’opéra hier soir.",
+          "source_raw_prompt": "Elle (aller) ________________ à l’opéra hier soir.\n\n ",
+          "pdf_pages": [
+            97
+          ],
+          "answer": {
+            "source_key": "est allée",
+            "accepted": [
+              "est allée"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex06-q08",
+          "number": 8,
+          "prompt": "Luc (aller) __ au Mexique l’hiver dernier.",
+          "source_raw_prompt": "Luc (aller) ________________ au Mexique l’hiver dernier.\n\n ",
+          "pdf_pages": [
+            97
+          ],
+          "answer": {
+            "source_key": "est allé",
+            "accepted": [
+              "est allé"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex06-q09",
+          "number": 9,
+          "prompt": "Molière (mourir) __ en 1673.",
+          "source_raw_prompt": "Molière (mourir) ________________ en 1673.\n\n",
+          "pdf_pages": [
+            97
+          ],
+          "answer": {
+            "source_key": "est mort",
+            "accepted": [
+              "est mort"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex06-q10",
+          "number": 10,
+          "prompt": "Le metteur en scène (rester) __ dans les coulisses.",
+          "source_raw_prompt": "Le metteur en scène (rester) ________________ dans les coulisses.\n\n\n\n\n ",
+          "pdf_pages": [
+            97
+          ],
+          "answer": {
+            "source_key": "est resté",
+            "accepted": [
+              "est resté"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch07-s04"
+      ]
+    },
+    {
+      "id": "ch07-ex07",
+      "source": {
+        "chapter": 7,
+        "exercise": "7.7",
+        "pdf_pages": [
+          97,
+          98
+        ]
+      },
+      "topic_ids": [
+        "ch07-t04"
+      ],
+      "instruction": "Traduire les phrases suivantes.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch07-ex07-q01",
+          "number": 1,
+          "prompt": "She read the newspaper. __",
+          "source_raw_prompt": "She read the newspaper.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            97
+          ],
+          "answer": {
+            "source_key": "Elle a lu le journal.",
+            "accepted": [
+              "Elle a lu le journal."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex07-q02",
+          "number": 2,
+          "prompt": "We went to Paris. __",
+          "source_raw_prompt": "We went to Paris.    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            97,
+            98
+          ],
+          "answer": {
+            "source_key": "Nous sommes allé(e)s à Paris.",
+            "accepted": [
+              "Nous sommes allé(e)s à Paris."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex07-q03",
+          "number": 3,
+          "prompt": "They left last night. __",
+          "source_raw_prompt": "They left last night.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            98
+          ],
+          "answer": {
+            "source_key": "Ils sont partis (Elles sont parties) hier soir.",
+            "accepted": [
+              "Ils sont partis (Elles sont parties) hier soir."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex07-q04",
+          "number": 4,
+          "prompt": "He had to leave at five o’clock. __",
+          "source_raw_prompt": "He had to leave at five o’clock.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            98
+          ],
+          "answer": {
+            "source_key": "Il a dû partir à cinq heures.",
+            "accepted": [
+              "Il a dû partir à cinq heures."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex07-q05",
+          "number": 5,
+          "prompt": "They lived in Italy. __",
+          "source_raw_prompt": "They lived in Italy.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            98
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) ont habité en Italie.",
+            "accepted": [
+              "Ils (Elles) ont habité en Italie."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex07-q06",
+          "number": 6,
+          "prompt": "Zola died in 1902. __",
+          "source_raw_prompt": "Zola died in 1902.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            98
+          ],
+          "answer": {
+            "source_key": "Zola est mort en 1902.",
+            "accepted": [
+              "Zola est mort en 1902."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex07-q07",
+          "number": 7,
+          "prompt": "I wrote a long letter. __",
+          "source_raw_prompt": "I wrote a long letter.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            98
+          ],
+          "answer": {
+            "source_key": "J’ai écrit une longue lettre.",
+            "accepted": [
+              "J’ai écrit une longue lettre."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex07-q08",
+          "number": 8,
+          "prompt": "She has painted the wall white. __",
+          "source_raw_prompt": "She has painted the wall white.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            98
+          ],
+          "answer": {
+            "source_key": "Elle a peint le mur en blanc.",
+            "accepted": [
+              "Elle a peint le mur en blanc."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex07-q09",
+          "number": 9,
+          "prompt": "She stayed at home. __",
+          "source_raw_prompt": "She stayed at home.\n    _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            98
+          ],
+          "answer": {
+            "source_key": "Elle est restée à la maison.",
+            "accepted": [
+              "Elle est restée à la maison."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex07-q10",
+          "number": 10,
+          "prompt": "He took a week’s vacation. __",
+          "source_raw_prompt": "He took a week’s vacation.\n    _____________________________________________________________",
+          "pdf_pages": [
+            98,
+            99,
+            100
+          ],
+          "answer": {
+            "source_key": "Il a pris une semaine de vacances.",
+            "accepted": [
+              "Il a pris une semaine de vacances."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch07-s04"
+      ]
+    },
+    {
+      "id": "ch07-ex08",
+      "source": {
+        "chapter": 7,
+        "exercise": "7.8",
+        "pdf_pages": [
+          100,
+          101
+        ]
+      },
+      "topic_ids": [
+        "ch07-t06"
+      ],
+      "instruction": "Mettre au passé composé les verbes entre parenthèses.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch07-ex08-q01",
+          "number": 1,
+          "prompt": "Ils (se promener) __ le long de la rivière.",
+          "source_raw_prompt": "Ils (se promener) ________________ le long de la rivière.\n\n   ",
+          "pdf_pages": [
+            100
+          ],
+          "answer": {
+            "source_key": "se sont promenés",
+            "accepted": [
+              "se sont promenés"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex08-q02",
+          "number": 2,
+          "prompt": "Il (se douter) __ de quelque chose.",
+          "source_raw_prompt": "Il (se douter) ________________ de quelque chose.\n\n   ",
+          "pdf_pages": [
+            100
+          ],
+          "answer": {
+            "source_key": "s’est douté",
+            "accepted": [
+              "s’est douté"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex08-q03",
+          "number": 3,
+          "prompt": "Elles (se maquiller) __ pour aller au bal.",
+          "source_raw_prompt": "Elles (se maquiller) ________________ pour aller au bal.\n\n   ",
+          "pdf_pages": [
+            100
+          ],
+          "answer": {
+            "source_key": "se sont maquillées",
+            "accepted": [
+              "se sont maquillées"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex08-q04",
+          "number": 4,
+          "prompt": "Ils (s’écrire) __ régulièrement.",
+          "source_raw_prompt": "Ils (s’écrire) ________________ régulièrement. ",
+          "pdf_pages": [
+            100,
+            101
+          ],
+          "answer": {
+            "source_key": "se sont écrit",
+            "accepted": [
+              "se sont écrit"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex08-q05",
+          "number": 5,
+          "prompt": "Nous (s’arrêter) __ au bord de la route.",
+          "source_raw_prompt": "Nous (s’arrêter) ________________ au bord de la route.\n\n ",
+          "pdf_pages": [
+            101
+          ],
+          "answer": {
+            "source_key": "nous sommes arrêté(e)s",
+            "accepted": [
+              "nous sommes arrêté(e)s"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex08-q06",
+          "number": 6,
+          "prompt": "Ils (s’occuper) __ de tout.",
+          "source_raw_prompt": "Ils (s’occuper) ________________ de tout.\n\n ",
+          "pdf_pages": [
+            101
+          ],
+          "answer": {
+            "source_key": "se sont occupés",
+            "accepted": [
+              "se sont occupés"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex08-q07",
+          "number": 7,
+          "prompt": "Elles (se balader) __ à la campagne.",
+          "source_raw_prompt": "Elles (se balader) ________________ à la campagne.\n\n ",
+          "pdf_pages": [
+            101
+          ],
+          "answer": {
+            "source_key": "se sont baladées",
+            "accepted": [
+              "se sont baladées"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex08-q08",
+          "number": 8,
+          "prompt": "Ils (se rencontrer) __ à une conférence.",
+          "source_raw_prompt": "Ils (se rencontrer) ________________ à une conférence.\n\n ",
+          "pdf_pages": [
+            101
+          ],
+          "answer": {
+            "source_key": "se sont rencontrés",
+            "accepted": [
+              "se sont rencontrés"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex08-q09",
+          "number": 9,
+          "prompt": "Tu (se couper) __ le doigt.",
+          "source_raw_prompt": "Tu (se couper) ________________ le doigt.\n\n",
+          "pdf_pages": [
+            101
+          ],
+          "answer": {
+            "source_key": "t’es coupé",
+            "accepted": [
+              "t’es coupé"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex08-q10",
+          "number": 10,
+          "prompt": "Nous (se demander) __ pourquoi il était absent.",
+          "source_raw_prompt": "Nous (se demander) ________________ pourquoi il était absent.\n\n\n\n\n ",
+          "pdf_pages": [
+            101
+          ],
+          "answer": {
+            "source_key": "nous sommes demandé",
+            "accepted": [
+              "nous sommes demandé"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch07-s06"
+      ]
+    },
+    {
+      "id": "ch07-ex09",
+      "source": {
+        "chapter": 7,
+        "exercise": "7.9",
+        "pdf_pages": [
+          101
+        ]
+      },
+      "topic_ids": [
+        "ch07-t06"
+      ],
+      "instruction": "Faire correspondre les deux colonnes. ______",
+      "interaction_type": "matching",
+      "questions": [
+        {
+          "id": "ch07-ex09-q01",
+          "number": 1,
+          "prompt": "Elle a sorti a. le bifteck",
+          "source_raw_prompt": "Elle a sorti                          a. le bifteck\n\n______ ",
+          "pdf_pages": [
+            101
+          ],
+          "answer": {
+            "source_key": "e",
+            "accepted": [
+              "e"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "a",
+            "text": "le bifteck"
+          }
+        },
+        {
+          "id": "ch07-ex09-q02",
+          "number": 2,
+          "prompt": "Il a retourné b. devant le boulanger",
+          "source_raw_prompt": "Il a retourné                      b. devant le boulanger\n\n______ ",
+          "pdf_pages": [
+            101
+          ],
+          "answer": {
+            "source_key": "a",
+            "accepted": [
+              "a"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "b",
+            "text": "devant le boulanger"
+          }
+        },
+        {
+          "id": "ch07-ex09-q03",
+          "number": 3,
+          "prompt": "Elle est rentrée c. pour la cinquième fois",
+          "source_raw_prompt": "Elle est rentrée                     c. pour la cinquième fois\n\n______ ",
+          "pdf_pages": [
+            101
+          ],
+          "answer": {
+            "source_key": "d",
+            "accepted": [
+              "d"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "c",
+            "text": "pour la cinquième fois"
+          }
+        },
+        {
+          "id": "ch07-ex09-q04",
+          "number": 4,
+          "prompt": "Je suis passée d. très tard",
+          "source_raw_prompt": "Je suis passée                     d. très tard\n\n______ ",
+          "pdf_pages": [
+            101
+          ],
+          "answer": {
+            "source_key": "b",
+            "accepted": [
+              "b"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "d",
+            "text": "très tard"
+          }
+        },
+        {
+          "id": "ch07-ex09-q05",
+          "number": 5,
+          "prompt": "Elle est retourné à Rome e. les chaises de jardin",
+          "source_raw_prompt": "Elle est retourné à Rome          e. les chaises de jardin\n\n\n\n\n\n ",
+          "pdf_pages": [
+            101
+          ],
+          "answer": {
+            "source_key": "c",
+            "accepted": [
+              "c"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "e",
+            "text": "les chaises de jardin"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 5,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "choice_label",
+        "publisher_key_is_exhaustive": true
+      },
+      "subtopic_ids": [
+        "ch07-s06"
+      ],
+      "choices": [
+        {
+          "label": "a",
+          "text": "le bifteck"
+        },
+        {
+          "label": "b",
+          "text": "devant le boulanger"
+        },
+        {
+          "label": "c",
+          "text": "pour la cinquième fois"
+        },
+        {
+          "label": "d",
+          "text": "très tard"
+        },
+        {
+          "label": "e",
+          "text": "les chaises de jardin"
+        }
+      ]
+    },
+    {
+      "id": "ch07-ex10",
+      "source": {
+        "chapter": 7,
+        "exercise": "7.10",
+        "pdf_pages": [
+          101,
+          102
+        ]
+      },
+      "topic_ids": [
+        "ch07-t06"
+      ],
+      "instruction": "Traduire les phrases suivantes.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch07-ex10-q01",
+          "number": 1,
+          "prompt": "They spent a month in China. __",
+          "source_raw_prompt": "They spent a month in China.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            101
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) ont passé un mois en Chine.",
+            "accepted": [
+              "Ils (Elles) ont passé un mois en Chine."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex10-q02",
+          "number": 2,
+          "prompt": "She fainted. __",
+          "source_raw_prompt": "She fainted.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            101
+          ],
+          "answer": {
+            "source_key": "Elle s’est évanouie.",
+            "accepted": [
+              "Elle s’est évanouie."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex10-q03",
+          "number": 3,
+          "prompt": "They kissed each other. __",
+          "source_raw_prompt": "They kissed each other.   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            101,
+            102
+          ],
+          "answer": {
+            "source_key": "Ils se sont embrassés.",
+            "accepted": [
+              "Ils se sont embrassés."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex10-q04",
+          "number": 4,
+          "prompt": "They had fun at the party. __",
+          "source_raw_prompt": "They had fun at the party.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            102
+          ],
+          "answer": {
+            "source_key": "Ils se sont amusés (Elles se sont amusées) à la soirée.",
+            "accepted": [
+              "Ils se sont amusés (Elles se sont amusées) à la soirée."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex10-q05",
+          "number": 5,
+          "prompt": "She took the suitcases down. __",
+          "source_raw_prompt": "She took the suitcases down.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            102
+          ],
+          "answer": {
+            "source_key": "Elle a descendu les valises.",
+            "accepted": [
+              "Elle a descendu les valises."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex10-q06",
+          "number": 6,
+          "prompt": "He brushed his teeth. __",
+          "source_raw_prompt": "He brushed his teeth.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            102
+          ],
+          "answer": {
+            "source_key": "Il s’est brossé les dents.",
+            "accepted": [
+              "Il s’est brossé les dents."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex10-q07",
+          "number": 7,
+          "prompt": "He woke up tired. __",
+          "source_raw_prompt": "He woke up tired.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            102
+          ],
+          "answer": {
+            "source_key": "Il s’est réveillé fatigué.",
+            "accepted": [
+              "Il s’est réveillé fatigué."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex10-q08",
+          "number": 8,
+          "prompt": "They wrote each other regularly. __",
+          "source_raw_prompt": "They wrote each other regularly.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            102
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) se sont écrit régulièrement.",
+            "accepted": [
+              "Ils (Elles) se sont écrit régulièrement."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex10-q09",
+          "number": 9,
+          "prompt": "Anna stopped for ten minutes. __",
+          "source_raw_prompt": "Anna stopped for ten minutes.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            102
+          ],
+          "answer": {
+            "source_key": "Anna s’est arrêtée dix minutes.",
+            "accepted": [
+              "Anna s’est arrêtée dix minutes."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch07-ex10-q10",
+          "number": 10,
+          "prompt": "He flipped the omelette. __",
+          "source_raw_prompt": "He flipped the omelette.\n   _____________________________________________________________",
+          "pdf_pages": [
+            102
+          ],
+          "answer": {
+            "source_key": "Il a retourné l’omelette.",
+            "accepted": [
+              "Il a retourné l’omelette."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch07-s06"
+      ]
+    }
+  ]
+}

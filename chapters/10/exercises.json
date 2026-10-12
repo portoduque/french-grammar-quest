@@ -1,0 +1,1118 @@
+{
+  "chapter": 10,
+  "status": "machine_transcribed_editorial_visual_review_pending",
+  "exercises": [
+    {
+      "id": "ch10-ex01",
+      "source": {
+        "chapter": 10,
+        "exercise": "10.1",
+        "pdf_pages": [
+          127
+        ]
+      },
+      "topic_ids": [
+        "ch10-t01"
+      ],
+      "instruction": "Mettre au plus-que-parfait les verbes entre parenthèses.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch10-ex01-q01",
+          "number": 1,
+          "prompt": "Je (dîner) __ place d’Italie.",
+          "source_raw_prompt": "Je (dîner) ________________ place d’Italie.\n\n ",
+          "pdf_pages": [
+            127
+          ],
+          "answer": {
+            "source_key": "J’avais dîné",
+            "accepted": [
+              "J’avais dîné"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex01-q02",
+          "number": 2,
+          "prompt": "Elle (expliquer) __ la situation en détail.",
+          "source_raw_prompt": "Elle (expliquer) ________________ la situation en détail.\n\n ",
+          "pdf_pages": [
+            127
+          ],
+          "answer": {
+            "source_key": "avait expliqué",
+            "accepted": [
+              "avait expliqué"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex01-q03",
+          "number": 3,
+          "prompt": "Vous (investir) __ dans leur entreprise.",
+          "source_raw_prompt": "Vous (investir) ________________ dans leur entreprise.\n\n ",
+          "pdf_pages": [
+            127
+          ],
+          "answer": {
+            "source_key": "aviez investi",
+            "accepted": [
+              "aviez investi"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex01-q04",
+          "number": 4,
+          "prompt": "Elles (arriver) __ à la réception en retard.",
+          "source_raw_prompt": "Elles (arriver) ________________ à la réception en retard.\n\n ",
+          "pdf_pages": [
+            127
+          ],
+          "answer": {
+            "source_key": "étaient arrivées",
+            "accepted": [
+              "étaient arrivées"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex01-q05",
+          "number": 5,
+          "prompt": "Tu (décider) __ d’aller au Rwanda.",
+          "source_raw_prompt": "Tu (décider) ________________ d’aller au Rwanda.\n\n ",
+          "pdf_pages": [
+            127
+          ],
+          "answer": {
+            "source_key": "avais décidé",
+            "accepted": [
+              "avais décidé"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex01-q06",
+          "number": 6,
+          "prompt": "Nous (rouler) __ toute la nuit.",
+          "source_raw_prompt": "Nous (rouler) ________________ toute la nuit.\n\n ",
+          "pdf_pages": [
+            127
+          ],
+          "answer": {
+            "source_key": "avions roulé",
+            "accepted": [
+              "avions roulé"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex01-q07",
+          "number": 7,
+          "prompt": "Il (échouer) __ à son examen.",
+          "source_raw_prompt": "Il (échouer) ________________ à son examen.\n\n ",
+          "pdf_pages": [
+            127
+          ],
+          "answer": {
+            "source_key": "avait échoué",
+            "accepted": [
+              "avait échoué"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex01-q08",
+          "number": 8,
+          "prompt": "Tu (aller) __ en vacances tout seul.",
+          "source_raw_prompt": "Tu (aller) ________________ en vacances tout seul.\n\n ",
+          "pdf_pages": [
+            127
+          ],
+          "answer": {
+            "source_key": "étais allé(e)",
+            "accepted": [
+              "étais allé(e)"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex01-q09",
+          "number": 9,
+          "prompt": "Je (obtenir) __ un nouveau poste.",
+          "source_raw_prompt": "Je (obtenir) ________________ un nouveau poste.\n\n",
+          "pdf_pages": [
+            127
+          ],
+          "answer": {
+            "source_key": "J’avais obtenu",
+            "accepted": [
+              "J’avais obtenu"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex01-q10",
+          "number": 10,
+          "prompt": "Il (boire) __ un très bon vin.",
+          "source_raw_prompt": "Il (boire) ________________ un très bon vin.",
+          "pdf_pages": [
+            127,
+            128
+          ],
+          "answer": {
+            "source_key": "avait bu",
+            "accepted": [
+              "avait bu"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch10-s01"
+      ]
+    },
+    {
+      "id": "ch10-ex02",
+      "source": {
+        "chapter": 10,
+        "exercise": "10.2",
+        "pdf_pages": [
+          128,
+          129
+        ]
+      },
+      "topic_ids": [
+        "ch10-t01"
+      ],
+      "instruction": "Mettre au plus-que-parfait les verbes entre parenthèses.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch10-ex02-q01",
+          "number": 1,
+          "prompt": "Il (prendre) __ un cachet d’aspirine.",
+          "source_raw_prompt": "Il (prendre) ________________ un cachet d’aspirine.\n\n   ",
+          "pdf_pages": [
+            128
+          ],
+          "answer": {
+            "source_key": "avait pris",
+            "accepted": [
+              "avait pris"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex02-q02",
+          "number": 2,
+          "prompt": "Nous (se réveiller) __ à l’aube",
+          "source_raw_prompt": "Nous (se réveiller) ________________ à l’aube\n\n   ",
+          "pdf_pages": [
+            128
+          ],
+          "answer": {
+            "source_key": "nous étions réveillé(e)s",
+            "accepted": [
+              "nous étions réveillé(e)s"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex02-q03",
+          "number": 3,
+          "prompt": "Tu (se demander) __ s’il était allergique.",
+          "source_raw_prompt": "Tu (se demander) ________________ s’il était allergique.\n\n   ",
+          "pdf_pages": [
+            128
+          ],
+          "answer": {
+            "source_key": "t’étais demandé(e)",
+            "accepted": [
+              "t’étais demandé(e)"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex02-q04",
+          "number": 4,
+          "prompt": "Elle (s’habiller) __ pour la soirée.",
+          "source_raw_prompt": "Elle (s’habiller) ________________ pour la soirée.   ",
+          "pdf_pages": [
+            128,
+            129
+          ],
+          "answer": {
+            "source_key": "s’était habillée",
+            "accepted": [
+              "s’était habillée"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex02-q05",
+          "number": 5,
+          "prompt": "Ils (se marier) __ en septembre.",
+          "source_raw_prompt": "Ils (se marier) ________________ en septembre.\n\n   ",
+          "pdf_pages": [
+            129
+          ],
+          "answer": {
+            "source_key": "s’étaient mariés",
+            "accepted": [
+              "s’étaient mariés"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex02-q06",
+          "number": 6,
+          "prompt": "Louise et Julie (se coucher) __ tard.",
+          "source_raw_prompt": "Louise et Julie (se coucher) ________________ tard.\n\n   ",
+          "pdf_pages": [
+            129
+          ],
+          "answer": {
+            "source_key": "s’étaient couchées",
+            "accepted": [
+              "s’étaient couchées"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex02-q07",
+          "number": 7,
+          "prompt": "Il (se souvenir) __ de cet homme.",
+          "source_raw_prompt": "Il (se souvenir) ________________ de cet homme.\n\n   ",
+          "pdf_pages": [
+            129
+          ],
+          "answer": {
+            "source_key": "s’était souvenu",
+            "accepted": [
+              "s’était souvenu"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex02-q08",
+          "number": 8,
+          "prompt": "Nous (se promener) __ dans les jardins du Luxembourg.",
+          "source_raw_prompt": "Nous (se promener) ________________ dans les jardins du Luxembourg.\n\n   ",
+          "pdf_pages": [
+            129
+          ],
+          "answer": {
+            "source_key": "nous étions promené(e)s",
+            "accepted": [
+              "nous étions promené(e)s"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex02-q09",
+          "number": 9,
+          "prompt": "Elle (se reposer) __ sur un banc.",
+          "source_raw_prompt": "Elle (se reposer) ________________ sur un banc.\n\n ",
+          "pdf_pages": [
+            129
+          ],
+          "answer": {
+            "source_key": "s’était reposée",
+            "accepted": [
+              "s’était reposée"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex02-q10",
+          "number": 10,
+          "prompt": "Elles (s’écrire) __ pendant des années.",
+          "source_raw_prompt": "Elles (s’écrire) ________________ pendant des années.",
+          "pdf_pages": [
+            129
+          ],
+          "answer": {
+            "source_key": "s’étaient écrit",
+            "accepted": [
+              "s’étaient écrit"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch10-s01"
+      ]
+    },
+    {
+      "id": "ch10-ex03",
+      "source": {
+        "chapter": 10,
+        "exercise": "10.3",
+        "pdf_pages": [
+          129,
+          130
+        ]
+      },
+      "topic_ids": [
+        "ch10-t02"
+      ],
+      "instruction": "Mettre au plus-que-parfait les verbes entre parenthèses.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch10-ex03-q01",
+          "number": 1,
+          "prompt": "Il était en retard car sa voiture (tomber) __ en panne sur l’autoroute.",
+          "source_raw_prompt": "Il était en retard car sa voiture (tomber) ________________ en panne sur\n     l’autoroute.\n\n   ",
+          "pdf_pages": [
+            129
+          ],
+          "answer": {
+            "source_key": "était tombée",
+            "accepted": [
+              "était tombée"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex03-q02",
+          "number": 2,
+          "prompt": "Le médecin lui a demandé si elle (avoir) __ la grippe.",
+          "source_raw_prompt": "Le médecin lui a demandé si elle (avoir) ________________ la grippe.\n\n   ",
+          "pdf_pages": [
+            129
+          ],
+          "answer": {
+            "source_key": "avait eu",
+            "accepted": [
+              "avait eu"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex03-q03",
+          "number": 3,
+          "prompt": "Elle a pensé que je (ne pas expliquer) __ la situation.",
+          "source_raw_prompt": "Elle a pensé que je (ne pas expliquer) ________________ la situation.\n\n   ",
+          "pdf_pages": [
+            129
+          ],
+          "answer": {
+            "source_key": "n’avais pas expliqué",
+            "accepted": [
+              "n’avais pas expliqué"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex03-q04",
+          "number": 4,
+          "prompt": "Il a refusé de prendre le médicament que le médecin (prescrire) __ .",
+          "source_raw_prompt": "Il a refusé de prendre le médicament que le médecin (prescrire)\n    ________________ .\n\n   ",
+          "pdf_pages": [
+            129
+          ],
+          "answer": {
+            "source_key": "avait prescrit",
+            "accepted": [
+              "avait prescrit"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex03-q05",
+          "number": 5,
+          "prompt": "Elle était furieuse car il (oublier) __ leur anniversaire de mariage.",
+          "source_raw_prompt": "Elle était furieuse car il (oublier) ________________ leur anniversaire de\n     mariage.   ",
+          "pdf_pages": [
+            129,
+            130
+          ],
+          "answer": {
+            "source_key": "avait oublié",
+            "accepted": [
+              "avait oublié"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex03-q06",
+          "number": 6,
+          "prompt": "Lorsque Lucie est arrivée, Paul (partir) __ .",
+          "source_raw_prompt": "Lorsque Lucie est arrivée, Paul (partir) ________________.\n\n   ",
+          "pdf_pages": [
+            130
+          ],
+          "answer": {
+            "source_key": "était parti",
+            "accepted": [
+              "était parti"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex03-q07",
+          "number": 7,
+          "prompt": "Je ne savais pas que Bertrand (inviter) __ toute sa famille.",
+          "source_raw_prompt": "Je ne savais pas que Bertrand (inviter) ________________ toute sa famille.\n\n   ",
+          "pdf_pages": [
+            130
+          ],
+          "answer": {
+            "source_key": "avait invité",
+            "accepted": [
+              "avait invité"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex03-q08",
+          "number": 8,
+          "prompt": "Elle ne se souvenait plus où elle (rencontrer) __ le frère de Lucien.",
+          "source_raw_prompt": "Elle ne se souvenait plus où elle (rencontrer) ________________ le frère de\n     Lucien.\n\n   ",
+          "pdf_pages": [
+            130
+          ],
+          "answer": {
+            "source_key": "avait rencontré",
+            "accepted": [
+              "avait rencontré"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex03-q09",
+          "number": 9,
+          "prompt": "Comme il n’avait pas d’analgésique, il (souffrir) __ pendant des heures.",
+          "source_raw_prompt": "Comme il n’avait pas d’analgésique, il (souffrir) ________________ pendant\n     des heures.\n\n ",
+          "pdf_pages": [
+            130
+          ],
+          "answer": {
+            "source_key": "avait souffert",
+            "accepted": [
+              "avait souffert"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex03-q10",
+          "number": 10,
+          "prompt": "Il voulait savoir si elle (recevoir) __ son bouquet de fleurs.",
+          "source_raw_prompt": "Il voulait savoir si elle (recevoir) ________________ son bouquet de fleurs.\n\n\n\n\n  ",
+          "pdf_pages": [
+            130
+          ],
+          "answer": {
+            "source_key": "avait reçu",
+            "accepted": [
+              "avait reçu"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch10-s02"
+      ]
+    },
+    {
+      "id": "ch10-ex04",
+      "source": {
+        "chapter": 10,
+        "exercise": "10.4",
+        "pdf_pages": [
+          130
+        ]
+      },
+      "topic_ids": [
+        "ch10-t02"
+      ],
+      "instruction": "Faire correspondre les deux colonnes. ______",
+      "interaction_type": "matching",
+      "questions": [
+        {
+          "id": "ch10-ex04-q01",
+          "number": 1,
+          "prompt": "Il avait commandé un a. car il avait mal au dos sandwich __",
+          "source_raw_prompt": "Il avait commandé un          a. car il avait mal au dos\n    sandwich\n\n ______ ",
+          "pdf_pages": [
+            130
+          ],
+          "answer": {
+            "source_key": "d",
+            "accepted": [
+              "d"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "a",
+            "text": "car il avait mal au dos"
+          }
+        },
+        {
+          "id": "ch10-ex04-q02",
+          "number": 2,
+          "prompt": "Il était arrivé en retard b. car il n’avait pas assez étudié __",
+          "source_raw_prompt": "Il était arrivé en retard        b. car il n’avait pas assez étudié\n\n ______ ",
+          "pdf_pages": [
+            130
+          ],
+          "answer": {
+            "source_key": "c",
+            "accepted": [
+              "c"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "b",
+            "text": "car il n’avait pas assez étudié"
+          }
+        },
+        {
+          "id": "ch10-ex04-q03",
+          "number": 3,
+          "prompt": "Il avait perdu son carnet c. en raison d’une panne d’adresses __",
+          "source_raw_prompt": "Il avait perdu son carnet       c. en raison d’une panne\n    d’adresses\n\n ______ ",
+          "pdf_pages": [
+            130
+          ],
+          "answer": {
+            "source_key": "e",
+            "accepted": [
+              "e"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "c",
+            "text": "en raison d’une panne"
+          }
+        },
+        {
+          "id": "ch10-ex04-q04",
+          "number": 4,
+          "prompt": "Il avait échoué à son examen d. parce qu’il avait faim __",
+          "source_raw_prompt": "Il avait échoué à son examen d. parce qu’il avait faim\n\n ______ ",
+          "pdf_pages": [
+            130
+          ],
+          "answer": {
+            "source_key": "b",
+            "accepted": [
+              "b"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "d",
+            "text": "parce qu’il avait faim"
+          }
+        },
+        {
+          "id": "ch10-ex04-q05",
+          "number": 5,
+          "prompt": "Il avait beaucoup souffert e. et il n’avait pas pu nous téléphoner",
+          "source_raw_prompt": "Il avait beaucoup souffert     e. et il n’avait pas pu nous\n                                           téléphoner",
+          "pdf_pages": [
+            130,
+            131
+          ],
+          "answer": {
+            "source_key": "a",
+            "accepted": [
+              "a"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "e",
+            "text": "et il n’avait pas pu nous"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 5,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "choice_label",
+        "publisher_key_is_exhaustive": true
+      },
+      "subtopic_ids": [
+        "ch10-s02"
+      ],
+      "choices": [
+        {
+          "label": "a",
+          "text": "car il avait mal au dos"
+        },
+        {
+          "label": "b",
+          "text": "car il n’avait pas assez étudié"
+        },
+        {
+          "label": "c",
+          "text": "en raison d’une panne"
+        },
+        {
+          "label": "d",
+          "text": "parce qu’il avait faim"
+        },
+        {
+          "label": "e",
+          "text": "et il n’avait pas pu nous"
+        }
+      ]
+    },
+    {
+      "id": "ch10-ex05",
+      "source": {
+        "chapter": 10,
+        "exercise": "10.5",
+        "pdf_pages": [
+          131,
+          132
+        ]
+      },
+      "topic_ids": [
+        "ch10-t03"
+      ],
+      "instruction": "Commencer les phrases par si seulement et mettre au plus-que-parfait les verbes entre parenthèses.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch10-ex05-q01",
+          "number": 1,
+          "prompt": "(vous) (ne pas être) en retard __",
+          "source_raw_prompt": "(vous) (ne pas être) en retard\n    _____________________________________________________________ ",
+          "pdf_pages": [
+            131,
+            132
+          ],
+          "answer": {
+            "source_key": "Si seulement vous n’aviez pas été en retard!",
+            "accepted": [
+              "Si seulement vous n’aviez pas été en retard!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex05-q02",
+          "number": 2,
+          "prompt": "(tu) (étudier) le français plus jeune __",
+          "source_raw_prompt": "(tu) (étudier) le français plus jeune\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            132
+          ],
+          "answer": {
+            "source_key": "Si seulement tu avais étudié le français plus jeune!",
+            "accepted": [
+              "Si seulement tu avais étudié le français plus jeune!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex05-q03",
+          "number": 3,
+          "prompt": "(nous) (savoir) la vérité __",
+          "source_raw_prompt": "(nous) (savoir) la vérité\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            132
+          ],
+          "answer": {
+            "source_key": "Si seulement nous avions su la vérité!",
+            "accepted": [
+              "Si seulement nous avions su la vérité!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex05-q04",
+          "number": 4,
+          "prompt": "(elle) (rester) plus longtemps __",
+          "source_raw_prompt": "(elle) (rester) plus longtemps\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            132
+          ],
+          "answer": {
+            "source_key": "Si seulement elle était restée plus longtemps!",
+            "accepted": [
+              "Si seulement elle était restée plus longtemps!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex05-q05",
+          "number": 5,
+          "prompt": "(il) (rendre visite à) sa cousine Flore __",
+          "source_raw_prompt": "(il) (rendre visite à) sa cousine Flore\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            132
+          ],
+          "answer": {
+            "source_key": "Si seulement il avait rendu visite à sa cousine Flore!",
+            "accepted": [
+              "Si seulement il avait rendu visite à sa cousine Flore!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex05-q06",
+          "number": 6,
+          "prompt": "(je) (prendre) une meilleure décision __",
+          "source_raw_prompt": "(je) (prendre) une meilleure décision\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            132
+          ],
+          "answer": {
+            "source_key": "Si seulement j’avais pris une meilleure décision!",
+            "accepted": [
+              "Si seulement j’avais pris une meilleure décision!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex05-q07",
+          "number": 7,
+          "prompt": "(elle) (expliquer) la situation plus clairement __",
+          "source_raw_prompt": "(elle) (expliquer) la situation plus clairement\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            132
+          ],
+          "answer": {
+            "source_key": "Si seulement elle avait expliqué la situation plus clairement!",
+            "accepted": [
+              "Si seulement elle avait expliqué la situation plus clairement!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex05-q08",
+          "number": 8,
+          "prompt": "(vous) (pouvoir venir) à la réception __",
+          "source_raw_prompt": "(vous) (pouvoir venir) à la réception\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            132
+          ],
+          "answer": {
+            "source_key": "Si seulement vous aviez pu venir à la réception!",
+            "accepted": [
+              "Si seulement vous aviez pu venir à la réception!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex05-q09",
+          "number": 9,
+          "prompt": "(tu) (comprendre) les problèmes __",
+          "source_raw_prompt": "(tu) (comprendre) les problèmes\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            132
+          ],
+          "answer": {
+            "source_key": "Si seulement tu avais compris les problèmes!",
+            "accepted": [
+              "Si seulement tu avais compris les problèmes!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex05-q10",
+          "number": 10,
+          "prompt": "(il) (conseiller) autre chose __",
+          "source_raw_prompt": "(il) (conseiller) autre chose\n   _____________________________________________________________\n\n\n\n\n ",
+          "pdf_pages": [
+            132
+          ],
+          "answer": {
+            "source_key": "Si seulement il avait conseillé autre chose!",
+            "accepted": [
+              "Si seulement il avait conseillé autre chose!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch10-s03"
+      ]
+    },
+    {
+      "id": "ch10-ex06",
+      "source": {
+        "chapter": 10,
+        "exercise": "10.6",
+        "pdf_pages": [
+          132,
+          133
+        ]
+      },
+      "topic_ids": [
+        "ch10-t03"
+      ],
+      "instruction": "Traduire les phrases suivantes.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch10-ex06-q01",
+          "number": 1,
+          "prompt": "He took the medicine the doctor had prescribed. __",
+          "source_raw_prompt": "He took the medicine the doctor had prescribed.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            132
+          ],
+          "answer": {
+            "source_key": "Il a pris le médicament que le médecin avait prescrit.",
+            "accepted": [
+              "Il a pris le médicament que le médecin avait prescrit."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex06-q02",
+          "number": 2,
+          "prompt": "She knew they had made a mistake. __",
+          "source_raw_prompt": "She knew they had made a mistake.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            132
+          ],
+          "answer": {
+            "source_key": "Elle savait qu’ils (elles) avaient fait une erreur.",
+            "accepted": [
+              "Elle savait qu’ils (elles) avaient fait une erreur."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex06-q03",
+          "number": 3,
+          "prompt": "He was sick because he had eaten too much dessert. __",
+          "source_raw_prompt": "He was sick because he had eaten too much dessert.   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            132,
+            133
+          ],
+          "answer": {
+            "source_key": "Il était malade car il avait mangé trop de dessert.",
+            "accepted": [
+              "Il était malade car il avait mangé trop de dessert."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex06-q04",
+          "number": 4,
+          "prompt": "I wondered why she had stayed three months in Vienna. __",
+          "source_raw_prompt": "I wondered why she had stayed three months in Vienna.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            133
+          ],
+          "answer": {
+            "source_key": "Je me suis demandé pourquoi elle était restée trois mois à Vienne.",
+            "accepted": [
+              "Je me suis demandé pourquoi elle était restée trois mois à Vienne."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex06-q05",
+          "number": 5,
+          "prompt": "I thought they had understood the problem. __",
+          "source_raw_prompt": "I thought they had understood the problem.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            133
+          ],
+          "answer": {
+            "source_key": "Je pensais qu’ils (elles) avaient compris le problème.",
+            "accepted": [
+              "Je pensais qu’ils (elles) avaient compris le problème."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex06-q06",
+          "number": 6,
+          "prompt": "If only he had not been late! __",
+          "source_raw_prompt": "If only he had not been late!\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            133
+          ],
+          "answer": {
+            "source_key": "Si seulement il n’avait pas été en retard!",
+            "accepted": [
+              "Si seulement il n’avait pas été en retard!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex06-q07",
+          "number": 7,
+          "prompt": "She was tired because she had only slept five hours. __",
+          "source_raw_prompt": "She was tired because she had only slept five hours.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            133
+          ],
+          "answer": {
+            "source_key": "Elle était fatiguée parce qu’elle n’avait dormi que cinq heures.",
+            "accepted": [
+              "Elle était fatiguée parce qu’elle n’avait dormi que cinq heures."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex06-q08",
+          "number": 8,
+          "prompt": "He was hungry because he had not eaten since seven A.M. __",
+          "source_raw_prompt": "He was hungry because he had not eaten since seven A.M.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            133
+          ],
+          "answer": {
+            "source_key": "Il avait faim parce qu’il n’avait pas mangé depuis sept heures du matin.",
+            "accepted": [
+              "Il avait faim parce qu’il n’avait pas mangé depuis sept heures du matin."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex06-q09",
+          "number": 9,
+          "prompt": "We thought he had seen this film. __",
+          "source_raw_prompt": "We thought he had seen this film.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            133
+          ],
+          "answer": {
+            "source_key": "Nous pensions qu’il avait vu ce film.",
+            "accepted": [
+              "Nous pensions qu’il avait vu ce film."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch10-ex06-q10",
+          "number": 10,
+          "prompt": "He thought she had read the book. __",
+          "source_raw_prompt": "He thought she had read the book.\n   _____________________________________________________________",
+          "pdf_pages": [
+            133
+          ],
+          "answer": {
+            "source_key": "Il pensait qu’elle avait lu le livre.",
+            "accepted": [
+              "Il pensait qu’elle avait lu le livre."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch10-s03"
+      ]
+    }
+  ]
+}

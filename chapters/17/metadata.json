@@ -1,0 +1,112 @@
+{
+  "chapter": 17,
+  "title": "Chapter 17",
+  "source": {
+    "pdf_pages": [
+      203,
+      209
+    ],
+    "source_sha256": "297b92bc48e075449713c3b408ccf47de2466cfc6c4f4a25687a2a974276ae4d",
+    "answer_key_pdf_pages": [
+      513,
+      514
+    ]
+  },
+  "topics": [
+    {
+      "id": "ch17-t01",
+      "title": "Formation of the passive voice",
+      "exercise_ids": [
+        "ch17-ex01",
+        "ch17-ex02"
+      ]
+    },
+    {
+      "id": "ch17-t02",
+      "title": "The agent with par and with de in the passive voice",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch17-t03",
+      "title": "Uses of the passive voice",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch17-t04",
+      "title": "Avoiding the passive voice in French",
+      "exercise_ids": [
+        "ch17-ex03"
+      ]
+    }
+  ],
+  "exercise_ids": [
+    "ch17-ex01",
+    "ch17-ex02",
+    "ch17-ex03"
+  ],
+  "question_total": 30,
+  "validation": {
+    "source_pages": 7,
+    "source_chars": 10565,
+    "source_partition_complete": true,
+    "exercise_group_markers_detected": 3,
+    "questions_structured": 30,
+    "answer_key_entries_associated": 30,
+    "editorial_visual_review": "pending_glyph_by_glyph_check",
+    "theory_semantic_format": "partially_indexed_source_text_preserved",
+    "theory_source_segments": 2,
+    "text_semantic_format": "source-aligned_markdown_fenced_text_pending_table_visual_proof",
+    "answer_key_count": 30
+  },
+  "subtopics": [
+    {
+      "id": "ch17-s01",
+      "title": "Formation of the passive voice",
+      "parent_topic_id": "ch17-t01",
+      "pdf_pages": [
+        203,
+        203
+      ],
+      "exercise_ids": [
+        "ch17-ex01",
+        "ch17-ex02"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch17-s02",
+      "title": "The agent with par and with de in the passive voice",
+      "parent_topic_id": "ch17-t02",
+      "pdf_pages": [
+        207,
+        207
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch17-s03",
+      "title": "Uses of the passive voice",
+      "parent_topic_id": "ch17-t03",
+      "pdf_pages": [
+        207,
+        207
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch17-s04",
+      "title": "Avoiding the passive voice in French",
+      "parent_topic_id": "ch17-t04",
+      "pdf_pages": [
+        208,
+        208
+      ],
+      "exercise_ids": [
+        "ch17-ex03"
+      ],
+      "kind": "grammar"
+    }
+  ]
+}

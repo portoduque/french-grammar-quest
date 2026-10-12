@@ -1,0 +1,158 @@
+{
+  "chapter": 3,
+  "title": "Chapter 03",
+  "source": {
+    "pdf_pages": [
+      46,
+      59
+    ],
+    "source_sha256": "297b92bc48e075449713c3b408ccf47de2466cfc6c4f4a25687a2a974276ae4d",
+    "answer_key_pdf_pages": [
+      501,
+      502
+    ]
+  },
+  "topics": [
+    {
+      "id": "ch03-t01",
+      "title": "The verb être (to be)",
+      "exercise_ids": [
+        "ch03-ex01",
+        "ch03-ex02"
+      ]
+    },
+    {
+      "id": "ch03-t02",
+      "title": "The verb avoir (to have)",
+      "exercise_ids": [
+        "ch03-ex03",
+        "ch03-ex04",
+        "ch03-ex05"
+      ]
+    },
+    {
+      "id": "ch03-t03",
+      "title": "The -oir verbs",
+      "exercise_ids": [
+        "ch03-ex06"
+      ]
+    },
+    {
+      "id": "ch03-t04",
+      "title": "Connaître",
+      "exercise_ids": [
+        "ch03-ex07",
+        "ch03-ex08"
+      ]
+    },
+    {
+      "id": "ch03-t05",
+      "title": "The verbs pouvoir and vouloir",
+      "exercise_ids": [
+        "ch03-ex09",
+        "ch03-ex10",
+        "ch03-ex11"
+      ]
+    }
+  ],
+  "exercise_ids": [
+    "ch03-ex01",
+    "ch03-ex02",
+    "ch03-ex03",
+    "ch03-ex04",
+    "ch03-ex05",
+    "ch03-ex06",
+    "ch03-ex07",
+    "ch03-ex08",
+    "ch03-ex09",
+    "ch03-ex10",
+    "ch03-ex11"
+  ],
+  "question_total": 110,
+  "validation": {
+    "source_pages": 14,
+    "source_chars": 17434,
+    "source_partition_complete": true,
+    "exercise_group_markers_detected": 11,
+    "questions_structured": 110,
+    "answer_key_entries_associated": 110,
+    "editorial_visual_review": "pending_glyph_by_glyph_check",
+    "theory_semantic_format": "partially_indexed_source_text_preserved",
+    "theory_source_segments": 5,
+    "text_semantic_format": "source-aligned_markdown_fenced_text_pending_table_visual_proof",
+    "answer_key_count": 110
+  },
+  "subtopics": [
+    {
+      "id": "ch03-s01",
+      "title": "The verb être (to be)",
+      "parent_topic_id": "ch03-t01",
+      "pdf_pages": [
+        46,
+        46
+      ],
+      "exercise_ids": [
+        "ch03-ex01",
+        "ch03-ex02"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch03-s02",
+      "title": "The verb avoir (to have)",
+      "parent_topic_id": "ch03-t02",
+      "pdf_pages": [
+        48,
+        48
+      ],
+      "exercise_ids": [
+        "ch03-ex03",
+        "ch03-ex04",
+        "ch03-ex05"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch03-s03",
+      "title": "The -oir verbs",
+      "parent_topic_id": "ch03-t03",
+      "pdf_pages": [
+        52,
+        52
+      ],
+      "exercise_ids": [
+        "ch03-ex06"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch03-s04",
+      "title": "Connaître",
+      "parent_topic_id": "ch03-t04",
+      "pdf_pages": [
+        53,
+        53
+      ],
+      "exercise_ids": [
+        "ch03-ex07",
+        "ch03-ex08"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch03-s05",
+      "title": "The verbs pouvoir and vouloir",
+      "parent_topic_id": "ch03-t05",
+      "pdf_pages": [
+        55,
+        55
+      ],
+      "exercise_ids": [
+        "ch03-ex09",
+        "ch03-ex10",
+        "ch03-ex11"
+      ],
+      "kind": "grammar"
+    }
+  ]
+}

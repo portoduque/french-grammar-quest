@@ -1,0 +1,1545 @@
+{
+  "chapter": 25,
+  "status": "machine_transcribed_with_manual_boundary_repairs_editorial_visual_review_pending",
+  "exercises": [
+    {
+      "id": "ch25-ex01",
+      "source": {
+        "chapter": 25,
+        "exercise": "25.1",
+        "pdf_pages": [
+          314,
+          315
+        ]
+      },
+      "topic_ids": [
+        "ch25-t01"
+      ],
+      "instruction": "Compléter les phrases avec l’adverbe approprié.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch25-ex01-q01",
+          "number": 1,
+          "prompt": "Virginie arrive (tomorrow) __ ? —Oui, elle arrive (tomorrow evening) __ .",
+          "source_raw_prompt": "Virginie arrive (tomorrow) ________________ ? —Oui, elle arrive (tomorrow\n   evening) ________________ . ",
+          "pdf_pages": [
+            314,
+            315
+          ],
+          "answer": {
+            "source_key": "demain / demain soir",
+            "accepted": [
+              "demain / demain soir"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex01-q02",
+          "number": 2,
+          "prompt": "Vous êtes libres (next week) __ ? —Non, nous ne sommes pas libres (next week) __ .",
+          "source_raw_prompt": "Vous êtes libres (next week) ________________ ? —Non, nous ne sommes\n   pas libres (next week) ________________ .\n\n ",
+          "pdf_pages": [
+            315
+          ],
+          "answer": {
+            "source_key": "la semaine prochaine / la semaine prochaine",
+            "accepted": [
+              "la semaine prochaine / la semaine prochaine"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex01-q03",
+          "number": 3,
+          "prompt": "Où vas-tu (today) __ ? —Je vais à Nantes (today) __ .",
+          "source_raw_prompt": "Où vas-tu (today) ________________ ? —Je vais à Nantes (today)\n   ________________ .\n\n ",
+          "pdf_pages": [
+            315
+          ],
+          "answer": {
+            "source_key": "aujourd’hui / aujourd’hui",
+            "accepted": [
+              "aujourd’hui / aujourd’hui"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex01-q04",
+          "number": 4,
+          "prompt": "Vous mangez des fruits (every day) __ ? —Non, je mange des fruits (every other day) __ .",
+          "source_raw_prompt": "Vous mangez des fruits (every day) ________________ ? —Non, je mange\n   des fruits (every other day) ________________ .\n\n ",
+          "pdf_pages": [
+            315
+          ],
+          "answer": {
+            "source_key": "tous les jours / tous les deux jours",
+            "accepted": [
+              "tous les jours / tous les deux jours"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex01-q05",
+          "number": 5,
+          "prompt": "Tu rentres (late) __ ce soir? —Non, je rentre vers sept heures.",
+          "source_raw_prompt": "Tu rentres (late) ________________ ce soir? —Non, je rentre vers sept\n    heures.\n\n ",
+          "pdf_pages": [
+            315
+          ],
+          "answer": {
+            "source_key": "tard",
+            "accepted": [
+              "tard"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex01-q06",
+          "number": 6,
+          "prompt": "Est-ce qu’ils arrivent (often) __ en avance? —Non, ils arrivent (rarely) __ en avance.",
+          "source_raw_prompt": "Est-ce qu’ils arrivent (often) ________________ en avance? —Non, ils\n    arrivent (rarely) ________________ en avance.\n\n ",
+          "pdf_pages": [
+            315
+          ],
+          "answer": {
+            "source_key": "souvent / rarement",
+            "accepted": [
+              "souvent / rarement"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex01-q07",
+          "number": 7,
+          "prompt": "Est-ce qu’elles vont (sometimes) __ à la plage? —Non, elles ne vont (never) __ à la plage.",
+          "source_raw_prompt": "Est-ce qu’elles vont (sometimes) ________________ à la plage? —Non, elles\n   ne vont (never) ________________ à la plage.\n\n ",
+          "pdf_pages": [
+            315
+          ],
+          "answer": {
+            "source_key": "parfois / jamais",
+            "accepted": [
+              "parfois / jamais"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex01-q08",
+          "number": 8,
+          "prompt": "Vous avez beaucoup de travail (right now) __ ? —Non, (right now) __ , c’est très calme.",
+          "source_raw_prompt": "Vous avez beaucoup de travail (right now) ________________ ? —Non, (right\n   now) ________________ , c’est très calme.\n\n ",
+          "pdf_pages": [
+            315
+          ],
+          "answer": {
+            "source_key": "en ce moment / en ce moment",
+            "accepted": [
+              "en ce moment / en ce moment"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex01-q09",
+          "number": 9,
+          "prompt": "Ton anniversaire est (next week) __ ? —Non, mon anniversaire est (the day after tomorrow) __ .",
+          "source_raw_prompt": "Ton anniversaire est (next week) ________________ ? —Non, mon\n    anniversaire est (the day after tomorrow) ________________ .\n\n",
+          "pdf_pages": [
+            315
+          ],
+          "answer": {
+            "source_key": "la semaine prochaine / après-demain",
+            "accepted": [
+              "la semaine prochaine / après-demain"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex01-q10",
+          "number": 10,
+          "prompt": "Il est parti (yesterday) __ ? —Non, il est parti (the day before yesterday) __ .",
+          "source_raw_prompt": "Il est parti (yesterday) ________________ ? —Non, il est parti (the day before\n    yesterday) ________________ .\n\n\n\n\n ",
+          "pdf_pages": [
+            315
+          ],
+          "answer": {
+            "source_key": "hier / avant-hier",
+            "accepted": [
+              "hier / avant-hier"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch25-s01"
+      ]
+    },
+    {
+      "id": "ch25-ex02",
+      "source": {
+        "chapter": 25,
+        "exercise": "25.2",
+        "pdf_pages": [
+          315,
+          316
+        ]
+      },
+      "topic_ids": [
+        "ch25-t01"
+      ],
+      "instruction": "Traduire les phrases suivantes en utilisant tu et la forme est-ce que si nécessaire.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch25-ex02-q01",
+          "number": 1,
+          "prompt": "Today is the first day of winter. __",
+          "source_raw_prompt": "Today is the first day of winter.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            315
+          ],
+          "answer": {
+            "source_key": "Aujourd’hui, c’est le premier jour de l’hiver.",
+            "accepted": [
+              "Aujourd’hui, c’est le premier jour de l’hiver."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex02-q02",
+          "number": 2,
+          "prompt": "She often travels. __",
+          "source_raw_prompt": "She often travels.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            315
+          ],
+          "answer": {
+            "source_key": "Elle voyage souvent.",
+            "accepted": [
+              "Elle voyage souvent."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex02-q03",
+          "number": 3,
+          "prompt": "I am never on time. I am always late. __",
+          "source_raw_prompt": "I am never on time. I am always late.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            315
+          ],
+          "answer": {
+            "source_key": "Je ne suis jamais à l’heure. Je suis toujours en retard.",
+            "accepted": [
+              "Je ne suis jamais à l’heure. Je suis toujours en retard."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex02-q04",
+          "number": 4,
+          "prompt": "He arrives the day after tomorrow. __",
+          "source_raw_prompt": "He arrives the day after tomorrow.   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            315,
+            316
+          ],
+          "answer": {
+            "source_key": "Il arrive après-demain.",
+            "accepted": [
+              "Il arrive après-demain."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex02-q05",
+          "number": 5,
+          "prompt": "Her appointment is in two weeks. __",
+          "source_raw_prompt": "Her appointment is in two weeks.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            316
+          ],
+          "answer": {
+            "source_key": "Son rendez-vous est dans deux semaines.",
+            "accepted": [
+              "Son rendez-vous est dans deux semaines."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex02-q06",
+          "number": 6,
+          "prompt": "We are working tomorrow, but we are not working the day after tomorrow. __",
+          "source_raw_prompt": "We are working tomorrow, but we are not working the day after tomorrow.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            316
+          ],
+          "answer": {
+            "source_key": "Nous travaillons demain, mais nous ne travaillons pas après-demain.",
+            "accepted": [
+              "Nous travaillons demain, mais nous ne travaillons pas après-demain."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex02-q07",
+          "number": 7,
+          "prompt": "They sold their house last week. __",
+          "source_raw_prompt": "They sold their house last week.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            316
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) ont vendu leur maison la semaine dernière.",
+            "accepted": [
+              "Ils (Elles) ont vendu leur maison la semaine dernière."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex02-q08",
+          "number": 8,
+          "prompt": "Are you going to the opera tonight? __",
+          "source_raw_prompt": "Are you going to the opera tonight?\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            316
+          ],
+          "answer": {
+            "source_key": "Est-ce que tu vas à l’opéra ce soir?",
+            "accepted": [
+              "Est-ce que tu vas à l’opéra ce soir?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex02-q09",
+          "number": 9,
+          "prompt": "You are early. I am not ready. __",
+          "source_raw_prompt": "You are early. I am not ready.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            316
+          ],
+          "answer": {
+            "source_key": "Tu es en avance. Je ne suis pas prêt(e).",
+            "accepted": [
+              "Tu es en avance. Je ne suis pas prêt(e)."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex02-q10",
+          "number": 10,
+          "prompt": "The bakery will be closed next week. __",
+          "source_raw_prompt": "The bakery will be closed next week.\n   _____________________________________________________________",
+          "pdf_pages": [
+            316,
+            317,
+            318
+          ],
+          "answer": {
+            "source_key": "La boulangerie sera fermée la semaine prochaine.",
+            "accepted": [
+              "La boulangerie sera fermée la semaine prochaine."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch25-s01"
+      ]
+    },
+    {
+      "id": "ch25-ex03",
+      "source": {
+        "chapter": 25,
+        "exercise": "25.3",
+        "pdf_pages": [
+          318,
+          319
+        ]
+      },
+      "topic_ids": [
+        "ch25-t02"
+      ],
+      "instruction": "Traduire les éléments entre parenthèses.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch25-ex03-q01",
+          "number": 1,
+          "prompt": "(Since when) __ habites-tu à New York? —J’habite à New York depuis 1998.",
+          "source_raw_prompt": "(Since when) ________________ habites-tu à New York? —J’habite à New\n    York depuis 1998.\n\n   ",
+          "pdf_pages": [
+            318
+          ],
+          "answer": {
+            "source_key": "Depuis quand",
+            "accepted": [
+              "Depuis quand"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex03-q02",
+          "number": 2,
+          "prompt": "(How long) __ est-ce que ce boulanger est installé ici? — Depuis cinq ans.",
+          "source_raw_prompt": "(How long) ________________ est-ce que ce boulanger est installé ici? —\n    Depuis cinq ans.\n\n   ",
+          "pdf_pages": [
+            318
+          ],
+          "answer": {
+            "source_key": "Depuis combien de temps",
+            "accepted": [
+              "Depuis combien de temps"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex03-q03",
+          "number": 3,
+          "prompt": "(Since when) __ est-elle malade? —Elle est malade depuis jeudi.",
+          "source_raw_prompt": "(Since when) ________________ est-elle malade? —Elle est malade depuis\n     jeudi.\n\n   ",
+          "pdf_pages": [
+            318
+          ],
+          "answer": {
+            "source_key": "Depuis quand",
+            "accepted": [
+              "Depuis quand"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex03-q04",
+          "number": 4,
+          "prompt": "(How long) __ est-il fleuriste? —Depuis six mois.",
+          "source_raw_prompt": "(How long) ________________ est-il fleuriste? —Depuis six mois.\n\n   ",
+          "pdf_pages": [
+            318
+          ],
+          "answer": {
+            "source_key": "Depuis combien de temps",
+            "accepted": [
+              "Depuis combien de temps"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex03-q05",
+          "number": 5,
+          "prompt": "(Since when) __ cette bijouterie est-elle ouverte? —Elle est ouverte depuis le premier septembre.",
+          "source_raw_prompt": "(Since when) ________________ cette bijouterie est-elle ouverte? —Elle est\n     ouverte depuis le premier septembre.\n\n   ",
+          "pdf_pages": [
+            318
+          ],
+          "answer": {
+            "source_key": "Depuis quand",
+            "accepted": [
+              "Depuis quand"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex03-q06",
+          "number": 6,
+          "prompt": "(How long) __ est-ce que vous attendez? —Nous attendons (for) __ quinze minutes.",
+          "source_raw_prompt": "(How long) ________________ est-ce que vous attendez? —Nous attendons\n     (for) ________________ quinze minutes.\n\n   ",
+          "pdf_pages": [
+            318
+          ],
+          "answer": {
+            "source_key": "Depuis combien de temps / depuis",
+            "accepted": [
+              "Depuis combien de temps / depuis"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex03-q07",
+          "number": 7,
+          "prompt": "(Since when) __ voyages-tu en France régulièrement? — Depuis plusieurs années.",
+          "source_raw_prompt": "(Since when) ________________ voyages-tu en France régulièrement? —\n    Depuis plusieurs années.\n\n   ",
+          "pdf_pages": [
+            318
+          ],
+          "answer": {
+            "source_key": "Depuis quand",
+            "accepted": [
+              "Depuis quand"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex03-q08",
+          "number": 8,
+          "prompt": "(Since when) __ êtes-vous amis? —Nous sommes amis depuis notre enfance.",
+          "source_raw_prompt": "(Since when) ________________ êtes-vous amis? —Nous sommes amis\n     depuis notre enfance.\n\n   ",
+          "pdf_pages": [
+            318
+          ],
+          "answer": {
+            "source_key": "Depuis quand",
+            "accepted": [
+              "Depuis quand"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex03-q09",
+          "number": 9,
+          "prompt": "(How long) __ le marchand de journaux a-t-il pris sa retraite? Depuis trois mois.",
+          "source_raw_prompt": "(How long) ________________ le marchand de journaux a-t-il pris sa retraite?\n    Depuis trois mois.\n\n ",
+          "pdf_pages": [
+            318
+          ],
+          "answer": {
+            "source_key": "Depuis combien de temps",
+            "accepted": [
+              "Depuis combien de temps"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex03-q10",
+          "number": 10,
+          "prompt": "Cette laverie se trouve ici (for) __ plusieurs années. There is an important exception to the rule governing constructions with depuis: In negative sentences, the passé composé is used instead of the present. Forexample: Il n’a pas revu sa sœur depuis dix ans. He has not seen his sister for ten years. Nous ne sommes pas allées à Madrid We have not been to Madrid for t depuis dix ans. years.",
+          "source_raw_prompt": "Cette laverie se trouve ici (for) ________________ plusieurs années.\n\n\n\n   There is an important exception to the rule governing constructions with depuis:\nIn negative sentences, the passé composé  is used instead of the present. Forexample:\n\n         Il n’a pas revu sa sœur depuis dix ans.    He has not seen his sister for ten\n                                                        years.\n      Nous ne sommes pas allées à Madrid     We have not been to Madrid for t\n         depuis dix ans.                              years.\n\n\n\n  ",
+          "pdf_pages": [
+            318,
+            319
+          ],
+          "answer": {
+            "source_key": "depuis",
+            "accepted": [
+              "depuis"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch25-s02"
+      ]
+    },
+    {
+      "id": "ch25-ex04",
+      "source": {
+        "chapter": 25,
+        "exercise": "25.4",
+        "pdf_pages": [
+          319,
+          320
+        ]
+      },
+      "topic_ids": [
+        "ch25-t02"
+      ],
+      "instruction": "Répondre aux questions à l’aide des éléments entre parenthèses.",
+      "interaction_type": "free_response",
+      "questions": [
+        {
+          "id": "ch25-ex04-q01",
+          "number": 1,
+          "prompt": "Depuis combien de temps travailles-tu pour cette agence de voyages? (5 ans) __",
+          "source_raw_prompt": "Depuis combien de temps travailles-tu pour cette agence de voyages? (5 ans)\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            319
+          ],
+          "answer": {
+            "source_key": "Je travaille pour cette agence de voyages depuis cinq ans.",
+            "accepted": [
+              "Je travaille pour cette agence de voyages depuis cinq ans."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex04-q02",
+          "number": 2,
+          "prompt": "Depuis combien de temps cherches-tu un nouvel appartement? (le mois de janvier) __",
+          "source_raw_prompt": "Depuis combien de temps cherches-tu un nouvel appartement? (le mois de\n     janvier)\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            319
+          ],
+          "answer": {
+            "source_key": "Je cherche un nouvel appartement depuis le mois de janvier.",
+            "accepted": [
+              "Je cherche un nouvel appartement depuis le mois de janvier."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex04-q03",
+          "number": 3,
+          "prompt": "Depuis quand allez-vous chez cet opticien? (des années) __",
+          "source_raw_prompt": "Depuis quand allez-vous chez cet opticien? (des années)\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            319
+          ],
+          "answer": {
+            "source_key": "Je vais chez cet opticien depuis des années.",
+            "accepted": [
+              "Je vais chez cet opticien depuis des années."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex04-q04",
+          "number": 4,
+          "prompt": "Cela fait longtemps que vous êtes mariés? (14 ans) __",
+          "source_raw_prompt": "Cela fait longtemps que vous êtes mariés? (14 ans)\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            319
+          ],
+          "answer": {
+            "source_key": "Nous sommes mariés depuis quatorze ans.",
+            "accepted": [
+              "Nous sommes mariés depuis quatorze ans."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex04-q05",
+          "number": 5,
+          "prompt": "Cela fait combien de temps que nous nous connaissons? (9 ans) __",
+          "source_raw_prompt": "Cela fait combien de temps que nous nous connaissons? (9 ans)\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            319
+          ],
+          "answer": {
+            "source_key": "Nous nous connaissons depuis neuf ans.",
+            "accepted": [
+              "Nous nous connaissons depuis neuf ans."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex04-q06",
+          "number": 6,
+          "prompt": "Cela fait longtemps que tu m’attends sous la pluie? (45 minutes) __",
+          "source_raw_prompt": "Cela fait longtemps que tu m’attends sous la pluie? (45 minutes)\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            319
+          ],
+          "answer": {
+            "source_key": "Je t’attends depuis quarante-cinq minutes.",
+            "accepted": [
+              "Je t’attends depuis quarante-cinq minutes."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex04-q07",
+          "number": 7,
+          "prompt": "Vous prenez cette ligne de métro depuis combien de temps? (5 ans) __",
+          "source_raw_prompt": "Vous prenez cette ligne de métro depuis combien de temps? (5 ans)\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            319
+          ],
+          "answer": {
+            "source_key": "Je prends cette ligne de métro depuis cinq ans.",
+            "accepted": [
+              "Je prends cette ligne de métro depuis cinq ans."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex04-q08",
+          "number": 8,
+          "prompt": "Cela fait longtemps que le coiffeur est installé dans ce centre commercial? (6 mois) __",
+          "source_raw_prompt": "Cela fait longtemps que le coiffeur est installé dans ce centre commercial? (6\n    mois)\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            319
+          ],
+          "answer": {
+            "source_key": "Cela fait six mois que le coiffeur est installé dans ce centre commercial.",
+            "accepted": [
+              "Cela fait six mois que le coiffeur est installé dans ce centre commercial."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex04-q09",
+          "number": 9,
+          "prompt": "Depuis quand ne fumes-tu plus? (la semaine dernière) __",
+          "source_raw_prompt": "Depuis quand ne fumes-tu plus? (la semaine dernière)\n    _____________________________________________________________",
+          "pdf_pages": [
+            319,
+            320
+          ],
+          "answer": {
+            "source_key": "Je ne fume plus depuis la semaine dernière.",
+            "accepted": [
+              "Je ne fume plus depuis la semaine dernière."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex04-q10",
+          "number": 10,
+          "prompt": "Depuis combien de temps est-il en vacances? (3 semaines) __",
+          "source_raw_prompt": "Depuis combien de temps est-il en vacances? (3 semaines)\n   _____________________________________________________________\n\n\n\n\n ",
+          "pdf_pages": [
+            319,
+            320
+          ],
+          "answer": {
+            "source_key": "Il est en vacances depuis trois semaines.",
+            "accepted": [
+              "Il est en vacances depuis trois semaines."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch25-s02"
+      ]
+    },
+    {
+      "id": "ch25-ex05",
+      "source": {
+        "chapter": 25,
+        "exercise": "25.5",
+        "pdf_pages": [
+          320,
+          321
+        ]
+      },
+      "topic_ids": [
+        "ch25-t02"
+      ],
+      "instruction": "Changer depuis ou cela fait... que en il y a... que.",
+      "interaction_type": "free_response",
+      "questions": [
+        {
+          "id": "ch25-ex05-q01",
+          "number": 1,
+          "prompt": "J’attends depuis une demi-heure. __",
+          "source_raw_prompt": "J’attends depuis une demi-heure.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            320
+          ],
+          "answer": {
+            "source_key": "Il y a une demi-heure que j’attends.",
+            "accepted": [
+              "Il y a une demi-heure que j’attends."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex05-q02",
+          "number": 2,
+          "prompt": "Cela fait quatre mois que Valérie a sa voiture. __",
+          "source_raw_prompt": "Cela fait quatre mois que Valérie a sa voiture.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            320
+          ],
+          "answer": {
+            "source_key": "Il y a quatre mois que Valérie a sa voiture.",
+            "accepted": [
+              "Il y a quatre mois que Valérie a sa voiture."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex05-q03",
+          "number": 3,
+          "prompt": "Cela fait dix jours que nous essayons de joindre le banquier. __",
+          "source_raw_prompt": "Cela fait dix jours que nous essayons de joindre le banquier.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            320
+          ],
+          "answer": {
+            "source_key": "Il y a dix jours que nous essayons de joindre le banquier.",
+            "accepted": [
+              "Il y a dix jours que nous essayons de joindre le banquier."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex05-q04",
+          "number": 4,
+          "prompt": "Il est en voyage d’affaires depuis deux jours. __",
+          "source_raw_prompt": "Il est en voyage d’affaires depuis deux jours.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            320
+          ],
+          "answer": {
+            "source_key": "Il y a deux jours qu’il est en voyage d’affaires.",
+            "accepted": [
+              "Il y a deux jours qu’il est en voyage d’affaires."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex05-q05",
+          "number": 5,
+          "prompt": "Sophie étudie le mandarin depuis un an. __",
+          "source_raw_prompt": "Sophie étudie le mandarin depuis un an.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            320
+          ],
+          "answer": {
+            "source_key": "Il y a un an que Sophie étudie le mandarin.",
+            "accepted": [
+              "Il y a un an que Sophie étudie le mandarin."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex05-q06",
+          "number": 6,
+          "prompt": "Elle veut adopter un enfant depuis cinq ans. __",
+          "source_raw_prompt": "Elle veut adopter un enfant depuis cinq ans.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            320
+          ],
+          "answer": {
+            "source_key": "Il y a cinq ans qu’elle veut adopter un enfant.",
+            "accepted": [
+              "Il y a cinq ans qu’elle veut adopter un enfant."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex05-q07",
+          "number": 7,
+          "prompt": "Cela fait des semaines que nous cherchons un appartement. __",
+          "source_raw_prompt": "Cela fait des semaines que nous cherchons un appartement.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            320
+          ],
+          "answer": {
+            "source_key": "Il y a des semaines que nous cherchons un appartement.",
+            "accepted": [
+              "Il y a des semaines que nous cherchons un appartement."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex05-q08",
+          "number": 8,
+          "prompt": "Cela fait trois mois que j’attends votre réponse. __",
+          "source_raw_prompt": "Cela fait trois mois que j’attends votre réponse.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            320
+          ],
+          "answer": {
+            "source_key": "Il y a trois mois que j’attends votre réponse.",
+            "accepted": [
+              "Il y a trois mois que j’attends votre réponse."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex05-q09",
+          "number": 9,
+          "prompt": "Ses idées sont dénuées d’intérêt depuis longtemps. __",
+          "source_raw_prompt": "Ses idées sont dénuées d’intérêt depuis longtemps.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            320
+          ],
+          "answer": {
+            "source_key": "Il y a longtemps que ses idées sont dénuées d’intérêt.",
+            "accepted": [
+              "Il y a longtemps que ses idées sont dénuées d’intérêt."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex05-q10",
+          "number": 10,
+          "prompt": "Le chien de nos voisins est perdu depuis une semaine. __ Using adverbs with the passé composé In the passé composé, shorter adverbs of quantity, quality, and frequency are placed between avoir or être and the past participle. See the following example sentences: Elle étudie beaucoup. She studies a lot. Elle a beaucoup étudié. She studied a lot. Ils dépensent trop. They spend too much. Ils ont trop dépensé. They spent too much. Nous travaillons assez. We work enough. Nous avons assez travaillé. We worked enough. Il écrit très bien la musique. He writes music very well. Il a très bien écrit la musique. He wrote music very well. Tu t’exprimes mal. You express yourself badly. Tu t’es mal exprimé(e). You expressed yourself badly. Je voyage souvent en Italie. I often travel in Italy. J’ai souvent voyagé en Italie. I often traveled in Italy. Vous mentez rarement. You rarely lie. Vous avez rarement menti. You have rarely lied. To express time with the passé composé, pendant (for, during) is commonly used (although it can actually be omitted). However, pour (for) is never used to talk about duration in the past. Il a habité pendant cinq ans à Londres. He lived for five years in Londo Il a habité cinq ans à Londres. He lived five years in London. Nous avons voyagé pendant un mois en Italie.We traveled for a month in Italy Nous avons voyagé un mois en Italie. We traveled one month in Italy.",
+          "source_raw_prompt": "Le chien de nos voisins est perdu depuis une semaine.\n   _____________________________________________________________Using adverbs with the passé composé\nIn the passé composé, shorter adverbs of quantity, quality, and frequency are placed\nbetween avoir or être and the past participle. See the following example sentences:\n\n       Elle étudie beaucoup.                She studies a lot.\n       Elle a beaucoup étudié.              She studied a lot.\n         Ils dépensent trop.                  They spend too much.\n         Ils ont trop dépensé.                 They spent too much.\n      Nous travaillons assez.            We work enough.\n      Nous avons assez travaillé.         We worked enough.\n          Il écrit très bien la musique.         He writes music very well.\n          Il a très bien écrit la musique.       He wrote music very well.\n      Tu t’exprimes mal.                  You express yourself badly.\n      Tu t’es mal exprimé(e).              You expressed yourself badly.\n       Je voyage souvent en Italie.                I often travel in Italy.\n        J’ai souvent voyagé en Italie.              I often traveled in Italy.\n      Vous mentez rarement.              You rarely lie.\n      Vous avez rarement menti.           You have rarely lied.\n\n  To express time with the passé composé, pendant (for, during) is commonly used\n(although it can actually be omitted). However, pour (for) is never used to talk about\nduration in the past.\n\n          Il a habité pendant cinq ans à Londres.     He lived for five years in Londo\n          Il a habité cinq ans à Londres.           He lived five years in London.\n      Nous avons voyagé pendant un mois en Italie.We traveled for a month in Italy\n      Nous avons voyagé un mois en Italie.      We traveled one month in Italy.\n\n\n\n  ",
+          "pdf_pages": [
+            320,
+            321
+          ],
+          "answer": {
+            "source_key": "Il y a une semaine que le chien de nos voisins est perdu.",
+            "accepted": [
+              "Il y a une semaine que le chien de nos voisins est perdu."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch25-s02"
+      ]
+    },
+    {
+      "id": "ch25-ex06",
+      "source": {
+        "chapter": 25,
+        "exercise": "25.6",
+        "pdf_pages": [
+          321,
+          322
+        ]
+      },
+      "topic_ids": [
+        "ch25-t03"
+      ],
+      "instruction": "Mettre les phrases suivantes au passé composé.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch25-ex06-q01",
+          "number": 1,
+          "prompt": "Ils voyagent souvent en Asie. __",
+          "source_raw_prompt": "Ils voyagent souvent en Asie.\n    _____________________________________________________________   ",
+          "pdf_pages": [
+            321,
+            322
+          ],
+          "answer": {
+            "source_key": "Ils ont souvent voyagé en Asie.",
+            "accepted": [
+              "Ils ont souvent voyagé en Asie."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex06-q02",
+          "number": 2,
+          "prompt": "On mange bien chez eux. __",
+          "source_raw_prompt": "On mange bien chez eux.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            322
+          ],
+          "answer": {
+            "source_key": "On a bien mangé chez eux.",
+            "accepted": [
+              "On a bien mangé chez eux."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex06-q03",
+          "number": 3,
+          "prompt": "Elle dépense beaucoup. __",
+          "source_raw_prompt": "Elle dépense beaucoup.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            322
+          ],
+          "answer": {
+            "source_key": "Elle a beaucoup dépensé.",
+            "accepted": [
+              "Elle a beaucoup dépensé."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex06-q04",
+          "number": 4,
+          "prompt": "Il lit rarement des romans policiers. __",
+          "source_raw_prompt": "Il lit rarement des romans policiers.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            322
+          ],
+          "answer": {
+            "source_key": "Il a rarement lu des romans policiers.",
+            "accepted": [
+              "Il a rarement lu des romans policiers."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex06-q05",
+          "number": 5,
+          "prompt": "Nous ne travaillons pas assez. __",
+          "source_raw_prompt": "Nous ne travaillons pas assez.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            322
+          ],
+          "answer": {
+            "source_key": "Nous n’avons pas assez travaillé.",
+            "accepted": [
+              "Nous n’avons pas assez travaillé."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex06-q06",
+          "number": 6,
+          "prompt": "Je parle trop. __",
+          "source_raw_prompt": "Je parle trop.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            322
+          ],
+          "answer": {
+            "source_key": "J’ai trop parlé.",
+            "accepted": [
+              "J’ai trop parlé."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex06-q07",
+          "number": 7,
+          "prompt": "Elle écrit très peu. __",
+          "source_raw_prompt": "Elle écrit très peu.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            322
+          ],
+          "answer": {
+            "source_key": "Elle a très peu écrit.",
+            "accepted": [
+              "Elle a très peu écrit."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex06-q08",
+          "number": 8,
+          "prompt": "Tu vas souvent au théâtre. __",
+          "source_raw_prompt": "Tu vas souvent au théâtre.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            322
+          ],
+          "answer": {
+            "source_key": "Tu es souvent allé(e) au théâtre.",
+            "accepted": [
+              "Tu es souvent allé(e) au théâtre."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex06-q09",
+          "number": 9,
+          "prompt": "Il s’exprime toujours très mal. __",
+          "source_raw_prompt": "Il s’exprime toujours très mal.\n    _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            322
+          ],
+          "answer": {
+            "source_key": "Il s’est toujours très mal exprimé.",
+            "accepted": [
+              "Il s’est toujours très mal exprimé."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex06-q10",
+          "number": 10,
+          "prompt": "Nous aimons bien la maison. __",
+          "source_raw_prompt": "Nous aimons bien la maison.\n    _____________________________________________________________",
+          "pdf_pages": [
+            322,
+            323
+          ],
+          "answer": {
+            "source_key": "Nous avons bien aimé la maison.",
+            "accepted": [
+              "Nous avons bien aimé la maison."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch25-s03"
+      ]
+    },
+    {
+      "id": "ch25-ex07",
+      "source": {
+        "chapter": 25,
+        "exercise": "25.7",
+        "pdf_pages": [
+          323
+        ]
+      },
+      "topic_ids": [
+        "ch25-t04"
+      ],
+      "instruction": "Traduire les mots entre parenthèses.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch25-ex07-q01",
+          "number": 1,
+          "prompt": "(How many) __ livres lisez-vous? —Je lis deux livres.",
+          "source_raw_prompt": "(How many) ________________ livres lisez-vous? —Je lis deux livres.\n\n   ",
+          "pdf_pages": [
+            323
+          ],
+          "answer": {
+            "source_key": "Combien de",
+            "accepted": [
+              "Combien de"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex07-q02",
+          "number": 2,
+          "prompt": "(How) __ allons-nous à la plage? —Nous allons à la plage en voiture.",
+          "source_raw_prompt": "(How) ________________ allons-nous à la plage? —Nous allons à la plage en\n     voiture.\n\n   ",
+          "pdf_pages": [
+            323
+          ],
+          "answer": {
+            "source_key": "Comment",
+            "accepted": [
+              "Comment"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex07-q03",
+          "number": 3,
+          "prompt": "(Who) __ loue la maison bleue? —Suzanne loue la maison bleue.",
+          "source_raw_prompt": "(Who) ________________ loue la maison bleue? —Suzanne loue la maison\n     bleue.\n\n   ",
+          "pdf_pages": [
+            323
+          ],
+          "answer": {
+            "source_key": "Qui",
+            "accepted": [
+              "Qui"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex07-q04",
+          "number": 4,
+          "prompt": "(What) __ pensez-vous de ce roman? —C’est un mauvais roman.",
+          "source_raw_prompt": "(What) ________________ pensez-vous de ce roman? —C’est un mauvais\n    roman.\n\n   ",
+          "pdf_pages": [
+            323
+          ],
+          "answer": {
+            "source_key": "Que",
+            "accepted": [
+              "Que"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex07-q05",
+          "number": 5,
+          "prompt": "(How much) __ coûte l’appartement de Stéphane? — L’appartement de Stéphane coûte cher.",
+          "source_raw_prompt": "(How much) ________________ coûte l’appartement de Stéphane? —\n    L’appartement de Stéphane coûte cher.\n\n   ",
+          "pdf_pages": [
+            323
+          ],
+          "answer": {
+            "source_key": "Combien",
+            "accepted": [
+              "Combien"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex07-q06",
+          "number": 6,
+          "prompt": "(Where) __ travaille votre mari? —Il travaille à Berlin.",
+          "source_raw_prompt": "(Where) ________________ travaille votre mari? —Il travaille à Berlin.\n\n   ",
+          "pdf_pages": [
+            323
+          ],
+          "answer": {
+            "source_key": "Où",
+            "accepted": [
+              "Où"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex07-q07",
+          "number": 7,
+          "prompt": "(When) __ vont-ils au théâtre? —Ils vont au théâtre samedi soir.",
+          "source_raw_prompt": "(When) ________________ vont-ils au théâtre? —Ils vont au théâtre samedi\n      soir.\n\n   ",
+          "pdf_pages": [
+            323
+          ],
+          "answer": {
+            "source_key": "Quand",
+            "accepted": [
+              "Quand"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex07-q08",
+          "number": 8,
+          "prompt": "(Why) __ étudiez-vous le français? —J’étudie le français pour mon travail.",
+          "source_raw_prompt": "(Why) ________________ étudiez-vous le français? —J’étudie le français\n    pour mon travail.\n\n   ",
+          "pdf_pages": [
+            323
+          ],
+          "answer": {
+            "source_key": "Pourquoi",
+            "accepted": [
+              "Pourquoi"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex07-q09",
+          "number": 9,
+          "prompt": "(When) __ arrive-t-il? —Il arrive la semaine prochaine.",
+          "source_raw_prompt": "(When) ________________ arrive-t-il? —Il arrive la semaine prochaine.\n\n ",
+          "pdf_pages": [
+            323
+          ],
+          "answer": {
+            "source_key": "Quand",
+            "accepted": [
+              "Quand"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex07-q10",
+          "number": 10,
+          "prompt": "(Who) __ chante? —C’est Laurent qui chante.",
+          "source_raw_prompt": "(Who) ________________ chante? —C’est Laurent qui chante.",
+          "pdf_pages": [
+            323,
+            324
+          ],
+          "answer": {
+            "source_key": "Qui",
+            "accepted": [
+              "Qui"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch25-s04"
+      ]
+    },
+    {
+      "id": "ch25-ex08",
+      "source": {
+        "chapter": 25,
+        "exercise": "25.8",
+        "pdf_pages": [
+          324,
+          325
+        ]
+      },
+      "topic_ids": [
+        "ch25-t05"
+      ],
+      "instruction": "Traduire les phrases suivantes en utilisant vous et l’inversion si nécessaire.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch25-ex08-q01",
+          "number": 1,
+          "prompt": "He planted flowers everywhere. __",
+          "source_raw_prompt": "He planted flowers everywhere.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            324
+          ],
+          "answer": {
+            "source_key": "Il a planté des fleurs partout.",
+            "accepted": [
+              "Il a planté des fleurs partout."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex08-q02",
+          "number": 2,
+          "prompt": "Do you want to live here? __",
+          "source_raw_prompt": "Do you want to live here?\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            324
+          ],
+          "answer": {
+            "source_key": "Voulez-vous vivre ici?",
+            "accepted": [
+              "Voulez-vous vivre ici?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex08-q03",
+          "number": 3,
+          "prompt": "My car is parked just behind yours. __",
+          "source_raw_prompt": "My car is parked just behind yours.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            324
+          ],
+          "answer": {
+            "source_key": "Ma voiture est garée juste derrière la vôtre.",
+            "accepted": [
+              "Ma voiture est garée juste derrière la vôtre."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex08-q04",
+          "number": 4,
+          "prompt": "We’ll go somewhere else. __",
+          "source_raw_prompt": "We’ll go somewhere else.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            324
+          ],
+          "answer": {
+            "source_key": "Nous irons ailleurs.",
+            "accepted": [
+              "Nous irons ailleurs."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex08-q05",
+          "number": 5,
+          "prompt": "He is outside. __",
+          "source_raw_prompt": "He is outside.\n   _____________________________________________________________ ",
+          "pdf_pages": [
+            324,
+            325
+          ],
+          "answer": {
+            "source_key": "Il est dehors.",
+            "accepted": [
+              "Il est dehors."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex08-q06",
+          "number": 6,
+          "prompt": "I live near the river. __",
+          "source_raw_prompt": "I live near the river.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            325
+          ],
+          "answer": {
+            "source_key": "J’habite près de la rivière.",
+            "accepted": [
+              "J’habite près de la rivière."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex08-q07",
+          "number": 7,
+          "prompt": "You live too far. __",
+          "source_raw_prompt": "You live too far.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            325
+          ],
+          "answer": {
+            "source_key": "Vous habitez trop loin.",
+            "accepted": [
+              "Vous habitez trop loin."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex08-q08",
+          "number": 8,
+          "prompt": "I see strange things here and there. __",
+          "source_raw_prompt": "I see strange things here and there.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            325
+          ],
+          "answer": {
+            "source_key": "Je vois des choses bizarres ça et là.",
+            "accepted": [
+              "Je vois des choses bizarres ça et là."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex08-q09",
+          "number": 9,
+          "prompt": "He is in front of you. __",
+          "source_raw_prompt": "He is in front of you.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            325
+          ],
+          "answer": {
+            "source_key": "Il est devant vous.",
+            "accepted": [
+              "Il est devant vous."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch25-ex08-q10",
+          "number": 10,
+          "prompt": "Come sit next to me. __",
+          "source_raw_prompt": "Come sit next to me.\n   _____________________________________________________________",
+          "pdf_pages": [
+            325
+          ],
+          "answer": {
+            "source_key": "Venez vous asseoir près de moi.",
+            "accepted": [
+              "Venez vous asseoir près de moi."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch25-s05"
+      ]
+    }
+  ]
+}

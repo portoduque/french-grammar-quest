@@ -1,0 +1,36 @@
+       soixante-cinq                                         sixty-five
+       soixante-six                                          sixty-six
+       soixante-sept                                     sixty-seven
+       soixante-huit                                       sixty-eight
+       soixante-neuf                                      sixty-nine
+       soixante-dix                                    seventy
+
+  From seventy-one to seventy-nine, you add the teen numbers.
+
+       soixante et onze                            seventy-one
+       soixante-douze                             seventy-two
+       soixante-treize                               seventy-three
+       soixante-quatorze                           seventy-four
+       soixante-quinze                               seventy-five
+       soixante-seize                                 seventy-six
+       soixante-dix-sept                           seventy-seven
+       soixante-dix-huit                             seventy-eight
+       soixante-dix-neuf                           seventy-nine
+
+   Eighty is really four times twenty. Therefore from eighty to ninety-nine, you’ll
+keep adding to quatre-vingts. Note that quatre-vingts has an -s. But once you
+attach another number to quatre-vingts, the -s will drop.
+
+       quatre-vingts                                      eighty
+       quatre-vingt-un                                  eighty-one
+       quatre-vingt-deux                                eighty-two
+       quatre-vingt-trois                                  eighty-three
+       quatre-vingt-quatre                                eighty-four
+       quatre-vingt-cinq                                    eighty-five
+       quatre-vingt-six                                     eighty-six
+       quatre-vingt-sept                                 eighty-seven
+       quatre-vingt-huit                                   eighty-eight
+       quatre-vingt-neuf                                 eighty-nine
+       quatre-vingt-dix                                   ninety
+       quatre-vingt-onze                                ninety-one
+       quatre-vingt-douze                               ninety-two

@@ -1,0 +1,583 @@
+{
+  "chapter": 19,
+  "status": "machine_transcribed_editorial_visual_review_pending",
+  "exercises": [
+    {
+      "id": "ch19-ex01",
+      "source": {
+        "chapter": 19,
+        "exercise": "19.1",
+        "pdf_pages": [
+          220,
+          221
+        ]
+      },
+      "topic_ids": [
+        "ch19-t01"
+      ],
+      "instruction": "Mettre à l’impératif les phrases suivantes.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch19-ex01-q01",
+          "number": 1,
+          "prompt": "Prendre le train de neuf heures. (tu) __",
+          "source_raw_prompt": "Prendre le train de neuf heures. (tu)\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            220
+          ],
+          "answer": {
+            "source_key": "Prends le train de neuf heures!",
+            "accepted": [
+              "Prends le train de neuf heures!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch19-ex01-q02",
+          "number": 2,
+          "prompt": "Regarder le film à la télé ce soir. (vous) __",
+          "source_raw_prompt": "Regarder le film à la télé ce soir. (vous)\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            220
+          ],
+          "answer": {
+            "source_key": "Regardez le film à la télé ce soir!",
+            "accepted": [
+              "Regardez le film à la télé ce soir!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch19-ex01-q03",
+          "number": 3,
+          "prompt": "Dîner sur la terrasse. (nous) __",
+          "source_raw_prompt": "Dîner sur la terrasse. (nous)\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            220
+          ],
+          "answer": {
+            "source_key": "Dînons sur la terrasse!",
+            "accepted": [
+              "Dînons sur la terrasse!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch19-ex01-q04",
+          "number": 4,
+          "prompt": "Acheter le journal. (tu) __",
+          "source_raw_prompt": "Acheter le journal. (tu)   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            220,
+            221
+          ],
+          "answer": {
+            "source_key": "Achète le journal!",
+            "accepted": [
+              "Achète le journal!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch19-ex01-q05",
+          "number": 5,
+          "prompt": "Boire à sa santé. (nous) __",
+          "source_raw_prompt": "Boire à sa santé. (nous)\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            221
+          ],
+          "answer": {
+            "source_key": "Buvons à sa santé!",
+            "accepted": [
+              "Buvons à sa santé!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch19-ex01-q06",
+          "number": 6,
+          "prompt": "Expliquer les conditions. (vous) __",
+          "source_raw_prompt": "Expliquer les conditions. (vous)\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            221
+          ],
+          "answer": {
+            "source_key": "Expliquez les conditions!",
+            "accepted": [
+              "Expliquez les conditions!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch19-ex01-q07",
+          "number": 7,
+          "prompt": "Ne pas courir si vite. (tu) __",
+          "source_raw_prompt": "Ne pas courir si vite. (tu)\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            221
+          ],
+          "answer": {
+            "source_key": "Ne cours pas si vite!",
+            "accepted": [
+              "Ne cours pas si vite!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch19-ex01-q08",
+          "number": 8,
+          "prompt": "Épeler ton nom. (tu) __",
+          "source_raw_prompt": "Épeler ton nom. (tu)\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            221
+          ],
+          "answer": {
+            "source_key": "Épelle ton nom!",
+            "accepted": [
+              "Épelle ton nom!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch19-ex01-q09",
+          "number": 9,
+          "prompt": "Prêter votre dictionnaire à Marie. (vous) __",
+          "source_raw_prompt": "Prêter votre dictionnaire à Marie. (vous)\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            221
+          ],
+          "answer": {
+            "source_key": "Prêtez votre dictionnaire à Marie!",
+            "accepted": [
+              "Prêtez votre dictionnaire à Marie!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch19-ex01-q10",
+          "number": 10,
+          "prompt": "Ne pas inviter Denis. (tu) __",
+          "source_raw_prompt": "Ne pas inviter Denis. (tu)\n   _____________________________________________________________",
+          "pdf_pages": [
+            221,
+            222,
+            223
+          ],
+          "answer": {
+            "source_key": "N’invite pas Denis!",
+            "accepted": [
+              "N’invite pas Denis!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch19-s01"
+      ]
+    },
+    {
+      "id": "ch19-ex02",
+      "source": {
+        "chapter": 19,
+        "exercise": "19.2",
+        "pdf_pages": [
+          223,
+          224
+        ]
+      },
+      "topic_ids": [
+        "ch19-t03"
+      ],
+      "instruction": "Mettre à l’impératif les phrases suivantes.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch19-ex02-q01",
+          "number": 1,
+          "prompt": "Se laver les mains. (tu) __",
+          "source_raw_prompt": "Se laver les mains. (tu)\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            224
+          ],
+          "answer": {
+            "source_key": "Lave-toi les mains!",
+            "accepted": [
+              "Lave-toi les mains!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch19-ex02-q02",
+          "number": 2,
+          "prompt": "Se balader dans la forêt. (vous) __",
+          "source_raw_prompt": "Se balader dans la forêt. (vous)\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            224
+          ],
+          "answer": {
+            "source_key": "Baladez-vous dans la forêt.",
+            "accepted": [
+              "Baladez-vous dans la forêt."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch19-ex02-q03",
+          "number": 3,
+          "prompt": "S’écrire plus souvent. (nous) __",
+          "source_raw_prompt": "S’écrire plus souvent. (nous)\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            224
+          ],
+          "answer": {
+            "source_key": "Écrivons-nous plus souvent!",
+            "accepted": [
+              "Écrivons-nous plus souvent!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch19-ex02-q04",
+          "number": 4,
+          "prompt": "Ne pas se coucher trop tard. (tu) __",
+          "source_raw_prompt": "Ne pas se coucher trop tard. (tu)\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            224
+          ],
+          "answer": {
+            "source_key": "Ne te couche pas trop tard!",
+            "accepted": [
+              "Ne te couche pas trop tard!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch19-ex02-q05",
+          "number": 5,
+          "prompt": "Se réveiller à cinq heures. (vous) __",
+          "source_raw_prompt": "Se réveiller à cinq heures. (vous)\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            224
+          ],
+          "answer": {
+            "source_key": "Réveillez-vous à cinq heures!",
+            "accepted": [
+              "Réveillez-vous à cinq heures!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch19-ex02-q06",
+          "number": 6,
+          "prompt": "S’habiller vite. (tu) __",
+          "source_raw_prompt": "S’habiller vite. (tu)\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            224
+          ],
+          "answer": {
+            "source_key": "Habille-toi vite!",
+            "accepted": [
+              "Habille-toi vite!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch19-ex02-q07",
+          "number": 7,
+          "prompt": "Ne pas se tromper de route. (vous) __",
+          "source_raw_prompt": "Ne pas se tromper de route. (vous)\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            224
+          ],
+          "answer": {
+            "source_key": "Ne vous trompez pas de route!",
+            "accepted": [
+              "Ne vous trompez pas de route!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch19-ex02-q08",
+          "number": 8,
+          "prompt": "Se retrouver devant la Brasserie Lipp. (nous) __",
+          "source_raw_prompt": "Se retrouver devant la Brasserie Lipp. (nous)\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            224
+          ],
+          "answer": {
+            "source_key": "Retrouvons-nous devant la Brasserie Lipp!",
+            "accepted": [
+              "Retrouvons-nous devant la Brasserie Lipp!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch19-ex02-q09",
+          "number": 9,
+          "prompt": "Se dépêcher. (tu) __",
+          "source_raw_prompt": "Se dépêcher. (tu)\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            224
+          ],
+          "answer": {
+            "source_key": "Dépêche-toi!",
+            "accepted": [
+              "Dépêche-toi!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch19-ex02-q10",
+          "number": 10,
+          "prompt": "Se rencontrer un jour à Paris. (nous) __",
+          "source_raw_prompt": "Se rencontrer un jour à Paris. (nous)\n   _____________________________________________________________\n\n\n\n\n ",
+          "pdf_pages": [
+            224
+          ],
+          "answer": {
+            "source_key": "Rencontrons-nous un jour à Paris!",
+            "accepted": [
+              "Rencontrons-nous un jour à Paris!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch19-s03"
+      ]
+    },
+    {
+      "id": "ch19-ex03",
+      "source": {
+        "chapter": 19,
+        "exercise": "19.3",
+        "pdf_pages": [
+          224,
+          225
+        ]
+      },
+      "topic_ids": [
+        "ch19-t03"
+      ],
+      "instruction": "Traduire les phrases suivantes en utilisant l’impératif.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch19-ex03-q01",
+          "number": 1,
+          "prompt": "Don’t forget your passport! (tu) __",
+          "source_raw_prompt": "Don’t forget your passport! (tu)\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            224
+          ],
+          "answer": {
+            "source_key": "N’oublie pas ton passeport!",
+            "accepted": [
+              "N’oublie pas ton passeport!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch19-ex03-q02",
+          "number": 2,
+          "prompt": "Let’s rest on the bench! (nous) __",
+          "source_raw_prompt": "Let’s rest on the bench! (nous)   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            224,
+            225
+          ],
+          "answer": {
+            "source_key": "Reposons-nous sur le banc!",
+            "accepted": [
+              "Reposons-nous sur le banc!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch19-ex03-q03",
+          "number": 3,
+          "prompt": "Bring your identification card! (vous) __",
+          "source_raw_prompt": "Bring your identification card! (vous)\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            225
+          ],
+          "answer": {
+            "source_key": "Apportez votre carte d’identité!",
+            "accepted": [
+              "Apportez votre carte d’identité!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch19-ex03-q04",
+          "number": 4,
+          "prompt": "Tell us his first name! (tu) __",
+          "source_raw_prompt": "Tell us his first name! (tu)\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            225
+          ],
+          "answer": {
+            "source_key": "Dis-nous son prénom!",
+            "accepted": [
+              "Dis-nous son prénom!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch19-ex03-q05",
+          "number": 5,
+          "prompt": "Take this medicine! (tu) __",
+          "source_raw_prompt": "Take this medicine! (tu)\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            225
+          ],
+          "answer": {
+            "source_key": "Prends ce médicament!",
+            "accepted": [
+              "Prends ce médicament!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch19-ex03-q06",
+          "number": 6,
+          "prompt": "Don’t be late! (vous) __",
+          "source_raw_prompt": "Don’t be late! (vous)\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            225
+          ],
+          "answer": {
+            "source_key": "Ne soyez pas en retard!",
+            "accepted": [
+              "Ne soyez pas en retard!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch19-ex03-q07",
+          "number": 7,
+          "prompt": "Let’s go to Italy! (nous) __",
+          "source_raw_prompt": "Let’s go to Italy! (nous)\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            225
+          ],
+          "answer": {
+            "source_key": "Allons en Italie!",
+            "accepted": [
+              "Allons en Italie!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch19-ex03-q08",
+          "number": 8,
+          "prompt": "Close the door! (tu) __",
+          "source_raw_prompt": "Close the door! (tu)\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            225
+          ],
+          "answer": {
+            "source_key": "Ferme la porte!",
+            "accepted": [
+              "Ferme la porte!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch19-ex03-q09",
+          "number": 9,
+          "prompt": "Wait for me! (vous) __",
+          "source_raw_prompt": "Wait for me! (vous)\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            225
+          ],
+          "answer": {
+            "source_key": "Attendez- moi!",
+            "accepted": [
+              "Attendez- moi!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch19-ex03-q10",
+          "number": 10,
+          "prompt": "Write your address on the envelope! (vous) __",
+          "source_raw_prompt": "Write your address on the envelope! (vous)\n   _____________________________________________________________",
+          "pdf_pages": [
+            225
+          ],
+          "answer": {
+            "source_key": "Écrivez votre adresse sur l’enveloppe!",
+            "accepted": [
+              "Écrivez votre adresse sur l’enveloppe!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch19-s03"
+      ]
+    }
+  ]
+}

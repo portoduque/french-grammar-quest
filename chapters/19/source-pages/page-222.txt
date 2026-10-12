@@ -1,0 +1,34 @@
+ un mariage                       a marriage, a wedding
+ un décès                         a death
+ une adresse                       an address
+ une carte d’identité                an identity card
+ un passeport                      a passport
+ un permis de conduire             a driver’s license
+ un certificat de vaccination         a vaccination certificate
+ célibataire                              single
+ marié(e)                            married
+ séparé(e)                            separated
+ divorcé(e)                            divorced
+ veuf, veuve                         widow, widower
+ une parenté                      a kinship
+ un lien de parenté                 a family tie
+ un arbre généalogique              a family tree
+ un(e) ancêtre                     an ancestor
+ signer                                   to sign
+ cocher                                   to check off
+
+
+Irregular imperative forms
+Some imperatives are irregular. Let’s take a look at être, avoir, and savoir.
+
+        être to be
+        sois                               be
+       soyons                                          let’s be
+       soyez                              be
+
+       avoir to have
+        aie                         have
+       ayons                                  let’s have
+       ayez                        have
+
+        savoir to know

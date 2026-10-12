@@ -1,0 +1,878 @@
+                  •21•
+
+            All the pronouns
+
+
+
+Subject pronouns
+There are many types of pronouns in French. Let’s start with the subject pronouns
+you have already used when conjugating verbs.
+
+        je      I
+       tu    you (singular familiar)
+           il      he, it (masculine)
+        elle    she, it (feminine)
+      on    one, we, they, people
+      nous  we
+      vous  you (singular formal and all plurals)
+          ils     they (masculine, or mixed masculine and feminine)
+        elles   they (feminine)
+
+  The third-person pronouns apply to people, animals, or things.
+
+      Bertrand est chirurgien.          Bertrand is a surgeon.
+         Il est chirurgien.             He is a surgeon.
+      Les trois sœurs jouent dans le    The three sisters are playing in the living
+           salon.                          room.
+       Elles jouent dans le salon.        They are playing in the living room.
+     Le chat est assis sur la chaise.    The cat is sitting on the chair.
+         Il est assis sur la chaise.               It is sitting on the chair.
+     La ville est très polluée.         The city is very polluted.       Elle est très polluée.                    It is very polluted.
+
+  Remember that there are two ways of saying you in French. Use tu and its verb
+forms to talk to friends, family members, children, and animals. Use vous when you
+are addressing a stranger or someone you don’t know well, or to maintain a certain
+degree of distance or respect. Note, however, that the contemporary trend is toward
+familiarity, especially among peers. It all depends on the setting and the crowd.
+However, it’s always a good idea to let the native French speaker initiate your first
+exchange with tu.
+  The pronoun on has several meanings. It may mean one, we, or they depending on
+how it is used. On can replace an indefinite person.
+
+    On voudrait tout réussir.       One would like to succeed in everything.
+    On ne peut pas penser à tout.   One cannot think of everything.
+
+  On means people in general. It often refers to habits and customs of a culture.
+
+     En France, on boit du vin.             In France, one drinks wine.
+     Au Japon, on boit du saké.             In Japan, one drinks sake.
+
+   In informal conversation, on takes on the meaning of nous.
+
+    On va au cinéma cet après-midi?       Shall we go to the movies this
+                                              afternoon?
+        Julien et moi, on passe toujours nos    Julien and I, we always spend our
+         vacances en Corse.                    vacation in Corsica.
+
+   Another informal use of on replaces the pronoun tu.
+
+      Ah, on s’amuse ici!                 So, we are having fun here!
+       Alors, on se promène au lieu de faire So, we are taking a walk instead of doing
+          ses devoirs!                      our homework!
+
+  On can also replace a passive voice in English.
+
+         Ici, on parle anglais.                     English is spoken here.
+    On n’a pas encore trouvé de solution.   A solution has not yet been found.
+
+
+   VOCABULAIREun acteur, une actrice                 an actor, an actress
+un(e) architecte                      an architect
+un(e) artiste                         an artist
+un(e) avocat(e)                       a lawyer
+un coiffeur, une coiffeuse              a hairdresser, a barber
+un(e) commerçant(e)                  a store owner
+un(e) comptable                      an accountant
+un cuisinier, une cuisinière             a cook
+un(e) dentiste                        a dentist
+un directeur, une directrice            a manager
+un(e) écrivain(e)                     a writer
+un homme, une femme d’affaires       a businessman, -woman
+un(e) fleuriste                        a florist
+un infirmier, une infirmière            a (hospital) nurse
+un(e) informaticien(ne)                a computer specialist
+un ingénieur                         an engineer
+un(e) journaliste                     a journalist
+un mannequin                       a model
+un médecin                          a doctor, a physician
+un metteur en scène                  a film/theater director
+un(e) musicien(ne)                    a musician
+un ouvrier, une ouvrière               a (factory) worker
+un(e) pharmacien(ne)                 a pharmacist
+un(e) photographe                    a photographer
+un(e) pilote                          a pilot
+un plombier                         a plumber
+un pompier                          a firefighter
+un professeur                        a teacher, a professor
+un rédacteur, une rédactrice           an editor
+une sage-femme                      a midwife
+un serveur, une serveuse               a waiter, a waitressDirect object pronouns
+Another type of pronoun is the direct object pronoun (le pronom objet direct). In
+English there are seven direct object pronouns: me, you, him, her, it, us, them. Note
+that in French there are two forms of the direct object pronoun you: the informal te
+and the formal or plural vous. English distinguishes between a direct object pronoun
+that replaces a person (him or her) or a thing (it); in French le, la, les can replace
+both people and things. Les refers to both masculine and feminine. Me, te, le, and la
+become m’, t’, and l’ before vowels and the mute h.
+
+
+       SINGULAR                           PLURAL
+     me (m’)  me                      nous  us
+        te (t’)     you (familiar)             vous  you (plural or formal)
+        le (l’)     him or it (masculine)          les    them (masc. and fem.)
+        la (l’)      her or it (feminine)
+
+   Pronouns allow speakers to avoid being repetitious, to make communication more
+efficient, and  to  link  ideas across  sentences. An  object  is  called  direct  if  it
+immediately follows the verb without a preposition. The direct object pronoun
+replaces the direct object noun. In French, the direct object pronoun agrees in gender
+and number with the noun it replaces. Note that the French direct object pronoun
+precedes the verb. In a sentence with auxiliary or compound verbs, the direct object
+pronoun precedes the verb to which it directly refers. The direct object pronoun can
+replace a noun with a definite article (le, la, les), with a possessive adjective (mon,
+ton, son, etc.), or with a demonstrative adjective (ce, cet, cette, ces).
+
+        L’artiste chante la chanson.        The artist sings the song.
+        L’artiste la chante.               The artist sings it.
+       Quentin appelle son ami.           Quentin calls his friend.
+       Quentin l’appelle.                 Quentin calls him.
+          Il prend la décision.            He makes the decision.
+          Il la prend.                  He makes it.
+       L’infirmier soigne ses patients.     The nurse takes care of his patients.
+       L’infirmier les soigne.             The nurse takes care of them.
+          Il m’appelle.                 He is calling me.
+      Nous vous remercions.          We thank you.
+       Elle t’invite.                     She invites you.
+         Ils nous accueillent.              They greet us.   In a negative sentence, the direct object pronoun also comes immediately before
+the conjugated verb.
+
+      Nous n’acceptons pas l’offre.       We do not accept the offer.
+      Nous ne l’acceptons pas.          We do not accept it.
+         Ils ne comprennent pas la question.   They do not understand the question.
+         Ils ne la comprennent pas.           They do not understand it.
+       Elle ne suit pas les directives.        She does not follow the directions.
+       Elle ne les suit pas.                 She does not follow them.
+
+   In the interrogative form, when using the inversion, the direct object pronoun
+comes immediately before the verb.
+
+       Connaissez-vous ce dentiste?      Do you know this dentist?
+     Le connaissez-vous?            Do you know him?
+      Approuvez-vous sa décision?      Do you approve of his decision?
+       L’approuvez-vous?             Do you approve of it?
+      Aimez-vous les chansons de Brel?  Do you like Brel’s songs?
+      Les aimez-vous?              Do you like them?
+      Emmenez-vous les enfants au cirque? Are you taking the children to the circus
+      Les emmenez-vous au cirque?       Are you taking them to the circus?
+
+  When an infinitive has a direct object, the direct object pronoun immediately
+precedes the infinitive.
+
+      Pouvez-vous contacter le journaliste?   Can you contact the journalist?
+      Pouvez-vous le contacter?           Can you contact him?
+          Il doit finir son article.             He must finish his article.
+          Il doit le finir.                   He must finish it.
+       Je vais lire tous les documents.            I am going to read all the documents
+       Je vais tous les lire.                           I am going to read all of them.
+      Nous venons de voir son nouveau film. We just saw his new film.
+      Nous venons de le voir.            We have just seen it.
+
+   In the passé composé and other compound tenses, the direct object pronoun is
+placed before the auxiliary verb. The past participle agrees in number and gender
+when the direct object precedes the verb.      Le journaliste a pris les photos.       The journalist took the pictures.
+      Le journaliste les a prises.           The journalist took them.
+      Le comptable avait trié tous ces      The accountant had sorted all these
+          papiers.                              papers.
+      Le comptable les avait tous triés.      The accountant had sorted them all ou
+      Le pompier a éteint les flammes.     The fireman extinguished the flames.
+      Le pompier les a éteintes.            The fireman extinguished them.
+      Le guitariste a joué ses morceaux     The guitarist played his favorite pieces
+           favoris.
+      Le guitariste les a joués.             The guitarist played them.
+
+   In the affirmative imperative, the direct object pronoun follows the verb. Me (m’)
+and te (t’) change to moi and toi. Remember to link the verb to the pronoun with a
+hyphen. In the negative imperative, the direct object pronoun remains before the
+verb.
+
+      Appelez Jacques!                         Call Jacques!
+       Appelez-le!                               Call him!
+      Rendez les clés à Antoine!                Give the keys back to Antoine!
+       Rendez-les à Antoine!                   Give them back to Antoine!
+      Achetez ces fleurs!                    Buy these flowers!
+       Achetez-les!                         Buy them!
+       N’éteins pas la lumière!             Do not turn off the light!
+       Ne l’éteins pas!                 Do not turn it off!
+       N’appelle pas Caroline si tard!         Do not call Caroline so late!
+     Ne l’appelle pas si tard!              Do not call her so late!
+       Invitez-moi à la soirée, s’il vous plaît.      Please invite me to the party.
+
+
+
+  EXERCICE  21·1
+
+ Remplacer les mots en caractères gras par un pronom objet direct.
+
+   1. Elle achète les fleurs bleues. _______________________________
+
+   2. Il consulte le médecin. _______________________________ 3. Nous soutenons votre projet. _______________________________
+
+ 4. Ils construisent la maison de leurs rêves.
+   _______________________________
+
+ 5. J’ouvre la porte. _______________________________
+
+ 6. Elle conduit la voiture de son père. _______________________________
+
+ 7. Il accepte les résultats. _______________________________
+
+ 8. Nous comprenons leur décision. _______________________________
+
+ 9. Tu visites le château de Fontainebleau.
+   _______________________________
+
+10. Elle étudie sa leçon. _______________________________
+
+
+
+
+ EXERCICE  21·2
+
+Traduire les phrases suivantes en utilisant vous et l’inversion si nécessaire.
+
+ 1. He thanks me. _______________________________
+
+ 2. The writer sends them. _______________________________
+
+ 3. They invite us. _______________________________
+
+ 4. We accept it. _______________________________
+
+ 5. She called them. _______________________________
+
+ 6. Bring them! _______________________________
+
+ 7. I am going to buy it. _______________________________
+
+ 8. Do not sell it! _______________________________
+
+ 9. We must see it. _______________________________
+
+10. Do you know her? _______________________________Indirect object pronouns
+Now that you have mastered the pronom objet direct, let’s take a look at the
+pronom objet indirect (indirect object pronoun).
+   In English there are five indirect object pronouns me, you, him, her, us. As
+always, French distinguishes between an informal you (te) and a formal or plural you
+(vous). The French indirect object pronoun does not distinguish between gender; lui
+and leur replace both masculine and feminine nouns. In French, the indirect object
+pronoun replaces only animate indirect objects (people, animals). Inanimate ideas
+and things are replaced with the indirect object pronouns y and en, which will be
+discussed later in this chapter. Let’s look at the indirect object pronouns:
+
+
+       SINGULAR                      PLURAL
+     me (m’)    me                nous   us
+        te (t’)       you (familiar)       vous   you (formal or plural)
+        lui          him, her             leur   them (masc. and fem.)
+
+  The object is called indirect when the verb is controlled by a preposition (parler
+à, répondre à, écrire à, etc.). The indirect object pronoun is placed before the
+conjugated verb and before avoir in the compound tenses. Although the past
+participle agrees in gender and number with the preceding direct object, the past
+participle never agrees with an indirect object pronoun. The indirect object pronouns
+me and te become m’ and t’ before vowels and mute h. Make sure to distinguish
+between leur, the indirect object pronoun, and leur(s), the possessive adjective.
+
+      Tu parles au journaliste.           You are talking to the journalist.
+      Tu lui parles.                     You are talking to him.
+      Tu réponds à Andrée.              You answer Andrée.
+      Tu lui réponds.                    You answer her.
+      Vous écrivez à l’agent.             You write to the agent.
+      Vous lui écrivez.                  You write to him.
+      Vous expliquez la situation aux      You explain the situation to the
+           clients.                             customers.
+      Vous leur expliquez la situation.     You explain the situation to them.
+       Elle nous enverra une confirmation.   She’ll send us a confirmation.
+       Je vous donnerai un jour de congé.      I’ll give you a day off.
+          Il me rendra le livre demain.          He’ll return the book to me tomorrow.
+         Ils t’apporteront des fleurs.            They’ll bring you some flowers.   In the interrogative or negative, the indirect object pronoun is placed immediately
+before the verb.
+
+      Lui as-tu parlé de ce livre?             Did you talk to him about this book
+      M’avez-vous envoyé un courriel?        Did you send me an e-mail?
+      Vous fournit-il de bons produits?        Does he provide you with good
+                                                 products?
+      Leur avez-vous envoyé les révisions?    Did you send them the revisions?
+       Elle ne nous envoie jamais rien.        She never sends us anything.
+      Tu ne m’apportes que des mauvaises     You only bring me bad news.
+          nouvelles.
+      Vous ne lui avez pas dit la vérité.        You did not tell him the truth.
+         Ils te prêteront leur voiture.                They’ll lend you their car.
+
+Indirect object pronouns in the imperative
+In the affirmative imperative, the indirect object pronoun follows the verb. Me (m’)
+and te (t’) become moi and toi. Remember to link the verb to the following pronoun
+with a hyphen. In the negative imperative, the indirect object pronoun remains
+before the verb.
+
+      Téléphone-moi demain matin!                Call me tomorrow morning!
+        Prêtez-lui votre dictionnaire!               Lend him your dictionary!
+      Apportez-nous de nouveaux accessoires!      Bring us new props!
+      Envoyez-leur le script!                    Send them the script!
+     Ne lui donnez rien!                         Don’t give him anything!
+     Ne nous téléphonez pas si tard!               Don’t call us so late!
+
+
+
+  EXERCICE  21·3
+
+ Remplacer les mots en caractères gras par un pronom objet indirect.
+
+   1. La grand-mère a raconté une histoire aux petits-enfants.
+    _____________________________________________________________
+
+   2. Nous avons fait un cadeau à Marie.   _____________________________________________________________
+
+ 3. Je ferai parvenir le dossier à Jean dès que possible.
+   _____________________________________________________________
+
+ 4. Nous enverrons des fleurs à notre collègue.
+   _____________________________________________________________
+
+ 5. Ce théâtre appartient à un ancien comédien.
+   _____________________________________________________________
+
+ 6. Est-ce que tu as écrit au rédacteur en chef?
+   _____________________________________________________________
+
+ 7. Téléphonez à Louise aussitôt que possible!
+   _____________________________________________________________
+
+ 8. Ne mentionnez rien à Odile!
+   _____________________________________________________________
+
+ 9. Il annoncera sa décision à ses employés demain.
+   _____________________________________________________________
+
+10. Il donnera le scénario aux acteurs en fin de journée.
+   _____________________________________________________________
+
+
+
+
+ EXERCICE  21·4
+
+Traduire les phrases suivantes en utilisant tu et l’inversion si nécessaire.
+
+ 1. Bring me a book!
+   _____________________________________________________________
+
+ 2. Do not call them after eight P.M.!
+   _____________________________________________________________
+
+ 3. Send us your new play!
+   _____________________________________________________________   4. I will write him a letter.
+    _____________________________________________________________
+
+   5. She’ll give me an answer on Monday.
+    _____________________________________________________________
+
+   6. He did not return the books to me.
+    _____________________________________________________________
+
+   7. This pen belongs to her.
+    _____________________________________________________________
+
+   8. He does not talk to us.
+    _____________________________________________________________
+
+   9. They told us a good story.
+    _____________________________________________________________
+
+ 10. They’ll lend you their house for the weekend.
+    _____________________________________________________________
+
+The pronoun y
+Y  is an indirect object pronoun that precedes the verb.  It usually replaces an
+inanimate object (thing or idea). The object replaced by y is considered indirect
+because it is preceded by a preposition, usually the preposition à, but sometimes sur.
+
+       Elle répond à l’annonce.         She answers the ad.
+       Elle y répond.                   She answers it.
+         Ils s’habituent à cette ville.       They are getting used to this city.
+         Ils s’y habituent.                They are getting used to it.
+      Nous pensons à la situation.     We are thinking about the situation.
+      Nous y pensons.              We are thinking about it.
+      Tu t’intéresses à cette pièce?      Are you interested in this play?
+      Tu t’y intéresses?                Are you interested in it?
+
+   In the passé composé and other compound tenses the indirect object pronoun y is
+placed before the auxiliary verb. Note that the past participle does not agree in
+gender or number with the indirect object y.       Ils ont réfléchi à cette question.           They thought about this issue.
+       Ils y ont réfléchi.                       They thought about it.
+     Nous avons répondu à vos questions.     We answered your questions.
+     Nous y avons répondu.               We answered them.
+        Il a renoncé à sa carrière.             He gave up his career.
+        Il y a renoncé.                     He gave it up.
+      Je n’ai pas goûté à cette sauce.                 I did not taste this sauce.
+      Je n’y ai pas goûté.                               I did not taste it.
+
+
+
+ EXERCICE  21·5
+
+Remplacer les éléments en caractères gras par y.
+
+ 1. Elle s’habitue à tout.
+   _____________________________________________________________
+
+ 2. Tu devrais prêter attention à ce qu’il dit.
+   _____________________________________________________________
+
+ 3. Nous nous intéressons à son œuvre.
+   _____________________________________________________________
+
+ 4. Je m’abonne à ce magazine.
+   _____________________________________________________________
+
+ 5. Elle tient à ses bijoux.
+   _____________________________________________________________
+
+ 6. Nous ne croyons pas à cette nouvelle théorie scientifique.
+   _____________________________________________________________
+
+ 7. Il ne pense jamais aux conséquences de ses actes.
+   _____________________________________________________________
+
+ 8. Ils n’obéissent pas à la loi.
+   _____________________________________________________________
+
+ 9. Elle réfléchira au rôle que vous lui proposez.    _____________________________________________________________
+
+ 10. Pourquoi n’avez-vous jamais répondu à notre demande?
+    _____________________________________________________________
+
+The pronoun en
+En  is an indirect object pronoun that precedes the verb.  It usually replaces an
+inanimate object (thing or idea) preceded by de. The pronoun en immediately
+precedes the verb, except in the affirmative imperative where it follows the verb.
+
+      Nous nous occuperons de tous les détails.   We’ll take care of all the details.
+      Nous nous en occuperons.                  We’ll take care of them.
+       Elle ne se souvient pas de cette histoire.    She does not remember this story
+       Elle ne s’en souvient pas.                She does not remember it.
+      Avez-vous peur de sa réaction?           Are you afraid of his reaction?
+     En avez-vous peur?                      Are you afraid of it?
+
+   In the passé composé and other compound tenses the indirect object pronoun en
+is placed before the auxiliary verb. Note that the past participle does not agree in
+gender and number with the indirect object en.
+
+          Il a parlé de sa nouvelle idée à Théo.     He talked about his new idea to
+                                                 Théo.
+          Il en a parlé à Théo.                 He talked about it to Théo.
+       Elle s’est chargée de cette affaire difficile.  She took care of this difficult
+                                                       business.
+       Elle s’en est chargée.                    She took care of it.
+       Je me suis approché des remparts.            I came closer to the ramparts.
+       Je m’en suis approché.                           I came closer to them.
+      Tu t’es débarrassé de toutes ces choses     You got rid of all these useless
+           inutiles.                                      things.
+      Tu t’en es débarrassé.                   You got rid of them.
+
+
+
+  EXERCICE  21·6Remplacer les éléments en caractères gras par le pronom en.
+
+ 1. J’ai parlé de tous nos problèmes.
+   _____________________________________________________________
+
+ 2. Ils ont envie d’aller en France en mai.
+   _____________________________________________________________
+
+ 3. Nous avons besoin d’un logiciel plus performant.
+   _____________________________________________________________
+
+ 4. Il s’est approché du château très lentement.
+   _____________________________________________________________
+
+ 5. Je me chargerai de tout ce qui facilitera son séjour à Aix.
+   _____________________________________________________________
+
+ 6. Tu te sers de ce dictionnaire?
+   _____________________________________________________________
+
+ 7. Il a peur des changements.
+   _____________________________________________________________
+
+ 8. Je ne me souviens pas de sa conférence.
+   _____________________________________________________________
+
+ 9. Elle s’est occupée des réservations.
+   _____________________________________________________________
+
+10. Il ne pourra jamais se débarrasser de ses livres de l’école primaire.
+   _____________________________________________________________
+
+
+
+
+ EXERCICE  21·7
+
+Faire correspondre les deux colonnes.
+
+______ 1. Il a peur                        a. d’un ordinateur portable ______ 2. Elle s’intéresse              b. à un magazine hebdomadaire
+
+ ______ 3. Je me sers                     c. du nom de l’hôtel
+
+ ______ 4. Ils ne se souviennent pas    d. à ce nouveau candidat
+
+ ______ 5. Tu t’abonnes                  e. des insectes
+
+
+The order of object pronouns
+When there are two personal pronouns, one in the first or second person (singular or
+plural), and the other in the third person (singular or plural) together in a sentence,
+the indirect pronoun precedes the direct pronoun. However, the direct pronoun
+precedes the indirect pronoun if they are in the third person (singular or plural).
+
+
+       INDIRECT OBJECT                        DIRECT OBJECT
+     me (m’)
+        te (t’)
+                                    + le, la, l’, les
+      nous
+
+      vous
+
+       Elle te donne le rôle.                 She gives you the part.
+       Elle te le donne.                     She gives it to you.
+      Nous vous envoyons le contrat.      We are sending you the contract.
+      Nous vous l’envoyons.            We are sending it to you.
+      Vous nous montrez les costumes.      You show us the costumes.
+      Vous nous les montrez.               You show them to us.
+          Il m’offre la bague de sa mère.      He gives me his mother’s ring.
+          Il me l’offre.                   He gives it to me.
+
+    If the direct and indirect pronouns in the third person are together, the direct
+object pronoun comes first.
+
+
+       DIRECT OBJECT                      INDIRECT OBJECT        le (l’)
+
+        la (l’)                       + lui, leur
+
+        les
+
+       J’envoie la lettre au rédacteur.           I send the letter to the editor.
+       Je la lui envoie.                               I send it to him.
+       Elle tend le document au médecin.     She hands the document to the docto
+       Elle le lui tend.                      She hands it to him.
+      Nous offrons ce livre aux participants. We give this book to the participants.
+      Nous le leur offrons.              We give it to them.
+      Nous montrons la route aux touristes.  We show the road to the tourists.
+      Nous la leur montrons.            We show it to them.
+
+   In the passé composé and other compound tenses, the direct object pronoun is
+placed before the auxiliary verb. The past participle agrees in number and gender
+with the direct object when the direct object precedes the verb.
+
+          Il a écrit ces articles.              He wrote these articles.
+          Il les a écrits.                    He wrote them.
+       Elle a fait ces tartes délicieuses.        She made these delicious pies.
+       Elle les a faites.                      She made them.
+        J’ai envoyé les lettres.                       I sent the letters.
+       Je les ai envoyées.                            I sent them.
+      Tu as mis ta nouvelle chemise.         You put on your new shirt.
+      Tu l’as mise.                        You put it on.
+
+  When en is combined with an indirect object pronoun,  it is always in second
+position. The past participle does not agree in number and gender with en (nor does
+it agree with any other indirect object pronoun).
+
+       Elle lui a offert des fleurs.            She gave her some flowers.
+       Elle lui en a offert.                  She gave her some.
+          Il leur a donné des explications.     He gave them some explanations.
+          Il leur en a donné.               He gave them some.
+      Nous lui avons prêté de la farine.     We lent him some flour.
+      Nous lui en avons prêté.           We lent him some.     Tu nous enverras des photos.           You’ll send us some pictures.
+     Tu nous en enverras.                    You’ll send us some.
+
+
+
+ EXERCICE  21·8
+
+Remplacer les éléments en caractères gras par les pronoms appropriés.
+
+ 1. Ne parlez pas de ce détail à Zoé!
+   _____________________________________________________________
+
+ 2. Elle a emprunté de l’argent à sa sœur.
+   _____________________________________________________________
+
+ 3. Je ferai parvenir ce document à votre avocat.
+   _____________________________________________________________
+
+ 4. Patrick a raconté ses aventures (f.pl.) à son frère.
+   _____________________________________________________________
+
+ 5. Le musicien a envoyé sa nouvelle composition à son agent.
+   _____________________________________________________________
+
+ 6. L’ouvrier a donné la lettre au patron.
+   _____________________________________________________________
+
+ 7. J’ai demandé la photo au photographe.
+   _____________________________________________________________
+
+ 8. Il vendra sa maison à son cousin.
+   _____________________________________________________________
+
+ 9. Le médecin a prescrit ce médicament au malade.
+   _____________________________________________________________
+
+10. Je recommande cet hôtel à tous mes amis.
+   _____________________________________________________________  EXERCICE  21·9
+
+ Traduire les phrases suivantes en utilisant tu si nécessaire.
+
+   1. I am thinking about it.
+    _____________________________________________________________
+
+   2. He is not interested in it.
+    _____________________________________________________________
+
+   3. She took care of it.
+    _____________________________________________________________
+
+   4. I sent it (f.) to you.
+    _____________________________________________________________
+
+   5. We gave it (m.) to them.
+    _____________________________________________________________
+
+   6. I use it every day.
+    _____________________________________________________________
+
+   7. He spoke about it.
+    _____________________________________________________________
+
+   8. I need it.
+    _____________________________________________________________
+
+   9. She borrowed some from me.
+    _____________________________________________________________
+
+ 10. They gave us some.
+    _____________________________________________________________
+
+
+Disjunctive pronouns
+There are many ways to use disjunctive pronouns, also known as stressed or tonic
+pronouns.      moi     me      nous        us
+        toi       you      vous        you
+        lui       him     eux        them
+        elle       her        elles        them (feminine)
+
+  The disjunctive pronouns can be used to add extra emphasis to a thought.
+
+       Lui, c’est un grand musicien!          He is a great musician!
+      Moi, je déteste les lentilles!                    I hate lentils!
+       Lui, il est toujours contre tout!         He is always against everything!
+        Elle, c’est vraiment ma meilleure amie!    She is really my best friend!
+
+   Disjunctive pronouns are used after c’est or ce sont in order to direct attention to
+the subject. In this case, they are used where English would use intonation.
+
+       C’est moi qui ai trouvé la solution.               I found the solution.
+       C’est lui qui a raison.                  He is right.
+       C’est toi qui dois aller les chercher.          You have to go pick them up.
+     Ce ne sont pas eux qui pourront le faire!     They won’t be able to do it!
+
+   You’ll find disjunctive pronouns in conjunction with another subject.
+
+      Bruno et moi, nous allons à Tokyo.     Bruno and I are going to Tokyo.
+      Lui et sa mère, ils sont toujours      He and his mother always agree on
+          d’accord sur tout.                        everything.
+       Toi et ta collègue, vous avez gâché la   You and your colleague spoiled the
+           soirée!                                  party!
+       Elle et Michel, ce sont les meilleurs    She and Michel are the best neighbor
+           voisins.
+
+   Disjunctive pronouns are also used as one-word questions or answers when there
+isn’t a verb present.
+
+      Qui était absent hier? —Moi!      Who was absent yesterday? —I was.
+      Qui ne veut pas travailler le       Who does not want to work on Sundays
+         dimanche? —Nous!           —We don’t!
+       Elle aime le chocolat. Moi aussi.     She likes chocolate. So do I.       Elle n’aime pas le bruit. Moi non    She does not like noise. Neither do I.
+          plus.
+
+  The disjunctive pronouns can also be used to solicit an opinion or ask for a
+contrasting piece of information.
+
+       Lui, il est pharmacien. Et elle, qu’est-ce    He is a pharmacist. And what
+           qu’elle fait?                              does she do?
+      Moi, je pense que cette décision est absurde.  I think this decision is absurd. A
+        Et toi, quelle est ton opinion?              what is your opinion?
+      Eux, ils ne dépensent jamais un centime! Et  They never spend a cent! Is he
+            lui, est-ce qu’il est moins radin?               less cheap?
+        Elle, elle a toujours de la chance. Et lui, a-t-il She is always lucky. Does he ha
+            la même veine?                              the same luck?
+
+   You’ll see disjunctive pronouns used after a preposition.
+
+       Qu’est-ce qu’il a contre eux?       What does he have against them?
+      Cet employé travaille pour nous.     This employee works for us.
+      Vous allez chez eux ce soir?         Are you going to their place tonight?
+          Il n’achète rien sans elle.         He never buys anything without her.
+
+   Disjunctive pronouns are also used with être to indicate possession.
+
+    À qui est cette écharpe? —C’est à moi!      Whose scarf is it? —It’s mine!
+    À qui est cette casquette de tennis?—Elle à lui!Whose tennis cap is it? —It’s h
+       C’est à toi? —Non, ce n’est pas à moi!          Is it yours? —No, it’s not mine
+    À qui est-ce?                          Whose is this?
+       C’est à moi!                                               It’s mine!
+
+  You can use disjunctive pronouns to make comparisons.
+
+       Caroline est plus intelligente que lui.      Caroline is brighter than he is.
+          Il court plus vite que toi.             He runs faster than you do.
+         Ils sont aussi riches qu’elle.             They are as rich as she is.
+       Elle n’est pas aussi douée que vous.       She is not as gifted as you are.
+
+  You can use disjunctive pronouns with -même (-self) for emphasis.       Elle rédige tous ses discours elle-même.     She writes all her speeches
+                                                              herself.
+       Écrivez-le vous-même!                     Write it yourself!
+       C’est lui-même qui l’a dit.              He said it himself.
+     On est soi-même conscient de ses propres    One is aware of one’s own
+           erreurs.                                      mistakes.
+
+   Disjunctive pronouns are used with certain verbs when the indirect object is a
+person. Compare:
+
+       Je parle de ce film.                 I am talking about this film.
+       J’en parle.                           I am talking about it.
+
+  and
+
+       Je parle de ce metteur en scène.       I am talking about this film director.
+       Je parle de lui.                             I am talking about him.
+       Je pense à ce livre.                       I am thinking about this book.
+       J’y pense.                                  I am thinking about it.
+
+  and
+
+       Je pense à cette photographe.            I am thinking about this photographer
+       Je pense à elle.                               I am thinking about her.
+      Tu as besoin de cet avocat.           You need this lawyer.
+      Tu as besoin de lui.                 You need him.
+      Nous parlons de nos enfants.       We are talking about our children.
+      Nous parlons d’eux.              We are talking about them.
+       Fais attention à cet homme!          Watch out for this man!
+       Fais attention à lui!                 Watch out for him!
+          Il a peur de son professeur de chimie. He is afraid of his chemistry teacher.
+          Il a peur de lui.                 He is afraid of him.
+      Nous tenons à nos amis.           We are attached to our friends.
+      Nous tenons à eux.              We are attached to them.
+       Elle songe à son fils.                She is thinking about her son.
+       Elle songe à lui.                    She is thinking about him.    If a reflexive verb is followed by an animate indirect object (person, animal), the
+disjunctive pronoun is used and placed after the verb.
+
+      Nous nous intéressons à cette candidate. We are interested in this candidate.
+      Nous nous intéressons à elle.         We are interested in her.
+       Elle s’est débarrassée de cet employé    She got rid of this incompetent
+         incompétent.                          employee.
+       Elle s’est débarrassée de lui.            She got rid of him.
+          Il ne veut pas s’occuper de vos enfants.  He does not want to take care of yo
+                                                      children.
+          Il ne veut pas s’occuper d’eux.        He does not want to take care of
+                                                 them.
+      Nous nous méfions de ce consultant.    We do not trust this consultant.
+      Nous nous méfions de lui.           We do not trust him.
+
+
+
+  EXERCICE 21·10
+
+ Mettre en relief le pronom sujet avec un pronom disjoint en utilisant l’expression
+ C’est... qui.
+
+   1. Il a gagné le prix.
+    _____________________________________________________________
+
+   2. Je prendrai la décision.
+    _____________________________________________________________
+
+   3. Vous écrirez le discours.
+    _____________________________________________________________
+
+   4. Nous préparons le dîner.
+    _____________________________________________________________
+
+   5. Tu as fait cette erreur.
+    _____________________________________________________________
+
+   6. Elle lui fait toujours de beaux cadeaux.
+    _____________________________________________________________ 7. Je vous ai invité.
+   _____________________________________________________________
+
+ 8. Ils sont responsables de cette situation désastreuse.
+   _____________________________________________________________
+
+ 9. Elles s’occuperont de tous les détails.
+   _____________________________________________________________
+
+10. Il fait les courses.
+   _____________________________________________________________
+
+
+
+
+ EXERCICE  21·11
+
+Traduire les phrases suivantes en utilisant un pronom disjoint et la forme tu si
+nécessaire.
+
+ 1. He will go to France with me.
+   _____________________________________________________________
+
+ 2. I hate coffee!
+   _____________________________________________________________
+
+ 3. She works for us.
+   _____________________________________________________________
+
+ 4. Whose book is this?
+   _____________________________________________________________
+
+ 5. Do it yourself!
+   _____________________________________________________________
+
+ 6. I can’t make this decision without you.
+   _____________________________________________________________
+
+ 7. He is taller than you are.
+   _____________________________________________________________
+
+ 8. I am thinking about her.   _____________________________________________________________
+
+ 9. They are afraid of him.
+   _____________________________________________________________
+
+10. She said it herself.
+   _____________________________________________________________
+
+
+
+
+ EXERCICE 21·12
+
+Formuler une question-réponse en reliant les phrases et en utilisant aussi ou non
+plus.
+
+ 1. Il n’aime pas le froid. Je n’aime pas le froid.
+   _____________________________________________________________
+
+ 2. Nous allons en France. Ils vont en France.
+   _____________________________________________________________
+
+ 3. Je prends des vacances. Elle prend des vacances.
+   _____________________________________________________________
+
+ 4. Nous commandons un dessert. Elles commandent un dessert.
+   _____________________________________________________________
+
+ 5. Il lit beaucoup. Nous lisons beaucoup.
+   _____________________________________________________________

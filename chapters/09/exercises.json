@@ -1,0 +1,1506 @@
+{
+  "chapter": 9,
+  "status": "machine_transcribed_editorial_visual_review_pending",
+  "exercises": [
+    {
+      "id": "ch09-ex01",
+      "source": {
+        "chapter": 9,
+        "exercise": "9.1",
+        "pdf_pages": [
+          114,
+          115,
+          116
+        ]
+      },
+      "topic_ids": [
+        "ch09-t01"
+      ],
+      "instruction": "Mettre au futur simple les verbes entre parenthèses.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch09-ex01-q01",
+          "number": 1,
+          "prompt": "Vous (suivre) __ un cours de français.",
+          "source_raw_prompt": "Vous (suivre) ________________ un cours de français.\n\n ",
+          "pdf_pages": [
+            114
+          ],
+          "answer": {
+            "source_key": "suivrez",
+            "accepted": [
+              "suivrez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex01-q02",
+          "number": 2,
+          "prompt": "Nous (dîner) __ chez Yann la semaine prochaine.",
+          "source_raw_prompt": "Nous (dîner) ________________ chez Yann la semaine prochaine.   ",
+          "pdf_pages": [
+            114,
+            115
+          ],
+          "answer": {
+            "source_key": "dînerons",
+            "accepted": [
+              "dînerons"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex01-q03",
+          "number": 3,
+          "prompt": "Tu (entendre) __ de la belle musique.",
+          "source_raw_prompt": "Tu (entendre) ________________ de la belle musique.\n\n   ",
+          "pdf_pages": [
+            115
+          ],
+          "answer": {
+            "source_key": "entendras",
+            "accepted": [
+              "entendras"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex01-q04",
+          "number": 4,
+          "prompt": "Elle (chercher) __ un autre emploi.",
+          "source_raw_prompt": "Elle (chercher) ________________ un autre emploi.\n\n   ",
+          "pdf_pages": [
+            115
+          ],
+          "answer": {
+            "source_key": "cherchera",
+            "accepted": [
+              "cherchera"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex01-q05",
+          "number": 5,
+          "prompt": "Ils (ne jamais oublier) __ votre générosité.",
+          "source_raw_prompt": "Ils (ne jamais oublier) ________________ votre générosité.\n\n   ",
+          "pdf_pages": [
+            115
+          ],
+          "answer": {
+            "source_key": "n’oublieront jamais",
+            "accepted": [
+              "n’oublieront jamais"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex01-q06",
+          "number": 6,
+          "prompt": "Je (travailler) __ samedi après-midi.",
+          "source_raw_prompt": "Je (travailler) ________________ samedi après-midi.\n\n   ",
+          "pdf_pages": [
+            115
+          ],
+          "answer": {
+            "source_key": "travaillerai",
+            "accepted": [
+              "travaillerai"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex01-q07",
+          "number": 7,
+          "prompt": "Nous (rendre visite) __ à notre famille.",
+          "source_raw_prompt": "Nous (rendre visite) ________________ à notre famille.\n\n   ",
+          "pdf_pages": [
+            115
+          ],
+          "answer": {
+            "source_key": "rendrons visite",
+            "accepted": [
+              "rendrons visite"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex01-q08",
+          "number": 8,
+          "prompt": "Il (finir) __ le livre avant lundi.",
+          "source_raw_prompt": "Il (finir) ________________ le livre avant lundi.\n\n   ",
+          "pdf_pages": [
+            115
+          ],
+          "answer": {
+            "source_key": "finira",
+            "accepted": [
+              "finira"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex01-q09",
+          "number": 9,
+          "prompt": "On (remplacer) __ tous les meubles.",
+          "source_raw_prompt": "On (remplacer) ________________ tous les meubles.\n\n ",
+          "pdf_pages": [
+            115
+          ],
+          "answer": {
+            "source_key": "remplacera",
+            "accepted": [
+              "remplacera"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex01-q10",
+          "number": 10,
+          "prompt": "Tu (partir) __ avant nous. The endings of the futur simple are the same for all verbs. However, some irregular verbs have irregular stems. You simply have to memorize them. aller to go j’irai I’ll go apercevoir to notice j’apercevrai I’ll notice avoir to have j’aurai I’ll have courir to run je courrai I’ll run devenir to become je deviendrai I’ll become devoir must, to have to je devrai I’ll have to envoyer to send j’enverrai I’ll send être to be je serai I’ll be faire to do je ferai I’ll do falloir to have to il faudra one will have to mourir to die je mourrai I’ll die pleuvoir to rain il pleuvra it’ll rain pouvoir can, to be able to je pourrai I’ll be able to recevoir to receive je recevrai I’ll receive revenir to return, to come back je reviendrai I’ll return, I’ll come back savoir to know je saurai I’ll know tenir to hold je tiendrai I’ll hold valoir to be worth il vaudra it will be worth venir to come je viendrai I’ll come voir to see je verrai I’ll see vouloir to want je voudrai I’ll want Some slight spelling modifications occur with some verbs. These are seen throughout all persons of the future conjugation. acheter to buy j’achèterai I’ll buy appeler to call j’appellerai I’ll call employer to hire j’emploierai I’ll use, I’ll hire essuyer to wipe j’essuierai I’ll wipe jeter to throw je jetterai I’ll throw nettoyer to clean je nettoierai I’ll clean préférer to prefer je préférerai I’ll prefer",
+          "source_raw_prompt": "Tu (partir) ________________ avant nous.\n\n\n  The endings of the futur simple are the same for all verbs. However, some\nirregular verbs have irregular stems. You simply have to memorize them.\n\n        aller        to go                       j’irai             I’ll go\n       apercevoir to notice               j’apercevrai   I’ll notice\n       avoir       to have                 j’aurai          I’ll have\n       courir      to run                    je courrai      I’ll run\n       devenir     to become                je deviendrai  I’ll become\n       devoir     must, to have to          je devrai        I’ll have to\n      envoyer    to send                 j’enverrai      I’ll send\n       être         to be                     je serai          I’ll be\n        faire        to do                     je ferai          I’ll do\n        falloir      to have to                      il faudra     one will have to\n      mourir     to die                    je mourrai     I’ll die\n       pleuvoir    to rain                           il pleuvra       it’ll rain\n      pouvoir    can, to be able to        je pourrai      I’ll be able to\n       recevoir    to receive                je recevrai     I’ll receive\n       revenir     to return, to come back  je reviendrai  I’ll return, I’ll come back\n       savoir      to know                  je saurai        I’ll know\n       tenir        to hold                   je tiendrai      I’ll hold\n       valoir      to be worth                    il vaudra        it will be worth\n       venir       to come                  je viendrai     I’ll come       voir        to see                    je verrai        I’ll see\n       vouloir     to want                   je voudrai      I’ll want\n\n  Some  slight spelling modifications occur with some verbs. These are seen\nthroughout all persons of the future conjugation.\n\n       acheter         to buy        j’achèterai               I’ll buy\n       appeler         to call        j’appellerai             I’ll call\n      employer       to hire       j’emploierai             I’ll use, I’ll hire\n       essuyer         to wipe       j’essuierai               I’ll wipe\n        jeter            to throw      je jetterai                I’ll throw\n       nettoyer        to clean       je nettoierai             I’ll clean\n       préférer        to prefer      je préférerai            I’ll prefer\n\n\n\n  ",
+          "pdf_pages": [
+            115,
+            116
+          ],
+          "answer": {
+            "source_key": "partiras",
+            "accepted": [
+              "partiras"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch09-s01"
+      ]
+    },
+    {
+      "id": "ch09-ex02",
+      "source": {
+        "chapter": 9,
+        "exercise": "9.2",
+        "pdf_pages": [
+          116,
+          117,
+          118
+        ]
+      },
+      "topic_ids": [
+        "ch09-t01"
+      ],
+      "instruction": "Mettre au futur simple les verbes entre parenthèses.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch09-ex02-q01",
+          "number": 1,
+          "prompt": "Il (être) __ déçu de ne pas vous voir.",
+          "source_raw_prompt": "Il (être) ________________ déçu de ne pas vous voir.\n\n   ",
+          "pdf_pages": [
+            116
+          ],
+          "answer": {
+            "source_key": "sera",
+            "accepted": [
+              "sera"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex02-q02",
+          "number": 2,
+          "prompt": "L’étudiant (faire) __ un stage à Nantes.",
+          "source_raw_prompt": "L’étudiant (faire) ________________ un stage à Nantes.\n\n   ",
+          "pdf_pages": [
+            116
+          ],
+          "answer": {
+            "source_key": "fera",
+            "accepted": [
+              "fera"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex02-q03",
+          "number": 3,
+          "prompt": "Tu (savoir) __ demain si tu as réussi à ton examen.",
+          "source_raw_prompt": "Tu (savoir) ________________ demain si tu as réussi à ton examen.\n\n   ",
+          "pdf_pages": [
+            116
+          ],
+          "answer": {
+            "source_key": "sauras",
+            "accepted": [
+              "sauras"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex02-q04",
+          "number": 4,
+          "prompt": "Nous (avoir) __ les résultats demain.",
+          "source_raw_prompt": "Nous (avoir) ________________ les résultats demain.\n\n   ",
+          "pdf_pages": [
+            116
+          ],
+          "answer": {
+            "source_key": "aurons",
+            "accepted": [
+              "aurons"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex02-q05",
+          "number": 5,
+          "prompt": "Le professeur (aller) __ à Paris en juin.",
+          "source_raw_prompt": "Le professeur (aller) ________________ à Paris en juin.\n\n   ",
+          "pdf_pages": [
+            116
+          ],
+          "answer": {
+            "source_key": "ira",
+            "accepted": [
+              "ira"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex02-q06",
+          "number": 6,
+          "prompt": "Il (préférer) __ suivre le cours d’histoire de l’art.",
+          "source_raw_prompt": "Il (préférer) ________________ suivre le cours d’histoire de l’art.\n\n   ",
+          "pdf_pages": [
+            116
+          ],
+          "answer": {
+            "source_key": "préférera",
+            "accepted": [
+              "préférera"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex02-q07",
+          "number": 7,
+          "prompt": "Nous (voir) __ un bon film au cinéma.",
+          "source_raw_prompt": "Nous (voir) ________________ un bon film au cinéma.\n\n   ",
+          "pdf_pages": [
+            116
+          ],
+          "answer": {
+            "source_key": "verrons",
+            "accepted": [
+              "verrons"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex02-q08",
+          "number": 8,
+          "prompt": "Il (falloir) __ remettre les devoirs jeudi.",
+          "source_raw_prompt": "Il (falloir) ________________ remettre les devoirs jeudi.\n\n   ",
+          "pdf_pages": [
+            116
+          ],
+          "answer": {
+            "source_key": "faudra",
+            "accepted": [
+              "faudra"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex02-q09",
+          "number": 9,
+          "prompt": "Elle (pouvoir) __ aller à la campagne avec nous.",
+          "source_raw_prompt": "Elle (pouvoir) ________________ aller à la campagne avec nous.\n\n ",
+          "pdf_pages": [
+            116
+          ],
+          "answer": {
+            "source_key": "pourra",
+            "accepted": [
+              "pourra"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex02-q10",
+          "number": 10,
+          "prompt": "Il (pleuvoir) __ demain. As in English, the French future tense is used to describe future events. Les étudiants passeront leurs examens en Students will take their exams in mai. May. Les cours recommenceront en décembre. Courses will resume in December In a compound sentence in French, if the main clause is in the futur simple, the dependent clause, introduced by some conjunctions, will also be in the futur simple. Note that in English, such a dependent clause will be in the present tense. aussitôt que as soon as dès que as soon as lorsque when quand when tant que as long as Elle ira à Paris quand elle aura le temps. She’ll go to Paris when she has time. Il nous dira lorsqu’il faudra parler. He’ll tell us when we have to talk. Elle vous préviendra dès qu’elle aura les She’ll inform you as soon as she résultats. gets the results. Aussitôt qu’il arrivera, nous partirons. As soon as he arrives, we’ll leave. Elle vous téléphonera aussitôt qu’elle She’ll call you as soon as she land atterrira à Londres. in London. Tant qu’il y aura du soleil, nous resterons As long as the sun is out, we’ll stay sur la terrasse. on the terrace. The future tense of être and avoir is sometimes used to express probability in the present, to indicate something that is likely or allegedly true. L’étudiant n’est pas en classe. Il sera The student is not in class. He is probabl encore endormi. still asleep. Le professeur n’a pas demandé nos The teacher did not ask for our homewor devoirs. Il sera distrait. He’s probably distracted. In a narration, the futur simple can be used to express a future idea from the standpoint of the past, as shown in the following examples. (Note that English uses a conditional form, would, in this case.) Malheureusement, ses œuvres ne seront Unfortunately, her works would becom reconnues qu’après sa mort. recognized only after her death. Un des génies du dix-huitième siècle et One of the geniuses of the eighteenth il mourra dans la misère. century, and he would die in misery The futur simple can be used instead of an imperative (command form) to make the tone less peremptory. Vous voudrez bien lui envoyer ma réponse. Please send him my answer. Je vous demanderai de faire preuve de Please show a little compassion. compassion. Vous voudrez bien nous excuser. Please excuse us.",
+          "source_raw_prompt": "Il (pleuvoir) ________________ demain.\n\n\n\n  As in English, the French future tense is used to describe future events.      Les étudiants passeront leurs examens en   Students will take their exams in\n          mai.                                 May.\n      Les cours recommenceront en décembre.  Courses will resume in December\n\n   In a compound sentence in French, if the main clause is in the futur simple, the\ndependent clause, introduced by some conjunctions, will also be in the futur simple.\nNote that in English, such a dependent clause will be in the present tense.\n\n       aussitôt que                            as soon as\n      dès que                                 as soon as\n       lorsque                            when\n      quand                            when\n       tant que                                as long as\n\n       Elle ira à Paris quand elle aura le temps.   She’ll go to Paris when she has\n                                                        time.\n          Il nous dira lorsqu’il faudra parler.        He’ll tell us when we have to talk.\n       Elle vous préviendra dès qu’elle aura les  She’ll inform you as soon as she\n            résultats.                                   gets the results.\n       Aussitôt qu’il arrivera, nous partirons.   As soon as he arrives, we’ll leave.\n       Elle vous téléphonera aussitôt qu’elle      She’ll call you as soon as she land\n          atterrira à Londres.                        in London.\n       Tant qu’il y aura du soleil, nous resterons As long as the sun is out, we’ll stay\n          sur la terrasse.                        on the terrace.\n\n  The future tense of être and avoir is sometimes used to express probability in the\npresent, to indicate something that is likely or allegedly true.\n\n       L’étudiant n’est pas en classe. Il sera The student is not in class. He is probabl\n         encore endormi.                            still asleep.\n      Le professeur n’a pas demandé nos  The teacher did not ask for our homewor\n           devoirs. Il sera distrait.             He’s probably distracted.\n\n   In a narration, the futur simple can be used to express a future idea from the\nstandpoint of the past, as shown in the following examples. (Note that English uses a\nconditional form, would, in this case.)\n\n      Malheureusement, ses œuvres ne seront Unfortunately, her works would becom\n         reconnues qu’après sa mort.            recognized only after her death.     Un des génies du dix-huitième siècle et One of the geniuses of the eighteenth\n               il mourra dans la misère.               century, and he would die in misery\n\n  The futur simple can be used instead of an imperative (command form) to make\nthe tone less peremptory.\n\n      Vous voudrez bien lui envoyer ma réponse.     Please send him my answer.\n      Je vous demanderai de faire preuve de         Please show a little\n         compassion.                                 compassion.\n      Vous voudrez bien nous excuser.               Please excuse us.\n\n\n\n  ",
+          "pdf_pages": [
+            116,
+            117,
+            118
+          ],
+          "answer": {
+            "source_key": "pleuvra",
+            "accepted": [
+              "pleuvra"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch09-s01"
+      ]
+    },
+    {
+      "id": "ch09-ex03",
+      "source": {
+        "chapter": 9,
+        "exercise": "9.3",
+        "pdf_pages": [
+          118,
+          119
+        ]
+      },
+      "topic_ids": [
+        "ch09-t01"
+      ],
+      "instruction": "Mettre au futur simple les verbes entre parenthèses.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch09-ex03-q01",
+          "number": 1,
+          "prompt": "Vous (aller) __ à l’opéra quand vos amis (être) __ à Lyon.",
+          "source_raw_prompt": "Vous (aller) ________________ à l’opéra quand vos amis (être)\n    ________________ à Lyon.\n\n   ",
+          "pdf_pages": [
+            118
+          ],
+          "answer": {
+            "source_key": "Vous irez à l’opéra quand vos amis seront à Lyon.",
+            "accepted": [
+              "Vous irez à l’opéra quand vos amis seront à Lyon."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex03-q02",
+          "number": 2,
+          "prompt": "Nous (prendre) __ une décision dès que la presse (annoncer) __ les résultats.",
+          "source_raw_prompt": "Nous (prendre) ________________ une décision dès que la presse (annoncer)\n    ________________ les résultats.\n\n   ",
+          "pdf_pages": [
+            118
+          ],
+          "answer": {
+            "source_key": "Nous prendrons une décision dès que la presse annoncera les résultats.",
+            "accepted": [
+              "Nous prendrons une décision dès que la presse annoncera les résultats."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex03-q03",
+          "number": 3,
+          "prompt": "L’exposition (avoir lieu) __ en janvier quand tous les tableaux (être) __ réunis.",
+          "source_raw_prompt": "L’exposition (avoir lieu) ________________ en janvier quand tous les\n     tableaux (être)\n    ________________ réunis.\n\n   ",
+          "pdf_pages": [
+            118
+          ],
+          "answer": {
+            "source_key": "L’exposition aura lieu en janvier quand tous les tableaux seront réunis.",
+            "accepted": [
+              "L’exposition aura lieu en janvier quand tous les tableaux seront réunis."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex03-q04",
+          "number": 4,
+          "prompt": "Le professeur (emmener) __ les élèves au musée dès qu’il (pouvoir) __ .",
+          "source_raw_prompt": "Le professeur (emmener) ________________ les élèves au musée dès qu’il\n     (pouvoir) ________________ .\n\n   ",
+          "pdf_pages": [
+            118
+          ],
+          "answer": {
+            "source_key": "Le professeur emmènera les élèves au musée dès qu’il pourra.",
+            "accepted": [
+              "Le professeur emmènera les élèves au musée dès qu’il pourra."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex03-q05",
+          "number": 5,
+          "prompt": "Il (devoir) __ nous appeler dès qu’il (être) __ en contact avec M. Clément.",
+          "source_raw_prompt": "Il (devoir) ________________ nous appeler dès qu’il (être)\n    ________________ en contact avec M. Clément.\n\n   ",
+          "pdf_pages": [
+            118
+          ],
+          "answer": {
+            "source_key": "Il devra nous appeler dès qu’il sera en contact avec M. Clément.",
+            "accepted": [
+              "Il devra nous appeler dès qu’il sera en contact avec M. Clément."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex03-q06",
+          "number": 6,
+          "prompt": "Tant qu’il y (avoir) __ des hommes, il y (avoir) __ des guerres.",
+          "source_raw_prompt": "Tant qu’il y (avoir) ________________ des hommes, il y (avoir)\n    ________________ des guerres.\n\n   ",
+          "pdf_pages": [
+            118
+          ],
+          "answer": {
+            "source_key": "Tant qu’il y aura des hommes, il y aura des guerres.",
+            "accepted": [
+              "Tant qu’il y aura des hommes, il y aura des guerres."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex03-q07",
+          "number": 7,
+          "prompt": "Elle (enseigner) __ le français quand elle (habiter) __ au Vietnam.",
+          "source_raw_prompt": "Elle (enseigner) ________________ le français quand elle (habiter)\n    ________________ au Vietnam.\n\n   ",
+          "pdf_pages": [
+            118
+          ],
+          "answer": {
+            "source_key": "Elle enseignera le français quand elle habitera au Vietnam.",
+            "accepted": [
+              "Elle enseignera le français quand elle habitera au Vietnam."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex03-q08",
+          "number": 8,
+          "prompt": "Nous (jouer) __ au bridge quand nous (rendre visite) __ à nos amis.",
+          "source_raw_prompt": "Nous (jouer) ________________ au bridge quand nous (rendre visite)\n    ________________ à nos amis. ",
+          "pdf_pages": [
+            118,
+            119
+          ],
+          "answer": {
+            "source_key": "Nous jouerons au bridge quand nous rendrons visite à nos amis.",
+            "accepted": [
+              "Nous jouerons au bridge quand nous rendrons visite à nos amis."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex03-q09",
+          "number": 9,
+          "prompt": "Elle (se reposer) __ quand elle (avoir) __ de longues vacances.",
+          "source_raw_prompt": "Elle (se reposer) ________________ quand elle (avoir) ________________ de\n   longues vacances.\n\n",
+          "pdf_pages": [
+            119
+          ],
+          "answer": {
+            "source_key": "Elle se reposera quand elle aura de longues vacances.",
+            "accepted": [
+              "Elle se reposera quand elle aura de longues vacances."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex03-q10",
+          "number": 10,
+          "prompt": "Dès qu’il (obtenir) __ l’accord, il (partir) __ .",
+          "source_raw_prompt": "Dès qu’il (obtenir) ________________ l’accord, il (partir) ________________\n      .\n\n\n\n\n ",
+          "pdf_pages": [
+            119
+          ],
+          "answer": {
+            "source_key": "Dès qu’il obtiendra l’accord, il partira.",
+            "accepted": [
+              "Dès qu’il obtiendra l’accord, il partira."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch09-s01"
+      ]
+    },
+    {
+      "id": "ch09-ex04",
+      "source": {
+        "chapter": 9,
+        "exercise": "9.4",
+        "pdf_pages": [
+          119,
+          120
+        ]
+      },
+      "topic_ids": [
+        "ch09-t01"
+      ],
+      "instruction": "Changer les verbes du futur immédiat au futur simple.",
+      "interaction_type": "free_response",
+      "questions": [
+        {
+          "id": "ch09-ex04-q01",
+          "number": 1,
+          "prompt": "L’avion va décoller à onze heures. __",
+          "source_raw_prompt": "L’avion va décoller à onze heures.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            119
+          ],
+          "answer": {
+            "source_key": "L’avion décollera à onze heures.",
+            "accepted": [
+              "L’avion décollera à onze heures."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex04-q02",
+          "number": 2,
+          "prompt": "Tu vas apprendre à conduire. __",
+          "source_raw_prompt": "Tu vas apprendre à conduire.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            119
+          ],
+          "answer": {
+            "source_key": "Tu apprendras à conduire.",
+            "accepted": [
+              "Tu apprendras à conduire."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex04-q03",
+          "number": 3,
+          "prompt": "Je vais peindre le salon. __",
+          "source_raw_prompt": "Je vais peindre le salon.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            119
+          ],
+          "answer": {
+            "source_key": "Je peindrai le salon.",
+            "accepted": [
+              "Je peindrai le salon."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex04-q04",
+          "number": 4,
+          "prompt": "Ils vont sortir avec des amis. __",
+          "source_raw_prompt": "Ils vont sortir avec des amis.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            119
+          ],
+          "answer": {
+            "source_key": "Ils sortiront avec des amis.",
+            "accepted": [
+              "Ils sortiront avec des amis."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex04-q05",
+          "number": 5,
+          "prompt": "Vous allez recevoir une invitation. __",
+          "source_raw_prompt": "Vous allez recevoir une invitation.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            119
+          ],
+          "answer": {
+            "source_key": "Vous recevrez une invitation.",
+            "accepted": [
+              "Vous recevrez une invitation."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex04-q06",
+          "number": 6,
+          "prompt": "Nous allons débarquer à midi. __",
+          "source_raw_prompt": "Nous allons débarquer à midi.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            119
+          ],
+          "answer": {
+            "source_key": "Nous débarquerons à midi.",
+            "accepted": [
+              "Nous débarquerons à midi."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex04-q07",
+          "number": 7,
+          "prompt": "Elle va écrire une lettre au président. __",
+          "source_raw_prompt": "Elle va écrire une lettre au président.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            119
+          ],
+          "answer": {
+            "source_key": "Elle écrira une lettre au président.",
+            "accepted": [
+              "Elle écrira une lettre au président."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex04-q08",
+          "number": 8,
+          "prompt": "Tu vas mettre ton chapeau gris. __",
+          "source_raw_prompt": "Tu vas mettre ton chapeau gris.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            119
+          ],
+          "answer": {
+            "source_key": "Tu mettras ton chapeau gris.",
+            "accepted": [
+              "Tu mettras ton chapeau gris."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex04-q09",
+          "number": 9,
+          "prompt": "Ils vont aller en Bolivie. __",
+          "source_raw_prompt": "Ils vont aller en Bolivie.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            119
+          ],
+          "answer": {
+            "source_key": "Ils iront en Bolivie.",
+            "accepted": [
+              "Ils iront en Bolivie."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex04-q10",
+          "number": 10,
+          "prompt": "Il va vivre jusqu’à cent ans. __",
+          "source_raw_prompt": "Il va vivre jusqu’à cent ans.    _____________________________________________________________\n\n\n\n\n  ",
+          "pdf_pages": [
+            119,
+            120
+          ],
+          "answer": {
+            "source_key": "Il vivra jusqu’à cent ans.",
+            "accepted": [
+              "Il vivra jusqu’à cent ans."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch09-s01"
+      ]
+    },
+    {
+      "id": "ch09-ex05",
+      "source": {
+        "chapter": 9,
+        "exercise": "9.5",
+        "pdf_pages": [
+          120
+        ]
+      },
+      "topic_ids": [
+        "ch09-t01"
+      ],
+      "instruction": "Faire correspondre les deux colonnes. ______",
+      "interaction_type": "matching",
+      "questions": [
+        {
+          "id": "ch09-ex05-q01",
+          "number": 1,
+          "prompt": "Elle recevra a. le français __",
+          "source_raw_prompt": "Elle recevra                  a. le français\n\n ______ ",
+          "pdf_pages": [
+            120
+          ],
+          "answer": {
+            "source_key": "c",
+            "accepted": [
+              "c"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "a",
+            "text": "le français"
+          }
+        },
+        {
+          "id": "ch09-ex05-q02",
+          "number": 2,
+          "prompt": "Tu courras b. à un âge avancé __",
+          "source_raw_prompt": "Tu courras                  b. à un âge avancé\n\n ______ ",
+          "pdf_pages": [
+            120
+          ],
+          "answer": {
+            "source_key": "e",
+            "accepted": [
+              "e"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "b",
+            "text": "à un âge avancé"
+          }
+        },
+        {
+          "id": "ch09-ex05-q03",
+          "number": 3,
+          "prompt": "Il enseignera c. son diplôme en juin __",
+          "source_raw_prompt": "Il enseignera                 c. son diplôme en juin\n\n ______ ",
+          "pdf_pages": [
+            120
+          ],
+          "answer": {
+            "source_key": "a",
+            "accepted": [
+              "a"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "c",
+            "text": "son diplôme en juin"
+          }
+        },
+        {
+          "id": "ch09-ex05-q04",
+          "number": 4,
+          "prompt": "Elle mourra d. pilote de ligne __",
+          "source_raw_prompt": "Elle mourra                 d. pilote de ligne\n\n ______ ",
+          "pdf_pages": [
+            120
+          ],
+          "answer": {
+            "source_key": "b",
+            "accepted": [
+              "b"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "d",
+            "text": "pilote de ligne"
+          }
+        },
+        {
+          "id": "ch09-ex05-q05",
+          "number": 5,
+          "prompt": "Il deviendra e. dans le parc",
+          "source_raw_prompt": "Il deviendra                  e. dans le parc",
+          "pdf_pages": [
+            120,
+            121
+          ],
+          "answer": {
+            "source_key": "d",
+            "accepted": [
+              "d"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "e",
+            "text": "dans le parc"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 5,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "choice_label",
+        "publisher_key_is_exhaustive": true
+      },
+      "subtopic_ids": [
+        "ch09-s01"
+      ],
+      "choices": [
+        {
+          "label": "a",
+          "text": "le français"
+        },
+        {
+          "label": "b",
+          "text": "à un âge avancé"
+        },
+        {
+          "label": "c",
+          "text": "son diplôme en juin"
+        },
+        {
+          "label": "d",
+          "text": "pilote de ligne"
+        },
+        {
+          "label": "e",
+          "text": "dans le parc"
+        }
+      ]
+    },
+    {
+      "id": "ch09-ex06",
+      "source": {
+        "chapter": 9,
+        "exercise": "9.6",
+        "pdf_pages": [
+          121,
+          122
+        ]
+      },
+      "topic_ids": [
+        "ch09-t02"
+      ],
+      "instruction": "Mettre les verbes entre parenthèses au futur antérieur.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch09-ex06-q01",
+          "number": 1,
+          "prompt": "Elle (apprendre) __ le français au Laos.",
+          "source_raw_prompt": "Elle (apprendre) ________________ le français au Laos.\n\n   ",
+          "pdf_pages": [
+            121
+          ],
+          "answer": {
+            "source_key": "aura appris",
+            "accepted": [
+              "aura appris"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex06-q02",
+          "number": 2,
+          "prompt": "Il (finir) __ son roman avant la fin de l’année.",
+          "source_raw_prompt": "Il (finir) ________________ son roman avant la fin de l’année.\n\n   ",
+          "pdf_pages": [
+            121
+          ],
+          "answer": {
+            "source_key": "aura fini",
+            "accepted": [
+              "aura fini"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex06-q03",
+          "number": 3,
+          "prompt": "Nous (visiter) __ tous les sites historiques de la région.",
+          "source_raw_prompt": "Nous (visiter) ________________ tous les sites historiques de la région.\n\n   ",
+          "pdf_pages": [
+            121
+          ],
+          "answer": {
+            "source_key": "aurons visité",
+            "accepted": [
+              "aurons visité"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex06-q04",
+          "number": 4,
+          "prompt": "Les chercheurs (trouver) __ un nouveau vaccin.",
+          "source_raw_prompt": "Les chercheurs (trouver) ________________ un nouveau vaccin.\n\n   ",
+          "pdf_pages": [
+            121
+          ],
+          "answer": {
+            "source_key": "auront trouvé",
+            "accepted": [
+              "auront trouvé"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex06-q05",
+          "number": 5,
+          "prompt": "On (découvrir) __ un remède plus efficace.",
+          "source_raw_prompt": "On (découvrir) ________________ un remède plus efficace.\n\n   ",
+          "pdf_pages": [
+            121
+          ],
+          "answer": {
+            "source_key": "aura découvert",
+            "accepted": [
+              "aura découvert"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex06-q06",
+          "number": 6,
+          "prompt": "Je (répondre) __ à toutes les questions.",
+          "source_raw_prompt": "Je (répondre) ________________ à toutes les questions.\n\n   ",
+          "pdf_pages": [
+            121
+          ],
+          "answer": {
+            "source_key": "J’aurai répondu",
+            "accepted": [
+              "J’aurai répondu"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex06-q07",
+          "number": 7,
+          "prompt": "Elle (se reposer) __ des semaines au bord du lac.",
+          "source_raw_prompt": "Elle (se reposer) ________________ des semaines au bord du lac.\n\n   ",
+          "pdf_pages": [
+            121
+          ],
+          "answer": {
+            "source_key": "se sera reposée",
+            "accepted": [
+              "se sera reposée"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex06-q08",
+          "number": 8,
+          "prompt": "Ils (compléter) __ leur stage de formation.",
+          "source_raw_prompt": "Ils (compléter) ________________ leur stage de formation.\n\n   ",
+          "pdf_pages": [
+            121
+          ],
+          "answer": {
+            "source_key": "auront complété",
+            "accepted": [
+              "auront complété"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex06-q09",
+          "number": 9,
+          "prompt": "Il (mourir) __ depuis longtemps.",
+          "source_raw_prompt": "Il (mourir) ________________ depuis longtemps.\n\n ",
+          "pdf_pages": [
+            121
+          ],
+          "answer": {
+            "source_key": "sera mort",
+            "accepted": [
+              "sera mort"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex06-q10",
+          "number": 10,
+          "prompt": "Je (voir) __ l’essentiel. Sometimes you have a choice between the futur simple and the futur antérieur. When both clauses use the futur simple, it is implied that both actions are almost simultaneous. Elle vous téléphonera dès qu’elle finira She’ll call you as soon as she finish son roman. her novel. The futur antérieur describes two sequential and related future actions. Elle vous téléphonera dès qu’elle aura She’ll call you as soon as she finishes fini son roman. (will have finished) her novel. Dès que vous accepterez cette théorie, As soon as you accept this theory, we on en discutera plus longuement. discuss it at length. Dès que vous aurez accepté cette As soon as you accept (will have théorie, on en discutera plus accepted) this theory, we’ll discus longuement. it at length. The futur antérieur can also express the probability of a past action, in the same way that the futur simple can be used to express probability in the present. Elle aura encore échoué à ses She probably failed her exams again! examens! Il aura encore brûlé le gigot d’agneau! He probably burnt the leg of lamb again! Ils auront manqué leur train. They probably missed their train. Son fils aura encore fait des bêtises! His son probably got in trouble again! The futur antérieur is also used after si, implying a completed action. Si means whether in this case. Je me demande s’ils auront signé I wonder whether they’ll have signed the le contrat. contract. Je me demande si j’aurai tout I am wondering whether I’ll have resolved réglé avant ce soir. everything by tonight. Il se demande s’il aura terminé à He wonders whether he’ll have finished on temps. time. In French, the futur antérieur is never used after si implying a future condition. Use the present instead. S’il a le temps, il passera vous voir. If he has time, he’ll stop by to see yo Si vous pouvez, envoyez-moi votre CV If you can, send me your résumé avant lundi. before Monday.",
+          "source_raw_prompt": "Je (voir) ________________ l’essentiel.\n\n\n\n  Sometimes you have a choice between the futur simple and the futur antérieur.\nWhen both clauses use the futur simple, it is implied that both actions are almost\nsimultaneous.\n\n       Elle vous téléphonera dès qu’elle finira  She’ll call you as soon as she finish\n         son roman.                             her novel.\n\n  The futur antérieur describes two sequential and related future actions.       Elle vous téléphonera dès qu’elle aura  She’ll call you as soon as she finishes\n            fini son roman.                            (will have finished) her novel.\n      Dès que vous accepterez cette théorie,  As soon as you accept this theory, we\n        on en discutera plus longuement.       discuss it at length.\n      Dès que vous aurez accepté cette      As soon as you accept (will have\n           théorie, on en discutera plus            accepted) this theory, we’ll discus\n         longuement.                                          it at length.\n\n  The futur antérieur can also express the probability of a past action, in the same\nway that the futur simple can be used to express probability in the present.\n\n       Elle aura encore échoué à ses        She probably failed her exams again!\n         examens!\n          Il aura encore brûlé le gigot d’agneau! He probably burnt the leg of lamb\n                                               again!\n         Ils auront manqué leur train.         They probably missed their train.\n      Son fils aura encore fait des bêtises!   His son probably got in trouble again!\n\n  The futur antérieur is also used after si, implying a completed action. Si means\nwhether in this case.\n\n       Je me demande s’ils auront signé  I wonder whether they’ll have signed the\n            le contrat.                          contract.\n       Je me demande si j’aurai tout       I am wondering whether I’ll have resolved\n          réglé avant ce soir.                everything by tonight.\n          Il se demande s’il aura terminé à He wonders whether he’ll have finished on\n          temps.                             time.\n\n   In French, the futur antérieur is never used after si implying a future condition.\nUse the present instead.\n\n        S’il a le temps, il passera vous voir.        If he has time, he’ll stop by to see yo\n       Si vous pouvez, envoyez-moi votre CV   If you can, send me your résumé\n          avant lundi.                             before Monday.\n\n\n\n  ",
+          "pdf_pages": [
+            121,
+            122
+          ],
+          "answer": {
+            "source_key": "J’aurai vu",
+            "accepted": [
+              "J’aurai vu"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch09-s02"
+      ]
+    },
+    {
+      "id": "ch09-ex07",
+      "source": {
+        "chapter": 9,
+        "exercise": "9.7",
+        "pdf_pages": [
+          122,
+          123
+        ]
+      },
+      "topic_ids": [
+        "ch09-t02"
+      ],
+      "instruction": "Traduire les phrases suivantes en utilisant vous si nécessaire.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch09-ex07-q01",
+          "number": 1,
+          "prompt": "We’ll play tennis. __",
+          "source_raw_prompt": "We’ll play tennis.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            123
+          ],
+          "answer": {
+            "source_key": "Nous jouerons au tennis.",
+            "accepted": [
+              "Nous jouerons au tennis."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex07-q02",
+          "number": 2,
+          "prompt": "You’ll need to buy a new car. __",
+          "source_raw_prompt": "You’ll need to buy a new car.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            123
+          ],
+          "answer": {
+            "source_key": "Vous aurez besoin d’acheter une nouvelle voiture.",
+            "accepted": [
+              "Vous aurez besoin d’acheter une nouvelle voiture."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex07-q03",
+          "number": 3,
+          "prompt": "I’ll take a history course. __",
+          "source_raw_prompt": "I’ll take a history course.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            123
+          ],
+          "answer": {
+            "source_key": "Je suivrai un cours d’histoire.",
+            "accepted": [
+              "Je suivrai un cours d’histoire."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex07-q04",
+          "number": 4,
+          "prompt": "We’ll visit Venice when we are in Italy. __",
+          "source_raw_prompt": "We’ll visit Venice when we are in Italy.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            123
+          ],
+          "answer": {
+            "source_key": "Nous visiterons Venise quand nous serons en Italie.",
+            "accepted": [
+              "Nous visiterons Venise quand nous serons en Italie."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex07-q05",
+          "number": 5,
+          "prompt": "They’ll go to Dakar. __",
+          "source_raw_prompt": "They’ll go to Dakar.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            123
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) iront à Dakar.",
+            "accepted": [
+              "Ils (Elles) iront à Dakar."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex07-q06",
+          "number": 6,
+          "prompt": "We’ll walk along the beach. __",
+          "source_raw_prompt": "We’ll walk along the beach.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            123
+          ],
+          "answer": {
+            "source_key": "Nous marcherons le long de la plage.",
+            "accepted": [
+              "Nous marcherons le long de la plage."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex07-q07",
+          "number": 7,
+          "prompt": "He’ll study French when he is in Bordeaux. __",
+          "source_raw_prompt": "He’ll study French when he is in Bordeaux.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            123
+          ],
+          "answer": {
+            "source_key": "Il étudiera le français quand il sera à Bordeaux.",
+            "accepted": [
+              "Il étudiera le français quand il sera à Bordeaux."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex07-q08",
+          "number": 8,
+          "prompt": "They’ll see the Picasso exhibition when they are in Paris. __",
+          "source_raw_prompt": "They’ll see the Picasso exhibition when they are in Paris.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            123
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) verront l’exposition Picasso quand ils (elles) seront à Paris.",
+            "accepted": [
+              "Ils (Elles) verront l’exposition Picasso quand ils (elles) seront à Paris."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex07-q09",
+          "number": 9,
+          "prompt": "She’ll travel to Asia when she gets her degree. __",
+          "source_raw_prompt": "She’ll travel to Asia when she gets her degree.\n    _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            123
+          ],
+          "answer": {
+            "source_key": "Elle voyagera en Asie quand elle obtiendra son diplôme.",
+            "accepted": [
+              "Elle voyagera en Asie quand elle obtiendra son diplôme."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex07-q10",
+          "number": 10,
+          "prompt": "He’ll become a doctor. __",
+          "source_raw_prompt": "He’ll become a doctor.\n    _____________________________________________________________",
+          "pdf_pages": [
+            123,
+            124,
+            125
+          ],
+          "answer": {
+            "source_key": "Il deviendra médecin.",
+            "accepted": [
+              "Il deviendra médecin."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch09-s02"
+      ]
+    },
+    {
+      "id": "ch09-ex08",
+      "source": {
+        "chapter": 9,
+        "exercise": "9.8",
+        "pdf_pages": [
+          125
+        ]
+      },
+      "topic_ids": [
+        "ch09-t03"
+      ],
+      "instruction": "Mettre au futur simple les verbes entre parenthèses.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch09-ex08-q01",
+          "number": 1,
+          "prompt": "Puisqu’il a raté son examen, il (ne pas aller) __ en vacances.",
+          "source_raw_prompt": "Puisqu’il a raté son examen, il (ne pas aller) ________________ en vacances.\n\n ",
+          "pdf_pages": [
+            125
+          ],
+          "answer": {
+            "source_key": "n’ira pas",
+            "accepted": [
+              "n’ira pas"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex08-q02",
+          "number": 2,
+          "prompt": "Étant donné qu’il est parti, la situation ne (faire) __ qu’empirer.",
+          "source_raw_prompt": "Étant donné qu’il est parti, la situation ne (faire) ________________\n    qu’empirer.\n\n ",
+          "pdf_pages": [
+            125
+          ],
+          "answer": {
+            "source_key": "fera",
+            "accepted": [
+              "fera"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex08-q03",
+          "number": 3,
+          "prompt": "Il devra trouver une excuse parce qu’elle (ne pas pouvoir) __ assister à la réunion.",
+          "source_raw_prompt": "Il devra trouver une excuse parce qu’elle (ne pas pouvoir) ________________\n    assister à la réunion.\n\n ",
+          "pdf_pages": [
+            125
+          ],
+          "answer": {
+            "source_key": "ne pourra pas",
+            "accepted": [
+              "ne pourra pas"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex08-q04",
+          "number": 4,
+          "prompt": "Il fera chaud chez elle alors que chez lui, on (geler) __ .",
+          "source_raw_prompt": "Il fera chaud chez elle alors que chez lui, on (geler) ________________ .\n\n ",
+          "pdf_pages": [
+            125
+          ],
+          "answer": {
+            "source_key": "gèlera",
+            "accepted": [
+              "gèlera"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex08-q05",
+          "number": 5,
+          "prompt": "Si nous avons le temps, nous (se promener) __ au bord du lac.",
+          "source_raw_prompt": "Si nous avons le temps, nous (se promener) ________________ au bord du\n    lac.\n\n ",
+          "pdf_pages": [
+            125
+          ],
+          "answer": {
+            "source_key": "nous promènerons",
+            "accepted": [
+              "nous promènerons"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex08-q06",
+          "number": 6,
+          "prompt": "Dès que j’aurai terminé l’enregistrement, je vous (envoyer) __ un CD.",
+          "source_raw_prompt": "Dès que j’aurai terminé l’enregistrement, je vous (envoyer)\n   ________________ un CD.\n\n ",
+          "pdf_pages": [
+            125
+          ],
+          "answer": {
+            "source_key": "enverrai",
+            "accepted": [
+              "enverrai"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex08-q07",
+          "number": 7,
+          "prompt": "Elle dormira tandis que je (faire) __ la vaisselle.",
+          "source_raw_prompt": "Elle dormira tandis que je (faire) ________________ la vaisselle.\n\n ",
+          "pdf_pages": [
+            125
+          ],
+          "answer": {
+            "source_key": "ferai",
+            "accepted": [
+              "ferai"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex08-q08",
+          "number": 8,
+          "prompt": "Tant qu’ils seront là, tout (aller) __ bien.",
+          "source_raw_prompt": "Tant qu’ils seront là, tout (aller) ________________ bien.\n\n ",
+          "pdf_pages": [
+            125
+          ],
+          "answer": {
+            "source_key": "ira",
+            "accepted": [
+              "ira"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex08-q09",
+          "number": 9,
+          "prompt": "Quand tu vivras à Paris, tu (découvrir) __ beaucoup de nouvelles choses.",
+          "source_raw_prompt": "Quand tu vivras à Paris, tu (découvrir) ________________ beaucoup de\n    nouvelles choses.\n\n",
+          "pdf_pages": [
+            125
+          ],
+          "answer": {
+            "source_key": "découvriras",
+            "accepted": [
+              "découvriras"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch09-ex08-q10",
+          "number": 10,
+          "prompt": "Aussitôt que le paquet sera arrivé, je vous (contacter) __ .",
+          "source_raw_prompt": "Aussitôt que le paquet sera arrivé, je vous (contacter) ________________ .",
+          "pdf_pages": [
+            125
+          ],
+          "answer": {
+            "source_key": "contacterai",
+            "accepted": [
+              "contacterai"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch09-s03"
+      ]
+    }
+  ]
+}

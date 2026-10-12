@@ -1,0 +1,1120 @@
+{
+  "chapter": 12,
+  "status": "machine_transcribed_editorial_visual_review_pending",
+  "exercises": [
+    {
+      "id": "ch12-ex01",
+      "source": {
+        "chapter": 12,
+        "exercise": "12.1",
+        "pdf_pages": [
+          150,
+          151
+        ]
+      },
+      "topic_ids": [
+        "ch12-t03"
+      ],
+      "instruction": "Traduire les phrases suivantes en utilisant vous et l’inversion si nécessaire.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch12-ex01-q01",
+          "number": 1,
+          "prompt": "Could you help clean the house after the party? __",
+          "source_raw_prompt": "Could you help clean the house after the party?\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            150
+          ],
+          "answer": {
+            "source_key": "Pourriez-vous aider à nettoyer la maison après la soirée?",
+            "accepted": [
+              "Pourriez-vous aider à nettoyer la maison après la soirée?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex01-q02",
+          "number": 2,
+          "prompt": "We could not go on vacation. __",
+          "source_raw_prompt": "We could not go on vacation.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            150
+          ],
+          "answer": {
+            "source_key": "Nous n’avons pas pu partir en vacances.",
+            "accepted": [
+              "Nous n’avons pas pu partir en vacances."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex01-q03",
+          "number": 3,
+          "prompt": "I could buy her a new flute. __",
+          "source_raw_prompt": "I could buy her a new flute.\n   _____________________________________________________________   ",
+          "pdf_pages": [
+            150,
+            151
+          ],
+          "answer": {
+            "source_key": "Je pourrais lui acheter une nouvelle flûte.",
+            "accepted": [
+              "Je pourrais lui acheter une nouvelle flûte."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex01-q04",
+          "number": 4,
+          "prompt": "At that time, they could not understand. __",
+          "source_raw_prompt": "At that time, they could not understand.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            151
+          ],
+          "answer": {
+            "source_key": "À cette époque-là, ils (elles) ne pouvaient pas comprendre.",
+            "accepted": [
+              "À cette époque-là, ils (elles) ne pouvaient pas comprendre."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex01-q05",
+          "number": 5,
+          "prompt": "Could we start eating? __",
+          "source_raw_prompt": "Could we start eating?\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            151
+          ],
+          "answer": {
+            "source_key": "Pourrions-nous commencer à manger?",
+            "accepted": [
+              "Pourrions-nous commencer à manger?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex01-q06",
+          "number": 6,
+          "prompt": "We could go see a movie tonight. __",
+          "source_raw_prompt": "We could go see a movie tonight.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            151
+          ],
+          "answer": {
+            "source_key": "Nous pourrions aller voir un film ce soir.",
+            "accepted": [
+              "Nous pourrions aller voir un film ce soir."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex01-q07",
+          "number": 7,
+          "prompt": "Thanks to her rich aunt, she could pay for her studies. __",
+          "source_raw_prompt": "Thanks to her rich aunt, she could pay for her studies.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            151
+          ],
+          "answer": {
+            "source_key": "Grâce à sa tante riche, elle a pu payer ses études.",
+            "accepted": [
+              "Grâce à sa tante riche, elle a pu payer ses études."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex01-q08",
+          "number": 8,
+          "prompt": "I think she could do better. __",
+          "source_raw_prompt": "I think she could do better.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            151
+          ],
+          "answer": {
+            "source_key": "Je pense qu’elle pourrait mieux faire.",
+            "accepted": [
+              "Je pense qu’elle pourrait mieux faire."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex01-q09",
+          "number": 9,
+          "prompt": "When you were a kid, you would play with your dolls for hours. __",
+          "source_raw_prompt": "When you were a kid, you would play with your dolls for hours.\n    _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            151
+          ],
+          "answer": {
+            "source_key": "Quand vous étiez enfant, vous jouiez avec vos poupées pendant des heures.",
+            "accepted": [
+              "Quand vous étiez enfant, vous jouiez avec vos poupées pendant des heures."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex01-q10",
+          "number": 10,
+          "prompt": "Could you teach me how to play the guitar? __",
+          "source_raw_prompt": "Could you teach me how to play the guitar?\n    _____________________________________________________________",
+          "pdf_pages": [
+            151,
+            152
+          ],
+          "answer": {
+            "source_key": "Pourriez-vous m’apprendre à jouer de la guitare?",
+            "accepted": [
+              "Pourriez-vous m’apprendre à jouer de la guitare?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch12-s03"
+      ]
+    },
+    {
+      "id": "ch12-ex02",
+      "source": {
+        "chapter": 12,
+        "exercise": "12.2",
+        "pdf_pages": [
+          152,
+          153
+        ]
+      },
+      "topic_ids": [
+        "ch12-t03"
+      ],
+      "instruction": "Traduire les phrases suivantes en utilisant vous et l’inversion si nécessaire.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch12-ex02-q01",
+          "number": 1,
+          "prompt": "You should learn to play the guitar. __",
+          "source_raw_prompt": "You should learn to play the guitar.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            152
+          ],
+          "answer": {
+            "source_key": "Vous devriez apprendre à jouer de la guitare.",
+            "accepted": [
+              "Vous devriez apprendre à jouer de la guitare."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex02-q02",
+          "number": 2,
+          "prompt": "They shouldn’t have said that. __",
+          "source_raw_prompt": "They shouldn’t have said that.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            152
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) n’auraient pas dû dire cela.",
+            "accepted": [
+              "Ils (Elles) n’auraient pas dû dire cela."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex02-q03",
+          "number": 3,
+          "prompt": "I should write to Pierre. __",
+          "source_raw_prompt": "I should write to Pierre.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            152
+          ],
+          "answer": {
+            "source_key": "Je devrais écrire à Pierre.",
+            "accepted": [
+              "Je devrais écrire à Pierre."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex02-q04",
+          "number": 4,
+          "prompt": "I should have talked to them. __",
+          "source_raw_prompt": "I should have talked to them.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            152
+          ],
+          "answer": {
+            "source_key": "J’aurais dû leur parler.",
+            "accepted": [
+              "J’aurais dû leur parler."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex02-q05",
+          "number": 5,
+          "prompt": "Do you think Julien should have called you before coming? __",
+          "source_raw_prompt": "Do you think Julien should have called you before coming?\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            152
+          ],
+          "answer": {
+            "source_key": "Pensez- vous que Julien aurait dû vous appeler avant de venir?",
+            "accepted": [
+              "Pensez- vous que Julien aurait dû vous appeler avant de venir?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex02-q06",
+          "number": 6,
+          "prompt": "I shouldn’t have called so early. __",
+          "source_raw_prompt": "I shouldn’t have called so early.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            152
+          ],
+          "answer": {
+            "source_key": "Je n’aurais pas dû vous appeler si tôt.",
+            "accepted": [
+              "Je n’aurais pas dû vous appeler si tôt."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex02-q07",
+          "number": 7,
+          "prompt": "We shouldn’t take the car, it’s too dangerous. __",
+          "source_raw_prompt": "We shouldn’t take the car, it’s too dangerous.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            152
+          ],
+          "answer": {
+            "source_key": "Nous ne devrions pas prendre la voiture, c’est trop dangereux.",
+            "accepted": [
+              "Nous ne devrions pas prendre la voiture, c’est trop dangereux."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex02-q08",
+          "number": 8,
+          "prompt": "I think you should take a vacation. __",
+          "source_raw_prompt": "I think you should take a vacation.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            152
+          ],
+          "answer": {
+            "source_key": "Je pense que vous devriez prendre des vacances.",
+            "accepted": [
+              "Je pense que vous devriez prendre des vacances."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex02-q09",
+          "number": 9,
+          "prompt": "You should rent a piano for the party. __",
+          "source_raw_prompt": "You should rent a piano for the party.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            152
+          ],
+          "answer": {
+            "source_key": "Vous devriez louer un piano pour la soirée.",
+            "accepted": [
+              "Vous devriez louer un piano pour la soirée."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex02-q10",
+          "number": 10,
+          "prompt": "Marie thinks her father should be present for this occasion. __ Would When would refers to a repeated action in the past, the imparfait is used. Note the following examples: Quand j’étais étudiant, je lisais les When I was a student, I would read th journaux tous les jours. newspapers every day. Quand ils étaient adolescents, ils When they were teens, they would play jouaient au volley-ball le jeudi. volleyball on Thursdays. When would refers to a polite request, the présent du conditionnel is used. Note the following examples: Voudrais-tu me montrer le chemin? Would you mind showing me the way? Est-ce que tu voudrais bien m’aider à résoudre Could you help me solve that ce problème? problem? When would refers to a specific action in the past, the passé composé of vouloir is used. Note the following examples: Nous leur avons demandé de nous accorder un We asked them to give us a littl peu de temps; ils n’ont pas voulu le faire. time; they would not do it. Je lui ai posé la question plusieurs fois; elle n’a I asked her the question severa pas voulu répondre. times; she would not answe When would refers to an idea of the future, a hypothesis, or a suggestion, the présent du conditionnel of the main verb is used. The imparfait is used in the si clause. Je vous le dirais si je le savais. I would tell you if I knew. Elle serait si heureuse si son amie She would be happy if her friend Clair Claire l’invitait à la Philharmonie de invited her at the Paris Paris. Philharmonie.",
+          "source_raw_prompt": "Marie thinks her father should be present for this occasion.\n   _____________________________________________________________Would\nWhen would refers to a repeated action in the past, the imparfait is used. Note the\nfollowing examples:\n\n      Quand j’étais étudiant, je lisais les    When I was a student, I would read th\n         journaux tous les jours.              newspapers every day.\n      Quand ils étaient adolescents, ils     When they were teens, they would play\n          jouaient au volley-ball le jeudi.         volleyball on Thursdays.\n\n  When would refers to a polite request, the présent du conditionnel is used. Note\nthe following examples:\n\n       Voudrais-tu me montrer le chemin?         Would you mind showing me\n                                                          the way?\n       Est-ce que tu voudrais bien m’aider à résoudre Could you help me solve that\n         ce problème?                              problem?\n\n  When would refers to a specific action in the past, the passé composé of vouloir\nis used. Note the following examples:\n\n      Nous leur avons demandé de nous accorder un We asked them to give us a littl\n         peu de temps; ils n’ont pas voulu le faire.     time; they would not do it.\n       Je lui ai posé la question plusieurs fois; elle n’a I asked her the question severa\n         pas voulu répondre.                          times; she would not answe\n\n  When would refers to an idea of the future, a hypothesis, or a suggestion, the\nprésent du conditionnel of the main verb is used. The imparfait is used in the si\nclause.\n\n       Je vous le dirais si je le savais.           I would tell you if I knew.\n       Elle serait si heureuse si son amie     She would be happy if her friend Clair\n          Claire l’invitait à la Philharmonie de   invited her at the Paris\n           Paris.                               Philharmonie.\n\n\n\n  ",
+          "pdf_pages": [
+            152,
+            153
+          ],
+          "answer": {
+            "source_key": "Marie pense que son père devrait être présent pour cette occasion.",
+            "accepted": [
+              "Marie pense que son père devrait être présent pour cette occasion."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch12-s03"
+      ]
+    },
+    {
+      "id": "ch12-ex03",
+      "source": {
+        "chapter": 12,
+        "exercise": "12.3",
+        "pdf_pages": [
+          153,
+          154
+        ]
+      },
+      "topic_ids": [
+        "ch12-t03"
+      ],
+      "instruction": "Traduire en anglais les phrases suivantes.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch12-ex03-q01",
+          "number": 1,
+          "prompt": "S’il était moins paresseux, il aurait de meilleures notes à l’école. __",
+          "source_raw_prompt": "S’il était moins paresseux, il aurait de meilleures notes à l’école.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            154
+          ],
+          "answer": {
+            "source_key": "If he were less lazy, he would have better grades in school.",
+            "accepted": [
+              "If he were less lazy, he would have better grades in school."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex03-q02",
+          "number": 2,
+          "prompt": "Quand nous étions enfants, nos parents nous emmenaient en vacances au Maroc tous les ans. __",
+          "source_raw_prompt": "Quand nous étions enfants, nos parents nous emmenaient en vacances au\n   Maroc tous les ans.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            154
+          ],
+          "answer": {
+            "source_key": "When we were children, our parents would take us on vacation to Morocco every year.",
+            "accepted": [
+              "When we were children, our parents would take us on vacation to Morocco every year."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex03-q03",
+          "number": 3,
+          "prompt": "Samuel a demandé un peu plus d’argent. Son patron n’a pas voulu le lui donner. __",
+          "source_raw_prompt": "Samuel a demandé un peu plus d’argent. Son patron n’a pas voulu le lui\n    donner.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            154
+          ],
+          "answer": {
+            "source_key": "Samuel asked for a little more money. His boss would not do it (refused).",
+            "accepted": [
+              "Samuel asked for a little more money. His boss would not do it (refused)."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex03-q04",
+          "number": 4,
+          "prompt": "Si Emmanuelle était disponible, elle viendrait. __",
+          "source_raw_prompt": "Si Emmanuelle était disponible, elle viendrait.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            154
+          ],
+          "answer": {
+            "source_key": "If Emmanuelle were available, she would come.",
+            "accepted": [
+              "If Emmanuelle were available, she would come."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex03-q05",
+          "number": 5,
+          "prompt": "Quand elle était étudiante à Paris, elle allait au cinéma tous les dimanches. __",
+          "source_raw_prompt": "Quand elle était étudiante à Paris, elle allait au cinéma tous les dimanches.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            154
+          ],
+          "answer": {
+            "source_key": "When she was a student in Paris, she would go to the movies every Sunday.",
+            "accepted": [
+              "When she was a student in Paris, she would go to the movies every Sunday."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex03-q06",
+          "number": 6,
+          "prompt": "Si Sylvie avait plus d’argent, elle s’achèterait de nouvelles chaussures. __",
+          "source_raw_prompt": "Si Sylvie avait plus d’argent, elle s’achèterait de nouvelles chaussures.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            154
+          ],
+          "answer": {
+            "source_key": "If Sylvie had more money, she would buy herself new shoes.",
+            "accepted": [
+              "If Sylvie had more money, she would buy herself new shoes."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex03-q07",
+          "number": 7,
+          "prompt": "S’ils avaient le choix, ils ne déménageraient pas. __",
+          "source_raw_prompt": "S’ils avaient le choix, ils ne déménageraient pas.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            154
+          ],
+          "answer": {
+            "source_key": "If they had a choice, they would not move.",
+            "accepted": [
+              "If they had a choice, they would not move."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex03-q08",
+          "number": 8,
+          "prompt": "Voudrais-tu me dire ce qui s’est passé à cette réunion? __",
+          "source_raw_prompt": "Voudrais-tu me dire ce qui s’est passé à cette réunion?\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            154
+          ],
+          "answer": {
+            "source_key": "Would you tell me what happened at that meeting?",
+            "accepted": [
+              "Would you tell me what happened at that meeting?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex03-q09",
+          "number": 9,
+          "prompt": "Catherine voulait faire demi-tour, mais son mari n’a pas voulu le faire. __",
+          "source_raw_prompt": "Catherine voulait faire demi-tour, mais son mari n’a pas voulu le faire.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            154
+          ],
+          "answer": {
+            "source_key": "Catherine wanted to turn around, but her husband would not do it (refused).",
+            "accepted": [
+              "Catherine wanted to turn around, but her husband would not do it (refused)."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex03-q10",
+          "number": 10,
+          "prompt": "Pourriez-vous m’expliquer comment cela marche? __",
+          "source_raw_prompt": "Pourriez-vous m’expliquer comment cela marche?\n   _____________________________________________________________\n\n\n\n\n ",
+          "pdf_pages": [
+            154
+          ],
+          "answer": {
+            "source_key": "Could you explain to me how this works?",
+            "accepted": [
+              "Could you explain to me how this works?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch12-s03"
+      ]
+    },
+    {
+      "id": "ch12-ex04",
+      "source": {
+        "chapter": 12,
+        "exercise": "12.4",
+        "pdf_pages": [
+          154,
+          155
+        ]
+      },
+      "topic_ids": [
+        "ch12-t03"
+      ],
+      "instruction": "Traduire en français les phrases suivantes en utilisant tu et l’inversion si nécessaire.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch12-ex04-q01",
+          "number": 1,
+          "prompt": "Could you read this document? __",
+          "source_raw_prompt": "Could you read this document?   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            154,
+            155
+          ],
+          "answer": {
+            "source_key": "Pourrais-tu lire ce document?",
+            "accepted": [
+              "Pourrais-tu lire ce document?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex04-q02",
+          "number": 2,
+          "prompt": "We should buy tickets for the concert. __",
+          "source_raw_prompt": "We should buy tickets for the concert.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            155
+          ],
+          "answer": {
+            "source_key": "Nous devrions acheter des billets pour le concert.",
+            "accepted": [
+              "Nous devrions acheter des billets pour le concert."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex04-q03",
+          "number": 3,
+          "prompt": "Valérie could help you! __",
+          "source_raw_prompt": "Valérie could help you!\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            155
+          ],
+          "answer": {
+            "source_key": "Valérie pourrait t’aider!",
+            "accepted": [
+              "Valérie pourrait t’aider!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex04-q04",
+          "number": 4,
+          "prompt": "At that time, she could not go out very often. __",
+          "source_raw_prompt": "At that time, she could not go out very often.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            155
+          ],
+          "answer": {
+            "source_key": "À cette époque-là, elle ne pouvait pas sortir souvent.",
+            "accepted": [
+              "À cette époque-là, elle ne pouvait pas sortir souvent."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex04-q05",
+          "number": 5,
+          "prompt": "Could you send me a copy of that letter? __",
+          "source_raw_prompt": "Could you send me a copy of that letter?\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            155
+          ],
+          "answer": {
+            "source_key": "Pourrais-tu m’envoyer un double de cette lettre?",
+            "accepted": [
+              "Pourrais-tu m’envoyer un double de cette lettre?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex04-q06",
+          "number": 6,
+          "prompt": "I asked her to help me; she would not do it. __",
+          "source_raw_prompt": "I asked her to help me; she would not do it.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            155
+          ],
+          "answer": {
+            "source_key": "Je lui ai demandé de m’aider; elle n’a pas voulu.",
+            "accepted": [
+              "Je lui ai demandé de m’aider; elle n’a pas voulu."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex04-q07",
+          "number": 7,
+          "prompt": "Pascal would play the violin if he had more time. __",
+          "source_raw_prompt": "Pascal would play the violin if he had more time.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            155
+          ],
+          "answer": {
+            "source_key": "Pascal jouerait du violon s’il avait plus de temps.",
+            "accepted": [
+              "Pascal jouerait du violon s’il avait plus de temps."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex04-q08",
+          "number": 8,
+          "prompt": "Marie could not tell him the truth. __",
+          "source_raw_prompt": "Marie could not tell him the truth.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            155
+          ],
+          "answer": {
+            "source_key": "Marie n’a pas pu lui dire la vérité.",
+            "accepted": [
+              "Marie n’a pas pu lui dire la vérité."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex04-q09",
+          "number": 9,
+          "prompt": "When we were kids, we would play for hours on the beach. __",
+          "source_raw_prompt": "When we were kids, we would play for hours on the beach.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            155
+          ],
+          "answer": {
+            "source_key": "Quand nous étions enfants, nous jouions sur la plage pendant des heures.",
+            "accepted": [
+              "Quand nous étions enfants, nous jouions sur la plage pendant des heures."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex04-q10",
+          "number": 10,
+          "prompt": "Don’t you think you should change your haircut? __",
+          "source_raw_prompt": "Don’t you think you should change your haircut?\n   _____________________________________________________________\n\n\n\n\n ",
+          "pdf_pages": [
+            155
+          ],
+          "answer": {
+            "source_key": "Ne penses- tu pas que tu devrais changer de coiffure?",
+            "accepted": [
+              "Ne penses- tu pas que tu devrais changer de coiffure?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch12-s03"
+      ]
+    },
+    {
+      "id": "ch12-ex05",
+      "source": {
+        "chapter": 12,
+        "exercise": "12.5",
+        "pdf_pages": [
+          155,
+          156
+        ]
+      },
+      "topic_ids": [
+        "ch12-t03"
+      ],
+      "instruction": "Could, would ou should? Traduire en anglais les phrases suivantes.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch12-ex05-q01",
+          "number": 1,
+          "prompt": "Pourrais-tu ouvrir la porte? __",
+          "source_raw_prompt": "Pourrais-tu ouvrir la porte?\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            155
+          ],
+          "answer": {
+            "source_key": "Could you open the door?",
+            "accepted": [
+              "Could you open the door?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex05-q02",
+          "number": 2,
+          "prompt": "À cette heure, il devrait être à la maison. __",
+          "source_raw_prompt": "À cette heure, il devrait être à la maison.\n   _____________________________________________________________ ",
+          "pdf_pages": [
+            155,
+            156
+          ],
+          "answer": {
+            "source_key": "At that time, he should be home.",
+            "accepted": [
+              "At that time, he should be home."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex05-q03",
+          "number": 3,
+          "prompt": "Ils n’ont pas pu avoir de billets. __",
+          "source_raw_prompt": "Ils n’ont pas pu avoir de billets.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            156
+          ],
+          "answer": {
+            "source_key": "They could not get tickets.",
+            "accepted": [
+              "They could not get tickets."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex05-q04",
+          "number": 4,
+          "prompt": "Voudriez-vous bien participer à ce projet? __",
+          "source_raw_prompt": "Voudriez-vous bien participer à ce projet?\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            156
+          ],
+          "answer": {
+            "source_key": "Would you like to participate in this project?",
+            "accepted": [
+              "Would you like to participate in this project?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex05-q05",
+          "number": 5,
+          "prompt": "Je suis venu le chercher; il n’a pas voulu venir avec moi. __",
+          "source_raw_prompt": "Je suis venu le chercher; il n’a pas voulu venir avec moi.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            156
+          ],
+          "answer": {
+            "source_key": "I came to pick him up. He would not come with me.",
+            "accepted": [
+              "I came to pick him up. He would not come with me."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex05-q06",
+          "number": 6,
+          "prompt": "Si tu étais moins égoïste, tu aurais plus d’amis. __",
+          "source_raw_prompt": "Si tu étais moins égoïste, tu aurais plus d’amis.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            156
+          ],
+          "answer": {
+            "source_key": "If you were not so selfish, you would have more friends.",
+            "accepted": [
+              "If you were not so selfish, you would have more friends."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex05-q07",
+          "number": 7,
+          "prompt": "Voudrais-tu bien me montrer comment ça fonctionne? __",
+          "source_raw_prompt": "Voudrais-tu bien me montrer comment ça fonctionne?\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            156
+          ],
+          "answer": {
+            "source_key": "Would you be willing to show me how it works?",
+            "accepted": [
+              "Would you be willing to show me how it works?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex05-q08",
+          "number": 8,
+          "prompt": "Il n’a pas pu partir à temps. __",
+          "source_raw_prompt": "Il n’a pas pu partir à temps.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            156
+          ],
+          "answer": {
+            "source_key": "He could not leave in time.",
+            "accepted": [
+              "He could not leave in time."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex05-q09",
+          "number": 9,
+          "prompt": "Lorsque nous étions enfants, nous allions à la mer tous les étés. __",
+          "source_raw_prompt": "Lorsque nous étions enfants, nous allions à la mer tous les étés.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            156
+          ],
+          "answer": {
+            "source_key": "When we were children, we would go to the seashore every summer.",
+            "accepted": [
+              "When we were children, we would go to the seashore every summer."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch12-ex05-q10",
+          "number": 10,
+          "prompt": "Il devrait réfléchir avant de parler. __",
+          "source_raw_prompt": "Il devrait réfléchir avant de parler.\n   _____________________________________________________________\n\n\n\n\n ",
+          "pdf_pages": [
+            156
+          ],
+          "answer": {
+            "source_key": "He should think before talking.",
+            "accepted": [
+              "He should think before talking."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch12-s03"
+      ]
+    },
+    {
+      "id": "ch12-ex06",
+      "source": {
+        "chapter": 12,
+        "exercise": "12.6",
+        "pdf_pages": [
+          156,
+          157
+        ]
+      },
+      "topic_ids": [
+        "ch12-t03"
+      ],
+      "instruction": "Faire correspondre les deux colonnes. ______",
+      "interaction_type": "matching",
+      "questions": [
+        {
+          "id": "ch12-ex06-q01",
+          "number": 1,
+          "prompt": "Marie serait ravie a. venir manger à la maison ce soir.",
+          "source_raw_prompt": "Marie serait ravie           a. venir manger à la maison ce soir.\n\n______ ",
+          "pdf_pages": [
+            156
+          ],
+          "answer": {
+            "source_key": "c",
+            "accepted": [
+              "c"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "a",
+            "text": "venir manger à la maison ce soir."
+          }
+        },
+        {
+          "id": "ch12-ex06-q02",
+          "number": 2,
+          "prompt": "Vous devriez b. elle circulait en vélo.",
+          "source_raw_prompt": "Vous devriez               b. elle circulait en vélo.\n\n______ ",
+          "pdf_pages": [
+            156
+          ],
+          "answer": {
+            "source_key": "a",
+            "accepted": [
+              "a"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "b",
+            "text": "elle circulait en vélo."
+          }
+        },
+        {
+          "id": "ch12-ex06-q03",
+          "number": 3,
+          "prompt": "Quand elle habitait à la c. si Marc l’invitait à dîner. campagne,",
+          "source_raw_prompt": "Quand elle habitait à la    c. si Marc l’invitait à dîner.\n   campagne,\n\n______ ",
+          "pdf_pages": [
+            156
+          ],
+          "answer": {
+            "source_key": "b",
+            "accepted": [
+              "b"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "c",
+            "text": "si Marc l’invitait à dîner."
+          }
+        },
+        {
+          "id": "ch12-ex06-q04",
+          "number": 4,
+          "prompt": "Je serais moins inquiet d. me prévenir que tes parents venaient aussi. __",
+          "source_raw_prompt": "Je serais moins inquiet    d. me prévenir que tes parents\n                                      venaient aussi.______ ",
+          "pdf_pages": [
+            156,
+            157
+          ],
+          "answer": {
+            "source_key": "e",
+            "accepted": [
+              "e"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "d",
+            "text": "me prévenir que tes parents"
+          }
+        },
+        {
+          "id": "ch12-ex06-q05",
+          "number": 5,
+          "prompt": "Tu aurais dû e. si tu me téléphonais en arrivant.",
+          "source_raw_prompt": "Tu aurais dû                 e. si tu me téléphonais en arrivant.",
+          "pdf_pages": [
+            157
+          ],
+          "answer": {
+            "source_key": "d 13 The present subjunctive and the past subjunctive",
+            "accepted": [
+              "d 13 The present subjunctive and the past subjunctive"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "e",
+            "text": "si tu me téléphonais en arrivant."
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 5,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "choice_label",
+        "publisher_key_is_exhaustive": true
+      },
+      "subtopic_ids": [
+        "ch12-s03"
+      ],
+      "choices": [
+        {
+          "label": "a",
+          "text": "venir manger à la maison ce soir."
+        },
+        {
+          "label": "b",
+          "text": "elle circulait en vélo."
+        },
+        {
+          "label": "c",
+          "text": "si Marc l’invitait à dîner."
+        },
+        {
+          "label": "d",
+          "text": "me prévenir que tes parents"
+        },
+        {
+          "label": "e",
+          "text": "si tu me téléphonais en arrivant."
+        }
+      ]
+    }
+  ]
+}

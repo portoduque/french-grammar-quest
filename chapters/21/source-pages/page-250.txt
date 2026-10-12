@@ -1,0 +1,38 @@
+Direct object pronouns
+Another type of pronoun is the direct object pronoun (le pronom objet direct). In
+English there are seven direct object pronouns: me, you, him, her, it, us, them. Note
+that in French there are two forms of the direct object pronoun you: the informal te
+and the formal or plural vous. English distinguishes between a direct object pronoun
+that replaces a person (him or her) or a thing (it); in French le, la, les can replace
+both people and things. Les refers to both masculine and feminine. Me, te, le, and la
+become m’, t’, and l’ before vowels and the mute h.
+
+
+       SINGULAR                           PLURAL
+     me (m’)  me                      nous  us
+        te (t’)     you (familiar)             vous  you (plural or formal)
+        le (l’)     him or it (masculine)          les    them (masc. and fem.)
+        la (l’)      her or it (feminine)
+
+   Pronouns allow speakers to avoid being repetitious, to make communication more
+efficient, and  to  link  ideas across  sentences. An  object  is  called  direct  if  it
+immediately follows the verb without a preposition. The direct object pronoun
+replaces the direct object noun. In French, the direct object pronoun agrees in gender
+and number with the noun it replaces. Note that the French direct object pronoun
+precedes the verb. In a sentence with auxiliary or compound verbs, the direct object
+pronoun precedes the verb to which it directly refers. The direct object pronoun can
+replace a noun with a definite article (le, la, les), with a possessive adjective (mon,
+ton, son, etc.), or with a demonstrative adjective (ce, cet, cette, ces).
+
+        L’artiste chante la chanson.        The artist sings the song.
+        L’artiste la chante.               The artist sings it.
+       Quentin appelle son ami.           Quentin calls his friend.
+       Quentin l’appelle.                 Quentin calls him.
+          Il prend la décision.            He makes the decision.
+          Il la prend.                  He makes it.
+       L’infirmier soigne ses patients.     The nurse takes care of his patients.
+       L’infirmier les soigne.             The nurse takes care of them.
+          Il m’appelle.                 He is calling me.
+      Nous vous remercions.          We thank you.
+       Elle t’invite.                     She invites you.
+         Ils nous accueillent.              They greet us.

@@ -1,0 +1,1114 @@
+{
+  "chapter": 6,
+  "status": "machine_transcribed_editorial_visual_review_pending",
+  "exercises": [
+    {
+      "id": "ch06-ex01",
+      "source": {
+        "chapter": 6,
+        "exercise": "6.1",
+        "pdf_pages": [
+          83
+        ]
+      },
+      "topic_ids": [
+        "ch06-t01"
+      ],
+      "instruction": "Mettre au présent les verbes réfléchis entre parenthèses.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch06-ex01-q01",
+          "number": 1,
+          "prompt": "Je (s’habiller) __ avant de prendre le petit déjeuner.",
+          "source_raw_prompt": "Je (s’habiller) ________________ avant de prendre le petit déjeuner.\n\n   ",
+          "pdf_pages": [
+            83
+          ],
+          "answer": {
+            "source_key": "m’habille",
+            "accepted": [
+              "m’habille"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex01-q02",
+          "number": 2,
+          "prompt": "Nous (se lever) __ tôt le matin.",
+          "source_raw_prompt": "Nous (se lever) ________________ tôt le matin.\n\n   ",
+          "pdf_pages": [
+            83
+          ],
+          "answer": {
+            "source_key": "nous levons",
+            "accepted": [
+              "nous levons"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex01-q03",
+          "number": 3,
+          "prompt": "Elle (se couper) __ les cheveux elle-même.",
+          "source_raw_prompt": "Elle (se couper) ________________ les cheveux elle-même.\n\n   ",
+          "pdf_pages": [
+            83
+          ],
+          "answer": {
+            "source_key": "se coupe",
+            "accepted": [
+              "se coupe"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex01-q04",
+          "number": 4,
+          "prompt": "Tu (se coucher) __ trop tard tous les soirs.",
+          "source_raw_prompt": "Tu (se coucher) ________________ trop tard tous les soirs.\n\n   ",
+          "pdf_pages": [
+            83
+          ],
+          "answer": {
+            "source_key": "te couches",
+            "accepted": [
+              "te couches"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex01-q05",
+          "number": 5,
+          "prompt": "Ils (se laver) __ les mains.",
+          "source_raw_prompt": "Ils (se laver) ________________ les mains.\n\n   ",
+          "pdf_pages": [
+            83
+          ],
+          "answer": {
+            "source_key": "se lavent",
+            "accepted": [
+              "se lavent"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex01-q06",
+          "number": 6,
+          "prompt": "Tu (se peigner) __ avant de sortir.",
+          "source_raw_prompt": "Tu (se peigner) ________________ avant de sortir.\n\n   ",
+          "pdf_pages": [
+            83
+          ],
+          "answer": {
+            "source_key": "te peignes",
+            "accepted": [
+              "te peignes"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex01-q07",
+          "number": 7,
+          "prompt": "Vous (se balader) __ dans le parc.",
+          "source_raw_prompt": "Vous (se balader) ________________ dans le parc.\n\n   ",
+          "pdf_pages": [
+            83
+          ],
+          "answer": {
+            "source_key": "vous baladez",
+            "accepted": [
+              "vous baladez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex01-q08",
+          "number": 8,
+          "prompt": "Ils (se reposer) __ le week-end.",
+          "source_raw_prompt": "Ils (se reposer) ________________ le week-end.\n\n   ",
+          "pdf_pages": [
+            83
+          ],
+          "answer": {
+            "source_key": "se reposent",
+            "accepted": [
+              "se reposent"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex01-q09",
+          "number": 9,
+          "prompt": "Nous (s’amuser) __ à la fête.",
+          "source_raw_prompt": "Nous (s’amuser) ________________ à la fête.\n\n ",
+          "pdf_pages": [
+            83
+          ],
+          "answer": {
+            "source_key": "nous amusons",
+            "accepted": [
+              "nous amusons"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex01-q10",
+          "number": 10,
+          "prompt": "Elle (se détendre) __ les jambes sur le canapé.",
+          "source_raw_prompt": "Elle (se détendre) ________________ les jambes sur le canapé.",
+          "pdf_pages": [
+            83,
+            84
+          ],
+          "answer": {
+            "source_key": "se détend",
+            "accepted": [
+              "se détend"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch06-s01"
+      ]
+    },
+    {
+      "id": "ch06-ex02",
+      "source": {
+        "chapter": 6,
+        "exercise": "6.2",
+        "pdf_pages": [
+          84
+        ]
+      },
+      "topic_ids": [
+        "ch06-t02"
+      ],
+      "instruction": "Mettre au présent les verbes réciproques entre parenthèses.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch06-ex02-q01",
+          "number": 1,
+          "prompt": "Ils (se marier) __ la semaine prochaine.",
+          "source_raw_prompt": "Ils (se marier) ________________ la semaine prochaine.\n\n   ",
+          "pdf_pages": [
+            84
+          ],
+          "answer": {
+            "source_key": "se marient",
+            "accepted": [
+              "se marient"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex02-q02",
+          "number": 2,
+          "prompt": "Vous (s’embrasser) __ sur le balcon.",
+          "source_raw_prompt": "Vous (s’embrasser) ________________ sur le balcon.\n\n   ",
+          "pdf_pages": [
+            84
+          ],
+          "answer": {
+            "source_key": "vous embrassez",
+            "accepted": [
+              "vous embrassez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex02-q03",
+          "number": 3,
+          "prompt": "Nous (s’écrire) __ une fois par an.",
+          "source_raw_prompt": "Nous (s’écrire) ________________ une fois par an.\n\n   ",
+          "pdf_pages": [
+            84
+          ],
+          "answer": {
+            "source_key": "nous écrivons",
+            "accepted": [
+              "nous écrivons"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex02-q04",
+          "number": 4,
+          "prompt": "Ils (se retrouver) __ devant la brasserie.",
+          "source_raw_prompt": "Ils (se retrouver) ________________ devant la brasserie.\n\n   ",
+          "pdf_pages": [
+            84
+          ],
+          "answer": {
+            "source_key": "se retrouvent",
+            "accepted": [
+              "se retrouvent"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex02-q05",
+          "number": 5,
+          "prompt": "Elles (se voir) __ rarement.",
+          "source_raw_prompt": "Elles (se voir) ________________ rarement.\n\n   ",
+          "pdf_pages": [
+            84
+          ],
+          "answer": {
+            "source_key": "se voient",
+            "accepted": [
+              "se voient"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex02-q06",
+          "number": 6,
+          "prompt": "Nous (se téléphoner) __ chaque jour.",
+          "source_raw_prompt": "Nous (se téléphoner) ________________ chaque jour.\n\n   ",
+          "pdf_pages": [
+            84
+          ],
+          "answer": {
+            "source_key": "nous téléphonons",
+            "accepted": [
+              "nous téléphonons"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex02-q07",
+          "number": 7,
+          "prompt": "Vous (se quitter) __ sur le quai de la gare.",
+          "source_raw_prompt": "Vous (se quitter) ________________ sur le quai de la gare.\n\n   ",
+          "pdf_pages": [
+            84
+          ],
+          "answer": {
+            "source_key": "vous quittez",
+            "accepted": [
+              "vous quittez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex02-q08",
+          "number": 8,
+          "prompt": "Nous (se disputer) __ assez souvent.",
+          "source_raw_prompt": "Nous (se disputer) ________________ assez souvent.\n\n   ",
+          "pdf_pages": [
+            84
+          ],
+          "answer": {
+            "source_key": "nous disputons",
+            "accepted": [
+              "nous disputons"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex02-q09",
+          "number": 9,
+          "prompt": "Ils (se détester) __ depuis toujours.",
+          "source_raw_prompt": "Ils (se détester) ________________ depuis toujours.\n\n ",
+          "pdf_pages": [
+            84
+          ],
+          "answer": {
+            "source_key": "se détestent",
+            "accepted": [
+              "se détestent"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex02-q10",
+          "number": 10,
+          "prompt": "Nous (se rencontrer) __ toujours par hasard dans la rue.",
+          "source_raw_prompt": "Nous (se rencontrer) ________________ toujours par hasard dans la rue.",
+          "pdf_pages": [
+            84,
+            85
+          ],
+          "answer": {
+            "source_key": "nous rencontrons",
+            "accepted": [
+              "nous rencontrons"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch06-s02"
+      ]
+    },
+    {
+      "id": "ch06-ex03",
+      "source": {
+        "chapter": 6,
+        "exercise": "6.3",
+        "pdf_pages": [
+          85,
+          86
+        ]
+      },
+      "topic_ids": [
+        "ch06-t04"
+      ],
+      "instruction": "Mettre au présent les verbes subjectifs entre parenthèses.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch06-ex03-q01",
+          "number": 1,
+          "prompt": "Elle (s’apercevoir) __ de sa gaffe.",
+          "source_raw_prompt": "Elle (s’apercevoir) ________________ de sa gaffe.\n\n   ",
+          "pdf_pages": [
+            85
+          ],
+          "answer": {
+            "source_key": "s’aperçoit",
+            "accepted": [
+              "s’aperçoit"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex03-q02",
+          "number": 2,
+          "prompt": "Ils (se dépêcher) __ pour arriver à l’heure.",
+          "source_raw_prompt": "Ils (se dépêcher) ________________ pour arriver à l’heure.\n\n   ",
+          "pdf_pages": [
+            85
+          ],
+          "answer": {
+            "source_key": "se dépêchent",
+            "accepted": [
+              "se dépêchent"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex03-q03",
+          "number": 3,
+          "prompt": "Tu (s’attendre) __ à sa visite.",
+          "source_raw_prompt": "Tu (s’attendre) ________________ à sa visite.\n\n   ",
+          "pdf_pages": [
+            85
+          ],
+          "answer": {
+            "source_key": "t’attends",
+            "accepted": [
+              "t’attends"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex03-q04",
+          "number": 4,
+          "prompt": "Qu’est-ce qui (se passer) __ ?",
+          "source_raw_prompt": "Qu’est-ce qui (se passer) ________________ ?\n\n   ",
+          "pdf_pages": [
+            85
+          ],
+          "answer": {
+            "source_key": "se passe",
+            "accepted": [
+              "se passe"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex03-q05",
+          "number": 5,
+          "prompt": "Vous (se servir) __ d’un nouvel appareil.",
+          "source_raw_prompt": "Vous (se servir) ________________ d’un nouvel appareil.\n\n   ",
+          "pdf_pages": [
+            85
+          ],
+          "answer": {
+            "source_key": "vous servez",
+            "accepted": [
+              "vous servez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex03-q06",
+          "number": 6,
+          "prompt": "Je (se rendre compte) __ de mon erreur.",
+          "source_raw_prompt": "Je (se rendre compte) ________________ de mon erreur.\n\n   ",
+          "pdf_pages": [
+            85
+          ],
+          "answer": {
+            "source_key": "me rends compte",
+            "accepted": [
+              "me rends compte"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex03-q07",
+          "number": 7,
+          "prompt": "Tu (se demander) __ ce qui va se passer.",
+          "source_raw_prompt": "Tu (se demander) ________________ ce qui va se passer.   ",
+          "pdf_pages": [
+            85,
+            86
+          ],
+          "answer": {
+            "source_key": "te demandes",
+            "accepted": [
+              "te demandes"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex03-q08",
+          "number": 8,
+          "prompt": "Elle (se dépêcher) __ car elle est en retard.",
+          "source_raw_prompt": "Elle (se dépêcher) ________________ car elle est en retard.\n\n   ",
+          "pdf_pages": [
+            86
+          ],
+          "answer": {
+            "source_key": "se dépêche",
+            "accepted": [
+              "se dépêche"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex03-q09",
+          "number": 9,
+          "prompt": "Tu (se tromper) __ de chemin.",
+          "source_raw_prompt": "Tu (se tromper) ________________ de chemin.\n\n ",
+          "pdf_pages": [
+            86
+          ],
+          "answer": {
+            "source_key": "te trompes",
+            "accepted": [
+              "te trompes"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex03-q10",
+          "number": 10,
+          "prompt": "L’oiseau (s’envoler) __ dans le ciel.",
+          "source_raw_prompt": "L’oiseau (s’envoler) ________________ dans le ciel.",
+          "pdf_pages": [
+            86
+          ],
+          "answer": {
+            "source_key": "s’envole",
+            "accepted": [
+              "s’envole"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch06-s04"
+      ]
+    },
+    {
+      "id": "ch06-ex04",
+      "source": {
+        "chapter": 6,
+        "exercise": "6.4",
+        "pdf_pages": [
+          86,
+          87
+        ]
+      },
+      "topic_ids": [
+        "ch06-t05"
+      ],
+      "instruction": "Conjuguer les verbes entre parenthèses.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch06-ex04-q01",
+          "number": 1,
+          "prompt": "J’aime (se promener) __ le long de la Seine.",
+          "source_raw_prompt": "J’aime (se promener) ________________ le long de la Seine.\n\n ",
+          "pdf_pages": [
+            87
+          ],
+          "answer": {
+            "source_key": "me promener",
+            "accepted": [
+              "me promener"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex04-q02",
+          "number": 2,
+          "prompt": "À quelle heure est-ce que tu vas (se lever) __ ?",
+          "source_raw_prompt": "À quelle heure est-ce que tu vas (se lever) ________________ ?\n\n ",
+          "pdf_pages": [
+            87
+          ],
+          "answer": {
+            "source_key": "te lever",
+            "accepted": [
+              "te lever"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex04-q03",
+          "number": 3,
+          "prompt": "Nous venons de (se rendre compte) __ des conséquences.",
+          "source_raw_prompt": "Nous venons de (se rendre compte) ________________ des conséquences.\n\n ",
+          "pdf_pages": [
+            87
+          ],
+          "answer": {
+            "source_key": "nous rendre compte",
+            "accepted": [
+              "nous rendre compte"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex04-q04",
+          "number": 4,
+          "prompt": "Elle ne peut pas (se souvenir) __ de son nom.",
+          "source_raw_prompt": "Elle ne peut pas (se souvenir) ________________ de son nom.\n\n ",
+          "pdf_pages": [
+            87
+          ],
+          "answer": {
+            "source_key": "se souvenir",
+            "accepted": [
+              "se souvenir"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex04-q05",
+          "number": 5,
+          "prompt": "Ils doivent (se marier) __ au printemps.",
+          "source_raw_prompt": "Ils doivent (se marier) ________________ au printemps.\n\n ",
+          "pdf_pages": [
+            87
+          ],
+          "answer": {
+            "source_key": "se marier",
+            "accepted": [
+              "se marier"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex04-q06",
+          "number": 6,
+          "prompt": "Vous allez (se demander) __ pourquoi il quitte Paris.",
+          "source_raw_prompt": "Vous allez (se demander) ________________ pourquoi il quitte Paris.\n\n ",
+          "pdf_pages": [
+            87
+          ],
+          "answer": {
+            "source_key": "vous demander",
+            "accepted": [
+              "vous demander"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex04-q07",
+          "number": 7,
+          "prompt": "Nous voulons (s’écrire) __ plus souvent.",
+          "source_raw_prompt": "Nous voulons (s’écrire) ________________ plus souvent.\n\n ",
+          "pdf_pages": [
+            87
+          ],
+          "answer": {
+            "source_key": "nous écrire",
+            "accepted": [
+              "nous écrire"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex04-q08",
+          "number": 8,
+          "prompt": "Je dois (s’habiller) __ pour aller au bal.",
+          "source_raw_prompt": "Je dois (s’habiller) ________________ pour aller au bal.\n\n ",
+          "pdf_pages": [
+            87
+          ],
+          "answer": {
+            "source_key": "m’habiller",
+            "accepted": [
+              "m’habiller"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex04-q09",
+          "number": 9,
+          "prompt": "Vous allez (se voir) __ pendant les vacances?",
+          "source_raw_prompt": "Vous allez (se voir) ________________ pendant les vacances?\n\n",
+          "pdf_pages": [
+            87
+          ],
+          "answer": {
+            "source_key": "vous voir",
+            "accepted": [
+              "vous voir"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex04-q10",
+          "number": 10,
+          "prompt": "Nous ne pouvons pas (se plaindre) __ de la situation.",
+          "source_raw_prompt": "Nous ne pouvons pas (se plaindre) ________________ de la situation.\n\n\n\n\n ",
+          "pdf_pages": [
+            87
+          ],
+          "answer": {
+            "source_key": "nous plaindre",
+            "accepted": [
+              "nous plaindre"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch06-s05"
+      ]
+    },
+    {
+      "id": "ch06-ex05",
+      "source": {
+        "chapter": 6,
+        "exercise": "6.5",
+        "pdf_pages": [
+          87
+        ]
+      },
+      "topic_ids": [
+        "ch06-t05"
+      ],
+      "instruction": "Faire correspondre les deux colonnes. ______",
+      "interaction_type": "matching",
+      "questions": [
+        {
+          "id": "ch06-ex05-q01",
+          "number": 1,
+          "prompt": "Ils sont toujours ensemble. a. Ils s’écrivent.",
+          "source_raw_prompt": "Ils sont toujours ensemble.            a. Ils s’écrivent.\n\n______ ",
+          "pdf_pages": [
+            87
+          ],
+          "answer": {
+            "source_key": "e",
+            "accepted": [
+              "e"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "a",
+            "text": "Ils s’écrivent."
+          }
+        },
+        {
+          "id": "ch06-ex05-q02",
+          "number": 2,
+          "prompt": "Ils communiquent sans cesse. b. Ils se détestent.",
+          "source_raw_prompt": "Ils communiquent sans cesse.        b. Ils se détestent.\n\n______ ",
+          "pdf_pages": [
+            87
+          ],
+          "answer": {
+            "source_key": "a",
+            "accepted": [
+              "a"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "b",
+            "text": "Ils se détestent."
+          }
+        },
+        {
+          "id": "ch06-ex05-q03",
+          "number": 3,
+          "prompt": "Ils s’attendent au pire. c. Ils aiment marcher.",
+          "source_raw_prompt": "Ils s’attendent au pire.                 c. Ils aiment marcher.\n\n______ ",
+          "pdf_pages": [
+            87
+          ],
+          "answer": {
+            "source_key": "d",
+            "accepted": [
+              "d"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "c",
+            "text": "Ils aiment marcher."
+          }
+        },
+        {
+          "id": "ch06-ex05-q04",
+          "number": 4,
+          "prompt": "Ils se promènent. d. Ils sont pessimistes.",
+          "source_raw_prompt": "Ils se promènent.                     d. Ils sont pessimistes.\n\n______ ",
+          "pdf_pages": [
+            87
+          ],
+          "answer": {
+            "source_key": "c",
+            "accepted": [
+              "c"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "d",
+            "text": "Ils sont pessimistes."
+          }
+        },
+        {
+          "id": "ch06-ex05-q05",
+          "number": 5,
+          "prompt": "Ils ne se parlent jamais. e. Ils s’aiment.",
+          "source_raw_prompt": "Ils ne se parlent jamais.                e. Ils s’aiment.\n\n\n\n\n\n ",
+          "pdf_pages": [
+            87
+          ],
+          "answer": {
+            "source_key": "b",
+            "accepted": [
+              "b"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "e",
+            "text": "Ils s’aiment."
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 5,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "choice_label",
+        "publisher_key_is_exhaustive": true
+      },
+      "subtopic_ids": [
+        "ch06-s05"
+      ],
+      "choices": [
+        {
+          "label": "a",
+          "text": "Ils s’écrivent."
+        },
+        {
+          "label": "b",
+          "text": "Ils se détestent."
+        },
+        {
+          "label": "c",
+          "text": "Ils aiment marcher."
+        },
+        {
+          "label": "d",
+          "text": "Ils sont pessimistes."
+        },
+        {
+          "label": "e",
+          "text": "Ils s’aiment."
+        }
+      ]
+    },
+    {
+      "id": "ch06-ex06",
+      "source": {
+        "chapter": 6,
+        "exercise": "6.6",
+        "pdf_pages": [
+          87,
+          88
+        ]
+      },
+      "topic_ids": [
+        "ch06-t05"
+      ],
+      "instruction": "Traduire les phrases suivantes en utilisant tu et l’inversion si nécessaire.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch06-ex06-q01",
+          "number": 1,
+          "prompt": "Get up! __",
+          "source_raw_prompt": "Get up!\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            88
+          ],
+          "answer": {
+            "source_key": "Lève-toi!",
+            "accepted": [
+              "Lève-toi!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex06-q02",
+          "number": 2,
+          "prompt": "She is getting dressed for the party. __",
+          "source_raw_prompt": "She is getting dressed for the party.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            88
+          ],
+          "answer": {
+            "source_key": "Elle s’habille pour la soirée.",
+            "accepted": [
+              "Elle s’habille pour la soirée."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex06-q03",
+          "number": 3,
+          "prompt": "She cuts her hair. __",
+          "source_raw_prompt": "She cuts her hair.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            88
+          ],
+          "answer": {
+            "source_key": "Elle se coupe les cheveux.",
+            "accepted": [
+              "Elle se coupe les cheveux."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex06-q04",
+          "number": 4,
+          "prompt": "We are walking in the park. __",
+          "source_raw_prompt": "We are walking in the park.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            88
+          ],
+          "answer": {
+            "source_key": "Nous nous promenons dans le parc.",
+            "accepted": [
+              "Nous nous promenons dans le parc."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex06-q05",
+          "number": 5,
+          "prompt": "They rest because their legs are tired. __",
+          "source_raw_prompt": "They rest because their legs are tired.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            88
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) se reposent car leurs jambes sont fatiguées.",
+            "accepted": [
+              "Ils (Elles) se reposent car leurs jambes sont fatiguées."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex06-q06",
+          "number": 6,
+          "prompt": "He is shaving. __",
+          "source_raw_prompt": "He is shaving.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            88
+          ],
+          "answer": {
+            "source_key": "Il se rase.",
+            "accepted": [
+              "Il se rase."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex06-q07",
+          "number": 7,
+          "prompt": "They just got married. __",
+          "source_raw_prompt": "They just got married.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            88
+          ],
+          "answer": {
+            "source_key": "Ils viennent de se marier.",
+            "accepted": [
+              "Ils viennent de se marier."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex06-q08",
+          "number": 8,
+          "prompt": "They write to each other. __",
+          "source_raw_prompt": "They write to each other.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            88
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) s’écrivent.",
+            "accepted": [
+              "Ils (Elles) s’écrivent."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex06-q09",
+          "number": 9,
+          "prompt": "He is tired. He sits on a bench. __",
+          "source_raw_prompt": "He is tired. He sits on a bench.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            88
+          ],
+          "answer": {
+            "source_key": "Il est fatigué. Il s’assoit sur un banc.",
+            "accepted": [
+              "Il est fatigué. Il s’assoit sur un banc."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch06-ex06-q10",
+          "number": 10,
+          "prompt": "They love each other. __",
+          "source_raw_prompt": "They love each other.\n   _____________________________________________________________",
+          "pdf_pages": [
+            88
+          ],
+          "answer": {
+            "source_key": "Ils s’aiment.",
+            "accepted": [
+              "Ils s’aiment."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch06-s05"
+      ]
+    }
+  ]
+}

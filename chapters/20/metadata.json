@@ -1,0 +1,248 @@
+{
+  "chapter": 20,
+  "title": "Chapter 20",
+  "source": {
+    "pdf_pages": [
+      226,
+      246
+    ],
+    "source_sha256": "297b92bc48e075449713c3b408ccf47de2466cfc6c4f4a25687a2a974276ae4d",
+    "answer_key_pdf_pages": [
+      515,
+      516
+    ]
+  },
+  "topics": [
+    {
+      "id": "ch20-t01",
+      "title": "The definite article with nouns",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch20-t08",
+      "title": "Cities",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch20-t02",
+      "title": "The indefinite and partitive articles with nouns",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch20-t03",
+      "title": "The partitive article",
+      "exercise_ids": [
+        "ch20-ex01"
+      ]
+    },
+    {
+      "id": "ch20-t04",
+      "title": "The gender of nouns",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch20-t05",
+      "title": "The plural of nouns",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch20-t10",
+      "title": "Islands",
+      "exercise_ids": [
+        "ch20-ex02",
+        "ch20-ex03",
+        "ch20-ex04"
+      ]
+    },
+    {
+      "id": "ch20-t06",
+      "title": "The gender of countries",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch20-t09",
+      "title": "Countries and states",
+      "exercise_ids": [
+        "ch20-ex05"
+      ]
+    },
+    {
+      "id": "ch20-t07",
+      "title": "Geographical names with prepositions",
+      "exercise_ids": [
+        "ch20-ex06",
+        "ch20-ex07"
+      ]
+    },
+    {
+      "id": "ch20-t11",
+      "title": "How to say from",
+      "exercise_ids": [
+        "ch20-ex08",
+        "ch20-ex09"
+      ]
+    }
+  ],
+  "exercise_ids": [
+    "ch20-ex01",
+    "ch20-ex02",
+    "ch20-ex03",
+    "ch20-ex04",
+    "ch20-ex05",
+    "ch20-ex06",
+    "ch20-ex07",
+    "ch20-ex08",
+    "ch20-ex09"
+  ],
+  "question_total": 90,
+  "validation": {
+    "source_pages": 21,
+    "source_chars": 27541,
+    "source_partition_complete": true,
+    "exercise_group_markers_detected": 9,
+    "questions_structured": 90,
+    "answer_key_entries_associated": 90,
+    "editorial_visual_review": "pending_glyph_by_glyph_check",
+    "theory_semantic_format": "partially_indexed_source_text_preserved",
+    "theory_source_segments": 5,
+    "text_semantic_format": "source-aligned_markdown_fenced_text_pending_table_visual_proof",
+    "answer_key_count": 90
+  },
+  "subtopics": [
+    {
+      "id": "ch20-s01",
+      "title": "The definite article with nouns",
+      "parent_topic_id": "ch20-t01",
+      "pdf_pages": [
+        226,
+        226
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch20-s02",
+      "title": "Cities",
+      "parent_topic_id": "ch20-t08",
+      "pdf_pages": [
+        226,
+        226
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch20-s03",
+      "title": "The indefinite and partitive articles with nouns",
+      "parent_topic_id": "ch20-t02",
+      "pdf_pages": [
+        228,
+        228
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch20-s04",
+      "title": "The partitive article",
+      "parent_topic_id": "ch20-t03",
+      "pdf_pages": [
+        229,
+        229
+      ],
+      "exercise_ids": [
+        "ch20-ex01"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch20-s05",
+      "title": "The gender of nouns",
+      "parent_topic_id": "ch20-t04",
+      "pdf_pages": [
+        231,
+        231
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch20-s06",
+      "title": "The plural of nouns",
+      "parent_topic_id": "ch20-t05",
+      "pdf_pages": [
+        236,
+        236
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch20-s07",
+      "title": "Islands",
+      "parent_topic_id": "ch20-t10",
+      "pdf_pages": [
+        236,
+        236
+      ],
+      "exercise_ids": [
+        "ch20-ex02",
+        "ch20-ex03",
+        "ch20-ex04"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch20-s08",
+      "title": "The gender of countries",
+      "parent_topic_id": "ch20-t06",
+      "pdf_pages": [
+        239,
+        239
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch20-s09",
+      "title": "Countries and states",
+      "parent_topic_id": "ch20-t09",
+      "pdf_pages": [
+        240,
+        240
+      ],
+      "exercise_ids": [
+        "ch20-ex05"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch20-s10",
+      "title": "Geographical names with prepositions",
+      "parent_topic_id": "ch20-t07",
+      "pdf_pages": [
+        240,
+        240
+      ],
+      "exercise_ids": [
+        "ch20-ex06",
+        "ch20-ex07"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch20-s11",
+      "title": "How to say from",
+      "parent_topic_id": "ch20-t11",
+      "pdf_pages": [
+        244,
+        244
+      ],
+      "exercise_ids": [
+        "ch20-ex08",
+        "ch20-ex09"
+      ],
+      "kind": "grammar"
+    }
+  ]
+}

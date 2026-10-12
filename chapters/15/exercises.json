@@ -1,0 +1,579 @@
+{
+  "chapter": 15,
+  "status": "machine_transcribed_editorial_visual_review_pending",
+  "exercises": [
+    {
+      "id": "ch15-ex01",
+      "source": {
+        "chapter": 15,
+        "exercise": "15.1",
+        "pdf_pages": [
+          192
+        ]
+      },
+      "topic_ids": [
+        "ch15-t01"
+      ],
+      "instruction": "Mettre au participe présent les verbes suivants.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch15-ex01-q01",
+          "number": 1,
+          "prompt": "finir __",
+          "source_raw_prompt": "finir ________________\n\n   ",
+          "pdf_pages": [
+            192
+          ],
+          "answer": {
+            "source_key": "finissant",
+            "accepted": [
+              "finissant"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch15-ex01-q02",
+          "number": 2,
+          "prompt": "savoir __",
+          "source_raw_prompt": "savoir ________________\n\n   ",
+          "pdf_pages": [
+            192
+          ],
+          "answer": {
+            "source_key": "sachant",
+            "accepted": [
+              "sachant"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch15-ex01-q03",
+          "number": 3,
+          "prompt": "donner __",
+          "source_raw_prompt": "donner ________________\n\n   ",
+          "pdf_pages": [
+            192
+          ],
+          "answer": {
+            "source_key": "donnant",
+            "accepted": [
+              "donnant"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch15-ex01-q04",
+          "number": 4,
+          "prompt": "protéger __",
+          "source_raw_prompt": "protéger ________________\n\n   ",
+          "pdf_pages": [
+            192
+          ],
+          "answer": {
+            "source_key": "protégeant",
+            "accepted": [
+              "protégeant"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch15-ex01-q05",
+          "number": 5,
+          "prompt": "faire __",
+          "source_raw_prompt": "faire ________________\n\n   ",
+          "pdf_pages": [
+            192
+          ],
+          "answer": {
+            "source_key": "faisant",
+            "accepted": [
+              "faisant"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch15-ex01-q06",
+          "number": 6,
+          "prompt": "avoir __",
+          "source_raw_prompt": "avoir ________________\n\n   ",
+          "pdf_pages": [
+            192
+          ],
+          "answer": {
+            "source_key": "ayant",
+            "accepted": [
+              "ayant"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch15-ex01-q07",
+          "number": 7,
+          "prompt": "avancer __",
+          "source_raw_prompt": "avancer ________________\n\n   ",
+          "pdf_pages": [
+            192
+          ],
+          "answer": {
+            "source_key": "avançant",
+            "accepted": [
+              "avançant"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch15-ex01-q08",
+          "number": 8,
+          "prompt": "être __",
+          "source_raw_prompt": "être ________________\n\n   ",
+          "pdf_pages": [
+            192
+          ],
+          "answer": {
+            "source_key": "étant",
+            "accepted": [
+              "étant"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch15-ex01-q09",
+          "number": 9,
+          "prompt": "prononcer __",
+          "source_raw_prompt": "prononcer ________________\n\n ",
+          "pdf_pages": [
+            192
+          ],
+          "answer": {
+            "source_key": "prononçant",
+            "accepted": [
+              "prononçant"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch15-ex01-q10",
+          "number": 10,
+          "prompt": "vendre __",
+          "source_raw_prompt": "vendre ________________",
+          "pdf_pages": [
+            192,
+            193
+          ],
+          "answer": {
+            "source_key": "vendant",
+            "accepted": [
+              "vendant"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch15-s01"
+      ]
+    },
+    {
+      "id": "ch15-ex02",
+      "source": {
+        "chapter": 15,
+        "exercise": "15.2",
+        "pdf_pages": [
+          193,
+          194
+        ]
+      },
+      "topic_ids": [
+        "ch15-t02"
+      ],
+      "instruction": "Mettre au gérondif les verbes suivants.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch15-ex02-q01",
+          "number": 1,
+          "prompt": "C’est en (faire) __ de l’exercice que vous serez en forme.",
+          "source_raw_prompt": "C’est en (faire) ________________ de l’exercice que vous serez en forme.\n\n   ",
+          "pdf_pages": [
+            193
+          ],
+          "answer": {
+            "source_key": "faisant",
+            "accepted": [
+              "faisant"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch15-ex02-q02",
+          "number": 2,
+          "prompt": "Elle chante en (prendre) __ une douche.",
+          "source_raw_prompt": "Elle chante en (prendre) ________________ une douche.\n\n   ",
+          "pdf_pages": [
+            193
+          ],
+          "answer": {
+            "source_key": "prenant",
+            "accepted": [
+              "prenant"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch15-ex02-q03",
+          "number": 3,
+          "prompt": "Il s’est tordu la cheville en (jouer) __ au volley.",
+          "source_raw_prompt": "Il s’est tordu la cheville en (jouer) ________________ au volley.\n\n   ",
+          "pdf_pages": [
+            193
+          ],
+          "answer": {
+            "source_key": "jouant",
+            "accepted": [
+              "jouant"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch15-ex02-q04",
+          "number": 4,
+          "prompt": "Ils ont bronzé en (faire) __ du ski de fond.",
+          "source_raw_prompt": "Ils ont bronzé en (faire) ________________ du ski de fond.\n\n   ",
+          "pdf_pages": [
+            193
+          ],
+          "answer": {
+            "source_key": "faisant",
+            "accepted": [
+              "faisant"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch15-ex02-q05",
+          "number": 5,
+          "prompt": "Il l’a invitée à dîner en (savoir) __ que cela lui ferait plaisir.",
+          "source_raw_prompt": "Il l’a invitée à dîner en (savoir) ________________ que cela lui ferait plaisir.\n\n   ",
+          "pdf_pages": [
+            193
+          ],
+          "answer": {
+            "source_key": "sachant",
+            "accepted": [
+              "sachant"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch15-ex02-q06",
+          "number": 6,
+          "prompt": "En (aller) __ en Inde, il a fait escale en Allemagne.",
+          "source_raw_prompt": "En (aller) ________________ en Inde, il a fait escale en Allemagne.\n\n   ",
+          "pdf_pages": [
+            193
+          ],
+          "answer": {
+            "source_key": "allant",
+            "accepted": [
+              "allant"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch15-ex02-q07",
+          "number": 7,
+          "prompt": "Tout en (se plaindre) __ , elle avait l’air satisfaite.",
+          "source_raw_prompt": "Tout en (se plaindre) ________________, elle avait l’air satisfaite.\n\n   ",
+          "pdf_pages": [
+            193
+          ],
+          "answer": {
+            "source_key": "se plaignant",
+            "accepted": [
+              "se plaignant"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch15-ex02-q08",
+          "number": 8,
+          "prompt": "Ils ont découvert la basilique de Lisieux en (visiter) __ la Normandie.",
+          "source_raw_prompt": "Ils ont découvert la basilique de Lisieux en (visiter) ________________ la\n    Normandie. ",
+          "pdf_pages": [
+            193,
+            194
+          ],
+          "answer": {
+            "source_key": "visitant",
+            "accepted": [
+              "visitant"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch15-ex02-q09",
+          "number": 9,
+          "prompt": "J’ai rencontré un ami en (arriver) __ à Paris.",
+          "source_raw_prompt": "J’ai rencontré un ami en (arriver) ________________ à Paris.\n\n",
+          "pdf_pages": [
+            194
+          ],
+          "answer": {
+            "source_key": "arrivant",
+            "accepted": [
+              "arrivant"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch15-ex02-q10",
+          "number": 10,
+          "prompt": "Il a tout perdu en (parier) __ tous les jours au casino.",
+          "source_raw_prompt": "Il a tout perdu en (parier) ________________ tous les jours au casino.\n\n\n\n\n ",
+          "pdf_pages": [
+            194
+          ],
+          "answer": {
+            "source_key": "pariant",
+            "accepted": [
+              "pariant"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch15-s02"
+      ]
+    },
+    {
+      "id": "ch15-ex03",
+      "source": {
+        "chapter": 15,
+        "exercise": "15.3",
+        "pdf_pages": [
+          194
+        ]
+      },
+      "topic_ids": [
+        "ch15-t02"
+      ],
+      "instruction": "Traduire les phrases suivantes.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch15-ex03-q01",
+          "number": 1,
+          "prompt": "He lost his keys while walking in the park. __",
+          "source_raw_prompt": "He lost his keys while walking in the park.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            194
+          ],
+          "answer": {
+            "source_key": "Il a perdu ses clés en marchant dans le parc.",
+            "accepted": [
+              "Il a perdu ses clés en marchant dans le parc."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch15-ex03-q02",
+          "number": 2,
+          "prompt": "Not having seen the film, I can’t make any comment. __",
+          "source_raw_prompt": "Not having seen the film, I can’t make any comment.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            194
+          ],
+          "answer": {
+            "source_key": "N’ayant pas vu le film, je ne peux pas faire de commentaires.",
+            "accepted": [
+              "N’ayant pas vu le film, je ne peux pas faire de commentaires."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch15-ex03-q03",
+          "number": 3,
+          "prompt": "They saw Paul while crossing the street. __",
+          "source_raw_prompt": "They saw Paul while crossing the street.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            194
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) ont vu Paul en traversant la rue.",
+            "accepted": [
+              "Ils (Elles) ont vu Paul en traversant la rue."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch15-ex03-q04",
+          "number": 4,
+          "prompt": "Knowing the truth, she could not stay silent. __",
+          "source_raw_prompt": "Knowing the truth, she could not stay silent.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            194
+          ],
+          "answer": {
+            "source_key": "Sachant la vérité, elle ne pouvait pas rester silencieuse.",
+            "accepted": [
+              "Sachant la vérité, elle ne pouvait pas rester silencieuse."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch15-ex03-q05",
+          "number": 5,
+          "prompt": "He made money selling paintings. __",
+          "source_raw_prompt": "He made money selling paintings.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            194
+          ],
+          "answer": {
+            "source_key": "Il a gagné de l’argent en vendant des tableaux.",
+            "accepted": [
+              "Il a gagné de l’argent en vendant des tableaux."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch15-ex03-q06",
+          "number": 6,
+          "prompt": "It was a fascinating game. __",
+          "source_raw_prompt": "It was a fascinating game.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            194
+          ],
+          "answer": {
+            "source_key": "C’était un match fascinant.",
+            "accepted": [
+              "C’était un match fascinant."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch15-ex03-q07",
+          "number": 7,
+          "prompt": "Having finished the book, he left. __",
+          "source_raw_prompt": "Having finished the book, he left.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            194
+          ],
+          "answer": {
+            "source_key": "Ayant fini le livre, il est parti.",
+            "accepted": [
+              "Ayant fini le livre, il est parti."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch15-ex03-q08",
+          "number": 8,
+          "prompt": "They listen to music while working. __",
+          "source_raw_prompt": "They listen to music while working.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            194
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) écoutent de la musique en travaillant.",
+            "accepted": [
+              "Ils (Elles) écoutent de la musique en travaillant."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch15-ex03-q09",
+          "number": 9,
+          "prompt": "I knit while watching television. __",
+          "source_raw_prompt": "I knit while watching television.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            194
+          ],
+          "answer": {
+            "source_key": "Je tricote en regardant la télévision.",
+            "accepted": [
+              "Je tricote en regardant la télévision."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch15-ex03-q10",
+          "number": 10,
+          "prompt": "He fell while jumping over the wall. __",
+          "source_raw_prompt": "He fell while jumping over the wall.\n   _____________________________________________________________",
+          "pdf_pages": [
+            194
+          ],
+          "answer": {
+            "source_key": "Il est tombé en sautant par-dessus le mur.",
+            "accepted": [
+              "Il est tombé en sautant par-dessus le mur."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch15-s02"
+      ]
+    }
+  ]
+}

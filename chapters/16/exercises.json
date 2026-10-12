@@ -1,0 +1,580 @@
+{
+  "chapter": 16,
+  "status": "machine_transcribed_editorial_visual_review_pending",
+  "exercises": [
+    {
+      "id": "ch16-ex01",
+      "source": {
+        "chapter": 16,
+        "exercise": "16.1",
+        "pdf_pages": [
+          200,
+          201
+        ]
+      },
+      "topic_ids": [
+        "ch16-t02"
+      ],
+      "instruction": "Mettre à l’infinitif les verbes dans les phrases suivantes.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch16-ex01-q01",
+          "number": 1,
+          "prompt": "Ils furent de grands collectionneurs. __",
+          "source_raw_prompt": "Ils furent de grands collectionneurs. ________________\n\n   ",
+          "pdf_pages": [
+            200
+          ],
+          "answer": {
+            "source_key": "être",
+            "accepted": [
+              "être"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch16-ex01-q02",
+          "number": 2,
+          "prompt": "J’eus un profond respect pour cet artiste. __",
+          "source_raw_prompt": "J’eus un profond respect pour cet artiste. ________________\n\n   ",
+          "pdf_pages": [
+            200
+          ],
+          "answer": {
+            "source_key": "avoir",
+            "accepted": [
+              "avoir"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch16-ex01-q03",
+          "number": 3,
+          "prompt": "Elles peignirent des natures mortes. __",
+          "source_raw_prompt": "Elles peignirent des natures mortes. ________________\n\n   ",
+          "pdf_pages": [
+            200
+          ],
+          "answer": {
+            "source_key": "peindre",
+            "accepted": [
+              "peindre"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch16-ex01-q04",
+          "number": 4,
+          "prompt": "Nous fîmes un tour de son atelier. __",
+          "source_raw_prompt": "Nous fîmes un tour de son atelier. ________________\n\n   ",
+          "pdf_pages": [
+            200
+          ],
+          "answer": {
+            "source_key": "faire",
+            "accepted": [
+              "faire"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch16-ex01-q05",
+          "number": 5,
+          "prompt": "Il vint nous rejoindre au vernissage. __",
+          "source_raw_prompt": "Il vint nous rejoindre au vernissage. ________________\n\n   ",
+          "pdf_pages": [
+            200
+          ],
+          "answer": {
+            "source_key": "venir",
+            "accepted": [
+              "venir"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch16-ex01-q06",
+          "number": 6,
+          "prompt": "Tu lus toutes ses œuvres. __",
+          "source_raw_prompt": "Tu lus toutes ses œuvres. ________________\n\n   ",
+          "pdf_pages": [
+            200
+          ],
+          "answer": {
+            "source_key": "lire",
+            "accepted": [
+              "lire"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch16-ex01-q07",
+          "number": 7,
+          "prompt": "Vous voulûtes lui faire un compliment. __",
+          "source_raw_prompt": "Vous voulûtes lui faire un compliment. ________________\n\n   ",
+          "pdf_pages": [
+            200
+          ],
+          "answer": {
+            "source_key": "vouloir",
+            "accepted": [
+              "vouloir"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch16-ex01-q08",
+          "number": 8,
+          "prompt": "Elle sut tout de suite que c’était un chef-d’œuvre. __",
+          "source_raw_prompt": "Elle sut tout de suite que c’était un chef-d’œuvre. ________________\n\n   ",
+          "pdf_pages": [
+            200
+          ],
+          "answer": {
+            "source_key": "savoir",
+            "accepted": [
+              "savoir"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch16-ex01-q09",
+          "number": 9,
+          "prompt": "Il plut à tout le monde. __",
+          "source_raw_prompt": "Il plut à tout le monde. ________________\n\n ",
+          "pdf_pages": [
+            200
+          ],
+          "answer": {
+            "source_key": "plaire",
+            "accepted": [
+              "plaire"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch16-ex01-q10",
+          "number": 10,
+          "prompt": "J’éteignis la lumière. __",
+          "source_raw_prompt": "J’éteignis la lumière. ________________ ",
+          "pdf_pages": [
+            200,
+            201
+          ],
+          "answer": {
+            "source_key": "éteindre",
+            "accepted": [
+              "éteindre"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch16-s02"
+      ]
+    },
+    {
+      "id": "ch16-ex02",
+      "source": {
+        "chapter": 16,
+        "exercise": "16.2",
+        "pdf_pages": [
+          201
+        ]
+      },
+      "topic_ids": [
+        "ch16-t02"
+      ],
+      "instruction": "Mettre au passé simple les verbes entre parenthèses.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch16-ex02-q01",
+          "number": 1,
+          "prompt": "Le Rouge et le noir (être) __ publié en 1830.",
+          "source_raw_prompt": "Le Rouge et le noir (être) ________________ publié en 1830.\n\n ",
+          "pdf_pages": [
+            201
+          ],
+          "answer": {
+            "source_key": "fut",
+            "accepted": [
+              "fut"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch16-ex02-q02",
+          "number": 2,
+          "prompt": "En France, les femmes (obtenir) __ le droit de vote en 1944.",
+          "source_raw_prompt": "En France, les femmes (obtenir) ________________ le droit de vote en 1944.\n\n ",
+          "pdf_pages": [
+            201
+          ],
+          "answer": {
+            "source_key": "obtinrent",
+            "accepted": [
+              "obtinrent"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch16-ex02-q03",
+          "number": 3,
+          "prompt": "Jacques Cartier (explorer) __ la région de Montréal en 1535.",
+          "source_raw_prompt": "Jacques Cartier (explorer) ________________ la région de Montréal en 1535.\n\n ",
+          "pdf_pages": [
+            201
+          ],
+          "answer": {
+            "source_key": "explora",
+            "accepted": [
+              "explora"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch16-ex02-q04",
+          "number": 4,
+          "prompt": "Charles de Gaulle (mourir) __ en 1970.",
+          "source_raw_prompt": "Charles de Gaulle (mourir) ________________ en 1970.\n\n ",
+          "pdf_pages": [
+            201
+          ],
+          "answer": {
+            "source_key": "mourut",
+            "accepted": [
+              "mourut"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch16-ex02-q05",
+          "number": 5,
+          "prompt": "Édouard Manet (peindre) __ Le déjeuner sur l’herbe en 1863.",
+          "source_raw_prompt": "Édouard Manet (peindre) ________________ Le déjeuner sur l’herbe en\n   1863.\n\n ",
+          "pdf_pages": [
+            201
+          ],
+          "answer": {
+            "source_key": "peignit",
+            "accepted": [
+              "peignit"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch16-ex02-q06",
+          "number": 6,
+          "prompt": "La terre (trembler) __ au Japon en 1923.",
+          "source_raw_prompt": "La terre (trembler) ________________ au Japon en 1923.\n\n ",
+          "pdf_pages": [
+            201
+          ],
+          "answer": {
+            "source_key": "trembla",
+            "accepted": [
+              "trembla"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch16-ex02-q07",
+          "number": 7,
+          "prompt": "Catherine de Médicis (introduire) __ l’usage de la fourchette en France.",
+          "source_raw_prompt": "Catherine de Médicis (introduire) ________________ l’usage de la fourchette\n   en France.\n\n ",
+          "pdf_pages": [
+            201
+          ],
+          "answer": {
+            "source_key": "introduisit",
+            "accepted": [
+              "introduisit"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch16-ex02-q08",
+          "number": 8,
+          "prompt": "Le voyage inaugural du TGV (avoir lieu) __ en 1981.",
+          "source_raw_prompt": "Le voyage inaugural du TGV (avoir lieu) ________________ en 1981.\n\n ",
+          "pdf_pages": [
+            201
+          ],
+          "answer": {
+            "source_key": "eut lieu",
+            "accepted": [
+              "eut lieu"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch16-ex02-q09",
+          "number": 9,
+          "prompt": "Johnny Hallyday (faire) __ son premier concert à l’Olympia en 1961.",
+          "source_raw_prompt": "Johnny Hallyday (faire) ________________ son premier concert à l’Olympia\n   en 1961.\n\n",
+          "pdf_pages": [
+            201
+          ],
+          "answer": {
+            "source_key": "fit",
+            "accepted": [
+              "fit"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch16-ex02-q10",
+          "number": 10,
+          "prompt": "La Côte d’Ivoire (devenir) __ indépendante en 1960.",
+          "source_raw_prompt": "La Côte d’Ivoire (devenir) ________________ indépendante en 1960.\n\n\n\n\n ",
+          "pdf_pages": [
+            201
+          ],
+          "answer": {
+            "source_key": "devint",
+            "accepted": [
+              "devint"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch16-s02"
+      ]
+    },
+    {
+      "id": "ch16-ex03",
+      "source": {
+        "chapter": 16,
+        "exercise": "16.3",
+        "pdf_pages": [
+          201,
+          202
+        ]
+      },
+      "topic_ids": [
+        "ch16-t02"
+      ],
+      "instruction": "Traduire les phrases suivantes en utilisant le passé simple.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch16-ex03-q01",
+          "number": 1,
+          "prompt": "He lived in Amsterdam for ten years. __",
+          "source_raw_prompt": "He lived in Amsterdam for ten years.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            201
+          ],
+          "answer": {
+            "source_key": "Il vécut dix ans à Amsterdam.",
+            "accepted": [
+              "Il vécut dix ans à Amsterdam."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch16-ex03-q02",
+          "number": 2,
+          "prompt": "She introduced this new method. __",
+          "source_raw_prompt": "She introduced this new method.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            201
+          ],
+          "answer": {
+            "source_key": "Elle introduisit cette nouvelle méthode.",
+            "accepted": [
+              "Elle introduisit cette nouvelle méthode."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch16-ex03-q03",
+          "number": 3,
+          "prompt": "They read all his books. __",
+          "source_raw_prompt": "They read all his books.\n   _____________________________________________________________ ",
+          "pdf_pages": [
+            201,
+            202
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) lurent tous ses livres.",
+            "accepted": [
+              "Ils (Elles) lurent tous ses livres."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch16-ex03-q04",
+          "number": 4,
+          "prompt": "He died in Italy. __",
+          "source_raw_prompt": "He died in Italy.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            202
+          ],
+          "answer": {
+            "source_key": "Il mourut en Italie.",
+            "accepted": [
+              "Il mourut en Italie."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch16-ex03-q05",
+          "number": 5,
+          "prompt": "He was surprised. __",
+          "source_raw_prompt": "He was surprised.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            202
+          ],
+          "answer": {
+            "source_key": "Il fut surpris.",
+            "accepted": [
+              "Il fut surpris."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch16-ex03-q06",
+          "number": 6,
+          "prompt": "I wanted to thank him. __",
+          "source_raw_prompt": "I wanted to thank him.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            202
+          ],
+          "answer": {
+            "source_key": "Je voulus le remercier.",
+            "accepted": [
+              "Je voulus le remercier."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch16-ex03-q07",
+          "number": 7,
+          "prompt": "She was born in Rouen. __",
+          "source_raw_prompt": "She was born in Rouen.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            202
+          ],
+          "answer": {
+            "source_key": "Elle naquit à Rouen.",
+            "accepted": [
+              "Elle naquit à Rouen."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch16-ex03-q08",
+          "number": 8,
+          "prompt": "They bought a new easel. __",
+          "source_raw_prompt": "They bought a new easel.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            202
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) achetèrent un nouveau chevalet.",
+            "accepted": [
+              "Ils (Elles) achetèrent un nouveau chevalet."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch16-ex03-q09",
+          "number": 9,
+          "prompt": "She became a portrait painter. __",
+          "source_raw_prompt": "She became a portrait painter.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            202
+          ],
+          "answer": {
+            "source_key": "Elle devint portraitiste.",
+            "accepted": [
+              "Elle devint portraitiste."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch16-ex03-q10",
+          "number": 10,
+          "prompt": "He smiled and left. __",
+          "source_raw_prompt": "He smiled and left.\n   _____________________________________________________________",
+          "pdf_pages": [
+            202
+          ],
+          "answer": {
+            "source_key": "Il sourit et partit.",
+            "accepted": [
+              "Il sourit et partit."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch16-s02"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+[
+  {
+    "pdf_page": 339,
+    "kind": "theory",
+    "content_id": "ch27-p339-f01",
+    "page_char_start": 0,
+    "page_char_end": 854,
+    "chars": 854
+  },
+  {
+    "pdf_page": 340,
+    "kind": "theory",
+    "content_id": "ch27-p340-f01",
+    "page_char_start": 0,
+    "page_char_end": 1669,
+    "chars": 1669
+  },
+  {
+    "pdf_page": 341,
+    "kind": "theory",
+    "content_id": "ch27-p341-f01",
+    "page_char_start": 0,
+    "page_char_end": 1638,
+    "chars": 1638
+  },
+  {
+    "pdf_page": 342,
+    "kind": "theory",
+    "content_id": "ch27-p342-f01",
+    "page_char_start": 0,
+    "page_char_end": 1769,
+    "chars": 1769
+  },
+  {
+    "pdf_page": 343,
+    "kind": "theory",
+    "content_id": "ch27-p343-f01",
+    "page_char_start": 0,
+    "page_char_end": 2,
+    "chars": 2
+  },
+  {
+    "pdf_page": 343,
+    "kind": "exercise",
+    "content_id": "ch27-p343-f02",
+    "page_char_start": 2,
+    "page_char_end": 535,
+    "chars": 533,
+    "exercise_id": "ch27-ex01"
+  },
+  {
+    "pdf_page": 343,
+    "kind": "theory",
+    "content_id": "ch27-p343-f03",
+    "page_char_start": 535,
+    "page_char_end": 1350,
+    "chars": 815
+  },
+  {
+    "pdf_page": 344,
+    "kind": "theory",
+    "content_id": "ch27-p344-f01",
+    "page_char_start": 0,
+    "page_char_end": 2,
+    "chars": 2
+  },
+  {
+    "pdf_page": 344,
+    "kind": "exercise",
+    "content_id": "ch27-p344-f02",
+    "page_char_start": 2,
+    "page_char_end": 573,
+    "chars": 571,
+    "exercise_id": "ch27-ex02"
+  },
+  {
+    "pdf_page": 344,
+    "kind": "theory",
+    "content_id": "ch27-p344-f03",
+    "page_char_start": 573,
+    "page_char_end": 1499,
+    "chars": 926
+  },
+  {
+    "pdf_page": 345,
+    "kind": "theory",
+    "content_id": "ch27-p345-f01",
+    "page_char_start": 0,
+    "page_char_end": 625,
+    "chars": 625
+  },
+  {
+    "pdf_page": 345,
+    "kind": "exercise",
+    "content_id": "ch27-p345-f02",
+    "page_char_start": 625,
+    "page_char_end": 1545,
+    "chars": 920,
+    "exercise_id": "ch27-ex03"
+  },
+  {
+    "pdf_page": 346,
+    "kind": "exercise",
+    "content_id": "ch27-p346-f01",
+    "page_char_start": 0,
+    "page_char_end": 360,
+    "chars": 360,
+    "exercise_id": "ch27-ex03"
+  },
+  {
+    "pdf_page": 346,
+    "kind": "theory",
+    "content_id": "ch27-p346-f02",
+    "page_char_start": 360,
+    "page_char_end": 1789,
+    "chars": 1429
+  },
+  {
+    "pdf_page": 346,
+    "kind": "exercise",
+    "content_id": "ch27-p346-f03",
+    "page_char_start": 1789,
+    "page_char_end": 1803,
+    "chars": 14,
+    "exercise_id": "ch27-ex04"
+  },
+  {
+    "pdf_page": 347,
+    "kind": "exercise",
+    "content_id": "ch27-p347-f01",
+    "page_char_start": 0,
+    "page_char_end": 1387,
+    "chars": 1387,
+    "exercise_id": "ch27-ex04"
+  },
+  {
+    "pdf_page": 347,
+    "kind": "theory",
+    "content_id": "ch27-p347-f02",
+    "page_char_start": 1387,
+    "page_char_end": 1725,
+    "chars": 338
+  },
+  {
+    "pdf_page": 348,
+    "kind": "theory",
+    "content_id": "ch27-p348-f01",
+    "page_char_start": 0,
+    "page_char_end": 1743,
+    "chars": 1743
+  },
+  {
+    "pdf_page": 349,
+    "kind": "theory",
+    "content_id": "ch27-p349-f01",
+    "page_char_start": 0,
+    "page_char_end": 2093,
+    "chars": 2093
+  },
+  {
+    "pdf_page": 350,
+    "kind": "theory",
+    "content_id": "ch27-p350-f01",
+    "page_char_start": 0,
+    "page_char_end": 1851,
+    "chars": 1851
+  },
+  {
+    "pdf_page": 351,
+    "kind": "theory",
+    "content_id": "ch27-p351-f01",
+    "page_char_start": 0,
+    "page_char_end": 1430,
+    "chars": 1430
+  },
+  {
+    "pdf_page": 351,
+    "kind": "exercise",
+    "content_id": "ch27-p351-f02",
+    "page_char_start": 1430,
+    "page_char_end": 1988,
+    "chars": 558,
+    "exercise_id": "ch27-ex05"
+  },
+  {
+    "pdf_page": 352,
+    "kind": "exercise",
+    "content_id": "ch27-p352-f01",
+    "page_char_start": 0,
+    "page_char_end": 578,
+    "chars": 578,
+    "exercise_id": "ch27-ex05"
+  }
+]

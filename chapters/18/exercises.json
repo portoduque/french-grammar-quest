@@ -1,0 +1,775 @@
+{
+  "chapter": 18,
+  "status": "machine_transcribed_editorial_visual_review_pending",
+  "exercises": [
+    {
+      "id": "ch18-ex01",
+      "source": {
+        "chapter": 18,
+        "exercise": "18.1",
+        "pdf_pages": [
+          213,
+          214
+        ]
+      },
+      "topic_ids": [
+        "ch18-t02"
+      ],
+      "instruction": "Mettre les phrases suivantes au discours indirect en commençant la phrase par Il veut savoir si.",
+      "interaction_type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ch18-ex01-q01",
+          "number": 1,
+          "prompt": "Le programme du parti est bien défini. __",
+          "source_raw_prompt": "Le programme du parti est bien défini.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            213
+          ],
+          "answer": {
+            "source_key": "Il veut savoir si le programme du parti est bien défini.",
+            "accepted": [
+              "Il veut savoir si le programme du parti est bien défini."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch18-ex01-q02",
+          "number": 2,
+          "prompt": "Nous allons boycotter les prochaines élections. __",
+          "source_raw_prompt": "Nous allons boycotter les prochaines élections.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            213
+          ],
+          "answer": {
+            "source_key": "Il veut savoir si nous allons boycotter les prochaines élections.",
+            "accepted": [
+              "Il veut savoir si nous allons boycotter les prochaines élections."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch18-ex01-q03",
+          "number": 3,
+          "prompt": "Tu vas voter dimanche. __",
+          "source_raw_prompt": "Tu vas voter dimanche.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            213
+          ],
+          "answer": {
+            "source_key": "Il veut savoir si tu vas voter dimanche.",
+            "accepted": [
+              "Il veut savoir si tu vas voter dimanche."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch18-ex01-q04",
+          "number": 4,
+          "prompt": "Le ministre de l’Éducation a proposé des réformes. __",
+          "source_raw_prompt": "Le ministre de l’Éducation a proposé des réformes.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            213
+          ],
+          "answer": {
+            "source_key": "Il veut savoir si le ministre de l’Éducation a proposé des réformes.",
+            "accepted": [
+              "Il veut savoir si le ministre de l’Éducation a proposé des réformes."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch18-ex01-q05",
+          "number": 5,
+          "prompt": "Elle acceptera notre proposition. __",
+          "source_raw_prompt": "Elle acceptera notre proposition.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            213
+          ],
+          "answer": {
+            "source_key": "Il veut savoir si elle acceptera notre proposition.",
+            "accepted": [
+              "Il veut savoir si elle acceptera notre proposition."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch18-ex01-q06",
+          "number": 6,
+          "prompt": "Le parti a choisi son candidat. __",
+          "source_raw_prompt": "Le parti a choisi son candidat.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            213
+          ],
+          "answer": {
+            "source_key": "Il veut savoir si le parti a choisi son candidat.",
+            "accepted": [
+              "Il veut savoir si le parti a choisi son candidat."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch18-ex01-q07",
+          "number": 7,
+          "prompt": "Les femmes peuvent voter dans ce pays. __",
+          "source_raw_prompt": "Les femmes peuvent voter dans ce pays.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            213
+          ],
+          "answer": {
+            "source_key": "Il veut savoir si les femmes peuvent voter dans ce pays.",
+            "accepted": [
+              "Il veut savoir si les femmes peuvent voter dans ce pays."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch18-ex01-q08",
+          "number": 8,
+          "prompt": "Vous viendrez samedi soir. __",
+          "source_raw_prompt": "Vous viendrez samedi soir.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            213
+          ],
+          "answer": {
+            "source_key": "Il veut savoir si vous viendrez samedi soir.",
+            "accepted": [
+              "Il veut savoir si vous viendrez samedi soir."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch18-ex01-q09",
+          "number": 9,
+          "prompt": "Elle a fini ses recherches. __",
+          "source_raw_prompt": "Elle a fini ses recherches.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            213
+          ],
+          "answer": {
+            "source_key": "Il veut savoir si elle a fini ses recherches.",
+            "accepted": [
+              "Il veut savoir si elle a fini ses recherches."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch18-ex01-q10",
+          "number": 10,
+          "prompt": "La parité sera jamais réalisée. __",
+          "source_raw_prompt": "La parité sera jamais réalisée.   _____________________________________________________________\n\n\n\n\n ",
+          "pdf_pages": [
+            213,
+            214
+          ],
+          "answer": {
+            "source_key": "Il veut savoir si la parité sera jamais réalisée.",
+            "accepted": [
+              "Il veut savoir si la parité sera jamais réalisée."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch18-s02"
+      ]
+    },
+    {
+      "id": "ch18-ex02",
+      "source": {
+        "chapter": 18,
+        "exercise": "18.2",
+        "pdf_pages": [
+          214,
+          215
+        ]
+      },
+      "topic_ids": [
+        "ch18-t02"
+      ],
+      "instruction": "Relier les deux membres de phrase.",
+      "interaction_type": "free_response",
+      "questions": [
+        {
+          "id": "ch18-ex02-q01",
+          "number": 1,
+          "prompt": "Elle sera absente mardi. (Elle annonce que) __",
+          "source_raw_prompt": "Elle sera absente mardi. (Elle annonce que)\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            214
+          ],
+          "answer": {
+            "source_key": "Elle annonce qu’elle sera absente mardi.",
+            "accepted": [
+              "Elle annonce qu’elle sera absente mardi."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch18-ex02-q02",
+          "number": 2,
+          "prompt": "Paul s’est trompé. (Ils avouent que) __",
+          "source_raw_prompt": "Paul s’est trompé. (Ils avouent que)\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            214
+          ],
+          "answer": {
+            "source_key": "Ils avouent que Paul s’est trompé.",
+            "accepted": [
+              "Ils avouent que Paul s’est trompé."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch18-ex02-q03",
+          "number": 3,
+          "prompt": "Ses produits sont les meilleurs. (La marchande dit) __",
+          "source_raw_prompt": "Ses produits sont les meilleurs. (La marchande dit)\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            214
+          ],
+          "answer": {
+            "source_key": "La marchande dit que ses produits sont les meilleurs.",
+            "accepted": [
+              "La marchande dit que ses produits sont les meilleurs."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch18-ex02-q04",
+          "number": 4,
+          "prompt": "Elles avaient tort. (Tu sais bien que) __",
+          "source_raw_prompt": "Elles avaient tort. (Tu sais bien que)\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            214
+          ],
+          "answer": {
+            "source_key": "Tu sais bien qu’elles avaient tort.",
+            "accepted": [
+              "Tu sais bien qu’elles avaient tort."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch18-ex02-q05",
+          "number": 5,
+          "prompt": "Le candidat a peu de chance de gagner. (On se rend compte que) __",
+          "source_raw_prompt": "Le candidat a peu de chance de gagner. (On se rend compte que)\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            214
+          ],
+          "answer": {
+            "source_key": "On se rend compte que le candidat a peu de chance de gagner.",
+            "accepted": [
+              "On se rend compte que le candidat a peu de chance de gagner."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch18-ex02-q06",
+          "number": 6,
+          "prompt": "Le musée est ouvert. (Ils ne savent pas si) __",
+          "source_raw_prompt": "Le musée est ouvert. (Ils ne savent pas si)\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            214
+          ],
+          "answer": {
+            "source_key": "Ils ne savent pas si le musée est ouvert.",
+            "accepted": [
+              "Ils ne savent pas si le musée est ouvert."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch18-ex02-q07",
+          "number": 7,
+          "prompt": "Tu n’avais rien entendu. (Tu réponds que) __",
+          "source_raw_prompt": "Tu n’avais rien entendu. (Tu réponds que)\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            214
+          ],
+          "answer": {
+            "source_key": "Tu réponds que tu n’avais rien entendu.",
+            "accepted": [
+              "Tu réponds que tu n’avais rien entendu."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch18-ex02-q08",
+          "number": 8,
+          "prompt": "Il n’est jamais allé en France. (Elle nous apprend que) __",
+          "source_raw_prompt": "Il n’est jamais allé en France. (Elle nous apprend que)\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            214
+          ],
+          "answer": {
+            "source_key": "Elle nous apprend qu’il n’est jamais allé en France.",
+            "accepted": [
+              "Elle nous apprend qu’il n’est jamais allé en France."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch18-ex02-q09",
+          "number": 9,
+          "prompt": "Ils avaient dilapidé leur fortune. (Il nous déclare que) __",
+          "source_raw_prompt": "Ils avaient dilapidé leur fortune. (Il nous déclare que)\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            214
+          ],
+          "answer": {
+            "source_key": "Il nous déclare qu’ils avaient dilapidé leur fortune.",
+            "accepted": [
+              "Il nous déclare qu’ils avaient dilapidé leur fortune."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch18-ex02-q10",
+          "number": 10,
+          "prompt": "Le peintre habite. (Il ignore où) __ Learning la concordance des temps, that is, balancing tenses, is one of the most difficult tasks of a French learner. When switching from direct to indirect speech, some changes of tense occur when the main clause verb is in the passé composé. Here are the three main scenarios:",
+          "source_raw_prompt": "Le peintre habite. (Il ignore où)\n   _____________________________________________________________   Learning la concordance des temps, that is, balancing tenses, is one of the most\ndifficult tasks of a French learner. When switching from direct to indirect speech,\nsome changes of tense occur when the main clause verb is in the passé composé.\nHere are the three main scenarios:",
+          "pdf_pages": [
+            214,
+            215,
+            216
+          ],
+          "answer": {
+            "source_key": "Il ignore où le peintre habite.",
+            "accepted": [
+              "Il ignore où le peintre habite."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch18-s02"
+      ]
+    },
+    {
+      "id": "ch18-ex03",
+      "source": {
+        "chapter": 18,
+        "exercise": "18.3",
+        "pdf_pages": [
+          216,
+          217
+        ]
+      },
+      "topic_ids": [
+        "ch18-t05"
+      ],
+      "instruction": "Commencer les phrases par J’ai entendu dire que. Attention à la concordance des temps.",
+      "interaction_type": "free_response",
+      "questions": [
+        {
+          "id": "ch18-ex03-q01",
+          "number": 1,
+          "prompt": "Tu as accepté leur offre la semaine dernière. __",
+          "source_raw_prompt": "Tu as accepté leur offre la semaine dernière.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            216
+          ],
+          "answer": {
+            "source_key": "J’ai entendu dire que tu avais accepté leur offre la semaine dernière.",
+            "accepted": [
+              "J’ai entendu dire que tu avais accepté leur offre la semaine dernière."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch18-ex03-q02",
+          "number": 2,
+          "prompt": "Elle a vendu sa voiture hier. __",
+          "source_raw_prompt": "Elle a vendu sa voiture hier.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            216
+          ],
+          "answer": {
+            "source_key": "J’ai entendu dire qu’elle avait vendu sa voiture hier.",
+            "accepted": [
+              "J’ai entendu dire qu’elle avait vendu sa voiture hier."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch18-ex03-q03",
+          "number": 3,
+          "prompt": "Tu travailleras à Chicago l’an prochain. __",
+          "source_raw_prompt": "Tu travailleras à Chicago l’an prochain.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            216
+          ],
+          "answer": {
+            "source_key": "J’ai entendu dire que tu travaillerais à Chicago l’an prochain.",
+            "accepted": [
+              "J’ai entendu dire que tu travaillerais à Chicago l’an prochain."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch18-ex03-q04",
+          "number": 4,
+          "prompt": "Elle ira en Asie demain. __",
+          "source_raw_prompt": "Elle ira en Asie demain.\n    _____________________________________________________________ ",
+          "pdf_pages": [
+            216,
+            217
+          ],
+          "answer": {
+            "source_key": "J’ai entendu dire qu’elle irait en Asie demain.",
+            "accepted": [
+              "J’ai entendu dire qu’elle irait en Asie demain."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch18-ex03-q05",
+          "number": 5,
+          "prompt": "Ils se sont mariés le mois dernier. __",
+          "source_raw_prompt": "Ils se sont mariés le mois dernier.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            217
+          ],
+          "answer": {
+            "source_key": "J’ai entendu dire qu’ils s’étaient mariés le mois dernier.",
+            "accepted": [
+              "J’ai entendu dire qu’ils s’étaient mariés le mois dernier."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch18-ex03-q06",
+          "number": 6,
+          "prompt": "Il fait froid en Alaska aujourd’hui. __",
+          "source_raw_prompt": "Il fait froid en Alaska aujourd’hui.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            217
+          ],
+          "answer": {
+            "source_key": "J’ai entendu dire qu’il faisait froid en Alaska aujourd’hui.",
+            "accepted": [
+              "J’ai entendu dire qu’il faisait froid en Alaska aujourd’hui."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch18-ex03-q07",
+          "number": 7,
+          "prompt": "Ils s’installeront au Canada l’an prochain. __",
+          "source_raw_prompt": "Ils s’installeront au Canada l’an prochain.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            217
+          ],
+          "answer": {
+            "source_key": "J’ai entendu dire qu’ils s’installeraient au Canada l’an prochain.",
+            "accepted": [
+              "J’ai entendu dire qu’ils s’installeraient au Canada l’an prochain."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch18-ex03-q08",
+          "number": 8,
+          "prompt": "Il a quitté son poste vendredi dernier. __",
+          "source_raw_prompt": "Il a quitté son poste vendredi dernier.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            217
+          ],
+          "answer": {
+            "source_key": "J’ai entendu dire qu’il avait quitté son poste vendredi dernier.",
+            "accepted": [
+              "J’ai entendu dire qu’il avait quitté son poste vendredi dernier."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch18-ex03-q09",
+          "number": 9,
+          "prompt": "Elle est la candidate favorite en ce moment. __",
+          "source_raw_prompt": "Elle est la candidate favorite en ce moment.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            217
+          ],
+          "answer": {
+            "source_key": "J’ai entendu dire qu’elle était la candidate favorite en ce moment.",
+            "accepted": [
+              "J’ai entendu dire qu’elle était la candidate favorite en ce moment."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch18-ex03-q10",
+          "number": 10,
+          "prompt": "Tu as pris beaucoup de photos hier soir. __",
+          "source_raw_prompt": "Tu as pris beaucoup de photos hier soir.\n   _____________________________________________________________\n\n\n\n\n ",
+          "pdf_pages": [
+            217
+          ],
+          "answer": {
+            "source_key": "J’ai entendu dire que tu avais pris beaucoup de photos hier soir.",
+            "accepted": [
+              "J’ai entendu dire que tu avais pris beaucoup de photos hier soir."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch18-s05"
+      ]
+    },
+    {
+      "id": "ch18-ex04",
+      "source": {
+        "chapter": 18,
+        "exercise": "18.4",
+        "pdf_pages": [
+          217,
+          218
+        ]
+      },
+      "topic_ids": [
+        "ch18-t05"
+      ],
+      "instruction": "Traduire les phrases suivantes en utilisant vous si nécessaire.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch18-ex04-q01",
+          "number": 1,
+          "prompt": "They know you are living in Paris. __",
+          "source_raw_prompt": "They know you are living in Paris.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            217
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) savent que vous habitez à Paris.",
+            "accepted": [
+              "Ils (Elles) savent que vous habitez à Paris."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch18-ex04-q02",
+          "number": 2,
+          "prompt": "I have heard you are living in Paris. __",
+          "source_raw_prompt": "I have heard you are living in Paris.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            217
+          ],
+          "answer": {
+            "source_key": "J’ai entendu dire que vous habitiez à Paris.",
+            "accepted": [
+              "J’ai entendu dire que vous habitiez à Paris."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch18-ex04-q03",
+          "number": 3,
+          "prompt": "I heard you lived in Paris in 2020. __",
+          "source_raw_prompt": "I heard you lived in Paris in 2020.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            217
+          ],
+          "answer": {
+            "source_key": "J’ai entendu dire que vous aviez vécu à Paris en 2020.",
+            "accepted": [
+              "J’ai entendu dire que vous aviez vécu à Paris en 2020."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch18-ex04-q04",
+          "number": 4,
+          "prompt": "I heard you’ll go to Paris next year. __",
+          "source_raw_prompt": "I heard you’ll go to Paris next year.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            217
+          ],
+          "answer": {
+            "source_key": "J’ai entendu dire que vous iriez à Paris l’année prochaine.",
+            "accepted": [
+              "J’ai entendu dire que vous iriez à Paris l’année prochaine."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch18-ex04-q05",
+          "number": 5,
+          "prompt": "He says his cat is adorable. __",
+          "source_raw_prompt": "He says his cat is adorable.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            217
+          ],
+          "answer": {
+            "source_key": "Il dit que son chat est adorable.",
+            "accepted": [
+              "Il dit que son chat est adorable."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch18-ex04-q06",
+          "number": 6,
+          "prompt": "I heard you had a cat. __",
+          "source_raw_prompt": "I heard you had a cat.   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            217,
+            218
+          ],
+          "answer": {
+            "source_key": "J’ai entendu dire que vous aviez un chat.",
+            "accepted": [
+              "J’ai entendu dire que vous aviez un chat."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch18-ex04-q07",
+          "number": 7,
+          "prompt": "I heard you had a cat when you lived on the Victor Hugo Boulevard. __",
+          "source_raw_prompt": "I heard you had a cat when you lived on the Victor Hugo Boulevard.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            218
+          ],
+          "answer": {
+            "source_key": "J’ai entendu dire que vous aviez un chat quand vous habitiez boulevard Victor Hugo.",
+            "accepted": [
+              "J’ai entendu dire que vous aviez un chat quand vous habitiez boulevard Victor Hugo."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch18-ex04-q08",
+          "number": 8,
+          "prompt": "I heard your sister will give you her cat. __",
+          "source_raw_prompt": "I heard your sister will give you her cat.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            218
+          ],
+          "answer": {
+            "source_key": "J’ai entendu dire que votre sœur vous donnerait son chat.",
+            "accepted": [
+              "J’ai entendu dire que votre sœur vous donnerait son chat."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch18-ex04-q09",
+          "number": 9,
+          "prompt": "I was told you voted for me. __",
+          "source_raw_prompt": "I was told you voted for me.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            218
+          ],
+          "answer": {
+            "source_key": "On m’a dit que vous aviez voté pour moi.",
+            "accepted": [
+              "On m’a dit que vous aviez voté pour moi."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch18-ex04-q10",
+          "number": 10,
+          "prompt": "We realize she has a chance to win. __",
+          "source_raw_prompt": "We realize she has a chance to win.\n   _____________________________________________________________",
+          "pdf_pages": [
+            218
+          ],
+          "answer": {
+            "source_key": "Nous nous rendons compte qu’elle a une chance de gagner.",
+            "accepted": [
+              "Nous nous rendons compte qu’elle a une chance de gagner."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch18-s05"
+      ]
+    }
+  ]
+}

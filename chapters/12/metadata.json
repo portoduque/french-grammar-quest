@@ -1,0 +1,104 @@
+{
+  "chapter": 12,
+  "title": "Chapter 12",
+  "source": {
+    "pdf_pages": [
+      148,
+      157
+    ],
+    "source_sha256": "297b92bc48e075449713c3b408ccf47de2466cfc6c4f4a25687a2a974276ae4d",
+    "answer_key_pdf_pages": [
+      509,
+      510,
+      511
+    ]
+  },
+  "topics": [
+    {
+      "id": "ch12-t01",
+      "title": "Could",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch12-t02",
+      "title": "Should",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch12-t03",
+      "title": "Would",
+      "exercise_ids": [
+        "ch12-ex01",
+        "ch12-ex02",
+        "ch12-ex03",
+        "ch12-ex04",
+        "ch12-ex05",
+        "ch12-ex06"
+      ]
+    }
+  ],
+  "exercise_ids": [
+    "ch12-ex01",
+    "ch12-ex02",
+    "ch12-ex03",
+    "ch12-ex04",
+    "ch12-ex05",
+    "ch12-ex06"
+  ],
+  "question_total": 55,
+  "validation": {
+    "source_pages": 10,
+    "source_chars": 13522,
+    "source_partition_complete": true,
+    "exercise_group_markers_detected": 6,
+    "questions_structured": 55,
+    "answer_key_entries_associated": 55,
+    "editorial_visual_review": "pending_glyph_by_glyph_check",
+    "theory_semantic_format": "partially_indexed_source_text_preserved",
+    "theory_source_segments": 2,
+    "text_semantic_format": "source-aligned_markdown_fenced_text_pending_table_visual_proof",
+    "answer_key_count": 55
+  },
+  "subtopics": [
+    {
+      "id": "ch12-s01",
+      "title": "Could",
+      "parent_topic_id": "ch12-t01",
+      "pdf_pages": [
+        148,
+        148
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch12-s02",
+      "title": "Should",
+      "parent_topic_id": "ch12-t02",
+      "pdf_pages": [
+        151,
+        151
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch12-s03",
+      "title": "Would",
+      "parent_topic_id": "ch12-t03",
+      "pdf_pages": [
+        148,
+        148
+      ],
+      "exercise_ids": [
+        "ch12-ex01",
+        "ch12-ex02",
+        "ch12-ex03",
+        "ch12-ex04",
+        "ch12-ex05",
+        "ch12-ex06"
+      ],
+      "kind": "grammar"
+    }
+  ]
+}

@@ -1,0 +1,337 @@
+{
+  "source_sha256": "297b92bc48e075449713c3b408ccf47de2466cfc6c4f4a25687a2a974276ae4d",
+  "chapters": [
+    {
+      "chapter": 2,
+      "pdf_pages": 15,
+      "groups": 11,
+      "questions": 110,
+      "keys": 110,
+      "theory_spans": 6,
+      "subtopics": 6,
+      "source_text_chars": 20566,
+      "gate": "machine_pass_visual_pending"
+    },
+    {
+      "chapter": 3,
+      "pdf_pages": 14,
+      "groups": 11,
+      "questions": 110,
+      "keys": 110,
+      "theory_spans": 5,
+      "subtopics": 5,
+      "source_text_chars": 17434,
+      "gate": "machine_pass_visual_pending"
+    },
+    {
+      "chapter": 4,
+      "pdf_pages": 13,
+      "groups": 9,
+      "questions": 85,
+      "keys": 85,
+      "theory_spans": 4,
+      "subtopics": 7,
+      "source_text_chars": 17302,
+      "gate": "machine_pass_visual_pending"
+    },
+    {
+      "chapter": 5,
+      "pdf_pages": 8,
+      "groups": 5,
+      "questions": 45,
+      "keys": 45,
+      "theory_spans": 2,
+      "subtopics": 4,
+      "source_text_chars": 10123,
+      "gate": "machine_pass_visual_pending"
+    },
+    {
+      "chapter": 6,
+      "pdf_pages": 8,
+      "groups": 6,
+      "questions": 55,
+      "keys": 55,
+      "theory_spans": 4,
+      "subtopics": 5,
+      "source_text_chars": 11540,
+      "gate": "machine_pass_visual_pending"
+    },
+    {
+      "chapter": 7,
+      "pdf_pages": 14,
+      "groups": 10,
+      "questions": 90,
+      "keys": 90,
+      "theory_spans": 3,
+      "subtopics": 6,
+      "source_text_chars": 20368,
+      "gate": "machine_pass_visual_pending"
+    },
+    {
+      "chapter": 8,
+      "pdf_pages": 10,
+      "groups": 7,
+      "questions": 70,
+      "keys": 70,
+      "theory_spans": 3,
+      "subtopics": 3,
+      "source_text_chars": 15023,
+      "gate": "machine_pass_visual_pending"
+    },
+    {
+      "chapter": 9,
+      "pdf_pages": 13,
+      "groups": 8,
+      "questions": 75,
+      "keys": 75,
+      "theory_spans": 3,
+      "subtopics": 3,
+      "source_text_chars": 21646,
+      "gate": "machine_pass_visual_pending"
+    },
+    {
+      "chapter": 10,
+      "pdf_pages": 8,
+      "groups": 6,
+      "questions": 55,
+      "keys": 55,
+      "theory_spans": 4,
+      "subtopics": 3,
+      "source_text_chars": 11295,
+      "gate": "machine_pass_visual_pending"
+    },
+    {
+      "chapter": 11,
+      "pdf_pages": 14,
+      "groups": 10,
+      "questions": 90,
+      "keys": 90,
+      "theory_spans": 3,
+      "subtopics": 4,
+      "source_text_chars": 21791,
+      "gate": "machine_pass_visual_pending"
+    },
+    {
+      "chapter": 12,
+      "pdf_pages": 10,
+      "groups": 6,
+      "questions": 55,
+      "keys": 55,
+      "theory_spans": 2,
+      "subtopics": 3,
+      "source_text_chars": 13522,
+      "gate": "machine_pass_visual_pending"
+    },
+    {
+      "chapter": 13,
+      "pdf_pages": 15,
+      "groups": 9,
+      "questions": 85,
+      "keys": 85,
+      "theory_spans": 3,
+      "subtopics": 4,
+      "source_text_chars": 25780,
+      "gate": "machine_pass_visual_pending"
+    },
+    {
+      "chapter": 14,
+      "pdf_pages": 15,
+      "groups": 7,
+      "questions": 70,
+      "keys": 70,
+      "theory_spans": 4,
+      "subtopics": 6,
+      "source_text_chars": 23994,
+      "gate": "machine_pass_visual_pending"
+    },
+    {
+      "chapter": 15,
+      "pdf_pages": 7,
+      "groups": 3,
+      "questions": 30,
+      "keys": 30,
+      "theory_spans": 2,
+      "subtopics": 2,
+      "source_text_chars": 10692,
+      "gate": "machine_pass_visual_pending"
+    },
+    {
+      "chapter": 16,
+      "pdf_pages": 8,
+      "groups": 3,
+      "questions": 30,
+      "keys": 30,
+      "theory_spans": 1,
+      "subtopics": 2,
+      "source_text_chars": 12309,
+      "gate": "machine_pass_visual_pending"
+    },
+    {
+      "chapter": 17,
+      "pdf_pages": 7,
+      "groups": 3,
+      "questions": 30,
+      "keys": 30,
+      "theory_spans": 2,
+      "subtopics": 4,
+      "source_text_chars": 10565,
+      "gate": "machine_pass_visual_pending"
+    },
+    {
+      "chapter": 18,
+      "pdf_pages": 9,
+      "groups": 4,
+      "questions": 40,
+      "keys": 40,
+      "theory_spans": 2,
+      "subtopics": 5,
+      "source_text_chars": 13150,
+      "gate": "machine_pass_visual_pending"
+    },
+    {
+      "chapter": 19,
+      "pdf_pages": 7,
+      "groups": 3,
+      "questions": 30,
+      "keys": 30,
+      "theory_spans": 2,
+      "subtopics": 3,
+      "source_text_chars": 9037,
+      "gate": "machine_pass_visual_pending"
+    },
+    {
+      "chapter": 20,
+      "pdf_pages": 21,
+      "groups": 9,
+      "questions": 90,
+      "keys": 90,
+      "theory_spans": 5,
+      "subtopics": 11,
+      "source_text_chars": 27541,
+      "gate": "machine_pass_visual_pending"
+    },
+    {
+      "chapter": 21,
+      "pdf_pages": 24,
+      "groups": 12,
+      "questions": 110,
+      "keys": 110,
+      "theory_spans": 6,
+      "subtopics": 8,
+      "source_text_chars": 40516,
+      "gate": "machine_pass_visual_pending"
+    },
+    {
+      "chapter": 22,
+      "pdf_pages": 12,
+      "groups": 7,
+      "questions": 55,
+      "keys": 55,
+      "theory_spans": 2,
+      "subtopics": 7,
+      "source_text_chars": 17722,
+      "gate": "machine_pass_visual_pending"
+    },
+    {
+      "chapter": 23,
+      "pdf_pages": 15,
+      "groups": 9,
+      "questions": 82,
+      "keys": 82,
+      "theory_spans": 3,
+      "subtopics": 9,
+      "source_text_chars": 23335,
+      "gate": "machine_pass_visual_pending"
+    },
+    {
+      "chapter": 24,
+      "pdf_pages": 15,
+      "groups": 9,
+      "questions": 85,
+      "keys": 85,
+      "theory_spans": 4,
+      "subtopics": 3,
+      "source_text_chars": 25078,
+      "gate": "machine_pass_visual_pending"
+    },
+    {
+      "chapter": 25,
+      "pdf_pages": 13,
+      "groups": 8,
+      "questions": 80,
+      "keys": 80,
+      "theory_spans": 4,
+      "subtopics": 5,
+      "source_text_chars": 19476,
+      "gate": "machine_pass_visual_pending"
+    },
+    {
+      "chapter": 26,
+      "pdf_pages": 13,
+      "groups": 8,
+      "questions": 80,
+      "keys": 80,
+      "theory_spans": 5,
+      "subtopics": 5,
+      "source_text_chars": 19170,
+      "gate": "machine_pass_visual_pending"
+    },
+    {
+      "chapter": 27,
+      "pdf_pages": 14,
+      "groups": 5,
+      "questions": 45,
+      "keys": 45,
+      "theory_spans": 5,
+      "subtopics": 16,
+      "source_text_chars": 22105,
+      "gate": "machine_pass_visual_pending"
+    },
+    {
+      "chapter": 28,
+      "pdf_pages": 33,
+      "groups": 35,
+      "questions": 345,
+      "keys": 345,
+      "theory_spans": 1,
+      "subtopics": 1,
+      "source_text_chars": 40387,
+      "gate": "machine_pass_visual_pending"
+    }
+  ],
+  "total": {
+    "chapters": 27,
+    "pages": 355,
+    "exercise_groups": 223,
+    "questions": 2127,
+    "publisher_keys": 2127,
+    "reference_pages": 113
+  },
+  "known_anomalies": [
+    {
+      "chapter": 2,
+      "exercise": "ch02-ex05",
+      "detail": [
+        "Printed 10 appears without dot in selectable-text extraction; retained raw option source."
+      ]
+    },
+    {
+      "chapter": 2,
+      "exercise": "ch02-ex05",
+      "detail": "Matching options not fully separated; raw question text contains right column."
+    },
+    {
+      "chapter": 28,
+      "exercise": "ch28-ex15",
+      "detail": [
+        "Printed question 4 appears twice; second occurrence mapped to logical 5 to align publisher answer key 28-15."
+      ]
+    },
+    {
+      "chapter": 28,
+      "exercise": "ch28-ex15",
+      "detail": "Matching options not fully separated; raw question text contains right column."
+    }
+  ],
+  "status": "machine_checked_visual_pending"
+}

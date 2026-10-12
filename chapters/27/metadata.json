@@ -1,0 +1,316 @@
+{
+  "chapter": 27,
+  "title": "Chapter 27",
+  "source": {
+    "pdf_pages": [
+      339,
+      352
+    ],
+    "source_sha256": "297b92bc48e075449713c3b408ccf47de2466cfc6c4f4a25687a2a974276ae4d",
+    "answer_key_pdf_pages": [
+      522,
+      523
+    ]
+  },
+  "topics": [
+    {
+      "id": "ch27-t01",
+      "title": "Verbs that use different prepositions",
+      "exercise_ids": [
+        "ch27-ex01"
+      ]
+    },
+    {
+      "id": "ch27-t02",
+      "title": "The verb manquer",
+      "exercise_ids": [
+        "ch27-ex02"
+      ]
+    },
+    {
+      "id": "ch27-t03",
+      "title": "Whatever, whenever, wherever, whoever",
+      "exercise_ids": [
+        "ch27-ex03"
+      ]
+    },
+    {
+      "id": "ch27-t04",
+      "title": "Avoir beau and quitte à",
+      "exercise_ids": [
+        "ch27-ex04"
+      ]
+    },
+    {
+      "id": "ch27-t05",
+      "title": "Subordinate clauses",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch27-t06",
+      "title": "The causal clause",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch27-t07",
+      "title": "The completive or that clause",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch27-t08",
+      "title": "The indirect interrogative clause",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch27-t13",
+      "title": "The hypothetical clause",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch27-t09",
+      "title": "The infinitive clause",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch27-t10",
+      "title": "The concessive clause",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch27-t11",
+      "title": "The consecutive clause",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch27-t12",
+      "title": "The purpose clause",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch27-t14",
+      "title": "The relative clause",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch27-t15",
+      "title": "The temporal clause",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch27-t16",
+      "title": "The comparative clause",
+      "exercise_ids": [
+        "ch27-ex05"
+      ]
+    }
+  ],
+  "exercise_ids": [
+    "ch27-ex01",
+    "ch27-ex02",
+    "ch27-ex03",
+    "ch27-ex04",
+    "ch27-ex05"
+  ],
+  "question_total": 45,
+  "validation": {
+    "source_pages": 14,
+    "source_chars": 22105,
+    "source_partition_complete": true,
+    "exercise_group_markers_detected": 5,
+    "questions_structured": 45,
+    "answer_key_entries_associated": 45,
+    "editorial_visual_review": "pending_glyph_by_glyph_check",
+    "theory_semantic_format": "partially_indexed_source_text_preserved",
+    "theory_source_segments": 5,
+    "text_semantic_format": "source-aligned_markdown_fenced_text_pending_table_visual_proof",
+    "answer_key_count": 45
+  },
+  "subtopics": [
+    {
+      "id": "ch27-s01",
+      "title": "Verbs that use different prepositions",
+      "parent_topic_id": "ch27-t01",
+      "pdf_pages": [
+        340,
+        340
+      ],
+      "exercise_ids": [
+        "ch27-ex01"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch27-s02",
+      "title": "The verb manquer",
+      "parent_topic_id": "ch27-t02",
+      "pdf_pages": [
+        343,
+        343
+      ],
+      "exercise_ids": [
+        "ch27-ex02"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch27-s03",
+      "title": "Whatever, whenever, wherever, whoever",
+      "parent_topic_id": "ch27-t03",
+      "pdf_pages": [
+        344,
+        344
+      ],
+      "exercise_ids": [
+        "ch27-ex03"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch27-s04",
+      "title": "Avoir beau and quitte à",
+      "parent_topic_id": "ch27-t04",
+      "pdf_pages": [
+        346,
+        346
+      ],
+      "exercise_ids": [
+        "ch27-ex04"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch27-s05",
+      "title": "Subordinate clauses",
+      "parent_topic_id": "ch27-t05",
+      "pdf_pages": [
+        347,
+        347
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch27-s06",
+      "title": "The causal clause",
+      "parent_topic_id": "ch27-t06",
+      "pdf_pages": [
+        348,
+        348
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch27-s07",
+      "title": "The completive or that clause",
+      "parent_topic_id": "ch27-t07",
+      "pdf_pages": [
+        348,
+        348
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch27-s08",
+      "title": "The indirect interrogative clause",
+      "parent_topic_id": "ch27-t08",
+      "pdf_pages": [
+        348,
+        348
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch27-s09",
+      "title": "The hypothetical clause",
+      "parent_topic_id": "ch27-t13",
+      "pdf_pages": [
+        348,
+        348
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch27-s10",
+      "title": "The infinitive clause",
+      "parent_topic_id": "ch27-t09",
+      "pdf_pages": [
+        348,
+        348
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch27-s11",
+      "title": "The concessive clause",
+      "parent_topic_id": "ch27-t10",
+      "pdf_pages": [
+        349,
+        349
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch27-s12",
+      "title": "The consecutive clause",
+      "parent_topic_id": "ch27-t11",
+      "pdf_pages": [
+        349,
+        349
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch27-s13",
+      "title": "The purpose clause",
+      "parent_topic_id": "ch27-t12",
+      "pdf_pages": [
+        350,
+        350
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch27-s14",
+      "title": "The relative clause",
+      "parent_topic_id": "ch27-t14",
+      "pdf_pages": [
+        350,
+        350
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch27-s15",
+      "title": "The temporal clause",
+      "parent_topic_id": "ch27-t15",
+      "pdf_pages": [
+        350,
+        350
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch27-s16",
+      "title": "The comparative clause",
+      "parent_topic_id": "ch27-t16",
+      "pdf_pages": [
+        351,
+        351
+      ],
+      "exercise_ids": [
+        "ch27-ex05"
+      ],
+      "kind": "grammar"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+       sixième                                         sixth
+      septième                                   seventh
+      huitième                                    eighth
+      neuvième                                   ninth
+      dixième                                      tenth
+      vingtième                                   twentieth
+       vingt et unième                                twenty-first
+      vingt-deuxième                           twenty-second
+       vingt-troisième                              twenty-third
+       trentième                                        thirtieth
+      quarantième                                    fortieth
+      cinquantième                                       fiftieth
+
+   In France, le premier étage corresponds to the American second floor. The
+American first or ground floor is called le rez-de-chaussée in France. Note the
+following examples:
+
+     La première fois que j’ai pris l’avion,   The first time I took the plane, I was
+           j’avais cinq ans.                             five years old.
+       L’appartement d’Olivier est au dixième   Olivier’s apartment is on the eleven
+          étage.                                          floor.
+
+
+   VOCABULAIRE
+
+
+ l’accès haut-débit (m.)                   high-speed Internet access
+ un administrateur, une administratrice  a webmaster
+   de site
+ une adresse URL                     a URL
+ une adresse IP                       an Internet protocol address
+ les autoroutes de l’information (m.pl.)    information highways
+ une bibliothèque numérique           a digital library
+ un blog                             a blog
+ un domaine                         a domain
+ une fenêtre                          a window

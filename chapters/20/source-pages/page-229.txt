@@ -1,0 +1,36 @@
+     Feminine
+      une maison                    a house
+      une lampe                     a lamp
+      une avalanche                  an avalanche
+      une aubergine                  an eggplant
+
+     Masculine or feminine
+       un(e) architecte                 an architect
+       un(e) artiste                    an artist
+       un(e) journaliste                a journalist
+
+     Masculine and feminine plural
+      des murs (m.pl.)                  (some) walls
+      des balcons (m.pl.)                (some) balconies
+      des fenêtres (f.pl.)                 (some) windows
+      des amis (m.pl.)                   (some) friends (m.)
+      des amies (f.pl.)                   (some) friends (f.)
+
+       Est-ce qu’il y a une piscine?          Is there a swimming pool?
+       Elle a acheté un vélo.             She bought a bike.
+      Nous avons vu des lapins dans le   We saw (some) rabbits in the garden.
+           jardin.
+          Il a acheté des rideaux pour le salon. He bought (some) curtains for the living
+                                          room.
+          Il a un nouveau chien.          He has a new dog.
+      Tu veux emprunter un de mes     Do you want to borrow one of my books
+           livres?
+
+The partitive article
+The partitive article is used when the exact quantity of an item is unknown. In
+English, the partitive article is often omitted. We say, “I want bread” or “I want some
+bread.” However, the partitive article is always required in French. It is formed by
+combining de and the definite article.
+
+      de + le = du
+      de + l’ = de l’

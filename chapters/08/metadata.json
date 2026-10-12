@@ -1,0 +1,110 @@
+{
+  "chapter": 8,
+  "title": "Chapter 08",
+  "source": {
+    "pdf_pages": [
+      103,
+      112
+    ],
+    "source_sha256": "297b92bc48e075449713c3b408ccf47de2466cfc6c4f4a25687a2a974276ae4d",
+    "answer_key_pdf_pages": [
+      505,
+      506
+    ]
+  },
+  "topics": [
+    {
+      "id": "ch08-t01",
+      "title": "The imparfait",
+      "exercise_ids": [
+        "ch08-ex01"
+      ]
+    },
+    {
+      "id": "ch08-t02",
+      "title": "The imparfait versus the passé composé",
+      "exercise_ids": [
+        "ch08-ex02",
+        "ch08-ex03",
+        "ch08-ex04",
+        "ch08-ex05"
+      ]
+    },
+    {
+      "id": "ch08-t03",
+      "title": "The imparfait with special constructions",
+      "exercise_ids": [
+        "ch08-ex06",
+        "ch08-ex07"
+      ]
+    }
+  ],
+  "exercise_ids": [
+    "ch08-ex01",
+    "ch08-ex02",
+    "ch08-ex03",
+    "ch08-ex04",
+    "ch08-ex05",
+    "ch08-ex06",
+    "ch08-ex07"
+  ],
+  "question_total": 70,
+  "validation": {
+    "source_pages": 10,
+    "source_chars": 15023,
+    "source_partition_complete": true,
+    "exercise_group_markers_detected": 7,
+    "questions_structured": 70,
+    "answer_key_entries_associated": 70,
+    "editorial_visual_review": "pending_glyph_by_glyph_check",
+    "theory_semantic_format": "partially_indexed_source_text_preserved",
+    "theory_source_segments": 3,
+    "text_semantic_format": "source-aligned_markdown_fenced_text_pending_table_visual_proof",
+    "answer_key_count": 70
+  },
+  "subtopics": [
+    {
+      "id": "ch08-s01",
+      "title": "The imparfait",
+      "parent_topic_id": "ch08-t01",
+      "pdf_pages": [
+        103,
+        103
+      ],
+      "exercise_ids": [
+        "ch08-ex01"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch08-s02",
+      "title": "The imparfait versus the passé composé",
+      "parent_topic_id": "ch08-t02",
+      "pdf_pages": [
+        106,
+        106
+      ],
+      "exercise_ids": [
+        "ch08-ex02",
+        "ch08-ex03",
+        "ch08-ex04",
+        "ch08-ex05"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch08-s03",
+      "title": "The imparfait with special constructions",
+      "parent_topic_id": "ch08-t03",
+      "pdf_pages": [
+        110,
+        110
+      ],
+      "exercise_ids": [
+        "ch08-ex06",
+        "ch08-ex07"
+      ],
+      "kind": "grammar"
+    }
+  ]
+}
