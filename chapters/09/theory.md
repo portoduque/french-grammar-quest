@@ -1,4 +1,4 @@
-# Chapter 09 — Chapter 09
+# Chapter 09 — The futur simple and the futur antérieur
 
 > Automatically extracted from the source PDF. Text and bilingual columns must be checked visually before use in interactive lessons.
 > Literal source snapshots are preserved in `source-pages/`; a full source mirror is in `theory-source.md`.
