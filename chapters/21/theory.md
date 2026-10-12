@@ -1,4 +1,4 @@
-# Chapter 21 — Chapter 21
+# Chapter 21 — All the pronouns
 
 > Automatically extracted from the source PDF. Text and bilingual columns must be checked visually before use in interactive lessons.
 > Literal source snapshots are preserved in `source-pages/`; a full source mirror is in `theory-source.md`.
