@@ -499,6 +499,8 @@ Este plano considera:
 | Riscos | PRD `27 e este plano `8 |
 | Decisões abertas e referências | PRD ``28–30 |
 
+A correspondência capítulo por capítulo está em [PRD-CONTENT-MAP.md](./PRD-CONTENT-MAP.md).
+
 **Limitações e condições pendentes:** os documentos de PRD não substituem revisão editorial do PDF, licença da obra ou aprovação do usuário sobre regras propostas de gamificação. Não classificar esses gates como concluídos.
 
 ---
