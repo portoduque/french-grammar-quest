@@ -150,7 +150,7 @@ def main():
     if args.write_report:
         dest.write_text(canonical(report), encoding="utf-8")
     if args.check_report:
-        require(dest.exists() and dest.read_text(encoding="utf-8") == canonical(report),
+        require(dest.exists() and read(dest) == report,
                 "phase-c-machine-audit.json is stale; run --write-report")
     print("PASS 28 chapters, 372 source pages, 233 groups, 2227 items and 113 reference pages")
     print("SOURCE PDF:", "SHA + text checked" if args.pdf else "not supplied (local snapshots only)")
