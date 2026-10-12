@@ -1,28 +1,33 @@
-# Phase A — Chapter 01 validation evidence
+# Chapter 01 — post-screenshot audit and semantic normalization
 
-## Automated audit results
+## Automated coverage
 
 | Check | Result |
 |---|---|
-| Source pages indexed and stored | **17/17**, PDF pages 14–30 |
-| Source selectable-text characters assigned theory/exercises | **24,378/24,378** (100% exact partition) |
-| Exercise groups | **10/10** |
-| Numbered questions | **100/100**, 10 per group |
-| Answer key entries associated | **100/100**, from PDF pages 499–500 |
-| Stable unique question IDs | **100/100** |
-| Complete theory source fragments preserved | **Yes** |
-| Page-level provenance on questions and theory | **Yes** |
-| Original book text accidentally released publicly | **No, private package only** |
+| Chapter pages indexed | 17/17, PDF pages 14–30 |
+| Original digital text assigned to theory/exercises | 24,378 / 24,378 characters |
+| Exercise groups | 10 / 10 |
+| Individual source questions | 100 / 100 |
+| Publisher answer key associations | 100 / 100 |
+| Source prompt/key lock | SHA-256 checked for all 100 question/key pairs |
+| Topic taxonomy | 3 macro topics; **13 fine-grained subtopics** |
+| Lesson source fragments | **31 unique IDs**, page spans checked for gaps and overlaps |
+| Conjugations/vocabulary | Rendered in Markdown tables; original extracted text preserved |
+| JSON Schema validation | Both chapter and exercise data checked by GitHub CI |
 
-## Known limitations — must remain explicit
+## Corrections implemented
 
-1. **PDF source defect:** the English comparison column on PDF page 28 is visibly truncated at the original page edge. This is not a parser defect. The same partial wording is retained in the private source-derived Markdown; no missing words were fabricated.
-2. **Visual fidelity:** page 28 was manually inspected in a rendered image. The structural checks compare digital text, not every graphic or font/formatting detail on all 17 pages. A full human visual proof of all chapter pages is **not certified**.
-3. **Source answer ≠ all possible correct answers:** the source key supplies a standard answer, not a complete list of paraphrases. Alternatives beyond explicitly printed 'Ils (Elles)' options require editorial review before strict automatic grading.
-4. **Tables:** verb conjugation lists are preserved in source-aligned text/code blocks rather than manually retabulated to avoid transcription errors. App-ready semantic table markup is future editorial work.
-5. **Exercise 1·6 question 6:** publisher answer key prints `J’habite` while the blank follows `Je`. The source answer is preserved, and a correct full answer requires elision of `Je` to `J’`; preserve `J’habite` and flag this item for special gameplay rendering.
-6. **Topic associations** are based on exercise position in the chapter, and complex cross-topic tags can be added with pedagogical review.
+- Created `theory-source.md` retaining the unchanged Phase A theory extraction; `theory.md` now has paragraphs and semantic tables instead of opaque code blocks.
+- Fixed wrapped French/English example pairs on pages 26–27; manually structured visible original text for page 28 and flagged clipped glosses without fabricating missing words.
+- Added specific subtopic IDs, ordered page ranges and bidirectional exercise links.
+- Replaced ambiguous lesson-fragment IDs with stable unique IDs and explicit page character offsets.
+- Added source-aware grading for free translation and explicit presentation for elision (`ch01-ex06-q06`) and informal pronoun override (`ch01-ex10-q06`).
+- Strengthened automated checks to catch missing subtopics, altered source question/key text, duplicate fragments or invalid offsets.
 
-## Gate decision
+## Remaining editorial uncertainty
 
-**Phase A machine-verified content deliverables complete:** first-chapter full text partition, exercises/questions and publisher answer keys are all accounted for. **Pedagogical/visual sign-off is conditional** on a full page-by-page human review and alternate edition for the clipped page 28 translation examples. No missing material is silently treated as verified.
+Automated checks and screenshot comparison **do not certify every word and visual styling** of all 17 source pages. Especially check accents, typographic emphasis and two-column text where reflow occurred. Page 28 includes pre-existing right-column clipping. The source keys are publisher examples, not an exhaustive set of acceptable answers. None of these concerns is silently treated as resolved.
+
+## Scope of completion
+
+The chapter 01 **structured content model and its automated gate** are implemented. Chapter 02–28 have *not* been transcribed; their inventory only is available in `manifest.json`. This phase adds no application.
