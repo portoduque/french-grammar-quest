@@ -167,3 +167,12 @@ conditionnel in the indirect speech.
                                                         Lyon.
 ```
 
+
+
+## Source theory recovered from exercise-boundary parsing
+
+> The paragraphs below were accidentally attached to the last exercise item in the automatic extraction. They are preserved here for learning-content completeness, but paragraph/table formatting and placement require visual editorial review against the PDF.
+
+### After ch18-ex02-q10 (source PDF pages 214,215,216)
+
+Learning la concordance des temps, that is, balancing tenses, is one of the most difficult tasks of a French learner. When switching from direct to indirect speech, some changes of tense occur when the main clause verb is in the passé composé. Here are the three main scenarios:

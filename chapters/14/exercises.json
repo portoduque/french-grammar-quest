@@ -167,7 +167,7 @@
         {
           "id": "ch14-ex01-q10",
           "number": 10,
-          "prompt": "Do not put in any garlic. __ The infinitive is used after verbs of perception (where the present participle is used in English). J’ai vu les moutons traverser la route. I saw the sheep crossing (cross) the road. Elle a entendu le coq chanter. She heard the rooster crowing (crow). On entendait le chef fredonner une We could hear the chef humming (hum chanson. a song. Elle a vu la biche sauter par-dessus la She saw the doe jumping (jump) over clôture. the fence. The infinitive is used in the interrogative infinitive. Que répondre? What can I (can we) answer? Comment le lui expliquer? How to explain it to him? Pourquoi protester? Why protest? Que dire? What is there to say? Quoi faire? What can we do? You learned faire in Chapter 4. This causative form with faire is used to express the idea of having something done by someone or of causing something to happen. Il a fait macérer la viande vingt-quatre He macerated the meat twenty-four heures. hours. Elle a fait rôtir le poulet. She roasted the chicken. J’ai fait griller le pain. I toasted the bread. J’ai fait tremper les pruneaux. I soaked the prunes. The infinitive is used after expressions conveying the idea of spending time. Elle passe son temps à créer de nouvelles She spends her time creating new recettes. recipes. Il passe ses vacances à lire des livres de He spends his vacation reading cuisine. cookbooks. Il a gaspillé sa vie à ne rien faire. He wasted his life doing nothing. Je passe mon temps à chercher de I spend my time looking for new nouvelles épices. spices. The infinitive often follows statements indicating a person’s posture. The preposition à precedes the infinitive. (Note the present participles in English.) Il est debout à éplucher des carottes. He is standing peeling carrots. Elle est assise à écosser des petits pois. She is sitting shelling peas. Il est accroupi dans le jardin à cueillir He is squatting in the garden picking des fraises. strawberries. Elle est à genoux à arracher les She is kneeling pulling out weeds. mauvaises herbes.",
+          "prompt": "Do not put in any garlic. __",
           "source_raw_prompt": "Do not put in any garlic.\n    _____________________________________________________________\n\n\n  The infinitive is used after verbs of perception (where the present participle is\nused in English).\n\n        J’ai vu les moutons traverser la route.  I saw the sheep crossing (cross) the\n                                                 road.\n       Elle a entendu le coq chanter.        She heard the rooster crowing (crow).\n     On entendait le chef fredonner une   We could hear the chef humming (hum\n          chanson.                         a song.\n       Elle a vu la biche sauter par-dessus la  She saw the doe jumping (jump) over\n           clôture.                                the fence.\n\n  The infinitive is used in the interrogative infinitive.\n\n     Que répondre?                  What can I (can we) answer?\n     Comment le lui expliquer?       How to explain it to him?       Pourquoi protester?             Why protest?\n     Que dire?                      What is there to say?\n      Quoi faire?                     What can we do?\n\n  You learned faire in Chapter 4. This causative form with faire is used to express\nthe idea of having something done by someone or of causing something to happen.\n\n          Il a fait macérer la viande vingt-quatre  He macerated the meat twenty-four\n          heures.                                  hours.\n       Elle a fait rôtir le poulet.              She roasted the chicken.\n        J’ai fait griller le pain.                       I toasted the bread.\n        J’ai fait tremper les pruneaux.              I soaked the prunes.\n\n  The infinitive is used after expressions conveying the idea of spending time.\n\n       Elle passe son temps à créer de nouvelles She spends her time creating new\n           recettes.                                     recipes.\n          Il passe ses vacances à lire des livres de  He spends his vacation reading\n           cuisine.                                 cookbooks.\n          Il a gaspillé sa vie à ne rien faire.       He wasted his life doing nothing.\n       Je passe mon temps à chercher de          I spend my time looking for new\n          nouvelles épices.                            spices.\n\n  The  infinitive  often  follows  statements  indicating a  person’s  posture. The\npreposition à precedes the infinitive. (Note the present participles in English.)\n\n          Il est debout à éplucher des carottes.  He is standing peeling carrots.\n       Elle est assise à écosser des petits pois. She is sitting shelling peas.\n          Il est accroupi dans le jardin à cueillir He is squatting in the garden picking\n         des fraises.                             strawberries.\n       Elle est à genoux à arracher les      She is kneeling pulling out weeds.\n         mauvaises herbes.\n\n\n\n  ",
           "pdf_pages": [
             176,
@@ -179,6 +179,11 @@
               "Ne pas mettre d’ail."
             ],
             "review_status": "publisher_source_not_independently_regraded"
+          },
+          "editorial_recovery": {
+            "moved_theory_to": "theory.md",
+            "source_text_retained_in": "source_raw_prompt",
+            "status": "recovered_requires_visual_editing"
           }
         }
       ],
@@ -551,7 +556,7 @@
         {
           "id": "ch14-ex03-q10",
           "number": 10,
-          "prompt": "allumer __ The infinitif passé commonly occurs after the preposition après (after), while the infinitif présent follows avant de (before). Gérard fait mariner la viande avant Gérard marinates the meat before d’éplucher un oignon. peeling an onion. Gérard fait mariner la viande après avoir Gérard marinates the meat after épluché un oignon. peeling an onion. Elle se lave les mains avant de décortiquer She washes her hands before les crevettes. shelling the shrimp. Elle se lave les mains après avoir She washes her hands after shellin décortiqué les crevettes. the shrimp. Je fais la cuisine avant d’aller au cinéma. I cook before going to the movies. Je fais la cuisine après être allé au cinéma. I cook after going to the movies. Elle lit le journal avant de se lever. She reads the paper before getting up. Elle lit le journal après s’être levée. She reads the paper after getting u",
+          "prompt": "allumer __",
           "source_raw_prompt": "allumer ________________\n\n\n\n  The infinitif passé commonly occurs after the preposition après (after), while the\ninfinitif présent follows avant de (before).\n\n      Gérard fait mariner la viande avant       Gérard marinates the meat before\n         d’éplucher un oignon.                     peeling an onion.\n      Gérard fait mariner la viande après avoir  Gérard marinates the meat after\n         épluché un oignon.                        peeling an onion.      Elle se lave les mains avant de décortiquer She washes her hands before\n          les crevettes.                                shelling the shrimp.\n      Elle se lave les mains après avoir         She washes her hands after shellin\n        décortiqué les crevettes.                   the shrimp.\n      Je fais la cuisine avant d’aller au cinéma.   I cook before going to the movies.\n      Je fais la cuisine après être allé au cinéma. I cook after going to the movies.\n      Elle lit le journal avant de se lever.       She reads the paper before getting\n                                                    up.\n      Elle lit le journal après s’être levée.       She reads the paper after getting u\n\n\n\n ",
           "pdf_pages": [
             179,
@@ -563,6 +568,11 @@
               "avoir allumé"
             ],
             "review_status": "publisher_source_not_independently_regraded"
+          },
+          "editorial_recovery": {
+            "moved_theory_to": "theory.md",
+            "source_text_retained_in": "source_raw_prompt",
+            "status": "recovered_requires_visual_editing"
           }
         }
       ],
