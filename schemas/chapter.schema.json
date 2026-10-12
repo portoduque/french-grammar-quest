@@ -1,13 +1,14 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "French Grammar Chapter Metadata",
+  "title": "French Grammar Quest — Chapter Metadata v1",
   "type": "object",
   "required": [
     "chapter",
     "title",
-    "pdf_pages",
+    "source",
     "topics",
     "exercise_ids",
+    "question_total",
     "validation"
   ],
   "properties": {
@@ -20,47 +21,84 @@
       "type": "string",
       "minLength": 1
     },
-    "pdf_pages": {
-      "type": "array",
-      "prefixItems": [
-        {
-          "type": "integer"
-        },
-        {
-          "type": "integer"
-        }
+    "source": {
+      "type": "object",
+      "required": [
+        "pdf_pages",
+        "answer_key_pdf_pages",
+        "source_sha256"
       ],
-      "minItems": 2,
-      "maxItems": 2
+      "properties": {
+        "pdf_pages": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "answer_key_pdf_pages": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "source_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "additionalProperties": false
     },
     "topics": {
       "type": "array",
+      "minItems": 1,
       "items": {
         "type": "object",
         "required": [
           "id",
-          "title"
+          "title",
+          "exercise_ids"
         ],
         "properties": {
           "id": {
-            "type": "string"
+            "type": "string",
+            "pattern": "^ch[0-9]{2}-t[0-9]{2}$"
           },
           "title": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
+          },
+          "exercise_ids": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
           }
-        }
+        },
+        "additionalProperties": false
       }
     },
     "exercise_ids": {
       "type": "array",
+      "minItems": 1,
       "uniqueItems": true,
       "items": {
-        "type": "string"
+        "type": "string",
+        "pattern": "^ch[0-9]{2}-ex[0-9]{2}$"
       }
+    },
+    "question_total": {
+      "type": "integer",
+      "minimum": 1
     },
     "validation": {
       "type": "object"
     }
   },
-  "additionalProperties": true
+  "additionalProperties": false
 }
