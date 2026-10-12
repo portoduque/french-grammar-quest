@@ -1,0 +1,34 @@
+ bleu(e)                               blue
+ bleu ciel                              sky blue
+ bleu clair                                  light blue
+ bleu foncé                          dark blue
+ bleu marine                        navy blue
+ bordeaux                          burgundy
+ gris(e)                              gray
+ jaune                                yellow
+ marron                          brown
+ noir(e)                               black
+ ocre                                 ochre
+ orange                            orange
+ rose                                  pink
+ rouge                                red
+ vert(e)                              green
+ vert olive                                olive green
+ violet(te)                             purple
+ à carreaux                          checked
+ à rayures                               striped
+ à fleurs                              flowered
+ à pois                                 polka-dotted
+ à volants                             flounced
+ à plis                                  pleated
+
+
+The placement of adjectives
+As you continue studying French, you’ll become familiar with the irregular feminine
+forms of certain adjectives. What is often more difficult is knowing where to place
+adjectives. In French, most qualificative adjectives follow the noun.
+
+       Carole aime les plats italiens.          Carole loves Italian dishes.
+       Danielle préfère la cuisine chinoise.     Danielle prefers Chinese cooking.
+          Il porte des chaussures noires.       He is wearing black shoes.
+       C’est un remède efficace.               This is an efficient remedy.

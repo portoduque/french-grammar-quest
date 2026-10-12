@@ -1,0 +1,1348 @@
+{
+  "chapter": 8,
+  "status": "machine_transcribed_editorial_visual_review_pending",
+  "exercises": [
+    {
+      "id": "ch08-ex01",
+      "source": {
+        "chapter": 8,
+        "exercise": "8.1",
+        "pdf_pages": [
+          105,
+          106
+        ]
+      },
+      "topic_ids": [
+        "ch08-t01"
+      ],
+      "instruction": "Mettre les verbes entre parenthèses à l’imparfait.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch08-ex01-q01",
+          "number": 1,
+          "prompt": "Il (voyager) __ chaque année en Australie.",
+          "source_raw_prompt": "Il (voyager) ________________ chaque année en Australie.\n\n ",
+          "pdf_pages": [
+            105
+          ],
+          "answer": {
+            "source_key": "voyageait",
+            "accepted": [
+              "voyageait"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex01-q02",
+          "number": 2,
+          "prompt": "Tu (faire) __ du sport à l’école?",
+          "source_raw_prompt": "Tu (faire) ________________ du sport à l’école?\n\n ",
+          "pdf_pages": [
+            105
+          ],
+          "answer": {
+            "source_key": "faisais",
+            "accepted": [
+              "faisais"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex01-q03",
+          "number": 3,
+          "prompt": "Nous (être) __ enchantés de notre expédition.",
+          "source_raw_prompt": "Nous (être) ________________ enchantés de notre expédition.\n\n ",
+          "pdf_pages": [
+            105
+          ],
+          "answer": {
+            "source_key": "étions",
+            "accepted": [
+              "étions"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex01-q04",
+          "number": 4,
+          "prompt": "Ils (boire) __ du café noir le matin.",
+          "source_raw_prompt": "Ils (boire) ________________ du café noir le matin.\n\n ",
+          "pdf_pages": [
+            105
+          ],
+          "answer": {
+            "source_key": "buvaient",
+            "accepted": [
+              "buvaient"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex01-q05",
+          "number": 5,
+          "prompt": "Je (être) __ champion de tennis.",
+          "source_raw_prompt": "Je (être) ________________ champion de tennis.\n\n ",
+          "pdf_pages": [
+            105
+          ],
+          "answer": {
+            "source_key": "J’étais",
+            "accepted": [
+              "J’étais"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex01-q06",
+          "number": 6,
+          "prompt": "Nous (aimer) __ faire la cuisine.",
+          "source_raw_prompt": "Nous (aimer) ________________ faire la cuisine.\n\n ",
+          "pdf_pages": [
+            105
+          ],
+          "answer": {
+            "source_key": "aimions",
+            "accepted": [
+              "aimions"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex01-q07",
+          "number": 7,
+          "prompt": "Elles (partager) __ une chambre à l’université.",
+          "source_raw_prompt": "Elles (partager) ________________ une chambre à l’université.\n\n ",
+          "pdf_pages": [
+            105
+          ],
+          "answer": {
+            "source_key": "partageaient",
+            "accepted": [
+              "partageaient"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex01-q08",
+          "number": 8,
+          "prompt": "Il (prendre) __ toujours une semaine de vacances en février.",
+          "source_raw_prompt": "Il (prendre) ________________ toujours une semaine de vacances en février.\n\n ",
+          "pdf_pages": [
+            105
+          ],
+          "answer": {
+            "source_key": "prenait",
+            "accepted": [
+              "prenait"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex01-q09",
+          "number": 9,
+          "prompt": "Le guide (encourager) __ les marcheurs.",
+          "source_raw_prompt": "Le guide (encourager) ________________ les marcheurs.\n\n",
+          "pdf_pages": [
+            105
+          ],
+          "answer": {
+            "source_key": "encourageait",
+            "accepted": [
+              "encourageait"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex01-q10",
+          "number": 10,
+          "prompt": "Vous (aller) __ au bord de la mer en été. Let’s look at the different uses of the imparfait. It is used for background and description. It describes a situation that existed in the past, a state of mind or being. Les rues étaient embouteillées. The streets were jammed. La circulation était fluide. The traffic was flowing. Il faisait trop chaud. It was too hot. Il avait faim. He was hungry. Elle ne savait pas quoi faire. She did not know what to do.",
+          "source_raw_prompt": "Vous (aller) ________________ au bord de la mer en été.   Let’s look at the different uses of the imparfait. It is used for background and\ndescription. It describes a situation that existed in the past, a state of mind or being.\n\n      Les rues étaient embouteillées.         The streets were jammed.\n      La circulation était fluide.             The traffic was flowing.\n          Il faisait trop chaud.                            It was too hot.\n          Il avait faim.                    He was hungry.\n       Elle ne savait pas quoi faire.           She did not know what to do.",
+          "pdf_pages": [
+            105,
+            106
+          ],
+          "answer": {
+            "source_key": "alliez",
+            "accepted": [
+              "alliez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch08-s01"
+      ]
+    },
+    {
+      "id": "ch08-ex02",
+      "source": {
+        "chapter": 8,
+        "exercise": "8.2",
+        "pdf_pages": [
+          106,
+          107,
+          108
+        ]
+      },
+      "topic_ids": [
+        "ch08-t02"
+      ],
+      "instruction": "Mettre les verbes entre parenthèses à l’imparfait.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch08-ex02-q01",
+          "number": 1,
+          "prompt": "Il (croire) __ que tu ne voulais pas venir.",
+          "source_raw_prompt": "Il (croire) ________________ que tu ne voulais pas venir.\n\n   ",
+          "pdf_pages": [
+            106
+          ],
+          "answer": {
+            "source_key": "croyait",
+            "accepted": [
+              "croyait"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex02-q02",
+          "number": 2,
+          "prompt": "Je (être) __ à la montagne.",
+          "source_raw_prompt": "Je (être) ________________ à la montagne.\n\n   ",
+          "pdf_pages": [
+            106
+          ],
+          "answer": {
+            "source_key": "J’étais",
+            "accepted": [
+              "J’étais"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex02-q03",
+          "number": 3,
+          "prompt": "Elle (penser) __ à ses prochaines vacances.",
+          "source_raw_prompt": "Elle (penser) ________________ à ses prochaines vacances.\n\n   ",
+          "pdf_pages": [
+            106
+          ],
+          "answer": {
+            "source_key": "pensait",
+            "accepted": [
+              "pensait"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex02-q04",
+          "number": 4,
+          "prompt": "Ils (espérer) __ un miracle.",
+          "source_raw_prompt": "Ils (espérer) ________________ un miracle.\n\n   ",
+          "pdf_pages": [
+            106
+          ],
+          "answer": {
+            "source_key": "espéraient",
+            "accepted": [
+              "espéraient"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex02-q05",
+          "number": 5,
+          "prompt": "Elle (avoir) __ très faim.",
+          "source_raw_prompt": "Elle (avoir) ________________ très faim.   ",
+          "pdf_pages": [
+            106,
+            107
+          ],
+          "answer": {
+            "source_key": "avait",
+            "accepted": [
+              "avait"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex02-q06",
+          "number": 6,
+          "prompt": "Je (savoir) __ qu’il avait raison.",
+          "source_raw_prompt": "Je (savoir) ________________ qu’il avait raison.\n\n   ",
+          "pdf_pages": [
+            107
+          ],
+          "answer": {
+            "source_key": "savais",
+            "accepted": [
+              "savais"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex02-q07",
+          "number": 7,
+          "prompt": "Nous (être) __ réalistes.",
+          "source_raw_prompt": "Nous (être) ________________ réalistes.\n\n   ",
+          "pdf_pages": [
+            107
+          ],
+          "answer": {
+            "source_key": "étions",
+            "accepted": [
+              "étions"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex02-q08",
+          "number": 8,
+          "prompt": "Vous (paraître) __ sceptique.",
+          "source_raw_prompt": "Vous (paraître) ________________ sceptique.\n\n   ",
+          "pdf_pages": [
+            107
+          ],
+          "answer": {
+            "source_key": "paraissiez",
+            "accepted": [
+              "paraissiez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex02-q09",
+          "number": 9,
+          "prompt": "L’exposition (être) __ fascinante.",
+          "source_raw_prompt": "L’exposition (être) ________________ fascinante.\n\n ",
+          "pdf_pages": [
+            107
+          ],
+          "answer": {
+            "source_key": "était",
+            "accepted": [
+              "était"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex02-q10",
+          "number": 10,
+          "prompt": "Il (faire) __ un temps glacial. Another use of the imparfait is to express habitual, repetitive action. It describes past events that were repeated. Used to and would (meaning habitually) are translated into French by the imparfait. Autrefois, elle faisait partie de la In the past, she used to belong to the cho chorale. Ils allaient en Inde chaque année. They used to go (would go) to India ever year. Il jouait au tennis le mardi. He used to (would) play tennis on Tuesdays. As you can see in the previous examples, some expressions of time or repetition may be an indication of the imparfait: souvent often fréquemment frequently toujours always le mardi on Tuesdays le vendredi on Fridays chaque jour every day tous les jours every day chaque semaine every week chaque mois every month chaque année every year d’ordinaire ordinarily d’habitude usually habituellement usually régulièrement regularly comme à l’accoutumée as usual autrefois formerly jadis in times past",
+          "source_raw_prompt": "Il (faire) ________________ un temps glacial.\n\n\n   Another use of the imparfait is to express habitual, repetitive action. It describes\npast events  that were  repeated. Used  to and would (meaning  habitually)  are\ntranslated into French by the imparfait.\n\n       Autrefois, elle faisait partie de la     In the past, she used to belong to the cho\n           chorale.\n         Ils allaient en Inde chaque année.   They used to go (would go) to India ever\n                                                   year.\n          Il jouait au tennis le mardi.       He used to (would) play tennis on\n                                             Tuesdays.\n\n  As you can see in the previous examples, some expressions of time or repetition\nmay be an indication of the imparfait:\n\n      souvent                                             often\n      fréquemment                                       frequently\n       toujours                                      always\n        le mardi                                   on Tuesdays\n        le vendredi                                 on Fridays\n      chaque jour                                     every day\n       tous les jours                                    every day\n      chaque semaine                                  every week\n      chaque mois                                     every month\n      chaque année                                    every year\n       d’ordinaire                                         ordinarily\n      d’habitude                                        usually\n       habituellement                                    usually\n       régulièrement                                     regularly     comme à l’accoutumée                          as usual\n       autrefois                                         formerly\n       jadis                                                  in times past\n\n\n\n  ",
+          "pdf_pages": [
+            107,
+            108
+          ],
+          "answer": {
+            "source_key": "faisait",
+            "accepted": [
+              "faisait"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch08-s02"
+      ]
+    },
+    {
+      "id": "ch08-ex03",
+      "source": {
+        "chapter": 8,
+        "exercise": "8.3",
+        "pdf_pages": [
+          108,
+          109
+        ]
+      },
+      "topic_ids": [
+        "ch08-t02"
+      ],
+      "instruction": "Mettre les verbes entre parenthèses à l’imparfait.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch08-ex03-q01",
+          "number": 1,
+          "prompt": "Nous (suivre) __ des cours de danse tous les mardis.",
+          "source_raw_prompt": "Nous (suivre) ________________ des cours de danse tous les mardis.\n\n   ",
+          "pdf_pages": [
+            108
+          ],
+          "answer": {
+            "source_key": "suivions",
+            "accepted": [
+              "suivions"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex03-q02",
+          "number": 2,
+          "prompt": "Je (faire) __ de la natation tous les jours.",
+          "source_raw_prompt": "Je (faire) ________________ de la natation tous les jours.\n\n   ",
+          "pdf_pages": [
+            108
+          ],
+          "answer": {
+            "source_key": "faisais",
+            "accepted": [
+              "faisais"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex03-q03",
+          "number": 3,
+          "prompt": "La vie (être) __ plus facile.",
+          "source_raw_prompt": "La vie (être) ________________ plus facile.\n\n   ",
+          "pdf_pages": [
+            108
+          ],
+          "answer": {
+            "source_key": "était",
+            "accepted": [
+              "était"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex03-q04",
+          "number": 4,
+          "prompt": "Nous (faire) __ la grasse matinée tous les dimanches.",
+          "source_raw_prompt": "Nous (faire) ________________ la grasse matinée tous les dimanches.\n\n   ",
+          "pdf_pages": [
+            108
+          ],
+          "answer": {
+            "source_key": "faisions",
+            "accepted": [
+              "faisions"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex03-q05",
+          "number": 5,
+          "prompt": "À cette époque, ils (habiter) __ en banlieue.",
+          "source_raw_prompt": "À cette époque, ils (habiter) ________________ en banlieue.\n\n   ",
+          "pdf_pages": [
+            108
+          ],
+          "answer": {
+            "source_key": "habitaient",
+            "accepted": [
+              "habitaient"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex03-q06",
+          "number": 6,
+          "prompt": "Nous (boire) __ du café.",
+          "source_raw_prompt": "Nous (boire) ________________ du café.\n\n   ",
+          "pdf_pages": [
+            108
+          ],
+          "answer": {
+            "source_key": "buvions",
+            "accepted": [
+              "buvions"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex03-q07",
+          "number": 7,
+          "prompt": "Autrefois, ils (assister) __ à tous les concerts.",
+          "source_raw_prompt": "Autrefois, ils (assister) ________________ à tous les concerts.\n\n   ",
+          "pdf_pages": [
+            108
+          ],
+          "answer": {
+            "source_key": "assistaient",
+            "accepted": [
+              "assistaient"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex03-q08",
+          "number": 8,
+          "prompt": "Dans son enfance, elle (faire) __ de l’équitation.",
+          "source_raw_prompt": "Dans son enfance, elle (faire) ________________ de l’équitation.\n\n   ",
+          "pdf_pages": [
+            108
+          ],
+          "answer": {
+            "source_key": "faisait",
+            "accepted": [
+              "faisait"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex03-q09",
+          "number": 9,
+          "prompt": "Dans le passé, vous (se voir) __ plus souvent.",
+          "source_raw_prompt": "Dans le passé, vous (se voir) ________________ plus souvent.\n\n ",
+          "pdf_pages": [
+            108
+          ],
+          "answer": {
+            "source_key": "vous voyiez",
+            "accepted": [
+              "vous voyiez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex03-q10",
+          "number": 10,
+          "prompt": "Elle (travailler) __ chez Guerlain. The imparfait is also used to describe a continuous action that was going on in the past when another action (expressed in the passé composé) interrupted it. Elle regardait la télévision quand She was watching television when soudain elle a entendu un grand bruit. suddenly she heard a loud noise. Il faisait ses devoirs quand son frère est He was doing his homework when h arrivé. brother arrived. To express the idea that an action had been going on for a period of time before being interrupted, use the imparfait with depuis. This is the equivalent to the past of depuis + present tense you studied in Chapter 1. Ils étaient à la montagne depuis une They had been in the mountains for semaine quand ils ont décidé d’aller au week when they decided to go to bord de la mer. the seashore. Il randonnait depuis trois jours quand il He had been hiking for three days a trouvé cette belle auberge. when he found this beautiful inn",
+          "source_raw_prompt": "Elle (travailler) ________________ chez Guerlain.\n\n\n\n  The imparfait is also used to describe a continuous action that was going on in\nthe past when another action (expressed in the passé composé) interrupted it.\n\n       Elle regardait la télévision quand       She was watching television when\n         soudain elle a entendu un grand bruit.    suddenly she heard a loud noise.\n          Il faisait ses devoirs quand son frère est  He was doing his homework when h\n          arrivé.                                 brother arrived.\n\n  To express the idea that an action had been going on for a period of time before\nbeing interrupted, use the imparfait with depuis. This is the equivalent to the past of\ndepuis + present tense you studied in Chapter 1.       Ils étaient à la montagne depuis une     They had been in the mountains for\n        semaine quand ils ont décidé d’aller au  week when they decided to go to\n        bord de la mer.                            the seashore.\n        Il randonnait depuis trois jours quand il He had been hiking for three days\n       a trouvé cette belle auberge.           when he found this beautiful inn\n\n\n\n ",
+          "pdf_pages": [
+            108,
+            109
+          ],
+          "answer": {
+            "source_key": "travaillait",
+            "accepted": [
+              "travaillait"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch08-s02"
+      ]
+    },
+    {
+      "id": "ch08-ex04",
+      "source": {
+        "chapter": 8,
+        "exercise": "8.4",
+        "pdf_pages": [
+          109
+        ]
+      },
+      "topic_ids": [
+        "ch08-t02"
+      ],
+      "instruction": "Mettre les verbes entre parenthèses à l’imparfait.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch08-ex04-q01",
+          "number": 1,
+          "prompt": "Il (faire) __ un discours quand quelqu’un dans l’assistance l’a interrompu.",
+          "source_raw_prompt": "Il (faire) ________________ un discours quand quelqu’un dans l’assistance\n    l’a interrompu.\n\n ",
+          "pdf_pages": [
+            109
+          ],
+          "answer": {
+            "source_key": "faisait",
+            "accepted": [
+              "faisait"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex04-q02",
+          "number": 2,
+          "prompt": "Je (dormir) __ quand le chat a sauté sur mon lit.",
+          "source_raw_prompt": "Je (dormir) ________________ quand le chat a sauté sur mon lit.\n\n ",
+          "pdf_pages": [
+            109
+          ],
+          "answer": {
+            "source_key": "dormais",
+            "accepted": [
+              "dormais"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex04-q03",
+          "number": 3,
+          "prompt": "Nous (bavarder) __ depuis une heure quand il est arrivé.",
+          "source_raw_prompt": "Nous (bavarder) ________________ depuis une heure quand il est arrivé.\n\n ",
+          "pdf_pages": [
+            109
+          ],
+          "answer": {
+            "source_key": "bavardions",
+            "accepted": [
+              "bavardions"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex04-q04",
+          "number": 4,
+          "prompt": "Ils (se reposer) __ quand une alarme a retenti.",
+          "source_raw_prompt": "Ils (se reposer) ________________ quand une alarme a retenti.\n\n ",
+          "pdf_pages": [
+            109
+          ],
+          "answer": {
+            "source_key": "se reposaient",
+            "accepted": [
+              "se reposaient"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex04-q05",
+          "number": 5,
+          "prompt": "Vous (parler) __ depuis un moment quand soudain il s’est levé.",
+          "source_raw_prompt": "Vous (parler) ________________ depuis un moment quand soudain il s’est\n    levé.\n\n ",
+          "pdf_pages": [
+            109
+          ],
+          "answer": {
+            "source_key": "parliez",
+            "accepted": [
+              "parliez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex04-q06",
+          "number": 6,
+          "prompt": "Elle (étudier) __ l’architecture depuis un an quand elle a décidé de changer de filière.",
+          "source_raw_prompt": "Elle (étudier) ________________ l’architecture depuis un an quand elle a\n   décidé de changer de filière.\n\n ",
+          "pdf_pages": [
+            109
+          ],
+          "answer": {
+            "source_key": "étudiait",
+            "accepted": [
+              "étudiait"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex04-q07",
+          "number": 7,
+          "prompt": "Ils (danser) __ quand la musique s’est arrêtée.",
+          "source_raw_prompt": "Ils (danser) ________________ quand la musique s’est arrêtée.\n\n ",
+          "pdf_pages": [
+            109
+          ],
+          "answer": {
+            "source_key": "dansaient",
+            "accepted": [
+              "dansaient"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex04-q08",
+          "number": 8,
+          "prompt": "Il (réfléchir) __ quand une idée lui a traversé l’esprit.",
+          "source_raw_prompt": "Il (réfléchir) ________________ quand une idée lui a traversé l’esprit.\n\n ",
+          "pdf_pages": [
+            109
+          ],
+          "answer": {
+            "source_key": "réfléchissait",
+            "accepted": [
+              "réfléchissait"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex04-q09",
+          "number": 9,
+          "prompt": "Elle (travailler) __ dans son bureau quand ils ont frappé à la porte.",
+          "source_raw_prompt": "Elle (travailler) ________________ dans son bureau quand ils ont frappé à la\n    porte.\n\n",
+          "pdf_pages": [
+            109
+          ],
+          "answer": {
+            "source_key": "travaillait",
+            "accepted": [
+              "travaillait"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex04-q10",
+          "number": 10,
+          "prompt": "Je (attendre) __ Roland depuis dix minutes quand enfin il est arrivé.",
+          "source_raw_prompt": "Je (attendre) ________________ Roland depuis dix minutes quand enfin il est\n    arrivé.\n\n\n\n\n ",
+          "pdf_pages": [
+            109
+          ],
+          "answer": {
+            "source_key": "J’attendais",
+            "accepted": [
+              "J’attendais"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch08-s02"
+      ]
+    },
+    {
+      "id": "ch08-ex05",
+      "source": {
+        "chapter": 8,
+        "exercise": "8.5",
+        "pdf_pages": [
+          109,
+          110
+        ]
+      },
+      "topic_ids": [
+        "ch08-t02"
+      ],
+      "instruction": "Traduire les phrases suivantes en utilisant la forme tu si nécessaire.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch08-ex05-q01",
+          "number": 1,
+          "prompt": "I used to play tennis every Thursday. __",
+          "source_raw_prompt": "I used to play tennis every Thursday.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            110
+          ],
+          "answer": {
+            "source_key": "Je jouais au tennis tous les jeudis.",
+            "accepted": [
+              "Je jouais au tennis tous les jeudis."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex05-q02",
+          "number": 2,
+          "prompt": "You were studying when the phone rang. __",
+          "source_raw_prompt": "You were studying when the phone rang.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            110
+          ],
+          "answer": {
+            "source_key": "Tu étudiais quand le téléphone a sonné.",
+            "accepted": [
+              "Tu étudiais quand le téléphone a sonné."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex05-q03",
+          "number": 3,
+          "prompt": "We were sleeping when suddenly we heard a loud noise. __",
+          "source_raw_prompt": "We were sleeping when suddenly we heard a loud noise.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            110
+          ],
+          "answer": {
+            "source_key": "Nous dormions quand tout à coup nous avons entendu un bruit fort.",
+            "accepted": [
+              "Nous dormions quand tout à coup nous avons entendu un bruit fort."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex05-q04",
+          "number": 4,
+          "prompt": "The restaurant was crowded. __",
+          "source_raw_prompt": "The restaurant was crowded.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            110
+          ],
+          "answer": {
+            "source_key": "Le restaurant était bondé.",
+            "accepted": [
+              "Le restaurant était bondé."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex05-q05",
+          "number": 5,
+          "prompt": "It was cold in the mountains. __",
+          "source_raw_prompt": "It was cold in the mountains.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            110
+          ],
+          "answer": {
+            "source_key": "Il faisait froid à la montagne.",
+            "accepted": [
+              "Il faisait froid à la montagne."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex05-q06",
+          "number": 6,
+          "prompt": "They looked tired. __",
+          "source_raw_prompt": "They looked tired.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            110
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) avaient l’air fatigué.",
+            "accepted": [
+              "Ils (Elles) avaient l’air fatigué."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex05-q07",
+          "number": 7,
+          "prompt": "The play was fascinating. __",
+          "source_raw_prompt": "The play was fascinating.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            110
+          ],
+          "answer": {
+            "source_key": "La pièce était fascinante.",
+            "accepted": [
+              "La pièce était fascinante."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex05-q08",
+          "number": 8,
+          "prompt": "She used to work at the Galeries Lafayette. __",
+          "source_raw_prompt": "She used to work at the Galeries Lafayette.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            110
+          ],
+          "answer": {
+            "source_key": "Elle travaillait aux Galeries Lafayette.",
+            "accepted": [
+              "Elle travaillait aux Galeries Lafayette."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex05-q09",
+          "number": 9,
+          "prompt": "We were waiting for the bus when it started to rain. __",
+          "source_raw_prompt": "We were waiting for the bus when it started to rain.\n    _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            110
+          ],
+          "answer": {
+            "source_key": "Nous attendions l’autobus quand il a commencé à pleuvoir.",
+            "accepted": [
+              "Nous attendions l’autobus quand il a commencé à pleuvoir."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex05-q10",
+          "number": 10,
+          "prompt": "She knew they were wrong. __",
+          "source_raw_prompt": "She knew they were wrong.\n    _____________________________________________________________",
+          "pdf_pages": [
+            110,
+            111
+          ],
+          "answer": {
+            "source_key": "Elle savait qu’ils (elles) avaient tort.",
+            "accepted": [
+              "Elle savait qu’ils (elles) avaient tort."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch08-s02"
+      ]
+    },
+    {
+      "id": "ch08-ex06",
+      "source": {
+        "chapter": 8,
+        "exercise": "8.6",
+        "pdf_pages": [
+          111,
+          112
+        ]
+      },
+      "topic_ids": [
+        "ch08-t03"
+      ],
+      "instruction": "Mettre les verbes entre parenthèses à l’imparfait.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch08-ex06-q01",
+          "number": 1,
+          "prompt": "Si on (aller) __ se promener dans la forêt?",
+          "source_raw_prompt": "Si on (aller) ________________ se promener dans la forêt?\n\n   ",
+          "pdf_pages": [
+            111
+          ],
+          "answer": {
+            "source_key": "allait",
+            "accepted": [
+              "allait"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex06-q02",
+          "number": 2,
+          "prompt": "Si on (déjeuner) __ ensemble?",
+          "source_raw_prompt": "Si on (déjeuner) ________________ ensemble?\n\n   ",
+          "pdf_pages": [
+            111
+          ],
+          "answer": {
+            "source_key": "déjeunait",
+            "accepted": [
+              "déjeunait"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex06-q03",
+          "number": 3,
+          "prompt": "Si on (apporter) __ une boîte de chocolats à Julie?",
+          "source_raw_prompt": "Si on (apporter) ________________ une boîte de chocolats à Julie?\n\n   ",
+          "pdf_pages": [
+            111
+          ],
+          "answer": {
+            "source_key": "apportait",
+            "accepted": [
+              "apportait"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex06-q04",
+          "number": 4,
+          "prompt": "Si on (attendre) __ encore quelques minutes?",
+          "source_raw_prompt": "Si on (attendre) ________________ encore quelques minutes?\n\n   ",
+          "pdf_pages": [
+            111
+          ],
+          "answer": {
+            "source_key": "attendait",
+            "accepted": [
+              "attendait"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex06-q05",
+          "number": 5,
+          "prompt": "Si on (commander) __ un dessert?",
+          "source_raw_prompt": "Si on (commander) ________________ un dessert?\n\n   ",
+          "pdf_pages": [
+            111
+          ],
+          "answer": {
+            "source_key": "commandait",
+            "accepted": [
+              "commandait"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex06-q06",
+          "number": 6,
+          "prompt": "Si on (faire) __ un voyage en Grèce?",
+          "source_raw_prompt": "Si on (faire) ________________ un voyage en Grèce?\n\n   ",
+          "pdf_pages": [
+            111
+          ],
+          "answer": {
+            "source_key": "faisait",
+            "accepted": [
+              "faisait"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex06-q07",
+          "number": 7,
+          "prompt": "Si on (ouvrir) __ un restaurant?",
+          "source_raw_prompt": "Si on (ouvrir) ________________ un restaurant?\n\n   ",
+          "pdf_pages": [
+            111
+          ],
+          "answer": {
+            "source_key": "ouvrait",
+            "accepted": [
+              "ouvrait"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex06-q08",
+          "number": 8,
+          "prompt": "Si on (investir) __ dans cette entreprise?",
+          "source_raw_prompt": "Si on (investir) ________________ dans cette entreprise?\n\n   ",
+          "pdf_pages": [
+            111
+          ],
+          "answer": {
+            "source_key": "investissait",
+            "accepted": [
+              "investissait"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex06-q09",
+          "number": 9,
+          "prompt": "Si on (réfléchir) __ avant de prendre une décision?",
+          "source_raw_prompt": "Si on (réfléchir) ________________ avant de prendre une décision?\n\n ",
+          "pdf_pages": [
+            111
+          ],
+          "answer": {
+            "source_key": "réfléchissait",
+            "accepted": [
+              "réfléchissait"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex06-q10",
+          "number": 10,
+          "prompt": "Si on (choisir) __ une autre formule? You will encounter the imparfait in other idiomatic constructions, for instance, preceded by si seulement, to express a wish or a regret. Si seulement on pouvait prendre des vacances!If only we could take a vacatio Si seulement elle était à l’heure! If only she were on time! Si seulement ils habitaient plus près! If only they lived closer! Si seulement vous saviez! If only you knew! In Chapter 4, you studied the immediate past with the verb venir + de + infinitive. The immediate past can also be used in the imparfait to describe an action that had just happened. Elle vient de téléphoner. She has just called. Elle venait de téléphoner quand il est She had just called when he walked in entré. Il vient d’accepter ce poste. He just accepted this position. Il venait d’acccepter ce poste quand on He had just accepted this position wh lui en a proposé un autre. he was offered another one.",
+          "source_raw_prompt": "Si on (choisir) ________________ une autre formule?\n\n\n\n  You will encounter the imparfait in other idiomatic constructions, for instance,\npreceded by si seulement, to express a wish or a regret.\n\n       Si seulement on pouvait prendre des vacances!If only we could take a vacatio\n       Si seulement elle était à l’heure!                    If only she were on time!\n       Si seulement ils habitaient plus près!             If only they lived closer!\n       Si seulement vous saviez!                            If only you knew!\n\n   In Chapter 4, you studied the immediate past with the verb venir + de +\ninfinitive. The immediate past can also be used in the imparfait to describe an action\nthat had just happened.\n\n       Elle vient de téléphoner.             She has just called.\n       Elle venait de téléphoner quand il est  She had just called when he walked in\n           entré.\n          Il vient d’accepter ce poste.        He just accepted this position.        Il venait d’acccepter ce poste quand on He had just accepted this position wh\n           lui en a proposé un autre.             he was offered another one.\n\n\n\n ",
+          "pdf_pages": [
+            111,
+            112
+          ],
+          "answer": {
+            "source_key": "choisissait",
+            "accepted": [
+              "choisissait"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch08-s03"
+      ]
+    },
+    {
+      "id": "ch08-ex07",
+      "source": {
+        "chapter": 8,
+        "exercise": "8.7",
+        "pdf_pages": [
+          112
+        ]
+      },
+      "topic_ids": [
+        "ch08-t03"
+      ],
+      "instruction": "Passé composé ou imparfait?",
+      "interaction_type": "free_response",
+      "questions": [
+        {
+          "id": "ch08-ex07-q01",
+          "number": 1,
+          "prompt": "Je (aller) __ chez le dentiste hier.",
+          "source_raw_prompt": "Je (aller) ________________ chez le dentiste hier.\n\n ",
+          "pdf_pages": [
+            112
+          ],
+          "answer": {
+            "source_key": "Je suis allé(e) chez le dentiste hier.",
+            "accepted": [
+              "Je suis allé(e) chez le dentiste hier."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex07-q02",
+          "number": 2,
+          "prompt": "Quand il (être) __ adolescent, il (jouer) __ au football.",
+          "source_raw_prompt": "Quand il (être) ________________ adolescent, il (jouer) ________________\n   au football.\n\n ",
+          "pdf_pages": [
+            112
+          ],
+          "answer": {
+            "source_key": "Quand il était adolescent, il jouait au football.",
+            "accepted": [
+              "Quand il était adolescent, il jouait au football."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex07-q03",
+          "number": 3,
+          "prompt": "À cette époque-là, ils (tenir) __ une brasserie place d’Italie.",
+          "source_raw_prompt": "À cette époque-là, ils (tenir) ________________ une brasserie place d’Italie.\n\n ",
+          "pdf_pages": [
+            112
+          ],
+          "answer": {
+            "source_key": "À cette époque-là, ils tenaient une brasserie place d’Italie.",
+            "accepted": [
+              "À cette époque-là, ils tenaient une brasserie place d’Italie."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex07-q04",
+          "number": 4,
+          "prompt": "Ils (randonner) __ dans les Alpes le week-end passé.",
+          "source_raw_prompt": "Ils (randonner) ________________ dans les Alpes le week-end passé.\n\n ",
+          "pdf_pages": [
+            112
+          ],
+          "answer": {
+            "source_key": "Ils ont randonné dans les Alpes le week-end passé.",
+            "accepted": [
+              "Ils ont randonné dans les Alpes le week-end passé."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex07-q05",
+          "number": 5,
+          "prompt": "Nous (dîner) __ dans ce restaurant tous les samedis.",
+          "source_raw_prompt": "Nous (dîner) ________________ dans ce restaurant tous les samedis.\n\n ",
+          "pdf_pages": [
+            112
+          ],
+          "answer": {
+            "source_key": "Nous dînions dans ce restaurant tous les samedis.",
+            "accepted": [
+              "Nous dînions dans ce restaurant tous les samedis."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex07-q06",
+          "number": 6,
+          "prompt": "Si on (prendre) __ un café?",
+          "source_raw_prompt": "Si on (prendre) ________________ un café?\n\n ",
+          "pdf_pages": [
+            112
+          ],
+          "answer": {
+            "source_key": "Si on prenait un café?",
+            "accepted": [
+              "Si on prenait un café?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex07-q07",
+          "number": 7,
+          "prompt": "Tu (avoir) __ l’air fatigué.",
+          "source_raw_prompt": "Tu (avoir) ________________ l’air fatigué.\n\n ",
+          "pdf_pages": [
+            112
+          ],
+          "answer": {
+            "source_key": "Tu avais l’air fatigué.",
+            "accepted": [
+              "Tu avais l’air fatigué."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex07-q08",
+          "number": 8,
+          "prompt": "Chaque jour, il (écrire) __ une lettre à son amie.",
+          "source_raw_prompt": "Chaque jour, il (écrire) ________________ une lettre à son amie.\n\n ",
+          "pdf_pages": [
+            112
+          ],
+          "answer": {
+            "source_key": "Chaque jour, il écrivait une lettre à son amie.",
+            "accepted": [
+              "Chaque jour, il écrivait une lettre à son amie."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex07-q09",
+          "number": 9,
+          "prompt": "Je (regarder) __ un film quand elle (arriver) __ .",
+          "source_raw_prompt": "Je (regarder) ________________ un film quand elle (arriver)\n   _________________.\n\n",
+          "pdf_pages": [
+            112
+          ],
+          "answer": {
+            "source_key": "Je regardais un film quand elle est arrivée.",
+            "accepted": [
+              "Je regardais un film quand elle est arrivée."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch08-ex07-q10",
+          "number": 10,
+          "prompt": "La campagne (être) __ si belle.",
+          "source_raw_prompt": "La campagne (être) ________________ si belle.",
+          "pdf_pages": [
+            112
+          ],
+          "answer": {
+            "source_key": "La campagne était si belle.",
+            "accepted": [
+              "La campagne était si belle."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch08-s03"
+      ]
+    }
+  ]
+}

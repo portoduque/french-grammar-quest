@@ -1,0 +1,1738 @@
+{
+  "chapter": 20,
+  "status": "machine_transcribed_with_manual_boundary_repairs_editorial_visual_review_pending",
+  "exercises": [
+    {
+      "id": "ch20-ex01",
+      "source": {
+        "chapter": 20,
+        "exercise": "20.1",
+        "pdf_pages": [
+          230,
+          231
+        ]
+      },
+      "topic_ids": [
+        "ch20-t03"
+      ],
+      "instruction": "Compléter avec l’article partitif approprié.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch20-ex01-q01",
+          "number": 1,
+          "prompt": "Il prend __ vacances.",
+          "source_raw_prompt": "Il prend _______ vacances.\n\n   ",
+          "pdf_pages": [
+            231
+          ],
+          "answer": {
+            "source_key": "des",
+            "accepted": [
+              "des"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex01-q02",
+          "number": 2,
+          "prompt": "Nous mangeons __ pain.",
+          "source_raw_prompt": "Nous mangeons _______ pain.\n\n   ",
+          "pdf_pages": [
+            231
+          ],
+          "answer": {
+            "source_key": "du",
+            "accepted": [
+              "du"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex01-q03",
+          "number": 3,
+          "prompt": "Elle visite __ monuments.",
+          "source_raw_prompt": "Elle visite _______ monuments.\n\n   ",
+          "pdf_pages": [
+            231
+          ],
+          "answer": {
+            "source_key": "des",
+            "accepted": [
+              "des"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex01-q04",
+          "number": 4,
+          "prompt": "Elle a __ chance.",
+          "source_raw_prompt": "Elle a _______ chance.\n\n   ",
+          "pdf_pages": [
+            231
+          ],
+          "answer": {
+            "source_key": "de la",
+            "accepted": [
+              "de la"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex01-q05",
+          "number": 5,
+          "prompt": "Il met __ ail dans la salade.",
+          "source_raw_prompt": "Il met _______ ail dans la salade.\n\n   ",
+          "pdf_pages": [
+            231
+          ],
+          "answer": {
+            "source_key": "de l’",
+            "accepted": [
+              "de l’"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex01-q06",
+          "number": 6,
+          "prompt": "Vous choisissez __ cadeaux pour vos amis.",
+          "source_raw_prompt": "Vous choisissez _______ cadeaux pour vos amis.\n\n   ",
+          "pdf_pages": [
+            231
+          ],
+          "answer": {
+            "source_key": "des",
+            "accepted": [
+              "des"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex01-q07",
+          "number": 7,
+          "prompt": "Il boit __ lait.",
+          "source_raw_prompt": "Il boit _______ lait.\n\n   ",
+          "pdf_pages": [
+            231
+          ],
+          "answer": {
+            "source_key": "du",
+            "accepted": [
+              "du"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex01-q08",
+          "number": 8,
+          "prompt": "Nous envoyons __ cartes postales en vacances.",
+          "source_raw_prompt": "Nous envoyons _______ cartes postales en vacances.\n\n   ",
+          "pdf_pages": [
+            231
+          ],
+          "answer": {
+            "source_key": "des",
+            "accepted": [
+              "des"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex01-q09",
+          "number": 9,
+          "prompt": "Tu plantes __ légumes.",
+          "source_raw_prompt": "Tu plantes _______ légumes.\n\n ",
+          "pdf_pages": [
+            231
+          ],
+          "answer": {
+            "source_key": "des",
+            "accepted": [
+              "des"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex01-q10",
+          "number": 10,
+          "prompt": "Elle veut __ crème fraîche.",
+          "source_raw_prompt": "Elle veut _______ crème fraîche.",
+          "pdf_pages": [
+            231,
+            232,
+            233,
+            234,
+            235,
+            236,
+            237
+          ],
+          "answer": {
+            "source_key": "de la",
+            "accepted": [
+              "de la"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch20-s04"
+      ]
+    },
+    {
+      "id": "ch20-ex02",
+      "source": {
+        "chapter": 20,
+        "exercise": "20.2",
+        "pdf_pages": [
+          237,
+          238
+        ]
+      },
+      "topic_ids": [
+        "ch20-t10"
+      ],
+      "instruction": "Masculin ou féminin? Le ou la?",
+      "interaction_type": "free_response",
+      "questions": [
+        {
+          "id": "ch20-ex02-q01",
+          "number": 1,
+          "prompt": "__ réveil",
+          "source_raw_prompt": "______ réveil\n\n   ",
+          "pdf_pages": [
+            237
+          ],
+          "answer": {
+            "source_key": "le",
+            "accepted": [
+              "le"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex02-q02",
+          "number": 2,
+          "prompt": "__ chanteur",
+          "source_raw_prompt": "______ chanteur\n\n   ",
+          "pdf_pages": [
+            237
+          ],
+          "answer": {
+            "source_key": "le",
+            "accepted": [
+              "le"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex02-q03",
+          "number": 3,
+          "prompt": "__ culture",
+          "source_raw_prompt": "______ culture\n\n   ",
+          "pdf_pages": [
+            237
+          ],
+          "answer": {
+            "source_key": "la",
+            "accepted": [
+              "la"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex02-q04",
+          "number": 4,
+          "prompt": "__ propriété",
+          "source_raw_prompt": "______ propriété\n\n   ",
+          "pdf_pages": [
+            237
+          ],
+          "answer": {
+            "source_key": "la",
+            "accepted": [
+              "la"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex02-q05",
+          "number": 5,
+          "prompt": "__ courage",
+          "source_raw_prompt": "______ courage\n\n   ",
+          "pdf_pages": [
+            237
+          ],
+          "answer": {
+            "source_key": "le",
+            "accepted": [
+              "le"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex02-q06",
+          "number": 6,
+          "prompt": "__ chance",
+          "source_raw_prompt": "______ chance\n\n   ",
+          "pdf_pages": [
+            237
+          ],
+          "answer": {
+            "source_key": "la",
+            "accepted": [
+              "la"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex02-q07",
+          "number": 7,
+          "prompt": "__ document",
+          "source_raw_prompt": "______ document\n\n   ",
+          "pdf_pages": [
+            237
+          ],
+          "answer": {
+            "source_key": "le",
+            "accepted": [
+              "le"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex02-q08",
+          "number": 8,
+          "prompt": "__ restaurant",
+          "source_raw_prompt": "______ restaurant\n\n   ",
+          "pdf_pages": [
+            237
+          ],
+          "answer": {
+            "source_key": "le",
+            "accepted": [
+              "le"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex02-q09",
+          "number": 9,
+          "prompt": "__ beauté",
+          "source_raw_prompt": "______ beauté",
+          "pdf_pages": [
+            237,
+            238
+          ],
+          "answer": {
+            "source_key": "la",
+            "accepted": [
+              "la"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex02-q10",
+          "number": 10,
+          "prompt": "__ gouvernement",
+          "source_raw_prompt": "______ gouvernement\n\n\n\n\n ",
+          "pdf_pages": [
+            237,
+            238
+          ],
+          "answer": {
+            "source_key": "le",
+            "accepted": [
+              "le"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch20-s07"
+      ]
+    },
+    {
+      "id": "ch20-ex03",
+      "source": {
+        "chapter": 20,
+        "exercise": "20.3",
+        "pdf_pages": [
+          238
+        ]
+      },
+      "topic_ids": [
+        "ch20-t10"
+      ],
+      "instruction": "Mettre au masculin les noms suivants. Ne pas oublier l’article défini.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch20-ex03-q01",
+          "number": 1,
+          "prompt": "reine __",
+          "source_raw_prompt": "reine ________________\n\n ",
+          "pdf_pages": [
+            238
+          ],
+          "answer": {
+            "source_key": "le roi",
+            "accepted": [
+              "le roi"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex03-q02",
+          "number": 2,
+          "prompt": "sœur __",
+          "source_raw_prompt": "sœur ________________\n\n ",
+          "pdf_pages": [
+            238
+          ],
+          "answer": {
+            "source_key": "le frère",
+            "accepted": [
+              "le frère"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex03-q03",
+          "number": 3,
+          "prompt": "grand-mère __",
+          "source_raw_prompt": "grand-mère ________________\n\n ",
+          "pdf_pages": [
+            238
+          ],
+          "answer": {
+            "source_key": "le grand-père",
+            "accepted": [
+              "le grand-père"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex03-q04",
+          "number": 4,
+          "prompt": "vendeuse __",
+          "source_raw_prompt": "vendeuse ________________\n\n ",
+          "pdf_pages": [
+            238
+          ],
+          "answer": {
+            "source_key": "le vendeur",
+            "accepted": [
+              "le vendeur"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex03-q05",
+          "number": 5,
+          "prompt": "décoratrice __",
+          "source_raw_prompt": "décoratrice ________________\n\n ",
+          "pdf_pages": [
+            238
+          ],
+          "answer": {
+            "source_key": "le décorateur",
+            "accepted": [
+              "le décorateur"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex03-q06",
+          "number": 6,
+          "prompt": "nièce __",
+          "source_raw_prompt": "nièce ________________\n\n ",
+          "pdf_pages": [
+            238
+          ],
+          "answer": {
+            "source_key": "le neveu",
+            "accepted": [
+              "le neveu"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex03-q07",
+          "number": 7,
+          "prompt": "fille __",
+          "source_raw_prompt": "fille ________________\n\n ",
+          "pdf_pages": [
+            238
+          ],
+          "answer": {
+            "source_key": "le fils",
+            "accepted": [
+              "le fils"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex03-q08",
+          "number": 8,
+          "prompt": "rédactrice __",
+          "source_raw_prompt": "rédactrice ________________\n\n ",
+          "pdf_pages": [
+            238
+          ],
+          "answer": {
+            "source_key": "le rédacteur",
+            "accepted": [
+              "le rédacteur"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex03-q09",
+          "number": 9,
+          "prompt": "Brésilienne __",
+          "source_raw_prompt": "Brésilienne ________________\n\n",
+          "pdf_pages": [
+            238
+          ],
+          "answer": {
+            "source_key": "le Brésilien",
+            "accepted": [
+              "le Brésilien"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex03-q10",
+          "number": 10,
+          "prompt": "princesse __",
+          "source_raw_prompt": "princesse ________________\n\n\n\n\n ",
+          "pdf_pages": [
+            238
+          ],
+          "answer": {
+            "source_key": "le prince",
+            "accepted": [
+              "le prince"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch20-s07"
+      ]
+    },
+    {
+      "id": "ch20-ex04",
+      "source": {
+        "chapter": 20,
+        "exercise": "20.4",
+        "pdf_pages": [
+          238,
+          239
+        ]
+      },
+      "topic_ids": [
+        "ch20-t10"
+      ],
+      "instruction": "Mettre au féminin les noms suivants.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch20-ex04-q01",
+          "number": 1,
+          "prompt": "C’est le directeur. __",
+          "source_raw_prompt": "C’est le directeur. ________________\n\n ",
+          "pdf_pages": [
+            238
+          ],
+          "answer": {
+            "source_key": "la directrice",
+            "accepted": [
+              "la directrice"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex04-q02",
+          "number": 2,
+          "prompt": "C’est mon coiffeur. __",
+          "source_raw_prompt": "C’est mon coiffeur. ________________\n\n ",
+          "pdf_pages": [
+            238
+          ],
+          "answer": {
+            "source_key": "ma coiffeuse",
+            "accepted": [
+              "ma coiffeuse"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex04-q03",
+          "number": 3,
+          "prompt": "C’est le pharmacien. __",
+          "source_raw_prompt": "C’est le pharmacien. ________________\n\n ",
+          "pdf_pages": [
+            238
+          ],
+          "answer": {
+            "source_key": "la pharmacienne",
+            "accepted": [
+              "la pharmacienne"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex04-q04",
+          "number": 4,
+          "prompt": "C’est l’oncle de Paul. __",
+          "source_raw_prompt": "C’est l’oncle de Paul. ________________\n\n ",
+          "pdf_pages": [
+            238
+          ],
+          "answer": {
+            "source_key": "la tante de Paul",
+            "accepted": [
+              "la tante de Paul"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex04-q05",
+          "number": 5,
+          "prompt": "C’est mon frère. __",
+          "source_raw_prompt": "C’est mon frère. ________________   ",
+          "pdf_pages": [
+            238,
+            239
+          ],
+          "answer": {
+            "source_key": "ma sœur",
+            "accepted": [
+              "ma sœur"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex04-q06",
+          "number": 6,
+          "prompt": "C’est son instituteur. __",
+          "source_raw_prompt": "C’est son instituteur. ________________\n\n   ",
+          "pdf_pages": [
+            239
+          ],
+          "answer": {
+            "source_key": "son institutrice",
+            "accepted": [
+              "son institutrice"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex04-q07",
+          "number": 7,
+          "prompt": "C’est le roi. __",
+          "source_raw_prompt": "C’est le roi. ________________\n\n   ",
+          "pdf_pages": [
+            239
+          ],
+          "answer": {
+            "source_key": "la reine",
+            "accepted": [
+              "la reine"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex04-q08",
+          "number": 8,
+          "prompt": "C’est mon cousin. __",
+          "source_raw_prompt": "C’est mon cousin. ________________\n\n   ",
+          "pdf_pages": [
+            239
+          ],
+          "answer": {
+            "source_key": "ma cousine",
+            "accepted": [
+              "ma cousine"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex04-q09",
+          "number": 9,
+          "prompt": "C’est un homme. __",
+          "source_raw_prompt": "C’est un homme. ________________\n\n ",
+          "pdf_pages": [
+            239
+          ],
+          "answer": {
+            "source_key": "une femme",
+            "accepted": [
+              "une femme"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex04-q10",
+          "number": 10,
+          "prompt": "C’est le boucher. __",
+          "source_raw_prompt": "C’est le boucher. ________________",
+          "pdf_pages": [
+            239,
+            240
+          ],
+          "answer": {
+            "source_key": "la bouchère",
+            "accepted": [
+              "la bouchère"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch20-s07"
+      ]
+    },
+    {
+      "id": "ch20-ex05",
+      "source": {
+        "chapter": 20,
+        "exercise": "20.5",
+        "pdf_pages": [
+          240
+        ]
+      },
+      "topic_ids": [
+        "ch20-t09"
+      ],
+      "instruction": "Masculin ou féminin? Mettre l’article défini.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch20-ex05-q01",
+          "number": 1,
+          "prompt": "__ Belgique",
+          "source_raw_prompt": "______ Belgique\n\n   ",
+          "pdf_pages": [
+            240
+          ],
+          "answer": {
+            "source_key": "la",
+            "accepted": [
+              "la"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex05-q02",
+          "number": 2,
+          "prompt": "__ Californie",
+          "source_raw_prompt": "______ Californie\n\n   ",
+          "pdf_pages": [
+            240
+          ],
+          "answer": {
+            "source_key": "la",
+            "accepted": [
+              "la"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex05-q03",
+          "number": 3,
+          "prompt": "__ Canada",
+          "source_raw_prompt": "______ Canada\n\n   ",
+          "pdf_pages": [
+            240
+          ],
+          "answer": {
+            "source_key": "le",
+            "accepted": [
+              "le"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex05-q04",
+          "number": 4,
+          "prompt": "__ Angleterre",
+          "source_raw_prompt": "______ Angleterre\n\n   ",
+          "pdf_pages": [
+            240
+          ],
+          "answer": {
+            "source_key": "l’ (f.)",
+            "accepted": [
+              "l’ (f.)"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex05-q05",
+          "number": 5,
+          "prompt": "__ Colorado",
+          "source_raw_prompt": "______ Colorado\n\n   ",
+          "pdf_pages": [
+            240
+          ],
+          "answer": {
+            "source_key": "le",
+            "accepted": [
+              "le"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex05-q06",
+          "number": 6,
+          "prompt": "__ Russie",
+          "source_raw_prompt": "______ Russie\n\n   ",
+          "pdf_pages": [
+            240
+          ],
+          "answer": {
+            "source_key": "la",
+            "accepted": [
+              "la"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex05-q07",
+          "number": 7,
+          "prompt": "__ Égypte",
+          "source_raw_prompt": "______ Égypte\n\n   ",
+          "pdf_pages": [
+            240
+          ],
+          "answer": {
+            "source_key": "l’ (f.)",
+            "accepted": [
+              "l’ (f.)"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex05-q08",
+          "number": 8,
+          "prompt": "__ Irlande",
+          "source_raw_prompt": "______ Irlande\n\n   ",
+          "pdf_pages": [
+            240
+          ],
+          "answer": {
+            "source_key": "l’(f.)",
+            "accepted": [
+              "l’(f.)"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex05-q09",
+          "number": 9,
+          "prompt": "__ Guatemala",
+          "source_raw_prompt": "______ Guatemala\n\n ",
+          "pdf_pages": [
+            240
+          ],
+          "answer": {
+            "source_key": "le",
+            "accepted": [
+              "le"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex05-q10",
+          "number": 10,
+          "prompt": "__ Hongrie",
+          "source_raw_prompt": "______ Hongrie",
+          "pdf_pages": [
+            240,
+            241,
+            242,
+            243
+          ],
+          "answer": {
+            "source_key": "la",
+            "accepted": [
+              "la"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch20-s09"
+      ]
+    },
+    {
+      "id": "ch20-ex06",
+      "source": {
+        "chapter": 20,
+        "exercise": "20.6",
+        "pdf_pages": [
+          243
+        ]
+      },
+      "topic_ids": [
+        "ch20-t07"
+      ],
+      "instruction": "Compléter avec la préposition appropriée.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch20-ex06-q01",
+          "number": 1,
+          "prompt": "Jean habite __ Italie.",
+          "source_raw_prompt": "Jean habite _______ Italie.\n\n ",
+          "pdf_pages": [
+            243
+          ],
+          "answer": {
+            "source_key": "en",
+            "accepted": [
+              "en"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex06-q02",
+          "number": 2,
+          "prompt": "Maud s’est installée __ Virginie.",
+          "source_raw_prompt": "Maud s’est installée _______ Virginie.\n\n ",
+          "pdf_pages": [
+            243
+          ],
+          "answer": {
+            "source_key": "en",
+            "accepted": [
+              "en"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex06-q03",
+          "number": 3,
+          "prompt": "Alex a des amis __ Normandie.",
+          "source_raw_prompt": "Alex a des amis _______ Normandie.\n\n ",
+          "pdf_pages": [
+            243
+          ],
+          "answer": {
+            "source_key": "en",
+            "accepted": [
+              "en"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex06-q04",
+          "number": 4,
+          "prompt": "Il envisage d’acheter une maison __ Maroc.",
+          "source_raw_prompt": "Il envisage d’acheter une maison _______ Maroc.\n\n ",
+          "pdf_pages": [
+            243
+          ],
+          "answer": {
+            "source_key": "au",
+            "accepted": [
+              "au"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex06-q05",
+          "number": 5,
+          "prompt": "Renée est en voyage d’affaires __ Canada.",
+          "source_raw_prompt": "Renée est en voyage d’affaires _______ Canada.\n\n ",
+          "pdf_pages": [
+            243
+          ],
+          "answer": {
+            "source_key": "au",
+            "accepted": [
+              "au"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex06-q06",
+          "number": 6,
+          "prompt": "Ils passent leurs vacances __ Bolivie.",
+          "source_raw_prompt": "Ils passent leurs vacances _______ Bolivie.\n\n ",
+          "pdf_pages": [
+            243
+          ],
+          "answer": {
+            "source_key": "en",
+            "accepted": [
+              "en"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex06-q07",
+          "number": 7,
+          "prompt": "Sandrine a de la famille __ Espagne.",
+          "source_raw_prompt": "Sandrine a de la famille _______ Espagne.\n\n ",
+          "pdf_pages": [
+            243
+          ],
+          "answer": {
+            "source_key": "en",
+            "accepted": [
+              "en"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex06-q08",
+          "number": 8,
+          "prompt": "Laurent a accepté un poste __ Norvège.",
+          "source_raw_prompt": "Laurent a accepté un poste _______ Norvège.\n\n ",
+          "pdf_pages": [
+            243
+          ],
+          "answer": {
+            "source_key": "en",
+            "accepted": [
+              "en"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex06-q09",
+          "number": 9,
+          "prompt": "Nous aimerions aller __ Japon.",
+          "source_raw_prompt": "Nous aimerions aller _______ Japon.\n\n",
+          "pdf_pages": [
+            243
+          ],
+          "answer": {
+            "source_key": "au",
+            "accepted": [
+              "au"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex06-q10",
+          "number": 10,
+          "prompt": "Voudriez-vous aller __ Inde avec nous?",
+          "source_raw_prompt": "Voudriez-vous aller _______ Inde avec nous?\n\n\n\n\n ",
+          "pdf_pages": [
+            243
+          ],
+          "answer": {
+            "source_key": "en",
+            "accepted": [
+              "en"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch20-s10"
+      ]
+    },
+    {
+      "id": "ch20-ex07",
+      "source": {
+        "chapter": 20,
+        "exercise": "20.7",
+        "pdf_pages": [
+          243,
+          244
+        ]
+      },
+      "topic_ids": [
+        "ch20-t07"
+      ],
+      "instruction": "Formuler une phrase complète en utilisant le verbe habiter et les prépositions appropriées.",
+      "interaction_type": "free_response",
+      "questions": [
+        {
+          "id": "ch20-ex07-q01",
+          "number": 1,
+          "prompt": "Marie/Lyon/France __",
+          "source_raw_prompt": "Marie/Lyon/France\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            243
+          ],
+          "answer": {
+            "source_key": "Marie habite à Lyon, en France.",
+            "accepted": [
+              "Marie habite à Lyon, en France."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex07-q02",
+          "number": 2,
+          "prompt": "Christina/Istanbul/Turquie __",
+          "source_raw_prompt": "Christina/Istanbul/Turquie\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            243
+          ],
+          "answer": {
+            "source_key": "Christina habite à Istanbul, en Turquie.",
+            "accepted": [
+              "Christina habite à Istanbul, en Turquie."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex07-q03",
+          "number": 3,
+          "prompt": "Fatima/Tunis/Tunisie __",
+          "source_raw_prompt": "Fatima/Tunis/Tunisie\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            243
+          ],
+          "answer": {
+            "source_key": "Fatima habite à Tunis, en Tunisie.",
+            "accepted": [
+              "Fatima habite à Tunis, en Tunisie."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex07-q04",
+          "number": 4,
+          "prompt": "Laurent/Varsovie/Pologne __",
+          "source_raw_prompt": "Laurent/Varsovie/Pologne    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            243,
+            244
+          ],
+          "answer": {
+            "source_key": "Laurent habite à Varsovie, en Pologne.",
+            "accepted": [
+              "Laurent habite à Varsovie, en Pologne."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex07-q05",
+          "number": 5,
+          "prompt": "Vincent/Caracas/Venezuela __",
+          "source_raw_prompt": "Vincent/Caracas/Venezuela\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            244
+          ],
+          "answer": {
+            "source_key": "Vincent habite à Caracas, au Venezuela.",
+            "accepted": [
+              "Vincent habite à Caracas, au Venezuela."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex07-q06",
+          "number": 6,
+          "prompt": "Nancy/Toronto/Canada __",
+          "source_raw_prompt": "Nancy/Toronto/Canada\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            244
+          ],
+          "answer": {
+            "source_key": "Nancy habite à Toronto, au Canada.",
+            "accepted": [
+              "Nancy habite à Toronto, au Canada."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex07-q07",
+          "number": 7,
+          "prompt": "Xavier/Mexico/Mexique __",
+          "source_raw_prompt": "Xavier/Mexico/Mexique\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            244
+          ],
+          "answer": {
+            "source_key": "Xavier habite à Mexico, au Mexique.",
+            "accepted": [
+              "Xavier habite à Mexico, au Mexique."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex07-q08",
+          "number": 8,
+          "prompt": "Patrick/Boston/États-Unis __",
+          "source_raw_prompt": "Patrick/Boston/États-Unis\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            244
+          ],
+          "answer": {
+            "source_key": "Patrick habite à Boston, aux États-Unis.",
+            "accepted": [
+              "Patrick habite à Boston, aux États-Unis."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex07-q09",
+          "number": 9,
+          "prompt": "Henri/Sydney/Australie __",
+          "source_raw_prompt": "Henri/Sydney/Australie\n    _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            244
+          ],
+          "answer": {
+            "source_key": "Henri habite à Sydney, en Australie.",
+            "accepted": [
+              "Henri habite à Sydney, en Australie."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex07-q10",
+          "number": 10,
+          "prompt": "Martha/Berlin/Allemagne __",
+          "source_raw_prompt": "Martha/Berlin/Allemagne\n    _____________________________________________________________",
+          "pdf_pages": [
+            244
+          ],
+          "answer": {
+            "source_key": "Martha habite à Berlin, en Allemagne.",
+            "accepted": [
+              "Martha habite à Berlin, en Allemagne."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch20-s10"
+      ]
+    },
+    {
+      "id": "ch20-ex08",
+      "source": {
+        "chapter": 20,
+        "exercise": "20.8",
+        "pdf_pages": [
+          244,
+          245
+        ]
+      },
+      "topic_ids": [
+        "ch20-t11"
+      ],
+      "instruction": "Compléter les phrases suivantes.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch20-ex08-q01",
+          "number": 1,
+          "prompt": "Cet objet vient __ Égypte.",
+          "source_raw_prompt": "Cet objet vient _______ Égypte.\n\n   ",
+          "pdf_pages": [
+            244
+          ],
+          "answer": {
+            "source_key": "d’",
+            "accepted": [
+              "d’"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex08-q02",
+          "number": 2,
+          "prompt": "Ces bijoux en provenance __ Inde sont en argent.",
+          "source_raw_prompt": "Ces bijoux en provenance _______ Inde sont en argent. ",
+          "pdf_pages": [
+            244,
+            245
+          ],
+          "answer": {
+            "source_key": "d’",
+            "accepted": [
+              "d’"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex08-q03",
+          "number": 3,
+          "prompt": "Marc vient __ Normandie.",
+          "source_raw_prompt": "Marc vient _______ Normandie.\n\n ",
+          "pdf_pages": [
+            245
+          ],
+          "answer": {
+            "source_key": "de",
+            "accepted": [
+              "de"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex08-q04",
+          "number": 4,
+          "prompt": "Rapporte-moi un pull __ Écosse.",
+          "source_raw_prompt": "Rapporte-moi un pull _______ Écosse.\n\n ",
+          "pdf_pages": [
+            245
+          ],
+          "answer": {
+            "source_key": "d’",
+            "accepted": [
+              "d’"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex08-q05",
+          "number": 5,
+          "prompt": "Ils sont natifs __ Chili.",
+          "source_raw_prompt": "Ils sont natifs _______ Chili.\n\n ",
+          "pdf_pages": [
+            245
+          ],
+          "answer": {
+            "source_key": "du",
+            "accepted": [
+              "du"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex08-q06",
+          "number": 6,
+          "prompt": "Ces épices viennent __ Maroc.",
+          "source_raw_prompt": "Ces épices viennent _______ Maroc.\n\n ",
+          "pdf_pages": [
+            245
+          ],
+          "answer": {
+            "source_key": "du",
+            "accepted": [
+              "du"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex08-q07",
+          "number": 7,
+          "prompt": "Ce paquet est arrivé ce matin __ États-Unis.",
+          "source_raw_prompt": "Ce paquet est arrivé ce matin _______ États-Unis.\n\n ",
+          "pdf_pages": [
+            245
+          ],
+          "answer": {
+            "source_key": "des",
+            "accepted": [
+              "des"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex08-q08",
+          "number": 8,
+          "prompt": "Ces épices proviennent __ Asie.",
+          "source_raw_prompt": "Ces épices proviennent _______ Asie.\n\n ",
+          "pdf_pages": [
+            245
+          ],
+          "answer": {
+            "source_key": "d’",
+            "accepted": [
+              "d’"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex08-q09",
+          "number": 9,
+          "prompt": "Ces produits en provenance __ Colombie sont vendus dans les supermarchés.",
+          "source_raw_prompt": "Ces produits en provenance _______ Colombie sont vendus dans les\n   supermarchés.\n\n",
+          "pdf_pages": [
+            245
+          ],
+          "answer": {
+            "source_key": "de",
+            "accepted": [
+              "de"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex08-q10",
+          "number": 10,
+          "prompt": "Il est tout juste revenu __ Mexique.",
+          "source_raw_prompt": "Il est tout juste revenu _______ Mexique.\n\n\n\n\n ",
+          "pdf_pages": [
+            245
+          ],
+          "answer": {
+            "source_key": "du",
+            "accepted": [
+              "du"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch20-s11"
+      ]
+    },
+    {
+      "id": "ch20-ex09",
+      "source": {
+        "chapter": 20,
+        "exercise": "20.9",
+        "pdf_pages": [
+          245,
+          246
+        ]
+      },
+      "topic_ids": [
+        "ch20-t11"
+      ],
+      "instruction": "Traduire les phrases suivantes.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch20-ex09-q01",
+          "number": 1,
+          "prompt": "She lives in a village in Ireland. __",
+          "source_raw_prompt": "She lives in a village in Ireland.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            245
+          ],
+          "answer": {
+            "source_key": "Elle habite dans un village en Irlande.",
+            "accepted": [
+              "Elle habite dans un village en Irlande."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex09-q02",
+          "number": 2,
+          "prompt": "Her brother lives in Croatia. __",
+          "source_raw_prompt": "Her brother lives in Croatia.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            245
+          ],
+          "answer": {
+            "source_key": "Son frère vit en Croatie.",
+            "accepted": [
+              "Son frère vit en Croatie."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex09-q03",
+          "number": 3,
+          "prompt": "He studied in France. __",
+          "source_raw_prompt": "He studied in France.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            245
+          ],
+          "answer": {
+            "source_key": "Il a étudié en France.",
+            "accepted": [
+              "Il a étudié en France."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex09-q04",
+          "number": 4,
+          "prompt": "She went to Normandy last summer. __",
+          "source_raw_prompt": "She went to Normandy last summer.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            245
+          ],
+          "answer": {
+            "source_key": "Elle est allée en Normandie l’été dernier.",
+            "accepted": [
+              "Elle est allée en Normandie l’été dernier."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex09-q05",
+          "number": 5,
+          "prompt": "They traveled to Greece in May. __",
+          "source_raw_prompt": "They traveled to Greece in May.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            245
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) ont voyagé en Grèce en mai.",
+            "accepted": [
+              "Ils (Elles) ont voyagé en Grèce en mai."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex09-q06",
+          "number": 6,
+          "prompt": "They import products from Argentina. __",
+          "source_raw_prompt": "They import products from Argentina.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            245
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) importent des produits d’Argentine.",
+            "accepted": [
+              "Ils (Elles) importent des produits d’Argentine."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex09-q07",
+          "number": 7,
+          "prompt": "Their son works in California. __",
+          "source_raw_prompt": "Their son works in California.\n   _____________________________________________________________ ",
+          "pdf_pages": [
+            245,
+            246
+          ],
+          "answer": {
+            "source_key": "Leur fils travaille en Californie.",
+            "accepted": [
+              "Leur fils travaille en Californie."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex09-q08",
+          "number": 8,
+          "prompt": "She took this picture in Japan. __",
+          "source_raw_prompt": "She took this picture in Japan.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            246
+          ],
+          "answer": {
+            "source_key": "Elle a pris cette photo au Japon.",
+            "accepted": [
+              "Elle a pris cette photo au Japon."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex09-q09",
+          "number": 9,
+          "prompt": "They are building a bridge in a village in Senegal. __",
+          "source_raw_prompt": "They are building a bridge in a village in Senegal.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            246
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) construisent un pont dans un village au Sénégal.",
+            "accepted": [
+              "Ils (Elles) construisent un pont dans un village au Sénégal."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch20-ex09-q10",
+          "number": 10,
+          "prompt": "Let’s go to Argentina! __",
+          "source_raw_prompt": "Let’s go to Argentina!\n   _____________________________________________________________",
+          "pdf_pages": [
+            246
+          ],
+          "answer": {
+            "source_key": "Allons en Argentine!",
+            "accepted": [
+              "Allons en Argentine!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch20-s11"
+      ]
+    }
+  ]
+}

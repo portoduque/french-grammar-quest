@@ -1,0 +1,149 @@
+{
+  "chapter": 25,
+  "title": "Chapter 25",
+  "source": {
+    "pdf_pages": [
+      313,
+      325
+    ],
+    "source_sha256": "297b92bc48e075449713c3b408ccf47de2466cfc6c4f4a25687a2a974276ae4d",
+    "answer_key_pdf_pages": [
+      520,
+      521
+    ]
+  },
+  "topics": [
+    {
+      "id": "ch25-t01",
+      "title": "Adverbs and expressions of time",
+      "exercise_ids": [
+        "ch25-ex01",
+        "ch25-ex02"
+      ]
+    },
+    {
+      "id": "ch25-t02",
+      "title": "Expressing duration",
+      "exercise_ids": [
+        "ch25-ex03",
+        "ch25-ex04",
+        "ch25-ex05"
+      ]
+    },
+    {
+      "id": "ch25-t03",
+      "title": "Using adverbs with the passé composé",
+      "exercise_ids": [
+        "ch25-ex06"
+      ]
+    },
+    {
+      "id": "ch25-t04",
+      "title": "Interrogative forms; question words",
+      "exercise_ids": [
+        "ch25-ex07"
+      ]
+    },
+    {
+      "id": "ch25-t05",
+      "title": "Adverbs and expressions of location",
+      "exercise_ids": [
+        "ch25-ex08"
+      ]
+    }
+  ],
+  "exercise_ids": [
+    "ch25-ex01",
+    "ch25-ex02",
+    "ch25-ex03",
+    "ch25-ex04",
+    "ch25-ex05",
+    "ch25-ex06",
+    "ch25-ex07",
+    "ch25-ex08"
+  ],
+  "question_total": 80,
+  "validation": {
+    "source_pages": 13,
+    "source_chars": 19476,
+    "source_partition_complete": true,
+    "exercise_group_markers_detected": 8,
+    "questions_structured": 80,
+    "answer_key_entries_associated": 80,
+    "editorial_visual_review": "pending_glyph_by_glyph_check",
+    "theory_semantic_format": "partially_indexed_source_text_preserved",
+    "theory_source_segments": 4,
+    "text_semantic_format": "source-aligned_markdown_fenced_text_pending_table_visual_proof",
+    "answer_key_count": 80
+  },
+  "subtopics": [
+    {
+      "id": "ch25-s01",
+      "title": "Adverbs and expressions of time",
+      "parent_topic_id": "ch25-t01",
+      "pdf_pages": [
+        313,
+        313
+      ],
+      "exercise_ids": [
+        "ch25-ex01",
+        "ch25-ex02"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch25-s02",
+      "title": "Expressing duration",
+      "parent_topic_id": "ch25-t02",
+      "pdf_pages": [
+        317,
+        317
+      ],
+      "exercise_ids": [
+        "ch25-ex03",
+        "ch25-ex04",
+        "ch25-ex05"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch25-s03",
+      "title": "Using adverbs with the passé composé",
+      "parent_topic_id": "ch25-t03",
+      "pdf_pages": [
+        321,
+        321
+      ],
+      "exercise_ids": [
+        "ch25-ex06"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch25-s04",
+      "title": "Interrogative forms; question words",
+      "parent_topic_id": "ch25-t04",
+      "pdf_pages": [
+        322,
+        322
+      ],
+      "exercise_ids": [
+        "ch25-ex07"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch25-s05",
+      "title": "Adverbs and expressions of location",
+      "parent_topic_id": "ch25-t05",
+      "pdf_pages": [
+        323,
+        323
+      ],
+      "exercise_ids": [
+        "ch25-ex08"
+      ],
+      "kind": "grammar"
+    }
+  ]
+}

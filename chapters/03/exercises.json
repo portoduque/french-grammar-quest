@@ -1,0 +1,2196 @@
+{
+  "chapter": 3,
+  "status": "machine_transcribed_editorial_visual_review_pending",
+  "exercises": [
+    {
+      "id": "ch03-ex01",
+      "source": {
+        "chapter": 3,
+        "exercise": "3.1",
+        "pdf_pages": [
+          47,
+          48
+        ]
+      },
+      "topic_ids": [
+        "ch03-t01"
+      ],
+      "instruction": "Mettre au présent les verbes entre parenthèses.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch03-ex01-q01",
+          "number": 1,
+          "prompt": "Le château (être) __ vieux.",
+          "source_raw_prompt": "Le château (être) _________________ vieux.\n\n ",
+          "pdf_pages": [
+            47
+          ],
+          "answer": {
+            "source_key": "est",
+            "accepted": [
+              "est"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex01-q02",
+          "number": 2,
+          "prompt": "Nous (être) __ libres demain soir.",
+          "source_raw_prompt": "Nous (être) _________________ libres demain soir.\n\n ",
+          "pdf_pages": [
+            47
+          ],
+          "answer": {
+            "source_key": "sommes",
+            "accepted": [
+              "sommes"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex01-q03",
+          "number": 3,
+          "prompt": "Les produits (être) __ beaucoup trop chers.",
+          "source_raw_prompt": "Les produits (être) _________________ beaucoup trop chers.\n\n ",
+          "pdf_pages": [
+            47
+          ],
+          "answer": {
+            "source_key": "sont",
+            "accepted": [
+              "sont"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex01-q04",
+          "number": 4,
+          "prompt": "Tu (être) __ plus jeune que lui?",
+          "source_raw_prompt": "Tu (être) _________________ plus jeune que lui?\n\n ",
+          "pdf_pages": [
+            47
+          ],
+          "answer": {
+            "source_key": "es",
+            "accepted": [
+              "es"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex01-q05",
+          "number": 5,
+          "prompt": "Elles (être) __ vraiment charmantes.",
+          "source_raw_prompt": "Elles (être) _________________ vraiment charmantes.\n\n ",
+          "pdf_pages": [
+            47
+          ],
+          "answer": {
+            "source_key": "sont",
+            "accepted": [
+              "sont"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex01-q06",
+          "number": 6,
+          "prompt": "Vous (être) __ occupé cet après-midi?",
+          "source_raw_prompt": "Vous (être) _________________ occupé cet après-midi?\n\n ",
+          "pdf_pages": [
+            47
+          ],
+          "answer": {
+            "source_key": "êtes",
+            "accepted": [
+              "êtes"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex01-q07",
+          "number": 7,
+          "prompt": "Ce (être) __ un nouveau livre.",
+          "source_raw_prompt": "Ce (être) _________________ un nouveau livre.\n\n ",
+          "pdf_pages": [
+            47
+          ],
+          "answer": {
+            "source_key": "C’est",
+            "accepted": [
+              "C’est"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex01-q08",
+          "number": 8,
+          "prompt": "Leurs méthodes (ne pas être) __ très efficaces.",
+          "source_raw_prompt": "Leurs méthodes (ne pas être) _________________ très efficaces.\n\n ",
+          "pdf_pages": [
+            47
+          ],
+          "answer": {
+            "source_key": "ne sont pas",
+            "accepted": [
+              "ne sont pas"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex01-q09",
+          "number": 9,
+          "prompt": "Est-ce qu’il (être) __ aussi amusant que son frère?",
+          "source_raw_prompt": "Est-ce qu’il (être) _________________ aussi amusant que son frère?\n\n",
+          "pdf_pages": [
+            47
+          ],
+          "answer": {
+            "source_key": "est",
+            "accepted": [
+              "est"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex01-q10",
+          "number": 10,
+          "prompt": "Je (être) __ un peu en retard.",
+          "source_raw_prompt": "Je (être) _________________ un peu en retard.  ",
+          "pdf_pages": [
+            47,
+            48
+          ],
+          "answer": {
+            "source_key": "suis",
+            "accepted": [
+              "suis"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch03-s01"
+      ]
+    },
+    {
+      "id": "ch03-ex02",
+      "source": {
+        "chapter": 3,
+        "exercise": "3.2",
+        "pdf_pages": [
+          48
+        ]
+      },
+      "topic_ids": [
+        "ch03-t01"
+      ],
+      "instruction": "Répondre aux questions à la forme affirmative.",
+      "interaction_type": "free_response",
+      "questions": [
+        {
+          "id": "ch03-ex02-q01",
+          "number": 1,
+          "prompt": "Est-ce qu’ils sont en retard? __",
+          "source_raw_prompt": "Est-ce qu’ils sont en retard?\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            48
+          ],
+          "answer": {
+            "source_key": "Oui, ils sont en retard.",
+            "accepted": [
+              "Oui, ils sont en retard."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex02-q02",
+          "number": 2,
+          "prompt": "Le climat est sec? __",
+          "source_raw_prompt": "Le climat est sec?\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            48
+          ],
+          "answer": {
+            "source_key": "Oui, le climat est sec.",
+            "accepted": [
+              "Oui, le climat est sec."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex02-q03",
+          "number": 3,
+          "prompt": "Êtes-vous libre ce soir? __",
+          "source_raw_prompt": "Êtes-vous libre ce soir?\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            48
+          ],
+          "answer": {
+            "source_key": "Oui, je suis libre ce soir.",
+            "accepted": [
+              "Oui, je suis libre ce soir."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex02-q04",
+          "number": 4,
+          "prompt": "Est-il heureux? __",
+          "source_raw_prompt": "Est-il heureux?\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            48
+          ],
+          "answer": {
+            "source_key": "Oui, il est heureux.",
+            "accepted": [
+              "Oui, il est heureux."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex02-q05",
+          "number": 5,
+          "prompt": "Est-ce qu’elle est sympathique? __",
+          "source_raw_prompt": "Est-ce qu’elle est sympathique?\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            48
+          ],
+          "answer": {
+            "source_key": "Oui, elle est sympathique.",
+            "accepted": [
+              "Oui, elle est sympathique."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex02-q06",
+          "number": 6,
+          "prompt": "Ce restaurant français est cher? __",
+          "source_raw_prompt": "Ce restaurant français est cher?\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            48
+          ],
+          "answer": {
+            "source_key": "Oui, ce restaurant français est cher.",
+            "accepted": [
+              "Oui, ce restaurant français est cher."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex02-q07",
+          "number": 7,
+          "prompt": "Êtes-vous fatigué? __",
+          "source_raw_prompt": "Êtes-vous fatigué?\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            48
+          ],
+          "answer": {
+            "source_key": "Oui, je suis fatigué.",
+            "accepted": [
+              "Oui, je suis fatigué."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex02-q08",
+          "number": 8,
+          "prompt": "Est-ce que nous sommes à la bonne adresse? __",
+          "source_raw_prompt": "Est-ce que nous sommes à la bonne adresse?\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            48
+          ],
+          "answer": {
+            "source_key": "Oui, vous êtes à la bonne adresse.",
+            "accepted": [
+              "Oui, vous êtes à la bonne adresse."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex02-q09",
+          "number": 9,
+          "prompt": "Ce film est amusant? __",
+          "source_raw_prompt": "Ce film est amusant?\n    _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            48
+          ],
+          "answer": {
+            "source_key": "Oui, ce film est amusant.",
+            "accepted": [
+              "Oui, ce film est amusant."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex02-q10",
+          "number": 10,
+          "prompt": "Le musée est ouvert? __",
+          "source_raw_prompt": "Le musée est ouvert?\n    _____________________________________________________________",
+          "pdf_pages": [
+            48,
+            49,
+            50
+          ],
+          "answer": {
+            "source_key": "Oui, le musée est ouvert.",
+            "accepted": [
+              "Oui, le musée est ouvert."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch03-s01"
+      ]
+    },
+    {
+      "id": "ch03-ex03",
+      "source": {
+        "chapter": 3,
+        "exercise": "3.3",
+        "pdf_pages": [
+          50
+        ]
+      },
+      "topic_ids": [
+        "ch03-t02"
+      ],
+      "instruction": "Mettre au présent les verbes entre parenthèses.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch03-ex03-q01",
+          "number": 1,
+          "prompt": "Nous (avoir) __ quelques minutes.",
+          "source_raw_prompt": "Nous (avoir) _________________ quelques minutes.\n\n   ",
+          "pdf_pages": [
+            50
+          ],
+          "answer": {
+            "source_key": "avons",
+            "accepted": [
+              "avons"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex03-q02",
+          "number": 2,
+          "prompt": "Tu (ne pas avoir) __ assez d’arguments.",
+          "source_raw_prompt": "Tu (ne pas avoir) _________________ assez d’arguments.\n\n   ",
+          "pdf_pages": [
+            50
+          ],
+          "answer": {
+            "source_key": "n’as pas",
+            "accepted": [
+              "n’as pas"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex03-q03",
+          "number": 3,
+          "prompt": "Je (avoir) __ une grande estime pour lui.",
+          "source_raw_prompt": "Je (avoir) _________________ une grande estime pour lui.\n\n   ",
+          "pdf_pages": [
+            50
+          ],
+          "answer": {
+            "source_key": "J’ai",
+            "accepted": [
+              "J’ai"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex03-q04",
+          "number": 4,
+          "prompt": "Vous (avoir) __ des amis à Londres?",
+          "source_raw_prompt": "Vous (avoir) _________________ des amis à Londres?\n\n   ",
+          "pdf_pages": [
+            50
+          ],
+          "answer": {
+            "source_key": "avez",
+            "accepted": [
+              "avez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex03-q05",
+          "number": 5,
+          "prompt": "Elle (avoir) __ beaucoup de chance dans les affaires.",
+          "source_raw_prompt": "Elle (avoir) _________________ beaucoup de chance dans les affaires.\n\n   ",
+          "pdf_pages": [
+            50
+          ],
+          "answer": {
+            "source_key": "a",
+            "accepted": [
+              "a"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex03-q06",
+          "number": 6,
+          "prompt": "Ils (avoir) __ une réunion à quinze heures.",
+          "source_raw_prompt": "Ils (avoir) _________________ une réunion à quinze heures.\n\n   ",
+          "pdf_pages": [
+            50
+          ],
+          "answer": {
+            "source_key": "ont",
+            "accepted": [
+              "ont"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex03-q07",
+          "number": 7,
+          "prompt": "Tu (avoir) __ une maison à la campagne?",
+          "source_raw_prompt": "Tu (avoir) _________________ une maison à la campagne?\n\n   ",
+          "pdf_pages": [
+            50
+          ],
+          "answer": {
+            "source_key": "as",
+            "accepted": [
+              "as"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex03-q08",
+          "number": 8,
+          "prompt": "Nous (ne pas avoir) __ besoin de son aide.",
+          "source_raw_prompt": "Nous (ne pas avoir) _________________ besoin de son aide.\n\n   ",
+          "pdf_pages": [
+            50
+          ],
+          "answer": {
+            "source_key": "n’avons pas",
+            "accepted": [
+              "n’avons pas"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex03-q09",
+          "number": 9,
+          "prompt": "Vous (ne pas avoir) __ toujours raison.",
+          "source_raw_prompt": "Vous (ne pas avoir) _________________ toujours raison.\n\n ",
+          "pdf_pages": [
+            50
+          ],
+          "answer": {
+            "source_key": "n’avez pas",
+            "accepted": [
+              "n’avez pas"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex03-q10",
+          "number": 10,
+          "prompt": "Je (avoir) __ froid.",
+          "source_raw_prompt": "Je (avoir) _________________ froid.\n\n\n\n\n  ",
+          "pdf_pages": [
+            50
+          ],
+          "answer": {
+            "source_key": "J’ai",
+            "accepted": [
+              "J’ai"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch03-s02"
+      ]
+    },
+    {
+      "id": "ch03-ex04",
+      "source": {
+        "chapter": 3,
+        "exercise": "3.4",
+        "pdf_pages": [
+          50,
+          51
+        ]
+      },
+      "topic_ids": [
+        "ch03-t02"
+      ],
+      "instruction": "Faire correspondre les deux colonnes.______",
+      "interaction_type": "matching",
+      "questions": [
+        {
+          "id": "ch03-ex04-q01",
+          "number": 1,
+          "prompt": "J’ai faim, alors a. au casino",
+          "source_raw_prompt": "J’ai faim, alors                      a. au casino\n\n______ ",
+          "pdf_pages": [
+            51
+          ],
+          "answer": {
+            "source_key": "g",
+            "accepted": [
+              "g"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "a",
+            "text": "au casino"
+          }
+        },
+        {
+          "id": "ch03-ex04-q02",
+          "number": 2,
+          "prompt": "Il a peur b. à la tête",
+          "source_raw_prompt": "Il a peur                           b. à la tête\n\n______ ",
+          "pdf_pages": [
+            51
+          ],
+          "answer": {
+            "source_key": "j",
+            "accepted": [
+              "j"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "b",
+            "text": "à la tête"
+          }
+        },
+        {
+          "id": "ch03-ex04-q03",
+          "number": 3,
+          "prompt": "Ils ont de la chance c. fatigué",
+          "source_raw_prompt": "Ils ont de la chance                 c. fatigué\n\n______ ",
+          "pdf_pages": [
+            51
+          ],
+          "answer": {
+            "source_key": "a",
+            "accepted": [
+              "a"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "c",
+            "text": "fatigué"
+          }
+        },
+        {
+          "id": "ch03-ex04-q04",
+          "number": 4,
+          "prompt": "L’étudiant de français a besoin d. il ouvre la fenêtre",
+          "source_raw_prompt": "L’étudiant de français a besoin   d. il ouvre la fenêtre\n\n______ ",
+          "pdf_pages": [
+            51
+          ],
+          "answer": {
+            "source_key": "i",
+            "accepted": [
+              "i"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "d",
+            "text": "il ouvre la fenêtre"
+          }
+        },
+        {
+          "id": "ch03-ex04-q05",
+          "number": 5,
+          "prompt": "Tu as mal e. de longues vacances",
+          "source_raw_prompt": "Tu as mal                            e. de longues vacances\n\n______ ",
+          "pdf_pages": [
+            51
+          ],
+          "answer": {
+            "source_key": "b",
+            "accepted": [
+              "b"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "e",
+            "text": "de longues vacances"
+          }
+        },
+        {
+          "id": "ch03-ex04-q06",
+          "number": 6,
+          "prompt": "Il a tort, alors f. elle boit un verre d’eau",
+          "source_raw_prompt": "Il a tort, alors                            f. elle boit un verre d’eau\n\n______ ",
+          "pdf_pages": [
+            51
+          ],
+          "answer": {
+            "source_key": "h",
+            "accepted": [
+              "h"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "f",
+            "text": "elle boit un verre d’eau"
+          }
+        },
+        {
+          "id": "ch03-ex04-q07",
+          "number": 7,
+          "prompt": "Vous avez l’air g. je mange quelque chose",
+          "source_raw_prompt": "Vous avez l’air                    g. je mange quelque chose\n\n______ ",
+          "pdf_pages": [
+            51
+          ],
+          "answer": {
+            "source_key": "c",
+            "accepted": [
+              "c"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "g",
+            "text": "je mange quelque chose"
+          }
+        },
+        {
+          "id": "ch03-ex04-q08",
+          "number": 8,
+          "prompt": "Ils ont très envie h. il présente ses excuses",
+          "source_raw_prompt": "Ils ont très envie                  h. il présente ses excuses\n\n______ ",
+          "pdf_pages": [
+            51
+          ],
+          "answer": {
+            "source_key": "e",
+            "accepted": [
+              "e"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "h",
+            "text": "il présente ses excuses"
+          }
+        },
+        {
+          "id": "ch03-ex04-q09",
+          "number": 9,
+          "prompt": "Il a chaud, alors i. d’un nouveau dictionnaire",
+          "source_raw_prompt": "Il a chaud, alors                           i. d’un nouveau dictionnaire\n\n_____ ",
+          "pdf_pages": [
+            51
+          ],
+          "answer": {
+            "source_key": "d",
+            "accepted": [
+              "d"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "i",
+            "text": "d’un nouveau dictionnaire"
+          }
+        },
+        {
+          "id": "ch03-ex04-q10",
+          "number": 10,
+          "prompt": "Elle a soif, alors j. des fantômes",
+          "source_raw_prompt": "Elle a soif, alors                          j. des fantômes\n\n\n\n\n\n ",
+          "pdf_pages": [
+            51
+          ],
+          "answer": {
+            "source_key": "f",
+            "accepted": [
+              "f"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "j",
+            "text": "des fantômes"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "choice_label",
+        "publisher_key_is_exhaustive": true
+      },
+      "subtopic_ids": [
+        "ch03-s02"
+      ],
+      "choices": [
+        {
+          "label": "a",
+          "text": "au casino"
+        },
+        {
+          "label": "b",
+          "text": "à la tête"
+        },
+        {
+          "label": "c",
+          "text": "fatigué"
+        },
+        {
+          "label": "d",
+          "text": "il ouvre la fenêtre"
+        },
+        {
+          "label": "e",
+          "text": "de longues vacances"
+        },
+        {
+          "label": "f",
+          "text": "elle boit un verre d’eau"
+        },
+        {
+          "label": "g",
+          "text": "je mange quelque chose"
+        },
+        {
+          "label": "h",
+          "text": "il présente ses excuses"
+        },
+        {
+          "label": "i",
+          "text": "d’un nouveau dictionnaire"
+        },
+        {
+          "label": "j",
+          "text": "des fantômes"
+        }
+      ]
+    },
+    {
+      "id": "ch03-ex05",
+      "source": {
+        "chapter": 3,
+        "exercise": "3.5",
+        "pdf_pages": [
+          51,
+          52
+        ]
+      },
+      "topic_ids": [
+        "ch03-t02"
+      ],
+      "instruction": "Traduire les phrases suivantes en utilisant vous et l’inversion si nécessaire.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch03-ex05-q01",
+          "number": 1,
+          "prompt": "I am tired. __",
+          "source_raw_prompt": "I am tired.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            51
+          ],
+          "answer": {
+            "source_key": "Je suis fatigué(e).",
+            "accepted": [
+              "Je suis fatigué(e)."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex05-q02",
+          "number": 2,
+          "prompt": "He is very hungry. __",
+          "source_raw_prompt": "He is very hungry.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            51
+          ],
+          "answer": {
+            "source_key": "Il a très faim.",
+            "accepted": [
+              "Il a très faim."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex05-q03",
+          "number": 3,
+          "prompt": "They are always right. __",
+          "source_raw_prompt": "They are always right.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            51
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) ont toujours raison.",
+            "accepted": [
+              "Ils (Elles) ont toujours raison."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex05-q04",
+          "number": 4,
+          "prompt": "Are they French? __",
+          "source_raw_prompt": "Are they French?\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            51
+          ],
+          "answer": {
+            "source_key": "Sont- ils français? (Sont-elles françaises?)",
+            "accepted": [
+              "Sont- ils français? (Sont-elles françaises?)"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex05-q05",
+          "number": 5,
+          "prompt": "Are you afraid of his reaction? __",
+          "source_raw_prompt": "Are you afraid of his reaction?\n   _____________________________________________________________   ",
+          "pdf_pages": [
+            51,
+            52
+          ],
+          "answer": {
+            "source_key": "Avez-vous peur de sa réaction?",
+            "accepted": [
+              "Avez-vous peur de sa réaction?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex05-q06",
+          "number": 6,
+          "prompt": "He is ashamed. __",
+          "source_raw_prompt": "He is ashamed.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            52
+          ],
+          "answer": {
+            "source_key": "Il a honte.",
+            "accepted": [
+              "Il a honte."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex05-q07",
+          "number": 7,
+          "prompt": "They have a dog. __",
+          "source_raw_prompt": "They have a dog.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            52
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) ont un chien.",
+            "accepted": [
+              "Ils (Elles) ont un chien."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex05-q08",
+          "number": 8,
+          "prompt": "She has a new hat. __",
+          "source_raw_prompt": "She has a new hat.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            52
+          ],
+          "answer": {
+            "source_key": "Elle a un nouveau chapeau.",
+            "accepted": [
+              "Elle a un nouveau chapeau."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex05-q09",
+          "number": 9,
+          "prompt": "It’s very expensive. __",
+          "source_raw_prompt": "It’s very expensive.\n    _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            52
+          ],
+          "answer": {
+            "source_key": "C’est très cher.",
+            "accepted": [
+              "C’est très cher."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex05-q10",
+          "number": 10,
+          "prompt": "Close the window. We are cold. __",
+          "source_raw_prompt": "Close the window. We are cold.\n    _____________________________________________________________",
+          "pdf_pages": [
+            52
+          ],
+          "answer": {
+            "source_key": "Fermez la fenêtre. Nous avons froid.",
+            "accepted": [
+              "Fermez la fenêtre. Nous avons froid."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch03-s02"
+      ]
+    },
+    {
+      "id": "ch03-ex06",
+      "source": {
+        "chapter": 3,
+        "exercise": "3.6",
+        "pdf_pages": [
+          52,
+          53
+        ]
+      },
+      "topic_ids": [
+        "ch03-t03"
+      ],
+      "instruction": "Mettre au présent les verbes entre parenthèses.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch03-ex06-q01",
+          "number": 1,
+          "prompt": "Est-ce que vous (savoir) __ jouer au poker?",
+          "source_raw_prompt": "Est-ce que vous (savoir) _________________ jouer au poker?\n\n   ",
+          "pdf_pages": [
+            53
+          ],
+          "answer": {
+            "source_key": "savez",
+            "accepted": [
+              "savez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex06-q02",
+          "number": 2,
+          "prompt": "Je (savoir) __ que Laurent est un bon musicien.",
+          "source_raw_prompt": "Je (savoir) _________________ que Laurent est un bon musicien.\n\n   ",
+          "pdf_pages": [
+            53
+          ],
+          "answer": {
+            "source_key": "sais",
+            "accepted": [
+              "sais"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex06-q03",
+          "number": 3,
+          "prompt": "Elle (ne pas savoir) __ s’il travaille lundi.",
+          "source_raw_prompt": "Elle (ne pas savoir) _________________ s’il travaille lundi.\n\n   ",
+          "pdf_pages": [
+            53
+          ],
+          "answer": {
+            "source_key": "ne sait pas",
+            "accepted": [
+              "ne sait pas"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex06-q04",
+          "number": 4,
+          "prompt": "Nous (savoir) __ utiliser cet ordinateur.",
+          "source_raw_prompt": "Nous (savoir) _________________ utiliser cet ordinateur.\n\n   ",
+          "pdf_pages": [
+            53
+          ],
+          "answer": {
+            "source_key": "savons",
+            "accepted": [
+              "savons"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex06-q05",
+          "number": 5,
+          "prompt": "Tu (savoir) __ parler espagnol?",
+          "source_raw_prompt": "Tu (savoir) _________________ parler espagnol?\n\n   ",
+          "pdf_pages": [
+            53
+          ],
+          "answer": {
+            "source_key": "sais",
+            "accepted": [
+              "sais"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex06-q06",
+          "number": 6,
+          "prompt": "Est-ce que tu (savoir) __ parler anglais?",
+          "source_raw_prompt": "Est-ce que tu (savoir) _________________ parler anglais?\n\n   ",
+          "pdf_pages": [
+            53
+          ],
+          "answer": {
+            "source_key": "sais",
+            "accepted": [
+              "sais"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex06-q07",
+          "number": 7,
+          "prompt": "Il (ne pas savoir) __ faire la cuisine.",
+          "source_raw_prompt": "Il (ne pas savoir) _________________ faire la cuisine.\n\n   ",
+          "pdf_pages": [
+            53
+          ],
+          "answer": {
+            "source_key": "ne sait pas",
+            "accepted": [
+              "ne sait pas"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex06-q08",
+          "number": 8,
+          "prompt": "(Savoir) __ -vous quand ils partent?",
+          "source_raw_prompt": "(Savoir) _________________ -vous quand ils partent?\n\n   ",
+          "pdf_pages": [
+            53
+          ],
+          "answer": {
+            "source_key": "Savez",
+            "accepted": [
+              "Savez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex06-q09",
+          "number": 9,
+          "prompt": "Tu (savoir) __ si ce restaurant est cher?",
+          "source_raw_prompt": "Tu (savoir) _________________ si ce restaurant est cher?\n\n ",
+          "pdf_pages": [
+            53
+          ],
+          "answer": {
+            "source_key": "sais",
+            "accepted": [
+              "sais"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex06-q10",
+          "number": 10,
+          "prompt": "Vous (savoir) __ où se trouve la Bastille?",
+          "source_raw_prompt": "Vous (savoir) _________________ où se trouve la Bastille?",
+          "pdf_pages": [
+            53,
+            54
+          ],
+          "answer": {
+            "source_key": "savez",
+            "accepted": [
+              "savez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch03-s03"
+      ]
+    },
+    {
+      "id": "ch03-ex07",
+      "source": {
+        "chapter": 3,
+        "exercise": "3.7",
+        "pdf_pages": [
+          54
+        ]
+      },
+      "topic_ids": [
+        "ch03-t04"
+      ],
+      "instruction": "Conjuguer le verbe connaître au présent.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch03-ex07-q01",
+          "number": 1,
+          "prompt": "Ils __ bien la Normandie.",
+          "source_raw_prompt": "Ils _________________ bien la Normandie.\n\n ",
+          "pdf_pages": [
+            54
+          ],
+          "answer": {
+            "source_key": "connaissent",
+            "accepted": [
+              "connaissent"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex07-q02",
+          "number": 2,
+          "prompt": "Nous __ Julien depuis trois ans.",
+          "source_raw_prompt": "Nous _________________ Julien depuis trois ans.\n\n ",
+          "pdf_pages": [
+            54
+          ],
+          "answer": {
+            "source_key": "connaissons",
+            "accepted": [
+              "connaissons"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex07-q03",
+          "number": 3,
+          "prompt": "Ce nouveau club __ un grand succès.",
+          "source_raw_prompt": "Ce nouveau club _________________ un grand succès.\n\n ",
+          "pdf_pages": [
+            54
+          ],
+          "answer": {
+            "source_key": "connaît",
+            "accepted": [
+              "connaît"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex07-q04",
+          "number": 4,
+          "prompt": "Je __ ce fait.",
+          "source_raw_prompt": "Je _________________ ce fait.\n\n ",
+          "pdf_pages": [
+            54
+          ],
+          "answer": {
+            "source_key": "connais",
+            "accepted": [
+              "connais"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex07-q05",
+          "number": 5,
+          "prompt": "Cet artisan __ son métier.",
+          "source_raw_prompt": "Cet artisan _________________ son métier.\n\n ",
+          "pdf_pages": [
+            54
+          ],
+          "answer": {
+            "source_key": "connaît",
+            "accepted": [
+              "connaît"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex07-q06",
+          "number": 6,
+          "prompt": "Vous __ cette chanson?",
+          "source_raw_prompt": "Vous _________________ cette chanson?\n\n ",
+          "pdf_pages": [
+            54
+          ],
+          "answer": {
+            "source_key": "connaissez",
+            "accepted": [
+              "connaissez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex07-q07",
+          "number": 7,
+          "prompt": "Est-ce que vous __ un bon restaurant italien?",
+          "source_raw_prompt": "Est-ce que vous _________________ un bon restaurant italien?\n\n ",
+          "pdf_pages": [
+            54
+          ],
+          "answer": {
+            "source_key": "connaissez",
+            "accepted": [
+              "connaissez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex07-q08",
+          "number": 8,
+          "prompt": "Je __ Paris comme ma poche.",
+          "source_raw_prompt": "Je _________________ Paris comme ma poche.\n\n ",
+          "pdf_pages": [
+            54
+          ],
+          "answer": {
+            "source_key": "connais",
+            "accepted": [
+              "connais"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex07-q09",
+          "number": 9,
+          "prompt": "Il __ cette méthode à la perfection.",
+          "source_raw_prompt": "Il _________________ cette méthode à la perfection.\n\n",
+          "pdf_pages": [
+            54
+          ],
+          "answer": {
+            "source_key": "connaît",
+            "accepted": [
+              "connaît"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex07-q10",
+          "number": 10,
+          "prompt": "__ -vous l’œuvre de Victor Hugo?",
+          "source_raw_prompt": "_________________-vous l’œuvre de Victor Hugo?\n\n\n\n\n ",
+          "pdf_pages": [
+            54
+          ],
+          "answer": {
+            "source_key": "Connaissez",
+            "accepted": [
+              "Connaissez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch03-s04"
+      ]
+    },
+    {
+      "id": "ch03-ex08",
+      "source": {
+        "chapter": 3,
+        "exercise": "3.8",
+        "pdf_pages": [
+          54,
+          55
+        ]
+      },
+      "topic_ids": [
+        "ch03-t04"
+      ],
+      "instruction": "Connaître ou savoir?",
+      "interaction_type": "free_response",
+      "questions": [
+        {
+          "id": "ch03-ex08-q01",
+          "number": 1,
+          "prompt": "Est-ce que tu __ pourquoi il est absent?",
+          "source_raw_prompt": "Est-ce que tu _________________ pourquoi il est absent?\n\n ",
+          "pdf_pages": [
+            54
+          ],
+          "answer": {
+            "source_key": "sais",
+            "accepted": [
+              "sais"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex08-q02",
+          "number": 2,
+          "prompt": "Elle __ cette chanson par cœur.",
+          "source_raw_prompt": "Elle _________________ cette chanson par cœur.\n\n ",
+          "pdf_pages": [
+            54
+          ],
+          "answer": {
+            "source_key": "sait",
+            "accepted": [
+              "sait"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex08-q03",
+          "number": 3,
+          "prompt": "Tu __ jouer au base-ball?",
+          "source_raw_prompt": "Tu _________________ jouer au base-ball?\n\n ",
+          "pdf_pages": [
+            54
+          ],
+          "answer": {
+            "source_key": "sais",
+            "accepted": [
+              "sais"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex08-q04",
+          "number": 4,
+          "prompt": "Nous __ la fille de José.",
+          "source_raw_prompt": "Nous _________________ la fille de José.\n\n ",
+          "pdf_pages": [
+            54
+          ],
+          "answer": {
+            "source_key": "connaissons",
+            "accepted": [
+              "connaissons"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex08-q05",
+          "number": 5,
+          "prompt": "Je ne __ pas à quelle heure ouvre la banque.",
+          "source_raw_prompt": "Je ne _________________ pas à quelle heure ouvre la banque.\n\n ",
+          "pdf_pages": [
+            54
+          ],
+          "answer": {
+            "source_key": "sais",
+            "accepted": [
+              "sais"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex08-q06",
+          "number": 6,
+          "prompt": "Ils __ un bon dentiste.",
+          "source_raw_prompt": "Ils _________________ un bon dentiste.\n\n ",
+          "pdf_pages": [
+            54
+          ],
+          "answer": {
+            "source_key": "connaissent",
+            "accepted": [
+              "connaissent"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex08-q07",
+          "number": 7,
+          "prompt": "Ce nouveau produit __ un grand succès sur le marché.",
+          "source_raw_prompt": "Ce nouveau produit _________________ un grand succès sur le marché.   ",
+          "pdf_pages": [
+            54,
+            55
+          ],
+          "answer": {
+            "source_key": "connaît",
+            "accepted": [
+              "connaît"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex08-q08",
+          "number": 8,
+          "prompt": "Vous __ Bertrand?",
+          "source_raw_prompt": "Vous _________________ Bertrand?\n\n   ",
+          "pdf_pages": [
+            55
+          ],
+          "answer": {
+            "source_key": "connaissez",
+            "accepted": [
+              "connaissez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex08-q09",
+          "number": 9,
+          "prompt": "Il __ qu’il n’est pas qualifié pour ce travail.",
+          "source_raw_prompt": "Il _________________ qu’il n’est pas qualifié pour ce travail.\n\n ",
+          "pdf_pages": [
+            55
+          ],
+          "answer": {
+            "source_key": "sait",
+            "accepted": [
+              "sait"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex08-q10",
+          "number": 10,
+          "prompt": "Nous ne __ pas ce quartier.",
+          "source_raw_prompt": "Nous ne _________________ pas ce quartier.",
+          "pdf_pages": [
+            55,
+            56
+          ],
+          "answer": {
+            "source_key": "connaissons",
+            "accepted": [
+              "connaissons"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch03-s04"
+      ]
+    },
+    {
+      "id": "ch03-ex09",
+      "source": {
+        "chapter": 3,
+        "exercise": "3.9",
+        "pdf_pages": [
+          56,
+          57
+        ]
+      },
+      "topic_ids": [
+        "ch03-t05"
+      ],
+      "instruction": "Mettre au présent les verbes entre parenthèses.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch03-ex09-q01",
+          "number": 1,
+          "prompt": "Nous (vouloir) __ une chambre qui donne sur le jardin.",
+          "source_raw_prompt": "Nous (vouloir) _________________ une chambre qui donne sur le jardin.\n\n   ",
+          "pdf_pages": [
+            56
+          ],
+          "answer": {
+            "source_key": "voulons",
+            "accepted": [
+              "voulons"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex09-q02",
+          "number": 2,
+          "prompt": "Je (ne pas pouvoir) __ assister à la réunion à quinze heures.",
+          "source_raw_prompt": "Je (ne pas pouvoir) _________________ assister à la réunion à quinze heures.\n\n   ",
+          "pdf_pages": [
+            56
+          ],
+          "answer": {
+            "source_key": "ne peux pas",
+            "accepted": [
+              "ne peux pas"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex09-q03",
+          "number": 3,
+          "prompt": "Je (vouloir) __ vous parler avant jeudi.",
+          "source_raw_prompt": "Je (vouloir) _________________ vous parler avant jeudi.\n\n   ",
+          "pdf_pages": [
+            56
+          ],
+          "answer": {
+            "source_key": "veux",
+            "accepted": [
+              "veux"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex09-q04",
+          "number": 4,
+          "prompt": "Nous (pouvoir) __ envoyer les documents par la poste.",
+          "source_raw_prompt": "Nous (pouvoir) _________________ envoyer les documents par la poste.\n\n   ",
+          "pdf_pages": [
+            56
+          ],
+          "answer": {
+            "source_key": "pouvons",
+            "accepted": [
+              "pouvons"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex09-q05",
+          "number": 5,
+          "prompt": "Tu (vouloir) __ venir ce soir?",
+          "source_raw_prompt": "Tu (vouloir) _________________ venir ce soir?\n\n   ",
+          "pdf_pages": [
+            56
+          ],
+          "answer": {
+            "source_key": "veux",
+            "accepted": [
+              "veux"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex09-q06",
+          "number": 6,
+          "prompt": "Est-ce que vous (pouvoir) __ écrire une lettre de recommandation?",
+          "source_raw_prompt": "Est-ce que vous (pouvoir) _________________ écrire une lettre de\n    recommandation?\n\n   ",
+          "pdf_pages": [
+            56
+          ],
+          "answer": {
+            "source_key": "pouvez",
+            "accepted": [
+              "pouvez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex09-q07",
+          "number": 7,
+          "prompt": "Elle (pouvoir) __ remplir ce formulaire.",
+          "source_raw_prompt": "Elle (pouvoir) _________________ remplir ce formulaire.\n\n   ",
+          "pdf_pages": [
+            56
+          ],
+          "answer": {
+            "source_key": "peut",
+            "accepted": [
+              "peut"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex09-q08",
+          "number": 8,
+          "prompt": "Ils (vouloir) __ partir avant midi.",
+          "source_raw_prompt": "Ils (vouloir) _________________ partir avant midi.\n\n   ",
+          "pdf_pages": [
+            56
+          ],
+          "answer": {
+            "source_key": "veulent",
+            "accepted": [
+              "veulent"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex09-q09",
+          "number": 9,
+          "prompt": "Vous (vouloir) __ prendre un verre?",
+          "source_raw_prompt": "Vous (vouloir) _________________ prendre un verre?\n\n ",
+          "pdf_pages": [
+            56
+          ],
+          "answer": {
+            "source_key": "voulez",
+            "accepted": [
+              "voulez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex09-q10",
+          "number": 10,
+          "prompt": "Est-ce qu’ils (pouvoir) __ arriver un peu plus tôt? A number of other verbs ending in -oir are irregular. Let’s look at a few examples in their first-person singular and plural forms: apercevoir to see, to perceive j’aperçois I see, I perceive nous apercevons we see, we perceive décevoir to disappoint je déçois I disappoint nous décevons we disappoint devoir must, to have to je dois I must, I have to nous devons we must, we have to émouvoir to move, to stir j’émeus I move, I stir nous émouvons we move, we stir prévoir to foresee, to predict je prévois I foresee nous prévoyons we foresee promouvoir to promote je promeus I promote nous promouvons we promote recevoir to receive je reçois I receive nous recevons we receive valoir to be worth cela vaut it is worth nous valons we are worth voir to see je vois I see nous voyons we see Falloir and pleuvoir are used only in the third-person singular. falloir to be necessary il faut it is necessary pleuvoir to rain il pleut it is raining",
+          "source_raw_prompt": "Est-ce qu’ils (pouvoir) _________________ arriver un peu plus tôt?\n\n\n\n  A number of other verbs ending in -oir are irregular. Let’s look at a few examples\nin their first-person singular and plural forms:\n\n       apercevoir to see, to perceive\n        j’aperçois    I see, I perceive    nous apercevons   we see, we perceive\n\n       décevoir to disappoint\n        je déçois       I disappoint      nous décevons       we disappoint\n\n       devoir must, to have to\n        je dois    I must, I have to      nous devons    we must, we have to      émouvoir to move, to stir\n      j’émeus     I move, I stir     nous émouvons      we move, we stir\n\n      prévoir to foresee, to predict\n       je prévois          I foresee     nous prévoyons         we foresee\n\n     promouvoir to promote\n       je promeus        I promote     nous promouvons       we promote\n\n      recevoir to receive\n       je reçois          I receive      nous recevons         we receive\n\n       valoir to be worth\n      cela vaut           it is worth      nous valons       we are worth\n\n       voir to see\n       je vois             I see       nous voyons              we see\n\n  Falloir and pleuvoir are used only in the third-person singular.\n\n       falloir         to be necessary                 il faut          it is necessary\n      pleuvoir       to rain                             il pleut        it is raining\n\n\n\n ",
+          "pdf_pages": [
+            56,
+            57
+          ],
+          "answer": {
+            "source_key": "peuvent",
+            "accepted": [
+              "peuvent"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch03-s05"
+      ]
+    },
+    {
+      "id": "ch03-ex10",
+      "source": {
+        "chapter": 3,
+        "exercise": "3.10",
+        "pdf_pages": [
+          57,
+          58
+        ]
+      },
+      "topic_ids": [
+        "ch03-t05"
+      ],
+      "instruction": "Mettre au présent les verbes entre parenthèses.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch03-ex10-q01",
+          "number": 1,
+          "prompt": "Je (apercevoir) __ un château en haut de la colline.",
+          "source_raw_prompt": "Je (apercevoir) _________________ un château en haut de la colline.\n\n ",
+          "pdf_pages": [
+            57
+          ],
+          "answer": {
+            "source_key": "J’aperçois",
+            "accepted": [
+              "J’aperçois"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex10-q02",
+          "number": 2,
+          "prompt": "Il (prévoir) __ un avenir meilleur.",
+          "source_raw_prompt": "Il (prévoir) _________________ un avenir meilleur.\n\n ",
+          "pdf_pages": [
+            57
+          ],
+          "answer": {
+            "source_key": "prévoit",
+            "accepted": [
+              "prévoit"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex10-q03",
+          "number": 3,
+          "prompt": "Il (pleuvoir) __ toujours dans cette région.",
+          "source_raw_prompt": "Il (pleuvoir) _________________ toujours dans cette région.\n\n ",
+          "pdf_pages": [
+            57
+          ],
+          "answer": {
+            "source_key": "pleut",
+            "accepted": [
+              "pleut"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex10-q04",
+          "number": 4,
+          "prompt": "Nous (voir) __ une amélioration.",
+          "source_raw_prompt": "Nous (voir) _________________ une amélioration.\n\n ",
+          "pdf_pages": [
+            57
+          ],
+          "answer": {
+            "source_key": "voyons",
+            "accepted": [
+              "voyons"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex10-q05",
+          "number": 5,
+          "prompt": "Tu (décevoir) __ ton professeur.",
+          "source_raw_prompt": "Tu (décevoir) _________________ ton professeur. ",
+          "pdf_pages": [
+            57,
+            58
+          ],
+          "answer": {
+            "source_key": "déçois",
+            "accepted": [
+              "déçois"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex10-q06",
+          "number": 6,
+          "prompt": "Cette organisation (promouvoir) __ la recherche scientifique.",
+          "source_raw_prompt": "Cette organisation (promouvoir) _________________ la recherche\n    scientifique.\n\n ",
+          "pdf_pages": [
+            58
+          ],
+          "answer": {
+            "source_key": "promeut",
+            "accepted": [
+              "promeut"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex10-q07",
+          "number": 7,
+          "prompt": "Cela (valoir) __ très cher.",
+          "source_raw_prompt": "Cela (valoir) _________________ très cher.\n\n ",
+          "pdf_pages": [
+            58
+          ],
+          "answer": {
+            "source_key": "vaut",
+            "accepted": [
+              "vaut"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex10-q08",
+          "number": 8,
+          "prompt": "Il (falloir) __ apprendre les conjugaisons.",
+          "source_raw_prompt": "Il (falloir) _________________ apprendre les conjugaisons.\n\n ",
+          "pdf_pages": [
+            58
+          ],
+          "answer": {
+            "source_key": "faut",
+            "accepted": [
+              "faut"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex10-q09",
+          "number": 9,
+          "prompt": "Cet écrivain (émouvoir) __ le public.",
+          "source_raw_prompt": "Cet écrivain (émouvoir) _________________ le public.\n\n",
+          "pdf_pages": [
+            58
+          ],
+          "answer": {
+            "source_key": "émeut",
+            "accepted": [
+              "émeut"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex10-q10",
+          "number": 10,
+          "prompt": "Vous (recevoir) __ nos félicitations.",
+          "source_raw_prompt": "Vous (recevoir) _________________ nos félicitations.\n\n\n\n\n ",
+          "pdf_pages": [
+            58
+          ],
+          "answer": {
+            "source_key": "recevez",
+            "accepted": [
+              "recevez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch03-s05"
+      ]
+    },
+    {
+      "id": "ch03-ex11",
+      "source": {
+        "chapter": 3,
+        "exercise": "3.11",
+        "pdf_pages": [
+          58,
+          59
+        ]
+      },
+      "topic_ids": [
+        "ch03-t05"
+      ],
+      "instruction": "Traduire les phrases en utilisant tu et la forme est-ce que si nécessaire.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch03-ex11-q01",
+          "number": 1,
+          "prompt": "Can you swim? __",
+          "source_raw_prompt": "Can you swim?\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            58
+          ],
+          "answer": {
+            "source_key": "Est-ce que tu sais nager?",
+            "accepted": [
+              "Est-ce que tu sais nager?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex11-q02",
+          "number": 2,
+          "prompt": "Can he cook? __",
+          "source_raw_prompt": "Can he cook?\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            58
+          ],
+          "answer": {
+            "source_key": "Est-ce qu’il sait faire la cuisine?",
+            "accepted": [
+              "Est-ce qu’il sait faire la cuisine?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex11-q03",
+          "number": 3,
+          "prompt": "I don’t know where he is. __",
+          "source_raw_prompt": "I don’t know where he is.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            58
+          ],
+          "answer": {
+            "source_key": "Je ne sais pas où il est.",
+            "accepted": [
+              "Je ne sais pas où il est."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex11-q04",
+          "number": 4,
+          "prompt": "Can she fill out this form? __",
+          "source_raw_prompt": "Can she fill out this form?\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            58
+          ],
+          "answer": {
+            "source_key": "Est-ce qu’elle peut remplir ce formulaire?",
+            "accepted": [
+              "Est-ce qu’elle peut remplir ce formulaire?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex11-q05",
+          "number": 5,
+          "prompt": "She knows Caroline. __",
+          "source_raw_prompt": "She knows Caroline.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            58
+          ],
+          "answer": {
+            "source_key": "Elle connaît Caroline.",
+            "accepted": [
+              "Elle connaît Caroline."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex11-q06",
+          "number": 6,
+          "prompt": "Do you know this French song by heart? __",
+          "source_raw_prompt": "Do you know this French song by heart?\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            58
+          ],
+          "answer": {
+            "source_key": "Est-ce que tu sais cette chanson française par cœur?",
+            "accepted": [
+              "Est-ce que tu sais cette chanson française par cœur?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex11-q07",
+          "number": 7,
+          "prompt": "It is raining in France. __",
+          "source_raw_prompt": "It is raining in France.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            58
+          ],
+          "answer": {
+            "source_key": "Il pleut en France.",
+            "accepted": [
+              "Il pleut en France."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex11-q08",
+          "number": 8,
+          "prompt": "You must arrive at noon. __",
+          "source_raw_prompt": "You must arrive at noon.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            58
+          ],
+          "answer": {
+            "source_key": "Tu dois arriver à midi.",
+            "accepted": [
+              "Tu dois arriver à midi."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex11-q09",
+          "number": 9,
+          "prompt": "He foresees a great improvement. __",
+          "source_raw_prompt": "He foresees a great improvement.   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            58,
+            59
+          ],
+          "answer": {
+            "source_key": "Il prévoit une grande amélioration.",
+            "accepted": [
+              "Il prévoit une grande amélioration."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch03-ex11-q10",
+          "number": 10,
+          "prompt": "I see the castle. __",
+          "source_raw_prompt": "I see the castle.\n   _____________________________________________________________",
+          "pdf_pages": [
+            59
+          ],
+          "answer": {
+            "source_key": "Je vois le château.",
+            "accepted": [
+              "Je vois le château."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch03-s05"
+      ]
+    }
+  ]
+}

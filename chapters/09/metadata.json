@@ -1,0 +1,113 @@
+{
+  "chapter": 9,
+  "title": "Chapter 09",
+  "source": {
+    "pdf_pages": [
+      113,
+      125
+    ],
+    "source_sha256": "297b92bc48e075449713c3b408ccf47de2466cfc6c4f4a25687a2a974276ae4d",
+    "answer_key_pdf_pages": [
+      506,
+      507
+    ]
+  },
+  "topics": [
+    {
+      "id": "ch09-t01",
+      "title": "The futur simple",
+      "exercise_ids": [
+        "ch09-ex01",
+        "ch09-ex02",
+        "ch09-ex03",
+        "ch09-ex04",
+        "ch09-ex05"
+      ]
+    },
+    {
+      "id": "ch09-t02",
+      "title": "The futur antérieur",
+      "exercise_ids": [
+        "ch09-ex06",
+        "ch09-ex07"
+      ]
+    },
+    {
+      "id": "ch09-t03",
+      "title": "Conjunctions used with the indicative mood",
+      "exercise_ids": [
+        "ch09-ex08"
+      ]
+    }
+  ],
+  "exercise_ids": [
+    "ch09-ex01",
+    "ch09-ex02",
+    "ch09-ex03",
+    "ch09-ex04",
+    "ch09-ex05",
+    "ch09-ex06",
+    "ch09-ex07",
+    "ch09-ex08"
+  ],
+  "question_total": 75,
+  "validation": {
+    "source_pages": 13,
+    "source_chars": 21646,
+    "source_partition_complete": true,
+    "exercise_group_markers_detected": 8,
+    "questions_structured": 75,
+    "answer_key_entries_associated": 75,
+    "editorial_visual_review": "pending_glyph_by_glyph_check",
+    "theory_semantic_format": "partially_indexed_source_text_preserved",
+    "theory_source_segments": 3,
+    "text_semantic_format": "source-aligned_markdown_fenced_text_pending_table_visual_proof",
+    "answer_key_count": 75
+  },
+  "subtopics": [
+    {
+      "id": "ch09-s01",
+      "title": "The futur simple",
+      "parent_topic_id": "ch09-t01",
+      "pdf_pages": [
+        113,
+        113
+      ],
+      "exercise_ids": [
+        "ch09-ex01",
+        "ch09-ex02",
+        "ch09-ex03",
+        "ch09-ex04",
+        "ch09-ex05"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch09-s02",
+      "title": "The futur antérieur",
+      "parent_topic_id": "ch09-t02",
+      "pdf_pages": [
+        120,
+        120
+      ],
+      "exercise_ids": [
+        "ch09-ex06",
+        "ch09-ex07"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch09-s03",
+      "title": "Conjunctions used with the indicative mood",
+      "parent_topic_id": "ch09-t03",
+      "pdf_pages": [
+        123,
+        123
+      ],
+      "exercise_ids": [
+        "ch09-ex08"
+      ],
+      "kind": "grammar"
+    }
+  ]
+}

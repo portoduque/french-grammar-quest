@@ -1,0 +1,131 @@
+{
+  "chapter": 18,
+  "title": "Chapter 18",
+  "source": {
+    "pdf_pages": [
+      210,
+      218
+    ],
+    "source_sha256": "297b92bc48e075449713c3b408ccf47de2466cfc6c4f4a25687a2a974276ae4d",
+    "answer_key_pdf_pages": [
+      514,
+      515
+    ]
+  },
+  "topics": [
+    {
+      "id": "ch18-t01",
+      "title": "Direct speech versus indirect speech",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch18-t02",
+      "title": "The sequence of tenses: la concordance des temps",
+      "exercise_ids": [
+        "ch18-ex01",
+        "ch18-ex02"
+      ]
+    },
+    {
+      "id": "ch18-t03",
+      "title": "Present recounted in the imparfait",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch18-t04",
+      "title": "Passé composé recounted in the plus-que-parfait",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch18-t05",
+      "title": "Future recounted in the present conditional",
+      "exercise_ids": [
+        "ch18-ex03",
+        "ch18-ex04"
+      ]
+    }
+  ],
+  "exercise_ids": [
+    "ch18-ex01",
+    "ch18-ex02",
+    "ch18-ex03",
+    "ch18-ex04"
+  ],
+  "question_total": 40,
+  "validation": {
+    "source_pages": 9,
+    "source_chars": 13150,
+    "source_partition_complete": true,
+    "exercise_group_markers_detected": 4,
+    "questions_structured": 40,
+    "answer_key_entries_associated": 40,
+    "editorial_visual_review": "pending_glyph_by_glyph_check",
+    "theory_semantic_format": "partially_indexed_source_text_preserved",
+    "theory_source_segments": 2,
+    "text_semantic_format": "source-aligned_markdown_fenced_text_pending_table_visual_proof",
+    "answer_key_count": 40
+  },
+  "subtopics": [
+    {
+      "id": "ch18-s01",
+      "title": "Direct speech versus indirect speech",
+      "parent_topic_id": "ch18-t01",
+      "pdf_pages": [
+        210,
+        210
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch18-s02",
+      "title": "The sequence of tenses: la concordance des temps",
+      "parent_topic_id": "ch18-t02",
+      "pdf_pages": [
+        211,
+        211
+      ],
+      "exercise_ids": [
+        "ch18-ex01",
+        "ch18-ex02"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch18-s03",
+      "title": "Present recounted in the imparfait",
+      "parent_topic_id": "ch18-t03",
+      "pdf_pages": [
+        215,
+        215
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch18-s04",
+      "title": "Passé composé recounted in the plus-que-parfait",
+      "parent_topic_id": "ch18-t04",
+      "pdf_pages": [
+        215,
+        215
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch18-s05",
+      "title": "Future recounted in the present conditional",
+      "parent_topic_id": "ch18-t05",
+      "pdf_pages": [
+        216,
+        216
+      ],
+      "exercise_ids": [
+        "ch18-ex03",
+        "ch18-ex04"
+      ],
+      "kind": "grammar"
+    }
+  ]
+}

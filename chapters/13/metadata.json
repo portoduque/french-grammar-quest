@@ -1,0 +1,131 @@
+{
+  "chapter": 13,
+  "title": "Chapter 13",
+  "source": {
+    "pdf_pages": [
+      158,
+      172
+    ],
+    "source_sha256": "297b92bc48e075449713c3b408ccf47de2466cfc6c4f4a25687a2a974276ae4d",
+    "answer_key_pdf_pages": [
+      511
+    ]
+  },
+  "topics": [
+    {
+      "id": "ch13-t01",
+      "title": "The present subjunctive",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch13-t02",
+      "title": "Uses of the subjunctive",
+      "exercise_ids": [
+        "ch13-ex01",
+        "ch13-ex02"
+      ]
+    },
+    {
+      "id": "ch13-t03",
+      "title": "Pourvu que",
+      "exercise_ids": [
+        "ch13-ex03",
+        "ch13-ex04",
+        "ch13-ex05",
+        "ch13-ex06"
+      ]
+    },
+    {
+      "id": "ch13-t04",
+      "title": "The past subjunctive",
+      "exercise_ids": [
+        "ch13-ex07",
+        "ch13-ex08",
+        "ch13-ex09"
+      ]
+    }
+  ],
+  "exercise_ids": [
+    "ch13-ex01",
+    "ch13-ex02",
+    "ch13-ex03",
+    "ch13-ex04",
+    "ch13-ex05",
+    "ch13-ex06",
+    "ch13-ex07",
+    "ch13-ex08",
+    "ch13-ex09"
+  ],
+  "question_total": 85,
+  "validation": {
+    "source_pages": 15,
+    "source_chars": 25780,
+    "source_partition_complete": true,
+    "exercise_group_markers_detected": 9,
+    "questions_structured": 85,
+    "answer_key_entries_associated": 85,
+    "editorial_visual_review": "pending_glyph_by_glyph_check",
+    "theory_semantic_format": "partially_indexed_source_text_preserved",
+    "theory_source_segments": 3,
+    "text_semantic_format": "source-aligned_markdown_fenced_text_pending_table_visual_proof",
+    "answer_key_count": 85
+  },
+  "subtopics": [
+    {
+      "id": "ch13-s01",
+      "title": "The present subjunctive",
+      "parent_topic_id": "ch13-t01",
+      "pdf_pages": [
+        158,
+        158
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch13-s02",
+      "title": "Uses of the subjunctive",
+      "parent_topic_id": "ch13-t02",
+      "pdf_pages": [
+        161,
+        161
+      ],
+      "exercise_ids": [
+        "ch13-ex01",
+        "ch13-ex02"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch13-s03",
+      "title": "Pourvu que",
+      "parent_topic_id": "ch13-t03",
+      "pdf_pages": [
+        167,
+        167
+      ],
+      "exercise_ids": [
+        "ch13-ex03",
+        "ch13-ex04",
+        "ch13-ex05",
+        "ch13-ex06"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch13-s04",
+      "title": "The past subjunctive",
+      "parent_topic_id": "ch13-t04",
+      "pdf_pages": [
+        170,
+        170
+      ],
+      "exercise_ids": [
+        "ch13-ex07",
+        "ch13-ex08",
+        "ch13-ex09"
+      ],
+      "kind": "grammar"
+    }
+  ]
+}

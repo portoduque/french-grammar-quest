@@ -1,0 +1,1149 @@
+{
+  "chapter": 22,
+  "status": "machine_transcribed_editorial_visual_review_pending",
+  "exercises": [
+    {
+      "id": "ch22-ex01",
+      "source": {
+        "chapter": 22,
+        "exercise": "22.1",
+        "pdf_pages": [
+          275,
+          276
+        ]
+      },
+      "topic_ids": [
+        "ch22-t03"
+      ],
+      "instruction": "Traduire les adjectifs entre parenthèses.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch22-ex01-q01",
+          "number": 1,
+          "prompt": "Ta grand-mère est (French)? —Non, elle est (Italian). __",
+          "source_raw_prompt": "Ta grand-mère est (French)? —Non, elle est (Italian).\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            275
+          ],
+          "answer": {
+            "source_key": "Ta grand-mère est française? —Non, elle est italienne.",
+            "accepted": [
+              "Ta grand-mère est française? —Non, elle est italienne."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex01-q02",
+          "number": 2,
+          "prompt": "Ces fenêtres sont (clean)? —Non, ces fenêtres sont (dirty). __",
+          "source_raw_prompt": "Ces fenêtres sont (clean)? —Non, ces fenêtres sont (dirty).\n    _____________________________________________________________ ",
+          "pdf_pages": [
+            275,
+            276
+          ],
+          "answer": {
+            "source_key": "Ces fenêtres sont propres? —Non, ces fenêtres sont sales.",
+            "accepted": [
+              "Ces fenêtres sont propres? —Non, ces fenêtres sont sales."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex01-q03",
+          "number": 3,
+          "prompt": "Sa femme est (blond)? —Non, elle est (redhead). __",
+          "source_raw_prompt": "Sa femme est (blond)? —Non, elle est (redhead).\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            276
+          ],
+          "answer": {
+            "source_key": "Sa femme est blonde? —Non, elle est rousse.",
+            "accepted": [
+              "Sa femme est blonde? —Non, elle est rousse."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex01-q04",
+          "number": 4,
+          "prompt": "Il porte ses chaussures (black)? —Non, il porte des chaussures (navy blue). __",
+          "source_raw_prompt": "Il porte ses chaussures (black)? —Non, il porte des chaussures (navy blue).\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            276
+          ],
+          "answer": {
+            "source_key": "Il porte ses chaussures noires? —Non, il porte des chaussures bleu marine.",
+            "accepted": [
+              "Il porte ses chaussures noires? —Non, il porte des chaussures bleu marine."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex01-q05",
+          "number": 5,
+          "prompt": "C’est une situation (serious)? —Oui, c’est une situation très (serious). __",
+          "source_raw_prompt": "C’est une situation (serious)? —Oui, c’est une situation très (serious).\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            276
+          ],
+          "answer": {
+            "source_key": "C’est une situation sérieuse? —Oui, c’est une situation très sérieuse.",
+            "accepted": [
+              "C’est une situation sérieuse? —Oui, c’est une situation très sérieuse."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex01-q06",
+          "number": 6,
+          "prompt": "C’est une histoire (tragic)? —Non, c’est une histoire (funny). __",
+          "source_raw_prompt": "C’est une histoire (tragic)? —Non, c’est une histoire (funny).\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            276
+          ],
+          "answer": {
+            "source_key": "C’est une histoire tragique? —Non, c’est une histoire amusante.",
+            "accepted": [
+              "C’est une histoire tragique? —Non, c’est une histoire amusante."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex01-q07",
+          "number": 7,
+          "prompt": "C’est un (long) voyage? —Non, c’est assez (short). __",
+          "source_raw_prompt": "C’est un (long) voyage? —Non, c’est assez (short).\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            276
+          ],
+          "answer": {
+            "source_key": "C’est un long voyage? —Non, c’est assez court.",
+            "accepted": [
+              "C’est un long voyage? —Non, c’est assez court."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex01-q08",
+          "number": 8,
+          "prompt": "Votre projet est (ambitious). —Non, c’est la directrice qui est (ambitious). __",
+          "source_raw_prompt": "Votre projet est (ambitious). —Non, c’est la directrice qui est (ambitious).\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            276
+          ],
+          "answer": {
+            "source_key": "Votre projet est ambitieux. —Non, c’est la directrice qui est ambitieuse.",
+            "accepted": [
+              "Votre projet est ambitieux. —Non, c’est la directrice qui est ambitieuse."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex01-q09",
+          "number": 9,
+          "prompt": "Ses idées sont (good)? —Oui, ses idées sont (better) que les nôtres. __",
+          "source_raw_prompt": "Ses idées sont (good)? —Oui, ses idées sont (better) que les nôtres.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            276
+          ],
+          "answer": {
+            "source_key": "Ses idées sont bonnes? —Oui, ses idées sont meilleures que les nôtres.",
+            "accepted": [
+              "Ses idées sont bonnes? —Oui, ses idées sont meilleures que les nôtres."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex01-q10",
+          "number": 10,
+          "prompt": "Ton travail est (boring)? —Non, mon travail est très (interesting). __",
+          "source_raw_prompt": "Ton travail est (boring)? —Non, mon travail est très (interesting).\n   _____________________________________________________________\n\n\n\n\n ",
+          "pdf_pages": [
+            276
+          ],
+          "answer": {
+            "source_key": "Ton travail est ennuyeux? —Non, mon travail est très intéressant.",
+            "accepted": [
+              "Ton travail est ennuyeux? —Non, mon travail est très intéressant."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch22-s03"
+      ]
+    },
+    {
+      "id": "ch22-ex02",
+      "source": {
+        "chapter": 22,
+        "exercise": "22.2",
+        "pdf_pages": [
+          276,
+          277
+        ]
+      },
+      "topic_ids": [
+        "ch22-t03"
+      ],
+      "instruction": "Choisir l’adjectif logique.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch22-ex02-q01",
+          "number": 1,
+          "prompt": "Les antiquités sont __ méchantes/vieilles/courtes.",
+          "source_raw_prompt": "Les antiquités sont ________________ méchantes/vieilles/courtes.\n\n ",
+          "pdf_pages": [
+            276
+          ],
+          "answer": {
+            "source_key": "vieilles",
+            "accepted": [
+              "vieilles"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex02-q02",
+          "number": 2,
+          "prompt": "Mon chat est __ adorable/bavard/immense.",
+          "source_raw_prompt": "Mon chat est ________________ adorable/bavard/immense.\n\n ",
+          "pdf_pages": [
+            276
+          ],
+          "answer": {
+            "source_key": "adorable",
+            "accepted": [
+              "adorable"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex02-q03",
+          "number": 3,
+          "prompt": "Le musée du Louvre est __ brave/dernier/fascinant.",
+          "source_raw_prompt": "Le musée du Louvre est ________________ brave/dernier/fascinant.\n\n ",
+          "pdf_pages": [
+            276
+          ],
+          "answer": {
+            "source_key": "fascinant",
+            "accepted": [
+              "fascinant"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex02-q04",
+          "number": 4,
+          "prompt": "Le professeur d’italien est __ silencieux/intéressant/final.",
+          "source_raw_prompt": "Le professeur d’italien est ________________ silencieux/intéressant/final.\n\n ",
+          "pdf_pages": [
+            276
+          ],
+          "answer": {
+            "source_key": "intéressant",
+            "accepted": [
+              "intéressant"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex02-q05",
+          "number": 5,
+          "prompt": "Sa nouvelle histoire est __ première/folle/violette.",
+          "source_raw_prompt": "Sa nouvelle histoire est ________________ première/folle/violette.  ",
+          "pdf_pages": [
+            276,
+            277
+          ],
+          "answer": {
+            "source_key": "folle",
+            "accepted": [
+              "folle"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 5,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch22-s03"
+      ]
+    },
+    {
+      "id": "ch22-ex03",
+      "source": {
+        "chapter": 22,
+        "exercise": "22.3",
+        "pdf_pages": [
+          277
+        ]
+      },
+      "topic_ids": [
+        "ch22-t03"
+      ],
+      "instruction": "Mettre les adjectifs au féminin en remplaçant Patrick par Sonia.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch22-ex03-q01",
+          "number": 1,
+          "prompt": "Patrick est français. Sonia est __ . __",
+          "source_raw_prompt": "Patrick est français. Sonia est ________________ .\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            277
+          ],
+          "answer": {
+            "source_key": "française",
+            "accepted": [
+              "française"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex03-q02",
+          "number": 2,
+          "prompt": "Patrick est charmant. Sonia est __ . __",
+          "source_raw_prompt": "Patrick est charmant. Sonia est ________________ .\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            277
+          ],
+          "answer": {
+            "source_key": "charmante",
+            "accepted": [
+              "charmante"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex03-q03",
+          "number": 3,
+          "prompt": "Patrick est amoureux. Sonia est __ . __",
+          "source_raw_prompt": "Patrick est amoureux. Sonia est ________________ .\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            277
+          ],
+          "answer": {
+            "source_key": "amoureuse",
+            "accepted": [
+              "amoureuse"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex03-q04",
+          "number": 4,
+          "prompt": "Patrick est beau. Sonia est __ . __",
+          "source_raw_prompt": "Patrick est beau. Sonia est ________________ .\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            277
+          ],
+          "answer": {
+            "source_key": "belle",
+            "accepted": [
+              "belle"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex03-q05",
+          "number": 5,
+          "prompt": "Patrick est agressif. Sonia est __ . __",
+          "source_raw_prompt": "Patrick est agressif. Sonia est ________________ .\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            277
+          ],
+          "answer": {
+            "source_key": "agressive",
+            "accepted": [
+              "agressive"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex03-q06",
+          "number": 6,
+          "prompt": "Patrick est actif. Sonia est __ . __",
+          "source_raw_prompt": "Patrick est actif. Sonia est ________________ .\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            277
+          ],
+          "answer": {
+            "source_key": "active",
+            "accepted": [
+              "active"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex03-q07",
+          "number": 7,
+          "prompt": "Patrick est fou. Sonia est __ . __",
+          "source_raw_prompt": "Patrick est fou. Sonia est ________________ .\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            277
+          ],
+          "answer": {
+            "source_key": "folle",
+            "accepted": [
+              "folle"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex03-q08",
+          "number": 8,
+          "prompt": "Patrick est généreux. Sonia est __ . __",
+          "source_raw_prompt": "Patrick est généreux. Sonia est ________________ .\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            277
+          ],
+          "answer": {
+            "source_key": "généreuse",
+            "accepted": [
+              "généreuse"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex03-q09",
+          "number": 9,
+          "prompt": "Patrick est roux. Sonia est __ . __",
+          "source_raw_prompt": "Patrick est roux. Sonia est ________________ .\n    _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            277
+          ],
+          "answer": {
+            "source_key": "rousse",
+            "accepted": [
+              "rousse"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex03-q10",
+          "number": 10,
+          "prompt": "Patrick est doué. Sonia est __ . __",
+          "source_raw_prompt": "Patrick est doué. Sonia est ________________ .\n    _____________________________________________________________",
+          "pdf_pages": [
+            277,
+            278,
+            279
+          ],
+          "answer": {
+            "source_key": "douée",
+            "accepted": [
+              "douée"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch22-s03"
+      ]
+    },
+    {
+      "id": "ch22-ex04",
+      "source": {
+        "chapter": 22,
+        "exercise": "22.4",
+        "pdf_pages": [
+          279,
+          280
+        ]
+      },
+      "topic_ids": [
+        "ch22-t06"
+      ],
+      "instruction": "Traduire les éléments entre parenthèses.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch22-ex04-q01",
+          "number": 1,
+          "prompt": "Je suis (more optimistic) que lui. __",
+          "source_raw_prompt": "Je suis (more optimistic) que lui.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            279
+          ],
+          "answer": {
+            "source_key": "Je suis plus optimiste que lui.",
+            "accepted": [
+              "Je suis plus optimiste que lui."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex04-q02",
+          "number": 2,
+          "prompt": "Cécile est (as efficient) que Carole. __",
+          "source_raw_prompt": "Cécile est (as efficient) que Carole.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            279
+          ],
+          "answer": {
+            "source_key": "Cécile est aussi efficace que Carole.",
+            "accepted": [
+              "Cécile est aussi efficace que Carole."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex04-q03",
+          "number": 3,
+          "prompt": "Ce vin-ci est (better) que ce vin-là. __",
+          "source_raw_prompt": "Ce vin-ci est (better) que ce vin-là.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            279
+          ],
+          "answer": {
+            "source_key": "Ce vin-ci est meilleur que ce vin-là.",
+            "accepted": [
+              "Ce vin-ci est meilleur que ce vin-là."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex04-q04",
+          "number": 4,
+          "prompt": "Sa sœur est (as intelligent) qu’elle. __",
+          "source_raw_prompt": "Sa sœur est (as intelligent) qu’elle.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            279
+          ],
+          "answer": {
+            "source_key": "Sa sœur est aussi intelligente qu’elle.",
+            "accepted": [
+              "Sa sœur est aussi intelligente qu’elle."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex04-q05",
+          "number": 5,
+          "prompt": "Votre chambre est (less expensive) que la mienne. __",
+          "source_raw_prompt": "Votre chambre est (less expensive) que la mienne.\n    _____________________________________________________________ ",
+          "pdf_pages": [
+            279,
+            280
+          ],
+          "answer": {
+            "source_key": "Votre chambre est moins chère que la mienne.",
+            "accepted": [
+              "Votre chambre est moins chère que la mienne."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex04-q06",
+          "number": 6,
+          "prompt": "Arnaud a (as much) argent que vous? __",
+          "source_raw_prompt": "Arnaud a (as much) argent que vous?\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            280
+          ],
+          "answer": {
+            "source_key": "Arnaud a autant d’argent que vous?",
+            "accepted": [
+              "Arnaud a autant d’argent que vous?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex04-q07",
+          "number": 7,
+          "prompt": "Ce prix est (the best)! __",
+          "source_raw_prompt": "Ce prix est (the best)!\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            280
+          ],
+          "answer": {
+            "source_key": "Ce prix est le meilleur!",
+            "accepted": [
+              "Ce prix est le meilleur!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex04-q08",
+          "number": 8,
+          "prompt": "Marie a (fewer) paires de chaussures que toi. __",
+          "source_raw_prompt": "Marie a (fewer) paires de chaussures que toi.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            280
+          ],
+          "answer": {
+            "source_key": "Marie a moins de paires de chaussures que toi.",
+            "accepted": [
+              "Marie a moins de paires de chaussures que toi."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex04-q09",
+          "number": 9,
+          "prompt": "Elle est (more organized) que lui. __",
+          "source_raw_prompt": "Elle est (more organized) que lui.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            280
+          ],
+          "answer": {
+            "source_key": "Elle est plus organisée que lui.",
+            "accepted": [
+              "Elle est plus organisée que lui."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex04-q10",
+          "number": 10,
+          "prompt": "Cet appartement est (the most beautiful) de l’immeuble. __",
+          "source_raw_prompt": "Cet appartement est (the most beautiful) de l’immeuble.\n   _____________________________________________________________\n\n\n\n\n ",
+          "pdf_pages": [
+            280
+          ],
+          "answer": {
+            "source_key": "Cet appartement est le plus beau de l’immeuble.",
+            "accepted": [
+              "Cet appartement est le plus beau de l’immeuble."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch22-s07"
+      ]
+    },
+    {
+      "id": "ch22-ex05",
+      "source": {
+        "chapter": 22,
+        "exercise": "22.5",
+        "pdf_pages": [
+          280
+        ]
+      },
+      "topic_ids": [
+        "ch22-t06"
+      ],
+      "instruction": "Formuler une phrase avec les éléments ci-dessous.",
+      "interaction_type": "free_response",
+      "questions": [
+        {
+          "id": "ch22-ex05-q01",
+          "number": 1,
+          "prompt": "Charlotte/Lucie/grande/+ __",
+          "source_raw_prompt": "Charlotte/Lucie/grande/+\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            280
+          ],
+          "answer": {
+            "source_key": "Charlotte est plus grande que Lucie.",
+            "accepted": [
+              "Charlotte est plus grande que Lucie."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex05-q02",
+          "number": 2,
+          "prompt": "Charles/Xavier/drôle/= __",
+          "source_raw_prompt": "Charles/Xavier/drôle/=\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            280
+          ],
+          "answer": {
+            "source_key": "Charles est aussi drôle que Xavier.",
+            "accepted": [
+              "Charles est aussi drôle que Xavier."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex05-q03",
+          "number": 3,
+          "prompt": "Véronique/Sébastien/optimiste/– __",
+          "source_raw_prompt": "Véronique/Sébastien/optimiste/–\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            280
+          ],
+          "answer": {
+            "source_key": "Véronique est moins optimiste que Sébastien.",
+            "accepted": [
+              "Véronique est moins optimiste que Sébastien."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex05-q04",
+          "number": 4,
+          "prompt": "Lucien/sa sœur/intelligent/+ __",
+          "source_raw_prompt": "Lucien/sa sœur/intelligent/+\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            280
+          ],
+          "answer": {
+            "source_key": "Lucien est plus intelligent que sa sœur.",
+            "accepted": [
+              "Lucien est plus intelligent que sa sœur."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex05-q05",
+          "number": 5,
+          "prompt": "Élodie/Thérèse/bronzée/= __",
+          "source_raw_prompt": "Élodie/Thérèse/bronzée/=\n   _____________________________________________________________\n\n\n\n\n ",
+          "pdf_pages": [
+            280
+          ],
+          "answer": {
+            "source_key": "Élodie est aussi bronzée que Thérèse.",
+            "accepted": [
+              "Élodie est aussi bronzée que Thérèse."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 5,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch22-s07"
+      ]
+    },
+    {
+      "id": "ch22-ex06",
+      "source": {
+        "chapter": 22,
+        "exercise": "22.6",
+        "pdf_pages": [
+          280,
+          281
+        ]
+      },
+      "topic_ids": [
+        "ch22-t06"
+      ],
+      "instruction": "Traduire les phrases suivantes.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch22-ex06-q01",
+          "number": 1,
+          "prompt": "It’s a good idea. __",
+          "source_raw_prompt": "It’s a good idea.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            281
+          ],
+          "answer": {
+            "source_key": "C’est une bonne idée.",
+            "accepted": [
+              "C’est une bonne idée."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex06-q02",
+          "number": 2,
+          "prompt": "They bought an old house in Normandy. __",
+          "source_raw_prompt": "They bought an old house in Normandy.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            281
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) ont acheté une vieille maison en Normandie.",
+            "accepted": [
+              "Ils (Elles) ont acheté une vieille maison en Normandie."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex06-q03",
+          "number": 3,
+          "prompt": "This young man is ambitious. __",
+          "source_raw_prompt": "This young man is ambitious.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            281
+          ],
+          "answer": {
+            "source_key": "Ce jeune homme est ambitieux.",
+            "accepted": [
+              "Ce jeune homme est ambitieux."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex06-q04",
+          "number": 4,
+          "prompt": "This white shirt is mine. __",
+          "source_raw_prompt": "This white shirt is mine.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            281
+          ],
+          "answer": {
+            "source_key": "Cette chemise blanche est à moi.",
+            "accepted": [
+              "Cette chemise blanche est à moi."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex06-q05",
+          "number": 5,
+          "prompt": "Her aunt loves old French songs. __",
+          "source_raw_prompt": "Her aunt loves old French songs.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            281
+          ],
+          "answer": {
+            "source_key": "Sa tante aime les vieilles chansons françaises.",
+            "accepted": [
+              "Sa tante aime les vieilles chansons françaises."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex06-q06",
+          "number": 6,
+          "prompt": "I do not have your new address. __",
+          "source_raw_prompt": "I do not have your new address.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            281
+          ],
+          "answer": {
+            "source_key": "Je n’ai pas votre nouvelle adresse.",
+            "accepted": [
+              "Je n’ai pas votre nouvelle adresse."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex06-q07",
+          "number": 7,
+          "prompt": "Norway is smaller than France. __",
+          "source_raw_prompt": "Norway is smaller than France.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            281
+          ],
+          "answer": {
+            "source_key": "La Norvège est plus petite que la France.",
+            "accepted": [
+              "La Norvège est plus petite que la France."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex06-q08",
+          "number": 8,
+          "prompt": "She does not like this yellow jacket. __",
+          "source_raw_prompt": "She does not like this yellow jacket.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            281
+          ],
+          "answer": {
+            "source_key": "Elle n’aime pas cette veste jaune.",
+            "accepted": [
+              "Elle n’aime pas cette veste jaune."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex06-q09",
+          "number": 9,
+          "prompt": "She is as ambitious as he is. __",
+          "source_raw_prompt": "She is as ambitious as he is.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            281
+          ],
+          "answer": {
+            "source_key": "Elle est aussi ambitieuse que lui.",
+            "accepted": [
+              "Elle est aussi ambitieuse que lui."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch22-ex06-q10",
+          "number": 10,
+          "prompt": "This story is boring. __",
+          "source_raw_prompt": "This story is boring.\n   _____________________________________________________________\n\n\n\n\n ",
+          "pdf_pages": [
+            281
+          ],
+          "answer": {
+            "source_key": "Cette histoire est ennuyeuse.",
+            "accepted": [
+              "Cette histoire est ennuyeuse."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch22-s07"
+      ]
+    },
+    {
+      "id": "ch22-ex07",
+      "source": {
+        "chapter": 22,
+        "exercise": "22.7",
+        "pdf_pages": [
+          281,
+          282
+        ]
+      },
+      "topic_ids": [
+        "ch22-t06"
+      ],
+      "instruction": "Faire correspondre les deux colonnes. ______",
+      "interaction_type": "matching",
+      "questions": [
+        {
+          "id": "ch22-ex07-q01",
+          "number": 1,
+          "prompt": "Il travaillait ici dans le passé. a. Elles sont toutes sales. __",
+          "source_raw_prompt": "Il travaillait ici dans le passé.      a. Elles sont toutes sales.______ ",
+          "pdf_pages": [
+            281,
+            282
+          ],
+          "answer": {
+            "source_key": "e",
+            "accepted": [
+              "e"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "a",
+            "text": "Elles sont toutes sales.______"
+          }
+        },
+        {
+          "id": "ch22-ex07-q02",
+          "number": 2,
+          "prompt": "Ils n’ont pas d’argent. b. Elle mesure 1,80 m.",
+          "source_raw_prompt": "Ils n’ont pas d’argent.              b. Elle mesure 1,80 m.\n\n______ ",
+          "pdf_pages": [
+            282
+          ],
+          "answer": {
+            "source_key": "d",
+            "accepted": [
+              "d"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "b",
+            "text": "Elle mesure 1,80 m."
+          }
+        },
+        {
+          "id": "ch22-ex07-q03",
+          "number": 3,
+          "prompt": "Il n’a pas de chemise à porter. c. Son pauvre genou!",
+          "source_raw_prompt": "Il n’a pas de chemise à porter.     c. Son pauvre genou!\n\n______ ",
+          "pdf_pages": [
+            282
+          ],
+          "answer": {
+            "source_key": "a",
+            "accepted": [
+              "a"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "c",
+            "text": "Son pauvre genou!"
+          }
+        },
+        {
+          "id": "ch22-ex07-q04",
+          "number": 4,
+          "prompt": "C’est une femme grande. d. Ils sont pauvres.",
+          "source_raw_prompt": "C’est une femme grande.          d. Ils sont pauvres.\n\n______ ",
+          "pdf_pages": [
+            282
+          ],
+          "answer": {
+            "source_key": "b",
+            "accepted": [
+              "b"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "d",
+            "text": "Ils sont pauvres."
+          }
+        },
+        {
+          "id": "ch22-ex07-q05",
+          "number": 5,
+          "prompt": "Elle est tombée. e. C’est l’ancien directeur.",
+          "source_raw_prompt": "Elle est tombée.                     e. C’est l’ancien directeur.",
+          "pdf_pages": [
+            282
+          ],
+          "answer": {
+            "source_key": "c 23 Demonstrative adjectives and pronouns",
+            "accepted": [
+              "c 23 Demonstrative adjectives and pronouns"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "e",
+            "text": "C’est l’ancien directeur."
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 5,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "choice_label",
+        "publisher_key_is_exhaustive": true
+      },
+      "subtopic_ids": [
+        "ch22-s07"
+      ],
+      "choices": [
+        {
+          "label": "a",
+          "text": "Elles sont toutes sales.______"
+        },
+        {
+          "label": "b",
+          "text": "Elle mesure 1,80 m."
+        },
+        {
+          "label": "c",
+          "text": "Son pauvre genou!"
+        },
+        {
+          "label": "d",
+          "text": "Ils sont pauvres."
+        },
+        {
+          "label": "e",
+          "text": "C’est l’ancien directeur."
+        }
+      ]
+    }
+  ]
+}

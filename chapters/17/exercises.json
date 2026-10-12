@@ -1,0 +1,582 @@
+{
+  "chapter": 17,
+  "status": "machine_transcribed_editorial_visual_review_pending",
+  "exercises": [
+    {
+      "id": "ch17-ex01",
+      "source": {
+        "chapter": 17,
+        "exercise": "17.1",
+        "pdf_pages": [
+          205,
+          206
+        ]
+      },
+      "topic_ids": [
+        "ch17-t01"
+      ],
+      "instruction": "Mettre les phrases suivantes à la voix passive. Attention aux temps de verbe!",
+      "interaction_type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ch17-ex01-q01",
+          "number": 1,
+          "prompt": "Le policier a attrapé le voleur. __",
+          "source_raw_prompt": "Le policier a attrapé le voleur.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            205
+          ],
+          "answer": {
+            "source_key": "Le voleur a été attrapé par le policier.",
+            "accepted": [
+              "Le voleur a été attrapé par le policier."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch17-ex01-q02",
+          "number": 2,
+          "prompt": "Le roi a signé le traité. __",
+          "source_raw_prompt": "Le roi a signé le traité.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            205
+          ],
+          "answer": {
+            "source_key": "Le traité a été signé par le roi.",
+            "accepted": [
+              "Le traité a été signé par le roi."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch17-ex01-q03",
+          "number": 3,
+          "prompt": "Le médecin prescrit un nouveau traitement. __",
+          "source_raw_prompt": "Le médecin prescrit un nouveau traitement.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            205
+          ],
+          "answer": {
+            "source_key": "Un nouveau traitement est prescrit par le médecin.",
+            "accepted": [
+              "Un nouveau traitement est prescrit par le médecin."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch17-ex01-q04",
+          "number": 4,
+          "prompt": "Le cambrioleur a volé le tableau. __",
+          "source_raw_prompt": "Le cambrioleur a volé le tableau.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            205
+          ],
+          "answer": {
+            "source_key": "Le tableau a été volé par le cambrioleur.",
+            "accepted": [
+              "Le tableau a été volé par le cambrioleur."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch17-ex01-q05",
+          "number": 5,
+          "prompt": "Le chien a mordu l’homme au chapeau gris. __",
+          "source_raw_prompt": "Le chien a mordu l’homme au chapeau gris.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            205
+          ],
+          "answer": {
+            "source_key": "L’homme au chapeau gris a été mordu par le chien.",
+            "accepted": [
+              "L’homme au chapeau gris a été mordu par le chien."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch17-ex01-q06",
+          "number": 6,
+          "prompt": "L’ennemi a pris l’otage. __",
+          "source_raw_prompt": "L’ennemi a pris l’otage.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            205
+          ],
+          "answer": {
+            "source_key": "L’otage a été pris par l’ennemi.",
+            "accepted": [
+              "L’otage a été pris par l’ennemi."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch17-ex01-q07",
+          "number": 7,
+          "prompt": "L’enfant a déchiré le canapé. __",
+          "source_raw_prompt": "L’enfant a déchiré le canapé.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            205
+          ],
+          "answer": {
+            "source_key": "Le canapé a été déchiré par l’enfant.",
+            "accepted": [
+              "Le canapé a été déchiré par l’enfant."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch17-ex01-q08",
+          "number": 8,
+          "prompt": "Le marchand d’art vendra un célèbre tableau. __",
+          "source_raw_prompt": "Le marchand d’art vendra un célèbre tableau.   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            205,
+            206
+          ],
+          "answer": {
+            "source_key": "Un célèbre tableau sera vendu par le marchand d’art.",
+            "accepted": [
+              "Un célèbre tableau sera vendu par le marchand d’art."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch17-ex01-q09",
+          "number": 9,
+          "prompt": "Les envahisseurs prennent la forteresse. __",
+          "source_raw_prompt": "Les envahisseurs prennent la forteresse.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            206
+          ],
+          "answer": {
+            "source_key": "La forteresse est prise par les envahisseurs.",
+            "accepted": [
+              "La forteresse est prise par les envahisseurs."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch17-ex01-q10",
+          "number": 10,
+          "prompt": "Le professeur félicite les étudiants. __",
+          "source_raw_prompt": "Le professeur félicite les étudiants.\n   _____________________________________________________________\n\n\n\n\n ",
+          "pdf_pages": [
+            206
+          ],
+          "answer": {
+            "source_key": "Les étudiants sont félicités par le professeur.",
+            "accepted": [
+              "Les étudiants sont félicités par le professeur."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch17-s01"
+      ]
+    },
+    {
+      "id": "ch17-ex02",
+      "source": {
+        "chapter": 17,
+        "exercise": "17.2",
+        "pdf_pages": [
+          206,
+          207
+        ]
+      },
+      "topic_ids": [
+        "ch17-t01"
+      ],
+      "instruction": "Mettre les phrases suivantes à la voix active. Attention aux temps de verbe!",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch17-ex02-q01",
+          "number": 1,
+          "prompt": "Le gâteau a été fait par le chef. __",
+          "source_raw_prompt": "Le gâteau a été fait par le chef.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            206
+          ],
+          "answer": {
+            "source_key": "Le chef a fait le gâteau.",
+            "accepted": [
+              "Le chef a fait le gâteau."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch17-ex02-q02",
+          "number": 2,
+          "prompt": "L’objet a été conçu par l’artisan. __",
+          "source_raw_prompt": "L’objet a été conçu par l’artisan.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            206
+          ],
+          "answer": {
+            "source_key": "L’artisan a conçu l’objet.",
+            "accepted": [
+              "L’artisan a conçu l’objet."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch17-ex02-q03",
+          "number": 3,
+          "prompt": "Le château a été érigé par le roi. __",
+          "source_raw_prompt": "Le château a été érigé par le roi.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            206
+          ],
+          "answer": {
+            "source_key": "Le roi a érigé le château.",
+            "accepted": [
+              "Le roi a érigé le château."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch17-ex02-q04",
+          "number": 4,
+          "prompt": "Le document sera signé par l’ambassadeur. __",
+          "source_raw_prompt": "Le document sera signé par l’ambassadeur.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            206
+          ],
+          "answer": {
+            "source_key": "L’ambassadeur signera le document.",
+            "accepted": [
+              "L’ambassadeur signera le document."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch17-ex02-q05",
+          "number": 5,
+          "prompt": "Le tableau a été vendu par le propriétaire. __",
+          "source_raw_prompt": "Le tableau a été vendu par le propriétaire.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            206
+          ],
+          "answer": {
+            "source_key": "Le propriétaire a vendu le tableau.",
+            "accepted": [
+              "Le propriétaire a vendu le tableau."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch17-ex02-q06",
+          "number": 6,
+          "prompt": "Le fauteuil est griffé par le chat. __",
+          "source_raw_prompt": "Le fauteuil est griffé par le chat.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            206
+          ],
+          "answer": {
+            "source_key": "Le chat griffe le fauteuil.",
+            "accepted": [
+              "Le chat griffe le fauteuil."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch17-ex02-q07",
+          "number": 7,
+          "prompt": "L’amende a été payée par le malfaiteur. __",
+          "source_raw_prompt": "L’amende a été payée par le malfaiteur.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            206
+          ],
+          "answer": {
+            "source_key": "Le malfaiteur a payé l’amende.",
+            "accepted": [
+              "Le malfaiteur a payé l’amende."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch17-ex02-q08",
+          "number": 8,
+          "prompt": "Le vase a été volé par l’antiquaire. __",
+          "source_raw_prompt": "Le vase a été volé par l’antiquaire.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            206
+          ],
+          "answer": {
+            "source_key": "L’antiquaire a volé le vase.",
+            "accepted": [
+              "L’antiquaire a volé le vase."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch17-ex02-q09",
+          "number": 9,
+          "prompt": "Le livre sera écrit par une journaliste. __",
+          "source_raw_prompt": "Le livre sera écrit par une journaliste.\n   _____________________________________________________________ ",
+          "pdf_pages": [
+            206,
+            207
+          ],
+          "answer": {
+            "source_key": "Une journaliste écrira le livre.",
+            "accepted": [
+              "Une journaliste écrira le livre."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch17-ex02-q10",
+          "number": 10,
+          "prompt": "Les élèves sont punis par le professeur. __",
+          "source_raw_prompt": "Les élèves sont punis par le professeur.\n    _____________________________________________________________",
+          "pdf_pages": [
+            207,
+            208,
+            209
+          ],
+          "answer": {
+            "source_key": "Le professeur punit les élèves.",
+            "accepted": [
+              "Le professeur punit les élèves."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch17-s01"
+      ]
+    },
+    {
+      "id": "ch17-ex03",
+      "source": {
+        "chapter": 17,
+        "exercise": "17.3",
+        "pdf_pages": [
+          209
+        ]
+      },
+      "topic_ids": [
+        "ch17-t04"
+      ],
+      "instruction": "Traduire les phrases suivantes en utilisant la voix passive.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch17-ex03-q01",
+          "number": 1,
+          "prompt": "The castle is being built by the queen. __",
+          "source_raw_prompt": "The castle is being built by the queen.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            209
+          ],
+          "answer": {
+            "source_key": "Le château est construit par la reine.",
+            "accepted": [
+              "Le château est construit par la reine."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch17-ex03-q02",
+          "number": 2,
+          "prompt": "The painting was stolen by an art dealer. __",
+          "source_raw_prompt": "The painting was stolen by an art dealer.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            209
+          ],
+          "answer": {
+            "source_key": "Le tableau a été volé par un marchand d’art.",
+            "accepted": [
+              "Le tableau a été volé par un marchand d’art."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch17-ex03-q03",
+          "number": 3,
+          "prompt": "A pink hat was found in the park yesterday. __",
+          "source_raw_prompt": "A pink hat was found in the park yesterday.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            209
+          ],
+          "answer": {
+            "source_key": "Un chapeau rose a été retrouvé dans le parc hier.",
+            "accepted": [
+              "Un chapeau rose a été retrouvé dans le parc hier."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch17-ex03-q04",
+          "number": 4,
+          "prompt": "This verb is followed by the indicative (mood). __",
+          "source_raw_prompt": "This verb is followed by the indicative (mood).\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            209
+          ],
+          "answer": {
+            "source_key": "Ce verbe est suivi de l’indicatif.",
+            "accepted": [
+              "Ce verbe est suivi de l’indicatif."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch17-ex03-q05",
+          "number": 5,
+          "prompt": "The house is surrounded by the police. __",
+          "source_raw_prompt": "The house is surrounded by the police.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            209
+          ],
+          "answer": {
+            "source_key": "La maison est entourée par la police.",
+            "accepted": [
+              "La maison est entourée par la police."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch17-ex03-q06",
+          "number": 6,
+          "prompt": "A new remedy will be invented before 2050. __",
+          "source_raw_prompt": "A new remedy will be invented before 2050.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            209
+          ],
+          "answer": {
+            "source_key": "Un nouveau remède sera inventé avant 2050.",
+            "accepted": [
+              "Un nouveau remède sera inventé avant 2050."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch17-ex03-q07",
+          "number": 7,
+          "prompt": "This vaccine was invented in 1885. __",
+          "source_raw_prompt": "This vaccine was invented in 1885.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            209
+          ],
+          "answer": {
+            "source_key": "Ce vaccin a été inventé en 1885.",
+            "accepted": [
+              "Ce vaccin a été inventé en 1885."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch17-ex03-q08",
+          "number": 8,
+          "prompt": "The decision was made on Monday. __",
+          "source_raw_prompt": "The decision was made on Monday.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            209
+          ],
+          "answer": {
+            "source_key": "La décision a été prise lundi.",
+            "accepted": [
+              "La décision a été prise lundi."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch17-ex03-q09",
+          "number": 9,
+          "prompt": "The letter was read by a witness. __",
+          "source_raw_prompt": "The letter was read by a witness.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            209
+          ],
+          "answer": {
+            "source_key": "La lettre a été lue par un témoin.",
+            "accepted": [
+              "La lettre a été lue par un témoin."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch17-ex03-q10",
+          "number": 10,
+          "prompt": "The house is surrounded by trees. __",
+          "source_raw_prompt": "The house is surrounded by trees.\n   _____________________________________________________________",
+          "pdf_pages": [
+            209
+          ],
+          "answer": {
+            "source_key": "La maison est entourée d’arbres.",
+            "accepted": [
+              "La maison est entourée d’arbres."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch17-s04"
+      ]
+    }
+  ]
+}

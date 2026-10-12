@@ -1,0 +1,40 @@
+{
+  "fixes": [
+    {
+      "chapter": 2,
+      "exercise_order": 5,
+      "restored_item": 10
+    },
+    {
+      "chapter": 11,
+      "exercise_order": 3,
+      "restored_item": 10
+    },
+    {
+      "chapter": 11,
+      "exercise_order": 9,
+      "restored_item": 10
+    },
+    {
+      "chapter": 20,
+      "exercise_order": 2,
+      "restored_item": 10
+    },
+    {
+      "chapter": 25,
+      "exercise_order": 4,
+      "restored_item": 10
+    },
+    {
+      "chapter": 28,
+      "exercise_order": 15,
+      "restored_item": 5
+    },
+    {
+      "chapter": 28,
+      "exercise_order": 22,
+      "restored_item": 10
+    }
+  ],
+  "issues_after": []
+}

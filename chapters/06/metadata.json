@@ -1,0 +1,140 @@
+{
+  "chapter": 6,
+  "title": "Chapter 06",
+  "source": {
+    "pdf_pages": [
+      81,
+      88
+    ],
+    "source_sha256": "297b92bc48e075449713c3b408ccf47de2466cfc6c4f4a25687a2a974276ae4d",
+    "answer_key_pdf_pages": [
+      504
+    ]
+  },
+  "topics": [
+    {
+      "id": "ch06-t01",
+      "title": "Reflexive verbs",
+      "exercise_ids": [
+        "ch06-ex01"
+      ]
+    },
+    {
+      "id": "ch06-t02",
+      "title": "Reciprocal verbs",
+      "exercise_ids": [
+        "ch06-ex02"
+      ]
+    },
+    {
+      "id": "ch06-t03",
+      "title": "Passive pronominals",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch06-t04",
+      "title": "Subjective pronominals",
+      "exercise_ids": [
+        "ch06-ex03"
+      ]
+    },
+    {
+      "id": "ch06-t05",
+      "title": "Pronominals in the imperative and the infinitive",
+      "exercise_ids": [
+        "ch06-ex04",
+        "ch06-ex05",
+        "ch06-ex06"
+      ]
+    }
+  ],
+  "exercise_ids": [
+    "ch06-ex01",
+    "ch06-ex02",
+    "ch06-ex03",
+    "ch06-ex04",
+    "ch06-ex05",
+    "ch06-ex06"
+  ],
+  "question_total": 55,
+  "validation": {
+    "source_pages": 8,
+    "source_chars": 11540,
+    "source_partition_complete": true,
+    "exercise_group_markers_detected": 6,
+    "questions_structured": 55,
+    "answer_key_entries_associated": 55,
+    "editorial_visual_review": "pending_glyph_by_glyph_check",
+    "theory_semantic_format": "partially_indexed_source_text_preserved",
+    "theory_source_segments": 4,
+    "text_semantic_format": "source-aligned_markdown_fenced_text_pending_table_visual_proof",
+    "answer_key_count": 55
+  },
+  "subtopics": [
+    {
+      "id": "ch06-s01",
+      "title": "Reflexive verbs",
+      "parent_topic_id": "ch06-t01",
+      "pdf_pages": [
+        81,
+        81
+      ],
+      "exercise_ids": [
+        "ch06-ex01"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch06-s02",
+      "title": "Reciprocal verbs",
+      "parent_topic_id": "ch06-t02",
+      "pdf_pages": [
+        83,
+        83
+      ],
+      "exercise_ids": [
+        "ch06-ex02"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch06-s03",
+      "title": "Passive pronominals",
+      "parent_topic_id": "ch06-t03",
+      "pdf_pages": [
+        84,
+        84
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch06-s04",
+      "title": "Subjective pronominals",
+      "parent_topic_id": "ch06-t04",
+      "pdf_pages": [
+        85,
+        85
+      ],
+      "exercise_ids": [
+        "ch06-ex03"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch06-s05",
+      "title": "Pronominals in the imperative and the infinitive",
+      "parent_topic_id": "ch06-t05",
+      "pdf_pages": [
+        86,
+        86
+      ],
+      "exercise_ids": [
+        "ch06-ex04",
+        "ch06-ex05",
+        "ch06-ex06"
+      ],
+      "kind": "grammar"
+    }
+  ]
+}

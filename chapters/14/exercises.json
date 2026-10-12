@@ -1,0 +1,1353 @@
+{
+  "chapter": 14,
+  "status": "machine_transcribed_editorial_visual_review_pending",
+  "exercises": [
+    {
+      "id": "ch14-ex01",
+      "source": {
+        "chapter": 14,
+        "exercise": "14.1",
+        "pdf_pages": [
+          175,
+          176,
+          177
+        ]
+      },
+      "topic_ids": [
+        "ch14-t01"
+      ],
+      "instruction": "Traduire les phrases suivantes en utilisant l’infinitif présent.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch14-ex01-q01",
+          "number": 1,
+          "prompt": "Writing this book was a challenge. __",
+          "source_raw_prompt": "Writing this book was a challenge.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            175
+          ],
+          "answer": {
+            "source_key": "Écrire ce livre était un défi.",
+            "accepted": [
+              "Écrire ce livre était un défi."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex01-q02",
+          "number": 2,
+          "prompt": "Studying French is fun. __",
+          "source_raw_prompt": "Studying French is fun.\n    _____________________________________________________________   ",
+          "pdf_pages": [
+            175,
+            176
+          ],
+          "answer": {
+            "source_key": "Étudier le français est amusant.",
+            "accepted": [
+              "Étudier le français est amusant."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex01-q03",
+          "number": 3,
+          "prompt": "Working four days a week is ideal. __",
+          "source_raw_prompt": "Working four days a week is ideal.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            176
+          ],
+          "answer": {
+            "source_key": "Travailler quatre jours par semaine est idéal.",
+            "accepted": [
+              "Travailler quatre jours par semaine est idéal."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex01-q04",
+          "number": 4,
+          "prompt": "Finding a new job will be difficult. __",
+          "source_raw_prompt": "Finding a new job will be difficult.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            176
+          ],
+          "answer": {
+            "source_key": "Trouver un nouveau travail sera difficile.",
+            "accepted": [
+              "Trouver un nouveau travail sera difficile."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex01-q05",
+          "number": 5,
+          "prompt": "Walking along the Seine is pleasant. __",
+          "source_raw_prompt": "Walking along the Seine is pleasant.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            176
+          ],
+          "answer": {
+            "source_key": "Marcher le long de la Seine est agréable.",
+            "accepted": [
+              "Marcher le long de la Seine est agréable."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex01-q06",
+          "number": 6,
+          "prompt": "Waking up at five A.M. is too early. __",
+          "source_raw_prompt": "Waking up at five A.M. is too early.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            176
+          ],
+          "answer": {
+            "source_key": "Se réveiller à cinq heures du matin est trop tôt.",
+            "accepted": [
+              "Se réveiller à cinq heures du matin est trop tôt."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex01-q07",
+          "number": 7,
+          "prompt": "Cooking takes a lot of time. __",
+          "source_raw_prompt": "Cooking takes a lot of time.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            176
+          ],
+          "answer": {
+            "source_key": "Faire la cuisine prend beaucoup de temps.",
+            "accepted": [
+              "Faire la cuisine prend beaucoup de temps."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex01-q08",
+          "number": 8,
+          "prompt": "Take this medicine twice a day. __",
+          "source_raw_prompt": "Take this medicine twice a day.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            176
+          ],
+          "answer": {
+            "source_key": "Prendre ce médicament deux fois par jour.",
+            "accepted": [
+              "Prendre ce médicament deux fois par jour."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex01-q09",
+          "number": 9,
+          "prompt": "Add some pepper. __",
+          "source_raw_prompt": "Add some pepper.\n    _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            176
+          ],
+          "answer": {
+            "source_key": "Ajouter du poivre.",
+            "accepted": [
+              "Ajouter du poivre."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex01-q10",
+          "number": 10,
+          "prompt": "Do not put in any garlic. __ The infinitive is used after verbs of perception (where the present participle is used in English). J’ai vu les moutons traverser la route. I saw the sheep crossing (cross) the road. Elle a entendu le coq chanter. She heard the rooster crowing (crow). On entendait le chef fredonner une We could hear the chef humming (hum chanson. a song. Elle a vu la biche sauter par-dessus la She saw the doe jumping (jump) over clôture. the fence. The infinitive is used in the interrogative infinitive. Que répondre? What can I (can we) answer? Comment le lui expliquer? How to explain it to him? Pourquoi protester? Why protest? Que dire? What is there to say? Quoi faire? What can we do? You learned faire in Chapter 4. This causative form with faire is used to express the idea of having something done by someone or of causing something to happen. Il a fait macérer la viande vingt-quatre He macerated the meat twenty-four heures. hours. Elle a fait rôtir le poulet. She roasted the chicken. J’ai fait griller le pain. I toasted the bread. J’ai fait tremper les pruneaux. I soaked the prunes. The infinitive is used after expressions conveying the idea of spending time. Elle passe son temps à créer de nouvelles She spends her time creating new recettes. recipes. Il passe ses vacances à lire des livres de He spends his vacation reading cuisine. cookbooks. Il a gaspillé sa vie à ne rien faire. He wasted his life doing nothing. Je passe mon temps à chercher de I spend my time looking for new nouvelles épices. spices. The infinitive often follows statements indicating a person’s posture. The preposition à precedes the infinitive. (Note the present participles in English.) Il est debout à éplucher des carottes. He is standing peeling carrots. Elle est assise à écosser des petits pois. She is sitting shelling peas. Il est accroupi dans le jardin à cueillir He is squatting in the garden picking des fraises. strawberries. Elle est à genoux à arracher les She is kneeling pulling out weeds. mauvaises herbes.",
+          "source_raw_prompt": "Do not put in any garlic.\n    _____________________________________________________________\n\n\n  The infinitive is used after verbs of perception (where the present participle is\nused in English).\n\n        J’ai vu les moutons traverser la route.  I saw the sheep crossing (cross) the\n                                                 road.\n       Elle a entendu le coq chanter.        She heard the rooster crowing (crow).\n     On entendait le chef fredonner une   We could hear the chef humming (hum\n          chanson.                         a song.\n       Elle a vu la biche sauter par-dessus la  She saw the doe jumping (jump) over\n           clôture.                                the fence.\n\n  The infinitive is used in the interrogative infinitive.\n\n     Que répondre?                  What can I (can we) answer?\n     Comment le lui expliquer?       How to explain it to him?       Pourquoi protester?             Why protest?\n     Que dire?                      What is there to say?\n      Quoi faire?                     What can we do?\n\n  You learned faire in Chapter 4. This causative form with faire is used to express\nthe idea of having something done by someone or of causing something to happen.\n\n          Il a fait macérer la viande vingt-quatre  He macerated the meat twenty-four\n          heures.                                  hours.\n       Elle a fait rôtir le poulet.              She roasted the chicken.\n        J’ai fait griller le pain.                       I toasted the bread.\n        J’ai fait tremper les pruneaux.              I soaked the prunes.\n\n  The infinitive is used after expressions conveying the idea of spending time.\n\n       Elle passe son temps à créer de nouvelles She spends her time creating new\n           recettes.                                     recipes.\n          Il passe ses vacances à lire des livres de  He spends his vacation reading\n           cuisine.                                 cookbooks.\n          Il a gaspillé sa vie à ne rien faire.       He wasted his life doing nothing.\n       Je passe mon temps à chercher de          I spend my time looking for new\n          nouvelles épices.                            spices.\n\n  The  infinitive  often  follows  statements  indicating a  person’s  posture. The\npreposition à precedes the infinitive. (Note the present participles in English.)\n\n          Il est debout à éplucher des carottes.  He is standing peeling carrots.\n       Elle est assise à écosser des petits pois. She is sitting shelling peas.\n          Il est accroupi dans le jardin à cueillir He is squatting in the garden picking\n         des fraises.                             strawberries.\n       Elle est à genoux à arracher les      She is kneeling pulling out weeds.\n         mauvaises herbes.\n\n\n\n  ",
+          "pdf_pages": [
+            176,
+            177
+          ],
+          "answer": {
+            "source_key": "Ne pas mettre d’ail.",
+            "accepted": [
+              "Ne pas mettre d’ail."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch14-s01"
+      ]
+    },
+    {
+      "id": "ch14-ex02",
+      "source": {
+        "chapter": 14,
+        "exercise": "14.2",
+        "pdf_pages": [
+          177,
+          178
+        ]
+      },
+      "topic_ids": [
+        "ch14-t01"
+      ],
+      "instruction": "Réécrire les phrases suivantes en traduisant les expressions entre parenthèses.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch14-ex02-q01",
+          "number": 1,
+          "prompt": "Elle passe ses après-midi (cooking). __",
+          "source_raw_prompt": "Elle passe ses après-midi (cooking).\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            178
+          ],
+          "answer": {
+            "source_key": "à faire la cuisine",
+            "accepted": [
+              "à faire la cuisine"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex02-q02",
+          "number": 2,
+          "prompt": "Ils passent leurs nuits (dancing). __",
+          "source_raw_prompt": "Ils passent leurs nuits (dancing).\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            178
+          ],
+          "answer": {
+            "source_key": "à danser",
+            "accepted": [
+              "à danser"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex02-q03",
+          "number": 3,
+          "prompt": "Ils sont accoudés au comptoir (talking). __",
+          "source_raw_prompt": "Ils sont accoudés au comptoir (talking).\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            178
+          ],
+          "answer": {
+            "source_key": "à parler",
+            "accepted": [
+              "à parler"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex02-q04",
+          "number": 4,
+          "prompt": "Elle est assise (peeling vegetables). __",
+          "source_raw_prompt": "Elle est assise (peeling vegetables).\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            178
+          ],
+          "answer": {
+            "source_key": "à éplucher des légumes",
+            "accepted": [
+              "à éplucher des légumes"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex02-q05",
+          "number": 5,
+          "prompt": "Il a gaspillé sa vie (working for them). __",
+          "source_raw_prompt": "Il a gaspillé sa vie (working for them).\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            178
+          ],
+          "answer": {
+            "source_key": "à travailler pour eux",
+            "accepted": [
+              "à travailler pour eux"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex02-q06",
+          "number": 6,
+          "prompt": "Tu as perdu ton temps (looking for another job). __",
+          "source_raw_prompt": "Tu as perdu ton temps (looking for another job).\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            178
+          ],
+          "answer": {
+            "source_key": "à chercher un autre travail",
+            "accepted": [
+              "à chercher un autre travail"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex02-q07",
+          "number": 7,
+          "prompt": "Je suis allongée sur la plage (reading). __",
+          "source_raw_prompt": "Je suis allongée sur la plage (reading).\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            178
+          ],
+          "answer": {
+            "source_key": "à lire",
+            "accepted": [
+              "à lire"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex02-q08",
+          "number": 8,
+          "prompt": "Elle est debout dans le jardin (picking some flowers). __",
+          "source_raw_prompt": "Elle est debout dans le jardin (picking some flowers).\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            178
+          ],
+          "answer": {
+            "source_key": "à cueillir des fleurs",
+            "accepted": [
+              "à cueillir des fleurs"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex02-q09",
+          "number": 9,
+          "prompt": "Il passe son temps (dreaming). __",
+          "source_raw_prompt": "Il passe son temps (dreaming).\n    _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            178
+          ],
+          "answer": {
+            "source_key": "à rêver",
+            "accepted": [
+              "à rêver"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex02-q10",
+          "number": 10,
+          "prompt": "Ils passent leurs journées (shopping). __",
+          "source_raw_prompt": "Ils passent leurs journées (shopping).\n    _____________________________________________________________",
+          "pdf_pages": [
+            178,
+            179
+          ],
+          "answer": {
+            "source_key": "à faire les courses",
+            "accepted": [
+              "à faire les courses"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch14-s01"
+      ]
+    },
+    {
+      "id": "ch14-ex03",
+      "source": {
+        "chapter": 14,
+        "exercise": "14.3",
+        "pdf_pages": [
+          179,
+          180
+        ]
+      },
+      "topic_ids": [
+        "ch14-t02"
+      ],
+      "instruction": "Mettre les verbes suivants à l’infinitif passé, au masculin singulier.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch14-ex03-q01",
+          "number": 1,
+          "prompt": "dormir __",
+          "source_raw_prompt": "dormir ________________\n\n   ",
+          "pdf_pages": [
+            179
+          ],
+          "answer": {
+            "source_key": "avoir dormi",
+            "accepted": [
+              "avoir dormi"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex03-q02",
+          "number": 2,
+          "prompt": "aller __",
+          "source_raw_prompt": "aller ________________\n\n   ",
+          "pdf_pages": [
+            179
+          ],
+          "answer": {
+            "source_key": "être allé",
+            "accepted": [
+              "être allé"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex03-q03",
+          "number": 3,
+          "prompt": "manger __",
+          "source_raw_prompt": "manger ________________\n\n   ",
+          "pdf_pages": [
+            179
+          ],
+          "answer": {
+            "source_key": "avoir mangé",
+            "accepted": [
+              "avoir mangé"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex03-q04",
+          "number": 4,
+          "prompt": "se promener __",
+          "source_raw_prompt": "se promener ________________\n\n   ",
+          "pdf_pages": [
+            179
+          ],
+          "answer": {
+            "source_key": "s’être promené",
+            "accepted": [
+              "s’être promené"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex03-q05",
+          "number": 5,
+          "prompt": "regarder __",
+          "source_raw_prompt": "regarder ________________\n\n   ",
+          "pdf_pages": [
+            179
+          ],
+          "answer": {
+            "source_key": "avoir regardé",
+            "accepted": [
+              "avoir regardé"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex03-q06",
+          "number": 6,
+          "prompt": "tomber __",
+          "source_raw_prompt": "tomber ________________\n\n   ",
+          "pdf_pages": [
+            179
+          ],
+          "answer": {
+            "source_key": "être tombé",
+            "accepted": [
+              "être tombé"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex03-q07",
+          "number": 7,
+          "prompt": "se lever __",
+          "source_raw_prompt": "se lever ________________\n\n   ",
+          "pdf_pages": [
+            179
+          ],
+          "answer": {
+            "source_key": "s’être levé",
+            "accepted": [
+              "s’être levé"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex03-q08",
+          "number": 8,
+          "prompt": "préparer __",
+          "source_raw_prompt": "préparer ________________\n\n   ",
+          "pdf_pages": [
+            179
+          ],
+          "answer": {
+            "source_key": "avoir préparé",
+            "accepted": [
+              "avoir préparé"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex03-q09",
+          "number": 9,
+          "prompt": "partir __",
+          "source_raw_prompt": "partir ________________\n\n ",
+          "pdf_pages": [
+            179
+          ],
+          "answer": {
+            "source_key": "être parti",
+            "accepted": [
+              "être parti"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex03-q10",
+          "number": 10,
+          "prompt": "allumer __ The infinitif passé commonly occurs after the preposition après (after), while the infinitif présent follows avant de (before). Gérard fait mariner la viande avant Gérard marinates the meat before d’éplucher un oignon. peeling an onion. Gérard fait mariner la viande après avoir Gérard marinates the meat after épluché un oignon. peeling an onion. Elle se lave les mains avant de décortiquer She washes her hands before les crevettes. shelling the shrimp. Elle se lave les mains après avoir She washes her hands after shellin décortiqué les crevettes. the shrimp. Je fais la cuisine avant d’aller au cinéma. I cook before going to the movies. Je fais la cuisine après être allé au cinéma. I cook after going to the movies. Elle lit le journal avant de se lever. She reads the paper before getting up. Elle lit le journal après s’être levée. She reads the paper after getting u",
+          "source_raw_prompt": "allumer ________________\n\n\n\n  The infinitif passé commonly occurs after the preposition après (after), while the\ninfinitif présent follows avant de (before).\n\n      Gérard fait mariner la viande avant       Gérard marinates the meat before\n         d’éplucher un oignon.                     peeling an onion.\n      Gérard fait mariner la viande après avoir  Gérard marinates the meat after\n         épluché un oignon.                        peeling an onion.      Elle se lave les mains avant de décortiquer She washes her hands before\n          les crevettes.                                shelling the shrimp.\n      Elle se lave les mains après avoir         She washes her hands after shellin\n        décortiqué les crevettes.                   the shrimp.\n      Je fais la cuisine avant d’aller au cinéma.   I cook before going to the movies.\n      Je fais la cuisine après être allé au cinéma. I cook after going to the movies.\n      Elle lit le journal avant de se lever.       She reads the paper before getting\n                                                    up.\n      Elle lit le journal après s’être levée.       She reads the paper after getting u\n\n\n\n ",
+          "pdf_pages": [
+            179,
+            180
+          ],
+          "answer": {
+            "source_key": "avoir allumé",
+            "accepted": [
+              "avoir allumé"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch14-s02"
+      ]
+    },
+    {
+      "id": "ch14-ex04",
+      "source": {
+        "chapter": 14,
+        "exercise": "14.4",
+        "pdf_pages": [
+          180,
+          181
+        ]
+      },
+      "topic_ids": [
+        "ch14-t02"
+      ],
+      "instruction": "Changer avant de en après en utilisant l’infinitif passé.",
+      "interaction_type": "free_response",
+      "questions": [
+        {
+          "id": "ch14-ex04-q01",
+          "number": 1,
+          "prompt": "Elle prend des vacances avant de compléter son projet. __",
+          "source_raw_prompt": "Elle prend des vacances avant de compléter son projet.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            180
+          ],
+          "answer": {
+            "source_key": "Elle prend des vacances après avoir complété son projet.",
+            "accepted": [
+              "Elle prend des vacances après avoir complété son projet."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex04-q02",
+          "number": 2,
+          "prompt": "Il écrit la lettre avant de consulter son ami. __",
+          "source_raw_prompt": "Il écrit la lettre avant de consulter son ami.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            180
+          ],
+          "answer": {
+            "source_key": "Il écrit la lettre après avoir consulté son ami.",
+            "accepted": [
+              "Il écrit la lettre après avoir consulté son ami."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex04-q03",
+          "number": 3,
+          "prompt": "Je prépare un thé avant de cueillir des fruits. __",
+          "source_raw_prompt": "Je prépare un thé avant de cueillir des fruits.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            180
+          ],
+          "answer": {
+            "source_key": "Je prépare un thé après avoir cueilli des fruits.",
+            "accepted": [
+              "Je prépare un thé après avoir cueilli des fruits."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex04-q04",
+          "number": 4,
+          "prompt": "Ils rendent visite à leurs amis avant d’aller au théâtre. __",
+          "source_raw_prompt": "Ils rendent visite à leurs amis avant d’aller au théâtre.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            180
+          ],
+          "answer": {
+            "source_key": "Ils rendent visite à leurs amis après être allés au théâtre.",
+            "accepted": [
+              "Ils rendent visite à leurs amis après être allés au théâtre."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex04-q05",
+          "number": 5,
+          "prompt": "Il verse le vin avant de servir le dîner. __",
+          "source_raw_prompt": "Il verse le vin avant de servir le dîner.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            180
+          ],
+          "answer": {
+            "source_key": "Il verse le vin après avoir servi le dîner.",
+            "accepted": [
+              "Il verse le vin après avoir servi le dîner."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex04-q06",
+          "number": 6,
+          "prompt": "Elle se maquille avant de s’habiller. __",
+          "source_raw_prompt": "Elle se maquille avant de s’habiller.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            180
+          ],
+          "answer": {
+            "source_key": "Elle se maquille après s’être habillée.",
+            "accepted": [
+              "Elle se maquille après s’être habillée."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex04-q07",
+          "number": 7,
+          "prompt": "Nous dînons avant de regarder le film à la télévision. __",
+          "source_raw_prompt": "Nous dînons avant de regarder le film à la télévision.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            180
+          ],
+          "answer": {
+            "source_key": "Nous dînons après avoir regardé le film à la télévision.",
+            "accepted": [
+              "Nous dînons après avoir regardé le film à la télévision."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex04-q08",
+          "number": 8,
+          "prompt": "Ils se promènent avant de travailler. __",
+          "source_raw_prompt": "Ils se promènent avant de travailler.\n   _____________________________________________________________   ",
+          "pdf_pages": [
+            180,
+            181
+          ],
+          "answer": {
+            "source_key": "Ils se promènent après avoir travaillé.",
+            "accepted": [
+              "Ils se promènent après avoir travaillé."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex04-q09",
+          "number": 9,
+          "prompt": "Je réfléchis avant de téléphoner. __",
+          "source_raw_prompt": "Je réfléchis avant de téléphoner.\n    _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            181
+          ],
+          "answer": {
+            "source_key": "Je réfléchis après avoir téléphoné.",
+            "accepted": [
+              "Je réfléchis après avoir téléphoné."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex04-q10",
+          "number": 10,
+          "prompt": "Nous allons chez Julien avant de choisir un cadeau. __",
+          "source_raw_prompt": "Nous allons chez Julien avant de choisir un cadeau.\n    _____________________________________________________________",
+          "pdf_pages": [
+            181,
+            182
+          ],
+          "answer": {
+            "source_key": "Nous allons chez Julien après avoir choisi un cadeau.",
+            "accepted": [
+              "Nous allons chez Julien après avoir choisi un cadeau."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch14-s02"
+      ]
+    },
+    {
+      "id": "ch14-ex05",
+      "source": {
+        "chapter": 14,
+        "exercise": "14.5",
+        "pdf_pages": [
+          182,
+          183
+        ]
+      },
+      "topic_ids": [
+        "ch14-t04"
+      ],
+      "instruction": "Mettre au présent les verbes entre parenthèses.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch14-ex05-q01",
+          "number": 1,
+          "prompt": "Il (détester) __ attendre.",
+          "source_raw_prompt": "Il (détester) ________________ attendre.\n\n   ",
+          "pdf_pages": [
+            183
+          ],
+          "answer": {
+            "source_key": "déteste",
+            "accepted": [
+              "déteste"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex05-q02",
+          "number": 2,
+          "prompt": "Ils (vouloir) __ acheter un nouvel ordinateur.",
+          "source_raw_prompt": "Ils (vouloir) ________________ acheter un nouvel ordinateur.\n\n   ",
+          "pdf_pages": [
+            183
+          ],
+          "answer": {
+            "source_key": "veulent",
+            "accepted": [
+              "veulent"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex05-q03",
+          "number": 3,
+          "prompt": "Nous (devoir) __ partir dans une heure.",
+          "source_raw_prompt": "Nous (devoir) ________________ partir dans une heure.\n\n   ",
+          "pdf_pages": [
+            183
+          ],
+          "answer": {
+            "source_key": "devons",
+            "accepted": [
+              "devons"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex05-q04",
+          "number": 4,
+          "prompt": "Je (pouvoir) __ vous aider.",
+          "source_raw_prompt": "Je (pouvoir) ________________ vous aider.\n\n   ",
+          "pdf_pages": [
+            183
+          ],
+          "answer": {
+            "source_key": "peux",
+            "accepted": [
+              "peux"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex05-q05",
+          "number": 5,
+          "prompt": "Nous (désirer) __ renouveler notre abonnement.",
+          "source_raw_prompt": "Nous (désirer) ________________ renouveler notre abonnement.\n\n   ",
+          "pdf_pages": [
+            183
+          ],
+          "answer": {
+            "source_key": "désirons",
+            "accepted": [
+              "désirons"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex05-q06",
+          "number": 6,
+          "prompt": "Tu (vouloir) __ goûter ces plats.",
+          "source_raw_prompt": "Tu (vouloir) ________________ goûter ces plats.\n\n   ",
+          "pdf_pages": [
+            183
+          ],
+          "answer": {
+            "source_key": "veux",
+            "accepted": [
+              "veux"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex05-q07",
+          "number": 7,
+          "prompt": "Elle (sembler) __ comprendre les conséquences.",
+          "source_raw_prompt": "Elle (sembler) ________________ comprendre les conséquences.\n\n   ",
+          "pdf_pages": [
+            183
+          ],
+          "answer": {
+            "source_key": "semble",
+            "accepted": [
+              "semble"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex05-q08",
+          "number": 8,
+          "prompt": "Tu (penser) __ pouvoir réussir?",
+          "source_raw_prompt": "Tu (penser) ________________ pouvoir réussir?\n\n   ",
+          "pdf_pages": [
+            183
+          ],
+          "answer": {
+            "source_key": "penses",
+            "accepted": [
+              "penses"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex05-q09",
+          "number": 9,
+          "prompt": "Il (falloir) __ faire mariner le poisson.",
+          "source_raw_prompt": "Il (falloir) ________________ faire mariner le poisson.\n\n ",
+          "pdf_pages": [
+            183
+          ],
+          "answer": {
+            "source_key": "faut",
+            "accepted": [
+              "faut"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex05-q10",
+          "number": 10,
+          "prompt": "Vous (aller) __ passer une bonne soirée.",
+          "source_raw_prompt": "Vous (aller) ________________ passer une bonne soirée.",
+          "pdf_pages": [
+            183,
+            184,
+            185,
+            186
+          ],
+          "answer": {
+            "source_key": "allez",
+            "accepted": [
+              "allez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch14-s04"
+      ]
+    },
+    {
+      "id": "ch14-ex06",
+      "source": {
+        "chapter": 14,
+        "exercise": "14.6",
+        "pdf_pages": [
+          186
+        ]
+      },
+      "topic_ids": [
+        "ch14-t06"
+      ],
+      "instruction": "À ou de? Mettre la préposition.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch14-ex06-q01",
+          "number": 1,
+          "prompt": "J’ai appris __ faire une mousse au chocolat.",
+          "source_raw_prompt": "J’ai appris _______ faire une mousse au chocolat.\n\n ",
+          "pdf_pages": [
+            186
+          ],
+          "answer": {
+            "source_key": "à",
+            "accepted": [
+              "à"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex06-q02",
+          "number": 2,
+          "prompt": "Ils ont choisi __ s’installer dans une région gastronomique.",
+          "source_raw_prompt": "Ils ont choisi _______ s’installer dans une région gastronomique.\n\n ",
+          "pdf_pages": [
+            186
+          ],
+          "answer": {
+            "source_key": "de",
+            "accepted": [
+              "de"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex06-q03",
+          "number": 3,
+          "prompt": "Il s’habitue __ vivre dans une grande ville.",
+          "source_raw_prompt": "Il s’habitue _______ vivre dans une grande ville.\n\n ",
+          "pdf_pages": [
+            186
+          ],
+          "answer": {
+            "source_key": "à",
+            "accepted": [
+              "à"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex06-q04",
+          "number": 4,
+          "prompt": "Elle nous reproche __ ne jamais lui rendre visite.",
+          "source_raw_prompt": "Elle nous reproche _______ ne jamais lui rendre visite.\n\n ",
+          "pdf_pages": [
+            186
+          ],
+          "answer": {
+            "source_key": "de",
+            "accepted": [
+              "de"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex06-q05",
+          "number": 5,
+          "prompt": "Tu as renoncé __ faire ce voyage.",
+          "source_raw_prompt": "Tu as renoncé _______ faire ce voyage.\n\n ",
+          "pdf_pages": [
+            186
+          ],
+          "answer": {
+            "source_key": "à",
+            "accepted": [
+              "à"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex06-q06",
+          "number": 6,
+          "prompt": "Elle se souvient __ la cuisine de sa grand-mère.",
+          "source_raw_prompt": "Elle se souvient _______ la cuisine de sa grand-mère.\n\n ",
+          "pdf_pages": [
+            186
+          ],
+          "answer": {
+            "source_key": "de",
+            "accepted": [
+              "de"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex06-q07",
+          "number": 7,
+          "prompt": "Il tient __ sa voiture.",
+          "source_raw_prompt": "Il tient _______ sa voiture.\n\n ",
+          "pdf_pages": [
+            186
+          ],
+          "answer": {
+            "source_key": "à",
+            "accepted": [
+              "à"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex06-q08",
+          "number": 8,
+          "prompt": "Tu lui as conseillé __ suivre des cours de cuisine.",
+          "source_raw_prompt": "Tu lui as conseillé _______ suivre des cours de cuisine.\n\n ",
+          "pdf_pages": [
+            186
+          ],
+          "answer": {
+            "source_key": "de",
+            "accepted": [
+              "de"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex06-q09",
+          "number": 9,
+          "prompt": "Ils se plaignent __ tout.",
+          "source_raw_prompt": "Ils se plaignent _______ tout.\n\n",
+          "pdf_pages": [
+            186
+          ],
+          "answer": {
+            "source_key": "de",
+            "accepted": [
+              "de"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex06-q10",
+          "number": 10,
+          "prompt": "Son grand-père a promis __ faire des gâteaux.",
+          "source_raw_prompt": "Son grand-père a promis _______ faire des gâteaux.\n\n\n\n\n ",
+          "pdf_pages": [
+            186
+          ],
+          "answer": {
+            "source_key": "de",
+            "accepted": [
+              "de"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch14-s06"
+      ]
+    },
+    {
+      "id": "ch14-ex07",
+      "source": {
+        "chapter": 14,
+        "exercise": "14.7",
+        "pdf_pages": [
+          186,
+          187
+        ]
+      },
+      "topic_ids": [
+        "ch14-t06"
+      ],
+      "instruction": "Traduire les phrases suivantes en utilisant la forme vous si nécessaire.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch14-ex07-q01",
+          "number": 1,
+          "prompt": "They want to travel to France. __",
+          "source_raw_prompt": "They want to travel to France.   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            186,
+            187
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) veulent voyager en France.",
+            "accepted": [
+              "Ils (Elles) veulent voyager en France."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex07-q02",
+          "number": 2,
+          "prompt": "He spent hours peeling potatoes. __",
+          "source_raw_prompt": "He spent hours peeling potatoes.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            187
+          ],
+          "answer": {
+            "source_key": "Il a passé des heures à éplucher des pommes de terre.",
+            "accepted": [
+              "Il a passé des heures à éplucher des pommes de terre."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex07-q03",
+          "number": 3,
+          "prompt": "Cooking is her favorite pastime. __",
+          "source_raw_prompt": "Cooking is her favorite pastime.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            187
+          ],
+          "answer": {
+            "source_key": "Faire la cuisine est son passe-temps favori.",
+            "accepted": [
+              "Faire la cuisine est son passe-temps favori."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex07-q04",
+          "number": 4,
+          "prompt": "Do not forget to add some salt! __",
+          "source_raw_prompt": "Do not forget to add some salt!\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            187
+          ],
+          "answer": {
+            "source_key": "N’oubliez pas d’ajouter du sel!",
+            "accepted": [
+              "N’oubliez pas d’ajouter du sel!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex07-q05",
+          "number": 5,
+          "prompt": "He is afraid of burning the meat. __",
+          "source_raw_prompt": "He is afraid of burning the meat.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            187
+          ],
+          "answer": {
+            "source_key": "Il a peur de brûler la viande.",
+            "accepted": [
+              "Il a peur de brûler la viande."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex07-q06",
+          "number": 6,
+          "prompt": "They feel like eating a chocolate soufflé. __",
+          "source_raw_prompt": "They feel like eating a chocolate soufflé.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            187
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) ont envie de manger un soufflé au chocolat.",
+            "accepted": [
+              "Ils (Elles) ont envie de manger un soufflé au chocolat."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex07-q07",
+          "number": 7,
+          "prompt": "He stopped smoking. __",
+          "source_raw_prompt": "He stopped smoking.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            187
+          ],
+          "answer": {
+            "source_key": "Il a cessé de fumer.",
+            "accepted": [
+              "Il a cessé de fumer."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex07-q08",
+          "number": 8,
+          "prompt": "They refused to go out. __",
+          "source_raw_prompt": "They refused to go out.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            187
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) ont refusé de sortir.",
+            "accepted": [
+              "Ils (Elles) ont refusé de sortir."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex07-q09",
+          "number": 9,
+          "prompt": "She is learning how to cook. __",
+          "source_raw_prompt": "She is learning how to cook.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            187
+          ],
+          "answer": {
+            "source_key": "Elle apprend à faire la cuisine.",
+            "accepted": [
+              "Elle apprend à faire la cuisine."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch14-ex07-q10",
+          "number": 10,
+          "prompt": "Try to understand the situation! __ Chapter 27 will have other tricky, capricious verbs that use different prepositions.",
+          "source_raw_prompt": "Try to understand the situation!\n   _____________________________________________________________\n\n\n  Chapter 27 will have other tricky, capricious verbs that use different prepositions.",
+          "pdf_pages": [
+            187
+          ],
+          "answer": {
+            "source_key": "Essayez de comprendre la situation!",
+            "accepted": [
+              "Essayez de comprendre la situation!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch14-s06"
+      ]
+    }
+  ]
+}

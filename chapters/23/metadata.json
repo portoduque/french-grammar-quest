@@ -1,0 +1,214 @@
+{
+  "chapter": 23,
+  "title": "Chapter 23",
+  "source": {
+    "pdf_pages": [
+      283,
+      297
+    ],
+    "source_sha256": "297b92bc48e075449713c3b408ccf47de2466cfc6c4f4a25687a2a974276ae4d",
+    "answer_key_pdf_pages": [
+      518,
+      519
+    ]
+  },
+  "topics": [
+    {
+      "id": "ch23-t01",
+      "title": "Demonstrative adjectives",
+      "exercise_ids": [
+        "ch23-ex01",
+        "ch23-ex02"
+      ]
+    },
+    {
+      "id": "ch23-t02",
+      "title": "Possessive adjectives",
+      "exercise_ids": [
+        "ch23-ex03",
+        "ch23-ex04"
+      ]
+    },
+    {
+      "id": "ch23-t03",
+      "title": "Possessive pronouns",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch23-t04",
+      "title": "Indicating possession with être + à",
+      "exercise_ids": [
+        "ch23-ex05",
+        "ch23-ex06"
+      ]
+    },
+    {
+      "id": "ch23-t05",
+      "title": "Possessive pronouns with aussi and non plus",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch23-t06",
+      "title": "Demonstrative pronouns",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch23-t07",
+      "title": "Compound demonstrative pronouns",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch23-t08",
+      "title": "The demonstrative pronoun ce",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch23-t09",
+      "title": "Ceci, cela, and ça",
+      "exercise_ids": [
+        "ch23-ex07",
+        "ch23-ex08",
+        "ch23-ex09"
+      ]
+    }
+  ],
+  "exercise_ids": [
+    "ch23-ex01",
+    "ch23-ex02",
+    "ch23-ex03",
+    "ch23-ex04",
+    "ch23-ex05",
+    "ch23-ex06",
+    "ch23-ex07",
+    "ch23-ex08",
+    "ch23-ex09"
+  ],
+  "question_total": 82,
+  "validation": {
+    "source_pages": 15,
+    "source_chars": 23335,
+    "source_partition_complete": true,
+    "exercise_group_markers_detected": 9,
+    "questions_structured": 82,
+    "answer_key_entries_associated": 82,
+    "editorial_visual_review": "pending_glyph_by_glyph_check",
+    "theory_semantic_format": "partially_indexed_source_text_preserved",
+    "theory_source_segments": 3,
+    "text_semantic_format": "source-aligned_markdown_fenced_text_pending_table_visual_proof",
+    "answer_key_count": 82
+  },
+  "subtopics": [
+    {
+      "id": "ch23-s01",
+      "title": "Demonstrative adjectives",
+      "parent_topic_id": "ch23-t01",
+      "pdf_pages": [
+        283,
+        283
+      ],
+      "exercise_ids": [
+        "ch23-ex01",
+        "ch23-ex02"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch23-s02",
+      "title": "Possessive adjectives",
+      "parent_topic_id": "ch23-t02",
+      "pdf_pages": [
+        289,
+        289
+      ],
+      "exercise_ids": [
+        "ch23-ex03",
+        "ch23-ex04"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch23-s03",
+      "title": "Possessive pronouns",
+      "parent_topic_id": "ch23-t03",
+      "pdf_pages": [
+        289,
+        289
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch23-s04",
+      "title": "Indicating possession with être + à",
+      "parent_topic_id": "ch23-t04",
+      "pdf_pages": [
+        290,
+        290
+      ],
+      "exercise_ids": [
+        "ch23-ex05",
+        "ch23-ex06"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch23-s05",
+      "title": "Possessive pronouns with aussi and non plus",
+      "parent_topic_id": "ch23-t05",
+      "pdf_pages": [
+        292,
+        292
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch23-s06",
+      "title": "Demonstrative pronouns",
+      "parent_topic_id": "ch23-t06",
+      "pdf_pages": [
+        292,
+        292
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch23-s07",
+      "title": "Compound demonstrative pronouns",
+      "parent_topic_id": "ch23-t07",
+      "pdf_pages": [
+        293,
+        293
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch23-s08",
+      "title": "The demonstrative pronoun ce",
+      "parent_topic_id": "ch23-t08",
+      "pdf_pages": [
+        294,
+        294
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch23-s09",
+      "title": "Ceci, cela, and ça",
+      "parent_topic_id": "ch23-t09",
+      "pdf_pages": [
+        294,
+        294
+      ],
+      "exercise_ids": [
+        "ch23-ex07",
+        "ch23-ex08",
+        "ch23-ex09"
+      ],
+      "kind": "grammar"
+    }
+  ]
+}

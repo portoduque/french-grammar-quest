@@ -1,0 +1,107 @@
+{
+  "chapter": 10,
+  "title": "Chapter 10",
+  "source": {
+    "pdf_pages": [
+      126,
+      133
+    ],
+    "source_sha256": "297b92bc48e075449713c3b408ccf47de2466cfc6c4f4a25687a2a974276ae4d",
+    "answer_key_pdf_pages": [
+      507,
+      508
+    ]
+  },
+  "topics": [
+    {
+      "id": "ch10-t01",
+      "title": "Formation of the plus-que-parfait",
+      "exercise_ids": [
+        "ch10-ex01",
+        "ch10-ex02"
+      ]
+    },
+    {
+      "id": "ch10-t02",
+      "title": "Use of the plus-que-parfait",
+      "exercise_ids": [
+        "ch10-ex03",
+        "ch10-ex04"
+      ]
+    },
+    {
+      "id": "ch10-t03",
+      "title": "Don’t be misled by the English language",
+      "exercise_ids": [
+        "ch10-ex05",
+        "ch10-ex06"
+      ]
+    }
+  ],
+  "exercise_ids": [
+    "ch10-ex01",
+    "ch10-ex02",
+    "ch10-ex03",
+    "ch10-ex04",
+    "ch10-ex05",
+    "ch10-ex06"
+  ],
+  "question_total": 55,
+  "validation": {
+    "source_pages": 8,
+    "source_chars": 11295,
+    "source_partition_complete": true,
+    "exercise_group_markers_detected": 6,
+    "questions_structured": 55,
+    "answer_key_entries_associated": 55,
+    "editorial_visual_review": "pending_glyph_by_glyph_check",
+    "theory_semantic_format": "partially_indexed_source_text_preserved",
+    "theory_source_segments": 4,
+    "text_semantic_format": "source-aligned_markdown_fenced_text_pending_table_visual_proof",
+    "answer_key_count": 55
+  },
+  "subtopics": [
+    {
+      "id": "ch10-s01",
+      "title": "Formation of the plus-que-parfait",
+      "parent_topic_id": "ch10-t01",
+      "pdf_pages": [
+        126,
+        126
+      ],
+      "exercise_ids": [
+        "ch10-ex01",
+        "ch10-ex02"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch10-s02",
+      "title": "Use of the plus-que-parfait",
+      "parent_topic_id": "ch10-t02",
+      "pdf_pages": [
+        129,
+        129
+      ],
+      "exercise_ids": [
+        "ch10-ex03",
+        "ch10-ex04"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch10-s03",
+      "title": "Don’t be misled by the English language",
+      "parent_topic_id": "ch10-t03",
+      "pdf_pages": [
+        130,
+        130
+      ],
+      "exercise_ids": [
+        "ch10-ex05",
+        "ch10-ex06"
+      ],
+      "kind": "grammar"
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "chapter": 7,
+  "title": "Chapter 07",
+  "source": {
+    "pdf_pages": [
+      89,
+      102
+    ],
+    "source_sha256": "297b92bc48e075449713c3b408ccf47de2466cfc6c4f4a25687a2a974276ae4d",
+    "answer_key_pdf_pages": [
+      504,
+      505
+    ]
+  },
+  "topics": [
+    {
+      "id": "ch07-t01",
+      "title": "The past participle of regular verbs",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch07-t02",
+      "title": "The passé composé with avoir",
+      "exercise_ids": [
+        "ch07-ex01",
+        "ch07-ex02",
+        "ch07-ex03"
+      ]
+    },
+    {
+      "id": "ch07-t03",
+      "title": "Irregular past participles",
+      "exercise_ids": [
+        "ch07-ex04",
+        "ch07-ex05"
+      ]
+    },
+    {
+      "id": "ch07-t04",
+      "title": "The passé composé with être",
+      "exercise_ids": [
+        "ch07-ex06",
+        "ch07-ex07"
+      ]
+    },
+    {
+      "id": "ch07-t05",
+      "title": "Pronominal verbs in the passé composé",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch07-t06",
+      "title": "Verbs conjugated with avoir or être",
+      "exercise_ids": [
+        "ch07-ex08",
+        "ch07-ex09",
+        "ch07-ex10"
+      ]
+    }
+  ],
+  "exercise_ids": [
+    "ch07-ex01",
+    "ch07-ex02",
+    "ch07-ex03",
+    "ch07-ex04",
+    "ch07-ex05",
+    "ch07-ex06",
+    "ch07-ex07",
+    "ch07-ex08",
+    "ch07-ex09",
+    "ch07-ex10"
+  ],
+  "question_total": 90,
+  "validation": {
+    "source_pages": 14,
+    "source_chars": 20368,
+    "source_partition_complete": true,
+    "exercise_group_markers_detected": 10,
+    "questions_structured": 90,
+    "answer_key_entries_associated": 90,
+    "editorial_visual_review": "pending_glyph_by_glyph_check",
+    "theory_semantic_format": "partially_indexed_source_text_preserved",
+    "theory_source_segments": 3,
+    "text_semantic_format": "source-aligned_markdown_fenced_text_pending_table_visual_proof",
+    "answer_key_count": 90
+  },
+  "subtopics": [
+    {
+      "id": "ch07-s01",
+      "title": "The past participle of regular verbs",
+      "parent_topic_id": "ch07-t01",
+      "pdf_pages": [
+        89,
+        89
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch07-s02",
+      "title": "The passé composé with avoir",
+      "parent_topic_id": "ch07-t02",
+      "pdf_pages": [
+        91,
+        91
+      ],
+      "exercise_ids": [
+        "ch07-ex01",
+        "ch07-ex02",
+        "ch07-ex03"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch07-s03",
+      "title": "Irregular past participles",
+      "parent_topic_id": "ch07-t03",
+      "pdf_pages": [
+        94,
+        94
+      ],
+      "exercise_ids": [
+        "ch07-ex04",
+        "ch07-ex05"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch07-s04",
+      "title": "The passé composé with être",
+      "parent_topic_id": "ch07-t04",
+      "pdf_pages": [
+        96,
+        96
+      ],
+      "exercise_ids": [
+        "ch07-ex06",
+        "ch07-ex07"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch07-s05",
+      "title": "Pronominal verbs in the passé composé",
+      "parent_topic_id": "ch07-t05",
+      "pdf_pages": [
+        98,
+        98
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch07-s06",
+      "title": "Verbs conjugated with avoir or être",
+      "parent_topic_id": "ch07-t06",
+      "pdf_pages": [
+        99,
+        99
+      ],
+      "exercise_ids": [
+        "ch07-ex08",
+        "ch07-ex09",
+        "ch07-ex10"
+      ],
+      "kind": "grammar"
+    }
+  ]
+}

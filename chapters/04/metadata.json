@@ -1,0 +1,184 @@
+{
+  "chapter": 4,
+  "title": "Chapter 04",
+  "source": {
+    "pdf_pages": [
+      60,
+      72
+    ],
+    "source_sha256": "297b92bc48e075449713c3b408ccf47de2466cfc6c4f4a25687a2a974276ae4d",
+    "answer_key_pdf_pages": [
+      502,
+      503
+    ]
+  },
+  "topics": [
+    {
+      "id": "ch04-t01",
+      "title": "The verb aller (to go)",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch04-t02",
+      "title": "The immediate future tense",
+      "exercise_ids": [
+        "ch04-ex01",
+        "ch04-ex02"
+      ]
+    },
+    {
+      "id": "ch04-t03",
+      "title": "The verb venir (to come)",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch04-t04",
+      "title": "The immediate past",
+      "exercise_ids": [
+        "ch04-ex03",
+        "ch04-ex04",
+        "ch04-ex05"
+      ]
+    },
+    {
+      "id": "ch04-t05",
+      "title": "Tenir",
+      "exercise_ids": [
+        "ch04-ex06"
+      ]
+    },
+    {
+      "id": "ch04-t06",
+      "title": "The verb faire (to do, to make)",
+      "exercise_ids": [
+        "ch04-ex07"
+      ]
+    },
+    {
+      "id": "ch04-t07",
+      "title": "The causative form",
+      "exercise_ids": [
+        "ch04-ex08",
+        "ch04-ex09"
+      ]
+    }
+  ],
+  "exercise_ids": [
+    "ch04-ex01",
+    "ch04-ex02",
+    "ch04-ex03",
+    "ch04-ex04",
+    "ch04-ex05",
+    "ch04-ex06",
+    "ch04-ex07",
+    "ch04-ex08",
+    "ch04-ex09"
+  ],
+  "question_total": 85,
+  "validation": {
+    "source_pages": 13,
+    "source_chars": 17302,
+    "source_partition_complete": true,
+    "exercise_group_markers_detected": 9,
+    "questions_structured": 85,
+    "answer_key_entries_associated": 85,
+    "editorial_visual_review": "pending_glyph_by_glyph_check",
+    "theory_semantic_format": "partially_indexed_source_text_preserved",
+    "theory_source_segments": 4,
+    "text_semantic_format": "source-aligned_markdown_fenced_text_pending_table_visual_proof",
+    "answer_key_count": 85
+  },
+  "subtopics": [
+    {
+      "id": "ch04-s01",
+      "title": "The verb aller (to go)",
+      "parent_topic_id": "ch04-t01",
+      "pdf_pages": [
+        60,
+        60
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch04-s02",
+      "title": "The immediate future tense",
+      "parent_topic_id": "ch04-t02",
+      "pdf_pages": [
+        61,
+        61
+      ],
+      "exercise_ids": [
+        "ch04-ex01",
+        "ch04-ex02"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch04-s03",
+      "title": "The verb venir (to come)",
+      "parent_topic_id": "ch04-t03",
+      "pdf_pages": [
+        64,
+        64
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch04-s04",
+      "title": "The immediate past",
+      "parent_topic_id": "ch04-t04",
+      "pdf_pages": [
+        64,
+        64
+      ],
+      "exercise_ids": [
+        "ch04-ex03",
+        "ch04-ex04",
+        "ch04-ex05"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch04-s05",
+      "title": "Tenir",
+      "parent_topic_id": "ch04-t05",
+      "pdf_pages": [
+        66,
+        66
+      ],
+      "exercise_ids": [
+        "ch04-ex06"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch04-s06",
+      "title": "The verb faire (to do, to make)",
+      "parent_topic_id": "ch04-t06",
+      "pdf_pages": [
+        68,
+        68
+      ],
+      "exercise_ids": [
+        "ch04-ex07"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch04-s07",
+      "title": "The causative form",
+      "parent_topic_id": "ch04-t07",
+      "pdf_pages": [
+        70,
+        70
+      ],
+      "exercise_ids": [
+        "ch04-ex08",
+        "ch04-ex09"
+      ],
+      "kind": "grammar"
+    }
+  ]
+}

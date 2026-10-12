@@ -1,0 +1,41 @@
+       quatre-vingt-treize                                 ninety-three
+       quatre-vingt-quatorze                             ninety-four
+       quatre-vingt-quinze                                 ninety-five
+       quatre-vingt-seize                                   ninety-six
+       quatre-vingt-dix-sept                             ninety-seven
+       quatre-vingt-dix-huit                               ninety-eight
+       quatre-vingt-dix-neuf                             ninety-nine
+
+
+
+  EXERCICE  26·1
+
+ Transcrire en chiffres les nombres suivants.
+
+   1. cinquante-trois ______
+
+   2. cinquante-neuf ______
+
+   3. soixante-deux ______
+
+   4. soixante-dix ______
+
+   5. soixante et onze ______
+
+   6. soixante-dix-huit ______
+
+   7. quatre-vingt-trois ______
+
+   8. quatre-vingt-sept ______
+
+   9. quatre-vingt-dix ______
+
+ 10. quatre-vingt-treize ______
+
+
+The numbers 100 to 999
+Now we have reached one hundred! Let’s keep going.
+
+       cent                              one hundred
+       cent un                            one hundred one
+       cent deux                          one hundred two

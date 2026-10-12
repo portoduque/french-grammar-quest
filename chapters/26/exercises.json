@@ -1,0 +1,1541 @@
+{
+  "chapter": 26,
+  "status": "machine_transcribed_editorial_visual_review_pending",
+  "exercises": [
+    {
+      "id": "ch26-ex01",
+      "source": {
+        "chapter": 26,
+        "exercise": "26.1",
+        "pdf_pages": [
+          327
+        ]
+      },
+      "topic_ids": [
+        "ch26-t01"
+      ],
+      "instruction": "Écrire les nombres suivants en toutes lettres.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch26-ex01-q01",
+          "number": 1,
+          "prompt": "6 __",
+          "source_raw_prompt": "6 ________________\n\n   ",
+          "pdf_pages": [
+            327
+          ],
+          "answer": {
+            "source_key": "six",
+            "accepted": [
+              "six"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex01-q02",
+          "number": 2,
+          "prompt": "14 __",
+          "source_raw_prompt": "14 ________________\n\n   ",
+          "pdf_pages": [
+            327
+          ],
+          "answer": {
+            "source_key": "quatorze",
+            "accepted": [
+              "quatorze"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex01-q03",
+          "number": 3,
+          "prompt": "23 __",
+          "source_raw_prompt": "23 ________________\n\n   ",
+          "pdf_pages": [
+            327
+          ],
+          "answer": {
+            "source_key": "vingt-trois",
+            "accepted": [
+              "vingt-trois"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex01-q04",
+          "number": 4,
+          "prompt": "28 __",
+          "source_raw_prompt": "28 ________________\n\n   ",
+          "pdf_pages": [
+            327
+          ],
+          "answer": {
+            "source_key": "vingt-huit",
+            "accepted": [
+              "vingt-huit"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex01-q05",
+          "number": 5,
+          "prompt": "35 __",
+          "source_raw_prompt": "35 ________________\n\n   ",
+          "pdf_pages": [
+            327
+          ],
+          "answer": {
+            "source_key": "trente-cinq",
+            "accepted": [
+              "trente-cinq"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex01-q06",
+          "number": 6,
+          "prompt": "39 __",
+          "source_raw_prompt": "39 ________________\n\n   ",
+          "pdf_pages": [
+            327
+          ],
+          "answer": {
+            "source_key": "trente-neuf",
+            "accepted": [
+              "trente-neuf"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex01-q07",
+          "number": 7,
+          "prompt": "41 __",
+          "source_raw_prompt": "41 ________________\n\n   ",
+          "pdf_pages": [
+            327
+          ],
+          "answer": {
+            "source_key": "quarante et un",
+            "accepted": [
+              "quarante et un"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex01-q08",
+          "number": 8,
+          "prompt": "46 __",
+          "source_raw_prompt": "46 ________________\n\n   ",
+          "pdf_pages": [
+            327
+          ],
+          "answer": {
+            "source_key": "quarante-six",
+            "accepted": [
+              "quarante-six"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex01-q09",
+          "number": 9,
+          "prompt": "49 __",
+          "source_raw_prompt": "49 ________________\n\n ",
+          "pdf_pages": [
+            327
+          ],
+          "answer": {
+            "source_key": "quarante-neuf",
+            "accepted": [
+              "quarante-neuf"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex01-q10",
+          "number": 10,
+          "prompt": "52 __",
+          "source_raw_prompt": "52 ________________",
+          "pdf_pages": [
+            327,
+            328,
+            329
+          ],
+          "answer": {
+            "source_key": "cinquante-deux",
+            "accepted": [
+              "cinquante-deux"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch26-s01"
+      ]
+    },
+    {
+      "id": "ch26-ex02",
+      "source": {
+        "chapter": 26,
+        "exercise": "26.2",
+        "pdf_pages": [
+          329,
+          330
+        ]
+      },
+      "topic_ids": [
+        "ch26-t02"
+      ],
+      "instruction": "Traduire en anglais les phrases suivantes.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch26-ex02-q01",
+          "number": 1,
+          "prompt": "Il a perdu pour la troisième fois. __",
+          "source_raw_prompt": "Il a perdu pour la troisième fois.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            329
+          ],
+          "answer": {
+            "source_key": "He lost for the third time.",
+            "accepted": [
+              "He lost for the third time."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex02-q02",
+          "number": 2,
+          "prompt": "J’habite au trente et unième étage. __",
+          "source_raw_prompt": "J’habite au trente et unième étage.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            329
+          ],
+          "answer": {
+            "source_key": "I live on the thirty-first floor.",
+            "accepted": [
+              "I live on the thirty-first floor."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex02-q03",
+          "number": 3,
+          "prompt": "Elle a vendu sa deuxième voiture. __",
+          "source_raw_prompt": "Elle a vendu sa deuxième voiture.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            329
+          ],
+          "answer": {
+            "source_key": "She sold her second car.",
+            "accepted": [
+              "She sold her second car."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex02-q04",
+          "number": 4,
+          "prompt": "C’est son cinquante-huitième anniversaire. __",
+          "source_raw_prompt": "C’est son cinquante-huitième anniversaire.\n   _____________________________________________________________   ",
+          "pdf_pages": [
+            329,
+            330
+          ],
+          "answer": {
+            "source_key": "It’s his/her fifty-eighth birthday.",
+            "accepted": [
+              "It’s his/her fifty-eighth birthday."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex02-q05",
+          "number": 5,
+          "prompt": "Nous avons fait du ski pour la première fois. __",
+          "source_raw_prompt": "Nous avons fait du ski pour la première fois.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            330
+          ],
+          "answer": {
+            "source_key": "We skied for the first time.",
+            "accepted": [
+              "We skied for the first time."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex02-q06",
+          "number": 6,
+          "prompt": "C’est la quatrième fois que nous nous croisons dans la rue. __",
+          "source_raw_prompt": "C’est la quatrième fois que nous nous croisons dans la rue.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            330
+          ],
+          "answer": {
+            "source_key": "It’s the fourth time we have run into each other on the street.",
+            "accepted": [
+              "It’s the fourth time we have run into each other on the street."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex02-q07",
+          "number": 7,
+          "prompt": "Il a obtenu la quarante-huitième place. __",
+          "source_raw_prompt": "Il a obtenu la quarante-huitième place.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            330
+          ],
+          "answer": {
+            "source_key": "He got forty-eighth place.",
+            "accepted": [
+              "He got forty-eighth place."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex02-q08",
+          "number": 8,
+          "prompt": "J’adore la neuvième symphonie de Beethoven. __",
+          "source_raw_prompt": "J’adore la neuvième symphonie de Beethoven.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            330
+          ],
+          "answer": {
+            "source_key": "I love Beethoven’s Ninth Symphony.",
+            "accepted": [
+              "I love Beethoven’s Ninth Symphony."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex02-q09",
+          "number": 9,
+          "prompt": "Il habite au coin de la vingt-troisième rue et de la septième avenue. __",
+          "source_raw_prompt": "Il habite au coin de la vingt-troisième rue et de la septième avenue.\n    _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            330
+          ],
+          "answer": {
+            "source_key": "He lives at the corner of Twenty-third Street and Seventh Avenue.",
+            "accepted": [
+              "He lives at the corner of Twenty-third Street and Seventh Avenue."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex02-q10",
+          "number": 10,
+          "prompt": "C’est sa deuxième année? __",
+          "source_raw_prompt": "C’est sa deuxième année?\n    _____________________________________________________________",
+          "pdf_pages": [
+            330,
+            331,
+            332
+          ],
+          "answer": {
+            "source_key": "Is it his second year?",
+            "accepted": [
+              "Is it his second year?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch26-s02"
+      ]
+    },
+    {
+      "id": "ch26-ex03",
+      "source": {
+        "chapter": 26,
+        "exercise": "26.1",
+        "pdf_pages": [
+          332
+        ]
+      },
+      "topic_ids": [
+        "ch26-t03"
+      ],
+      "instruction": "Transcrire en chiffres les nombres suivants.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch26-ex03-q01",
+          "number": 1,
+          "prompt": "cinquante-trois __",
+          "source_raw_prompt": "cinquante-trois ______\n\n   ",
+          "pdf_pages": [
+            332
+          ],
+          "answer": {
+            "source_key": "53",
+            "accepted": [
+              "53"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex03-q02",
+          "number": 2,
+          "prompt": "cinquante-neuf __",
+          "source_raw_prompt": "cinquante-neuf ______\n\n   ",
+          "pdf_pages": [
+            332
+          ],
+          "answer": {
+            "source_key": "59",
+            "accepted": [
+              "59"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex03-q03",
+          "number": 3,
+          "prompt": "soixante-deux __",
+          "source_raw_prompt": "soixante-deux ______\n\n   ",
+          "pdf_pages": [
+            332
+          ],
+          "answer": {
+            "source_key": "62",
+            "accepted": [
+              "62"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex03-q04",
+          "number": 4,
+          "prompt": "soixante-dix __",
+          "source_raw_prompt": "soixante-dix ______\n\n   ",
+          "pdf_pages": [
+            332
+          ],
+          "answer": {
+            "source_key": "70",
+            "accepted": [
+              "70"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex03-q05",
+          "number": 5,
+          "prompt": "soixante et onze __",
+          "source_raw_prompt": "soixante et onze ______\n\n   ",
+          "pdf_pages": [
+            332
+          ],
+          "answer": {
+            "source_key": "71",
+            "accepted": [
+              "71"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex03-q06",
+          "number": 6,
+          "prompt": "soixante-dix-huit __",
+          "source_raw_prompt": "soixante-dix-huit ______\n\n   ",
+          "pdf_pages": [
+            332
+          ],
+          "answer": {
+            "source_key": "78",
+            "accepted": [
+              "78"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex03-q07",
+          "number": 7,
+          "prompt": "quatre-vingt-trois __",
+          "source_raw_prompt": "quatre-vingt-trois ______\n\n   ",
+          "pdf_pages": [
+            332
+          ],
+          "answer": {
+            "source_key": "83",
+            "accepted": [
+              "83"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex03-q08",
+          "number": 8,
+          "prompt": "quatre-vingt-sept __",
+          "source_raw_prompt": "quatre-vingt-sept ______\n\n   ",
+          "pdf_pages": [
+            332
+          ],
+          "answer": {
+            "source_key": "87",
+            "accepted": [
+              "87"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex03-q09",
+          "number": 9,
+          "prompt": "quatre-vingt-dix __",
+          "source_raw_prompt": "quatre-vingt-dix ______\n\n ",
+          "pdf_pages": [
+            332
+          ],
+          "answer": {
+            "source_key": "90",
+            "accepted": [
+              "90"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex03-q10",
+          "number": 10,
+          "prompt": "quatre-vingt-treize __",
+          "source_raw_prompt": "quatre-vingt-treize ______",
+          "pdf_pages": [
+            332,
+            333,
+            334
+          ],
+          "answer": {
+            "source_key": "93",
+            "accepted": [
+              "93"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch26-s03"
+      ]
+    },
+    {
+      "id": "ch26-ex04",
+      "source": {
+        "chapter": 26,
+        "exercise": "26.4",
+        "pdf_pages": [
+          334,
+          335
+        ]
+      },
+      "topic_ids": [
+        "ch26-t04"
+      ],
+      "instruction": "Écrire les nombres suivants en toutes lettres.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch26-ex04-q01",
+          "number": 1,
+          "prompt": "101 __",
+          "source_raw_prompt": "101 ____________________________________________\n\n   ",
+          "pdf_pages": [
+            334
+          ],
+          "answer": {
+            "source_key": "cent un",
+            "accepted": [
+              "cent un"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex04-q02",
+          "number": 2,
+          "prompt": "114 __",
+          "source_raw_prompt": "114 ____________________________________________\n\n   ",
+          "pdf_pages": [
+            334
+          ],
+          "answer": {
+            "source_key": "cent quatorze",
+            "accepted": [
+              "cent quatorze"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex04-q03",
+          "number": 3,
+          "prompt": "126 __",
+          "source_raw_prompt": "126 ____________________________________________\n\n   ",
+          "pdf_pages": [
+            334
+          ],
+          "answer": {
+            "source_key": "cent vingt-six",
+            "accepted": [
+              "cent vingt-six"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex04-q04",
+          "number": 4,
+          "prompt": "139 __",
+          "source_raw_prompt": "139 ____________________________________________\n\n   ",
+          "pdf_pages": [
+            334
+          ],
+          "answer": {
+            "source_key": "cent trente-neuf",
+            "accepted": [
+              "cent trente-neuf"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex04-q05",
+          "number": 5,
+          "prompt": "145 __",
+          "source_raw_prompt": "145 ____________________________________________\n\n   ",
+          "pdf_pages": [
+            334
+          ],
+          "answer": {
+            "source_key": "cent quarante-cinq",
+            "accepted": [
+              "cent quarante-cinq"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex04-q06",
+          "number": 6,
+          "prompt": "156 __",
+          "source_raw_prompt": "156 ____________________________________________\n\n   ",
+          "pdf_pages": [
+            334
+          ],
+          "answer": {
+            "source_key": "cent cinquante-six",
+            "accepted": [
+              "cent cinquante-six"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex04-q07",
+          "number": 7,
+          "prompt": "160 __",
+          "source_raw_prompt": "160 ____________________________________________\n\n   ",
+          "pdf_pages": [
+            334
+          ],
+          "answer": {
+            "source_key": "cent soixante",
+            "accepted": [
+              "cent soixante"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex04-q08",
+          "number": 8,
+          "prompt": "178 __",
+          "source_raw_prompt": "178 ____________________________________________\n\n   ",
+          "pdf_pages": [
+            334
+          ],
+          "answer": {
+            "source_key": "cent soixante dix-huit",
+            "accepted": [
+              "cent soixante dix-huit"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex04-q09",
+          "number": 9,
+          "prompt": "181 __",
+          "source_raw_prompt": "181 ____________________________________________\n\n ",
+          "pdf_pages": [
+            334
+          ],
+          "answer": {
+            "source_key": "cent quatre-vingt-un",
+            "accepted": [
+              "cent quatre-vingt-un"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex04-q10",
+          "number": 10,
+          "prompt": "199 __ Add an -s to cent greater than one hundred (deux cents, trois cents), except when cent is followed by another number. deux cents two hundred trois cents three hundred quatre cents four hundred cinq cents five hundred six cents six hundred sept cents seven hundred huit cents eight hundred neuf cents nine hundred Note the following examples: huit cent vingt-quatre eight hundred twenty-four deux cent quatre-vingt-trois two hundred eighty-three",
+          "source_raw_prompt": "199 ____________________________________________\n\n\n\n  Add an -s to cent greater than one hundred (deux cents, trois cents), except when\ncent is followed by another number.\n\n      deux cents                       two hundred\n        trois cents                           three hundred\n      quatre cents                        four hundred\n       cinq cents                               five hundred\n        six cents                                six hundred\n       sept cents                         seven hundred\n       huit cents                            eight hundred\n      neuf cents                          nine hundred\n\n  Note the following examples:\n\n       huit cent vingt-quatre                    eight hundred twenty-four     deux cent quatre-vingt-trois           two hundred eighty-three\n\n\n\n ",
+          "pdf_pages": [
+            334,
+            335
+          ],
+          "answer": {
+            "source_key": "cent quatre-vingt-dix-neuf",
+            "accepted": [
+              "cent quatre-vingt-dix-neuf"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch26-s04"
+      ]
+    },
+    {
+      "id": "ch26-ex05",
+      "source": {
+        "chapter": 26,
+        "exercise": "26.5",
+        "pdf_pages": [
+          335
+        ]
+      },
+      "topic_ids": [
+        "ch26-t04"
+      ],
+      "instruction": "Traduire (en toutes lettres) les nombres suivants.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch26-ex05-q01",
+          "number": 1,
+          "prompt": "two hundred twelve __",
+          "source_raw_prompt": "two hundred twelve ___________________________________\n\n ",
+          "pdf_pages": [
+            335
+          ],
+          "answer": {
+            "source_key": "deux cent douze",
+            "accepted": [
+              "deux cent douze"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex05-q02",
+          "number": 2,
+          "prompt": "three hundred fifteen __",
+          "source_raw_prompt": "three hundred fifteen ___________________________________\n\n ",
+          "pdf_pages": [
+            335
+          ],
+          "answer": {
+            "source_key": "trois cent quinze",
+            "accepted": [
+              "trois cent quinze"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex05-q03",
+          "number": 3,
+          "prompt": "four hundred twenty __",
+          "source_raw_prompt": "four hundred twenty ___________________________________\n\n ",
+          "pdf_pages": [
+            335
+          ],
+          "answer": {
+            "source_key": "quatre cent vingt",
+            "accepted": [
+              "quatre cent vingt"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex05-q04",
+          "number": 4,
+          "prompt": "five hundred thirty-one __",
+          "source_raw_prompt": "five hundred thirty-one ___________________________________\n\n ",
+          "pdf_pages": [
+            335
+          ],
+          "answer": {
+            "source_key": "cinq cent trente et un",
+            "accepted": [
+              "cinq cent trente et un"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex05-q05",
+          "number": 5,
+          "prompt": "six hundred twenty-three __",
+          "source_raw_prompt": "six hundred twenty-three ___________________________________\n\n ",
+          "pdf_pages": [
+            335
+          ],
+          "answer": {
+            "source_key": "six cent vingt-trois",
+            "accepted": [
+              "six cent vingt-trois"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex05-q06",
+          "number": 6,
+          "prompt": "seven hundred ninety __",
+          "source_raw_prompt": "seven hundred ninety ___________________________________\n\n ",
+          "pdf_pages": [
+            335
+          ],
+          "answer": {
+            "source_key": "sept cent quatre-vingt-dix",
+            "accepted": [
+              "sept cent quatre-vingt-dix"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex05-q07",
+          "number": 7,
+          "prompt": "eight hundred forty-eight __",
+          "source_raw_prompt": "eight hundred forty-eight ___________________________________\n\n ",
+          "pdf_pages": [
+            335
+          ],
+          "answer": {
+            "source_key": "huit cent quarante-huit",
+            "accepted": [
+              "huit cent quarante-huit"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex05-q08",
+          "number": 8,
+          "prompt": "nine hundred four __",
+          "source_raw_prompt": "nine hundred four ___________________________________\n\n ",
+          "pdf_pages": [
+            335
+          ],
+          "answer": {
+            "source_key": "neuf cent quatre",
+            "accepted": [
+              "neuf cent quatre"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex05-q09",
+          "number": 9,
+          "prompt": "six hundred forty-five __",
+          "source_raw_prompt": "six hundred forty-five ___________________________________\n\n",
+          "pdf_pages": [
+            335
+          ],
+          "answer": {
+            "source_key": "six cent quarante-cinq",
+            "accepted": [
+              "six cent quarante-cinq"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex05-q10",
+          "number": 10,
+          "prompt": "one hundred one __",
+          "source_raw_prompt": "one hundred one ___________________________________\n\n\n\n\n ",
+          "pdf_pages": [
+            335
+          ],
+          "answer": {
+            "source_key": "cent un",
+            "accepted": [
+              "cent un"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch26-s04"
+      ]
+    },
+    {
+      "id": "ch26-ex06",
+      "source": {
+        "chapter": 26,
+        "exercise": "26.6",
+        "pdf_pages": [
+          335,
+          336
+        ]
+      },
+      "topic_ids": [
+        "ch26-t04"
+      ],
+      "instruction": "Écrire les nombres suivants en toutes lettres.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch26-ex06-q01",
+          "number": 1,
+          "prompt": "205 __",
+          "source_raw_prompt": "205 ____________________________________________\n\n ",
+          "pdf_pages": [
+            335
+          ],
+          "answer": {
+            "source_key": "deux cent cinq",
+            "accepted": [
+              "deux cent cinq"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex06-q02",
+          "number": 2,
+          "prompt": "389 __",
+          "source_raw_prompt": "389 ____________________________________________\n\n ",
+          "pdf_pages": [
+            335
+          ],
+          "answer": {
+            "source_key": "trois cent quatre-vingt-neuf",
+            "accepted": [
+              "trois cent quatre-vingt-neuf"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex06-q03",
+          "number": 3,
+          "prompt": "456 __",
+          "source_raw_prompt": "456 ____________________________________________\n\n ",
+          "pdf_pages": [
+            335
+          ],
+          "answer": {
+            "source_key": "quatre cent cinquante-six",
+            "accepted": [
+              "quatre cent cinquante-six"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex06-q04",
+          "number": 4,
+          "prompt": "504 __",
+          "source_raw_prompt": "504 ____________________________________________\n\n ",
+          "pdf_pages": [
+            335
+          ],
+          "answer": {
+            "source_key": "cinq cent quatre",
+            "accepted": [
+              "cinq cent quatre"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex06-q05",
+          "number": 5,
+          "prompt": "678 __",
+          "source_raw_prompt": "678 ____________________________________________   ",
+          "pdf_pages": [
+            335,
+            336
+          ],
+          "answer": {
+            "source_key": "six cent soixante-dix-huit",
+            "accepted": [
+              "six cent soixante-dix-huit"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex06-q06",
+          "number": 6,
+          "prompt": "745 __",
+          "source_raw_prompt": "745 ____________________________________________\n\n   ",
+          "pdf_pages": [
+            336
+          ],
+          "answer": {
+            "source_key": "sept cent quarante-cinq",
+            "accepted": [
+              "sept cent quarante-cinq"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex06-q07",
+          "number": 7,
+          "prompt": "800 __",
+          "source_raw_prompt": "800 ____________________________________________\n\n   ",
+          "pdf_pages": [
+            336
+          ],
+          "answer": {
+            "source_key": "huit cents",
+            "accepted": [
+              "huit cents"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex06-q08",
+          "number": 8,
+          "prompt": "815 __",
+          "source_raw_prompt": "815 ____________________________________________\n\n   ",
+          "pdf_pages": [
+            336
+          ],
+          "answer": {
+            "source_key": "huit cent quinze",
+            "accepted": [
+              "huit cent quinze"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex06-q09",
+          "number": 9,
+          "prompt": "901 __",
+          "source_raw_prompt": "901 ____________________________________________\n\n ",
+          "pdf_pages": [
+            336
+          ],
+          "answer": {
+            "source_key": "neuf cent un",
+            "accepted": [
+              "neuf cent un"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex06-q10",
+          "number": 10,
+          "prompt": "940 __",
+          "source_raw_prompt": "940 ____________________________________________",
+          "pdf_pages": [
+            336,
+            337
+          ],
+          "answer": {
+            "source_key": "neuf cent quarante",
+            "accepted": [
+              "neuf cent quarante"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch26-s04"
+      ]
+    },
+    {
+      "id": "ch26-ex07",
+      "source": {
+        "chapter": 26,
+        "exercise": "26.7",
+        "pdf_pages": [
+          337
+        ]
+      },
+      "topic_ids": [
+        "ch26-t05"
+      ],
+      "instruction": "Écrire les nombres suivants en toutes lettres.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch26-ex07-q01",
+          "number": 1,
+          "prompt": "1 005 __",
+          "source_raw_prompt": "1 005 ____________________________________________\n\n ",
+          "pdf_pages": [
+            337
+          ],
+          "answer": {
+            "source_key": "mille cinq",
+            "accepted": [
+              "mille cinq"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex07-q02",
+          "number": 2,
+          "prompt": "2 456 __",
+          "source_raw_prompt": "2 456 ____________________________________________\n\n ",
+          "pdf_pages": [
+            337
+          ],
+          "answer": {
+            "source_key": "deux mille quatre cent cinquante-six",
+            "accepted": [
+              "deux mille quatre cent cinquante-six"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex07-q03",
+          "number": 3,
+          "prompt": "3 021 __",
+          "source_raw_prompt": "3 021 ____________________________________________\n\n ",
+          "pdf_pages": [
+            337
+          ],
+          "answer": {
+            "source_key": "trois mille vingt et un",
+            "accepted": [
+              "trois mille vingt et un"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex07-q04",
+          "number": 4,
+          "prompt": "4 789 __",
+          "source_raw_prompt": "4 789 ____________________________________________\n\n ",
+          "pdf_pages": [
+            337
+          ],
+          "answer": {
+            "source_key": "quatre mille sept cent quatre-vingt-neuf",
+            "accepted": [
+              "quatre mille sept cent quatre-vingt-neuf"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex07-q05",
+          "number": 5,
+          "prompt": "10 450 __",
+          "source_raw_prompt": "10 450 ____________________________________________\n\n ",
+          "pdf_pages": [
+            337
+          ],
+          "answer": {
+            "source_key": "dix mille quatre cent cinquante",
+            "accepted": [
+              "dix mille quatre cent cinquante"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex07-q06",
+          "number": 6,
+          "prompt": "24 008 __",
+          "source_raw_prompt": "24 008 ____________________________________________\n\n ",
+          "pdf_pages": [
+            337
+          ],
+          "answer": {
+            "source_key": "vingt-quatre mille huit",
+            "accepted": [
+              "vingt-quatre mille huit"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex07-q07",
+          "number": 7,
+          "prompt": "170 890 __",
+          "source_raw_prompt": "170 890 ____________________________________________\n\n ",
+          "pdf_pages": [
+            337
+          ],
+          "answer": {
+            "source_key": "cent soixante-dix mille huit cent quatre-vingt- dix",
+            "accepted": [
+              "cent soixante-dix mille huit cent quatre-vingt- dix"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex07-q08",
+          "number": 8,
+          "prompt": "1 230 000 __",
+          "source_raw_prompt": "1 230 000 ____________________________________________\n\n ",
+          "pdf_pages": [
+            337
+          ],
+          "answer": {
+            "source_key": "un million deux cent trente mille",
+            "accepted": [
+              "un million deux cent trente mille"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex07-q09",
+          "number": 9,
+          "prompt": "30 030 000 __",
+          "source_raw_prompt": "30 030 000 ____________________________________________\n\n",
+          "pdf_pages": [
+            337
+          ],
+          "answer": {
+            "source_key": "trente million trente mille",
+            "accepted": [
+              "trente million trente mille"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex07-q10",
+          "number": 10,
+          "prompt": "1 600 000 000 __",
+          "source_raw_prompt": "1 600 000 000 ____________________________________________\n\n\n\n\n ",
+          "pdf_pages": [
+            337
+          ],
+          "answer": {
+            "source_key": "un milliard six cent millions",
+            "accepted": [
+              "un milliard six cent millions"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch26-s05"
+      ]
+    },
+    {
+      "id": "ch26-ex08",
+      "source": {
+        "chapter": 26,
+        "exercise": "26.8",
+        "pdf_pages": [
+          337,
+          338
+        ]
+      },
+      "topic_ids": [
+        "ch26-t05"
+      ],
+      "instruction": "Dans les phrases suivantes, transcrire les nombres.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch26-ex08-q01",
+          "number": 1,
+          "prompt": "Leur bibliothèque numérique sera prête en 2026. __",
+          "source_raw_prompt": "Leur bibliothèque numérique sera prête en 2026.\n   _____________________________________________________________ ",
+          "pdf_pages": [
+            337,
+            338
+          ],
+          "answer": {
+            "source_key": "deux mille vingt-huit",
+            "accepted": [
+              "deux mille vingt-huit"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex08-q02",
+          "number": 2,
+          "prompt": "Cet appartement coûte 750 000 euros. __",
+          "source_raw_prompt": "Cet appartement coûte 750 000 euros.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            338
+          ],
+          "answer": {
+            "source_key": "sept cent cinquante mille",
+            "accepted": [
+              "sept cent cinquante mille"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex08-q03",
+          "number": 3,
+          "prompt": "Hier, j’ai bu du Saint-Émilion 1978. __",
+          "source_raw_prompt": "Hier, j’ai bu du Saint-Émilion 1978.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            338
+          ],
+          "answer": {
+            "source_key": "mille neuf cent soixante-dix-huit",
+            "accepted": [
+              "mille neuf cent soixante-dix-huit"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex08-q04",
+          "number": 4,
+          "prompt": "Le soixantième Festival de Cannes a lieu en mai 2007. __",
+          "source_raw_prompt": "Le soixantième Festival de Cannes a lieu en mai 2007.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            338
+          ],
+          "answer": {
+            "source_key": "deux mille sept",
+            "accepted": [
+              "deux mille sept"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex08-q05",
+          "number": 5,
+          "prompt": "Il y a plus d’1 000 000 000 d’étoiles dans le ciel. __",
+          "source_raw_prompt": "Il y a plus d’1 000 000 000 d’étoiles dans le ciel.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            338
+          ],
+          "answer": {
+            "source_key": "un milliard",
+            "accepted": [
+              "un milliard"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex08-q06",
+          "number": 6,
+          "prompt": "Il a remporté la médaille d’or du 1 500 mètres. __",
+          "source_raw_prompt": "Il a remporté la médaille d’or du 1 500 mètres.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            338
+          ],
+          "answer": {
+            "source_key": "mille cinq cents",
+            "accepted": [
+              "mille cinq cents"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex08-q07",
+          "number": 7,
+          "prompt": "D’après un sondage réalisé en 2023, Instagram compte près de 3 000 000 000 d’utilisateurs mensuels. __",
+          "source_raw_prompt": "D’après un sondage réalisé en 2023, Instagram compte près de 3 000 000 000\n    d’utilisateurs mensuels.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            338
+          ],
+          "answer": {
+            "source_key": "deux mille vingt-trois / trois milliards",
+            "accepted": [
+              "deux mille vingt-trois / trois milliards"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex08-q08",
+          "number": 8,
+          "prompt": "Victor Hugo est mort en 1885. __",
+          "source_raw_prompt": "Victor Hugo est mort en 1885.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            338
+          ],
+          "answer": {
+            "source_key": "mille huit cent quatre-vingt-cinq",
+            "accepted": [
+              "mille huit cent quatre-vingt-cinq"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex08-q09",
+          "number": 9,
+          "prompt": "Cet administrateur de site gagne 5 000 euros par mois. __",
+          "source_raw_prompt": "Cet administrateur de site gagne 5 000 euros par mois.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            338
+          ],
+          "answer": {
+            "source_key": "cinq mille",
+            "accepted": [
+              "cinq mille"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch26-ex08-q10",
+          "number": 10,
+          "prompt": "Nous sommes plus de 8 000 000 000 sur cette planète. __",
+          "source_raw_prompt": "Nous sommes plus de 8 000 000 000 sur cette planète.\n   _____________________________________________________________",
+          "pdf_pages": [
+            338
+          ],
+          "answer": {
+            "source_key": "huit milliards",
+            "accepted": [
+              "huit milliards"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch26-s05"
+      ]
+    }
+  ]
+}

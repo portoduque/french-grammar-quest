@@ -1,0 +1,176 @@
+{
+  "chapter": 2,
+  "title": "Chapter 02",
+  "source": {
+    "pdf_pages": [
+      31,
+      45
+    ],
+    "source_sha256": "297b92bc48e075449713c3b408ccf47de2466cfc6c4f4a25687a2a974276ae4d",
+    "answer_key_pdf_pages": [
+      500,
+      501
+    ]
+  },
+  "topics": [
+    {
+      "id": "ch02-t01",
+      "title": "-ir verbs in the present",
+      "exercise_ids": [
+        "ch02-ex01",
+        "ch02-ex02",
+        "ch02-ex03"
+      ]
+    },
+    {
+      "id": "ch02-t02",
+      "title": "-re verbs in the present",
+      "exercise_ids": [
+        "ch02-ex04",
+        "ch02-ex05"
+      ]
+    },
+    {
+      "id": "ch02-t03",
+      "title": "Irregular -re verbs",
+      "exercise_ids": [
+        "ch02-ex06",
+        "ch02-ex07"
+      ]
+    },
+    {
+      "id": "ch02-t04",
+      "title": "The interrogative form",
+      "exercise_ids": [
+        "ch02-ex08",
+        "ch02-ex09"
+      ]
+    },
+    {
+      "id": "ch02-t05",
+      "title": "The negative form",
+      "exercise_ids": [
+        "ch02-ex10"
+      ]
+    },
+    {
+      "id": "ch02-t06",
+      "title": "The negation ni… ni…",
+      "exercise_ids": [
+        "ch02-ex11"
+      ]
+    }
+  ],
+  "exercise_ids": [
+    "ch02-ex01",
+    "ch02-ex02",
+    "ch02-ex03",
+    "ch02-ex04",
+    "ch02-ex05",
+    "ch02-ex06",
+    "ch02-ex07",
+    "ch02-ex08",
+    "ch02-ex09",
+    "ch02-ex10",
+    "ch02-ex11"
+  ],
+  "question_total": 110,
+  "validation": {
+    "source_pages": 15,
+    "source_chars": 20566,
+    "source_partition_complete": true,
+    "exercise_group_markers_detected": 11,
+    "questions_structured": 110,
+    "answer_key_entries_associated": 110,
+    "editorial_visual_review": "pending_glyph_by_glyph_check",
+    "theory_semantic_format": "partially_indexed_source_text_preserved",
+    "theory_source_segments": 6,
+    "text_semantic_format": "source-aligned_markdown_fenced_text_pending_table_visual_proof",
+    "answer_key_count": 110
+  },
+  "subtopics": [
+    {
+      "id": "ch02-s01",
+      "title": "-ir verbs in the present",
+      "parent_topic_id": "ch02-t01",
+      "pdf_pages": [
+        31,
+        31
+      ],
+      "exercise_ids": [
+        "ch02-ex01",
+        "ch02-ex02",
+        "ch02-ex03"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch02-s02",
+      "title": "-re verbs in the present",
+      "parent_topic_id": "ch02-t02",
+      "pdf_pages": [
+        35,
+        35
+      ],
+      "exercise_ids": [
+        "ch02-ex04",
+        "ch02-ex05"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch02-s03",
+      "title": "Irregular -re verbs",
+      "parent_topic_id": "ch02-t03",
+      "pdf_pages": [
+        37,
+        37
+      ],
+      "exercise_ids": [
+        "ch02-ex06",
+        "ch02-ex07"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch02-s04",
+      "title": "The interrogative form",
+      "parent_topic_id": "ch02-t04",
+      "pdf_pages": [
+        39,
+        39
+      ],
+      "exercise_ids": [
+        "ch02-ex08",
+        "ch02-ex09"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch02-s05",
+      "title": "The negative form",
+      "parent_topic_id": "ch02-t05",
+      "pdf_pages": [
+        42,
+        42
+      ],
+      "exercise_ids": [
+        "ch02-ex10"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch02-s06",
+      "title": "The negation ni… ni…",
+      "parent_topic_id": "ch02-t06",
+      "pdf_pages": [
+        43,
+        43
+      ],
+      "exercise_ids": [
+        "ch02-ex11"
+      ],
+      "kind": "grammar"
+    }
+  ]
+}

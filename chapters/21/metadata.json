@@ -1,0 +1,211 @@
+{
+  "chapter": 21,
+  "title": "Chapter 21",
+  "source": {
+    "pdf_pages": [
+      247,
+      270
+    ],
+    "source_sha256": "297b92bc48e075449713c3b408ccf47de2466cfc6c4f4a25687a2a974276ae4d",
+    "answer_key_pdf_pages": [
+      516,
+      517
+    ]
+  },
+  "topics": [
+    {
+      "id": "ch21-t01",
+      "title": "Subject pronouns",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch21-t02",
+      "title": "Direct object pronouns",
+      "exercise_ids": [
+        "ch21-ex01",
+        "ch21-ex02"
+      ]
+    },
+    {
+      "id": "ch21-t03",
+      "title": "Indirect object pronouns",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch21-t04",
+      "title": "Indirect object pronouns in the imperative",
+      "exercise_ids": [
+        "ch21-ex03",
+        "ch21-ex04"
+      ]
+    },
+    {
+      "id": "ch21-t05",
+      "title": "The pronoun y",
+      "exercise_ids": [
+        "ch21-ex05"
+      ]
+    },
+    {
+      "id": "ch21-t06",
+      "title": "The pronoun en",
+      "exercise_ids": [
+        "ch21-ex06",
+        "ch21-ex07"
+      ]
+    },
+    {
+      "id": "ch21-t07",
+      "title": "The order of object pronouns",
+      "exercise_ids": [
+        "ch21-ex08",
+        "ch21-ex09"
+      ]
+    },
+    {
+      "id": "ch21-t08",
+      "title": "Disjunctive pronouns",
+      "exercise_ids": [
+        "ch21-ex10",
+        "ch21-ex11",
+        "ch21-ex12"
+      ]
+    }
+  ],
+  "exercise_ids": [
+    "ch21-ex01",
+    "ch21-ex02",
+    "ch21-ex03",
+    "ch21-ex04",
+    "ch21-ex05",
+    "ch21-ex06",
+    "ch21-ex07",
+    "ch21-ex08",
+    "ch21-ex09",
+    "ch21-ex10",
+    "ch21-ex11",
+    "ch21-ex12"
+  ],
+  "question_total": 110,
+  "validation": {
+    "source_pages": 24,
+    "source_chars": 40516,
+    "source_partition_complete": true,
+    "exercise_group_markers_detected": 12,
+    "questions_structured": 110,
+    "answer_key_entries_associated": 110,
+    "editorial_visual_review": "pending_glyph_by_glyph_check",
+    "theory_semantic_format": "partially_indexed_source_text_preserved",
+    "theory_source_segments": 6,
+    "text_semantic_format": "source-aligned_markdown_fenced_text_pending_table_visual_proof",
+    "answer_key_count": 110
+  },
+  "subtopics": [
+    {
+      "id": "ch21-s01",
+      "title": "Subject pronouns",
+      "parent_topic_id": "ch21-t01",
+      "pdf_pages": [
+        247,
+        247
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch21-s02",
+      "title": "Direct object pronouns",
+      "parent_topic_id": "ch21-t02",
+      "pdf_pages": [
+        250,
+        250
+      ],
+      "exercise_ids": [
+        "ch21-ex01",
+        "ch21-ex02"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch21-s03",
+      "title": "Indirect object pronouns",
+      "parent_topic_id": "ch21-t03",
+      "pdf_pages": [
+        255,
+        255
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch21-s04",
+      "title": "Indirect object pronouns in the imperative",
+      "parent_topic_id": "ch21-t04",
+      "pdf_pages": [
+        255,
+        255
+      ],
+      "exercise_ids": [
+        "ch21-ex03",
+        "ch21-ex04"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch21-s05",
+      "title": "The pronoun y",
+      "parent_topic_id": "ch21-t05",
+      "pdf_pages": [
+        257,
+        257
+      ],
+      "exercise_ids": [
+        "ch21-ex05"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch21-s06",
+      "title": "The pronoun en",
+      "parent_topic_id": "ch21-t06",
+      "pdf_pages": [
+        259,
+        259
+      ],
+      "exercise_ids": [
+        "ch21-ex06",
+        "ch21-ex07"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch21-s07",
+      "title": "The order of object pronouns",
+      "parent_topic_id": "ch21-t07",
+      "pdf_pages": [
+        261,
+        261
+      ],
+      "exercise_ids": [
+        "ch21-ex08",
+        "ch21-ex09"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch21-s08",
+      "title": "Disjunctive pronouns",
+      "parent_topic_id": "ch21-t08",
+      "pdf_pages": [
+        264,
+        264
+      ],
+      "exercise_ids": [
+        "ch21-ex10",
+        "ch21-ex11",
+        "ch21-ex12"
+      ],
+      "kind": "grammar"
+    }
+  ]
+}

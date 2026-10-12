@@ -1,0 +1,2196 @@
+{
+  "chapter": 21,
+  "status": "machine_transcribed_editorial_visual_review_pending",
+  "exercises": [
+    {
+      "id": "ch21-ex01",
+      "source": {
+        "chapter": 21,
+        "exercise": "21.1",
+        "pdf_pages": [
+          252,
+          253
+        ]
+      },
+      "topic_ids": [
+        "ch21-t02"
+      ],
+      "instruction": "Remplacer les mots en caractères gras par un pronom objet direct.",
+      "interaction_type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ch21-ex01-q01",
+          "number": 1,
+          "prompt": "Elle achète les fleurs bleues. __",
+          "source_raw_prompt": "Elle achète les fleurs bleues. _______________________________\n\n   ",
+          "pdf_pages": [
+            252
+          ],
+          "answer": {
+            "source_key": "Elle les achète.",
+            "accepted": [
+              "Elle les achète."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex01-q02",
+          "number": 2,
+          "prompt": "Il consulte le médecin. __",
+          "source_raw_prompt": "Il consulte le médecin. _______________________________ ",
+          "pdf_pages": [
+            252,
+            253
+          ],
+          "answer": {
+            "source_key": "Il le consulte.",
+            "accepted": [
+              "Il le consulte."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex01-q03",
+          "number": 3,
+          "prompt": "Nous soutenons votre projet. __",
+          "source_raw_prompt": "Nous soutenons votre projet. _______________________________\n\n ",
+          "pdf_pages": [
+            253
+          ],
+          "answer": {
+            "source_key": "Nous le soutenons.",
+            "accepted": [
+              "Nous le soutenons."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex01-q04",
+          "number": 4,
+          "prompt": "Ils construisent la maison de leurs rêves. __",
+          "source_raw_prompt": "Ils construisent la maison de leurs rêves.\n   _______________________________\n\n ",
+          "pdf_pages": [
+            253
+          ],
+          "answer": {
+            "source_key": "Ils la construisent.",
+            "accepted": [
+              "Ils la construisent."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex01-q05",
+          "number": 5,
+          "prompt": "J’ouvre la porte. __",
+          "source_raw_prompt": "J’ouvre la porte. _______________________________\n\n ",
+          "pdf_pages": [
+            253
+          ],
+          "answer": {
+            "source_key": "Je l’ouvre.",
+            "accepted": [
+              "Je l’ouvre."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex01-q06",
+          "number": 6,
+          "prompt": "Elle conduit la voiture de son père. __",
+          "source_raw_prompt": "Elle conduit la voiture de son père. _______________________________\n\n ",
+          "pdf_pages": [
+            253
+          ],
+          "answer": {
+            "source_key": "Elle la conduit.",
+            "accepted": [
+              "Elle la conduit."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex01-q07",
+          "number": 7,
+          "prompt": "Il accepte les résultats. __",
+          "source_raw_prompt": "Il accepte les résultats. _______________________________\n\n ",
+          "pdf_pages": [
+            253
+          ],
+          "answer": {
+            "source_key": "Il les accepte.",
+            "accepted": [
+              "Il les accepte."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex01-q08",
+          "number": 8,
+          "prompt": "Nous comprenons leur décision. __",
+          "source_raw_prompt": "Nous comprenons leur décision. _______________________________\n\n ",
+          "pdf_pages": [
+            253
+          ],
+          "answer": {
+            "source_key": "Nous la comprenons.",
+            "accepted": [
+              "Nous la comprenons."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex01-q09",
+          "number": 9,
+          "prompt": "Tu visites le château de Fontainebleau. __",
+          "source_raw_prompt": "Tu visites le château de Fontainebleau.\n   _______________________________\n\n",
+          "pdf_pages": [
+            253
+          ],
+          "answer": {
+            "source_key": "Tu le visites.",
+            "accepted": [
+              "Tu le visites."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex01-q10",
+          "number": 10,
+          "prompt": "Elle étudie sa leçon. __",
+          "source_raw_prompt": "Elle étudie sa leçon. _______________________________\n\n\n\n\n ",
+          "pdf_pages": [
+            253
+          ],
+          "answer": {
+            "source_key": "Elle l’étudie.",
+            "accepted": [
+              "Elle l’étudie."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch21-s02"
+      ]
+    },
+    {
+      "id": "ch21-ex02",
+      "source": {
+        "chapter": 21,
+        "exercise": "21.2",
+        "pdf_pages": [
+          253,
+          254,
+          255
+        ]
+      },
+      "topic_ids": [
+        "ch21-t02"
+      ],
+      "instruction": "Traduire les phrases suivantes en utilisant vous et l’inversion si nécessaire.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch21-ex02-q01",
+          "number": 1,
+          "prompt": "He thanks me. __",
+          "source_raw_prompt": "He thanks me. _______________________________\n\n ",
+          "pdf_pages": [
+            253
+          ],
+          "answer": {
+            "source_key": "Il me remercie.",
+            "accepted": [
+              "Il me remercie."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex02-q02",
+          "number": 2,
+          "prompt": "The writer sends them. __",
+          "source_raw_prompt": "The writer sends them. _______________________________\n\n ",
+          "pdf_pages": [
+            253
+          ],
+          "answer": {
+            "source_key": "L’écrivain les envoie.",
+            "accepted": [
+              "L’écrivain les envoie."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex02-q03",
+          "number": 3,
+          "prompt": "They invite us. __",
+          "source_raw_prompt": "They invite us. _______________________________\n\n ",
+          "pdf_pages": [
+            253
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) nous invitent.",
+            "accepted": [
+              "Ils (Elles) nous invitent."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex02-q04",
+          "number": 4,
+          "prompt": "We accept it. __",
+          "source_raw_prompt": "We accept it. _______________________________\n\n ",
+          "pdf_pages": [
+            253
+          ],
+          "answer": {
+            "source_key": "Nous l’acceptons.",
+            "accepted": [
+              "Nous l’acceptons."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex02-q05",
+          "number": 5,
+          "prompt": "She called them. __",
+          "source_raw_prompt": "She called them. _______________________________\n\n ",
+          "pdf_pages": [
+            253
+          ],
+          "answer": {
+            "source_key": "Elle les a appelé(e)s.",
+            "accepted": [
+              "Elle les a appelé(e)s."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex02-q06",
+          "number": 6,
+          "prompt": "Bring them! __",
+          "source_raw_prompt": "Bring them! _______________________________\n\n ",
+          "pdf_pages": [
+            253
+          ],
+          "answer": {
+            "source_key": "Apportez-les!",
+            "accepted": [
+              "Apportez-les!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex02-q07",
+          "number": 7,
+          "prompt": "I am going to buy it. __",
+          "source_raw_prompt": "I am going to buy it. _______________________________\n\n ",
+          "pdf_pages": [
+            253
+          ],
+          "answer": {
+            "source_key": "Je vais l’acheter.",
+            "accepted": [
+              "Je vais l’acheter."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex02-q08",
+          "number": 8,
+          "prompt": "Do not sell it! __",
+          "source_raw_prompt": "Do not sell it! _______________________________\n\n ",
+          "pdf_pages": [
+            253
+          ],
+          "answer": {
+            "source_key": "Ne le (la) vendez pas!",
+            "accepted": [
+              "Ne le (la) vendez pas!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex02-q09",
+          "number": 9,
+          "prompt": "We must see it. __",
+          "source_raw_prompt": "We must see it. _______________________________\n\n",
+          "pdf_pages": [
+            253
+          ],
+          "answer": {
+            "source_key": "Nous devons le (la) voir.",
+            "accepted": [
+              "Nous devons le (la) voir."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex02-q10",
+          "number": 10,
+          "prompt": "Do you know her? __ Indirect object pronouns Now that you have mastered the pronom objet direct, let’s take a look at the pronom objet indirect (indirect object pronoun). In English there are five indirect object pronouns me, you, him, her, us. As always, French distinguishes between an informal you (te) and a formal or plural you (vous). The French indirect object pronoun does not distinguish between gender; lui and leur replace both masculine and feminine nouns. In French, the indirect object pronoun replaces only animate indirect objects (people, animals). Inanimate ideas and things are replaced with the indirect object pronouns y and en, which will be discussed later in this chapter. Let’s look at the indirect object pronouns: SINGULAR PLURAL me (m’) me nous us te (t’) you (familiar) vous you (formal or plural) lui him, her leur them (masc. and fem.) The object is called indirect when the verb is controlled by a preposition (parler à, répondre à, écrire à, etc.). The indirect object pronoun is placed before the conjugated verb and before avoir in the compound tenses. Although the past participle agrees in gender and number with the preceding direct object, the past participle never agrees with an indirect object pronoun. The indirect object pronouns me and te become m’ and t’ before vowels and mute h. Make sure to distinguish between leur, the indirect object pronoun, and leur(s), the possessive adjective. Tu parles au journaliste. You are talking to the journalist. Tu lui parles. You are talking to him. Tu réponds à Andrée. You answer Andrée. Tu lui réponds. You answer her. Vous écrivez à l’agent. You write to the agent. Vous lui écrivez. You write to him. Vous expliquez la situation aux You explain the situation to the clients. customers. Vous leur expliquez la situation. You explain the situation to them. Elle nous enverra une confirmation. She’ll send us a confirmation. Je vous donnerai un jour de congé. I’ll give you a day off. Il me rendra le livre demain. He’ll return the book to me tomorrow. Ils t’apporteront des fleurs. They’ll bring you some flowers. In the interrogative or negative, the indirect object pronoun is placed immediately before the verb. Lui as-tu parlé de ce livre? Did you talk to him about this book M’avez-vous envoyé un courriel? Did you send me an e-mail? Vous fournit-il de bons produits? Does he provide you with good products? Leur avez-vous envoyé les révisions? Did you send them the revisions? Elle ne nous envoie jamais rien. She never sends us anything. Tu ne m’apportes que des mauvaises You only bring me bad news. nouvelles. Vous ne lui avez pas dit la vérité. You did not tell him the truth. Ils te prêteront leur voiture. They’ll lend you their car.",
+          "source_raw_prompt": "Do you know her? _______________________________Indirect object pronouns\nNow that you have mastered the pronom objet direct, let’s take a look at the\npronom objet indirect (indirect object pronoun).\n   In English there are five indirect object pronouns me, you, him, her, us. As\nalways, French distinguishes between an informal you (te) and a formal or plural you\n(vous). The French indirect object pronoun does not distinguish between gender; lui\nand leur replace both masculine and feminine nouns. In French, the indirect object\npronoun replaces only animate indirect objects (people, animals). Inanimate ideas\nand things are replaced with the indirect object pronouns y and en, which will be\ndiscussed later in this chapter. Let’s look at the indirect object pronouns:\n\n\n       SINGULAR                      PLURAL\n     me (m’)    me                nous   us\n        te (t’)       you (familiar)       vous   you (formal or plural)\n        lui          him, her             leur   them (masc. and fem.)\n\n  The object is called indirect when the verb is controlled by a preposition (parler\nà, répondre à, écrire à, etc.). The indirect object pronoun is placed before the\nconjugated verb and before avoir in the compound tenses. Although the past\nparticiple agrees in gender and number with the preceding direct object, the past\nparticiple never agrees with an indirect object pronoun. The indirect object pronouns\nme and te become m’ and t’ before vowels and mute h. Make sure to distinguish\nbetween leur, the indirect object pronoun, and leur(s), the possessive adjective.\n\n      Tu parles au journaliste.           You are talking to the journalist.\n      Tu lui parles.                     You are talking to him.\n      Tu réponds à Andrée.              You answer Andrée.\n      Tu lui réponds.                    You answer her.\n      Vous écrivez à l’agent.             You write to the agent.\n      Vous lui écrivez.                  You write to him.\n      Vous expliquez la situation aux      You explain the situation to the\n           clients.                             customers.\n      Vous leur expliquez la situation.     You explain the situation to them.\n       Elle nous enverra une confirmation.   She’ll send us a confirmation.\n       Je vous donnerai un jour de congé.      I’ll give you a day off.\n          Il me rendra le livre demain.          He’ll return the book to me tomorrow.\n         Ils t’apporteront des fleurs.            They’ll bring you some flowers.   In the interrogative or negative, the indirect object pronoun is placed immediately\nbefore the verb.\n\n      Lui as-tu parlé de ce livre?             Did you talk to him about this book\n      M’avez-vous envoyé un courriel?        Did you send me an e-mail?\n      Vous fournit-il de bons produits?        Does he provide you with good\n                                                 products?\n      Leur avez-vous envoyé les révisions?    Did you send them the revisions?\n       Elle ne nous envoie jamais rien.        She never sends us anything.\n      Tu ne m’apportes que des mauvaises     You only bring me bad news.\n          nouvelles.\n      Vous ne lui avez pas dit la vérité.        You did not tell him the truth.\n         Ils te prêteront leur voiture.                They’ll lend you their car.",
+          "pdf_pages": [
+            253,
+            254,
+            255
+          ],
+          "answer": {
+            "source_key": "La connaissez-vous?",
+            "accepted": [
+              "La connaissez-vous?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch21-s02"
+      ]
+    },
+    {
+      "id": "ch21-ex03",
+      "source": {
+        "chapter": 21,
+        "exercise": "21.3",
+        "pdf_pages": [
+          255,
+          256
+        ]
+      },
+      "topic_ids": [
+        "ch21-t04"
+      ],
+      "instruction": "Remplacer les mots en caractères gras par un pronom objet indirect.",
+      "interaction_type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ch21-ex03-q01",
+          "number": 1,
+          "prompt": "La grand-mère a raconté une histoire aux petits-enfants. __",
+          "source_raw_prompt": "La grand-mère a raconté une histoire aux petits-enfants.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            255
+          ],
+          "answer": {
+            "source_key": "La grand-mère leur a raconté une histoire.",
+            "accepted": [
+              "La grand-mère leur a raconté une histoire."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex03-q02",
+          "number": 2,
+          "prompt": "Nous avons fait un cadeau à Marie. __",
+          "source_raw_prompt": "Nous avons fait un cadeau à Marie.   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            255,
+            256
+          ],
+          "answer": {
+            "source_key": "Nous lui avons fait un cadeau.",
+            "accepted": [
+              "Nous lui avons fait un cadeau."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex03-q03",
+          "number": 3,
+          "prompt": "Je ferai parvenir le dossier à Jean dès que possible. __",
+          "source_raw_prompt": "Je ferai parvenir le dossier à Jean dès que possible.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            256
+          ],
+          "answer": {
+            "source_key": "Je lui ferai parvenir le dossier dès que possible.",
+            "accepted": [
+              "Je lui ferai parvenir le dossier dès que possible."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex03-q04",
+          "number": 4,
+          "prompt": "Nous enverrons des fleurs à notre collègue. __",
+          "source_raw_prompt": "Nous enverrons des fleurs à notre collègue.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            256
+          ],
+          "answer": {
+            "source_key": "Nous lui enverrons des fleurs.",
+            "accepted": [
+              "Nous lui enverrons des fleurs."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex03-q05",
+          "number": 5,
+          "prompt": "Ce théâtre appartient à un ancien comédien. __",
+          "source_raw_prompt": "Ce théâtre appartient à un ancien comédien.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            256
+          ],
+          "answer": {
+            "source_key": "Ce théâtre lui appartient.",
+            "accepted": [
+              "Ce théâtre lui appartient."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex03-q06",
+          "number": 6,
+          "prompt": "Est-ce que tu as écrit au rédacteur en chef? __",
+          "source_raw_prompt": "Est-ce que tu as écrit au rédacteur en chef?\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            256
+          ],
+          "answer": {
+            "source_key": "Est-ce que tu lui as écrit?",
+            "accepted": [
+              "Est-ce que tu lui as écrit?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex03-q07",
+          "number": 7,
+          "prompt": "Téléphonez à Louise aussitôt que possible! __",
+          "source_raw_prompt": "Téléphonez à Louise aussitôt que possible!\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            256
+          ],
+          "answer": {
+            "source_key": "Téléphonez-lui aussitôt que possible!",
+            "accepted": [
+              "Téléphonez-lui aussitôt que possible!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex03-q08",
+          "number": 8,
+          "prompt": "Ne mentionnez rien à Odile! __",
+          "source_raw_prompt": "Ne mentionnez rien à Odile!\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            256
+          ],
+          "answer": {
+            "source_key": "Ne lui mentionnez rien!",
+            "accepted": [
+              "Ne lui mentionnez rien!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex03-q09",
+          "number": 9,
+          "prompt": "Il annoncera sa décision à ses employés demain. __",
+          "source_raw_prompt": "Il annoncera sa décision à ses employés demain.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            256
+          ],
+          "answer": {
+            "source_key": "Il leur annoncera sa décision demain.",
+            "accepted": [
+              "Il leur annoncera sa décision demain."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex03-q10",
+          "number": 10,
+          "prompt": "Il donnera le scénario aux acteurs en fin de journée. __",
+          "source_raw_prompt": "Il donnera le scénario aux acteurs en fin de journée.\n   _____________________________________________________________\n\n\n\n\n ",
+          "pdf_pages": [
+            256
+          ],
+          "answer": {
+            "source_key": "Il leur donnera le scénario en fin de journée.",
+            "accepted": [
+              "Il leur donnera le scénario en fin de journée."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch21-s04"
+      ]
+    },
+    {
+      "id": "ch21-ex04",
+      "source": {
+        "chapter": 21,
+        "exercise": "21.4",
+        "pdf_pages": [
+          256,
+          257
+        ]
+      },
+      "topic_ids": [
+        "ch21-t04"
+      ],
+      "instruction": "Traduire les phrases suivantes en utilisant tu et l’inversion si nécessaire.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch21-ex04-q01",
+          "number": 1,
+          "prompt": "Bring me a book! __",
+          "source_raw_prompt": "Bring me a book!\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            256
+          ],
+          "answer": {
+            "source_key": "Apporte-moi un livre!",
+            "accepted": [
+              "Apporte-moi un livre!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex04-q02",
+          "number": 2,
+          "prompt": "Do not call them after eight P.M.! __",
+          "source_raw_prompt": "Do not call them after eight P.M.!\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            256
+          ],
+          "answer": {
+            "source_key": "Ne les appelle pas après huit heures du soir!",
+            "accepted": [
+              "Ne les appelle pas après huit heures du soir!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex04-q03",
+          "number": 3,
+          "prompt": "Send us your new play! __",
+          "source_raw_prompt": "Send us your new play!\n   _____________________________________________________________   ",
+          "pdf_pages": [
+            256,
+            257
+          ],
+          "answer": {
+            "source_key": "Envoie-nous ta nouvelle pièce!",
+            "accepted": [
+              "Envoie-nous ta nouvelle pièce!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex04-q04",
+          "number": 4,
+          "prompt": "I will write him a letter. __",
+          "source_raw_prompt": "I will write him a letter.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            257
+          ],
+          "answer": {
+            "source_key": "Je lui écrirai une lettre.",
+            "accepted": [
+              "Je lui écrirai une lettre."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex04-q05",
+          "number": 5,
+          "prompt": "She’ll give me an answer on Monday. __",
+          "source_raw_prompt": "She’ll give me an answer on Monday.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            257
+          ],
+          "answer": {
+            "source_key": "Elle me donnera une réponse lundi.",
+            "accepted": [
+              "Elle me donnera une réponse lundi."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex04-q06",
+          "number": 6,
+          "prompt": "He did not return the books to me. __",
+          "source_raw_prompt": "He did not return the books to me.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            257
+          ],
+          "answer": {
+            "source_key": "Il ne m’a pas rendu les livres.",
+            "accepted": [
+              "Il ne m’a pas rendu les livres."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex04-q07",
+          "number": 7,
+          "prompt": "This pen belongs to her. __",
+          "source_raw_prompt": "This pen belongs to her.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            257
+          ],
+          "answer": {
+            "source_key": "Ce stylo lui appartient.",
+            "accepted": [
+              "Ce stylo lui appartient."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex04-q08",
+          "number": 8,
+          "prompt": "He does not talk to us. __",
+          "source_raw_prompt": "He does not talk to us.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            257
+          ],
+          "answer": {
+            "source_key": "Il ne nous parle pas.",
+            "accepted": [
+              "Il ne nous parle pas."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex04-q09",
+          "number": 9,
+          "prompt": "They told us a good story. __",
+          "source_raw_prompt": "They told us a good story.\n    _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            257
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) nous ont raconté une bonne histoire.",
+            "accepted": [
+              "Ils (Elles) nous ont raconté une bonne histoire."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex04-q10",
+          "number": 10,
+          "prompt": "They’ll lend you their house for the weekend. __",
+          "source_raw_prompt": "They’ll lend you their house for the weekend.\n    _____________________________________________________________",
+          "pdf_pages": [
+            257,
+            258
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) te prêteront leur maison pour le week-end.",
+            "accepted": [
+              "Ils (Elles) te prêteront leur maison pour le week-end."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch21-s04"
+      ]
+    },
+    {
+      "id": "ch21-ex05",
+      "source": {
+        "chapter": 21,
+        "exercise": "21.5",
+        "pdf_pages": [
+          258,
+          259
+        ]
+      },
+      "topic_ids": [
+        "ch21-t05"
+      ],
+      "instruction": "Remplacer les éléments en caractères gras par y.",
+      "interaction_type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ch21-ex05-q01",
+          "number": 1,
+          "prompt": "Elle s’habitue à tout. __",
+          "source_raw_prompt": "Elle s’habitue à tout.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            258
+          ],
+          "answer": {
+            "source_key": "Elle s’y habitue.",
+            "accepted": [
+              "Elle s’y habitue."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex05-q02",
+          "number": 2,
+          "prompt": "Tu devrais prêter attention à ce qu’il dit. __",
+          "source_raw_prompt": "Tu devrais prêter attention à ce qu’il dit.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            258
+          ],
+          "answer": {
+            "source_key": "Tu devrais y prêter attention.",
+            "accepted": [
+              "Tu devrais y prêter attention."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex05-q03",
+          "number": 3,
+          "prompt": "Nous nous intéressons à son œuvre. __",
+          "source_raw_prompt": "Nous nous intéressons à son œuvre.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            258
+          ],
+          "answer": {
+            "source_key": "Nous nous y intéressons.",
+            "accepted": [
+              "Nous nous y intéressons."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex05-q04",
+          "number": 4,
+          "prompt": "Je m’abonne à ce magazine. __",
+          "source_raw_prompt": "Je m’abonne à ce magazine.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            258
+          ],
+          "answer": {
+            "source_key": "Je m’y abonne.",
+            "accepted": [
+              "Je m’y abonne."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex05-q05",
+          "number": 5,
+          "prompt": "Elle tient à ses bijoux. __",
+          "source_raw_prompt": "Elle tient à ses bijoux.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            258
+          ],
+          "answer": {
+            "source_key": "Elle y tient.",
+            "accepted": [
+              "Elle y tient."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex05-q06",
+          "number": 6,
+          "prompt": "Nous ne croyons pas à cette nouvelle théorie scientifique. __",
+          "source_raw_prompt": "Nous ne croyons pas à cette nouvelle théorie scientifique.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            258
+          ],
+          "answer": {
+            "source_key": "Nous n’y croyons pas.",
+            "accepted": [
+              "Nous n’y croyons pas."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex05-q07",
+          "number": 7,
+          "prompt": "Il ne pense jamais aux conséquences de ses actes. __",
+          "source_raw_prompt": "Il ne pense jamais aux conséquences de ses actes.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            258
+          ],
+          "answer": {
+            "source_key": "Il n’y pense jamais.",
+            "accepted": [
+              "Il n’y pense jamais."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex05-q08",
+          "number": 8,
+          "prompt": "Ils n’obéissent pas à la loi. __",
+          "source_raw_prompt": "Ils n’obéissent pas à la loi.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            258
+          ],
+          "answer": {
+            "source_key": "Ils n’y obéissent pas.",
+            "accepted": [
+              "Ils n’y obéissent pas."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex05-q09",
+          "number": 9,
+          "prompt": "Elle réfléchira au rôle que vous lui proposez. __",
+          "source_raw_prompt": "Elle réfléchira au rôle que vous lui proposez.    _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            258,
+            259
+          ],
+          "answer": {
+            "source_key": "Elle y réfléchira.",
+            "accepted": [
+              "Elle y réfléchira."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex05-q10",
+          "number": 10,
+          "prompt": "Pourquoi n’avez-vous jamais répondu à notre demande? __",
+          "source_raw_prompt": "Pourquoi n’avez-vous jamais répondu à notre demande?\n    _____________________________________________________________",
+          "pdf_pages": [
+            259
+          ],
+          "answer": {
+            "source_key": "Pourquoi n’y avez-vous jamais répondu?",
+            "accepted": [
+              "Pourquoi n’y avez-vous jamais répondu?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch21-s05"
+      ]
+    },
+    {
+      "id": "ch21-ex06",
+      "source": {
+        "chapter": 21,
+        "exercise": "21.6",
+        "pdf_pages": [
+          259,
+          260
+        ]
+      },
+      "topic_ids": [
+        "ch21-t06"
+      ],
+      "instruction": "Remplacer les éléments en caractères gras par le pronom en.",
+      "interaction_type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ch21-ex06-q01",
+          "number": 1,
+          "prompt": "J’ai parlé de tous nos problèmes. __",
+          "source_raw_prompt": "J’ai parlé de tous nos problèmes.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            260
+          ],
+          "answer": {
+            "source_key": "J’en ai parlé.",
+            "accepted": [
+              "J’en ai parlé."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex06-q02",
+          "number": 2,
+          "prompt": "Ils ont envie d’aller en France en mai. __",
+          "source_raw_prompt": "Ils ont envie d’aller en France en mai.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            260
+          ],
+          "answer": {
+            "source_key": "Ils en ont envie.",
+            "accepted": [
+              "Ils en ont envie."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex06-q03",
+          "number": 3,
+          "prompt": "Nous avons besoin d’un logiciel plus performant. __",
+          "source_raw_prompt": "Nous avons besoin d’un logiciel plus performant.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            260
+          ],
+          "answer": {
+            "source_key": "Nous en avons besoin.",
+            "accepted": [
+              "Nous en avons besoin."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex06-q04",
+          "number": 4,
+          "prompt": "Il s’est approché du château très lentement. __",
+          "source_raw_prompt": "Il s’est approché du château très lentement.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            260
+          ],
+          "answer": {
+            "source_key": "Il s’en est approché très lentement.",
+            "accepted": [
+              "Il s’en est approché très lentement."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex06-q05",
+          "number": 5,
+          "prompt": "Je me chargerai de tout ce qui facilitera son séjour à Aix. __",
+          "source_raw_prompt": "Je me chargerai de tout ce qui facilitera son séjour à Aix.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            260
+          ],
+          "answer": {
+            "source_key": "Je m’en chargerai.",
+            "accepted": [
+              "Je m’en chargerai."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex06-q06",
+          "number": 6,
+          "prompt": "Tu te sers de ce dictionnaire? __",
+          "source_raw_prompt": "Tu te sers de ce dictionnaire?\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            260
+          ],
+          "answer": {
+            "source_key": "Tu t’en sers?",
+            "accepted": [
+              "Tu t’en sers?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex06-q07",
+          "number": 7,
+          "prompt": "Il a peur des changements. __",
+          "source_raw_prompt": "Il a peur des changements.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            260
+          ],
+          "answer": {
+            "source_key": "Il en a peur.",
+            "accepted": [
+              "Il en a peur."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex06-q08",
+          "number": 8,
+          "prompt": "Je ne me souviens pas de sa conférence. __",
+          "source_raw_prompt": "Je ne me souviens pas de sa conférence.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            260
+          ],
+          "answer": {
+            "source_key": "Je ne m’en souviens pas.",
+            "accepted": [
+              "Je ne m’en souviens pas."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex06-q09",
+          "number": 9,
+          "prompt": "Elle s’est occupée des réservations. __",
+          "source_raw_prompt": "Elle s’est occupée des réservations.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            260
+          ],
+          "answer": {
+            "source_key": "Elle s’en est occupée.",
+            "accepted": [
+              "Elle s’en est occupée."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex06-q10",
+          "number": 10,
+          "prompt": "Il ne pourra jamais se débarrasser de ses livres de l’école primaire. __",
+          "source_raw_prompt": "Il ne pourra jamais se débarrasser de ses livres de l’école primaire.\n   _____________________________________________________________\n\n\n\n\n ",
+          "pdf_pages": [
+            260
+          ],
+          "answer": {
+            "source_key": "Il ne pourra jamais s’en débarrasser.",
+            "accepted": [
+              "Il ne pourra jamais s’en débarrasser."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch21-s06"
+      ]
+    },
+    {
+      "id": "ch21-ex07",
+      "source": {
+        "chapter": 21,
+        "exercise": "21.7",
+        "pdf_pages": [
+          260,
+          261
+        ]
+      },
+      "topic_ids": [
+        "ch21-t06"
+      ],
+      "instruction": "Faire correspondre les deux colonnes. ______",
+      "interaction_type": "matching",
+      "questions": [
+        {
+          "id": "ch21-ex07-q01",
+          "number": 1,
+          "prompt": "Il a peur a. d’un ordinateur portable __",
+          "source_raw_prompt": "Il a peur                        a. d’un ordinateur portable ______ ",
+          "pdf_pages": [
+            260,
+            261
+          ],
+          "answer": {
+            "source_key": "e",
+            "accepted": [
+              "e"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "a",
+            "text": "d’un ordinateur portable ______"
+          }
+        },
+        {
+          "id": "ch21-ex07-q02",
+          "number": 2,
+          "prompt": "Elle s’intéresse b. à un magazine hebdomadaire __",
+          "source_raw_prompt": "Elle s’intéresse              b. à un magazine hebdomadaire\n\n ______ ",
+          "pdf_pages": [
+            261
+          ],
+          "answer": {
+            "source_key": "d",
+            "accepted": [
+              "d"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "b",
+            "text": "à un magazine hebdomadaire"
+          }
+        },
+        {
+          "id": "ch21-ex07-q03",
+          "number": 3,
+          "prompt": "Je me sers c. du nom de l’hôtel __",
+          "source_raw_prompt": "Je me sers                     c. du nom de l’hôtel\n\n ______ ",
+          "pdf_pages": [
+            261
+          ],
+          "answer": {
+            "source_key": "a",
+            "accepted": [
+              "a"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "c",
+            "text": "du nom de l’hôtel"
+          }
+        },
+        {
+          "id": "ch21-ex07-q04",
+          "number": 4,
+          "prompt": "Ils ne se souviennent pas d. à ce nouveau candidat __",
+          "source_raw_prompt": "Ils ne se souviennent pas    d. à ce nouveau candidat\n\n ______ ",
+          "pdf_pages": [
+            261
+          ],
+          "answer": {
+            "source_key": "c",
+            "accepted": [
+              "c"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "d",
+            "text": "à ce nouveau candidat"
+          }
+        },
+        {
+          "id": "ch21-ex07-q05",
+          "number": 5,
+          "prompt": "Tu t’abonnes e. des insectes",
+          "source_raw_prompt": "Tu t’abonnes                  e. des insectes",
+          "pdf_pages": [
+            261,
+            262,
+            263
+          ],
+          "answer": {
+            "source_key": "b",
+            "accepted": [
+              "b"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "e",
+            "text": "des insectes"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 5,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "choice_label",
+        "publisher_key_is_exhaustive": true
+      },
+      "subtopic_ids": [
+        "ch21-s06"
+      ],
+      "choices": [
+        {
+          "label": "a",
+          "text": "d’un ordinateur portable ______"
+        },
+        {
+          "label": "b",
+          "text": "à un magazine hebdomadaire"
+        },
+        {
+          "label": "c",
+          "text": "du nom de l’hôtel"
+        },
+        {
+          "label": "d",
+          "text": "à ce nouveau candidat"
+        },
+        {
+          "label": "e",
+          "text": "des insectes"
+        }
+      ]
+    },
+    {
+      "id": "ch21-ex08",
+      "source": {
+        "chapter": 21,
+        "exercise": "21.8",
+        "pdf_pages": [
+          263,
+          264
+        ]
+      },
+      "topic_ids": [
+        "ch21-t07"
+      ],
+      "instruction": "Remplacer les éléments en caractères gras par les pronoms appropriés.",
+      "interaction_type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ch21-ex08-q01",
+          "number": 1,
+          "prompt": "Ne parlez pas de ce détail à Zoé! __",
+          "source_raw_prompt": "Ne parlez pas de ce détail à Zoé!\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            263
+          ],
+          "answer": {
+            "source_key": "Ne lui en parlez pas!",
+            "accepted": [
+              "Ne lui en parlez pas!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex08-q02",
+          "number": 2,
+          "prompt": "Elle a emprunté de l’argent à sa sœur. __",
+          "source_raw_prompt": "Elle a emprunté de l’argent à sa sœur.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            263
+          ],
+          "answer": {
+            "source_key": "Elle lui en a emprunté.",
+            "accepted": [
+              "Elle lui en a emprunté."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex08-q03",
+          "number": 3,
+          "prompt": "Je ferai parvenir ce document à votre avocat. __",
+          "source_raw_prompt": "Je ferai parvenir ce document à votre avocat.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            263
+          ],
+          "answer": {
+            "source_key": "Je le lui ferai parvenir.",
+            "accepted": [
+              "Je le lui ferai parvenir."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex08-q04",
+          "number": 4,
+          "prompt": "Patrick a raconté ses aventures (f.pl.) à son frère. __",
+          "source_raw_prompt": "Patrick a raconté ses aventures (f.pl.) à son frère.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            263
+          ],
+          "answer": {
+            "source_key": "Patrick les lui a racontées.",
+            "accepted": [
+              "Patrick les lui a racontées."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex08-q05",
+          "number": 5,
+          "prompt": "Le musicien a envoyé sa nouvelle composition à son agent. __",
+          "source_raw_prompt": "Le musicien a envoyé sa nouvelle composition à son agent.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            263
+          ],
+          "answer": {
+            "source_key": "Le musicien la lui a envoyée.",
+            "accepted": [
+              "Le musicien la lui a envoyée."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex08-q06",
+          "number": 6,
+          "prompt": "L’ouvrier a donné la lettre au patron. __",
+          "source_raw_prompt": "L’ouvrier a donné la lettre au patron.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            263
+          ],
+          "answer": {
+            "source_key": "L’ouvrier la lui a donnée.",
+            "accepted": [
+              "L’ouvrier la lui a donnée."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex08-q07",
+          "number": 7,
+          "prompt": "J’ai demandé la photo au photographe. __",
+          "source_raw_prompt": "J’ai demandé la photo au photographe.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            263
+          ],
+          "answer": {
+            "source_key": "Je la lui ai demandée.",
+            "accepted": [
+              "Je la lui ai demandée."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex08-q08",
+          "number": 8,
+          "prompt": "Il vendra sa maison à son cousin. __",
+          "source_raw_prompt": "Il vendra sa maison à son cousin.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            263
+          ],
+          "answer": {
+            "source_key": "Il la lui vendra.",
+            "accepted": [
+              "Il la lui vendra."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex08-q09",
+          "number": 9,
+          "prompt": "Le médecin a prescrit ce médicament au malade. __",
+          "source_raw_prompt": "Le médecin a prescrit ce médicament au malade.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            263
+          ],
+          "answer": {
+            "source_key": "Le médecin le lui a prescrit.",
+            "accepted": [
+              "Le médecin le lui a prescrit."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex08-q10",
+          "number": 10,
+          "prompt": "Je recommande cet hôtel à tous mes amis. __",
+          "source_raw_prompt": "Je recommande cet hôtel à tous mes amis.\n   _____________________________________________________________  ",
+          "pdf_pages": [
+            263,
+            264
+          ],
+          "answer": {
+            "source_key": "Je le leur recommande.",
+            "accepted": [
+              "Je le leur recommande."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch21-s07"
+      ]
+    },
+    {
+      "id": "ch21-ex09",
+      "source": {
+        "chapter": 21,
+        "exercise": "21.9",
+        "pdf_pages": [
+          264
+        ]
+      },
+      "topic_ids": [
+        "ch21-t07"
+      ],
+      "instruction": "Traduire les phrases suivantes en utilisant tu si nécessaire.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch21-ex09-q01",
+          "number": 1,
+          "prompt": "I am thinking about it. __",
+          "source_raw_prompt": "I am thinking about it.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            264
+          ],
+          "answer": {
+            "source_key": "J’y pense.",
+            "accepted": [
+              "J’y pense."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex09-q02",
+          "number": 2,
+          "prompt": "He is not interested in it. __",
+          "source_raw_prompt": "He is not interested in it.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            264
+          ],
+          "answer": {
+            "source_key": "Il ne s’y intéresse pas.",
+            "accepted": [
+              "Il ne s’y intéresse pas."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex09-q03",
+          "number": 3,
+          "prompt": "She took care of it. __",
+          "source_raw_prompt": "She took care of it.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            264
+          ],
+          "answer": {
+            "source_key": "Elle s’en est occupée.",
+            "accepted": [
+              "Elle s’en est occupée."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex09-q04",
+          "number": 4,
+          "prompt": "I sent it (f.) to you. __",
+          "source_raw_prompt": "I sent it (f.) to you.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            264
+          ],
+          "answer": {
+            "source_key": "Je te l’ai envoyée.",
+            "accepted": [
+              "Je te l’ai envoyée."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex09-q05",
+          "number": 5,
+          "prompt": "We gave it (m.) to them. __",
+          "source_raw_prompt": "We gave it (m.) to them.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            264
+          ],
+          "answer": {
+            "source_key": "Nous le leur avons donné.",
+            "accepted": [
+              "Nous le leur avons donné."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex09-q06",
+          "number": 6,
+          "prompt": "I use it every day. __",
+          "source_raw_prompt": "I use it every day.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            264
+          ],
+          "answer": {
+            "source_key": "Je m’en sers tous les jours.",
+            "accepted": [
+              "Je m’en sers tous les jours."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex09-q07",
+          "number": 7,
+          "prompt": "He spoke about it. __",
+          "source_raw_prompt": "He spoke about it.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            264
+          ],
+          "answer": {
+            "source_key": "Il en a parlé.",
+            "accepted": [
+              "Il en a parlé."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex09-q08",
+          "number": 8,
+          "prompt": "I need it. __",
+          "source_raw_prompt": "I need it.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            264
+          ],
+          "answer": {
+            "source_key": "J’en ai besoin.",
+            "accepted": [
+              "J’en ai besoin."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex09-q09",
+          "number": 9,
+          "prompt": "She borrowed some from me. __",
+          "source_raw_prompt": "She borrowed some from me.\n    _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            264
+          ],
+          "answer": {
+            "source_key": "Elle m’en a emprunté.",
+            "accepted": [
+              "Elle m’en a emprunté."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex09-q10",
+          "number": 10,
+          "prompt": "They gave us some. __",
+          "source_raw_prompt": "They gave us some.\n    _____________________________________________________________",
+          "pdf_pages": [
+            264,
+            265,
+            266,
+            267,
+            268
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) nous en ont donné.",
+            "accepted": [
+              "Ils (Elles) nous en ont donné."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch21-s07"
+      ]
+    },
+    {
+      "id": "ch21-ex10",
+      "source": {
+        "chapter": 21,
+        "exercise": "21.10",
+        "pdf_pages": [
+          268,
+          269
+        ]
+      },
+      "topic_ids": [
+        "ch21-t08"
+      ],
+      "instruction": "Mettre en relief le pronom sujet avec un pronom disjoint en utilisant l’expression C’est... qui.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch21-ex10-q01",
+          "number": 1,
+          "prompt": "Il a gagné le prix. __",
+          "source_raw_prompt": "Il a gagné le prix.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            268
+          ],
+          "answer": {
+            "source_key": "C’est lui qui a gagné...",
+            "accepted": [
+              "C’est lui qui a gagné..."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex10-q02",
+          "number": 2,
+          "prompt": "Je prendrai la décision. __",
+          "source_raw_prompt": "Je prendrai la décision.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            268
+          ],
+          "answer": {
+            "source_key": "C’est moi qui prendrai...",
+            "accepted": [
+              "C’est moi qui prendrai..."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex10-q03",
+          "number": 3,
+          "prompt": "Vous écrirez le discours. __",
+          "source_raw_prompt": "Vous écrirez le discours.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            268
+          ],
+          "answer": {
+            "source_key": "C’est vous qui écrirez...",
+            "accepted": [
+              "C’est vous qui écrirez..."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex10-q04",
+          "number": 4,
+          "prompt": "Nous préparons le dîner. __",
+          "source_raw_prompt": "Nous préparons le dîner.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            268
+          ],
+          "answer": {
+            "source_key": "C’est nous qui préparons...",
+            "accepted": [
+              "C’est nous qui préparons..."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex10-q05",
+          "number": 5,
+          "prompt": "Tu as fait cette erreur. __",
+          "source_raw_prompt": "Tu as fait cette erreur.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            268
+          ],
+          "answer": {
+            "source_key": "C’est toi qui as fait...",
+            "accepted": [
+              "C’est toi qui as fait..."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex10-q06",
+          "number": 6,
+          "prompt": "Elle lui fait toujours de beaux cadeaux. __",
+          "source_raw_prompt": "Elle lui fait toujours de beaux cadeaux.\n    _____________________________________________________________ ",
+          "pdf_pages": [
+            268,
+            269
+          ],
+          "answer": {
+            "source_key": "C’est elle qui lui fait...",
+            "accepted": [
+              "C’est elle qui lui fait..."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex10-q07",
+          "number": 7,
+          "prompt": "Je vous ai invité. __",
+          "source_raw_prompt": "Je vous ai invité.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            269
+          ],
+          "answer": {
+            "source_key": "C’est moi qui vous ai invité.",
+            "accepted": [
+              "C’est moi qui vous ai invité."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex10-q08",
+          "number": 8,
+          "prompt": "Ils sont responsables de cette situation désastreuse. __",
+          "source_raw_prompt": "Ils sont responsables de cette situation désastreuse.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            269
+          ],
+          "answer": {
+            "source_key": "C’est eux qui sont...",
+            "accepted": [
+              "C’est eux qui sont..."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex10-q09",
+          "number": 9,
+          "prompt": "Elles s’occuperont de tous les détails. __",
+          "source_raw_prompt": "Elles s’occuperont de tous les détails.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            269
+          ],
+          "answer": {
+            "source_key": "C’est elles qui s’occuperont...",
+            "accepted": [
+              "C’est elles qui s’occuperont..."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex10-q10",
+          "number": 10,
+          "prompt": "Il fait les courses. __",
+          "source_raw_prompt": "Il fait les courses.\n   _____________________________________________________________\n\n\n\n\n ",
+          "pdf_pages": [
+            269
+          ],
+          "answer": {
+            "source_key": "C’est lui qui fait...",
+            "accepted": [
+              "C’est lui qui fait..."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch21-s08"
+      ]
+    },
+    {
+      "id": "ch21-ex11",
+      "source": {
+        "chapter": 21,
+        "exercise": "21.11",
+        "pdf_pages": [
+          269,
+          270
+        ]
+      },
+      "topic_ids": [
+        "ch21-t08"
+      ],
+      "instruction": "Traduire les phrases suivantes en utilisant un pronom disjoint et la forme tu si nécessaire.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch21-ex11-q01",
+          "number": 1,
+          "prompt": "He will go to France with me. __",
+          "source_raw_prompt": "He will go to France with me.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            269
+          ],
+          "answer": {
+            "source_key": "Il ira en France avec moi.",
+            "accepted": [
+              "Il ira en France avec moi."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex11-q02",
+          "number": 2,
+          "prompt": "I hate coffee! __",
+          "source_raw_prompt": "I hate coffee!\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            269
+          ],
+          "answer": {
+            "source_key": "Moi, je déteste le café!",
+            "accepted": [
+              "Moi, je déteste le café!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex11-q03",
+          "number": 3,
+          "prompt": "She works for us. __",
+          "source_raw_prompt": "She works for us.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            269
+          ],
+          "answer": {
+            "source_key": "Elle travaille pour nous.",
+            "accepted": [
+              "Elle travaille pour nous."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex11-q04",
+          "number": 4,
+          "prompt": "Whose book is this? __",
+          "source_raw_prompt": "Whose book is this?\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            269
+          ],
+          "answer": {
+            "source_key": "À qui est ce livre?",
+            "accepted": [
+              "À qui est ce livre?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex11-q05",
+          "number": 5,
+          "prompt": "Do it yourself! __",
+          "source_raw_prompt": "Do it yourself!\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            269
+          ],
+          "answer": {
+            "source_key": "Fais-le toi-même!",
+            "accepted": [
+              "Fais-le toi-même!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex11-q06",
+          "number": 6,
+          "prompt": "I can’t make this decision without you. __",
+          "source_raw_prompt": "I can’t make this decision without you.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            269
+          ],
+          "answer": {
+            "source_key": "Je ne peux pas prendre cette décision sans toi.",
+            "accepted": [
+              "Je ne peux pas prendre cette décision sans toi."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex11-q07",
+          "number": 7,
+          "prompt": "He is taller than you are. __",
+          "source_raw_prompt": "He is taller than you are.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            269
+          ],
+          "answer": {
+            "source_key": "Il est plus grand que toi.",
+            "accepted": [
+              "Il est plus grand que toi."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex11-q08",
+          "number": 8,
+          "prompt": "I am thinking about her. __",
+          "source_raw_prompt": "I am thinking about her.   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            269,
+            270
+          ],
+          "answer": {
+            "source_key": "Je pense à elle.",
+            "accepted": [
+              "Je pense à elle."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex11-q09",
+          "number": 9,
+          "prompt": "They are afraid of him. __",
+          "source_raw_prompt": "They are afraid of him.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            270
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) ont peur de lui.",
+            "accepted": [
+              "Ils (Elles) ont peur de lui."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex11-q10",
+          "number": 10,
+          "prompt": "She said it herself. __",
+          "source_raw_prompt": "She said it herself.\n   _____________________________________________________________\n\n\n\n\n ",
+          "pdf_pages": [
+            270
+          ],
+          "answer": {
+            "source_key": "Elle l’a dit elle-même.",
+            "accepted": [
+              "Elle l’a dit elle-même."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch21-s08"
+      ]
+    },
+    {
+      "id": "ch21-ex12",
+      "source": {
+        "chapter": 21,
+        "exercise": "21.12",
+        "pdf_pages": [
+          270
+        ]
+      },
+      "topic_ids": [
+        "ch21-t08"
+      ],
+      "instruction": "Formuler une question-réponse en reliant les phrases et en utilisant aussi ou non plus.",
+      "interaction_type": "free_response",
+      "questions": [
+        {
+          "id": "ch21-ex12-q01",
+          "number": 1,
+          "prompt": "Il n’aime pas le froid. Je n’aime pas le froid. __",
+          "source_raw_prompt": "Il n’aime pas le froid. Je n’aime pas le froid.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            270
+          ],
+          "answer": {
+            "source_key": "Moi non plus.",
+            "accepted": [
+              "Moi non plus."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex12-q02",
+          "number": 2,
+          "prompt": "Nous allons en France. Ils vont en France. __",
+          "source_raw_prompt": "Nous allons en France. Ils vont en France.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            270
+          ],
+          "answer": {
+            "source_key": "Eux aussi.",
+            "accepted": [
+              "Eux aussi."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex12-q03",
+          "number": 3,
+          "prompt": "Je prends des vacances. Elle prend des vacances. __",
+          "source_raw_prompt": "Je prends des vacances. Elle prend des vacances.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            270
+          ],
+          "answer": {
+            "source_key": "Elle aussi.",
+            "accepted": [
+              "Elle aussi."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex12-q04",
+          "number": 4,
+          "prompt": "Nous commandons un dessert. Elles commandent un dessert. __",
+          "source_raw_prompt": "Nous commandons un dessert. Elles commandent un dessert.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            270
+          ],
+          "answer": {
+            "source_key": "Elles aussi.",
+            "accepted": [
+              "Elles aussi."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch21-ex12-q05",
+          "number": 5,
+          "prompt": "Il lit beaucoup. Nous lisons beaucoup. __",
+          "source_raw_prompt": "Il lit beaucoup. Nous lisons beaucoup.\n   _____________________________________________________________",
+          "pdf_pages": [
+            270
+          ],
+          "answer": {
+            "source_key": "Nous aussi.",
+            "accepted": [
+              "Nous aussi."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 5,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch21-s08"
+      ]
+    }
+  ]
+}

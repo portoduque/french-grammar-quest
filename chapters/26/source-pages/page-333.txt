@@ -1,0 +1,32 @@
+cent trois                          one hundred three
+cent quatre                        one hundred four
+cent cinq                          one hundred five
+cent six                           one hundred six
+cent sept                          one hundred seven
+cent huit                          one hundred eight
+cent neuf                          one hundred nine
+cent dix                           one hundred ten
+cent onze                          one hundred eleven
+cent douze                         one hundred twelve
+cent treize                         one hundred thirteen
+cent quatorze                      one hundred fourteen
+cent quinze                        one hundred fifteen
+cent vingt                         one hundred twenty
+cent vingt et un                    one hundred twenty-one
+cent vingt-deux                    one hundred twenty-two
+cent trente                         one hundred thirty
+cent trente et un                    one hundred thirty-one
+cent trente-deux                    one hundred thirty-two
+cent quarante                      one hundred forty
+cent quarante et un                 one hundred forty-one
+cent quarante-deux                 one hundred forty-two
+cent cinquante                     one hundred fifty
+cent soixante                       one hundred sixty
+cent soixante-dix                   one hundred seventy
+cent soixante et onze                one hundred seventy-one
+cent soixante-douze                 one hundred seventy-two
+cent quatre-vingts                  one hundred eighty
+cent quatre-vingt-un                one hundred eighty-one
+cent quatre-vingt-dix               one hundred ninety
+cent quatre-vingt-onze              one hundred ninety-one
+cent quatre-vingt-douze             one hundred ninety-two

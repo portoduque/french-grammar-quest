@@ -1,0 +1,1850 @@
+{
+  "chapter": 11,
+  "status": "machine_transcribed_with_manual_boundary_repairs_editorial_visual_review_pending",
+  "exercises": [
+    {
+      "id": "ch11-ex01",
+      "source": {
+        "chapter": 11,
+        "exercise": "11.1",
+        "pdf_pages": [
+          136,
+          137
+        ]
+      },
+      "topic_ids": [
+        "ch11-t01"
+      ],
+      "instruction": "Mettre les verbes au présent du conditionnel.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch11-ex01-q01",
+          "number": 1,
+          "prompt": "aller (nous) __",
+          "source_raw_prompt": "aller (nous) ________________\n\n ",
+          "pdf_pages": [
+            136
+          ],
+          "answer": {
+            "source_key": "irions",
+            "accepted": [
+              "irions"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex01-q02",
+          "number": 2,
+          "prompt": "voyager (elle) __",
+          "source_raw_prompt": "voyager (elle) ________________\n\n ",
+          "pdf_pages": [
+            136
+          ],
+          "answer": {
+            "source_key": "voyagerait",
+            "accepted": [
+              "voyagerait"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex01-q03",
+          "number": 3,
+          "prompt": "dire (nous) __",
+          "source_raw_prompt": "dire (nous) ________________\n\n ",
+          "pdf_pages": [
+            136
+          ],
+          "answer": {
+            "source_key": "dirions",
+            "accepted": [
+              "dirions"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex01-q04",
+          "number": 4,
+          "prompt": "avoir (je) __",
+          "source_raw_prompt": "avoir (je) ________________\n\n ",
+          "pdf_pages": [
+            136
+          ],
+          "answer": {
+            "source_key": "j’aurais",
+            "accepted": [
+              "j’aurais"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex01-q05",
+          "number": 5,
+          "prompt": "manger (ils) __",
+          "source_raw_prompt": "manger (ils) ________________   ",
+          "pdf_pages": [
+            136,
+            137
+          ],
+          "answer": {
+            "source_key": "mangeraient",
+            "accepted": [
+              "mangeraient"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex01-q06",
+          "number": 6,
+          "prompt": "prendre (elle) __",
+          "source_raw_prompt": "prendre (elle) ________________\n\n   ",
+          "pdf_pages": [
+            137
+          ],
+          "answer": {
+            "source_key": "prendrait",
+            "accepted": [
+              "prendrait"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex01-q07",
+          "number": 7,
+          "prompt": "être (tu) __",
+          "source_raw_prompt": "être (tu) ________________\n\n   ",
+          "pdf_pages": [
+            137
+          ],
+          "answer": {
+            "source_key": "serais",
+            "accepted": [
+              "serais"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex01-q08",
+          "number": 8,
+          "prompt": "demander (vous) __",
+          "source_raw_prompt": "demander (vous) ________________\n\n   ",
+          "pdf_pages": [
+            137
+          ],
+          "answer": {
+            "source_key": "demanderiez",
+            "accepted": [
+              "demanderiez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex01-q09",
+          "number": 9,
+          "prompt": "écrire (je) __",
+          "source_raw_prompt": "écrire (je) ________________\n\n ",
+          "pdf_pages": [
+            137
+          ],
+          "answer": {
+            "source_key": "j’écrirais",
+            "accepted": [
+              "j’écrirais"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex01-q10",
+          "number": 10,
+          "prompt": "savoir (tu) __",
+          "source_raw_prompt": "savoir (tu) ________________",
+          "pdf_pages": [
+            137
+          ],
+          "answer": {
+            "source_key": "saurais",
+            "accepted": [
+              "saurais"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch11-s01"
+      ]
+    },
+    {
+      "id": "ch11-ex02",
+      "source": {
+        "chapter": 11,
+        "exercise": "11.2",
+        "pdf_pages": [
+          137,
+          138,
+          139
+        ]
+      },
+      "topic_ids": [
+        "ch11-t02"
+      ],
+      "instruction": "Traduire les verbes entre parenthèses en utilisant vous et l’inversion.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch11-ex02-q01",
+          "number": 1,
+          "prompt": "(Would you) aller au théâtre la semaine prochaine? __",
+          "source_raw_prompt": "(Would you) aller au théâtre la semaine prochaine? ________________   ",
+          "pdf_pages": [
+            137,
+            138
+          ],
+          "answer": {
+            "source_key": "Iriez-vous",
+            "accepted": [
+              "Iriez-vous"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex02-q02",
+          "number": 2,
+          "prompt": "(Could we) passer chez vous après le spectacle? __",
+          "source_raw_prompt": "(Could we) passer chez vous après le spectacle? ________________\n\n   ",
+          "pdf_pages": [
+            138
+          ],
+          "answer": {
+            "source_key": "Pourrions-nous",
+            "accepted": [
+              "Pourrions-nous"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex02-q03",
+          "number": 3,
+          "prompt": "(Could you) changer la date de votre départ? __",
+          "source_raw_prompt": "(Could you) changer la date de votre départ? ________________\n\n   ",
+          "pdf_pages": [
+            138
+          ],
+          "answer": {
+            "source_key": "Pourriez-vous",
+            "accepted": [
+              "Pourriez-vous"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex02-q04",
+          "number": 4,
+          "prompt": "(Would you) m’acheter le journal pendant mes vacances? __",
+          "source_raw_prompt": "(Would you) m’acheter le journal pendant mes vacances? ________________\n\n   ",
+          "pdf_pages": [
+            138
+          ],
+          "answer": {
+            "source_key": "M’achèteriez-vous",
+            "accepted": [
+              "M’achèteriez-vous"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex02-q05",
+          "number": 5,
+          "prompt": "(Would he) signer cette pétition? __",
+          "source_raw_prompt": "(Would he) signer cette pétition? ________________\n\n   ",
+          "pdf_pages": [
+            138
+          ],
+          "answer": {
+            "source_key": "Signerait-il",
+            "accepted": [
+              "Signerait-il"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex02-q06",
+          "number": 6,
+          "prompt": "(Could you) nourrir mes poissons rouges? __",
+          "source_raw_prompt": "(Could you) nourrir mes poissons rouges? ________________\n\n   ",
+          "pdf_pages": [
+            138
+          ],
+          "answer": {
+            "source_key": "Pourriez-vous",
+            "accepted": [
+              "Pourriez-vous"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex02-q07",
+          "number": 7,
+          "prompt": "(Could she) prendre un train plus tard? __",
+          "source_raw_prompt": "(Could she) prendre un train plus tard? ________________\n\n   ",
+          "pdf_pages": [
+            138
+          ],
+          "answer": {
+            "source_key": "Pourrait-elle",
+            "accepted": [
+              "Pourrait-elle"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex02-q08",
+          "number": 8,
+          "prompt": "(Would you) aller avec moi en Tanzanie? __",
+          "source_raw_prompt": "(Would you) aller avec moi en Tanzanie? ________________\n\n   ",
+          "pdf_pages": [
+            138
+          ],
+          "answer": {
+            "source_key": "Iriez-vous",
+            "accepted": [
+              "Iriez-vous"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex02-q09",
+          "number": 9,
+          "prompt": "(Could we) finir ce projet la semaine prochaine? __",
+          "source_raw_prompt": "(Could we) finir ce projet la semaine prochaine? ________________\n\n ",
+          "pdf_pages": [
+            138
+          ],
+          "answer": {
+            "source_key": "Pourrions-nous",
+            "accepted": [
+              "Pourrions-nous"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex02-q10",
+          "number": 10,
+          "prompt": "(Would they) accompagner Sonia à la gare? __ The présent du conditionnel is used when a condition is implied. When the main clause is in the présent du conditionnel, the si clause is in the imparfait. Nous irions à Rome si nous pouvions. We would go to Rome if we could. Régis finirait son roman s’il pouvait Régis would finish his novel if he trouver une maison d’édition. could find a publisher. Nous aurions un chien si notre appartement We would have a dog if our était plus grand. apartment were bigger. Nous viendrions si notre baby-sitter était We would come if our babysitter disponible. were available. The présent du conditionnel is also used to express unconfirmed or alleged information. In this case it is called the conditionnel journalistique, seen from time to time in the press or heard on news broadcasts. La reine de Suède se rendrait en The Queen of Sweden is reportedly goin Australie la semaine prochaine. to Australia next week. Son beau-frère serait impliqué dans His (her) brother-in-law is allegedly une affaire de fraude fiscale. involved in tax fraud. Le président signerait le traité en fin The president will reportedly sign the d’après-midi. treaty by the end of the afternoon. Un sous-marin hollandais serait au A Dutch submarine is reportedly off the large des côtes bretonnes. coast of Brittany. In formal French, savoir in the présent du conditionnel is the equivalent of pouvoir (can, to be able to) in the present or the simple future. Je ne saurais vous dire combien I shall never be able to tell you how much j’apprécie votre geste. appreciate your gesture. Je ne saurais vous répondre. I am afraid I can’t answer. (I wouldn’t kn how to answer you.)",
+          "source_raw_prompt": "(Would they) accompagner Sonia à la gare? ________________\n\n\nThe présent du conditionnel is used when a condition is implied. When the main\nclause is in the présent du conditionnel, the si clause is in the imparfait.\n\n      Nous irions à Rome si nous pouvions.    We would go to Rome if we could.\n       Régis finirait son roman s’il pouvait      Régis would finish his novel if he\n          trouver une maison d’édition.             could find a publisher.\n      Nous aurions un chien si notre appartement We would have a dog if our\n           était plus grand.                        apartment were bigger.\n      Nous viendrions si notre baby-sitter était  We would come if our babysitter\n          disponible.                            were available.\n\n  The présent du conditionnel is also used to express unconfirmed or alleged\ninformation. In this case it is called the conditionnel journalistique, seen from time\nto time in the press or heard on news broadcasts.\n\n      La reine de Suède se rendrait en     The Queen of Sweden is reportedly goin\n          Australie la semaine prochaine.        to Australia next week.\n      Son beau-frère serait impliqué dans  His (her) brother-in-law is allegedly\n         une affaire de fraude fiscale.          involved in tax fraud.\n      Le président signerait le traité en fin  The president will reportedly sign the\n          d’après-midi.                           treaty by the end of the afternoon.\n     Un sous-marin hollandais serait au  A Dutch submarine is reportedly off the\n           large des côtes bretonnes.             coast of Brittany.   In formal French, savoir in the présent du conditionnel is the equivalent of\npouvoir (can, to be able to) in the present or the simple future.\n\n       Je ne saurais vous dire combien      I shall never be able to tell you how much\n           j’apprécie votre geste.              appreciate your gesture.\n       Je ne saurais vous répondre.          I am afraid I can’t answer. (I wouldn’t kn\n                                  how to answer you.)\n\n\n\n  ",
+          "pdf_pages": [
+            138,
+            139
+          ],
+          "answer": {
+            "source_key": "Accompagneraient-ils (-elles)",
+            "accepted": [
+              "Accompagneraient-ils (-elles)"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch11-s02"
+      ]
+    },
+    {
+      "id": "ch11-ex03",
+      "source": {
+        "chapter": 11,
+        "exercise": "11.3",
+        "pdf_pages": [
+          139,
+          140
+        ]
+      },
+      "topic_ids": [
+        "ch11-t02"
+      ],
+      "instruction": "Mettre à l’imparfait les verbes dans la proposition si, et au conditionnel ceux de la proposition principale.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch11-ex03-q01",
+          "number": 1,
+          "prompt": "Si je (avoir) moins de travail, je (voyager) plus. __",
+          "source_raw_prompt": "Si je (avoir) moins de travail, je (voyager) plus.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            139
+          ],
+          "answer": {
+            "source_key": "Si j’avais moins de travail, je voyagerais plus.",
+            "accepted": [
+              "Si j’avais moins de travail, je voyagerais plus."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex03-q02",
+          "number": 2,
+          "prompt": "S’ils (attendre), ils (obtenir) un meilleur prix pour leur appartement. __",
+          "source_raw_prompt": "S’ils (attendre), ils (obtenir) un meilleur prix pour leur appartement.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            139
+          ],
+          "answer": {
+            "source_key": "S’ils attendaient, ils obtiendraient un meilleur prix pour leur appartement.",
+            "accepted": [
+              "S’ils attendaient, ils obtiendraient un meilleur prix pour leur appartement."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex03-q03",
+          "number": 3,
+          "prompt": "Si nous (planter) plus de fleurs, nous (avoir) un plus beau jardin. __",
+          "source_raw_prompt": "Si nous (planter) plus de fleurs, nous (avoir) un plus beau jardin.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            139
+          ],
+          "answer": {
+            "source_key": "Si nous plantions plus de fleurs, nous aurions un plus beau jardin.",
+            "accepted": [
+              "Si nous plantions plus de fleurs, nous aurions un plus beau jardin."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex03-q04",
+          "number": 4,
+          "prompt": "Si je (vendre) mon appartement, je (pouvoir) acheter cette maison. __",
+          "source_raw_prompt": "Si je (vendre) mon appartement, je (pouvoir) acheter cette maison.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            139
+          ],
+          "answer": {
+            "source_key": "Si je vendais mon appartement, je pourrais acheter cette maison.",
+            "accepted": [
+              "Si je vendais mon appartement, je pourrais acheter cette maison."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex03-q05",
+          "number": 5,
+          "prompt": "S’il (pouvoir), il (déménager). __",
+          "source_raw_prompt": "S’il (pouvoir), il (déménager).\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            139
+          ],
+          "answer": {
+            "source_key": "S’il pouvait, il déménagerait.",
+            "accepted": [
+              "S’il pouvait, il déménagerait."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex03-q06",
+          "number": 6,
+          "prompt": "Si vous les (inviter), nous (être) ravis. __",
+          "source_raw_prompt": "Si vous les (inviter), nous (être) ravis.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            139
+          ],
+          "answer": {
+            "source_key": "Si vous les invitiez, nous serions ravis.",
+            "accepted": [
+              "Si vous les invitiez, nous serions ravis."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex03-q07",
+          "number": 7,
+          "prompt": "Si ma voiture (tomber) en panne, je (piquer) une crise. __",
+          "source_raw_prompt": "Si ma voiture (tomber) en panne, je (piquer) une crise.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            139
+          ],
+          "answer": {
+            "source_key": "Si ma voiture tombait en panne, je piquerais une crise.",
+            "accepted": [
+              "Si ma voiture tombait en panne, je piquerais une crise."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex03-q08",
+          "number": 8,
+          "prompt": "Si elle (avoir) plus d’argent, elle (venir) avec nous. __",
+          "source_raw_prompt": "Si elle (avoir) plus d’argent, elle (venir) avec nous.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            139
+          ],
+          "answer": {
+            "source_key": "Si elle avait plus d’argent, elle viendrait avec nous.",
+            "accepted": [
+              "Si elle avait plus d’argent, elle viendrait avec nous."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex03-q09",
+          "number": 9,
+          "prompt": "Si vous (s’organiser) autrement, votre vie (être) plus facile. __",
+          "source_raw_prompt": "Si vous (s’organiser) autrement, votre vie (être) plus facile.\n    _____________________________________________________________",
+          "pdf_pages": [
+            139,
+            140
+          ],
+          "answer": {
+            "source_key": "Si vous vous organisiez autrement, votre vie serait plus facile.",
+            "accepted": [
+              "Si vous vous organisiez autrement, votre vie serait plus facile."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex03-q10",
+          "number": 10,
+          "prompt": "Si tu (dormir) plus, tu (avoir) de meilleures notes à l’école. __",
+          "source_raw_prompt": "Si tu (dormir) plus, tu (avoir) de meilleures notes à l’école.\n   _____________________________________________________________\n\n\n\n\n ",
+          "pdf_pages": [
+            139,
+            140
+          ],
+          "answer": {
+            "source_key": "Si tu dormais plus, tu aurais de meilleures notes à l’école.",
+            "accepted": [
+              "Si tu dormais plus, tu aurais de meilleures notes à l’école."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch11-s02"
+      ]
+    },
+    {
+      "id": "ch11-ex04",
+      "source": {
+        "chapter": 11,
+        "exercise": "11.4",
+        "pdf_pages": [
+          140,
+          141
+        ]
+      },
+      "topic_ids": [
+        "ch11-t02"
+      ],
+      "instruction": "Conjuguer les verbes entre parenthèses en utilisant d’abord le présent du conditionnel, puis l’imparfait.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch11-ex04-q01",
+          "number": 1,
+          "prompt": "Elle (être) contente si tu (venir) ce soir. __",
+          "source_raw_prompt": "Elle (être) contente si tu (venir) ce soir.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            140
+          ],
+          "answer": {
+            "source_key": "Elle serait contente si tu venais ce soir.",
+            "accepted": [
+              "Elle serait contente si tu venais ce soir."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex04-q02",
+          "number": 2,
+          "prompt": "Nous (faire) une promenade dans le parc s’il (faire) beau. __",
+          "source_raw_prompt": "Nous (faire) une promenade dans le parc s’il (faire) beau.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            140
+          ],
+          "answer": {
+            "source_key": "Nous ferions une promenade dans le parc s’il faisait beau.",
+            "accepted": [
+              "Nous ferions une promenade dans le parc s’il faisait beau."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex04-q03",
+          "number": 3,
+          "prompt": "Ils (prendre) leur retraite s’ils (pouvoir). __",
+          "source_raw_prompt": "Ils (prendre) leur retraite s’ils (pouvoir).\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            140
+          ],
+          "answer": {
+            "source_key": "Ils prendraient leur retraite s’ils pouvaient.",
+            "accepted": [
+              "Ils prendraient leur retraite s’ils pouvaient."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex04-q04",
+          "number": 4,
+          "prompt": "Il (accompagner) Sophie à l’opéra s’il (ne pas être) occupé. __",
+          "source_raw_prompt": "Il (accompagner) Sophie à l’opéra s’il (ne pas être) occupé.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            140
+          ],
+          "answer": {
+            "source_key": "Il accompagnerait Sophie à l’opéra s’il n’était pas occupé.",
+            "accepted": [
+              "Il accompagnerait Sophie à l’opéra s’il n’était pas occupé."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex04-q05",
+          "number": 5,
+          "prompt": "Il y (avoir) moins de problèmes si vous (suivre) mes conseils. __",
+          "source_raw_prompt": "Il y (avoir) moins de problèmes si vous (suivre) mes conseils.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            140
+          ],
+          "answer": {
+            "source_key": "Il y aurait moins de problèmes si vous suiviez mes conseils.",
+            "accepted": [
+              "Il y aurait moins de problèmes si vous suiviez mes conseils."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex04-q06",
+          "number": 6,
+          "prompt": "Elles (aller) au musée s’il (être) ouvert avant onze heures. __",
+          "source_raw_prompt": "Elles (aller) au musée s’il (être) ouvert avant onze heures.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            140
+          ],
+          "answer": {
+            "source_key": "Elles iraient au musée s’il était ouvert avant onze heures.",
+            "accepted": [
+              "Elles iraient au musée s’il était ouvert avant onze heures."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex04-q07",
+          "number": 7,
+          "prompt": "Vous (finir) plus tôt si vous (travailler) plus efficacement. __",
+          "source_raw_prompt": "Vous (finir) plus tôt si vous (travailler) plus efficacement.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            140
+          ],
+          "answer": {
+            "source_key": "Vous finiriez plus tôt si vous travailliez plus efficacement.",
+            "accepted": [
+              "Vous finiriez plus tôt si vous travailliez plus efficacement."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex04-q08",
+          "number": 8,
+          "prompt": "Nous vous (croire) si vous nous (dire) la vérité. __",
+          "source_raw_prompt": "Nous vous (croire) si vous nous (dire) la vérité.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            140
+          ],
+          "answer": {
+            "source_key": "Nous vous croirions si vous nous disiez la vérité.",
+            "accepted": [
+              "Nous vous croirions si vous nous disiez la vérité."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex04-q09",
+          "number": 9,
+          "prompt": "Elle (acheter) cette voiture si elle (être) moins chère. __",
+          "source_raw_prompt": "Elle (acheter) cette voiture si elle (être) moins chère.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            140
+          ],
+          "answer": {
+            "source_key": "Elle achèterait cette voiture si elle était moins chère.",
+            "accepted": [
+              "Elle achèterait cette voiture si elle était moins chère."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex04-q10",
+          "number": 10,
+          "prompt": "Tu lui (offrir) ce poste si tu (avoir) confiance en lui. __",
+          "source_raw_prompt": "Tu lui (offrir) ce poste si tu (avoir) confiance en lui.\n   _____________________________________________________________ ",
+          "pdf_pages": [
+            140,
+            141
+          ],
+          "answer": {
+            "source_key": "Tu lui offrirais ce poste si tu avais confiance en lui.",
+            "accepted": [
+              "Tu lui offrirais ce poste si tu avais confiance en lui."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch11-s02"
+      ]
+    },
+    {
+      "id": "ch11-ex05",
+      "source": {
+        "chapter": 11,
+        "exercise": "11.5",
+        "pdf_pages": [
+          141
+        ]
+      },
+      "topic_ids": [
+        "ch11-t02"
+      ],
+      "instruction": "Traduire les phrases suivantes en utilisant tu si nécessaire.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch11-ex05-q01",
+          "number": 1,
+          "prompt": "He would go to Paris if he had more time. __",
+          "source_raw_prompt": "He would go to Paris if he had more time.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            141
+          ],
+          "answer": {
+            "source_key": "Il irait à Paris s’il avait plus de temps.",
+            "accepted": [
+              "Il irait à Paris s’il avait plus de temps."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex05-q02",
+          "number": 2,
+          "prompt": "She would buy this coat if it were less expensive. __",
+          "source_raw_prompt": "She would buy this coat if it were less expensive.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            141
+          ],
+          "answer": {
+            "source_key": "Elle achèterait ce manteau s’il était moins cher.",
+            "accepted": [
+              "Elle achèterait ce manteau s’il était moins cher."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex05-q03",
+          "number": 3,
+          "prompt": "We would be delighted if you came on Sunday. __",
+          "source_raw_prompt": "We would be delighted if you came on Sunday.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            141
+          ],
+          "answer": {
+            "source_key": "Nous serions ravi(e)s si tu venais dimanche.",
+            "accepted": [
+              "Nous serions ravi(e)s si tu venais dimanche."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex05-q04",
+          "number": 4,
+          "prompt": "I would write a letter if you needed it. __",
+          "source_raw_prompt": "I would write a letter if you needed it.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            141
+          ],
+          "answer": {
+            "source_key": "J’écrirais une lettre si tu en avais besoin.",
+            "accepted": [
+              "J’écrirais une lettre si tu en avais besoin."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex05-q05",
+          "number": 5,
+          "prompt": "The president is reportedly in Brazil today. __",
+          "source_raw_prompt": "The president is reportedly in Brazil today.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            141
+          ],
+          "answer": {
+            "source_key": "Le président serait au Brésil aujourd’hui.",
+            "accepted": [
+              "Le président serait au Brésil aujourd’hui."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex05-q06",
+          "number": 6,
+          "prompt": "It would be prettier if there were more flowers. __",
+          "source_raw_prompt": "It would be prettier if there were more flowers.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            141
+          ],
+          "answer": {
+            "source_key": "Ce serait plus joli s’il y avait plus de fleurs.",
+            "accepted": [
+              "Ce serait plus joli s’il y avait plus de fleurs."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex05-q07",
+          "number": 7,
+          "prompt": "I would invite Chloé if I went to Paris. __",
+          "source_raw_prompt": "I would invite Chloé if I went to Paris.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            141
+          ],
+          "answer": {
+            "source_key": "J’inviterais Chloé si j’allais à Paris.",
+            "accepted": [
+              "J’inviterais Chloé si j’allais à Paris."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex05-q08",
+          "number": 8,
+          "prompt": "The director will reportedly sign the contract. __",
+          "source_raw_prompt": "The director will reportedly sign the contract.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            141
+          ],
+          "answer": {
+            "source_key": "Le directeur signerait le contrat.",
+            "accepted": [
+              "Le directeur signerait le contrat."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex05-q09",
+          "number": 9,
+          "prompt": "She would eat the soup if she were hungry. __",
+          "source_raw_prompt": "She would eat the soup if she were hungry.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            141
+          ],
+          "answer": {
+            "source_key": "Elle mangerait la soupe si elle avait faim.",
+            "accepted": [
+              "Elle mangerait la soupe si elle avait faim."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex05-q10",
+          "number": 10,
+          "prompt": "He would read the paper this morning if he could. __",
+          "source_raw_prompt": "He would read the paper this morning if he could.\n   _____________________________________________________________\n\n\n\n\n ",
+          "pdf_pages": [
+            141
+          ],
+          "answer": {
+            "source_key": "Il lirait le journal ce matin s’il pouvait.",
+            "accepted": [
+              "Il lirait le journal ce matin s’il pouvait."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch11-s02"
+      ]
+    },
+    {
+      "id": "ch11-ex06",
+      "source": {
+        "chapter": 11,
+        "exercise": "11.6",
+        "pdf_pages": [
+          141,
+          142
+        ]
+      },
+      "topic_ids": [
+        "ch11-t02"
+      ],
+      "instruction": "Faire correspondre les deux colonnes. ______",
+      "interaction_type": "matching",
+      "questions": [
+        {
+          "id": "ch11-ex06-q01",
+          "number": 1,
+          "prompt": "Le chat serait content a. s’il y faisait moins chaud __",
+          "source_raw_prompt": "Le chat serait content        a. s’il y faisait moins chaud\n\n ______ ",
+          "pdf_pages": [
+            142
+          ],
+          "answer": {
+            "source_key": "c",
+            "accepted": [
+              "c"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "a",
+            "text": "s’il y faisait moins chaud"
+          }
+        },
+        {
+          "id": "ch11-ex06-q02",
+          "number": 2,
+          "prompt": "Le mouton dormirait b. si elle ne portait pas sa maison tranquillement sur son dos __",
+          "source_raw_prompt": "Le mouton dormirait        b. si elle ne portait pas sa maison\n    tranquillement                        sur son dos\n\n ______ ",
+          "pdf_pages": [
+            142
+          ],
+          "answer": {
+            "source_key": "d",
+            "accepted": [
+              "d"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "b",
+            "text": "si elle ne portait pas sa maison"
+          }
+        },
+        {
+          "id": "ch11-ex06-q03",
+          "number": 3,
+          "prompt": "L’ours visiterait le désert c. s’il attrapait une souris __",
+          "source_raw_prompt": "L’ours visiterait le désert    c. s’il attrapait une souris\n\n ______ ",
+          "pdf_pages": [
+            142
+          ],
+          "answer": {
+            "source_key": "a",
+            "accepted": [
+              "a"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "c",
+            "text": "s’il attrapait une souris"
+          }
+        },
+        {
+          "id": "ch11-ex06-q04",
+          "number": 4,
+          "prompt": "La grenouille serait ravie d. si le loup n’était pas dans la forêt __",
+          "source_raw_prompt": "La grenouille serait ravie   d. si le loup n’était pas dans la forêt\n\n ______ ",
+          "pdf_pages": [
+            142
+          ],
+          "answer": {
+            "source_key": "e",
+            "accepted": [
+              "e"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "d",
+            "text": "si le loup n’était pas dans la forêt"
+          }
+        },
+        {
+          "id": "ch11-ex06-q05",
+          "number": 5,
+          "prompt": "La tortue avancerait plus e. si elle pouvait être aussi grosse vite qu’un bœuf",
+          "source_raw_prompt": "La tortue avancerait plus    e. si elle pouvait être aussi grosse\n     vite                              qu’un bœuf",
+          "pdf_pages": [
+            142,
+            143,
+            144
+          ],
+          "answer": {
+            "source_key": "b",
+            "accepted": [
+              "b"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "e",
+            "text": "si elle pouvait être aussi grosse"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 5,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "choice_label",
+        "publisher_key_is_exhaustive": true
+      },
+      "subtopic_ids": [
+        "ch11-s02"
+      ],
+      "choices": [
+        {
+          "label": "a",
+          "text": "s’il y faisait moins chaud"
+        },
+        {
+          "label": "b",
+          "text": "si elle ne portait pas sa maison"
+        },
+        {
+          "label": "c",
+          "text": "s’il attrapait une souris"
+        },
+        {
+          "label": "d",
+          "text": "si le loup n’était pas dans la forêt"
+        },
+        {
+          "label": "e",
+          "text": "si elle pouvait être aussi grosse"
+        }
+      ]
+    },
+    {
+      "id": "ch11-ex07",
+      "source": {
+        "chapter": 11,
+        "exercise": "11.7",
+        "pdf_pages": [
+          144
+        ]
+      },
+      "topic_ids": [
+        "ch11-t04"
+      ],
+      "instruction": "Conjuguer les verbes entre parenthèses en utilisant d’abord le passé du conditionnel, puis le plus-que-parfait.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch11-ex07-q01",
+          "number": 1,
+          "prompt": "Nous (dîner) avec vous si nous (pouvoir). __",
+          "source_raw_prompt": "Nous (dîner) avec vous si nous (pouvoir).\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            144
+          ],
+          "answer": {
+            "source_key": "Nous aurions dîné avec vous si nous avions pu.",
+            "accepted": [
+              "Nous aurions dîné avec vous si nous avions pu."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex07-q02",
+          "number": 2,
+          "prompt": "Elle (visiter) ce musée si elle (avoir) plus de temps. __",
+          "source_raw_prompt": "Elle (visiter) ce musée si elle (avoir) plus de temps.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            144
+          ],
+          "answer": {
+            "source_key": "Elle aurait visité ce musée si elle avait eu plus de temps.",
+            "accepted": [
+              "Elle aurait visité ce musée si elle avait eu plus de temps."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex07-q03",
+          "number": 3,
+          "prompt": "Elle (voir) ce film s’il (être) sous-titré. __",
+          "source_raw_prompt": "Elle (voir) ce film s’il (être) sous-titré.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            144
+          ],
+          "answer": {
+            "source_key": "Elle aurait vu ce film s’il avait été sous-titré.",
+            "accepted": [
+              "Elle aurait vu ce film s’il avait été sous-titré."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex07-q04",
+          "number": 4,
+          "prompt": "Ils (inviter) Charles s’il (ne pas travailler) ce soir-là. __",
+          "source_raw_prompt": "Ils (inviter) Charles s’il (ne pas travailler) ce soir-là.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            144
+          ],
+          "answer": {
+            "source_key": "Ils auraient invité Charles s’il n’avait pas travaillé ce soir-là.",
+            "accepted": [
+              "Ils auraient invité Charles s’il n’avait pas travaillé ce soir-là."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex07-q05",
+          "number": 5,
+          "prompt": "Il (faire) un documentaire sur ce sujet s’il (trouver) le financement. __",
+          "source_raw_prompt": "Il (faire) un documentaire sur ce sujet s’il (trouver) le financement.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            144
+          ],
+          "answer": {
+            "source_key": "Il aurait fait un documentaire sur ce sujet s’il avait trouvé le financement.",
+            "accepted": [
+              "Il aurait fait un documentaire sur ce sujet s’il avait trouvé le financement."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex07-q06",
+          "number": 6,
+          "prompt": "Ils (vendre) leur maison si leurs enfants (déménager). __",
+          "source_raw_prompt": "Ils (vendre) leur maison si leurs enfants (déménager).\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            144
+          ],
+          "answer": {
+            "source_key": "Ils auraient vendu leur maison si leurs enfants avaient déménagé.",
+            "accepted": [
+              "Ils auraient vendu leur maison si leurs enfants avaient déménagé."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex07-q07",
+          "number": 7,
+          "prompt": "Vous (arriver) à temps si votre voiture (ne pas tomber) en panne. __",
+          "source_raw_prompt": "Vous (arriver) à temps si votre voiture (ne pas tomber) en panne.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            144
+          ],
+          "answer": {
+            "source_key": "Vous seriez arrivé à temps si votre voiture n’était pas tombée en panne.",
+            "accepted": [
+              "Vous seriez arrivé à temps si votre voiture n’était pas tombée en panne."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex07-q08",
+          "number": 8,
+          "prompt": "Le directeur (démissionner) si les ouvriers (ne pas faire) pression. __",
+          "source_raw_prompt": "Le directeur (démissionner) si les ouvriers (ne pas faire) pression.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            144
+          ],
+          "answer": {
+            "source_key": "Le directeur aurait démissionné si les ouvriers n’avaient pas fait pression.",
+            "accepted": [
+              "Le directeur aurait démissionné si les ouvriers n’avaient pas fait pression."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex07-q09",
+          "number": 9,
+          "prompt": "Cette pièce (avoir) du succès s’il y (avoir) plus de temps pour les répétitions. __",
+          "source_raw_prompt": "Cette pièce (avoir) du succès s’il y (avoir) plus de temps pour les répétitions.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            144
+          ],
+          "answer": {
+            "source_key": "Cette pièce aurait eu du succès s’il y avait eu plus de temps pour les répétitions.",
+            "accepted": [
+              "Cette pièce aurait eu du succès s’il y avait eu plus de temps pour les répétitions."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex07-q10",
+          "number": 10,
+          "prompt": "Nous (venir) si nous (recevoir) votre invitation plus tôt. __",
+          "source_raw_prompt": "Nous (venir) si nous (recevoir) votre invitation plus tôt.\n   _____________________________________________________________\n\n\n\n\n ",
+          "pdf_pages": [
+            144
+          ],
+          "answer": {
+            "source_key": "Nous serions venus si nous avions reçu votre invitation plus tôt.",
+            "accepted": [
+              "Nous serions venus si nous avions reçu votre invitation plus tôt."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch11-s04"
+      ]
+    },
+    {
+      "id": "ch11-ex08",
+      "source": {
+        "chapter": 11,
+        "exercise": "11.8",
+        "pdf_pages": [
+          144,
+          145,
+          146
+        ]
+      },
+      "topic_ids": [
+        "ch11-t04"
+      ],
+      "instruction": "Conjuguer les verbes entre parenthèses en utilisant d’abord le plus-que-parfait, puis le passé du conditionnel.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch11-ex08-q01",
+          "number": 1,
+          "prompt": "S’il (finir) son projet, il (ne pas devoir) travailler le week-end. __",
+          "source_raw_prompt": "S’il (finir) son projet, il (ne pas devoir) travailler le week-end.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            145
+          ],
+          "answer": {
+            "source_key": "S’il avait fini son projet, il n’aurait pas dû travailler le week-end.",
+            "accepted": [
+              "S’il avait fini son projet, il n’aurait pas dû travailler le week-end."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex08-q02",
+          "number": 2,
+          "prompt": "Si je (mettre) mon manteau, je (ne pas avoir) si froid. __",
+          "source_raw_prompt": "Si je (mettre) mon manteau, je (ne pas avoir) si froid.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            145
+          ],
+          "answer": {
+            "source_key": "Si j’avais mis mon manteau, je n’aurais pas eu si froid.",
+            "accepted": [
+              "Si j’avais mis mon manteau, je n’aurais pas eu si froid."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex08-q03",
+          "number": 3,
+          "prompt": "Si vous (pouvoir) témoigner au tribunal, la situation (être) différente. __",
+          "source_raw_prompt": "Si vous (pouvoir) témoigner au tribunal, la situation (être) différente.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            145
+          ],
+          "answer": {
+            "source_key": "Si vous aviez pu témoigner au tribunal, la situation aurait été différente.",
+            "accepted": [
+              "Si vous aviez pu témoigner au tribunal, la situation aurait été différente."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex08-q04",
+          "number": 4,
+          "prompt": "Si on (ne pas guillotiner) le roi, l’histoire du pays (prendre) une tournure différente. __",
+          "source_raw_prompt": "Si on (ne pas guillotiner) le roi, l’histoire du pays (prendre) une tournure\n     différente.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            145
+          ],
+          "answer": {
+            "source_key": "Si on n’avait pas guillotiné le roi, l’histoire du pays aurait pris une tournure différente.",
+            "accepted": [
+              "Si on n’avait pas guillotiné le roi, l’histoire du pays aurait pris une tournure différente."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex08-q05",
+          "number": 5,
+          "prompt": "S’il (apprendre) sa grammaire, il (faire) moins de fautes. __",
+          "source_raw_prompt": "S’il (apprendre) sa grammaire, il (faire) moins de fautes.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            145
+          ],
+          "answer": {
+            "source_key": "S’il avait appris sa grammaire, il aurait fait moins de fautes.",
+            "accepted": [
+              "S’il avait appris sa grammaire, il aurait fait moins de fautes."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex08-q06",
+          "number": 6,
+          "prompt": "Si elle (se présenter) aux élections, elle (être élue). __",
+          "source_raw_prompt": "Si elle (se présenter) aux élections, elle (être élue).\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            145
+          ],
+          "answer": {
+            "source_key": "Si elle s’était présentée aux élections, elle aurait été élue.",
+            "accepted": [
+              "Si elle s’était présentée aux élections, elle aurait été élue."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex08-q07",
+          "number": 7,
+          "prompt": "Si nous (commander) un couscous, nous (ne pas avoir) faim plus tard. __",
+          "source_raw_prompt": "Si nous (commander) un couscous, nous (ne pas avoir) faim plus tard.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            145
+          ],
+          "answer": {
+            "source_key": "Si nous avions commandé un couscous, nous n’aurions pas eu faim plus tard.",
+            "accepted": [
+              "Si nous avions commandé un couscous, nous n’aurions pas eu faim plus tard."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex08-q08",
+          "number": 8,
+          "prompt": "Si elle (pouvoir), elle (être) danseuse. __",
+          "source_raw_prompt": "Si elle (pouvoir), elle (être) danseuse.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            145
+          ],
+          "answer": {
+            "source_key": "Si elle avait pu, elle aurait été danseuse.",
+            "accepted": [
+              "Si elle avait pu, elle aurait été danseuse."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex08-q09",
+          "number": 9,
+          "prompt": "Si tu (être) plus pratique, nous (voyager) sans bagages. __",
+          "source_raw_prompt": "Si tu (être) plus pratique, nous (voyager) sans bagages.\n    _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            145
+          ],
+          "answer": {
+            "source_key": "Si tu avais été plus pratique, nous aurions voyagé sans bagages.",
+            "accepted": [
+              "Si tu avais été plus pratique, nous aurions voyagé sans bagages."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex08-q10",
+          "number": 10,
+          "prompt": "Si je (savoir), je (ne pas engager) Daniel. __ The présent or passé du conditionnel are also used with the expression au cas où (in case). Au cas où le projet ne serait pas fini cet In case the project is not finished by après-midi, appelez-moi. this afternoon, call me. Au cas où ce cadeau ne vous plairait pas, In case you do not like this present, dites-le-moi. let me know. Au cas où il aurait échoué à l’examen, on In case he failed the exam, we’ll giv lui donnera une autre chance. him another chance. Au cas où tu n’aurais pas retrouvé tes In case you did not find your keys, clés, Christian s’occupera de toi. Christian will take care of you.",
+          "source_raw_prompt": "Si je (savoir), je (ne pas engager) Daniel.\n    _____________________________________________________________\n\n\n\n  The présent or passé du conditionnel are also used with the expression au cas\noù (in case).\n\n     Au cas où le projet ne serait pas fini cet  In case the project is not finished by\n          après-midi, appelez-moi.                    this afternoon, call me.    Au cas où ce cadeau ne vous plairait pas, In case you do not like this present,\n         dites-le-moi.                                    let me know.\n    Au cas où il aurait échoué à l’examen, on In case he failed the exam, we’ll giv\n           lui donnera une autre chance.           him another chance.\n    Au cas où tu n’aurais pas retrouvé tes   In case you did not find your keys,\n          clés, Christian s’occupera de toi.          Christian will take care of you.\n\n\n\n ",
+          "pdf_pages": [
+            145,
+            146
+          ],
+          "answer": {
+            "source_key": "Si j’avais su, je n’aurais pas engagé Daniel.",
+            "accepted": [
+              "Si j’avais su, je n’aurais pas engagé Daniel."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch11-s04"
+      ]
+    },
+    {
+      "id": "ch11-ex09",
+      "source": {
+        "chapter": 11,
+        "exercise": "11.9",
+        "pdf_pages": [
+          146,
+          147
+        ]
+      },
+      "topic_ids": [
+        "ch11-t04"
+      ],
+      "instruction": "Traduire les phrases suivantes en utilisant le conditionnel journalistique, présent ou passé.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch11-ex09-q01",
+          "number": 1,
+          "prompt": "The prime minister reportedly went to China yesterday. __",
+          "source_raw_prompt": "The prime minister reportedly went to China yesterday.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            146
+          ],
+          "answer": {
+            "source_key": "Le Premier ministre/La Première ministre serait allé(e) en Chine hier.",
+            "accepted": [
+              "Le Premier ministre/La Première ministre serait allé(e) en Chine hier."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex09-q02",
+          "number": 2,
+          "prompt": "The witness allegedly gave the police a different version. __",
+          "source_raw_prompt": "The witness allegedly gave the police a different version.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            146
+          ],
+          "answer": {
+            "source_key": "Le témoin aurait donné une version différente à la police.",
+            "accepted": [
+              "Le témoin aurait donné une version différente à la police."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex09-q03",
+          "number": 3,
+          "prompt": "The cyclone reportedly killed two hundred people in this town. __",
+          "source_raw_prompt": "The cyclone reportedly killed two hundred people in this town.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            146
+          ],
+          "answer": {
+            "source_key": "Le cyclone aurait tué deux cents personnes dans cette ville.",
+            "accepted": [
+              "Le cyclone aurait tué deux cents personnes dans cette ville."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex09-q04",
+          "number": 4,
+          "prompt": "The director reportedly resigned. __",
+          "source_raw_prompt": "The director reportedly resigned.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            146
+          ],
+          "answer": {
+            "source_key": "Le directeur aurait démissionné.",
+            "accepted": [
+              "Le directeur aurait démissionné."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex09-q05",
+          "number": 5,
+          "prompt": "The storm has reportedly destroyed a hundred houses. __",
+          "source_raw_prompt": "The storm has reportedly destroyed a hundred houses.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            146
+          ],
+          "answer": {
+            "source_key": "La tempête aurait détruit des centaines de maisons.",
+            "accepted": [
+              "La tempête aurait détruit des centaines de maisons."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex09-q06",
+          "number": 6,
+          "prompt": "Unemployment is reportedly going to decline next year. __",
+          "source_raw_prompt": "Unemployment is reportedly going to decline next year.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            146
+          ],
+          "answer": {
+            "source_key": "Le chômage baisserait l’année prochaine.",
+            "accepted": [
+              "Le chômage baisserait l’année prochaine."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex09-q07",
+          "number": 7,
+          "prompt": "The health minister reportedly signed the reform. __",
+          "source_raw_prompt": "The health minister reportedly signed the reform.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            146
+          ],
+          "answer": {
+            "source_key": "Le ministre de la Santé aurait signé la réforme.",
+            "accepted": [
+              "Le ministre de la Santé aurait signé la réforme."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex09-q08",
+          "number": 8,
+          "prompt": "Penguins are reportedly unable to reproduce because of global warming. __",
+          "source_raw_prompt": "Penguins are reportedly unable to reproduce because of global warming.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            146
+          ],
+          "answer": {
+            "source_key": "Les pingouins ne pourraient pas se reproduire en raison du réchauffement climatique.",
+            "accepted": [
+              "Les pingouins ne pourraient pas se reproduire en raison du réchauffement climatique."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex09-q09",
+          "number": 9,
+          "prompt": "His new neighbor allegedly stole his car. __",
+          "source_raw_prompt": "His new neighbor allegedly stole his car.\n   _____________________________________________________________",
+          "pdf_pages": [
+            146,
+            147
+          ],
+          "answer": {
+            "source_key": "Son nouveau voisin aurait volé sa voiture.",
+            "accepted": [
+              "Son nouveau voisin aurait volé sa voiture."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch11-ex09-q10",
+          "number": 10,
+          "prompt": "A French actor reportedly bought a house in California last week. __",
+          "source_raw_prompt": "A French actor reportedly bought a house in California last week.\n   _____________________________________________________________\n\n\n\n\n ",
+          "pdf_pages": [
+            146,
+            147
+          ],
+          "answer": {
+            "source_key": "Un acteur français aurait acheté une maison en Californie la semaine dernière.",
+            "accepted": [
+              "Un acteur français aurait acheté une maison en Californie la semaine dernière."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch11-s04"
+      ]
+    },
+    {
+      "id": "ch11-ex10",
+      "source": {
+        "chapter": 11,
+        "exercise": "11.10",
+        "pdf_pages": [
+          147
+        ]
+      },
+      "topic_ids": [
+        "ch11-t04"
+      ],
+      "instruction": "Faire correspondre les deux colonnes. ______",
+      "interaction_type": "matching",
+      "questions": [
+        {
+          "id": "ch11-ex10-q01",
+          "number": 1,
+          "prompt": "Au cas où il pleuvrait a. viens regarder le film chez moi",
+          "source_raw_prompt": "Au cas où il pleuvrait            a. viens regarder le film chez\n                                   moi\n\n______ ",
+          "pdf_pages": [
+            147
+          ],
+          "answer": {
+            "source_key": "c",
+            "accepted": [
+              "c"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "a",
+            "text": "viens regarder le film chez"
+          }
+        },
+        {
+          "id": "ch11-ex10-q02",
+          "number": 2,
+          "prompt": "Au cas où tu l’aurais oublié b. elle pourrait se servir des miennes",
+          "source_raw_prompt": "Au cas où tu l’aurais oublié     b. elle pourrait se servir des\n                                      miennes\n\n______ ",
+          "pdf_pages": [
+            147
+          ],
+          "answer": {
+            "source_key": "e",
+            "accepted": [
+              "e"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "b",
+            "text": "elle pourrait se servir des"
+          }
+        },
+        {
+          "id": "ch11-ex10-q03",
+          "number": 3,
+          "prompt": "Au cas où ta télévision serait en c. prends un parapluie panne",
+          "source_raw_prompt": "Au cas où ta télévision serait en c. prends un parapluie\n   panne\n\n______ ",
+          "pdf_pages": [
+            147
+          ],
+          "answer": {
+            "source_key": "a",
+            "accepted": [
+              "a"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "c",
+            "text": "prends un parapluie"
+          }
+        },
+        {
+          "id": "ch11-ex10-q04",
+          "number": 4,
+          "prompt": "Au cas où elle aurait perdu ses d. prévenez la police notes",
+          "source_raw_prompt": "Au cas où elle aurait perdu ses  d. prévenez la police\n   notes\n\n______ ",
+          "pdf_pages": [
+            147
+          ],
+          "answer": {
+            "source_key": "b",
+            "accepted": [
+              "b"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "d",
+            "text": "prévenez la police"
+          }
+        },
+        {
+          "id": "ch11-ex10-q05",
+          "number": 5,
+          "prompt": "Au cas où quelque chose aurait e. c’est mon anniversaire été volé demain",
+          "source_raw_prompt": "Au cas où quelque chose aurait e. c’est mon anniversaire\n   été volé                            demain",
+          "pdf_pages": [
+            147
+          ],
+          "answer": {
+            "source_key": "d 12 Could, should, would?",
+            "accepted": [
+              "d 12 Could, should, would?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "e",
+            "text": "c’est mon anniversaire"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 5,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "choice_label",
+        "publisher_key_is_exhaustive": true
+      },
+      "subtopic_ids": [
+        "ch11-s04"
+      ],
+      "choices": [
+        {
+          "label": "a",
+          "text": "viens regarder le film chez"
+        },
+        {
+          "label": "b",
+          "text": "elle pourrait se servir des"
+        },
+        {
+          "label": "c",
+          "text": "prends un parapluie"
+        },
+        {
+          "label": "d",
+          "text": "prévenez la police"
+        },
+        {
+          "label": "e",
+          "text": "c’est mon anniversaire"
+        }
+      ]
+    }
+  ]
+}

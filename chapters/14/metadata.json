@@ -1,0 +1,160 @@
+{
+  "chapter": 14,
+  "title": "Chapter 14",
+  "source": {
+    "pdf_pages": [
+      173,
+      187
+    ],
+    "source_sha256": "297b92bc48e075449713c3b408ccf47de2466cfc6c4f4a25687a2a974276ae4d",
+    "answer_key_pdf_pages": [
+      511,
+      512
+    ]
+  },
+  "topics": [
+    {
+      "id": "ch14-t01",
+      "title": "The infinitif présent",
+      "exercise_ids": [
+        "ch14-ex01",
+        "ch14-ex02"
+      ]
+    },
+    {
+      "id": "ch14-t02",
+      "title": "The infinitif passé",
+      "exercise_ids": [
+        "ch14-ex03",
+        "ch14-ex04"
+      ]
+    },
+    {
+      "id": "ch14-t03",
+      "title": "Verbs with their prepositions",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch14-t04",
+      "title": "Verbs not followed by a preposition",
+      "exercise_ids": [
+        "ch14-ex05"
+      ]
+    },
+    {
+      "id": "ch14-t05",
+      "title": "Verbs followed by the preposition à",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch14-t06",
+      "title": "Verbs followed by the preposition de",
+      "exercise_ids": [
+        "ch14-ex06",
+        "ch14-ex07"
+      ]
+    }
+  ],
+  "exercise_ids": [
+    "ch14-ex01",
+    "ch14-ex02",
+    "ch14-ex03",
+    "ch14-ex04",
+    "ch14-ex05",
+    "ch14-ex06",
+    "ch14-ex07"
+  ],
+  "question_total": 70,
+  "validation": {
+    "source_pages": 15,
+    "source_chars": 23994,
+    "source_partition_complete": true,
+    "exercise_group_markers_detected": 7,
+    "questions_structured": 70,
+    "answer_key_entries_associated": 70,
+    "editorial_visual_review": "pending_glyph_by_glyph_check",
+    "theory_semantic_format": "partially_indexed_source_text_preserved",
+    "theory_source_segments": 4,
+    "text_semantic_format": "source-aligned_markdown_fenced_text_pending_table_visual_proof",
+    "answer_key_count": 70
+  },
+  "subtopics": [
+    {
+      "id": "ch14-s01",
+      "title": "The infinitif présent",
+      "parent_topic_id": "ch14-t01",
+      "pdf_pages": [
+        173,
+        173
+      ],
+      "exercise_ids": [
+        "ch14-ex01",
+        "ch14-ex02"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch14-s02",
+      "title": "The infinitif passé",
+      "parent_topic_id": "ch14-t02",
+      "pdf_pages": [
+        178,
+        178
+      ],
+      "exercise_ids": [
+        "ch14-ex03",
+        "ch14-ex04"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch14-s03",
+      "title": "Verbs with their prepositions",
+      "parent_topic_id": "ch14-t03",
+      "pdf_pages": [
+        181,
+        181
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch14-s04",
+      "title": "Verbs not followed by a preposition",
+      "parent_topic_id": "ch14-t04",
+      "pdf_pages": [
+        181,
+        181
+      ],
+      "exercise_ids": [
+        "ch14-ex05"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch14-s05",
+      "title": "Verbs followed by the preposition à",
+      "parent_topic_id": "ch14-t05",
+      "pdf_pages": [
+        183,
+        183
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch14-s06",
+      "title": "Verbs followed by the preposition de",
+      "parent_topic_id": "ch14-t06",
+      "pdf_pages": [
+        184,
+        184
+      ],
+      "exercise_ids": [
+        "ch14-ex06",
+        "ch14-ex07"
+      ],
+      "kind": "grammar"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+ courir                                   to run
+ sauter                                   to jump
+ lancer                                   to throw
+ s’entraîner                              to train
+ un entraîneur                     a trainer
+ le base-ball                           baseball
+ le basket-ball                          basketball
+ la boxe                             boxing
+ le cyclisme                              biking, cycling
+ le football                            soccer
+ le football américain                   football
+ le golf                                   golf
+ le jogging                            jogging
+ la lutte                                wrestling
+ la natation                       swimming
+ le patinage                              ice skating
+ la plongée                             diving
+ le ski                                   skiing
+ la descente                          downhill skiing
+ le ski de fond                         cross-country skiing
+ le ski nautique                        waterskiing
+ le tennis                                tennis
+ la voile                                  sailing
+ un stade                         a stadium
+ une raquette                      a racket
+ un ballon                        a ball
+
+
+
+  Some participes présents can be used as nouns. When used as a noun, the
+present participle changes according to gender and number. For example:
+
+     un gagnant  a winner (masculine)   une gagnante  a winner (feminine)
+     un perdant  a loser (masculine)     une perdante  a loser (feminine)

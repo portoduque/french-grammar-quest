@@ -1,0 +1,36 @@
+   Learning la concordance des temps, that is, balancing tenses, is one of the most
+difficult tasks of a French learner. When switching from direct to indirect speech,
+some changes of tense occur when the main clause verb is in the passé composé.
+Here are the three main scenarios:
+
+Present recounted in the imparfait
+If the direct speech is in the present tense, the dependent clause verb is changed into
+the imparfait.
+
+       Elle est en Inde.                     She is in India.
+        J’ai entendu dire qu’elle était en Inde.   I heard she was in India.
+      Tu travailles pour France 2.           You are working for France 2.
+        J’ai entendu dire que tu travaillais pour I heard you were working for France
+         France 2.                                   2.
+          Il pleut à Londres.                              It is raining in London.
+        J’ai entendu dire qu’il pleuvait à         I heard it was raining in London.
+          Londres.
+     Ce candidat a une chance de gagner.     This candidate has a chance of
+                                                winning.
+     On m’a dit que ce candidat avait une     I heard this candidate has (had) a
+         chance de gagner.                    chance of winning.
+
+Passé composé recounted in the plus-que-parfait
+If the direct speech is in the passé composé, the verb in the dependent clause is
+changed into the plus-que-parfait.
+
+         Ils ont élu le candidat de gauche.       They elected the candidate from the
+                                                                    left.
+     On m’a dit qu’ils avaient élu le candidat I heard they had elected the candidat
+         de gauche.                           from the left.
+       Elle a expliqué son programme.        She explained her program.
+     On m’a dit qu’elle avait expliqué son    I heard she (had) explained her
+         programme.                         program.
+          Il a démissionné.                He resigned.
+     On nous a dit qu’il avait démissionné.  We heard he had resigned.
+      Vous avez voté pour moi.             You voted for me.

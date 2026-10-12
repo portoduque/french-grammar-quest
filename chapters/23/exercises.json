@@ -1,0 +1,1648 @@
+{
+  "chapter": 23,
+  "status": "machine_transcribed_editorial_visual_review_pending",
+  "exercises": [
+    {
+      "id": "ch23-ex01",
+      "source": {
+        "chapter": 23,
+        "exercise": "23.1",
+        "pdf_pages": [
+          285,
+          286
+        ]
+      },
+      "topic_ids": [
+        "ch23-t01"
+      ],
+      "instruction": "Compléter avec ce, cet, cette ou ces.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch23-ex01-q01",
+          "number": 1,
+          "prompt": "Ma sœur n’aime pas (this) __ robe rouge.",
+          "source_raw_prompt": "Ma sœur n’aime pas (this) ________________ robe rouge.\n\n ",
+          "pdf_pages": [
+            285
+          ],
+          "answer": {
+            "source_key": "cette",
+            "accepted": [
+              "cette"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex01-q02",
+          "number": 2,
+          "prompt": "Mon petit frère préfère (this) __ dessin animé.",
+          "source_raw_prompt": "Mon petit frère préfère (this) ________________ dessin animé.\n\n ",
+          "pdf_pages": [
+            285
+          ],
+          "answer": {
+            "source_key": "ce",
+            "accepted": [
+              "ce"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex01-q03",
+          "number": 3,
+          "prompt": "Nos parents arrivent (this) __ semaine.",
+          "source_raw_prompt": "Nos parents arrivent (this) ________________ semaine.\n\n ",
+          "pdf_pages": [
+            285
+          ],
+          "answer": {
+            "source_key": "cette",
+            "accepted": [
+              "cette"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex01-q04",
+          "number": 4,
+          "prompt": "Tu vas voir ton cousin (this) __ soir.",
+          "source_raw_prompt": "Tu vas voir ton cousin (this) ________________ soir.\n\n ",
+          "pdf_pages": [
+            285
+          ],
+          "answer": {
+            "source_key": "ce",
+            "accepted": [
+              "ce"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex01-q05",
+          "number": 5,
+          "prompt": "J’achète (these) __ cadeaux pour mes enfants.",
+          "source_raw_prompt": "J’achète (these) ________________ cadeaux pour mes enfants.\n\n ",
+          "pdf_pages": [
+            285
+          ],
+          "answer": {
+            "source_key": "ces",
+            "accepted": [
+              "ces"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex01-q06",
+          "number": 6,
+          "prompt": "(This) __ maison est trop petite pour notre famille.",
+          "source_raw_prompt": "(This) ________________ maison est trop petite pour notre famille.\n\n ",
+          "pdf_pages": [
+            285
+          ],
+          "answer": {
+            "source_key": "Cette",
+            "accepted": [
+              "Cette"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex01-q07",
+          "number": 7,
+          "prompt": "Son neveu trouve (this) __ jeu difficile.",
+          "source_raw_prompt": "Son neveu trouve (this) ________________ jeu difficile.\n\n ",
+          "pdf_pages": [
+            285
+          ],
+          "answer": {
+            "source_key": "ce",
+            "accepted": [
+              "ce"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex01-q08",
+          "number": 8,
+          "prompt": "Ma cousine fait toujours (these) __ plats pour sa belle-mère.",
+          "source_raw_prompt": "Ma cousine fait toujours (these) ________________ plats pour sa belle-mère.\n\n ",
+          "pdf_pages": [
+            285
+          ],
+          "answer": {
+            "source_key": "ces",
+            "accepted": [
+              "ces"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex01-q09",
+          "number": 9,
+          "prompt": "(This) __ famille habite ici depuis longtemps et les enfants aiment (this) __ quartier.",
+          "source_raw_prompt": "(This) ________________ famille habite ici depuis longtemps et les enfants\n   aiment (this) ________________ quartier. ",
+          "pdf_pages": [
+            285,
+            286
+          ],
+          "answer": {
+            "source_key": "Cette/ce",
+            "accepted": [
+              "Cette/ce"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex01-q10",
+          "number": 10,
+          "prompt": "(This) __ bébé est adorable.",
+          "source_raw_prompt": "(This) ________________ bébé est adorable.\n\n\n\n\n  ",
+          "pdf_pages": [
+            286
+          ],
+          "answer": {
+            "source_key": "Ce",
+            "accepted": [
+              "Ce"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch23-s01"
+      ]
+    },
+    {
+      "id": "ch23-ex02",
+      "source": {
+        "chapter": 23,
+        "exercise": "23.2",
+        "pdf_pages": [
+          286,
+          287,
+          288
+        ]
+      },
+      "topic_ids": [
+        "ch23-t01"
+      ],
+      "instruction": "Faire la distinction entre les deux éléments en ajoutant -ci et -là aux noms qui suivent les adjectifs démonstratifs.",
+      "interaction_type": "free_response",
+      "questions": [
+        {
+          "id": "ch23-ex02-q01",
+          "number": 1,
+          "prompt": "Ma mère achète les biscuits dans (this) __ pâtisserie et les gâteaux dans (that) __ pâtisserie.",
+          "source_raw_prompt": "Ma mère achète les biscuits dans (this) ________________ pâtisserie et les\n     gâteaux dans (that) ________________ pâtisserie.\n\n   ",
+          "pdf_pages": [
+            286
+          ],
+          "answer": {
+            "source_key": "cette pâtisserie-ci / cette pâtisserie-là",
+            "accepted": [
+              "cette pâtisserie-ci / cette pâtisserie-là"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex02-q02",
+          "number": 2,
+          "prompt": "Leur enfant joue avec (this) __ jouet mais il ne joue pas avec (that) __ jouet.",
+          "source_raw_prompt": "Leur enfant joue avec (this) ________________ jouet mais il ne joue pas avec\n     (that) ________________ jouet.\n\n   ",
+          "pdf_pages": [
+            286
+          ],
+          "answer": {
+            "source_key": "ce jouet-ci / ce jouet-là",
+            "accepted": [
+              "ce jouet-ci / ce jouet-là"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex02-q03",
+          "number": 3,
+          "prompt": "Mes parents habitent loin d’ici. (This) __ cousin habite à San Francisco, (that) __ cousin est à New York.",
+          "source_raw_prompt": "Mes parents habitent loin d’ici. (This) ________________ cousin habite à San\n     Francisco, (that) ________________ cousin est à New York.\n\n   ",
+          "pdf_pages": [
+            286
+          ],
+          "answer": {
+            "source_key": "Ce cousin-ci / ce cousin-là",
+            "accepted": [
+              "Ce cousin-ci / ce cousin-là"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex02-q04",
+          "number": 4,
+          "prompt": "(This) __ maison appartient à Tante Marthe, (that) __ maison appartient à son fils.",
+          "source_raw_prompt": "(This) ________________ maison appartient à Tante Marthe, (that)\n    ________________ maison appartient à son fils.\n\n   ",
+          "pdf_pages": [
+            286
+          ],
+          "answer": {
+            "source_key": "Cette maison-ci / cette maison-là",
+            "accepted": [
+              "Cette maison-ci / cette maison-là"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex02-q05",
+          "number": 5,
+          "prompt": "(This) __ neveu et (that) __ neveu sont nés le même jour.",
+          "source_raw_prompt": "(This) ________________ neveu et (that) ________________ neveu sont nés\n      le même jour.\n\n   ",
+          "pdf_pages": [
+            286
+          ],
+          "answer": {
+            "source_key": "Ce neveu-ci / ce neveu-là",
+            "accepted": [
+              "Ce neveu-ci / ce neveu-là"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex02-q06",
+          "number": 6,
+          "prompt": "Mon mari aime (this) __ belle-sœur, mais il n’aime pas (that) __ belle-sœur.",
+          "source_raw_prompt": "Mon mari aime (this) ________________ belle-sœur, mais il n’aime pas (that)\n    ________________ belle-sœur.\n\n   ",
+          "pdf_pages": [
+            286
+          ],
+          "answer": {
+            "source_key": "cette belle-sœur-ci / cette belle-sœur-là",
+            "accepted": [
+              "cette belle-sœur-ci / cette belle-sœur-là"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex02-q07",
+          "number": 7,
+          "prompt": "Son frère a écrit (this) __ roman, mais il n’a pas écrit (that) __ roman.",
+          "source_raw_prompt": "Son frère a écrit (this) ________________ roman, mais il n’a pas écrit (that)\n    ________________ roman.\n\n   ",
+          "pdf_pages": [
+            286
+          ],
+          "answer": {
+            "source_key": "ce roman-ci / ce roman-là",
+            "accepted": [
+              "ce roman-ci / ce roman-là"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex02-q08",
+          "number": 8,
+          "prompt": "Leurs enfants aiment (this) __ jeu mais ils n’aiment pas (that) __ jeu.",
+          "source_raw_prompt": "Leurs enfants aiment (this) ________________ jeu mais ils n’aiment pas\n     (that) ________________ jeu.\n\n   ",
+          "pdf_pages": [
+            286
+          ],
+          "answer": {
+            "source_key": "ce jeu-ci / ce jeu-là",
+            "accepted": [
+              "ce jeu-ci / ce jeu-là"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex02-q09",
+          "number": 9,
+          "prompt": "(This) __ poupée et (that) __ poupée sont des cadeaux de Tante Agathe.",
+          "source_raw_prompt": "(This) ________________ poupée et (that) ________________ poupée sont\n     des cadeaux de Tante Agathe.\n\n ",
+          "pdf_pages": [
+            286
+          ],
+          "answer": {
+            "source_key": "Cette poupée-ci / cette poupée-là",
+            "accepted": [
+              "Cette poupée-ci / cette poupée-là"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex02-q10",
+          "number": 10,
+          "prompt": "Notre tante a envoyé (this) __ carte à son fils et (that) __ carte à sa mère, notre grand-mère. Possessive adjectivesPossessive adjectives modify nouns and are used to indicate relationship and ownership. They agree in gender and number with the noun they modify. Masculine singular mon ordinateur my computer notre ordinateur our computer ton ordinateur your computer votre ordinateur your computer son ordinateur his/her computer leur ordinateur their computer Feminine singular ma vie my life notre vie our life ta vie your life votre vie your life sa vie his/her life leur vie their life Masculine and feminine plural mes cousin(e)s my cousins nos cousin(e)s our cousins tes cousin(e)s your cousins vos cousin(e)s your cousins ses cousin(e)s his/her cousins leurs cousin(e)s their cousins Note that the masculine singular form of the possessive adjective (mon, ton, son) is used before singular feminine nouns beginning with a vowel or a mute h. Mon amie Suzanne travaille à Rennes. My friend Suzanne works in Rennes. Ton amitié est importante. Your friendship is important. Son honnêteté est suspecte. His honesty is suspect. Son, sa, ses can mean either his or hers, since they modify the noun (not the owner). The context will usually prevent any ambiguity about the identity of the owner. If there is ambiguity, the sentence needs to be rephrased for clarity. son roman his/her novel sa pièce his/her play ses contes de fée his/her fairy tales Another way of indicating possession is to use à + a noun or a disjunctive pronoun. C’est à qui? Whose is it? C’est à Pierre? Is it Pierre’s? Non, ce n’est pas à Pierre. No, it’s not Pierre’s. C’est à moi. It’s mine.",
+          "source_raw_prompt": "Notre tante a envoyé (this) ________________ carte à son fils et (that)\n    ________________ carte à sa mère, notre grand-mère.\n\n\nPossessive adjectivesPossessive adjectives modify nouns and are used  to  indicate  relationship and\nownership. They agree in gender and number with the noun they modify.\n\n     Masculine singular\n     mon ordinateur   my computer       notre ordinateur   our computer\n      ton ordinateur    your computer      votre ordinateur    your computer\n      son ordinateur     his/her computer   leur ordinateur      their computer\n\n     Feminine singular\n     ma vie         my life            notre vie           our life\n       ta vie             your life           votre vie           your life\n       sa vie               his/her life         leur vie               their life\n\n     Masculine and feminine plural\n     mes cousin(e)s    my cousins        nos cousin(e)s      our cousins\n        tes cousin(e)s      your cousins       vos cousin(e)s      your cousins\n       ses cousin(e)s      his/her cousins     leurs cousin(e)s      their cousins\n\n  Note that the masculine singular form of the possessive adjective (mon, ton, son)\nis used before singular feminine nouns beginning with a vowel or a mute h.\n\n     Mon amie Suzanne travaille à Rennes.  My friend Suzanne works in Rennes.\n      Ton amitié est importante.             Your friendship is important.\n      Son honnêteté est suspecte.            His honesty is suspect.\n\n   Son, sa, ses can mean either his or hers, since they modify the noun (not the\nowner). The context will usually prevent any ambiguity about the identity of the\nowner. If there is ambiguity, the sentence needs to be rephrased for clarity.\n\n      son roman                             his/her novel\n       sa pièce                                his/her play\n       ses contes de fée                       his/her fairy tales\n\n   Another way of indicating possession is to use à + a noun or a disjunctive\npronoun.\n\n       C’est à qui?                          Whose is it?\n       C’est à Pierre?                                   Is it Pierre’s?     Non, ce n’est pas à Pierre.                 No, it’s not Pierre’s.\n      C’est à moi.                                             It’s mine.\n\n\n\n ",
+          "pdf_pages": [
+            286,
+            287,
+            288
+          ],
+          "answer": {
+            "source_key": "cette carte-ci / cette carte-là",
+            "accepted": [
+              "cette carte-ci / cette carte-là"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch23-s01"
+      ]
+    },
+    {
+      "id": "ch23-ex03",
+      "source": {
+        "chapter": 23,
+        "exercise": "23.3",
+        "pdf_pages": [
+          288
+        ]
+      },
+      "topic_ids": [
+        "ch23-t02"
+      ],
+      "instruction": "Compléter avec l’adjectif possessif approprié en utilisant vous si nécessaire.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch23-ex03-q01",
+          "number": 1,
+          "prompt": "Aimez-vous (his) __ nouvelle pièce?",
+          "source_raw_prompt": "Aimez-vous (his) ________________ nouvelle pièce?\n\n ",
+          "pdf_pages": [
+            288
+          ],
+          "answer": {
+            "source_key": "sa",
+            "accepted": [
+              "sa"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex03-q02",
+          "number": 2,
+          "prompt": "Non, mais j’aime (his) __ nouveau conte de fée.",
+          "source_raw_prompt": "Non, mais j’aime (his) ________________ nouveau conte de fée.\n\n ",
+          "pdf_pages": [
+            288
+          ],
+          "answer": {
+            "source_key": "son",
+            "accepted": [
+              "son"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex03-q03",
+          "number": 3,
+          "prompt": "Que penses-tu de (her) __ dernier roman?",
+          "source_raw_prompt": "Que penses-tu de (her) ________________ dernier roman?\n\n ",
+          "pdf_pages": [
+            288
+          ],
+          "answer": {
+            "source_key": "son",
+            "accepted": [
+              "son"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex03-q04",
+          "number": 4,
+          "prompt": "(Her) __ dernière pièce est plus intéressante.",
+          "source_raw_prompt": "(Her) ________________ dernière pièce est plus intéressante.\n\n ",
+          "pdf_pages": [
+            288
+          ],
+          "answer": {
+            "source_key": "Sa",
+            "accepted": [
+              "Sa"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex03-q05",
+          "number": 5,
+          "prompt": "As-tu besoin de (our) __ voiture?",
+          "source_raw_prompt": "As-tu besoin de (our) ________________ voiture?\n\n ",
+          "pdf_pages": [
+            288
+          ],
+          "answer": {
+            "source_key": "notre",
+            "accepted": [
+              "notre"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex03-q06",
+          "number": 6,
+          "prompt": "Oui, j’ai besoin de (your) __ voiture.",
+          "source_raw_prompt": "Oui, j’ai besoin de (your) ________________ voiture.\n\n ",
+          "pdf_pages": [
+            288
+          ],
+          "answer": {
+            "source_key": "votre",
+            "accepted": [
+              "votre"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex03-q07",
+          "number": 7,
+          "prompt": "(Your) __ sœur est actrice?",
+          "source_raw_prompt": "(Your) ________________ sœur est actrice?\n\n ",
+          "pdf_pages": [
+            288
+          ],
+          "answer": {
+            "source_key": "Votre",
+            "accepted": [
+              "Votre"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex03-q08",
+          "number": 8,
+          "prompt": "Non, (my) __ sœur est architecte.",
+          "source_raw_prompt": "Non, (my) ________________ sœur est architecte.\n\n ",
+          "pdf_pages": [
+            288
+          ],
+          "answer": {
+            "source_key": "ma",
+            "accepted": [
+              "ma"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex03-q09",
+          "number": 9,
+          "prompt": "Quel âge a (their) __ fille?",
+          "source_raw_prompt": "Quel âge a (their) ________________ fille?\n\n",
+          "pdf_pages": [
+            288
+          ],
+          "answer": {
+            "source_key": "leur",
+            "accepted": [
+              "leur"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex03-q10",
+          "number": 10,
+          "prompt": "(Their) __ filles sont jumelles. Elles ont quatre ans.",
+          "source_raw_prompt": "(Their) ________________ filles sont jumelles. Elles ont quatre ans.\n\n\n\n\n ",
+          "pdf_pages": [
+            288
+          ],
+          "answer": {
+            "source_key": "Leurs",
+            "accepted": [
+              "Leurs"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch23-s02"
+      ]
+    },
+    {
+      "id": "ch23-ex04",
+      "source": {
+        "chapter": 23,
+        "exercise": "23.4",
+        "pdf_pages": [
+          288,
+          289
+        ]
+      },
+      "topic_ids": [
+        "ch23-t02"
+      ],
+      "instruction": "Faire correspondre les deux colonnes. ______",
+      "interaction_type": "matching",
+      "questions": [
+        {
+          "id": "ch23-ex04-q01",
+          "number": 1,
+          "prompt": "frère a. ma",
+          "source_raw_prompt": "frère                                               a. ma\n\n______ ",
+          "pdf_pages": [
+            288
+          ],
+          "answer": {
+            "source_key": "b, d",
+            "accepted": [
+              "b, d"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "a",
+            "text": "ma"
+          }
+        },
+        {
+          "id": "ch23-ex04-q02",
+          "number": 2,
+          "prompt": "amies b. mon",
+          "source_raw_prompt": "amies                                          b. mon\n\n______ ",
+          "pdf_pages": [
+            288
+          ],
+          "answer": {
+            "source_key": "e",
+            "accepted": [
+              "e"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "b",
+            "text": "mon"
+          }
+        },
+        {
+          "id": "ch23-ex04-q03",
+          "number": 3,
+          "prompt": "oncle c. ma",
+          "source_raw_prompt": "oncle                                              c. ma\n\n______ ",
+          "pdf_pages": [
+            288
+          ],
+          "answer": {
+            "source_key": "b, d",
+            "accepted": [
+              "b, d"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "c",
+            "text": "ma"
+          }
+        },
+        {
+          "id": "ch23-ex04-q04",
+          "number": 4,
+          "prompt": "maison d. mon __",
+          "source_raw_prompt": "maison                                         d. mon ______ ",
+          "pdf_pages": [
+            288,
+            289
+          ],
+          "answer": {
+            "source_key": "a, c",
+            "accepted": [
+              "a, c"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "d",
+            "text": "mon ______"
+          }
+        },
+        {
+          "id": "ch23-ex04-q05",
+          "number": 5,
+          "prompt": "belle-sœur e. mes",
+          "source_raw_prompt": "belle-sœur                                        e. mes",
+          "pdf_pages": [
+            289,
+            290,
+            291
+          ],
+          "answer": {
+            "source_key": "a, c",
+            "accepted": [
+              "a, c"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "e",
+            "text": "mes"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 5,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "choice_label",
+        "publisher_key_is_exhaustive": true
+      },
+      "subtopic_ids": [
+        "ch23-s02"
+      ],
+      "choices": [
+        {
+          "label": "a",
+          "text": "ma"
+        },
+        {
+          "label": "b",
+          "text": "mon"
+        },
+        {
+          "label": "c",
+          "text": "ma"
+        },
+        {
+          "label": "d",
+          "text": "mon ______"
+        },
+        {
+          "label": "e",
+          "text": "mes"
+        }
+      ]
+    },
+    {
+      "id": "ch23-ex05",
+      "source": {
+        "chapter": 23,
+        "exercise": "23.5",
+        "pdf_pages": [
+          291
+        ]
+      },
+      "topic_ids": [
+        "ch23-t04"
+      ],
+      "instruction": "Traduire les pronoms possessifs entre parenthèses.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch23-ex05-q01",
+          "number": 1,
+          "prompt": "Mes documents sont en anglais. (His) __ sont en français.",
+          "source_raw_prompt": "Mes documents sont en anglais. (His) ________________ sont en français.\n\n ",
+          "pdf_pages": [
+            291
+          ],
+          "answer": {
+            "source_key": "Les siens",
+            "accepted": [
+              "Les siens"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex05-q02",
+          "number": 2,
+          "prompt": "Ses parents viennent d’Écosse. (Mine) __ viennent d’Irlande.",
+          "source_raw_prompt": "Ses parents viennent d’Écosse. (Mine) ________________ viennent d’Irlande.\n\n ",
+          "pdf_pages": [
+            291
+          ],
+          "answer": {
+            "source_key": "Les miens",
+            "accepted": [
+              "Les miens"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex05-q03",
+          "number": 3,
+          "prompt": "Il n’a pas trouvé son acte de naissance. Voici (mine) __ .",
+          "source_raw_prompt": "Il n’a pas trouvé son acte de naissance. Voici (mine) ________________ .\n\n ",
+          "pdf_pages": [
+            291
+          ],
+          "answer": {
+            "source_key": "le mien",
+            "accepted": [
+              "le mien"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex05-q04",
+          "number": 4,
+          "prompt": "Nous avons choisi notre itinéraire. Avez-vous choisi (yours) __ ?",
+          "source_raw_prompt": "Nous avons choisi notre itinéraire. Avez-vous choisi (yours)\n   ________________ ?\n\n ",
+          "pdf_pages": [
+            291
+          ],
+          "answer": {
+            "source_key": "le vôtre",
+            "accepted": [
+              "le vôtre"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex05-q05",
+          "number": 5,
+          "prompt": "Elle a fini son roman. As-tu fini (yours) __ ?",
+          "source_raw_prompt": "Elle a fini son roman. As-tu fini (yours) ________________ ?\n\n ",
+          "pdf_pages": [
+            291
+          ],
+          "answer": {
+            "source_key": "le tien",
+            "accepted": [
+              "le tien"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex05-q06",
+          "number": 6,
+          "prompt": "Ses idées sont étranges. Et (theirs) __ aussi.",
+          "source_raw_prompt": "Ses idées sont étranges. Et (theirs) ________________ aussi.\n\n ",
+          "pdf_pages": [
+            291
+          ],
+          "answer": {
+            "source_key": "les leurs",
+            "accepted": [
+              "les leurs"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex05-q07",
+          "number": 7,
+          "prompt": "Je suis vos conseils et je vous demande de suivre (ours) __ .",
+          "source_raw_prompt": "Je suis vos conseils et je vous demande de suivre (ours) ________________ .\n\n ",
+          "pdf_pages": [
+            291
+          ],
+          "answer": {
+            "source_key": "les nôtres",
+            "accepted": [
+              "les nôtres"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex05-q08",
+          "number": 8,
+          "prompt": "Mon blouson est en cuir marron et (hers) __ est en cuir noir.",
+          "source_raw_prompt": "Mon blouson est en cuir marron et (hers) ________________ est en cuir noir.\n\n ",
+          "pdf_pages": [
+            291
+          ],
+          "answer": {
+            "source_key": "le sien",
+            "accepted": [
+              "le sien"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex05-q09",
+          "number": 9,
+          "prompt": "Ton plat est trop épicé et (mine) __ est trop salé.",
+          "source_raw_prompt": "Ton plat est trop épicé et (mine) ________________ est trop salé.\n\n",
+          "pdf_pages": [
+            291
+          ],
+          "answer": {
+            "source_key": "le mien",
+            "accepted": [
+              "le mien"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex05-q10",
+          "number": 10,
+          "prompt": "Mon neveu est trop âgé et (his) __ est trop jeune pour ce spectacle.",
+          "source_raw_prompt": "Mon neveu est trop âgé et (his) _________________est trop jeune pour ce\n    spectacle.\n\n\n\n\n ",
+          "pdf_pages": [
+            291
+          ],
+          "answer": {
+            "source_key": "le sien",
+            "accepted": [
+              "le sien"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch23-s04"
+      ]
+    },
+    {
+      "id": "ch23-ex06",
+      "source": {
+        "chapter": 23,
+        "exercise": "23.6",
+        "pdf_pages": [
+          291,
+          292
+        ]
+      },
+      "topic_ids": [
+        "ch23-t04"
+      ],
+      "instruction": "Traduire les phrases suivantes en utilisant vous si nécessaire.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch23-ex06-q01",
+          "number": 1,
+          "prompt": "My family is larger than yours. __",
+          "source_raw_prompt": "My family is larger than yours.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            291
+          ],
+          "answer": {
+            "source_key": "Ma famille est plus grande que la vôtre.",
+            "accepted": [
+              "Ma famille est plus grande que la vôtre."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex06-q02",
+          "number": 2,
+          "prompt": "Our situation is more difficult than his. __",
+          "source_raw_prompt": "Our situation is more difficult than his.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            291
+          ],
+          "answer": {
+            "source_key": "Notre situation est plus difficile que la sienne.",
+            "accepted": [
+              "Notre situation est plus difficile que la sienne."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex06-q03",
+          "number": 3,
+          "prompt": "Her brothers are younger than she is. __",
+          "source_raw_prompt": "Her brothers are younger than she is.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            291
+          ],
+          "answer": {
+            "source_key": "Ses frères sont plus jeunes qu’elle.",
+            "accepted": [
+              "Ses frères sont plus jeunes qu’elle."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex06-q04",
+          "number": 4,
+          "prompt": "Their city is cleaner than ours. __",
+          "source_raw_prompt": "Their city is cleaner than ours.    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            291,
+            292
+          ],
+          "answer": {
+            "source_key": "Leur ville est plus propre que la nôtre.",
+            "accepted": [
+              "Leur ville est plus propre que la nôtre."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex06-q05",
+          "number": 5,
+          "prompt": "My exercise is more advanced than theirs. __",
+          "source_raw_prompt": "My exercise is more advanced than theirs.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            292
+          ],
+          "answer": {
+            "source_key": "Mon exercice est plus avancé que le leur.",
+            "accepted": [
+              "Mon exercice est plus avancé que le leur."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex06-q06",
+          "number": 6,
+          "prompt": "Your dog is more handsome than his. __",
+          "source_raw_prompt": "Your dog is more handsome than his.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            292
+          ],
+          "answer": {
+            "source_key": "Votre chien est plus beau que le sien.",
+            "accepted": [
+              "Votre chien est plus beau que le sien."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex06-q07",
+          "number": 7,
+          "prompt": "Our neighbors are nicer than yours. __",
+          "source_raw_prompt": "Our neighbors are nicer than yours.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            292
+          ],
+          "answer": {
+            "source_key": "Nos voisins sont plus sympathiques que les vôtres.",
+            "accepted": [
+              "Nos voisins sont plus sympathiques que les vôtres."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex06-q08",
+          "number": 8,
+          "prompt": "Your winters are colder than ours. __",
+          "source_raw_prompt": "Your winters are colder than ours.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            292
+          ],
+          "answer": {
+            "source_key": "Vos hivers sont plus froids que les nôtres.",
+            "accepted": [
+              "Vos hivers sont plus froids que les nôtres."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex06-q09",
+          "number": 9,
+          "prompt": "Their products are more expensive than yours. __",
+          "source_raw_prompt": "Their products are more expensive than yours.\n    _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            292
+          ],
+          "answer": {
+            "source_key": "Leurs produits sont plus chers que les vôtres.",
+            "accepted": [
+              "Leurs produits sont plus chers que les vôtres."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex06-q10",
+          "number": 10,
+          "prompt": "Your children are more active than mine. __",
+          "source_raw_prompt": "Your children are more active than mine.\n    _____________________________________________________________",
+          "pdf_pages": [
+            292,
+            293,
+            294,
+            295
+          ],
+          "answer": {
+            "source_key": "Vos enfants sont plus actifs que les miens.",
+            "accepted": [
+              "Vos enfants sont plus actifs que les miens."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch23-s04"
+      ]
+    },
+    {
+      "id": "ch23-ex07",
+      "source": {
+        "chapter": 23,
+        "exercise": "23.7",
+        "pdf_pages": [
+          295,
+          296
+        ]
+      },
+      "topic_ids": [
+        "ch23-t09"
+      ],
+      "instruction": "Traduire les phrases suivantes en utilisant tu et l’inversion si nécessaire.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch23-ex07-q01",
+          "number": 1,
+          "prompt": "What dress are you going to wear? —The one (that) I bought in Paris. __",
+          "source_raw_prompt": "What dress are you going to wear? —The one (that) I bought in Paris.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            295
+          ],
+          "answer": {
+            "source_key": "—Quelle robe vas-tu porter? —Celle que j’ai achetée à Paris.",
+            "accepted": [
+              "—Quelle robe vas-tu porter? —Celle que j’ai achetée à Paris."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex07-q02",
+          "number": 2,
+          "prompt": "What do you think of his new novel? —It’s awful! __",
+          "source_raw_prompt": "What do you think of his new novel? —It’s awful!\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            295
+          ],
+          "answer": {
+            "source_key": "—Que pensez-vous de son nouveau roman? —C’est affreux!",
+            "accepted": [
+              "—Que pensez-vous de son nouveau roman? —C’est affreux!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex07-q03",
+          "number": 3,
+          "prompt": "What are these rings made of? —This one is gold and that one is silver. __",
+          "source_raw_prompt": "What are these rings made of? —This one is gold and that one is silver.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            295
+          ],
+          "answer": {
+            "source_key": "—En quoi sont ces bagues? —Celle-ci est en or et celle-là est en argent.",
+            "accepted": [
+              "—En quoi sont ces bagues? —Celle-ci est en or et celle-là est en argent."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex07-q04",
+          "number": 4,
+          "prompt": "What do you think of my new house? —It’s beautiful! __",
+          "source_raw_prompt": "What do you think of my new house? —It’s beautiful!\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            295
+          ],
+          "answer": {
+            "source_key": "—Que penses-tu de ma nouvelle maison? —C’est beau!",
+            "accepted": [
+              "—Que penses-tu de ma nouvelle maison? —C’est beau!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex07-q05",
+          "number": 5,
+          "prompt": "What dishes can we prepare? —We can prepare the ones you prefer. __",
+          "source_raw_prompt": "What dishes can we prepare? —We can prepare the ones you prefer.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            295
+          ],
+          "answer": {
+            "source_key": "—Quels plats pouvons-nous préparer? —Nous pouvons préparer ceux que tu préfères.",
+            "accepted": [
+              "—Quels plats pouvons-nous préparer? —Nous pouvons préparer ceux que tu préfères."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex07-q06",
+          "number": 6,
+          "prompt": "Are these films available? —This one is available but that one is not. __",
+          "source_raw_prompt": "Are these films available? —This one is available but that one is not.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            295
+          ],
+          "answer": {
+            "source_key": "—Ces films sont disponibles? —Celui-ci est disponible mais pas celui-là.",
+            "accepted": [
+              "—Ces films sont disponibles? —Celui-ci est disponible mais pas celui-là."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex07-q07",
+          "number": 7,
+          "prompt": "Are they subtitled? —This one is subtitled in French and that one is in German. __",
+          "source_raw_prompt": "Are they subtitled? —This one is subtitled in French and that one is in\n   German.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            295
+          ],
+          "answer": {
+            "source_key": "—Sont-ils sous-titrés? —Celui-ci est sous-titré en français et celui-là en allemand.",
+            "accepted": [
+              "—Sont-ils sous-titrés? —Celui-ci est sous-titré en français et celui-là en allemand."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex07-q08",
+          "number": 8,
+          "prompt": "Their children like games but not the ones that are difficult. __",
+          "source_raw_prompt": "Their children like games but not the ones that are difficult.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            295
+          ],
+          "answer": {
+            "source_key": "Leurs enfants aiment les jeux mais pas ceux qui sont difficiles.",
+            "accepted": [
+              "Leurs enfants aiment les jeux mais pas ceux qui sont difficiles."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex07-q09",
+          "number": 9,
+          "prompt": "Look at these two books. Do you think my mother would like this one or that one? __",
+          "source_raw_prompt": "Look at these two books. Do you think my mother would like this one or that\n   one?\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            295
+          ],
+          "answer": {
+            "source_key": "Regarde ces deux livres. Penses-tu que ma mère aimerait celui-ci ou celui-là?",
+            "accepted": [
+              "Regarde ces deux livres. Penses-tu que ma mère aimerait celui-ci ou celui-là?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex07-q10",
+          "number": 10,
+          "prompt": "Here are two bracelets. This one is Indian. That one is Egyptian. __",
+          "source_raw_prompt": "Here are two bracelets. This one is Indian. That one is Egyptian.\n   _____________________________________________________________ ",
+          "pdf_pages": [
+            295,
+            296
+          ],
+          "answer": {
+            "source_key": "Voici deux bracelets. Celui-ci est indien. Celui-là est égyptien.",
+            "accepted": [
+              "Voici deux bracelets. Celui-ci est indien. Celui-là est égyptien."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch23-s09"
+      ]
+    },
+    {
+      "id": "ch23-ex08",
+      "source": {
+        "chapter": 23,
+        "exercise": "23.8",
+        "pdf_pages": [
+          296
+        ]
+      },
+      "topic_ids": [
+        "ch23-t09"
+      ],
+      "instruction": "Remplacer l’adjectif démonstratif par le pronom démonstratif.",
+      "interaction_type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ch23-ex08-q01",
+          "number": 1,
+          "prompt": "Cette robe est rose. Cette robe est blanche. __",
+          "source_raw_prompt": "Cette robe est rose. Cette robe est blanche.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            296
+          ],
+          "answer": {
+            "source_key": "Celle-ci est rose. Celle-là est blanche.",
+            "accepted": [
+              "Celle-ci est rose. Celle-là est blanche."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex08-q02",
+          "number": 2,
+          "prompt": "Ces écrivains sont inconnus. Ces écrivains sont célèbres. __",
+          "source_raw_prompt": "Ces écrivains sont inconnus. Ces écrivains sont célèbres.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            296
+          ],
+          "answer": {
+            "source_key": "Ceux-ci sont inconnus. Ceux-là sont célèbres.",
+            "accepted": [
+              "Ceux-ci sont inconnus. Ceux-là sont célèbres."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex08-q03",
+          "number": 3,
+          "prompt": "Cet oncle est jeune. Cet oncle est plus âgé. __",
+          "source_raw_prompt": "Cet oncle est jeune. Cet oncle est plus âgé.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            296
+          ],
+          "answer": {
+            "source_key": "Celui-ci est jeune. Celui-là est plus âgé.",
+            "accepted": [
+              "Celui-ci est jeune. Celui-là est plus âgé."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex08-q04",
+          "number": 4,
+          "prompt": "Ce rendez-vous est trop tôt. Ce rendez-vous est trop tard. __",
+          "source_raw_prompt": "Ce rendez-vous est trop tôt. Ce rendez-vous est trop tard.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            296
+          ],
+          "answer": {
+            "source_key": "Celui-ci est trop tôt. Celui-là est trop tard.",
+            "accepted": [
+              "Celui-ci est trop tôt. Celui-là est trop tard."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex08-q05",
+          "number": 5,
+          "prompt": "Ce roman est un best-seller. Ce roman est épuisé. __",
+          "source_raw_prompt": "Ce roman est un best-seller. Ce roman est épuisé.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            296
+          ],
+          "answer": {
+            "source_key": "Celui-ci est un best-seller. Celui-là est épuisé.",
+            "accepted": [
+              "Celui-ci est un best-seller. Celui-là est épuisé."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex08-q06",
+          "number": 6,
+          "prompt": "Cet ordinateur est vieux. Cet ordinateur est le dernier modèle. __",
+          "source_raw_prompt": "Cet ordinateur est vieux. Cet ordinateur est le dernier modèle.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            296
+          ],
+          "answer": {
+            "source_key": "Celui-ci est vieux. Celui-là est le dernier modèle.",
+            "accepted": [
+              "Celui-ci est vieux. Celui-là est le dernier modèle."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex08-q07",
+          "number": 7,
+          "prompt": "Cette peinture est trop claire. Cette peinture est trop foncée. __",
+          "source_raw_prompt": "Cette peinture est trop claire. Cette peinture est trop foncée.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            296
+          ],
+          "answer": {
+            "source_key": "Celle-ci est trop claire. Celle-là est trop foncée.",
+            "accepted": [
+              "Celle-ci est trop claire. Celle-là est trop foncée."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex08-q08",
+          "number": 8,
+          "prompt": "Ces articles sont bien écrits. Ces articles sont mal écrits. __",
+          "source_raw_prompt": "Ces articles sont bien écrits. Ces articles sont mal écrits.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            296
+          ],
+          "answer": {
+            "source_key": "Ceux-ci sont bien écrits. Ceux-là sont mal écrits.",
+            "accepted": [
+              "Ceux-ci sont bien écrits. Ceux-là sont mal écrits."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex08-q09",
+          "number": 9,
+          "prompt": "Cette valise est légère. Cette valise est lourde. __",
+          "source_raw_prompt": "Cette valise est légère. Cette valise est lourde.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            296
+          ],
+          "answer": {
+            "source_key": "Celle-ci est légère. Celle-là est lourde.",
+            "accepted": [
+              "Celle-ci est légère. Celle-là est lourde."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex08-q10",
+          "number": 10,
+          "prompt": "Ces arguments sont bons. Ces arguments sont nuls. __",
+          "source_raw_prompt": "Ces arguments sont bons. Ces arguments sont nuls.\n   _____________________________________________________________\n\n\n\n\n ",
+          "pdf_pages": [
+            296
+          ],
+          "answer": {
+            "source_key": "Ceux-ci sont bons. Ceux-là sont nuls.",
+            "accepted": [
+              "Ceux-ci sont bons. Ceux-là sont nuls."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch23-s09"
+      ]
+    },
+    {
+      "id": "ch23-ex09",
+      "source": {
+        "chapter": 23,
+        "exercise": "23.9",
+        "pdf_pages": [
+          296,
+          297
+        ]
+      },
+      "topic_ids": [
+        "ch23-t09"
+      ],
+      "instruction": "Traduire les phrases suivantes en utilisant des expressions idiomatiques contenant un pronom possessif et la forme tu si nécessaire.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch23-ex09-q01",
+          "number": 1,
+          "prompt": "After ten difficult years, she went back to her family. __",
+          "source_raw_prompt": "After ten difficult years, she went back to her family.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            297
+          ],
+          "answer": {
+            "source_key": "Après dix années difficiles, elle est retournée chez les siens.",
+            "accepted": [
+              "Après dix années difficiles, elle est retournée chez les siens."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex09-q02",
+          "number": 2,
+          "prompt": "My friend René is not at ease among his peers. __",
+          "source_raw_prompt": "My friend René is not at ease among his peers.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            297
+          ],
+          "answer": {
+            "source_key": "Mon ami René n’est pas à l’aise parmi les siens.",
+            "accepted": [
+              "Mon ami René n’est pas à l’aise parmi les siens."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex09-q03",
+          "number": 3,
+          "prompt": "His young dog has been acting up again! __",
+          "source_raw_prompt": "His young dog has been acting up again!\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            297
+          ],
+          "answer": {
+            "source_key": "Son jeune chien a encore fait des siennes!",
+            "accepted": [
+              "Son jeune chien a encore fait des siennes!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex09-q04",
+          "number": 4,
+          "prompt": "Their granddaughter has been acting up again in school! __",
+          "source_raw_prompt": "Their granddaughter has been acting up again in school!\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            297
+          ],
+          "answer": {
+            "source_key": "Leur petite-fille a encore fait des siennes à l’école!",
+            "accepted": [
+              "Leur petite-fille a encore fait des siennes à l’école!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex09-q05",
+          "number": 5,
+          "prompt": "Cheers! It’s your birthday. __",
+          "source_raw_prompt": "Cheers! It’s your birthday.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            297
+          ],
+          "answer": {
+            "source_key": "À la tienne! C’est ton anniversaire.",
+            "accepted": [
+              "À la tienne! C’est ton anniversaire."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex09-q06",
+          "number": 6,
+          "prompt": "You are going to lose everything if you don’t make an effort! __",
+          "source_raw_prompt": "You are going to lose everything if you don’t make an effort!\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            297
+          ],
+          "answer": {
+            "source_key": "Tu vas tout perdre si tu n’y mets pas du tien!",
+            "accepted": [
+              "Tu vas tout perdre si tu n’y mets pas du tien!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch23-ex09-q07",
+          "number": 7,
+          "prompt": "If he does not contribute his share, the presentation will be a disaster! __",
+          "source_raw_prompt": "If he does not contribute his share, the presentation will be a disaster!\n   _____________________________________________________________",
+          "pdf_pages": [
+            297
+          ],
+          "answer": {
+            "source_key": "S’il n’y met pas du sien, la présentation sera un désastre!",
+            "accepted": [
+              "S’il n’y met pas du sien, la présentation sera un désastre!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 7,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch23-s09"
+      ]
+    }
+  ]
+}

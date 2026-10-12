@@ -1,0 +1,149 @@
+{
+  "chapter": 26,
+  "title": "Chapter 26",
+  "source": {
+    "pdf_pages": [
+      326,
+      338
+    ],
+    "source_sha256": "297b92bc48e075449713c3b408ccf47de2466cfc6c4f4a25687a2a974276ae4d",
+    "answer_key_pdf_pages": [
+      521,
+      522
+    ]
+  },
+  "topics": [
+    {
+      "id": "ch26-t01",
+      "title": "The numbers 0 to 50",
+      "exercise_ids": [
+        "ch26-ex01"
+      ]
+    },
+    {
+      "id": "ch26-t02",
+      "title": "Ordinal numbers",
+      "exercise_ids": [
+        "ch26-ex02"
+      ]
+    },
+    {
+      "id": "ch26-t03",
+      "title": "The numbers 50 to 99",
+      "exercise_ids": [
+        "ch26-ex03"
+      ]
+    },
+    {
+      "id": "ch26-t04",
+      "title": "The numbers 100 to 999",
+      "exercise_ids": [
+        "ch26-ex04",
+        "ch26-ex05",
+        "ch26-ex06"
+      ]
+    },
+    {
+      "id": "ch26-t05",
+      "title": "The numbers 1,000 and greater",
+      "exercise_ids": [
+        "ch26-ex07",
+        "ch26-ex08"
+      ]
+    }
+  ],
+  "exercise_ids": [
+    "ch26-ex01",
+    "ch26-ex02",
+    "ch26-ex03",
+    "ch26-ex04",
+    "ch26-ex05",
+    "ch26-ex06",
+    "ch26-ex07",
+    "ch26-ex08"
+  ],
+  "question_total": 80,
+  "validation": {
+    "source_pages": 13,
+    "source_chars": 19170,
+    "source_partition_complete": true,
+    "exercise_group_markers_detected": 8,
+    "questions_structured": 80,
+    "answer_key_entries_associated": 80,
+    "editorial_visual_review": "pending_glyph_by_glyph_check",
+    "theory_semantic_format": "partially_indexed_source_text_preserved",
+    "theory_source_segments": 5,
+    "text_semantic_format": "source-aligned_markdown_fenced_text_pending_table_visual_proof",
+    "answer_key_count": 80
+  },
+  "subtopics": [
+    {
+      "id": "ch26-s01",
+      "title": "The numbers 0 to 50",
+      "parent_topic_id": "ch26-t01",
+      "pdf_pages": [
+        326,
+        326
+      ],
+      "exercise_ids": [
+        "ch26-ex01"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch26-s02",
+      "title": "Ordinal numbers",
+      "parent_topic_id": "ch26-t02",
+      "pdf_pages": [
+        327,
+        327
+      ],
+      "exercise_ids": [
+        "ch26-ex02"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch26-s03",
+      "title": "The numbers 50 to 99",
+      "parent_topic_id": "ch26-t03",
+      "pdf_pages": [
+        330,
+        330
+      ],
+      "exercise_ids": [
+        "ch26-ex03"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch26-s04",
+      "title": "The numbers 100 to 999",
+      "parent_topic_id": "ch26-t04",
+      "pdf_pages": [
+        332,
+        332
+      ],
+      "exercise_ids": [
+        "ch26-ex04",
+        "ch26-ex05",
+        "ch26-ex06"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch26-s05",
+      "title": "The numbers 1,000 and greater",
+      "parent_topic_id": "ch26-t05",
+      "pdf_pages": [
+        336,
+        336
+      ],
+      "exercise_ids": [
+        "ch26-ex07",
+        "ch26-ex08"
+      ],
+      "kind": "grammar"
+    }
+  ]
+}

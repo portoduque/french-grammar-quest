@@ -38,3 +38,21 @@ This repo is **private**. The source textbook and source-derived extracts are co
 ## Next phase
 
 Use `docs/content-workflow.md` to guide Antigravity/Codex. The next phase is to process chapters 02–28 using this same audited approach, without assuming the remaining chapters are already converted.
+
+
+## Phase B — Chapters 02–28 (machine-mapped, editorial review pending)
+
+Phase B adds `chapters/02/` through `chapters/28/` and `references/`:
+- 27 additional chapters, 355 PDF chapter pages.
+- 223 additional exercise groups; **2,127 questions and 2,127 publisher key entries**, for an overall total of **2,227 questions in 233 groups** including chapter 01.
+- All source-page text snapshots, ordering and per-page offset metadata retained for lossless digital-text reconstruction.
+- Source-based draft Markdown theory, JSON exercises and metadata, publisher-key excerpts, verb tables, and both dictionaries/glossaries.
+- `scripts/validate_phase_b.py` and `reports/phase-b-coverage.md` hold automated evidence and known exceptions.
+
+**Critical quality note:** The source material has been accounted for by machine extraction, but **theory formatting and word-by-word visual editorial review are not complete**. Parts of the theory remain in literal text blocks instead of fully structured Markdown tables; unusual source line wraps and clipped text require manual inspection before use as app-ready lessons or strict answer grading. Consult the source page snapshots and the report. Do not mislabel this corpus as editorially certified.
+
+```bash
+python scripts/validate_phase_b.py
+```
+
+The Phase B corpus is in this **private** Git repository; keep book material and answers out of public deployments. The historical Phase A archive is not the current source of truth.

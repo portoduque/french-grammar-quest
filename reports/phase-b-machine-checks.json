@@ -1,0 +1,793 @@
+{
+  "chapters": [
+    {
+      "chapter": 2,
+      "pdf_pages": 15,
+      "exercise_groups": 11,
+      "questions": 109,
+      "answer_keys": 109,
+      "status": "pass"
+    },
+    {
+      "chapter": 3,
+      "pdf_pages": 14,
+      "exercise_groups": 11,
+      "questions": 110,
+      "answer_keys": 110,
+      "status": "pass"
+    },
+    {
+      "chapter": 4,
+      "pdf_pages": 13,
+      "exercise_groups": 9,
+      "questions": 85,
+      "answer_keys": 85,
+      "status": "pass"
+    },
+    {
+      "chapter": 5,
+      "pdf_pages": 8,
+      "exercise_groups": 5,
+      "questions": 45,
+      "answer_keys": 45,
+      "status": "pass"
+    },
+    {
+      "chapter": 6,
+      "pdf_pages": 8,
+      "exercise_groups": 6,
+      "questions": 55,
+      "answer_keys": 55,
+      "status": "pass"
+    },
+    {
+      "chapter": 7,
+      "pdf_pages": 14,
+      "exercise_groups": 10,
+      "questions": 90,
+      "answer_keys": 90,
+      "status": "pass"
+    },
+    {
+      "chapter": 8,
+      "pdf_pages": 10,
+      "exercise_groups": 7,
+      "questions": 70,
+      "answer_keys": 70,
+      "status": "pass"
+    },
+    {
+      "chapter": 9,
+      "pdf_pages": 13,
+      "exercise_groups": 8,
+      "questions": 75,
+      "answer_keys": 75,
+      "status": "pass"
+    },
+    {
+      "chapter": 10,
+      "pdf_pages": 8,
+      "exercise_groups": 6,
+      "questions": 55,
+      "answer_keys": 55,
+      "status": "pass"
+    },
+    {
+      "chapter": 11,
+      "pdf_pages": 14,
+      "exercise_groups": 10,
+      "questions": 88,
+      "answer_keys": 88,
+      "status": "pass"
+    },
+    {
+      "chapter": 12,
+      "pdf_pages": 10,
+      "exercise_groups": 6,
+      "questions": 55,
+      "answer_keys": 55,
+      "status": "pass"
+    },
+    {
+      "chapter": 13,
+      "pdf_pages": 15,
+      "exercise_groups": 9,
+      "questions": 85,
+      "answer_keys": 85,
+      "status": "pass"
+    },
+    {
+      "chapter": 14,
+      "pdf_pages": 15,
+      "exercise_groups": 7,
+      "questions": 70,
+      "answer_keys": 70,
+      "status": "pass"
+    },
+    {
+      "chapter": 15,
+      "pdf_pages": 7,
+      "exercise_groups": 3,
+      "questions": 30,
+      "answer_keys": 30,
+      "status": "pass"
+    },
+    {
+      "chapter": 16,
+      "pdf_pages": 8,
+      "exercise_groups": 3,
+      "questions": 30,
+      "answer_keys": 30,
+      "status": "pass"
+    },
+    {
+      "chapter": 17,
+      "pdf_pages": 7,
+      "exercise_groups": 3,
+      "questions": 30,
+      "answer_keys": 30,
+      "status": "pass"
+    },
+    {
+      "chapter": 18,
+      "pdf_pages": 9,
+      "exercise_groups": 4,
+      "questions": 40,
+      "answer_keys": 40,
+      "status": "pass"
+    },
+    {
+      "chapter": 19,
+      "pdf_pages": 7,
+      "exercise_groups": 3,
+      "questions": 30,
+      "answer_keys": 30,
+      "status": "pass"
+    },
+    {
+      "chapter": 20,
+      "pdf_pages": 21,
+      "exercise_groups": 9,
+      "questions": 89,
+      "answer_keys": 89,
+      "status": "pass"
+    },
+    {
+      "chapter": 21,
+      "pdf_pages": 24,
+      "exercise_groups": 12,
+      "questions": 110,
+      "answer_keys": 110,
+      "status": "pass"
+    },
+    {
+      "chapter": 22,
+      "pdf_pages": 12,
+      "exercise_groups": 7,
+      "questions": 55,
+      "answer_keys": 55,
+      "status": "pass"
+    },
+    {
+      "chapter": 23,
+      "pdf_pages": 15,
+      "exercise_groups": 9,
+      "questions": 82,
+      "answer_keys": 82,
+      "status": "pass"
+    },
+    {
+      "chapter": 24,
+      "pdf_pages": 15,
+      "exercise_groups": 9,
+      "questions": 85,
+      "answer_keys": 85,
+      "status": "pass"
+    },
+    {
+      "chapter": 25,
+      "pdf_pages": 13,
+      "exercise_groups": 8,
+      "questions": 79,
+      "answer_keys": 79,
+      "status": "pass"
+    },
+    {
+      "chapter": 26,
+      "pdf_pages": 13,
+      "exercise_groups": 8,
+      "questions": 80,
+      "answer_keys": 80,
+      "status": "pass"
+    },
+    {
+      "chapter": 27,
+      "pdf_pages": 14,
+      "exercise_groups": 5,
+      "questions": 45,
+      "answer_keys": 45,
+      "status": "pass"
+    },
+    {
+      "chapter": 28,
+      "pdf_pages": 33,
+      "exercise_groups": 35,
+      "questions": 343,
+      "answer_keys": 343,
+      "status": "pass"
+    }
+  ],
+  "issues": [
+    {
+      "chapter": 2,
+      "exercise_order": 3,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "-re verbs in the present"
+    },
+    {
+      "chapter": 2,
+      "exercise_order": 5,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Irregular -re verbs"
+    },
+    {
+      "chapter": 2,
+      "exercise_order": 7,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The interrogative form"
+    },
+    {
+      "chapter": 2,
+      "exercise_order": 9,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The negative form"
+    },
+    {
+      "chapter": 2,
+      "exercise_order": 10,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The negation ni… ni…"
+    },
+    {
+      "chapter": 3,
+      "exercise_order": 2,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The verb avoir (to have)"
+    },
+    {
+      "chapter": 3,
+      "exercise_order": 5,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The -oir verbs"
+    },
+    {
+      "chapter": 3,
+      "exercise_order": 6,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Connaître"
+    },
+    {
+      "chapter": 3,
+      "exercise_order": 8,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The verbs pouvoir and vouloir"
+    },
+    {
+      "chapter": 4,
+      "exercise_order": 2,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The immediate past"
+    },
+    {
+      "chapter": 4,
+      "exercise_order": 5,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Tenir"
+    },
+    {
+      "chapter": 4,
+      "exercise_order": 6,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The verb faire (to do, to make)"
+    },
+    {
+      "chapter": 5,
+      "exercise_order": 3,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Il y a (there is, there are)"
+    },
+    {
+      "chapter": 5,
+      "exercise_order": 3,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Il s’agit de (it is a matter of, it’s about)"
+    },
+    {
+      "chapter": 5,
+      "exercise_order": 3,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Verbs ending in -eindre and -aindre"
+    },
+    {
+      "chapter": 6,
+      "exercise_order": 1,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Reciprocal verbs"
+    },
+    {
+      "chapter": 6,
+      "exercise_order": 2,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Passive pronominals"
+    },
+    {
+      "chapter": 6,
+      "exercise_order": 3,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Pronominals in the imperative and the infinitive"
+    },
+    {
+      "chapter": 7,
+      "exercise_order": 5,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The passé composé with être"
+    },
+    {
+      "chapter": 7,
+      "exercise_order": 7,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Pronominal verbs in the passé composé"
+    },
+    {
+      "chapter": 8,
+      "exercise_order": 1,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The imparfait versus the passé composé"
+    },
+    {
+      "chapter": 8,
+      "exercise_order": 5,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The imparfait with special constructions"
+    },
+    {
+      "chapter": 9,
+      "exercise_order": 5,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The futur antérieur"
+    },
+    {
+      "chapter": 9,
+      "exercise_order": 7,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Conjunctions used with the indicative mood"
+    },
+    {
+      "chapter": 10,
+      "exercise_order": 2,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Use of the plus-que-parfait"
+    },
+    {
+      "chapter": 10,
+      "exercise_order": 4,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Don’t be misled by the English language"
+    },
+    {
+      "chapter": 11,
+      "exercise_order": 1,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Uses of the present conditional"
+    },
+    {
+      "chapter": 11,
+      "exercise_order": 6,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The past conditional"
+    },
+    {
+      "chapter": 11,
+      "exercise_order": 6,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Uses of the past conditional"
+    },
+    {
+      "chapter": 12,
+      "exercise_order": 1,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Should"
+    },
+    {
+      "chapter": 13,
+      "exercise_order": 3,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Pourvu que"
+    },
+    {
+      "chapter": 13,
+      "exercise_order": 6,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The past subjunctive"
+    },
+    {
+      "chapter": 14,
+      "exercise_order": 2,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The infinitif passé"
+    },
+    {
+      "chapter": 14,
+      "exercise_order": 4,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Verbs with their prepositions"
+    },
+    {
+      "chapter": 14,
+      "exercise_order": 4,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Verbs not followed by a preposition"
+    },
+    {
+      "chapter": 14,
+      "exercise_order": 5,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Verbs followed by the preposition à"
+    },
+    {
+      "chapter": 14,
+      "exercise_order": 5,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Verbs followed by the preposition de"
+    },
+    {
+      "chapter": 15,
+      "exercise_order": 1,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The gerundive"
+    },
+    {
+      "chapter": 17,
+      "exercise_order": 2,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The agent with par and with de in the passive voice"
+    },
+    {
+      "chapter": 17,
+      "exercise_order": 2,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Uses of the passive voice"
+    },
+    {
+      "chapter": 17,
+      "exercise_order": 2,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Avoiding the passive voice in French"
+    },
+    {
+      "chapter": 18,
+      "exercise_order": 2,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Present recounted in the imparfait"
+    },
+    {
+      "chapter": 18,
+      "exercise_order": 2,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Passé composé recounted in the plus-que-parfait"
+    },
+    {
+      "chapter": 18,
+      "exercise_order": 2,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Future recounted in the present conditional"
+    },
+    {
+      "chapter": 19,
+      "exercise_order": 1,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Irregular imperative forms"
+    },
+    {
+      "chapter": 19,
+      "exercise_order": 1,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The imperative of pronominal verbs"
+    },
+    {
+      "chapter": 20,
+      "exercise_order": 1,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The gender of nouns"
+    },
+    {
+      "chapter": 20,
+      "exercise_order": 1,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The plural of nouns"
+    },
+    {
+      "chapter": 20,
+      "exercise_order": 4,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The gender of countries"
+    },
+    {
+      "chapter": 20,
+      "exercise_order": 5,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Geographical names with prepositions"
+    },
+    {
+      "chapter": 20,
+      "exercise_order": 5,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Cities"
+    },
+    {
+      "chapter": 20,
+      "exercise_order": 5,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Countries and states"
+    },
+    {
+      "chapter": 20,
+      "exercise_order": 5,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Islands"
+    },
+    {
+      "chapter": 20,
+      "exercise_order": 7,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "How to say from"
+    },
+    {
+      "chapter": 21,
+      "exercise_order": 2,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Indirect object pronouns in the imperative"
+    },
+    {
+      "chapter": 21,
+      "exercise_order": 4,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The pronoun y"
+    },
+    {
+      "chapter": 21,
+      "exercise_order": 5,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The pronoun en"
+    },
+    {
+      "chapter": 21,
+      "exercise_order": 7,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The order of object pronouns"
+    },
+    {
+      "chapter": 21,
+      "exercise_order": 9,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Disjunctive pronouns"
+    },
+    {
+      "chapter": 22,
+      "exercise_order": 3,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Comparatives and superlatives"
+    },
+    {
+      "chapter": 22,
+      "exercise_order": 3,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Comparison of nouns"
+    },
+    {
+      "chapter": 22,
+      "exercise_order": 3,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Irregular comparatives"
+    },
+    {
+      "chapter": 23,
+      "exercise_order": 4,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Possessive pronouns"
+    },
+    {
+      "chapter": 23,
+      "exercise_order": 4,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Indicating possession with être + à"
+    },
+    {
+      "chapter": 23,
+      "exercise_order": 6,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Possessive pronouns with aussi and non plus"
+    },
+    {
+      "chapter": 23,
+      "exercise_order": 6,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Demonstrative pronouns"
+    },
+    {
+      "chapter": 23,
+      "exercise_order": 6,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Compound demonstrative pronouns"
+    },
+    {
+      "chapter": 23,
+      "exercise_order": 6,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The demonstrative pronoun ce"
+    },
+    {
+      "chapter": 23,
+      "exercise_order": 6,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Ceci, cela, and ça"
+    },
+    {
+      "chapter": 24,
+      "exercise_order": 3,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Lequel"
+    },
+    {
+      "chapter": 24,
+      "exercise_order": 4,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Dont"
+    },
+    {
+      "chapter": 24,
+      "exercise_order": 6,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Ce que, ce qui, ce dont, ce à quoi"
+    },
+    {
+      "chapter": 25,
+      "exercise_order": 2,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Expressing duration"
+    },
+    {
+      "chapter": 25,
+      "exercise_order": 6,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Interrogative forms; question words"
+    },
+    {
+      "chapter": 25,
+      "exercise_order": 7,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Adverbs and expressions of location"
+    },
+    {
+      "chapter": 26,
+      "exercise_order": 3,
+      "type": "publisher_duplicate_number",
+      "printed": "26·1",
+      "answer_key": "26-3"
+    },
+    {
+      "chapter": 26,
+      "exercise_order": 1,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Ordinal numbers"
+    },
+    {
+      "chapter": 26,
+      "exercise_order": 2,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The numbers 50 to 99"
+    },
+    {
+      "chapter": 26,
+      "exercise_order": 3,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The numbers 100 to 999"
+    },
+    {
+      "chapter": 26,
+      "exercise_order": 6,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The numbers 1,000 and greater"
+    },
+    {
+      "chapter": 27,
+      "exercise_order": 1,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The verb manquer"
+    },
+    {
+      "chapter": 27,
+      "exercise_order": 2,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Whatever, whenever, wherever, whoever"
+    },
+    {
+      "chapter": 27,
+      "exercise_order": 3,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Avoir beau and quitte à"
+    },
+    {
+      "chapter": 27,
+      "exercise_order": 4,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "Subordinate clauses"
+    },
+    {
+      "chapter": 27,
+      "exercise_order": 4,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The completive or that clause"
+    },
+    {
+      "chapter": 27,
+      "exercise_order": 4,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The indirect interrogative clause"
+    },
+    {
+      "chapter": 27,
+      "exercise_order": 4,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The concessive clause"
+    },
+    {
+      "chapter": 27,
+      "exercise_order": 4,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The consecutive clause"
+    },
+    {
+      "chapter": 27,
+      "exercise_order": 4,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The purpose clause"
+    },
+    {
+      "chapter": 27,
+      "exercise_order": 4,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The hypothetical clause"
+    },
+    {
+      "chapter": 27,
+      "exercise_order": 4,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The relative clause"
+    },
+    {
+      "chapter": 27,
+      "exercise_order": 4,
+      "type": "theory_heading_in_last_exercise_span",
+      "heading": "The comparative clause"
+    },
+    {
+      "chapter": 28,
+      "type": "manifest_heading_not_found_as_exact_text",
+      "topic": "Cumulative review exercises"
+    }
+  ],
+  "supplements": {
+    "verb-tables": 6,
+    "french-english-glossary": 53,
+    "english-french-glossary": 54
+  },
+  "summary": {
+    "chapters_expected": 27,
+    "chapters_created": 27,
+    "exercise_groups": 223,
+    "questions_extracted": 2120,
+    "answers_associated": 2120,
+    "issues": 93
+  }
+}

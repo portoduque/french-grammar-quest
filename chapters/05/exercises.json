@@ -1,0 +1,926 @@
+{
+  "chapter": 5,
+  "status": "machine_transcribed_editorial_visual_review_pending",
+  "exercises": [
+    {
+      "id": "ch05-ex01",
+      "source": {
+        "chapter": 5,
+        "exercise": "5.1",
+        "pdf_pages": [
+          75,
+          76
+        ]
+      },
+      "topic_ids": [
+        "ch05-t01"
+      ],
+      "instruction": "Mettre au présent les verbes entre parenthèses.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch05-ex01-q01",
+          "number": 1,
+          "prompt": "Elle (devoir) prévenir sa mère. __",
+          "source_raw_prompt": "Elle (devoir) prévenir sa mère.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            75
+          ],
+          "answer": {
+            "source_key": "doit",
+            "accepted": [
+              "doit"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch05-ex01-q02",
+          "number": 2,
+          "prompt": "Tu (devoir) partir immédiatement. __",
+          "source_raw_prompt": "Tu (devoir) partir immédiatement.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            75
+          ],
+          "answer": {
+            "source_key": "dois",
+            "accepted": [
+              "dois"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch05-ex01-q03",
+          "number": 3,
+          "prompt": "Vous (devoir) refuser leur offre. __",
+          "source_raw_prompt": "Vous (devoir) refuser leur offre.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            75
+          ],
+          "answer": {
+            "source_key": "devez",
+            "accepted": [
+              "devez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch05-ex01-q04",
+          "number": 4,
+          "prompt": "Elle (devoir) prendre une navette. __",
+          "source_raw_prompt": "Elle (devoir) prendre une navette.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            75
+          ],
+          "answer": {
+            "source_key": "doit",
+            "accepted": [
+              "doit"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch05-ex01-q05",
+          "number": 5,
+          "prompt": "Ils (ne pas devoir) arriver avant dimanche. __",
+          "source_raw_prompt": "Ils (ne pas devoir) arriver avant dimanche.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            75
+          ],
+          "answer": {
+            "source_key": "ne doivent pas",
+            "accepted": [
+              "ne doivent pas"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch05-ex01-q06",
+          "number": 6,
+          "prompt": "Je (devoir) appeler Michel? __",
+          "source_raw_prompt": "Je (devoir) appeler Michel?\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            75
+          ],
+          "answer": {
+            "source_key": "dois",
+            "accepted": [
+              "dois"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch05-ex01-q07",
+          "number": 7,
+          "prompt": "L’avion (devoir) décoller dans quelques minutes. __",
+          "source_raw_prompt": "L’avion (devoir) décoller dans quelques minutes.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            75
+          ],
+          "answer": {
+            "source_key": "doit",
+            "accepted": [
+              "doit"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch05-ex01-q08",
+          "number": 8,
+          "prompt": "Les voitures (devoir) embarquer sur le ferry. __",
+          "source_raw_prompt": "Les voitures (devoir) embarquer sur le ferry.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            75
+          ],
+          "answer": {
+            "source_key": "doivent",
+            "accepted": [
+              "doivent"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch05-ex01-q09",
+          "number": 9,
+          "prompt": "Je (devoir) préparer le dîner. __",
+          "source_raw_prompt": "Je (devoir) préparer le dîner.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            75
+          ],
+          "answer": {
+            "source_key": "dois",
+            "accepted": [
+              "dois"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch05-ex01-q10",
+          "number": 10,
+          "prompt": "Tu (devoir) faire le plein sur l’autoroute. __",
+          "source_raw_prompt": "Tu (devoir) faire le plein sur l’autoroute.\n   _____________________________________________________________ ",
+          "pdf_pages": [
+            75,
+            76
+          ],
+          "answer": {
+            "source_key": "dois",
+            "accepted": [
+              "dois"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch05-s01"
+      ]
+    },
+    {
+      "id": "ch05-ex02",
+      "source": {
+        "chapter": 5,
+        "exercise": "5.2",
+        "pdf_pages": [
+          76
+        ]
+      },
+      "topic_ids": [
+        "ch05-t01"
+      ],
+      "instruction": "Traduire les phrases suivantes en utilisant vous et la forme est-ce que si nécessaire.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch05-ex02-q01",
+          "number": 1,
+          "prompt": "You must cook tonight. __",
+          "source_raw_prompt": "You must cook tonight.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            76
+          ],
+          "answer": {
+            "source_key": "Vous devez faire la cuisine ce soir.",
+            "accepted": [
+              "Vous devez faire la cuisine ce soir."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch05-ex02-q02",
+          "number": 2,
+          "prompt": "She must not work today. __",
+          "source_raw_prompt": "She must not work today.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            76
+          ],
+          "answer": {
+            "source_key": "Elle ne doit pas travailler aujourd’hui.",
+            "accepted": [
+              "Elle ne doit pas travailler aujourd’hui."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch05-ex02-q03",
+          "number": 3,
+          "prompt": "At what time is he supposed to arrive? __",
+          "source_raw_prompt": "At what time is he supposed to arrive?\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            76
+          ],
+          "answer": {
+            "source_key": "À quelle heure est-ce qu’il doit arriver?",
+            "accepted": [
+              "À quelle heure est-ce qu’il doit arriver?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch05-ex02-q04",
+          "number": 4,
+          "prompt": "How much do I owe you? __",
+          "source_raw_prompt": "How much do I owe you?\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            76
+          ],
+          "answer": {
+            "source_key": "Combien est-ce que je vous dois?",
+            "accepted": [
+              "Combien est-ce que je vous dois?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch05-ex02-q05",
+          "number": 5,
+          "prompt": "Why must he sell his car? __",
+          "source_raw_prompt": "Why must he sell his car?\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            76
+          ],
+          "answer": {
+            "source_key": "Pourquoi est-ce qu’il doit vendre sa voiture?",
+            "accepted": [
+              "Pourquoi est-ce qu’il doit vendre sa voiture?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch05-ex02-q06",
+          "number": 6,
+          "prompt": "She owes an excuse to Carole. __",
+          "source_raw_prompt": "She owes an excuse to Carole.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            76
+          ],
+          "answer": {
+            "source_key": "Elle doit une excuse à Carole.",
+            "accepted": [
+              "Elle doit une excuse à Carole."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch05-ex02-q07",
+          "number": 7,
+          "prompt": "Are we supposed to know these verbs? __",
+          "source_raw_prompt": "Are we supposed to know these verbs?\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            76
+          ],
+          "answer": {
+            "source_key": "Est-ce que nous devons connaître ces verbes?",
+            "accepted": [
+              "Est-ce que nous devons connaître ces verbes?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch05-ex02-q08",
+          "number": 8,
+          "prompt": "He owes two thousand dollars to the bank. __",
+          "source_raw_prompt": "He owes two thousand dollars to the bank.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            76
+          ],
+          "answer": {
+            "source_key": "Il doit deux mille dollars à la banque.",
+            "accepted": [
+              "Il doit deux mille dollars à la banque."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch05-ex02-q09",
+          "number": 9,
+          "prompt": "You should call Vincent. __",
+          "source_raw_prompt": "You should call Vincent.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            76
+          ],
+          "answer": {
+            "source_key": "Vous devriez appeler Vincent.",
+            "accepted": [
+              "Vous devriez appeler Vincent."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch05-ex02-q10",
+          "number": 10,
+          "prompt": "You should not invite Pierre. __",
+          "source_raw_prompt": "You should not invite Pierre.\n   _____________________________________________________________\n\n\n\n\n ",
+          "pdf_pages": [
+            76
+          ],
+          "answer": {
+            "source_key": "Vous ne devriez pas inviter Pierre.",
+            "accepted": [
+              "Vous ne devriez pas inviter Pierre."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch05-s01"
+      ]
+    },
+    {
+      "id": "ch05-ex03",
+      "source": {
+        "chapter": 5,
+        "exercise": "5.3",
+        "pdf_pages": [
+          76,
+          77
+        ]
+      },
+      "topic_ids": [
+        "ch05-t01"
+      ],
+      "instruction": "Faire correspondre les deux colonnes. ______",
+      "interaction_type": "matching",
+      "questions": [
+        {
+          "id": "ch05-ex03-q01",
+          "number": 1,
+          "prompt": "Elle a des dettes. a. Elle doit la vie à son médecin. __",
+          "source_raw_prompt": "Elle a des dettes.              a. Elle doit la vie à son médecin.\n\n ______ ",
+          "pdf_pages": [
+            77
+          ],
+          "answer": {
+            "source_key": "e",
+            "accepted": [
+              "e"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "a",
+            "text": "Elle doit la vie à son médecin."
+          }
+        },
+        {
+          "id": "ch05-ex03-q02",
+          "number": 2,
+          "prompt": "Elle n’est pas morte. b. Elle doit être prudente. __",
+          "source_raw_prompt": "Elle n’est pas morte.         b. Elle doit être prudente.\n\n ______ ",
+          "pdf_pages": [
+            77
+          ],
+          "answer": {
+            "source_key": "a",
+            "accepted": [
+              "a"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "b",
+            "text": "Elle doit être prudente."
+          }
+        },
+        {
+          "id": "ch05-ex03-q03",
+          "number": 3,
+          "prompt": "Elle va peut-être voyager. c. Elle doit faire la cuisine. __",
+          "source_raw_prompt": "Elle va peut-être voyager.   c. Elle doit faire la cuisine.\n\n ______ ",
+          "pdf_pages": [
+            77
+          ],
+          "answer": {
+            "source_key": "d",
+            "accepted": [
+              "d"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "c",
+            "text": "Elle doit faire la cuisine."
+          }
+        },
+        {
+          "id": "ch05-ex03-q04",
+          "number": 4,
+          "prompt": "Elle a des invités. d. Elle doit partir en vacances. __",
+          "source_raw_prompt": "Elle a des invités.            d. Elle doit partir en vacances.\n\n ______ ",
+          "pdf_pages": [
+            77
+          ],
+          "answer": {
+            "source_key": "c",
+            "accepted": [
+              "c"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "d",
+            "text": "Elle doit partir en vacances."
+          }
+        },
+        {
+          "id": "ch05-ex03-q05",
+          "number": 5,
+          "prompt": "Elle hésite encore. e. Elle doit de l’argent.",
+          "source_raw_prompt": "Elle hésite encore.            e. Elle doit de l’argent.",
+          "pdf_pages": [
+            77,
+            78
+          ],
+          "answer": {
+            "source_key": "b",
+            "accepted": [
+              "b"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "e",
+            "text": "Elle doit de l’argent."
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 5,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "choice_label",
+        "publisher_key_is_exhaustive": true
+      },
+      "subtopic_ids": [
+        "ch05-s01"
+      ],
+      "choices": [
+        {
+          "label": "a",
+          "text": "Elle doit la vie à son médecin."
+        },
+        {
+          "label": "b",
+          "text": "Elle doit être prudente."
+        },
+        {
+          "label": "c",
+          "text": "Elle doit faire la cuisine."
+        },
+        {
+          "label": "d",
+          "text": "Elle doit partir en vacances."
+        },
+        {
+          "label": "e",
+          "text": "Elle doit de l’argent."
+        }
+      ]
+    },
+    {
+      "id": "ch05-ex04",
+      "source": {
+        "chapter": 5,
+        "exercise": "5.4",
+        "pdf_pages": [
+          78,
+          79
+        ]
+      },
+      "topic_ids": [
+        "ch05-t04"
+      ],
+      "instruction": "Conjuguer au présent les verbes entre parenthèses.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch05-ex04-q01",
+          "number": 1,
+          "prompt": "Elle (craindre) __ de profonds changements.",
+          "source_raw_prompt": "Elle (craindre) ________________ de profonds changements. ",
+          "pdf_pages": [
+            78,
+            79
+          ],
+          "answer": {
+            "source_key": "craint",
+            "accepted": [
+              "craint"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch05-ex04-q02",
+          "number": 2,
+          "prompt": "Il (feindre) __ la tristesse.",
+          "source_raw_prompt": "Il (feindre) ________________ la tristesse.\n\n ",
+          "pdf_pages": [
+            79
+          ],
+          "answer": {
+            "source_key": "feint",
+            "accepted": [
+              "feint"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch05-ex04-q03",
+          "number": 3,
+          "prompt": "Ils (plaindre) __ la pauvre femme.",
+          "source_raw_prompt": "Ils (plaindre) ________________ la pauvre femme.\n\n ",
+          "pdf_pages": [
+            79
+          ],
+          "answer": {
+            "source_key": "plaignent",
+            "accepted": [
+              "plaignent"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch05-ex04-q04",
+          "number": 4,
+          "prompt": "La muraille (ceindre) __ la ville.",
+          "source_raw_prompt": "La muraille (ceindre) ________________ la ville.\n\n ",
+          "pdf_pages": [
+            79
+          ],
+          "answer": {
+            "source_key": "ceint",
+            "accepted": [
+              "ceint"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch05-ex04-q05",
+          "number": 5,
+          "prompt": "Vous (feindre) __ l’indifférence.",
+          "source_raw_prompt": "Vous (feindre) ________________ l’indifférence.\n\n ",
+          "pdf_pages": [
+            79
+          ],
+          "answer": {
+            "source_key": "feignez",
+            "accepted": [
+              "feignez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch05-ex04-q06",
+          "number": 6,
+          "prompt": "Nous (craindre) __ le ridicule.",
+          "source_raw_prompt": "Nous (craindre) ________________ le ridicule.\n\n ",
+          "pdf_pages": [
+            79
+          ],
+          "answer": {
+            "source_key": "craignons",
+            "accepted": [
+              "craignons"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch05-ex04-q07",
+          "number": 7,
+          "prompt": "Vous (peindre) __ le mur en bleu.",
+          "source_raw_prompt": "Vous (peindre) ________________ le mur en bleu.\n\n ",
+          "pdf_pages": [
+            79
+          ],
+          "answer": {
+            "source_key": "peignez",
+            "accepted": [
+              "peignez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch05-ex04-q08",
+          "number": 8,
+          "prompt": "Ils (craindre) __ le froid.",
+          "source_raw_prompt": "Ils (craindre) ________________ le froid.\n\n ",
+          "pdf_pages": [
+            79
+          ],
+          "answer": {
+            "source_key": "craignent",
+            "accepted": [
+              "craignent"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch05-ex04-q09",
+          "number": 9,
+          "prompt": "Elle (teindre) __ en blond les moustaches de l’acteur.",
+          "source_raw_prompt": "Elle (teindre) ________________ en blond les moustaches de l’acteur.\n\n",
+          "pdf_pages": [
+            79
+          ],
+          "answer": {
+            "source_key": "teint",
+            "accepted": [
+              "teint"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch05-ex04-q10",
+          "number": 10,
+          "prompt": "Elle (se plaindre) __ tout le temps.",
+          "source_raw_prompt": "Elle (se plaindre) ________________ tout le temps.\n\n\n\n\n ",
+          "pdf_pages": [
+            79
+          ],
+          "answer": {
+            "source_key": "se plaint",
+            "accepted": [
+              "se plaint"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch05-s04"
+      ]
+    },
+    {
+      "id": "ch05-ex05",
+      "source": {
+        "chapter": 5,
+        "exercise": "5.5",
+        "pdf_pages": [
+          79,
+          80
+        ]
+      },
+      "topic_ids": [
+        "ch05-t04"
+      ],
+      "instruction": "Traduire les phrases suivantes en utilisant tu et la forme est-ce que si nécessaire.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch05-ex05-q01",
+          "number": 1,
+          "prompt": "She is painting the kitchen. __",
+          "source_raw_prompt": "She is painting the kitchen.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            79
+          ],
+          "answer": {
+            "source_key": "Elle peint la cuisine.",
+            "accepted": [
+              "Elle peint la cuisine."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch05-ex05-q02",
+          "number": 2,
+          "prompt": "There is a dog in the car. __",
+          "source_raw_prompt": "There is a dog in the car.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            79
+          ],
+          "answer": {
+            "source_key": "Il y a un chien dans la voiture.",
+            "accepted": [
+              "Il y a un chien dans la voiture."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch05-ex05-q03",
+          "number": 3,
+          "prompt": "They pity the poor child. __",
+          "source_raw_prompt": "They pity the poor child.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            79
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) plaignent le pauvre enfant.",
+            "accepted": [
+              "Ils (Elles) plaignent le pauvre enfant."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch05-ex05-q04",
+          "number": 4,
+          "prompt": "This book is about the French president. __",
+          "source_raw_prompt": "This book is about the French president.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            79
+          ],
+          "answer": {
+            "source_key": "Dans ce livre, il s’agit du président français.",
+            "accepted": [
+              "Dans ce livre, il s’agit du président français."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch05-ex05-q05",
+          "number": 5,
+          "prompt": "What is it about? __",
+          "source_raw_prompt": "What is it about?\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            79
+          ],
+          "answer": {
+            "source_key": "De quoi est-ce qu’il s’agit?",
+            "accepted": [
+              "De quoi est-ce qu’il s’agit?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch05-ex05-q06",
+          "number": 6,
+          "prompt": "He fears the worst. __",
+          "source_raw_prompt": "He fears the worst.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            79
+          ],
+          "answer": {
+            "source_key": "Il craint le pire.",
+            "accepted": [
+              "Il craint le pire."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch05-ex05-q07",
+          "number": 7,
+          "prompt": "There are books on the table. __",
+          "source_raw_prompt": "There are books on the table.   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            79,
+            80
+          ],
+          "answer": {
+            "source_key": "Il y a des livres sur la table.",
+            "accepted": [
+              "Il y a des livres sur la table."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch05-ex05-q08",
+          "number": 8,
+          "prompt": "Is there a computer? __",
+          "source_raw_prompt": "Is there a computer?\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            80
+          ],
+          "answer": {
+            "source_key": "Est-ce qu’il y a un ordinateur?",
+            "accepted": [
+              "Est-ce qu’il y a un ordinateur?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch05-ex05-q09",
+          "number": 9,
+          "prompt": "Are you painting the flowers? __",
+          "source_raw_prompt": "Are you painting the flowers?\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            80
+          ],
+          "answer": {
+            "source_key": "Est-ce que tu peins les fleurs?",
+            "accepted": [
+              "Est-ce que tu peins les fleurs?"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch05-ex05-q10",
+          "number": 10,
+          "prompt": "It’s a matter of passion. __",
+          "source_raw_prompt": "It’s a matter of passion.\n   _____________________________________________________________",
+          "pdf_pages": [
+            80
+          ],
+          "answer": {
+            "source_key": "Il s’agit de passion.",
+            "accepted": [
+              "Il s’agit de passion."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch05-s04"
+      ]
+    }
+  ]
+}

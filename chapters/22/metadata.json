@@ -1,0 +1,172 @@
+{
+  "chapter": 22,
+  "title": "Chapter 22",
+  "source": {
+    "pdf_pages": [
+      271,
+      282
+    ],
+    "source_sha256": "297b92bc48e075449713c3b408ccf47de2466cfc6c4f4a25687a2a974276ae4d",
+    "answer_key_pdf_pages": [
+      517,
+      518
+    ]
+  },
+  "topics": [
+    {
+      "id": "ch22-t01",
+      "title": "Agreement of adjectives",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch22-t02",
+      "title": "The placement of adjectives",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch22-t03",
+      "title": "Adjectives denoting color",
+      "exercise_ids": [
+        "ch22-ex01",
+        "ch22-ex02",
+        "ch22-ex03"
+      ]
+    },
+    {
+      "id": "ch22-t04",
+      "title": "Comparatives and superlatives",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch22-t07",
+      "title": "Superlatives",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch22-t05",
+      "title": "Comparison of nouns",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch22-t06",
+      "title": "Irregular comparatives",
+      "exercise_ids": [
+        "ch22-ex04",
+        "ch22-ex05",
+        "ch22-ex06",
+        "ch22-ex07"
+      ]
+    }
+  ],
+  "exercise_ids": [
+    "ch22-ex01",
+    "ch22-ex02",
+    "ch22-ex03",
+    "ch22-ex04",
+    "ch22-ex05",
+    "ch22-ex06",
+    "ch22-ex07"
+  ],
+  "question_total": 55,
+  "validation": {
+    "source_pages": 12,
+    "source_chars": 17722,
+    "source_partition_complete": true,
+    "exercise_group_markers_detected": 7,
+    "questions_structured": 55,
+    "answer_key_entries_associated": 55,
+    "editorial_visual_review": "pending_glyph_by_glyph_check",
+    "theory_semantic_format": "partially_indexed_source_text_preserved",
+    "theory_source_segments": 2,
+    "text_semantic_format": "source-aligned_markdown_fenced_text_pending_table_visual_proof",
+    "answer_key_count": 55
+  },
+  "subtopics": [
+    {
+      "id": "ch22-s01",
+      "title": "Agreement of adjectives",
+      "parent_topic_id": "ch22-t01",
+      "pdf_pages": [
+        271,
+        271
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch22-s02",
+      "title": "The placement of adjectives",
+      "parent_topic_id": "ch22-t02",
+      "pdf_pages": [
+        273,
+        273
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch22-s03",
+      "title": "Adjectives denoting color",
+      "parent_topic_id": "ch22-t03",
+      "pdf_pages": [
+        274,
+        274
+      ],
+      "exercise_ids": [
+        "ch22-ex01",
+        "ch22-ex02",
+        "ch22-ex03"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch22-s04",
+      "title": "Comparatives and superlatives",
+      "parent_topic_id": "ch22-t04",
+      "pdf_pages": [
+        277,
+        277
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch22-s05",
+      "title": "Superlatives",
+      "parent_topic_id": "ch22-t07",
+      "pdf_pages": [
+        277,
+        277
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch22-s06",
+      "title": "Comparison of nouns",
+      "parent_topic_id": "ch22-t05",
+      "pdf_pages": [
+        278,
+        278
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch22-s07",
+      "title": "Irregular comparatives",
+      "parent_topic_id": "ch22-t06",
+      "pdf_pages": [
+        278,
+        278
+      ],
+      "exercise_ids": [
+        "ch22-ex04",
+        "ch22-ex05",
+        "ch22-ex06",
+        "ch22-ex07"
+      ],
+      "kind": "grammar"
+    }
+  ]
+}

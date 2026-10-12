@@ -1,0 +1,1693 @@
+{
+  "chapter": 13,
+  "status": "machine_transcribed_editorial_visual_review_pending",
+  "exercises": [
+    {
+      "id": "ch13-ex01",
+      "source": {
+        "chapter": 13,
+        "exercise": "13.1",
+        "pdf_pages": [
+          163,
+          164,
+          165
+        ]
+      },
+      "topic_ids": [
+        "ch13-t02"
+      ],
+      "instruction": "Mettre les verbes au subjonctif.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch13-ex01-q01",
+          "number": 1,
+          "prompt": "Elle préfère que tout le monde (être) __ là avant de commencer.",
+          "source_raw_prompt": "Elle préfère que tout le monde (être) ________________ là avant de\n    commencer.\n\n   ",
+          "pdf_pages": [
+            163
+          ],
+          "answer": {
+            "source_key": "soit",
+            "accepted": [
+              "soit"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex01-q02",
+          "number": 2,
+          "prompt": "Je doute que vous (comprendre) __ l’importance de cet événement.",
+          "source_raw_prompt": "Je doute que vous (comprendre) ________________ l’importance de cet\n    événement.\n\n   ",
+          "pdf_pages": [
+            163
+          ],
+          "answer": {
+            "source_key": "compreniez",
+            "accepted": [
+              "compreniez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex01-q03",
+          "number": 3,
+          "prompt": "Sa mère aimerait mieux qu’elle (ne pas sortir) __ ce soir.",
+          "source_raw_prompt": "Sa mère aimerait mieux qu’elle (ne pas sortir) ________________ ce soir.\n\n   ",
+          "pdf_pages": [
+            163
+          ],
+          "answer": {
+            "source_key": "ne sorte pas",
+            "accepted": [
+              "ne sorte pas"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex01-q04",
+          "number": 4,
+          "prompt": "A-t-il fini le projet? Non. Mais je tiens à ce qu’il le (finir) __ aujourd’hui.",
+          "source_raw_prompt": "A-t-il fini le projet? Non. Mais je tiens à ce qu’il le (finir) ________________\n     aujourd’hui.\n\n   ",
+          "pdf_pages": [
+            163
+          ],
+          "answer": {
+            "source_key": "finisse",
+            "accepted": [
+              "finisse"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex01-q05",
+          "number": 5,
+          "prompt": "Je doute qu’ils (gérer) __ cette affaire correctement.",
+          "source_raw_prompt": "Je doute qu’ils (gérer) ________________ cette affaire correctement.\n\n   ",
+          "pdf_pages": [
+            163
+          ],
+          "answer": {
+            "source_key": "gèrent",
+            "accepted": [
+              "gèrent"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex01-q06",
+          "number": 6,
+          "prompt": "J’ai peur que ces logiciels (ne pas être) __ compatibles.",
+          "source_raw_prompt": "J’ai peur que ces logiciels (ne pas être) ________________ compatibles.\n\n   ",
+          "pdf_pages": [
+            163
+          ],
+          "answer": {
+            "source_key": "ne soient pas",
+            "accepted": [
+              "ne soient pas"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex01-q07",
+          "number": 7,
+          "prompt": "Ils souhaitent que cette aventure (avoir) __ une fin heureuse.",
+          "source_raw_prompt": "Ils souhaitent que cette aventure (avoir) ________________ une fin heureuse.\n\n   ",
+          "pdf_pages": [
+            163
+          ],
+          "answer": {
+            "source_key": "ait",
+            "accepted": [
+              "ait"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex01-q08",
+          "number": 8,
+          "prompt": "Il craint que ce projet (être) __ un échec.",
+          "source_raw_prompt": "Il craint que ce projet (être) ________________ un échec.\n\n   ",
+          "pdf_pages": [
+            163
+          ],
+          "answer": {
+            "source_key": "soit",
+            "accepted": [
+              "soit"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex01-q09",
+          "number": 9,
+          "prompt": "Elle est contente qu’il (pouvoir) __ acheter la maison de ses rêves.",
+          "source_raw_prompt": "Elle est contente qu’il (pouvoir) ________________ acheter la maison de ses\n     rêves.\n\n ",
+          "pdf_pages": [
+            163
+          ],
+          "answer": {
+            "source_key": "puisse",
+            "accepted": [
+              "puisse"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex01-q10",
+          "number": 10,
+          "prompt": "Le juge ne croit pas qu’il (dire) __ la vérité. The subjunctive is also used after certain impersonal expressions, in the same way that some verbs are followed by the indicative and others by the subjunctive. In most cases, impersonal expressions followed by the subjunctive express will, obligation, necessity, emotion, and doubt. Here are some impersonal expressions that are followed by the indicative: il est certain it is certain il est sûr it is sure il est évident it is obvious il est vrai it is true il est probable it is probable il me semble it seems to me And here are some impersonal expressions that are followed by the subjunctive: il faut one must il est possible it is possible il est essentiel it is essential il est indispensable it is essential il est juste it is fair il se peut it may be il est important it is important il vaut mieux it is better il est préférable it is preferable il est souhaitable it is desirable il est naturel it is natural il est normal it is normal il est rare it is rare il est utile it is useful il est étrange it is strange il est bizarre it is odd il est étonnant it is amazing il est surprenant it is surprising il est triste it is sad il est dommage it is a shame il est regrettable it is unfortunate cela ne vaut pas la peine it is not worth Let’s compare the use of the indicative and the subjunctive with some impersonal expressions: Il est certain qu’il viendra ce soir. It is certain he’ll come tonight. Il est possible qu’il vienne ce soir. It is possible he’ll come tonight. Look at these example sentences with impersonal expressions. Il faut que vous commenciez vos You have to begin your research as recherches dès que possible. soon as possible. Il est étonnant que vous demandiez un It is surprising that you’re asking fo salaire si élevé. such a high salary. Il est rare qu’ils finissent leurs rapports à It is rare for them to finish their temps. reports on time. Il est regrettable que ce logiciel coûte si It is unfortunate this software is so cher. expensive. Il se peut que cette imprimante soit It is possible this printer is not incompatible. compatible. Il est triste que vous démissionniez cette It is sad you are resigning this week semaine. Il faut que vous refassiez la page You must redo the home page of you d’accueil de votre site. website. Il est étrange qu’il télécharge tous vos It is strange that he downloads all documents. your documents. Il est possible que leurs dossiers soient Their files may be digital. numériques.",
+          "source_raw_prompt": "Le juge ne croit pas qu’il (dire) ________________ la vérité.\n\n\n\n  The subjunctive is also used after certain impersonal expressions, in the same way\nthat some verbs are followed by the indicative and others by the subjunctive. In most\ncases, impersonal expressions followed by the subjunctive express will, obligation,\nnecessity, emotion, and doubt. Here are some impersonal expressions  that are\nfollowed by the indicative:\n\n           il est certain             it is certain           il est sûr               it is sure\n           il est évident            it is obvious          il est vrai             it is true\n           il est probable          it is probable         il me semble         it seems to me\n\n  And here are some impersonal expressions that are followed by the subjunctive:           il faut          one must            il est possible                    it is possible\n           il est essentiel      it is essential      il est indispensable           it is essential\n           il est juste           it is fair             il se peut                          it may be\n           il est important   it is important    il vaut mieux                    it is better\n           il est préférable   it is preferable    il est souhaitable              it is desirable\n           il est naturel        it is natural        il est normal                     it is normal\n           il est rare            it is rare             il est utile                         it is useful\n           il est étrange       it is strange        il est bizarre                     it is odd\n           il est étonnant     it is amazing      il est surprenant               it is surprising\n           il est triste           it is sad              il est dommage                 it is a shame\n           il est regrettable  it is unfortunate cela ne vaut pas la peine   it is not worth\n\n   Let’s compare the use of the indicative and the subjunctive with some impersonal\nexpressions:\n\n          Il est certain qu’il viendra ce soir.          It is certain he’ll come tonight.\n          Il est possible qu’il vienne ce soir.          It is possible he’ll come tonight.\n\n  Look at these example sentences with impersonal expressions.\n\n         Il faut que vous commenciez vos       You have to begin your research as\n          recherches dès que possible.             soon as possible.\n         Il est étonnant que vous demandiez un   It is surprising that you’re asking fo\n           salaire si élevé.                        such a high salary.\n         Il est rare qu’ils finissent leurs rapports à It is rare for them to finish their\n          temps.                                    reports on time.\n         Il est regrettable que ce logiciel coûte si  It is unfortunate this software is so\n           cher.                                     expensive.\n         Il se peut que cette imprimante soit       It is possible this printer is not\n          incompatible.                            compatible.\n         Il est triste que vous démissionniez cette It is sad you are resigning this week\n          semaine.\n         Il faut que vous refassiez la page       You must redo the home page of you\n          d’accueil de votre site.                    website.\n         Il est étrange qu’il télécharge tous vos    It is strange that he downloads all\n         documents.                            your documents.         Il est possible que leurs dossiers soient  Their files may be digital.\n         numériques.\n\n\n\n  ",
+          "pdf_pages": [
+            163,
+            164,
+            165
+          ],
+          "answer": {
+            "source_key": "dise",
+            "accepted": [
+              "dise"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch13-s02"
+      ]
+    },
+    {
+      "id": "ch13-ex02",
+      "source": {
+        "chapter": 13,
+        "exercise": "13.2",
+        "pdf_pages": [
+          165,
+          166
+        ]
+      },
+      "topic_ids": [
+        "ch13-t02"
+      ],
+      "instruction": "Mettre les propositions subordonnées au subjonctif.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch13-ex02-q01",
+          "number": 1,
+          "prompt": "Il faut que vous (aller) __ voir ce film.",
+          "source_raw_prompt": "Il faut que vous (aller) ________________ voir ce film.\n\n   ",
+          "pdf_pages": [
+            165
+          ],
+          "answer": {
+            "source_key": "alliez",
+            "accepted": [
+              "alliez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex02-q02",
+          "number": 2,
+          "prompt": "Il est essentiel que vous (arriver) __ avant la fin de la semaine.",
+          "source_raw_prompt": "Il est essentiel que vous (arriver) ________________ avant la fin de la\n     semaine.\n\n   ",
+          "pdf_pages": [
+            165
+          ],
+          "answer": {
+            "source_key": "arriviez",
+            "accepted": [
+              "arriviez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex02-q03",
+          "number": 3,
+          "prompt": "Il est impensable que nous (accepter) __ ces conditions.",
+          "source_raw_prompt": "Il est impensable que nous (accepter) ________________ ces conditions.\n\n   ",
+          "pdf_pages": [
+            165
+          ],
+          "answer": {
+            "source_key": "acceptions",
+            "accepted": [
+              "acceptions"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex02-q04",
+          "number": 4,
+          "prompt": "Il est possible que nous (voyager) __ cet été.",
+          "source_raw_prompt": "Il est possible que nous (voyager) ________________ cet été.\n\n   ",
+          "pdf_pages": [
+            165
+          ],
+          "answer": {
+            "source_key": "voyagions",
+            "accepted": [
+              "voyagions"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex02-q05",
+          "number": 5,
+          "prompt": "Il est important qu’il (être) __ à l’heure.",
+          "source_raw_prompt": "Il est important qu’il (être) ________________ à l’heure.\n\n   ",
+          "pdf_pages": [
+            165
+          ],
+          "answer": {
+            "source_key": "soit",
+            "accepted": [
+              "soit"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex02-q06",
+          "number": 6,
+          "prompt": "Il vaut mieux que nous (ne rien dire) __ .",
+          "source_raw_prompt": "Il vaut mieux que nous (ne rien dire) ________________ .\n\n   ",
+          "pdf_pages": [
+            165
+          ],
+          "answer": {
+            "source_key": "ne disions rien",
+            "accepted": [
+              "ne disions rien"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex02-q07",
+          "number": 7,
+          "prompt": "Il est regrettable que ses enfants (habiter) __ si loin.",
+          "source_raw_prompt": "Il est regrettable que ses enfants (habiter) ________________ si loin.\n\n   ",
+          "pdf_pages": [
+            165
+          ],
+          "answer": {
+            "source_key": "habitent",
+            "accepted": [
+              "habitent"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex02-q08",
+          "number": 8,
+          "prompt": "Il est dommage que vous (vendre) __ votre maison de campagne.",
+          "source_raw_prompt": "Il est dommage que vous (vendre) ________________ votre maison de\n    campagne.\n\n   ",
+          "pdf_pages": [
+            165
+          ],
+          "answer": {
+            "source_key": "vendiez",
+            "accepted": [
+              "vendiez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex02-q09",
+          "number": 9,
+          "prompt": "Il est indispensable qu’elle (suivre) __ un cours d’informatique.",
+          "source_raw_prompt": "Il est indispensable qu’elle (suivre) ________________ un cours\n     d’informatique.\n\n ",
+          "pdf_pages": [
+            165
+          ],
+          "answer": {
+            "source_key": "suive",
+            "accepted": [
+              "suive"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex02-q10",
+          "number": 10,
+          "prompt": "Il est rare que nous (emporter) __ du travail à la maison. When you use conjunctions, you will also have to decide whether to use the indicative or the subjunctive in the following clause. afin que so that, in order to pour que so that, in order to de peur que for fear that de crainte que for fear that avant que before jusqu’à ce que until bien que although quoique although sans que without à moins que unless pourvu que provided that à condition que on the condition tha en attendant que waiting for Nous partirons demain à moins qu’il y ait We’ll leave tomorrow unless there i une grève. a strike. Il viendra avec nous à condition que son He’ll come with us on the condition patron lui donne un jour de congé. that his boss gives him a day off Tout sera fini avant qu’ils arrivent. Everything will be done before they arrive. Je sauvegarde toutes ses données de peur I save all his data for fear he loses qu’il les perde. (he’ll lose) it. Ils ont pris la décision sans qu’elle le They made the decision without her sache. knowing it. Il est tolérant pourvu qu’on respecte ses He is tolerant provided one respect idées. his ideas. Quoiqu’il fasse froid, ils se promènent Although it is cold, they take a walk dans la forêt. in the forest. Refer to Chapter 9 for the list of conjunctions that are followed by the indicative mood.",
+          "source_raw_prompt": "Il est rare que nous (emporter) ________________ du travail à la maison.\n\n\n\n  When you use conjunctions, you will also have to decide whether to use the\nindicative or the subjunctive in the following clause.\n\n       afin que          so that, in order to pour que        so that, in order to\n      de peur que       for fear that       de crainte que   for fear that\n      avant que         before            jusqu’à ce que   until\n       bien que          although         quoique        although\n       sans que          without          à moins que     unless\n      pourvu que       provided that      à condition que on the condition tha      en attendant que  waiting for\n\n      Nous partirons demain à moins qu’il y ait We’ll leave tomorrow unless there i\n         une grève.                          a strike.\n          Il viendra avec nous à condition que son  He’ll come with us on the condition\n          patron lui donne un jour de congé.         that his boss gives him a day off\n       Tout sera fini avant qu’ils arrivent.      Everything will be done before they\n                                                        arrive.\n       Je sauvegarde toutes ses données de peur  I save all his data for fear he loses\n          qu’il les perde.                              (he’ll lose) it.\n         Ils ont pris la décision sans qu’elle le     They made the decision without her\n          sache.                              knowing it.\n          Il est tolérant pourvu qu’on respecte ses He is tolerant provided one respect\n           idées.                                      his ideas.\n       Quoiqu’il fasse froid, ils se promènent   Although it is cold, they take a walk\n         dans la forêt.                               in the forest.\n\n   Refer to Chapter 9 for the list of conjunctions that are followed by the indicative\nmood.\n\n\n\n  ",
+          "pdf_pages": [
+            165,
+            166
+          ],
+          "answer": {
+            "source_key": "emportions",
+            "accepted": [
+              "emportions"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch13-s02"
+      ]
+    },
+    {
+      "id": "ch13-ex03",
+      "source": {
+        "chapter": 13,
+        "exercise": "13.3",
+        "pdf_pages": [
+          166,
+          167
+        ]
+      },
+      "topic_ids": [
+        "ch13-t03"
+      ],
+      "instruction": "Mettre les verbes entre parenthèses au subjonctif.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch13-ex03-q01",
+          "number": 1,
+          "prompt": "Il ne commencera pas son discours avant que vous (donner) __ le signal.",
+          "source_raw_prompt": "Il ne commencera pas son discours avant que vous (donner)\n    ________________ le signal.\n\n   ",
+          "pdf_pages": [
+            166
+          ],
+          "answer": {
+            "source_key": "donniez",
+            "accepted": [
+              "donniez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex03-q02",
+          "number": 2,
+          "prompt": "Elle est généreuse quoiqu’elle (ne pas être) __ riche.",
+          "source_raw_prompt": "Elle est généreuse quoiqu’elle (ne pas être) ________________ riche.\n\n   ",
+          "pdf_pages": [
+            166
+          ],
+          "answer": {
+            "source_key": "ne soit pas",
+            "accepted": [
+              "ne soit pas"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex03-q03",
+          "number": 3,
+          "prompt": "Je t’aiderai à condition que tu me (faire) __ une faveur.",
+          "source_raw_prompt": "Je t’aiderai à condition que tu me (faire) ________________ une faveur.\n\n   ",
+          "pdf_pages": [
+            166
+          ],
+          "answer": {
+            "source_key": "fasses",
+            "accepted": [
+              "fasses"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex03-q04",
+          "number": 4,
+          "prompt": "Nous les inviterons pour qu’ils (ne pas se sentir) __ délaissés.",
+          "source_raw_prompt": "Nous les inviterons pour qu’ils (ne pas se sentir) ________________ délaissés.\n\n   ",
+          "pdf_pages": [
+            166
+          ],
+          "answer": {
+            "source_key": "ne se sentent pas",
+            "accepted": [
+              "ne se sentent pas"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex03-q05",
+          "number": 5,
+          "prompt": "Elle déposera un brevet de peur qu’on lui (voler) __ son idée.",
+          "source_raw_prompt": "Elle déposera un brevet de peur qu’on lui (voler) ________________ son idée.\n\n   ",
+          "pdf_pages": [
+            166
+          ],
+          "answer": {
+            "source_key": "vole",
+            "accepted": [
+              "vole"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex03-q06",
+          "number": 6,
+          "prompt": "J’achèterai leur appartement pour qu’ils (pouvoir) __ s’installer à la campagne.",
+          "source_raw_prompt": "J’achèterai leur appartement pour qu’ils (pouvoir) ________________\n      s’installer à la campagne.   ",
+          "pdf_pages": [
+            166,
+            167
+          ],
+          "answer": {
+            "source_key": "puissent",
+            "accepted": [
+              "puissent"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex03-q07",
+          "number": 7,
+          "prompt": "Il téléchargera le dossier bien qu’il (ne pas répondre) __ exactement à ses besoins.",
+          "source_raw_prompt": "Il téléchargera le dossier bien qu’il (ne pas répondre) ________________\n    exactement à ses besoins.\n\n   ",
+          "pdf_pages": [
+            167
+          ],
+          "answer": {
+            "source_key": "ne réponde pas",
+            "accepted": [
+              "ne réponde pas"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex03-q08",
+          "number": 8,
+          "prompt": "Elle a un blog pour que ses lecteurs (donner) __ leurs réactions.",
+          "source_raw_prompt": "Elle a un blog pour que ses lecteurs (donner) ________________ leurs\n     réactions.\n\n   ",
+          "pdf_pages": [
+            167
+          ],
+          "answer": {
+            "source_key": "donnent",
+            "accepted": [
+              "donnent"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex03-q09",
+          "number": 9,
+          "prompt": "Nous donnerons nos opinions pourvu qu’elles (rester) __ anonymes.",
+          "source_raw_prompt": "Nous donnerons nos opinions pourvu qu’elles (rester) ________________\n    anonymes.\n\n ",
+          "pdf_pages": [
+            167
+          ],
+          "answer": {
+            "source_key": "restent",
+            "accepted": [
+              "restent"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex03-q10",
+          "number": 10,
+          "prompt": "Elle achètera un appareil numérique pour que sa fille (pouvoir) __ lui envoyer des photos au cours de son voyage.",
+          "source_raw_prompt": "Elle achètera un appareil numérique pour que sa fille (pouvoir)\n    ________________ lui envoyer des photos au cours de son voyage.",
+          "pdf_pages": [
+            167,
+            168
+          ],
+          "answer": {
+            "source_key": "puisse",
+            "accepted": [
+              "puisse"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch13-s03"
+      ]
+    },
+    {
+      "id": "ch13-ex04",
+      "source": {
+        "chapter": 13,
+        "exercise": "13.4",
+        "pdf_pages": [
+          168
+        ]
+      },
+      "topic_ids": [
+        "ch13-t03"
+      ],
+      "instruction": "Indicatif ou subjonctif?",
+      "interaction_type": "free_response",
+      "questions": [
+        {
+          "id": "ch13-ex04-q01",
+          "number": 1,
+          "prompt": "Il dit que leur page d’accueil (être) __ attrayante.",
+          "source_raw_prompt": "Il dit que leur page d’accueil (être) ________________ attrayante.\n\n   ",
+          "pdf_pages": [
+            168
+          ],
+          "answer": {
+            "source_key": "est",
+            "accepted": [
+              "est"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex04-q02",
+          "number": 2,
+          "prompt": "Elle doute qu’il (faire) __ chaud demain.",
+          "source_raw_prompt": "Elle doute qu’il (faire) ________________ chaud demain.\n\n   ",
+          "pdf_pages": [
+            168
+          ],
+          "answer": {
+            "source_key": "fasse",
+            "accepted": [
+              "fasse"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex04-q03",
+          "number": 3,
+          "prompt": "Ils sont heureux que leurs enfants (pouvoir) __ aller en Europe cet été.",
+          "source_raw_prompt": "Ils sont heureux que leurs enfants (pouvoir) ________________ aller en\n    Europe cet été.\n\n   ",
+          "pdf_pages": [
+            168
+          ],
+          "answer": {
+            "source_key": "puissent",
+            "accepted": [
+              "puissent"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex04-q04",
+          "number": 4,
+          "prompt": "Je pense que Maud (avoir) __ raison.",
+          "source_raw_prompt": "Je pense que Maud (avoir) ________________ raison.\n\n   ",
+          "pdf_pages": [
+            168
+          ],
+          "answer": {
+            "source_key": "a",
+            "accepted": [
+              "a"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex04-q05",
+          "number": 5,
+          "prompt": "Je veux que tu (faire) __ la présentation jeudi.",
+          "source_raw_prompt": "Je veux que tu (faire) ________________ la présentation jeudi.\n\n   ",
+          "pdf_pages": [
+            168
+          ],
+          "answer": {
+            "source_key": "fasses",
+            "accepted": [
+              "fasses"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex04-q06",
+          "number": 6,
+          "prompt": "Tu ne crois pas qu’ils (avoir) __ assez d’expérience.",
+          "source_raw_prompt": "Tu ne crois pas qu’ils (avoir) ________________ assez d’expérience.\n\n   ",
+          "pdf_pages": [
+            168
+          ],
+          "answer": {
+            "source_key": "aient",
+            "accepted": [
+              "aient"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex04-q07",
+          "number": 7,
+          "prompt": "Vous savez qu’ils (être) __ toujours en retard.",
+          "source_raw_prompt": "Vous savez qu’ils (être) ________________ toujours en retard.\n\n   ",
+          "pdf_pages": [
+            168
+          ],
+          "answer": {
+            "source_key": "sont",
+            "accepted": [
+              "sont"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex04-q08",
+          "number": 8,
+          "prompt": "Nous souhaitons que vous (obtenir) __ ce poste.",
+          "source_raw_prompt": "Nous souhaitons que vous (obtenir) ________________ ce poste.\n\n   ",
+          "pdf_pages": [
+            168
+          ],
+          "answer": {
+            "source_key": "obteniez",
+            "accepted": [
+              "obteniez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex04-q09",
+          "number": 9,
+          "prompt": "Ils exigent que vous (parler) __ une langue étrangère.",
+          "source_raw_prompt": "Ils exigent que vous (parler) ________________ une langue étrangère.\n\n ",
+          "pdf_pages": [
+            168
+          ],
+          "answer": {
+            "source_key": "parliez",
+            "accepted": [
+              "parliez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex04-q10",
+          "number": 10,
+          "prompt": "Vous savez que cet ordinateur (être) __ obsolète.",
+          "source_raw_prompt": "Vous savez que cet ordinateur (être) ________________ obsolète.\n\n\n\n\n  ",
+          "pdf_pages": [
+            168
+          ],
+          "answer": {
+            "source_key": "est",
+            "accepted": [
+              "est"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch13-s03"
+      ]
+    },
+    {
+      "id": "ch13-ex05",
+      "source": {
+        "chapter": 13,
+        "exercise": "13.5",
+        "pdf_pages": [
+          168,
+          169
+        ]
+      },
+      "topic_ids": [
+        "ch13-t03"
+      ],
+      "instruction": "Mettre les propositions subordonnées suivantes au subjonctif.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch13-ex05-q01",
+          "number": 1,
+          "prompt": "Il est rare que nous (voyager) __ dans cette région.",
+          "source_raw_prompt": "Il est rare que nous (voyager) ________________ dans cette région.\n\n ",
+          "pdf_pages": [
+            169
+          ],
+          "answer": {
+            "source_key": "voyagions",
+            "accepted": [
+              "voyagions"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex05-q02",
+          "number": 2,
+          "prompt": "Il me semble que vous (se tromper) __ souvent.",
+          "source_raw_prompt": "Il me semble que vous (se tromper) ________________ souvent.\n\n ",
+          "pdf_pages": [
+            169
+          ],
+          "answer": {
+            "source_key": "vous trompez",
+            "accepted": [
+              "vous trompez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex05-q03",
+          "number": 3,
+          "prompt": "Il faut que nous (trouver) __ un bon restaurant.",
+          "source_raw_prompt": "Il faut que nous (trouver) ________________ un bon restaurant.\n\n ",
+          "pdf_pages": [
+            169
+          ],
+          "answer": {
+            "source_key": "trouvions",
+            "accepted": [
+              "trouvions"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex05-q04",
+          "number": 4,
+          "prompt": "Il est naturel que je (connaître) __ cette ville. C’est ma ville natale!",
+          "source_raw_prompt": "Il est naturel que je (connaître) ________________ cette ville. C’est ma ville\n    natale!\n\n ",
+          "pdf_pages": [
+            169
+          ],
+          "answer": {
+            "source_key": "connaisse",
+            "accepted": [
+              "connaisse"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex05-q05",
+          "number": 5,
+          "prompt": "Il est essentiel que nous (acheter) __ un nouvel ordinateur.",
+          "source_raw_prompt": "Il est essentiel que nous (acheter) ________________ un nouvel ordinateur.\n\n ",
+          "pdf_pages": [
+            169
+          ],
+          "answer": {
+            "source_key": "achetions",
+            "accepted": [
+              "achetions"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex05-q06",
+          "number": 6,
+          "prompt": "Il est dommage que ce logiciel (ne pas être) __ plus performant.",
+          "source_raw_prompt": "Il est dommage que ce logiciel (ne pas être) ________________ plus\n    performant.\n\n ",
+          "pdf_pages": [
+            169
+          ],
+          "answer": {
+            "source_key": "ne soit pas",
+            "accepted": [
+              "ne soit pas"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex05-q07",
+          "number": 7,
+          "prompt": "Elle reste chez elle de peur qu’il y (avoir) __ une tempête de neige.",
+          "source_raw_prompt": "Elle reste chez elle de peur qu’il y (avoir) ________________ une tempête de\n    neige.\n\n ",
+          "pdf_pages": [
+            169
+          ],
+          "answer": {
+            "source_key": "ait",
+            "accepted": [
+              "ait"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex05-q08",
+          "number": 8,
+          "prompt": "Nous vous contacterons avant que vous (envoyer) __ la rédaction du contrat.",
+          "source_raw_prompt": "Nous vous contacterons avant que vous (envoyer) ________________ la\n    rédaction du contrat.\n\n ",
+          "pdf_pages": [
+            169
+          ],
+          "answer": {
+            "source_key": "envoyiez",
+            "accepted": [
+              "envoyiez"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex05-q09",
+          "number": 9,
+          "prompt": "Vérifiez les chiffres afin qu’on (pouvoir) __ communiquer le rapport.",
+          "source_raw_prompt": "Vérifiez les chiffres afin qu’on (pouvoir) ________________ communiquer le\n    rapport.\n\n",
+          "pdf_pages": [
+            169
+          ],
+          "answer": {
+            "source_key": "puisse",
+            "accepted": [
+              "puisse"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex05-q10",
+          "number": 10,
+          "prompt": "Bien que son livre (être) __ bien écrit, il ne trouvera guère de lecteurs.",
+          "source_raw_prompt": "Bien que son livre (être) ________________ bien écrit, il ne trouvera guère de\n    lecteurs.\n\n\n\n\n ",
+          "pdf_pages": [
+            169
+          ],
+          "answer": {
+            "source_key": "soit",
+            "accepted": [
+              "soit"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch13-s03"
+      ]
+    },
+    {
+      "id": "ch13-ex06",
+      "source": {
+        "chapter": 13,
+        "exercise": "13.6",
+        "pdf_pages": [
+          169,
+          170
+        ]
+      },
+      "topic_ids": [
+        "ch13-t03"
+      ],
+      "instruction": "Traduire les phrases suivantes en utilisant vous si nécessaire.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch13-ex06-q01",
+          "number": 1,
+          "prompt": "Let’s hope he is right! __",
+          "source_raw_prompt": "Let’s hope he is right!\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            169
+          ],
+          "answer": {
+            "source_key": "Pourvu qu’il ait raison!",
+            "accepted": [
+              "Pourvu qu’il ait raison!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex06-q02",
+          "number": 2,
+          "prompt": "She is happy he can study French. __",
+          "source_raw_prompt": "She is happy he can study French.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            169
+          ],
+          "answer": {
+            "source_key": "Elle est heureuse qu’il puisse étudier le français.",
+            "accepted": [
+              "Elle est heureuse qu’il puisse étudier le français."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex06-q03",
+          "number": 3,
+          "prompt": "It is possible you can buy this software here. __",
+          "source_raw_prompt": "It is possible you can buy this software here.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            169
+          ],
+          "answer": {
+            "source_key": "Il est possible que vous puissiez acheter ce logiciel ici.",
+            "accepted": [
+              "Il est possible que vous puissiez acheter ce logiciel ici."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex06-q04",
+          "number": 4,
+          "prompt": "Call us before we go to France! __",
+          "source_raw_prompt": "Call us before we go to France!\n   _____________________________________________________________   ",
+          "pdf_pages": [
+            169,
+            170
+          ],
+          "answer": {
+            "source_key": "Appelez-nous avant que nous allions en France!",
+            "accepted": [
+              "Appelez-nous avant que nous allions en France!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex06-q05",
+          "number": 5,
+          "prompt": "It is strange he is late. __",
+          "source_raw_prompt": "It is strange he is late.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            170
+          ],
+          "answer": {
+            "source_key": "Il est étrange qu’il soit en retard.",
+            "accepted": [
+              "Il est étrange qu’il soit en retard."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex06-q06",
+          "number": 6,
+          "prompt": "Let’s hope he can come! __",
+          "source_raw_prompt": "Let’s hope he can come!\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            170
+          ],
+          "answer": {
+            "source_key": "Pourvu qu’il puisse venir!",
+            "accepted": [
+              "Pourvu qu’il puisse venir!"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex06-q07",
+          "number": 7,
+          "prompt": "She wants you to buy this computer. __",
+          "source_raw_prompt": "She wants you to buy this computer.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            170
+          ],
+          "answer": {
+            "source_key": "Elle veut que vous achetiez cet ordinateur.",
+            "accepted": [
+              "Elle veut que vous achetiez cet ordinateur."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex06-q08",
+          "number": 8,
+          "prompt": "Although he is tired, he reads the newspaper. __",
+          "source_raw_prompt": "Although he is tired, he reads the newspaper.\n    _____________________________________________________________\n\n   ",
+          "pdf_pages": [
+            170
+          ],
+          "answer": {
+            "source_key": "Bien qu’il soit fatigué, il lit le journal.",
+            "accepted": [
+              "Bien qu’il soit fatigué, il lit le journal."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex06-q09",
+          "number": 9,
+          "prompt": "Although he makes a few mistakes, his French is very good. __",
+          "source_raw_prompt": "Although he makes a few mistakes, his French is very good.\n    _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            170
+          ],
+          "answer": {
+            "source_key": "Bien qu’il fasse quelques fautes, son français est très bon.",
+            "accepted": [
+              "Bien qu’il fasse quelques fautes, son français est très bon."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex06-q10",
+          "number": 10,
+          "prompt": "It is the most beautiful city I know. __",
+          "source_raw_prompt": "It is the most beautiful city I know.\n    _____________________________________________________________",
+          "pdf_pages": [
+            170,
+            171
+          ],
+          "answer": {
+            "source_key": "C’est la plus belle ville que je connaisse.",
+            "accepted": [
+              "C’est la plus belle ville que je connaisse."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch13-s03"
+      ]
+    },
+    {
+      "id": "ch13-ex07",
+      "source": {
+        "chapter": 13,
+        "exercise": "13.7",
+        "pdf_pages": [
+          171
+        ]
+      },
+      "topic_ids": [
+        "ch13-t04"
+      ],
+      "instruction": "Mettre les verbes entre parenthèses au passé du subjonctif.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch13-ex07-q01",
+          "number": 1,
+          "prompt": "Je doute que tu (lire) __ tout le livre.",
+          "source_raw_prompt": "Je doute que tu (lire) ________________ tout le livre.\n\n ",
+          "pdf_pages": [
+            171
+          ],
+          "answer": {
+            "source_key": "aies lu",
+            "accepted": [
+              "aies lu"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex07-q02",
+          "number": 2,
+          "prompt": "Nous sommes ravis que vous (pouvoir) __ être parmi nous.",
+          "source_raw_prompt": "Nous sommes ravis que vous (pouvoir) ________________ être parmi nous.\n\n ",
+          "pdf_pages": [
+            171
+          ],
+          "answer": {
+            "source_key": "ayez pu",
+            "accepted": [
+              "ayez pu"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex07-q03",
+          "number": 3,
+          "prompt": "Il est possible que le logiciel (être) __ défectueux.",
+          "source_raw_prompt": "Il est possible que le logiciel (être) ________________ défectueux.\n\n ",
+          "pdf_pages": [
+            171
+          ],
+          "answer": {
+            "source_key": "ait été",
+            "accepted": [
+              "ait été"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex07-q04",
+          "number": 4,
+          "prompt": "Je suis surpris que vous (ne pas voir) __ ce film.",
+          "source_raw_prompt": "Je suis surpris que vous (ne pas voir) ________________ ce film.\n\n ",
+          "pdf_pages": [
+            171
+          ],
+          "answer": {
+            "source_key": "n’ayez pas vu",
+            "accepted": [
+              "n’ayez pas vu"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex07-q05",
+          "number": 5,
+          "prompt": "Il a peur que Charles (manquer) __ le train.",
+          "source_raw_prompt": "Il a peur que Charles (manquer) ________________ le train.\n\n ",
+          "pdf_pages": [
+            171
+          ],
+          "answer": {
+            "source_key": "ait manqué",
+            "accepted": [
+              "ait manqué"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex07-q06",
+          "number": 6,
+          "prompt": "Il n’est pas certain qu’il (réussir) __ à son examen.",
+          "source_raw_prompt": "Il n’est pas certain qu’il (réussir) ________________ à son examen.\n\n ",
+          "pdf_pages": [
+            171
+          ],
+          "answer": {
+            "source_key": "ait réussi",
+            "accepted": [
+              "ait réussi"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex07-q07",
+          "number": 7,
+          "prompt": "Je crains qu’il (plagier) __ mes idées.",
+          "source_raw_prompt": "Je crains qu’il (plagier) ________________ mes idées.\n\n ",
+          "pdf_pages": [
+            171
+          ],
+          "answer": {
+            "source_key": "ait plagié",
+            "accepted": [
+              "ait plagié"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex07-q08",
+          "number": 8,
+          "prompt": "Il a envoyé le courriel avant que je (pouvoir) __ ajouter un mot.",
+          "source_raw_prompt": "Il a envoyé le courriel avant que je (pouvoir) ________________ ajouter un\n   mot.\n\n ",
+          "pdf_pages": [
+            171
+          ],
+          "answer": {
+            "source_key": "j’aie pu",
+            "accepted": [
+              "j’aie pu"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex07-q09",
+          "number": 9,
+          "prompt": "Il est douteux qu’ils (lire) __ tous les dossiers.",
+          "source_raw_prompt": "Il est douteux qu’ils (lire) ________________ tous les dossiers.\n\n",
+          "pdf_pages": [
+            171
+          ],
+          "answer": {
+            "source_key": "aient lu",
+            "accepted": [
+              "aient lu"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex07-q10",
+          "number": 10,
+          "prompt": "Je suis content que vous (dire) __ la vérité.",
+          "source_raw_prompt": "Je suis content que vous (dire) ________________ la vérité.\n\n\n\n\n ",
+          "pdf_pages": [
+            171
+          ],
+          "answer": {
+            "source_key": "ayez dit",
+            "accepted": [
+              "ayez dit"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "morphology_or_slot",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch13-s04"
+      ]
+    },
+    {
+      "id": "ch13-ex08",
+      "source": {
+        "chapter": 13,
+        "exercise": "13.8",
+        "pdf_pages": [
+          171,
+          172
+        ]
+      },
+      "topic_ids": [
+        "ch13-t04"
+      ],
+      "instruction": "Changer du présent au passé du subjonctif.",
+      "interaction_type": "free_response",
+      "questions": [
+        {
+          "id": "ch13-ex08-q01",
+          "number": 1,
+          "prompt": "Il est content que nous partions. __",
+          "source_raw_prompt": "Il est content que nous partions.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            171
+          ],
+          "answer": {
+            "source_key": "Il est content que nous soyons parti(e)s.",
+            "accepted": [
+              "Il est content que nous soyons parti(e)s."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex08-q02",
+          "number": 2,
+          "prompt": "Nous sommes ravis que tu puisses venir avec nous. __",
+          "source_raw_prompt": "Nous sommes ravis que tu puisses venir avec nous.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            171
+          ],
+          "answer": {
+            "source_key": "Nous sommes ravis que tu aies pu venir avec nous.",
+            "accepted": [
+              "Nous sommes ravis que tu aies pu venir avec nous."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex08-q03",
+          "number": 3,
+          "prompt": "Je ne crois pas qu’il aille à l’exposition. __",
+          "source_raw_prompt": "Je ne crois pas qu’il aille à l’exposition.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            171
+          ],
+          "answer": {
+            "source_key": "Je ne crois pas qu’il soit allé à l’exposition.",
+            "accepted": [
+              "Je ne crois pas qu’il soit allé à l’exposition."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex08-q04",
+          "number": 4,
+          "prompt": "Il doute qu’elle réussisse. __",
+          "source_raw_prompt": "Il doute qu’elle réussisse.   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            171,
+            172
+          ],
+          "answer": {
+            "source_key": "Il doute qu’elle ait réussi.",
+            "accepted": [
+              "Il doute qu’elle ait réussi."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex08-q05",
+          "number": 5,
+          "prompt": "Elle a peur qu’il ait un accident de moto. __",
+          "source_raw_prompt": "Elle a peur qu’il ait un accident de moto.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            172
+          ],
+          "answer": {
+            "source_key": "Elle a peur qu’il ait eu un accident de moto.",
+            "accepted": [
+              "Elle a peur qu’il ait eu un accident de moto."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex08-q06",
+          "number": 6,
+          "prompt": "Ils sont contents que Laurent se marie. __",
+          "source_raw_prompt": "Ils sont contents que Laurent se marie.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            172
+          ],
+          "answer": {
+            "source_key": "Ils sont contents que Laurent se soit marié.",
+            "accepted": [
+              "Ils sont contents que Laurent se soit marié."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex08-q07",
+          "number": 7,
+          "prompt": "Nous sommes désolés que votre sœur soit malade. __",
+          "source_raw_prompt": "Nous sommes désolés que votre sœur soit malade.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            172
+          ],
+          "answer": {
+            "source_key": "Nous sommes désolés que votre sœur ait été malade.",
+            "accepted": [
+              "Nous sommes désolés que votre sœur ait été malade."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex08-q08",
+          "number": 8,
+          "prompt": "Il est douteux qu’ils aillent en Patagonie. __",
+          "source_raw_prompt": "Il est douteux qu’ils aillent en Patagonie.\n   _____________________________________________________________\n\n ",
+          "pdf_pages": [
+            172
+          ],
+          "answer": {
+            "source_key": "Il est douteux qu’ils soient allés en Patagonie.",
+            "accepted": [
+              "Il est douteux qu’ils soient allés en Patagonie."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex08-q09",
+          "number": 9,
+          "prompt": "Il est regrettable que leurs enfants soient si peu reconnaissants. __",
+          "source_raw_prompt": "Il est regrettable que leurs enfants soient si peu reconnaissants.\n   _____________________________________________________________\n\n",
+          "pdf_pages": [
+            172
+          ],
+          "answer": {
+            "source_key": "Il est regrettable que leurs enfants aient été si peu reconnaissants.",
+            "accepted": [
+              "Il est regrettable que leurs enfants aient été si peu reconnaissants."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch13-ex08-q10",
+          "number": 10,
+          "prompt": "Il est incroyable que vous ne sachiez pas la réponse. __",
+          "source_raw_prompt": "Il est incroyable que vous ne sachiez pas la réponse.\n   _____________________________________________________________\n\n\n\n\n ",
+          "pdf_pages": [
+            172
+          ],
+          "answer": {
+            "source_key": "Il est incroyable que vous n’ayez pas su la réponse.",
+            "accepted": [
+              "Il est incroyable que vous n’ayez pas su la réponse."
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "semantic_review_required",
+        "publisher_key_is_exhaustive": false
+      },
+      "subtopic_ids": [
+        "ch13-s04"
+      ]
+    },
+    {
+      "id": "ch13-ex09",
+      "source": {
+        "chapter": 13,
+        "exercise": "13.9",
+        "pdf_pages": [
+          172
+        ]
+      },
+      "topic_ids": [
+        "ch13-t04"
+      ],
+      "instruction": "Faire correspondre les deux colonnes. ______",
+      "interaction_type": "matching",
+      "questions": [
+        {
+          "id": "ch13-ex09-q01",
+          "number": 1,
+          "prompt": "Je pense a. que nous ayons raté le dernier métro.",
+          "source_raw_prompt": "Je pense                   a. que nous ayons raté le dernier\n                                    métro.\n\n______ ",
+          "pdf_pages": [
+            172
+          ],
+          "answer": {
+            "source_key": "d",
+            "accepted": [
+              "d"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "a",
+            "text": "que nous ayons raté le dernier"
+          }
+        },
+        {
+          "id": "ch13-ex09-q02",
+          "number": 2,
+          "prompt": "Il est bizarre b. que leur fille ait obtenu son diplôme.",
+          "source_raw_prompt": "Il est bizarre              b. que leur fille ait obtenu son\n                                   diplôme.\n\n______ ",
+          "pdf_pages": [
+            172
+          ],
+          "answer": {
+            "source_key": "c",
+            "accepted": [
+              "c"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "b",
+            "text": "que leur fille ait obtenu son"
+          }
+        },
+        {
+          "id": "ch13-ex09-q03",
+          "number": 3,
+          "prompt": "Marie! J’ai bien peur c. que Jean ait refusé une telle offre!",
+          "source_raw_prompt": "Marie! J’ai bien peur     c. que Jean ait refusé une telle offre!\n\n______ ",
+          "pdf_pages": [
+            172
+          ],
+          "answer": {
+            "source_key": "a",
+            "accepted": [
+              "a"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "c",
+            "text": "que Jean ait refusé une telle offre!"
+          }
+        },
+        {
+          "id": "ch13-ex09-q04",
+          "number": 4,
+          "prompt": "Il est essentiel pour d. qu’il pleuvra demain. l’entreprise",
+          "source_raw_prompt": "Il est essentiel pour      d. qu’il pleuvra demain.\n   l’entreprise\n\n______ ",
+          "pdf_pages": [
+            172
+          ],
+          "answer": {
+            "source_key": "e",
+            "accepted": [
+              "e"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "d",
+            "text": "qu’il pleuvra demain."
+          }
+        },
+        {
+          "id": "ch13-ex09-q05",
+          "number": 5,
+          "prompt": "Ils sont ravis e. que vous assistiez à la conférence de presse.",
+          "source_raw_prompt": "Ils sont ravis              e. que vous assistiez à la conférence\n                                 de presse.",
+          "pdf_pages": [
+            172
+          ],
+          "answer": {
+            "source_key": "b 14 The infinitive mood",
+            "accepted": [
+              "b 14 The infinitive mood"
+            ],
+            "review_status": "publisher_source_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "e",
+            "text": "que vous assistiez à la conférence"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 5,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      },
+      "grading_policy": {
+        "strategy": "choice_label",
+        "publisher_key_is_exhaustive": true
+      },
+      "subtopic_ids": [
+        "ch13-s04"
+      ],
+      "choices": [
+        {
+          "label": "a",
+          "text": "que nous ayons raté le dernier"
+        },
+        {
+          "label": "b",
+          "text": "que leur fille ait obtenu son"
+        },
+        {
+          "label": "c",
+          "text": "que Jean ait refusé une telle offre!"
+        },
+        {
+          "label": "d",
+          "text": "qu’il pleuvra demain."
+        },
+        {
+          "label": "e",
+          "text": "que vous assistiez à la conférence"
+        }
+      ]
+    }
+  ]
+}

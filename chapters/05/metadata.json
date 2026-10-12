@@ -1,0 +1,118 @@
+{
+  "chapter": 5,
+  "title": "Chapter 05",
+  "source": {
+    "pdf_pages": [
+      73,
+      80
+    ],
+    "source_sha256": "297b92bc48e075449713c3b408ccf47de2466cfc6c4f4a25687a2a974276ae4d",
+    "answer_key_pdf_pages": [
+      503,
+      504
+    ]
+  },
+  "topics": [
+    {
+      "id": "ch05-t01",
+      "title": "The verb devoir (to have to, must)",
+      "exercise_ids": [
+        "ch05-ex01",
+        "ch05-ex02",
+        "ch05-ex03"
+      ]
+    },
+    {
+      "id": "ch05-t02",
+      "title": "Il y a (there is, there are)",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch05-t03",
+      "title": "Il s’agit de (it is a matter of, it’s about)",
+      "exercise_ids": []
+    },
+    {
+      "id": "ch05-t04",
+      "title": "Verbs ending in -eindre and -aindre",
+      "exercise_ids": [
+        "ch05-ex04",
+        "ch05-ex05"
+      ]
+    }
+  ],
+  "exercise_ids": [
+    "ch05-ex01",
+    "ch05-ex02",
+    "ch05-ex03",
+    "ch05-ex04",
+    "ch05-ex05"
+  ],
+  "question_total": 45,
+  "validation": {
+    "source_pages": 8,
+    "source_chars": 10123,
+    "source_partition_complete": true,
+    "exercise_group_markers_detected": 5,
+    "questions_structured": 45,
+    "answer_key_entries_associated": 45,
+    "editorial_visual_review": "pending_glyph_by_glyph_check",
+    "theory_semantic_format": "partially_indexed_source_text_preserved",
+    "theory_source_segments": 2,
+    "text_semantic_format": "source-aligned_markdown_fenced_text_pending_table_visual_proof",
+    "answer_key_count": 45
+  },
+  "subtopics": [
+    {
+      "id": "ch05-s01",
+      "title": "The verb devoir (to have to, must)",
+      "parent_topic_id": "ch05-t01",
+      "pdf_pages": [
+        73,
+        73
+      ],
+      "exercise_ids": [
+        "ch05-ex01",
+        "ch05-ex02",
+        "ch05-ex03"
+      ],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch05-s02",
+      "title": "Il y a (there is, there are)",
+      "parent_topic_id": "ch05-t02",
+      "pdf_pages": [
+        77,
+        77
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch05-s03",
+      "title": "Il s’agit de (it is a matter of, it’s about)",
+      "parent_topic_id": "ch05-t03",
+      "pdf_pages": [
+        77,
+        77
+      ],
+      "exercise_ids": [],
+      "kind": "grammar"
+    },
+    {
+      "id": "ch05-s04",
+      "title": "Verbs ending in -eindre and -aindre",
+      "parent_topic_id": "ch05-t04",
+      "pdf_pages": [
+        78,
+        78
+      ],
+      "exercise_ids": [
+        "ch05-ex04",
+        "ch05-ex05"
+      ],
+      "kind": "grammar"
+    }
+  ]
+}

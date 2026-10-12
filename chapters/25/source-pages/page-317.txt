@@ -1,0 +1,35 @@
+ un magasin d’appareils photo            a camera store
+ un magasin de chaussures               a shoe shop
+ un magasin de disques                  a record store
+ un magasin de jouets                   a toy store
+ un(e) marchand(e) au détail             a retailer
+ un(e) marchand(e) de gros               a wholesaler
+ un(e) marchand(e) de journaux          a newspaper dealer
+ un(e) marchand(e) de légumes           a produce dealer
+ un(e) marchand(e) de poisson            a fishmonger
+ un(e) marchand(e) de tableaux           an art dealer
+ un(e) marchand(e) de vin                a wine merchant
+ un(e) libraire                          a bookseller
+ une librairie                          a bookstore
+ un(e) opticien(ne)                      an optician
+ une papeterie                         a stationery store
+ une pharmacie                        a pharmacy
+ un(e) pharmacien(ne)                   a pharmacist
+ un pâtissier, une pâtissière               a pastry cook
+ une poissonnerie                       a fish market
+ une quincaillerie                       a hardware store
+ un salon de coiffure                    a hairdressing salon
+ un supermarché                       a supermarket
+ un pressing, une teinturerie              a dry cleaner
+
+
+Expressing duration
+Remember: If you are asking a question about the duration of an action that began in
+the past and still continues in the present, you have several options: depuis, il y a...
+que, or cela (ça) fait... que, used along with the duration. Note that French uses a
+present tense verb whereas English uses the past.
+   Let’s review depuis. To ask a question about the duration of an action, use
+Depuis quand? (Since when?) or Depuis combien de temps? (How long?)
+
+      Depuis quand (Depuis combien de temps) Since when has Julie been a
+           Julie est-elle pharmacienne?              pharmacist?

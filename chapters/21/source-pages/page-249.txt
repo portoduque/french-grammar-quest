@@ -1,0 +1,31 @@
+un acteur, une actrice                 an actor, an actress
+un(e) architecte                      an architect
+un(e) artiste                         an artist
+un(e) avocat(e)                       a lawyer
+un coiffeur, une coiffeuse              a hairdresser, a barber
+un(e) commerçant(e)                  a store owner
+un(e) comptable                      an accountant
+un cuisinier, une cuisinière             a cook
+un(e) dentiste                        a dentist
+un directeur, une directrice            a manager
+un(e) écrivain(e)                     a writer
+un homme, une femme d’affaires       a businessman, -woman
+un(e) fleuriste                        a florist
+un infirmier, une infirmière            a (hospital) nurse
+un(e) informaticien(ne)                a computer specialist
+un ingénieur                         an engineer
+un(e) journaliste                     a journalist
+un mannequin                       a model
+un médecin                          a doctor, a physician
+un metteur en scène                  a film/theater director
+un(e) musicien(ne)                    a musician
+un ouvrier, une ouvrière               a (factory) worker
+un(e) pharmacien(ne)                 a pharmacist
+un(e) photographe                    a photographer
+un(e) pilote                          a pilot
+un plombier                         a plumber
+un pompier                          a firefighter
+un professeur                        a teacher, a professor
+un rédacteur, une rédactrice           an editor
+une sage-femme                      a midwife
+un serveur, une serveuse               a waiter, a waitress

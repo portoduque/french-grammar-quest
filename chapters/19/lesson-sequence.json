@@ -1,0 +1,96 @@
+[
+  {
+    "pdf_page": 219,
+    "kind": "theory",
+    "content_id": "ch19-p219-f01",
+    "page_char_start": 0,
+    "page_char_end": 953,
+    "chars": 953
+  },
+  {
+    "pdf_page": 220,
+    "kind": "theory",
+    "content_id": "ch19-p220-f01",
+    "page_char_start": 0,
+    "page_char_end": 1200,
+    "chars": 1200
+  },
+  {
+    "pdf_page": 220,
+    "kind": "exercise",
+    "content_id": "ch19-p220-f02",
+    "page_char_start": 1200,
+    "page_char_end": 1622,
+    "chars": 422,
+    "exercise_id": "ch19-ex01"
+  },
+  {
+    "pdf_page": 221,
+    "kind": "exercise",
+    "content_id": "ch19-p221-f01",
+    "page_char_start": 0,
+    "page_char_end": 666,
+    "chars": 666,
+    "exercise_id": "ch19-ex01"
+  },
+  {
+    "pdf_page": 221,
+    "kind": "theory",
+    "content_id": "ch19-p221-f02",
+    "page_char_start": 666,
+    "page_char_end": 1470,
+    "chars": 804
+  },
+  {
+    "pdf_page": 222,
+    "kind": "theory",
+    "content_id": "ch19-p222-f01",
+    "page_char_start": 0,
+    "page_char_end": 1364,
+    "chars": 1364
+  },
+  {
+    "pdf_page": 223,
+    "kind": "theory",
+    "content_id": "ch19-p223-f01",
+    "page_char_start": 0,
+    "page_char_end": 1487,
+    "chars": 1487
+  },
+  {
+    "pdf_page": 223,
+    "kind": "exercise",
+    "content_id": "ch19-p223-f02",
+    "page_char_start": 1487,
+    "page_char_end": 1547,
+    "chars": 60,
+    "exercise_id": "ch19-ex02"
+  },
+  {
+    "pdf_page": 224,
+    "kind": "exercise",
+    "content_id": "ch19-p224-f01",
+    "page_char_start": 0,
+    "page_char_end": 1020,
+    "chars": 1020,
+    "exercise_id": "ch19-ex02"
+  },
+  {
+    "pdf_page": 224,
+    "kind": "exercise",
+    "content_id": "ch19-p224-f02",
+    "page_char_start": 1020,
+    "page_char_end": 1232,
+    "chars": 212,
+    "exercise_id": "ch19-ex03"
+  },
+  {
+    "pdf_page": 225,
+    "kind": "exercise",
+    "content_id": "ch19-p225-f01",
+    "page_char_start": 0,
+    "page_char_end": 849,
+    "chars": 849,
+    "exercise_id": "ch19-ex03"
+  }
+]

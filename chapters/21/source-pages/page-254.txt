@@ -1,0 +1,38 @@
+Indirect object pronouns
+Now that you have mastered the pronom objet direct, let’s take a look at the
+pronom objet indirect (indirect object pronoun).
+   In English there are five indirect object pronouns me, you, him, her, us. As
+always, French distinguishes between an informal you (te) and a formal or plural you
+(vous). The French indirect object pronoun does not distinguish between gender; lui
+and leur replace both masculine and feminine nouns. In French, the indirect object
+pronoun replaces only animate indirect objects (people, animals). Inanimate ideas
+and things are replaced with the indirect object pronouns y and en, which will be
+discussed later in this chapter. Let’s look at the indirect object pronouns:
+
+
+       SINGULAR                      PLURAL
+     me (m’)    me                nous   us
+        te (t’)       you (familiar)       vous   you (formal or plural)
+        lui          him, her             leur   them (masc. and fem.)
+
+  The object is called indirect when the verb is controlled by a preposition (parler
+à, répondre à, écrire à, etc.). The indirect object pronoun is placed before the
+conjugated verb and before avoir in the compound tenses. Although the past
+participle agrees in gender and number with the preceding direct object, the past
+participle never agrees with an indirect object pronoun. The indirect object pronouns
+me and te become m’ and t’ before vowels and mute h. Make sure to distinguish
+between leur, the indirect object pronoun, and leur(s), the possessive adjective.
+
+      Tu parles au journaliste.           You are talking to the journalist.
+      Tu lui parles.                     You are talking to him.
+      Tu réponds à Andrée.              You answer Andrée.
+      Tu lui réponds.                    You answer her.
+      Vous écrivez à l’agent.             You write to the agent.
+      Vous lui écrivez.                  You write to him.
+      Vous expliquez la situation aux      You explain the situation to the
+           clients.                             customers.
+      Vous leur expliquez la situation.     You explain the situation to them.
+       Elle nous enverra une confirmation.   She’ll send us a confirmation.
+       Je vous donnerai un jour de congé.      I’ll give you a day off.
+          Il me rendra le livre demain.          He’ll return the book to me tomorrow.
+         Ils t’apporteront des fleurs.            They’ll bring you some flowers.
