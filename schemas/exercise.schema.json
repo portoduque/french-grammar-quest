@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "French Grammar Chapter Exercises",
+  "type": "object",
+  "required": [
+    "chapter",
+    "exercises",
+    "status"
+  ],
+  "properties": {
+    "chapter": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 28
+    },
+    "status": {
+      "type": "string"
+    },
+    "exercises": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "source",
+          "raw_text",
+          "questions",
+          "transcription_status"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^ch[0-9]{2}-ex[0-9]{2}$"
+          },
+          "source": {
+            "type": "object",
+            "required": [
+              "chapter",
+              "exercise",
+              "pdf_pages"
+            ],
+            "properties": {
+              "chapter": {
+                "type": "integer"
+              },
+              "exercise": {
+                "type": "string"
+              },
+              "pdf_pages": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              }
+            }
+          },
+          "raw_text": {
+            "type": "string"
+          },
+          "questions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "prompt",
+                "answer"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "prompt": {
+                  "type": "string"
+                },
+                "answer": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "transcription_status": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}

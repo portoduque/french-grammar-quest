@@ -1,0 +1,13 @@
+# Copyrighted source and generated private conversions
+*.pdf
+private/
+source-pages/
+**/answer-key-source.txt
+**/theory.md
+**/exercises.json
+*.zip
+.env
+.env.*
+!.env.example
+__pycache__/
+.pytest_cache/
