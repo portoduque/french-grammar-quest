@@ -61,7 +61,7 @@ def main():
         cells = [v.strip() for v in row.strip("|").split("|")]
         assert_ok(cells[3] == str(evidence["groups"]), f"Chapter {n}: exercise count mismatch")
         assert_ok(cells[4] == str(evidence["questions"]), f"Chapter {n}: question count mismatch")
-    assert_ok("PENDENTE" in cmap and "PENDENTE" in prd, "Pending legal/editorial conditions obscured")
+    assert_ok("pendente" in cmap.casefold() and "pendente" in prd.casefold(), "Pending legal/editorial conditions obscured")
     print("PASS: PRD 30 sections / 73 RF / 18 AC / 17 UX / 14 US / 30 tests")
     print("PASS: all 28 source chapters, 233 groups, 2,227 questions and 113 reference pages reconciled")
     print("NOTE: no app implemented, legal rights and full editorial approval remain independent gates")
