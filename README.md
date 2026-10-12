@@ -38,7 +38,7 @@ The optional `jsonschema` package enables full schema checking. The private pack
 ## Phase A scope and known exceptions
 
 - Original PDF page 28 contains clipped right-side English translation examples; missing text has **not** been invented.
-- Chapter 1 exercise 1·6 question 6 has a publisher answer-key scope mismatch: printed `J’habite` vs a single blank following `Je`. The source key is preserved and the slot answer is identified with a review flag.
+- Chapter 1 exercise 1·6 question 6 prints `Je` before a blank, while the source key is `J’habite`. Correct gameplay must handle the `Je` → `J’` elision. The original key is preserved and the item is flagged.
 - Publisher answers may not exhaust valid paraphrases; avoid using strict single-string grading for free responses without an editorial review.
 - Chapter 26 contains a duplicated/misnumbered exercise marker requiring later visual confirmation.
 - This is a machine-audited extraction, not a full manual proofreading certificate for every glyph.
