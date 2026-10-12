@@ -204,6 +204,29 @@
                     }
                   },
                   "additionalProperties": false
+                },
+                "editorial_recovery": {
+                  "type": "object",
+                  "required": [
+                    "moved_theory_to",
+                    "source_text_retained_in",
+                    "status"
+                  ],
+                  "properties": {
+                    "moved_theory_to": {
+                      "type": "string",
+                      "const": "theory.md"
+                    },
+                    "source_text_retained_in": {
+                      "type": "string",
+                      "const": "source_raw_prompt"
+                    },
+                    "status": {
+                      "type": "string",
+                      "const": "recovered_requires_visual_editing"
+                    }
+                  },
+                  "additionalProperties": false
                 }
               },
               "additionalProperties": false
