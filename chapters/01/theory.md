@@ -352,69 +352,47 @@ To make a general statement and to describe ongoing actions in the present. It c
 
 <!-- PDF page 26 -->
 
-| French | English |
-| --- | --- |
-| Valérie parle à son ami | Valérie is talking (talks, does talk) to her |
-| Ludovic. | friend Ludovic. |
-
-Il regarde les étoiles dans He is looking (looks, does look) at the stars
+#### General statements and ongoing present actions
 
 | French | English |
 | --- | --- |
-| le ciel. | in the sky. |
+| Valérie parle à son ami Ludovic. | Valérie is talking (talks, does talk) to her friend Ludovic. |
+| Il regarde les étoiles dans le ciel. | He is looking (looks, does look) at the stars in the sky. |
 
-To indicate an action in the near future
+#### Action in the near future
 
 | French | English |
 | --- | --- |
 | Il part demain soir. | He’ll leave tomorrow night. |
-| On parle de cela en fin de | We’ll discuss this at the end of the |
-| semaine. | week. |
+| On parle de cela en fin de semaine. | We’ll discuss this at the end of the week. |
 
-To express a habitual action
+#### Habitual action
 
 | French | English |
 | --- | --- |
 | Tous les jours, le soleil se lève. | The sun rises every day. |
-| D’habitude, j’achète la viande dans | Usually I buy meat in this |
-| cette boucherie. | butcher shop. |
+| D’habitude, j’achète la viande dans cette boucherie. | Usually I buy meat in this butcher shop. |
 
-To describe a past action closely connected to the present
-
-Claude revient d’Asie et c’est la Claude just returned from Asia and
+#### Past action closely connected to the present
 
 | French | English |
 | --- | --- |
-| pagaille au bureau! | chaos started in the office! |
-| À peine rentrés et les problèmes | They have just come back and the |
-| commencent déjà. | problems have already started. |
+| Claude revient d’Asie et c’est la pagaille au bureau! | Claude just returned from Asia and chaos started in the office! |
+| À peine rentrés et les problèmes commencent déjà. | They have just come back and the problems have already started. |
 
-To express a historical fact
-
-Flaubert publie Madame Bovary Flaubert published Madame Bovary
+#### Historical fact
 
 | French | English |
 | --- | --- |
-| et c’est le scandale! | and the scandal broke out! |
+| Flaubert publie Madame Bovary et c’est le scandale! | Flaubert published Madame Bovary and the scandal broke out! |
+| Le président arrive en Chine et c’est la débâcle! | The president arrived in China and it was a complete disaster! |
 
-Le président arrive en Chine et The president arrived in China and it
-
-| French | English |
-| --- | --- |
-| c’est la débâcle! | was a complete disaster! |
-
-To describe past events more dramatically
+#### Past events described dramatically
 
 | French | English |
 | --- | --- |
-| La reine d’Espagne avance vers | The queen of Spain moved toward |
-| le trône. | the throne. |
-
-Et son pire ennemi entre dans la And his worst enemy walked into the
-
-| French | English |
-| --- | --- |
-| salle. | room. |
+| La reine d’Espagne avance vers le trône. | The queen of Spain moved toward the throne. |
+| Et son pire ennemi entre dans la salle. | And his worst enemy walked into the room. |
 
 <!-- subtopic_id: ch01-s12 -->
 
@@ -426,45 +404,26 @@ To indicate an ongoing action, être en train de + the infinitive form of the ve
 
 | French | English |
 | --- | --- |
-| Un instant, s’il vous plaît, je suis en | One moment, please, I am |
-| train de parler à Rémi. | talking to Rémi. |
+| Un instant, s’il vous plaît, je suis en train de parler à Rémi. | One moment, please, I am talking to Rémi. |
 | Qu’est-ce que tu es en train de faire? | What are you doing? |
 
-<!-- PDF page 28: English right column clipped in source -->
+<!-- PDF page 28: the original PDF visibly clips English in its right column -->
 
 <!-- subtopic_id: ch01-s13 -->
 
 ### One more use of the present tense: depuis
 
-
 The present tense is used to express an action that began in the past and continues in the present. Note that in English, the past tense is used. There are different ways to formulate the questions, using either depuis, il y a... que, cela (ça) fait... que. Let’s start with depuis. To ask a question about the duration of an action, use depuis quand (since when) or depuis combien de temps (how long).
 
-| French | English |
+| French | English (as extractable from original PDF) |
 | --- | --- |
-| Depuis combien de temps habites-tu à | How long have you been living in |
-| Nice? | Nice? |
-| —J’habite à Nice depuis trois ans. | —I have been living in Nice for thre |
+| Depuis combien de temps habites-tu à Nice? | How long have you been living in Nice? |
+| —J’habite à Nice depuis trois ans. | —I have been living in Nice for thre… years. [source clipped] |
+| Depuis quand travaillez-vous chez L’Oréal? | How long have you been working a… L’Oréal? [source clipped] |
+| —Je travaille chez L’Oréal depuis trois mois. | —I have been working at L’Oréal f… three months. [source clipped] |
+| Il y a combien de temps que vous connaissez M. Blier? | How long have you known Mr. Blie… [source clipped] |
+| —Il y a quelques années que je connais M. Blier. | —I have known Mr. Blier for a few years. |
+| Ça fait combien de temps que vous avez ce dictionnaire? | How long have you had this dictionary? |
+| —Ça fait cinq ans que j’ai ce dictionnaire. | —I have had this dictionary for five years. |
 
-years.
-
-| French | English |
-| --- | --- |
-| Depuis quand travaillez-vous chez | How long have you been working a |
-| L’Oréal? | L’Oréal? |
-| —Je travaille chez L’Oréal depuis trois | —I have been working at L’Oréal f |
-| mois. | three months. |
-| Il y a combien de temps que vous | How long have you known Mr. Blie |
-
-connaissez M. Blier? —Il y a quelques années que je connais —I have known Mr. Blier for a few
-
-| French | English |
-| --- | --- |
-| M. Blier. | years. |
-
-Ça fait combien de temps que vous avez How long have you had this
-
-| French | English |
-| --- | --- |
-| ce dictionnaire? | dictionary? |
-| —Ça fait cinq ans que j’ai ce | —I have had this dictionary for five |
-| dictionnaire. | years. |
+> The clipped English glosses are incomplete in the source. Do not use them as validated model answers. The French examples and the complete original extracted text are preserved in `theory-source.md` and `source-pages/page-028.txt`.
