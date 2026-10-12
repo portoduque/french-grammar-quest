@@ -1,19 +1,19 @@
-# Phase A coverage — tracked private corpus
+# Phase A — coverage after chapter-01 screenshot fixes
 
-| Scope | Status |
+| Component | Verified outcome |
 |---|---|
-| Complete source index | 527 PDF pages indexed |
-| Chapter-level inventory | 28/28 chapter numbers, titles and ranges |
-| Exercise-group markers across book | 233 (including duplicate/misnumber in chapter 26) |
-| Chapter 1 pages | 17/17 (PDF 14–30) stored in `chapters/01/source-pages/` |
-| Chapter 1 theory | 3 primary topics, mapped text fragments |
-| Chapter 1 exercise groups | 10/10 |
-| Chapter 1 numbered questions | 100/100 |
-| Chapter 1 publisher-key entries | 100/100 |
-| Text partition audit | 24,378/24,378 selectable-text characters accounted for |
-| Source visual editorial review | Not completely certified; page 28 limitation flagged |
-| Chapter 02–28 individual questions | Not converted (Phase B) |
+| Whole-book index | 527 PDF pages; 28 chapters |
+| Exercise markers in full PDF | 233 (including the chapter-26 duplicate/misnumbering anomaly) |
+| Chapter 01 source pages | 17/17 (14–30) |
+| Chapter 01 exercise groups | 10/10 |
+| Chapter 01 source questions + keys | **100/100** each; source fingerprint locked |
+| Chapter 01 taxonomy | 3 parent topics + **13 subtopics** |
+| Chapter 01 source fragment order | **31 unique fragment IDs**; zero gaps/overlaps |
+| Chapter 01 theory rendering | Semantic Markdown tables; original version preserved |
+| PDF page 28 | Original clipping documented; no text invented |
+| Full human word-by-word proof | **Not certified** |
+| Chapters 02–28 individual question conversion | Not started (future phase) |
 
-**Phase A structured pilot is machine-validated.** This does not guarantee page-image glyph fidelity or exhaustively accepted translations. Details: `reports/chapter01-validation.md`.
+The 24,378 extracted source-page characters remain traceable through `source-pages/` and `lesson-sequence.json`. This proves source-text coverage, not PDF rendering accuracy.
 
-The original pilot package and its text files are now **tracked in this private repository** rather than being provided only as a separate archive. Do not make the repository public.
+The historical archive in `content/archives/` is a baseline snapshot; **live `chapters/01/` files are authoritative**.
