@@ -1,0 +1,776 @@
+{
+  "schema_version": "0.1.0",
+  "status": "inventory_machine_checked_manual_review_pending",
+  "language_base": "en",
+  "language_target": "fr",
+  "source": {
+    "title": "Practice Makes Perfect: Complete French Grammar",
+    "author": "Annie Heminway",
+    "edition": "Premium Fifth Edition",
+    "publisher": "McGraw Hill",
+    "pdf_page_count": 527,
+    "source_sha256": "297b92bc48e075449713c3b408ccf47de2466cfc6c4f4a25687a2a974276ae4d",
+    "copyrighted": true
+  },
+  "chapters": [
+    {
+      "id": "ch01",
+      "number": 1,
+      "title": "The present tense of regular -er verbs",
+      "pdf_page_start": 14,
+      "pdf_page_end": 30,
+      "topics": [
+        {
+          "id": "ch01-t01",
+          "title": "Regular -er verbs in the present"
+        },
+        {
+          "id": "ch01-t02",
+          "title": "-er verbs with spelling and stem changes"
+        },
+        {
+          "id": "ch01-t03",
+          "title": "When is the present tense used in French?"
+        }
+      ],
+      "exercise_group_markers_detected": 10,
+      "status": "inventoried_not_transcribed",
+      "known_issues": []
+    },
+    {
+      "id": "ch02",
+      "number": 2,
+      "title": "The present tense of -ir and -re verbs",
+      "pdf_page_start": 31,
+      "pdf_page_end": 45,
+      "topics": [
+        {
+          "id": "ch02-t01",
+          "title": "-ir verbs in the present"
+        },
+        {
+          "id": "ch02-t02",
+          "title": "-re verbs in the present"
+        },
+        {
+          "id": "ch02-t03",
+          "title": "The interrogative form"
+        },
+        {
+          "id": "ch02-t04",
+          "title": "The negative form"
+        }
+      ],
+      "exercise_group_markers_detected": 11,
+      "status": "inventoried_not_transcribed",
+      "known_issues": []
+    },
+    {
+      "id": "ch03",
+      "number": 3,
+      "title": "To be and to have",
+      "pdf_page_start": 46,
+      "pdf_page_end": 59,
+      "topics": [
+        {
+          "id": "ch03-t01",
+          "title": "The verb être (to be)"
+        },
+        {
+          "id": "ch03-t02",
+          "title": "The verb avoir (to have)"
+        },
+        {
+          "id": "ch03-t03",
+          "title": "The -oir verbs"
+        }
+      ],
+      "exercise_group_markers_detected": 11,
+      "status": "inventoried_not_transcribed",
+      "known_issues": []
+    },
+    {
+      "id": "ch04",
+      "number": 4,
+      "title": "More irregular verbs",
+      "pdf_page_start": 60,
+      "pdf_page_end": 72,
+      "topics": [
+        {
+          "id": "ch04-t01",
+          "title": "The verb aller (to go)"
+        },
+        {
+          "id": "ch04-t02",
+          "title": "The immediate future tense"
+        },
+        {
+          "id": "ch04-t03",
+          "title": "The verb venir (to come)"
+        },
+        {
+          "id": "ch04-t04",
+          "title": "The immediate past"
+        },
+        {
+          "id": "ch04-t05",
+          "title": "The verb faire (to do, to make)"
+        },
+        {
+          "id": "ch04-t06",
+          "title": "The causative form"
+        }
+      ],
+      "exercise_group_markers_detected": 9,
+      "status": "inventoried_not_transcribed",
+      "known_issues": []
+    },
+    {
+      "id": "ch05",
+      "number": 5,
+      "title": "Devoir and its many facets",
+      "pdf_page_start": 73,
+      "pdf_page_end": 80,
+      "topics": [
+        {
+          "id": "ch05-t01",
+          "title": "The verb devoir (to have to, must)"
+        },
+        {
+          "id": "ch05-t02",
+          "title": "Il y a"
+        },
+        {
+          "id": "ch05-t03",
+          "title": "Il s’agit de"
+        },
+        {
+          "id": "ch05-t04",
+          "title": "Verbs ending in -eindre and -aindre"
+        }
+      ],
+      "exercise_group_markers_detected": 5,
+      "status": "inventoried_not_transcribed",
+      "known_issues": []
+    },
+    {
+      "id": "ch06",
+      "number": 6,
+      "title": "Pronominal verbs",
+      "pdf_page_start": 81,
+      "pdf_page_end": 88,
+      "topics": [
+        {
+          "id": "ch06-t01",
+          "title": "Reflexive verbs"
+        },
+        {
+          "id": "ch06-t02",
+          "title": "Reciprocal verbs"
+        },
+        {
+          "id": "ch06-t03",
+          "title": "Passive pronominals"
+        },
+        {
+          "id": "ch06-t04",
+          "title": "Subjective pronominals"
+        },
+        {
+          "id": "ch06-t05",
+          "title": "Pronominals in the imperative and the infinitive"
+        }
+      ],
+      "exercise_group_markers_detected": 6,
+      "status": "inventoried_not_transcribed",
+      "known_issues": []
+    },
+    {
+      "id": "ch07",
+      "number": 7,
+      "title": "The passé composé",
+      "pdf_page_start": 89,
+      "pdf_page_end": 102,
+      "topics": [
+        {
+          "id": "ch07-t01",
+          "title": "The past participle of regular verbs"
+        },
+        {
+          "id": "ch07-t02",
+          "title": "The passé composé with avoir"
+        },
+        {
+          "id": "ch07-t03",
+          "title": "Irregular past participles"
+        },
+        {
+          "id": "ch07-t04",
+          "title": "The passé composé with être"
+        },
+        {
+          "id": "ch07-t05",
+          "title": "Pronominal verbs in the passé composé"
+        },
+        {
+          "id": "ch07-t06",
+          "title": "Verbs conjugated with avoir and être"
+        }
+      ],
+      "exercise_group_markers_detected": 10,
+      "status": "inventoried_not_transcribed",
+      "known_issues": []
+    },
+    {
+      "id": "ch08",
+      "number": 8,
+      "title": "The imparfait",
+      "pdf_page_start": 103,
+      "pdf_page_end": 112,
+      "topics": [
+        {
+          "id": "ch08-t01",
+          "title": "The imparfait"
+        },
+        {
+          "id": "ch08-t02",
+          "title": "The imparfait versus the passé composé"
+        },
+        {
+          "id": "ch08-t03",
+          "title": "The imparfait with special constructions"
+        }
+      ],
+      "exercise_group_markers_detected": 7,
+      "status": "inventoried_not_transcribed",
+      "known_issues": []
+    },
+    {
+      "id": "ch09",
+      "number": 9,
+      "title": "The futur simple and the futur antérieur",
+      "pdf_page_start": 113,
+      "pdf_page_end": 125,
+      "topics": [
+        {
+          "id": "ch09-t01",
+          "title": "The futur simple"
+        },
+        {
+          "id": "ch09-t02",
+          "title": "The futur antérieur"
+        },
+        {
+          "id": "ch09-t03",
+          "title": "Conjunctions used with the indicative mood"
+        }
+      ],
+      "exercise_group_markers_detected": 8,
+      "status": "inventoried_not_transcribed",
+      "known_issues": []
+    },
+    {
+      "id": "ch10",
+      "number": 10,
+      "title": "The plus-que-parfait",
+      "pdf_page_start": 126,
+      "pdf_page_end": 133,
+      "topics": [
+        {
+          "id": "ch10-t01",
+          "title": "Formation of the plus-que-parfait"
+        },
+        {
+          "id": "ch10-t02",
+          "title": "Use of the plus-que-parfait"
+        }
+      ],
+      "exercise_group_markers_detected": 6,
+      "status": "inventoried_not_transcribed",
+      "known_issues": []
+    },
+    {
+      "id": "ch11",
+      "number": 11,
+      "title": "The present conditional and the past conditional",
+      "pdf_page_start": 134,
+      "pdf_page_end": 147,
+      "topics": [
+        {
+          "id": "ch11-t01",
+          "title": "The present conditional"
+        },
+        {
+          "id": "ch11-t02",
+          "title": "The past conditional"
+        }
+      ],
+      "exercise_group_markers_detected": 10,
+      "status": "inventoried_not_transcribed",
+      "known_issues": []
+    },
+    {
+      "id": "ch12",
+      "number": 12,
+      "title": "Could, should, would?",
+      "pdf_page_start": 148,
+      "pdf_page_end": 157,
+      "topics": [
+        {
+          "id": "ch12-t01",
+          "title": "Could"
+        },
+        {
+          "id": "ch12-t02",
+          "title": "Should"
+        },
+        {
+          "id": "ch12-t03",
+          "title": "Would"
+        }
+      ],
+      "exercise_group_markers_detected": 6,
+      "status": "inventoried_not_transcribed",
+      "known_issues": []
+    },
+    {
+      "id": "ch13",
+      "number": 13,
+      "title": "The present subjunctive and the past subjunctive",
+      "pdf_page_start": 158,
+      "pdf_page_end": 172,
+      "topics": [
+        {
+          "id": "ch13-t01",
+          "title": "The present subjunctive"
+        },
+        {
+          "id": "ch13-t02",
+          "title": "Uses of the subjunctive"
+        },
+        {
+          "id": "ch13-t03",
+          "title": "The past subjunctive"
+        }
+      ],
+      "exercise_group_markers_detected": 9,
+      "status": "inventoried_not_transcribed",
+      "known_issues": []
+    },
+    {
+      "id": "ch14",
+      "number": 14,
+      "title": "The infinitive mood",
+      "pdf_page_start": 173,
+      "pdf_page_end": 187,
+      "topics": [
+        {
+          "id": "ch14-t01",
+          "title": "The infinitif présent"
+        },
+        {
+          "id": "ch14-t02",
+          "title": "The infinitif passé"
+        },
+        {
+          "id": "ch14-t03",
+          "title": "Verbs with their prepositions"
+        }
+      ],
+      "exercise_group_markers_detected": 7,
+      "status": "inventoried_not_transcribed",
+      "known_issues": []
+    },
+    {
+      "id": "ch15",
+      "number": 15,
+      "title": "The present participle and the gerundive",
+      "pdf_page_start": 188,
+      "pdf_page_end": 194,
+      "topics": [
+        {
+          "id": "ch15-t01",
+          "title": "The present participle"
+        },
+        {
+          "id": "ch15-t02",
+          "title": "The gerundive"
+        }
+      ],
+      "exercise_group_markers_detected": 3,
+      "status": "inventoried_not_transcribed",
+      "known_issues": []
+    },
+    {
+      "id": "ch16",
+      "number": 16,
+      "title": "The passé simple",
+      "pdf_page_start": 195,
+      "pdf_page_end": 202,
+      "topics": [
+        {
+          "id": "ch16-t01",
+          "title": "Formation of the passé simple"
+        },
+        {
+          "id": "ch16-t02",
+          "title": "The passé simple of irregular verbs"
+        }
+      ],
+      "exercise_group_markers_detected": 3,
+      "status": "inventoried_not_transcribed",
+      "known_issues": []
+    },
+    {
+      "id": "ch17",
+      "number": 17,
+      "title": "The passive voice",
+      "pdf_page_start": 203,
+      "pdf_page_end": 209,
+      "topics": [
+        {
+          "id": "ch17-t01",
+          "title": "Formation of the passive voice"
+        },
+        {
+          "id": "ch17-t02",
+          "title": "Uses of the passive voice"
+        },
+        {
+          "id": "ch17-t03",
+          "title": "Avoiding the passive voice in French"
+        }
+      ],
+      "exercise_group_markers_detected": 3,
+      "status": "inventoried_not_transcribed",
+      "known_issues": []
+    },
+    {
+      "id": "ch18",
+      "number": 18,
+      "title": "Indirect speech",
+      "pdf_page_start": 210,
+      "pdf_page_end": 218,
+      "topics": [
+        {
+          "id": "ch18-t01",
+          "title": "Direct speech versus indirect speech"
+        },
+        {
+          "id": "ch18-t02",
+          "title": "The sequence of tenses: la concordance des temps"
+        }
+      ],
+      "exercise_group_markers_detected": 4,
+      "status": "inventoried_not_transcribed",
+      "known_issues": []
+    },
+    {
+      "id": "ch19",
+      "number": 19,
+      "title": "The imperative mood",
+      "pdf_page_start": 219,
+      "pdf_page_end": 225,
+      "topics": [
+        {
+          "id": "ch19-t01",
+          "title": "Formation of the imperative"
+        },
+        {
+          "id": "ch19-t02",
+          "title": "The imperative of pronominal verbs"
+        }
+      ],
+      "exercise_group_markers_detected": 3,
+      "status": "inventoried_not_transcribed",
+      "known_issues": []
+    },
+    {
+      "id": "ch20",
+      "number": 20,
+      "title": "Articles and nouns",
+      "pdf_page_start": 226,
+      "pdf_page_end": 246,
+      "topics": [
+        {
+          "id": "ch20-t01",
+          "title": "The definite article with nouns"
+        },
+        {
+          "id": "ch20-t02",
+          "title": "The indefinite and partitive articles with nouns"
+        },
+        {
+          "id": "ch20-t03",
+          "title": "The gender of nouns"
+        },
+        {
+          "id": "ch20-t04",
+          "title": "The plural of nouns"
+        },
+        {
+          "id": "ch20-t05",
+          "title": "The gender of countries"
+        },
+        {
+          "id": "ch20-t06",
+          "title": "Geographical names with prepositions"
+        }
+      ],
+      "exercise_group_markers_detected": 9,
+      "status": "inventoried_not_transcribed",
+      "known_issues": []
+    },
+    {
+      "id": "ch21",
+      "number": 21,
+      "title": "All the pronouns",
+      "pdf_page_start": 247,
+      "pdf_page_end": 270,
+      "topics": [
+        {
+          "id": "ch21-t01",
+          "title": "Subject pronouns"
+        },
+        {
+          "id": "ch21-t02",
+          "title": "Direct object pronouns"
+        },
+        {
+          "id": "ch21-t03",
+          "title": "Indirect object pronouns"
+        },
+        {
+          "id": "ch21-t04",
+          "title": "The order of object pronouns"
+        },
+        {
+          "id": "ch21-t05",
+          "title": "Disjunctive pronouns"
+        }
+      ],
+      "exercise_group_markers_detected": 12,
+      "status": "inventoried_not_transcribed",
+      "known_issues": []
+    },
+    {
+      "id": "ch22",
+      "number": 22,
+      "title": "Adjectives and comparisons",
+      "pdf_page_start": 271,
+      "pdf_page_end": 282,
+      "topics": [
+        {
+          "id": "ch22-t01",
+          "title": "Agreement of adjectives"
+        },
+        {
+          "id": "ch22-t02",
+          "title": "The placement of adjectives"
+        },
+        {
+          "id": "ch22-t03",
+          "title": "Adjectives denoting color"
+        },
+        {
+          "id": "ch22-t04",
+          "title": "Comparatives and superlatives"
+        }
+      ],
+      "exercise_group_markers_detected": 7,
+      "status": "inventoried_not_transcribed",
+      "known_issues": []
+    },
+    {
+      "id": "ch23",
+      "number": 23,
+      "title": "Demonstrative adjectives and pronouns",
+      "pdf_page_start": 283,
+      "pdf_page_end": 297,
+      "topics": [
+        {
+          "id": "ch23-t01",
+          "title": "Demonstrative adjectives"
+        },
+        {
+          "id": "ch23-t02",
+          "title": "Possessive adjectives"
+        },
+        {
+          "id": "ch23-t03",
+          "title": "Possessive pronouns"
+        },
+        {
+          "id": "ch23-t04",
+          "title": "Demonstrative pronouns"
+        }
+      ],
+      "exercise_group_markers_detected": 9,
+      "status": "inventoried_not_transcribed",
+      "known_issues": []
+    },
+    {
+      "id": "ch24",
+      "number": 24,
+      "title": "Relative pronouns",
+      "pdf_page_start": 298,
+      "pdf_page_end": 312,
+      "topics": [
+        {
+          "id": "ch24-t01",
+          "title": "Qui"
+        },
+        {
+          "id": "ch24-t02",
+          "title": "Que"
+        },
+        {
+          "id": "ch24-t03",
+          "title": "Lequel"
+        },
+        {
+          "id": "ch24-t04",
+          "title": "Où"
+        },
+        {
+          "id": "ch24-t05",
+          "title": "Dont"
+        },
+        {
+          "id": "ch24-t06",
+          "title": "Ce que, ce qui, ce dont, ce à quoi"
+        }
+      ],
+      "exercise_group_markers_detected": 9,
+      "status": "inventoried_not_transcribed",
+      "known_issues": []
+    },
+    {
+      "id": "ch25",
+      "number": 25,
+      "title": "Adverbs and expressions of time, frequency, and location",
+      "pdf_page_start": 313,
+      "pdf_page_end": 325,
+      "topics": [
+        {
+          "id": "ch25-t01",
+          "title": "Adverbs and expressions of time"
+        },
+        {
+          "id": "ch25-t02",
+          "title": "Interrogative forms; question words"
+        },
+        {
+          "id": "ch25-t03",
+          "title": "Adverbs and expressions of location"
+        }
+      ],
+      "exercise_group_markers_detected": 8,
+      "status": "inventoried_not_transcribed",
+      "known_issues": []
+    },
+    {
+      "id": "ch26",
+      "number": 26,
+      "title": "Numbers",
+      "pdf_page_start": 326,
+      "pdf_page_end": 338,
+      "topics": [
+        {
+          "id": "ch26-t01",
+          "title": "The numbers 0 to 50"
+        },
+        {
+          "id": "ch26-t02",
+          "title": "Ordinal numbers"
+        },
+        {
+          "id": "ch26-t03",
+          "title": "The numbers 50 to 99"
+        },
+        {
+          "id": "ch26-t04",
+          "title": "The numbers 100 to 999"
+        },
+        {
+          "id": "ch26-t05",
+          "title": "The numbers 1,000 and greater"
+        }
+      ],
+      "exercise_group_markers_detected": 8,
+      "status": "inventoried_not_transcribed",
+      "known_issues": [
+        "Possible misnumbering: 26·1 appears twice and 26·3 was not detected."
+      ]
+    },
+    {
+      "id": "ch27",
+      "number": 27,
+      "title": "Pot pourri",
+      "pdf_page_start": 339,
+      "pdf_page_end": 352,
+      "topics": [
+        {
+          "id": "ch27-t01",
+          "title": "Verbs that use different prepositions"
+        },
+        {
+          "id": "ch27-t02",
+          "title": "Whatever, whenever, wherever, whoever"
+        },
+        {
+          "id": "ch27-t03",
+          "title": "Avoir beau and quitte à"
+        },
+        {
+          "id": "ch27-t04",
+          "title": "Subordinate clauses"
+        }
+      ],
+      "exercise_group_markers_detected": 5,
+      "status": "inventoried_not_transcribed",
+      "known_issues": []
+    },
+    {
+      "id": "ch28",
+      "number": 28,
+      "title": "Review exercises",
+      "pdf_page_start": 353,
+      "pdf_page_end": 385,
+      "topics": [],
+      "exercise_group_markers_detected": 35,
+      "status": "inventoried_not_transcribed",
+      "known_issues": []
+    }
+  ],
+  "supplements": [
+    {
+      "name": "Verb tables",
+      "pdf_pages": [
+        386,
+        391
+      ]
+    },
+    {
+      "name": "French-English glossary",
+      "pdf_pages": [
+        392,
+        444
+      ]
+    },
+    {
+      "name": "English-French glossary",
+      "pdf_pages": [
+        445,
+        498
+      ]
+    },
+    {
+      "name": "Answer key",
+      "pdf_pages": [
+        499,
+        527
+      ]
+    }
+  ]
+}
