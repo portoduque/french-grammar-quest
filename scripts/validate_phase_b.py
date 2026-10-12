@@ -3,6 +3,7 @@
 import json,re,sys,hashlib,collections
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
+from jsonschema import Draft202012Validator
 
 def check(ok,message):
  if not ok:raise AssertionError(message)
@@ -11,10 +12,14 @@ def load(path):return json.loads(path.read_text(encoding='utf-8'))
 
 def validate():
  report=load(ROOT/'reports'/'phase-b-summary.json')
+ chapter_validator=Draft202012Validator(load(ROOT/'schemas'/'chapter.schema.json'))
+ exercise_validator=Draft202012Validator(load(ROOT/'schemas'/'exercise.schema.json'))
  expected_sha=report['source_sha256'];totalgroups=totalq=totalpages=0
  globalids=set();source={}
  for ch in range(2,29):
   path=ROOT/'chapters'/f'{ch:02}'; meta=load(path/'metadata.json');data=load(path/'exercises.json');seq=load(path/'lesson-sequence.json')
+  chapter_validator.validate(meta)
+  exercise_validator.validate(data)
   s,e=meta['source']['pdf_pages']; check(meta['chapter']==ch and data['chapter']==ch,f'ch {ch} number');check(meta['source']['source_sha256']==expected_sha,f'ch{ch} PDF hash')
   pages={i:(path/'source-pages'/f'page-{i:03}.txt').read_text(encoding='utf-8') for i in range(s,e+1)}
   check(len(pages)==e-s+1,f'ch {ch}: page count');check((path/'theory-source.md').read_text(encoding='utf-8')==''.join(pages.values()), f'ch{ch}: raw text mismatch')
