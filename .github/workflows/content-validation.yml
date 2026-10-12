@@ -20,7 +20,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Compile validator
-        run: python -m py_compile scripts/validate_content.py
+        run: python -m py_compile scripts/validate_content.py scripts/validate_phase_b.py scripts/audit_phase_c.py
       - name: Install JSON Schema validator
         run: python -m pip install 'jsonschema>=4.23,<5'
       - name: Validate manifest and private Chapter 01 corpus
@@ -29,3 +29,5 @@ jobs:
           python scripts/validate_content.py --private .
       - name: Verify Phase B Chapters 02–28 and reference coverage
         run: python scripts/validate_phase_b.py
+      - name: Audit all chapters and supplementary references (Phase C)
+        run: python scripts/audit_phase_c.py --check-report

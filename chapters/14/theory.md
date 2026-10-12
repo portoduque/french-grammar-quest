@@ -1,4 +1,4 @@
-# Chapter 14 — Chapter 14
+# Chapter 14 — The infinitive mood
 
 > Automatically extracted from the source PDF. Text and bilingual columns must be checked visually before use in interactive lessons.
 > Literal source snapshots are preserved in `source-pages/`; a full source mirror is in `theory-source.md`.
@@ -281,3 +281,16 @@ se souvenir de                    to remember to      tâcher de                
        J’ai fini de lire le roman.           I finished reading the novel.
 ```
 
+
+
+## Source theory recovered from exercise-boundary parsing
+
+> The paragraphs below were accidentally attached to the last exercise item in the automatic extraction. They are preserved here for learning-content completeness, but paragraph/table formatting and placement require visual editorial review against the PDF.
+
+### After ch14-ex01-q10 (source PDF pages 176,177)
+
+The infinitive is used after verbs of perception (where the present participle is used in English). J’ai vu les moutons traverser la route. I saw the sheep crossing (cross) the road. Elle a entendu le coq chanter. She heard the rooster crowing (crow). On entendait le chef fredonner une We could hear the chef humming (hum chanson. a song. Elle a vu la biche sauter par-dessus la She saw the doe jumping (jump) over clôture. the fence. The infinitive is used in the interrogative infinitive. Que répondre? What can I (can we) answer? Comment le lui expliquer? How to explain it to him? Pourquoi protester? Why protest? Que dire? What is there to say? Quoi faire? What can we do? You learned faire in Chapter 4. This causative form with faire is used to express the idea of having something done by someone or of causing something to happen. Il a fait macérer la viande vingt-quatre He macerated the meat twenty-four heures. hours. Elle a fait rôtir le poulet. She roasted the chicken. J’ai fait griller le pain. I toasted the bread. J’ai fait tremper les pruneaux. I soaked the prunes. The infinitive is used after expressions conveying the idea of spending time. Elle passe son temps à créer de nouvelles She spends her time creating new recettes. recipes. Il passe ses vacances à lire des livres de He spends his vacation reading cuisine. cookbooks. Il a gaspillé sa vie à ne rien faire. He wasted his life doing nothing. Je passe mon temps à chercher de I spend my time looking for new nouvelles épices. spices. The infinitive often follows statements indicating a person’s posture. The preposition à precedes the infinitive. (Note the present participles in English.) Il est debout à éplucher des carottes. He is standing peeling carrots. Elle est assise à écosser des petits pois. She is sitting shelling peas. Il est accroupi dans le jardin à cueillir He is squatting in the garden picking des fraises. strawberries. Elle est à genoux à arracher les She is kneeling pulling out weeds. mauvaises herbes.
+
+### After ch14-ex03-q10 (source PDF pages 179,180)
+
+The infinitif passé commonly occurs after the preposition après (after), while the infinitif présent follows avant de (before). Gérard fait mariner la viande avant Gérard marinates the meat before d’éplucher un oignon. peeling an onion. Gérard fait mariner la viande après avoir Gérard marinates the meat after épluché un oignon. peeling an onion. Elle se lave les mains avant de décortiquer She washes her hands before les crevettes. shelling the shrimp. Elle se lave les mains après avoir She washes her hands after shellin décortiqué les crevettes. the shrimp. Je fais la cuisine avant d’aller au cinéma. I cook before going to the movies. Je fais la cuisine après être allé au cinéma. I cook after going to the movies. Elle lit le journal avant de se lever. She reads the paper before getting up. Elle lit le journal après s’être levée. She reads the paper after getting u

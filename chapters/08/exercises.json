@@ -165,7 +165,7 @@
         {
           "id": "ch08-ex01-q10",
           "number": 10,
-          "prompt": "Vous (aller) __ au bord de la mer en été. Let’s look at the different uses of the imparfait. It is used for background and description. It describes a situation that existed in the past, a state of mind or being. Les rues étaient embouteillées. The streets were jammed. La circulation était fluide. The traffic was flowing. Il faisait trop chaud. It was too hot. Il avait faim. He was hungry. Elle ne savait pas quoi faire. She did not know what to do.",
+          "prompt": "Vous (aller) __ au bord de la mer en été.",
           "source_raw_prompt": "Vous (aller) ________________ au bord de la mer en été.   Let’s look at the different uses of the imparfait. It is used for background and\ndescription. It describes a situation that existed in the past, a state of mind or being.\n\n      Les rues étaient embouteillées.         The streets were jammed.\n      La circulation était fluide.             The traffic was flowing.\n          Il faisait trop chaud.                            It was too hot.\n          Il avait faim.                    He was hungry.\n       Elle ne savait pas quoi faire.           She did not know what to do.",
           "pdf_pages": [
             105,
@@ -177,6 +177,11 @@
               "alliez"
             ],
             "review_status": "publisher_source_not_independently_regraded"
+          },
+          "editorial_recovery": {
+            "moved_theory_to": "theory.md",
+            "source_text_retained_in": "source_raw_prompt",
+            "status": "recovered_requires_visual_editing"
           }
         }
       ],
@@ -359,7 +364,7 @@
         {
           "id": "ch08-ex02-q10",
           "number": 10,
-          "prompt": "Il (faire) __ un temps glacial. Another use of the imparfait is to express habitual, repetitive action. It describes past events that were repeated. Used to and would (meaning habitually) are translated into French by the imparfait. Autrefois, elle faisait partie de la In the past, she used to belong to the cho chorale. Ils allaient en Inde chaque année. They used to go (would go) to India ever year. Il jouait au tennis le mardi. He used to (would) play tennis on Tuesdays. As you can see in the previous examples, some expressions of time or repetition may be an indication of the imparfait: souvent often fréquemment frequently toujours always le mardi on Tuesdays le vendredi on Fridays chaque jour every day tous les jours every day chaque semaine every week chaque mois every month chaque année every year d’ordinaire ordinarily d’habitude usually habituellement usually régulièrement regularly comme à l’accoutumée as usual autrefois formerly jadis in times past",
+          "prompt": "Il (faire) __ un temps glacial.",
           "source_raw_prompt": "Il (faire) ________________ un temps glacial.\n\n\n   Another use of the imparfait is to express habitual, repetitive action. It describes\npast events  that were  repeated. Used  to and would (meaning  habitually)  are\ntranslated into French by the imparfait.\n\n       Autrefois, elle faisait partie de la     In the past, she used to belong to the cho\n           chorale.\n         Ils allaient en Inde chaque année.   They used to go (would go) to India ever\n                                                   year.\n          Il jouait au tennis le mardi.       He used to (would) play tennis on\n                                             Tuesdays.\n\n  As you can see in the previous examples, some expressions of time or repetition\nmay be an indication of the imparfait:\n\n      souvent                                             often\n      fréquemment                                       frequently\n       toujours                                      always\n        le mardi                                   on Tuesdays\n        le vendredi                                 on Fridays\n      chaque jour                                     every day\n       tous les jours                                    every day\n      chaque semaine                                  every week\n      chaque mois                                     every month\n      chaque année                                    every year\n       d’ordinaire                                         ordinarily\n      d’habitude                                        usually\n       habituellement                                    usually\n       régulièrement                                     regularly     comme à l’accoutumée                          as usual\n       autrefois                                         formerly\n       jadis                                                  in times past\n\n\n\n  ",
           "pdf_pages": [
             107,
@@ -371,6 +376,11 @@
               "faisait"
             ],
             "review_status": "publisher_source_not_independently_regraded"
+          },
+          "editorial_recovery": {
+            "moved_theory_to": "theory.md",
+            "source_text_retained_in": "source_raw_prompt",
+            "status": "recovered_requires_visual_editing"
           }
         }
       ],
@@ -551,7 +561,7 @@
         {
           "id": "ch08-ex03-q10",
           "number": 10,
-          "prompt": "Elle (travailler) __ chez Guerlain. The imparfait is also used to describe a continuous action that was going on in the past when another action (expressed in the passé composé) interrupted it. Elle regardait la télévision quand She was watching television when soudain elle a entendu un grand bruit. suddenly she heard a loud noise. Il faisait ses devoirs quand son frère est He was doing his homework when h arrivé. brother arrived. To express the idea that an action had been going on for a period of time before being interrupted, use the imparfait with depuis. This is the equivalent to the past of depuis + present tense you studied in Chapter 1. Ils étaient à la montagne depuis une They had been in the mountains for semaine quand ils ont décidé d’aller au week when they decided to go to bord de la mer. the seashore. Il randonnait depuis trois jours quand il He had been hiking for three days a trouvé cette belle auberge. when he found this beautiful inn",
+          "prompt": "Elle (travailler) __ chez Guerlain.",
           "source_raw_prompt": "Elle (travailler) ________________ chez Guerlain.\n\n\n\n  The imparfait is also used to describe a continuous action that was going on in\nthe past when another action (expressed in the passé composé) interrupted it.\n\n       Elle regardait la télévision quand       She was watching television when\n         soudain elle a entendu un grand bruit.    suddenly she heard a loud noise.\n          Il faisait ses devoirs quand son frère est  He was doing his homework when h\n          arrivé.                                 brother arrived.\n\n  To express the idea that an action had been going on for a period of time before\nbeing interrupted, use the imparfait with depuis. This is the equivalent to the past of\ndepuis + present tense you studied in Chapter 1.       Ils étaient à la montagne depuis une     They had been in the mountains for\n        semaine quand ils ont décidé d’aller au  week when they decided to go to\n        bord de la mer.                            the seashore.\n        Il randonnait depuis trois jours quand il He had been hiking for three days\n       a trouvé cette belle auberge.           when he found this beautiful inn\n\n\n\n ",
           "pdf_pages": [
             108,
@@ -563,6 +573,11 @@
               "travaillait"
             ],
             "review_status": "publisher_source_not_independently_regraded"
+          },
+          "editorial_recovery": {
+            "moved_theory_to": "theory.md",
+            "source_text_retained_in": "source_raw_prompt",
+            "status": "recovered_requires_visual_editing"
           }
         }
       ],
@@ -1125,7 +1140,7 @@
         {
           "id": "ch08-ex06-q10",
           "number": 10,
-          "prompt": "Si on (choisir) __ une autre formule? You will encounter the imparfait in other idiomatic constructions, for instance, preceded by si seulement, to express a wish or a regret. Si seulement on pouvait prendre des vacances!If only we could take a vacatio Si seulement elle était à l’heure! If only she were on time! Si seulement ils habitaient plus près! If only they lived closer! Si seulement vous saviez! If only you knew! In Chapter 4, you studied the immediate past with the verb venir + de + infinitive. The immediate past can also be used in the imparfait to describe an action that had just happened. Elle vient de téléphoner. She has just called. Elle venait de téléphoner quand il est She had just called when he walked in entré. Il vient d’accepter ce poste. He just accepted this position. Il venait d’acccepter ce poste quand on He had just accepted this position wh lui en a proposé un autre. he was offered another one.",
+          "prompt": "Si on (choisir) __ une autre formule?",
           "source_raw_prompt": "Si on (choisir) ________________ une autre formule?\n\n\n\n  You will encounter the imparfait in other idiomatic constructions, for instance,\npreceded by si seulement, to express a wish or a regret.\n\n       Si seulement on pouvait prendre des vacances!If only we could take a vacatio\n       Si seulement elle était à l’heure!                    If only she were on time!\n       Si seulement ils habitaient plus près!             If only they lived closer!\n       Si seulement vous saviez!                            If only you knew!\n\n   In Chapter 4, you studied the immediate past with the verb venir + de +\ninfinitive. The immediate past can also be used in the imparfait to describe an action\nthat had just happened.\n\n       Elle vient de téléphoner.             She has just called.\n       Elle venait de téléphoner quand il est  She had just called when he walked in\n           entré.\n          Il vient d’accepter ce poste.        He just accepted this position.        Il venait d’acccepter ce poste quand on He had just accepted this position wh\n           lui en a proposé un autre.             he was offered another one.\n\n\n\n ",
           "pdf_pages": [
             111,
@@ -1137,6 +1152,11 @@
               "choisissait"
             ],
             "review_status": "publisher_source_not_independently_regraded"
+          },
+          "editorial_recovery": {
+            "moved_theory_to": "theory.md",
+            "source_text_retained_in": "source_raw_prompt",
+            "status": "recovered_requires_visual_editing"
           }
         }
       ],

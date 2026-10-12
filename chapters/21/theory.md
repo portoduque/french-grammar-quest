@@ -1,4 +1,4 @@
-# Chapter 21 — Chapter 21
+# Chapter 21 — All the pronouns
 
 > Automatically extracted from the source PDF. Text and bilingual columns must be checked visually before use in interactive lessons.
 > Literal source snapshots are preserved in `source-pages/`; a full source mirror is in `theory-source.md`.
@@ -491,3 +491,12 @@ disjunctive pronoun is used and placed after the verb.
       Nous nous méfions de lui.           We do not trust him.
 ```
 
+
+
+## Source theory recovered from exercise-boundary parsing
+
+> The paragraphs below were accidentally attached to the last exercise item in the automatic extraction. They are preserved here for learning-content completeness, but paragraph/table formatting and placement require visual editorial review against the PDF.
+
+### After ch21-ex02-q10 (source PDF pages 253,254,255)
+
+Indirect object pronouns Now that you have mastered the pronom objet direct, let’s take a look at the pronom objet indirect (indirect object pronoun). In English there are five indirect object pronouns me, you, him, her, us. As always, French distinguishes between an informal you (te) and a formal or plural you (vous). The French indirect object pronoun does not distinguish between gender; lui and leur replace both masculine and feminine nouns. In French, the indirect object pronoun replaces only animate indirect objects (people, animals). Inanimate ideas and things are replaced with the indirect object pronouns y and en, which will be discussed later in this chapter. Let’s look at the indirect object pronouns: SINGULAR PLURAL me (m’) me nous us te (t’) you (familiar) vous you (formal or plural) lui him, her leur them (masc. and fem.) The object is called indirect when the verb is controlled by a preposition (parler à, répondre à, écrire à, etc.). The indirect object pronoun is placed before the conjugated verb and before avoir in the compound tenses. Although the past participle agrees in gender and number with the preceding direct object, the past participle never agrees with an indirect object pronoun. The indirect object pronouns me and te become m’ and t’ before vowels and mute h. Make sure to distinguish between leur, the indirect object pronoun, and leur(s), the possessive adjective. Tu parles au journaliste. You are talking to the journalist. Tu lui parles. You are talking to him. Tu réponds à Andrée. You answer Andrée. Tu lui réponds. You answer her. Vous écrivez à l’agent. You write to the agent. Vous lui écrivez. You write to him. Vous expliquez la situation aux You explain the situation to the clients. customers. Vous leur expliquez la situation. You explain the situation to them. Elle nous enverra une confirmation. She’ll send us a confirmation. Je vous donnerai un jour de congé. I’ll give you a day off. Il me rendra le livre demain. He’ll return the book to me tomorrow. Ils t’apporteront des fleurs. They’ll bring you some flowers. In the interrogative or negative, the indirect object pronoun is placed immediately before the verb. Lui as-tu parlé de ce livre? Did you talk to him about this book M’avez-vous envoyé un courriel? Did you send me an e-mail? Vous fournit-il de bons produits? Does he provide you with good products? Leur avez-vous envoyé les révisions? Did you send them the revisions? Elle ne nous envoie jamais rien. She never sends us anything. Tu ne m’apportes que des mauvaises You only bring me bad news. nouvelles. Vous ne lui avez pas dit la vérité. You did not tell him the truth. Ils te prêteront leur voiture. They’ll lend you their car.

@@ -1,0 +1,326 @@
+{
+  "schema_version": 1,
+  "source_sha256": "297b92bc48e075449713c3b408ccf47de2466cfc6c4f4a25687a2a974276ae4d",
+  "chapters": [
+    {
+      "chapter": 1,
+      "pages": 17,
+      "groups": 10,
+      "questions": 100,
+      "subtopics": 13,
+      "raw_code_blocks": 0,
+      "machine_gate": "pass",
+      "visual_gate": "pending"
+    },
+    {
+      "chapter": 2,
+      "pages": 15,
+      "groups": 11,
+      "questions": 110,
+      "subtopics": 6,
+      "raw_code_blocks": 6,
+      "machine_gate": "pass",
+      "visual_gate": "pending"
+    },
+    {
+      "chapter": 3,
+      "pages": 14,
+      "groups": 11,
+      "questions": 110,
+      "subtopics": 5,
+      "raw_code_blocks": 5,
+      "machine_gate": "pass",
+      "visual_gate": "pending"
+    },
+    {
+      "chapter": 4,
+      "pages": 13,
+      "groups": 9,
+      "questions": 85,
+      "subtopics": 7,
+      "raw_code_blocks": 4,
+      "machine_gate": "pass",
+      "visual_gate": "pending"
+    },
+    {
+      "chapter": 5,
+      "pages": 8,
+      "groups": 5,
+      "questions": 45,
+      "subtopics": 4,
+      "raw_code_blocks": 2,
+      "machine_gate": "pass",
+      "visual_gate": "pending"
+    },
+    {
+      "chapter": 6,
+      "pages": 8,
+      "groups": 6,
+      "questions": 55,
+      "subtopics": 5,
+      "raw_code_blocks": 4,
+      "machine_gate": "pass",
+      "visual_gate": "pending"
+    },
+    {
+      "chapter": 7,
+      "pages": 14,
+      "groups": 10,
+      "questions": 90,
+      "subtopics": 6,
+      "raw_code_blocks": 3,
+      "machine_gate": "pass",
+      "visual_gate": "pending"
+    },
+    {
+      "chapter": 8,
+      "pages": 10,
+      "groups": 7,
+      "questions": 70,
+      "subtopics": 3,
+      "raw_code_blocks": 3,
+      "machine_gate": "pass",
+      "visual_gate": "pending"
+    },
+    {
+      "chapter": 9,
+      "pages": 13,
+      "groups": 8,
+      "questions": 75,
+      "subtopics": 3,
+      "raw_code_blocks": 3,
+      "machine_gate": "pass",
+      "visual_gate": "pending"
+    },
+    {
+      "chapter": 10,
+      "pages": 8,
+      "groups": 6,
+      "questions": 55,
+      "subtopics": 3,
+      "raw_code_blocks": 4,
+      "machine_gate": "pass",
+      "visual_gate": "pending"
+    },
+    {
+      "chapter": 11,
+      "pages": 14,
+      "groups": 10,
+      "questions": 90,
+      "subtopics": 4,
+      "raw_code_blocks": 3,
+      "machine_gate": "pass",
+      "visual_gate": "pending"
+    },
+    {
+      "chapter": 12,
+      "pages": 10,
+      "groups": 6,
+      "questions": 55,
+      "subtopics": 3,
+      "raw_code_blocks": 2,
+      "machine_gate": "pass",
+      "visual_gate": "pending"
+    },
+    {
+      "chapter": 13,
+      "pages": 15,
+      "groups": 9,
+      "questions": 85,
+      "subtopics": 4,
+      "raw_code_blocks": 3,
+      "machine_gate": "pass",
+      "visual_gate": "pending"
+    },
+    {
+      "chapter": 14,
+      "pages": 15,
+      "groups": 7,
+      "questions": 70,
+      "subtopics": 6,
+      "raw_code_blocks": 4,
+      "machine_gate": "pass",
+      "visual_gate": "pending"
+    },
+    {
+      "chapter": 15,
+      "pages": 7,
+      "groups": 3,
+      "questions": 30,
+      "subtopics": 2,
+      "raw_code_blocks": 2,
+      "machine_gate": "pass",
+      "visual_gate": "pending"
+    },
+    {
+      "chapter": 16,
+      "pages": 8,
+      "groups": 3,
+      "questions": 30,
+      "subtopics": 2,
+      "raw_code_blocks": 1,
+      "machine_gate": "pass",
+      "visual_gate": "pending"
+    },
+    {
+      "chapter": 17,
+      "pages": 7,
+      "groups": 3,
+      "questions": 30,
+      "subtopics": 4,
+      "raw_code_blocks": 2,
+      "machine_gate": "pass",
+      "visual_gate": "pending"
+    },
+    {
+      "chapter": 18,
+      "pages": 9,
+      "groups": 4,
+      "questions": 40,
+      "subtopics": 5,
+      "raw_code_blocks": 2,
+      "machine_gate": "pass",
+      "visual_gate": "pending"
+    },
+    {
+      "chapter": 19,
+      "pages": 7,
+      "groups": 3,
+      "questions": 30,
+      "subtopics": 3,
+      "raw_code_blocks": 2,
+      "machine_gate": "pass",
+      "visual_gate": "pending"
+    },
+    {
+      "chapter": 20,
+      "pages": 21,
+      "groups": 9,
+      "questions": 90,
+      "subtopics": 11,
+      "raw_code_blocks": 5,
+      "machine_gate": "pass",
+      "visual_gate": "pending"
+    },
+    {
+      "chapter": 21,
+      "pages": 24,
+      "groups": 12,
+      "questions": 110,
+      "subtopics": 8,
+      "raw_code_blocks": 6,
+      "machine_gate": "pass",
+      "visual_gate": "pending"
+    },
+    {
+      "chapter": 22,
+      "pages": 12,
+      "groups": 7,
+      "questions": 55,
+      "subtopics": 7,
+      "raw_code_blocks": 2,
+      "machine_gate": "pass",
+      "visual_gate": "pending"
+    },
+    {
+      "chapter": 23,
+      "pages": 15,
+      "groups": 9,
+      "questions": 82,
+      "subtopics": 9,
+      "raw_code_blocks": 3,
+      "machine_gate": "pass",
+      "visual_gate": "pending"
+    },
+    {
+      "chapter": 24,
+      "pages": 15,
+      "groups": 9,
+      "questions": 85,
+      "subtopics": 3,
+      "raw_code_blocks": 4,
+      "machine_gate": "pass",
+      "visual_gate": "pending"
+    },
+    {
+      "chapter": 25,
+      "pages": 13,
+      "groups": 8,
+      "questions": 80,
+      "subtopics": 5,
+      "raw_code_blocks": 4,
+      "machine_gate": "pass",
+      "visual_gate": "pending"
+    },
+    {
+      "chapter": 26,
+      "pages": 13,
+      "groups": 8,
+      "questions": 80,
+      "subtopics": 5,
+      "raw_code_blocks": 5,
+      "machine_gate": "pass",
+      "visual_gate": "pending"
+    },
+    {
+      "chapter": 27,
+      "pages": 14,
+      "groups": 5,
+      "questions": 45,
+      "subtopics": 16,
+      "raw_code_blocks": 5,
+      "machine_gate": "pass",
+      "visual_gate": "pending"
+    },
+    {
+      "chapter": 28,
+      "pages": 33,
+      "groups": 35,
+      "questions": 345,
+      "subtopics": 1,
+      "raw_code_blocks": 0,
+      "machine_gate": "pass",
+      "visual_gate": "pending"
+    }
+  ],
+  "references": [
+    {
+      "name": "verb-tables",
+      "pages": 6,
+      "visual_gate": "pending"
+    },
+    {
+      "name": "french-english-glossary",
+      "pages": 53,
+      "visual_gate": "pending"
+    },
+    {
+      "name": "english-french-glossary",
+      "pages": 54,
+      "visual_gate": "pending"
+    }
+  ],
+  "totals": {
+    "chapters": 28,
+    "chapter_pages": 372,
+    "exercise_groups": 233,
+    "questions": 2227,
+    "publisher_keys": 2227,
+    "reference_pages": 113,
+    "front_matter_pages": 13,
+    "answer_key_pages": 29,
+    "pdf_pages": 527
+  },
+  "machine_gate": "pass",
+  "editorial_gate": "pending_human_visual_proof",
+  "known_blockers": [
+    "Source page 28 contains visibly clipped English translations",
+    "PDF chapter 26 repeats the printed 26.1 exercise number",
+    "Chapter 28 exercise 28.15 contains duplicated printed item numbering",
+    "Theory tables in chapters 02–27 are not completely semantically structured",
+    "Verb tables and both glossaries require page-by-page visual quality review",
+    "Publisher keys do not exhaust all valid free-response translations",
+    "The 13-page front matter is not converted into lessons",
+    "Manual word-by-word visual proof and independent grammatical review remain pending"
+  ]
+}

@@ -1,4 +1,4 @@
-# Chapter 23 — Chapter 23
+# Chapter 23 — Demonstrative adjectives and pronouns
 
 > Automatically extracted from the source PDF. Text and bilingual columns must be checked visually before use in interactive lessons.
 > Literal source snapshots are preserved in `source-pages/`; a full source mirror is in `theory-source.md`.
@@ -259,3 +259,12 @@ mentioned.
     Ça m’est égal.                                     I don’t mind.
 ```
 
+
+
+## Source theory recovered from exercise-boundary parsing
+
+> The paragraphs below were accidentally attached to the last exercise item in the automatic extraction. They are preserved here for learning-content completeness, but paragraph/table formatting and placement require visual editorial review against the PDF.
+
+### After ch23-ex02-q10 (source PDF pages 286,287,288)
+
+Possessive adjectivesPossessive adjectives modify nouns and are used to indicate relationship and ownership. They agree in gender and number with the noun they modify. Masculine singular mon ordinateur my computer notre ordinateur our computer ton ordinateur your computer votre ordinateur your computer son ordinateur his/her computer leur ordinateur their computer Feminine singular ma vie my life notre vie our life ta vie your life votre vie your life sa vie his/her life leur vie their life Masculine and feminine plural mes cousin(e)s my cousins nos cousin(e)s our cousins tes cousin(e)s your cousins vos cousin(e)s your cousins ses cousin(e)s his/her cousins leurs cousin(e)s their cousins Note that the masculine singular form of the possessive adjective (mon, ton, son) is used before singular feminine nouns beginning with a vowel or a mute h. Mon amie Suzanne travaille à Rennes. My friend Suzanne works in Rennes. Ton amitié est importante. Your friendship is important. Son honnêteté est suspecte. His honesty is suspect. Son, sa, ses can mean either his or hers, since they modify the noun (not the owner). The context will usually prevent any ambiguity about the identity of the owner. If there is ambiguity, the sentence needs to be rephrased for clarity. son roman his/her novel sa pièce his/her play ses contes de fée his/her fairy tales Another way of indicating possession is to use à + a noun or a disjunctive pronoun. C’est à qui? Whose is it? C’est à Pierre? Is it Pierre’s? Non, ce n’est pas à Pierre. No, it’s not Pierre’s. C’est à moi. It’s mine.

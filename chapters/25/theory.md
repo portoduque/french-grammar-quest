@@ -1,4 +1,4 @@
-# Chapter 25 — Chapter 25
+# Chapter 25 — Adverbs and expressions of time, frequency, and location
 
 > Automatically extracted from the source PDF. Text and bilingual columns must be checked visually before use in interactive lessons.
 > Literal source snapshots are preserved in `source-pages/`; a full source mirror is in `theory-source.md`.
@@ -172,3 +172,16 @@ Here are some words that are helpful when talking about location:
       Je vois des erreurs ça et là.                I see mistakes here and there.
 ```
 
+
+
+## Source theory recovered from exercise-boundary parsing
+
+> The paragraphs below were accidentally attached to the last exercise item in the automatic extraction. They are preserved here for learning-content completeness, but paragraph/table formatting and placement require visual editorial review against the PDF.
+
+### After ch25-ex03-q10 (source PDF pages 318,319)
+
+There is an important exception to the rule governing constructions with depuis: In negative sentences, the passé composé is used instead of the present. Forexample: Il n’a pas revu sa sœur depuis dix ans. He has not seen his sister for ten years. Nous ne sommes pas allées à Madrid We have not been to Madrid for t depuis dix ans. years.
+
+### After ch25-ex05-q10 (source PDF pages 320,321)
+
+Using adverbs with the passé composé In the passé composé, shorter adverbs of quantity, quality, and frequency are placed between avoir or être and the past participle. See the following example sentences: Elle étudie beaucoup. She studies a lot. Elle a beaucoup étudié. She studied a lot. Ils dépensent trop. They spend too much. Ils ont trop dépensé. They spent too much. Nous travaillons assez. We work enough. Nous avons assez travaillé. We worked enough. Il écrit très bien la musique. He writes music very well. Il a très bien écrit la musique. He wrote music very well. Tu t’exprimes mal. You express yourself badly. Tu t’es mal exprimé(e). You expressed yourself badly. Je voyage souvent en Italie. I often travel in Italy. J’ai souvent voyagé en Italie. I often traveled in Italy. Vous mentez rarement. You rarely lie. Vous avez rarement menti. You have rarely lied. To express time with the passé composé, pendant (for, during) is commonly used (although it can actually be omitted). However, pour (for) is never used to talk about duration in the past. Il a habité pendant cinq ans à Londres. He lived for five years in Londo Il a habité cinq ans à Londres. He lived five years in London. Nous avons voyagé pendant un mois en Italie.We traveled for a month in Italy Nous avons voyagé un mois en Italie. We traveled one month in Italy.

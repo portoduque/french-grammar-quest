@@ -743,7 +743,7 @@
         {
           "id": "ch26-ex04-q10",
           "number": 10,
-          "prompt": "199 __ Add an -s to cent greater than one hundred (deux cents, trois cents), except when cent is followed by another number. deux cents two hundred trois cents three hundred quatre cents four hundred cinq cents five hundred six cents six hundred sept cents seven hundred huit cents eight hundred neuf cents nine hundred Note the following examples: huit cent vingt-quatre eight hundred twenty-four deux cent quatre-vingt-trois two hundred eighty-three",
+          "prompt": "199 __",
           "source_raw_prompt": "199 ____________________________________________\n\n\n\n  Add an -s to cent greater than one hundred (deux cents, trois cents), except when\ncent is followed by another number.\n\n      deux cents                       two hundred\n        trois cents                           three hundred\n      quatre cents                        four hundred\n       cinq cents                               five hundred\n        six cents                                six hundred\n       sept cents                         seven hundred\n       huit cents                            eight hundred\n      neuf cents                          nine hundred\n\n  Note the following examples:\n\n       huit cent vingt-quatre                    eight hundred twenty-four     deux cent quatre-vingt-trois           two hundred eighty-three\n\n\n\n ",
           "pdf_pages": [
             334,
@@ -755,6 +755,11 @@
               "cent quatre-vingt-dix-neuf"
             ],
             "review_status": "publisher_source_not_independently_regraded"
+          },
+          "editorial_recovery": {
+            "moved_theory_to": "theory.md",
+            "source_text_retained_in": "source_raw_prompt",
+            "status": "recovered_requires_visual_editing"
           }
         }
       ],

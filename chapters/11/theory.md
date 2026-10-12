@@ -1,4 +1,4 @@
-# Chapter 11 — Chapter 11
+# Chapter 11 — The present conditional and the past conditional
 
 > Automatically extracted from the source PDF. Text and bilingual columns must be checked visually before use in interactive lessons.
 > Literal source snapshots are preserved in `source-pages/`; a full source mirror is in `theory-source.md`.
@@ -186,3 +186,16 @@ conditional (past or present) will be used in French. See the following examples
           Il aurait volé la voiture de son voisin.   He allegedly stole his neighbor’s car
 ```
 
+
+
+## Source theory recovered from exercise-boundary parsing
+
+> The paragraphs below were accidentally attached to the last exercise item in the automatic extraction. They are preserved here for learning-content completeness, but paragraph/table formatting and placement require visual editorial review against the PDF.
+
+### After ch11-ex02-q10 (source PDF pages 138,139)
+
+The présent du conditionnel is used when a condition is implied. When the main clause is in the présent du conditionnel, the si clause is in the imparfait. Nous irions à Rome si nous pouvions. We would go to Rome if we could. Régis finirait son roman s’il pouvait Régis would finish his novel if he trouver une maison d’édition. could find a publisher. Nous aurions un chien si notre appartement We would have a dog if our était plus grand. apartment were bigger. Nous viendrions si notre baby-sitter était We would come if our babysitter disponible. were available. The présent du conditionnel is also used to express unconfirmed or alleged information. In this case it is called the conditionnel journalistique, seen from time to time in the press or heard on news broadcasts. La reine de Suède se rendrait en The Queen of Sweden is reportedly goin Australie la semaine prochaine. to Australia next week. Son beau-frère serait impliqué dans His (her) brother-in-law is allegedly une affaire de fraude fiscale. involved in tax fraud. Le président signerait le traité en fin The president will reportedly sign the d’après-midi. treaty by the end of the afternoon. Un sous-marin hollandais serait au A Dutch submarine is reportedly off the large des côtes bretonnes. coast of Brittany. In formal French, savoir in the présent du conditionnel is the equivalent of pouvoir (can, to be able to) in the present or the simple future. Je ne saurais vous dire combien I shall never be able to tell you how much j’apprécie votre geste. appreciate your gesture. Je ne saurais vous répondre. I am afraid I can’t answer. (I wouldn’t kn how to answer you.)
+
+### After ch11-ex08-q10 (source PDF pages 145,146)
+
+The présent or passé du conditionnel are also used with the expression au cas où (in case). Au cas où le projet ne serait pas fini cet In case the project is not finished by après-midi, appelez-moi. this afternoon, call me. Au cas où ce cadeau ne vous plairait pas, In case you do not like this present, dites-le-moi. let me know. Au cas où il aurait échoué à l’examen, on In case he failed the exam, we’ll giv lui donnera une autre chance. him another chance. Au cas où tu n’aurais pas retrouvé tes In case you did not find your keys, clés, Christian s’occupera de toi. Christian will take care of you.

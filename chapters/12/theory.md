@@ -1,4 +1,4 @@
-# Chapter 12 — Chapter 12
+# Chapter 12 — Could, should, would?
 
 > Automatically extracted from the source PDF. Text and bilingual columns must be checked visually before use in interactive lessons.
 > Literal source snapshots are preserved in `source-pages/`; a full source mirror is in `theory-source.md`.
@@ -121,3 +121,12 @@ When should means ought to, the conditionnel (présent or passé) is used.
         de musique.                         music festival.
 ```
 
+
+
+## Source theory recovered from exercise-boundary parsing
+
+> The paragraphs below were accidentally attached to the last exercise item in the automatic extraction. They are preserved here for learning-content completeness, but paragraph/table formatting and placement require visual editorial review against the PDF.
+
+### After ch12-ex02-q10 (source PDF pages 152,153)
+
+Would When would refers to a repeated action in the past, the imparfait is used. Note the following examples: Quand j’étais étudiant, je lisais les When I was a student, I would read th journaux tous les jours. newspapers every day. Quand ils étaient adolescents, ils When they were teens, they would play jouaient au volley-ball le jeudi. volleyball on Thursdays. When would refers to a polite request, the présent du conditionnel is used. Note the following examples: Voudrais-tu me montrer le chemin? Would you mind showing me the way? Est-ce que tu voudrais bien m’aider à résoudre Could you help me solve that ce problème? problem? When would refers to a specific action in the past, the passé composé of vouloir is used. Note the following examples: Nous leur avons demandé de nous accorder un We asked them to give us a littl peu de temps; ils n’ont pas voulu le faire. time; they would not do it. Je lui ai posé la question plusieurs fois; elle n’a I asked her the question severa pas voulu répondre. times; she would not answe When would refers to an idea of the future, a hypothesis, or a suggestion, the présent du conditionnel of the main verb is used. The imparfait is used in the si clause. Je vous le dirais si je le savais. I would tell you if I knew. Elle serait si heureuse si son amie She would be happy if her friend Clair Claire l’invitait à la Philharmonie de invited her at the Paris Paris. Philharmonie.

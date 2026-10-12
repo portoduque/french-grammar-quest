@@ -551,7 +551,7 @@
         {
           "id": "ch25-ex03-q10",
           "number": 10,
-          "prompt": "Cette laverie se trouve ici (for) __ plusieurs années. There is an important exception to the rule governing constructions with depuis: In negative sentences, the passé composé is used instead of the present. Forexample: Il n’a pas revu sa sœur depuis dix ans. He has not seen his sister for ten years. Nous ne sommes pas allées à Madrid We have not been to Madrid for t depuis dix ans. years.",
+          "prompt": "Cette laverie se trouve ici (for) __ plusieurs années.",
           "source_raw_prompt": "Cette laverie se trouve ici (for) ________________ plusieurs années.\n\n\n\n   There is an important exception to the rule governing constructions with depuis:\nIn negative sentences, the passé composé  is used instead of the present. Forexample:\n\n         Il n’a pas revu sa sœur depuis dix ans.    He has not seen his sister for ten\n                                                        years.\n      Nous ne sommes pas allées à Madrid     We have not been to Madrid for t\n         depuis dix ans.                              years.\n\n\n\n  ",
           "pdf_pages": [
             318,
@@ -563,6 +563,11 @@
               "depuis"
             ],
             "review_status": "publisher_source_not_independently_regraded"
+          },
+          "editorial_recovery": {
+            "moved_theory_to": "theory.md",
+            "source_text_retained_in": "source_raw_prompt",
+            "status": "recovered_requires_visual_editing"
           }
         }
       ],
@@ -936,7 +941,7 @@
         {
           "id": "ch25-ex05-q10",
           "number": 10,
-          "prompt": "Le chien de nos voisins est perdu depuis une semaine. __ Using adverbs with the passé composé In the passé composé, shorter adverbs of quantity, quality, and frequency are placed between avoir or être and the past participle. See the following example sentences: Elle étudie beaucoup. She studies a lot. Elle a beaucoup étudié. She studied a lot. Ils dépensent trop. They spend too much. Ils ont trop dépensé. They spent too much. Nous travaillons assez. We work enough. Nous avons assez travaillé. We worked enough. Il écrit très bien la musique. He writes music very well. Il a très bien écrit la musique. He wrote music very well. Tu t’exprimes mal. You express yourself badly. Tu t’es mal exprimé(e). You expressed yourself badly. Je voyage souvent en Italie. I often travel in Italy. J’ai souvent voyagé en Italie. I often traveled in Italy. Vous mentez rarement. You rarely lie. Vous avez rarement menti. You have rarely lied. To express time with the passé composé, pendant (for, during) is commonly used (although it can actually be omitted). However, pour (for) is never used to talk about duration in the past. Il a habité pendant cinq ans à Londres. He lived for five years in Londo Il a habité cinq ans à Londres. He lived five years in London. Nous avons voyagé pendant un mois en Italie.We traveled for a month in Italy Nous avons voyagé un mois en Italie. We traveled one month in Italy.",
+          "prompt": "Le chien de nos voisins est perdu depuis une semaine. __",
           "source_raw_prompt": "Le chien de nos voisins est perdu depuis une semaine.\n   _____________________________________________________________Using adverbs with the passé composé\nIn the passé composé, shorter adverbs of quantity, quality, and frequency are placed\nbetween avoir or être and the past participle. See the following example sentences:\n\n       Elle étudie beaucoup.                She studies a lot.\n       Elle a beaucoup étudié.              She studied a lot.\n         Ils dépensent trop.                  They spend too much.\n         Ils ont trop dépensé.                 They spent too much.\n      Nous travaillons assez.            We work enough.\n      Nous avons assez travaillé.         We worked enough.\n          Il écrit très bien la musique.         He writes music very well.\n          Il a très bien écrit la musique.       He wrote music very well.\n      Tu t’exprimes mal.                  You express yourself badly.\n      Tu t’es mal exprimé(e).              You expressed yourself badly.\n       Je voyage souvent en Italie.                I often travel in Italy.\n        J’ai souvent voyagé en Italie.              I often traveled in Italy.\n      Vous mentez rarement.              You rarely lie.\n      Vous avez rarement menti.           You have rarely lied.\n\n  To express time with the passé composé, pendant (for, during) is commonly used\n(although it can actually be omitted). However, pour (for) is never used to talk about\nduration in the past.\n\n          Il a habité pendant cinq ans à Londres.     He lived for five years in Londo\n          Il a habité cinq ans à Londres.           He lived five years in London.\n      Nous avons voyagé pendant un mois en Italie.We traveled for a month in Italy\n      Nous avons voyagé un mois en Italie.      We traveled one month in Italy.\n\n\n\n  ",
           "pdf_pages": [
             320,
@@ -948,6 +953,11 @@
               "Il y a une semaine que le chien de nos voisins est perdu."
             ],
             "review_status": "publisher_source_not_independently_regraded"
+          },
+          "editorial_recovery": {
+            "moved_theory_to": "theory.md",
+            "source_text_retained_in": "source_raw_prompt",
+            "status": "recovered_requires_visual_editing"
           }
         }
       ],

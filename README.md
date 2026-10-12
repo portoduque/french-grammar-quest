@@ -56,3 +56,24 @@ python scripts/validate_phase_b.py
 ```
 
 The Phase B corpus is in this **private** Git repository; keep book material and answers out of public deployments. The historical Phase A archive is not the current source of truth.
+
+## Phase C — Cross-chapter quality gate (implemented)
+
+Phase C adds title corrections for chapters 02–28; an independent whole-book auditor, `scripts/audit_phase_c.py`; deterministic evidence in `reports/phase-c-machine-audit.json`; and the final review and AI handoff guides.
+
+```bash
+python scripts/audit_phase_c.py --check-report
+# Optional: check against the *exact original PDF*, never commit it:
+python -m pip install pymupdf
+python scripts/audit_phase_c.py --pdf /private/path/original.pdf --check-report
+```
+
+The CI runs this alongside the Phase A and Phase B validators. It verifies 28 chapter titles, 372 chapter pages, 233 exercise sets, 2,227 individually identified prompts and publisher-key entries, and 113 reference pages. **It does not certify word-by-word visual fidelity, the semantic correctness of every extracted question/answer, or complete Markdown table conversion.** See `reports/phase-c-final-validation.md` and `docs/editorial-qa-checklist.md`.
+
+For future Antigravity/Codex work use `docs/ai-integration-guide.md`. The **editorial gate is still pending**, and no game system was implemented in Phase C.
+
+### Fase C — Reparos de fronteira entre teoria e exercícios
+
+A auditoria encontrou e corrigiu **29 prompts de questões** que incluíam explicações teóricas após o fim da pergunta. Seus enunciados foram limpos e os textos recuperados aparecem nos respectivos `theory.md`, com sinalização para revisão editorial. `source_raw_prompt` e `answer.source_key` foram preservados. Os testes impedem regressões detectáveis desse tipo.
+
+A realocação fina na sequência pedagógica e a reconstrução de tabelas continuam pendentes de revisão visual; o gate editorial **não** foi aprovado.

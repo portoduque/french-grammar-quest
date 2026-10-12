@@ -1,4 +1,4 @@
-# Chapter 24 — Chapter 24
+# Chapter 24 — Relative pronouns
 
 > Automatically extracted from the source PDF. Text and bilingual columns must be checked visually before use in interactive lessons.
 > Literal source snapshots are preserved in `source-pages/`; a full source mirror is in `theory-source.md`.
@@ -225,3 +225,24 @@ requires a preposition, it is repeated in the second clause.
                                                   aromatherapy!
 ```
 
+
+
+## Source theory recovered from exercise-boundary parsing
+
+> The paragraphs below were accidentally attached to the last exercise item in the automatic extraction. They are preserved here for learning-content completeness, but paragraph/table formatting and placement require visual editorial review against the PDF.
+
+### After ch24-ex01-q10 (source PDF pages 300,301,302)
+
+QueWhen the dependent clause introduced by a relative pronoun already has a subject noun or pronoun, the relative pronoun que (whom, which, that) is used. Like qui, the relative pronoun que refers to both people and things. Elle n’aime pas le cadre que vous lui She does not like the frame you are montrez. showing her. Voici le lustre que Daniel a acheté. Here’s the chandelier Daniel bought. J’ai contacté l’ébéniste que tu as I contacted the cabinetmaker you recommandé. recommended. Rends-moi le livre que je t’ai prêté. Give me back the book I lent you. In the following sentences, note that the -e of que is dropped before a vowel (qu’). Les articles qu’il vend sont chers. The items he sells are expensive. Les statues qu’il a chez lui viennent The statues that he has at home come d’Afrique. from Africa. L’article qu’elle écrit sera publié en The article she is writing will be mai. published in May. Les objets qu’ils fabriquent sont de The objects they make are of great grande valeur. value. In the compound tenses, if the direct object is placed before the verb, the past participle agrees in gender and number with that direct object. This includes sentences where que (qu’) refers back to a direct object noun. See the following examples: C’est la table en marbre que nous avons Here’s the marble table we found trouvée au marché aux puces. at the flea market. La pièce qu’il a écrite n’a jamais été jouée. The play he wrote was never performed. Montrez-moi la photo que vous avez prise. Show me the picture you took. Les chaises qu’ils ont restaurées sont comme The chairs they restored look new neuves. Note the following sentences where qui is the object of the verb in the dependent clause. In this case, a subject noun or pronoun comes between qui and the verb form. Remember that the -i of qui is never dropped. Je ne sais pas qui il est. I don’t know who he is. Le président n’a pas dit qui il The president did not say who(m) he wou nommerait à ce poste. appoint to this position. Nous ignorons qui elle renverra. We don’t know who(m) she’ll fire. Le policier a révélé qui il avait The police officer revealed who(m) he ha attrapé. caught. Qui as object of the main clause is not an anomaly. Remember that this particular qui is an interrogative pronoun.
+
+### After ch24-ex03-q05 (source PDF pages 303,304)
+
+The relative clause is often inserted into the main clause. Note again that qui and que can refer to either people or things. La commode qui est dans la vitrine, a The chest of drawers that is in the appartenu à Talleyrand. window belonged to Talleyrand. L’homme que vous voyez au fond de The man you see in the back of the sh l’atelier est un des meilleurs artisans is one of the best craftsmen in the du pays. country.
+
+### After ch24-ex04-q10 (source PDF pages 305,306,307)
+
+Où The relative pronoun où, referring to a place, often replaces dans lequel, sur lequel, par lequel, etc. Où is more common in modern language. C’est le magasin dans lequel je fais mes It’s the store where I do my courses. shopping. C’est le magasin où je fais mes courses. It’s the store where I do my shopping. La région dans laquelle ils habitent est très The area where they live is very calme. quiet. La région où ils habitent est très calme. The area where they live is very quiet. The relative pronoun où is also used when the antecedent implies the idea of a point in time. Tu te souviens de l’année où il est arrivé Do you remember the year (when) he dans la région? arrived in the region? Le jour où il a été élu, tout le monde The day (when) he was elected, était content. everyone was happy. L’instant où nous sommes partis, il a The moment (when) we left, it started commencé à pleuvoir. rain. Le dix-neuvième siècle fut un siècle où The nineteenth century was a century il y eut de nombreuses inventions. (when) there were many inventions
+
+### After ch24-ex08-q10 (source PDF pages 311,312)
+
+The relative pronouns qui and que can sometimes be followed by the subjunctive. If there is a doubt about the existence of someone or the possible realization of anything, the subjunctive may be used after the relative pronoun. Il cherche un artisan qui puisse He is looking for an artisan who might be restaurer ce fauteuil Louis XV. able to restore this Louis XV armchair. Connaîtriez-vous un antiquaire qui Would you know of an antiques dealer wh vende des pièces rares? sells rare coins? When the antecedent of the relative pronoun qui or que is a superlative such as le plus (the most), le moins (the least), le seul (the only), l’unique (the unique), le premier (the first), le dernier (the last), etc., the subjunctive may be used. Paolo est le meilleur artisan qui vende des Paolo is the best artisan who sell objets à Burano. pieces in Burano. C’est le seul marché aux puces que je It’s the only flea market I know in connaisse dans cette ville. this city.

@@ -1,4 +1,4 @@
-# Chapter 08 — Chapter 08
+# Chapter 08 — The imparfait
 
 > Automatically extracted from the source PDF. Text and bilingual columns must be checked visually before use in interactive lessons.
 > Literal source snapshots are preserved in `source-pages/`; a full source mirror is in `theory-source.md`.
@@ -124,3 +124,24 @@ conjugated in the third-person singular.
        Si on allait rendre visite à Léo?  What about paying a visit to Léo?
 ```
 
+
+
+## Source theory recovered from exercise-boundary parsing
+
+> The paragraphs below were accidentally attached to the last exercise item in the automatic extraction. They are preserved here for learning-content completeness, but paragraph/table formatting and placement require visual editorial review against the PDF.
+
+### After ch08-ex01-q10 (source PDF pages 105,106)
+
+Let’s look at the different uses of the imparfait. It is used for background and description. It describes a situation that existed in the past, a state of mind or being. Les rues étaient embouteillées. The streets were jammed. La circulation était fluide. The traffic was flowing. Il faisait trop chaud. It was too hot. Il avait faim. He was hungry. Elle ne savait pas quoi faire. She did not know what to do.
+
+### After ch08-ex02-q10 (source PDF pages 107,108)
+
+Another use of the imparfait is to express habitual, repetitive action. It describes past events that were repeated. Used to and would (meaning habitually) are translated into French by the imparfait. Autrefois, elle faisait partie de la In the past, she used to belong to the cho chorale. Ils allaient en Inde chaque année. They used to go (would go) to India ever year. Il jouait au tennis le mardi. He used to (would) play tennis on Tuesdays. As you can see in the previous examples, some expressions of time or repetition may be an indication of the imparfait: souvent often fréquemment frequently toujours always le mardi on Tuesdays le vendredi on Fridays chaque jour every day tous les jours every day chaque semaine every week chaque mois every month chaque année every year d’ordinaire ordinarily d’habitude usually habituellement usually régulièrement regularly comme à l’accoutumée as usual autrefois formerly jadis in times past
+
+### After ch08-ex03-q10 (source PDF pages 108,109)
+
+The imparfait is also used to describe a continuous action that was going on in the past when another action (expressed in the passé composé) interrupted it. Elle regardait la télévision quand She was watching television when soudain elle a entendu un grand bruit. suddenly she heard a loud noise. Il faisait ses devoirs quand son frère est He was doing his homework when h arrivé. brother arrived. To express the idea that an action had been going on for a period of time before being interrupted, use the imparfait with depuis. This is the equivalent to the past of depuis + present tense you studied in Chapter 1. Ils étaient à la montagne depuis une They had been in the mountains for semaine quand ils ont décidé d’aller au week when they decided to go to bord de la mer. the seashore. Il randonnait depuis trois jours quand il He had been hiking for three days a trouvé cette belle auberge. when he found this beautiful inn
+
+### After ch08-ex06-q10 (source PDF pages 111,112)
+
+You will encounter the imparfait in other idiomatic constructions, for instance, preceded by si seulement, to express a wish or a regret. Si seulement on pouvait prendre des vacances!If only we could take a vacatio Si seulement elle était à l’heure! If only she were on time! Si seulement ils habitaient plus près! If only they lived closer! Si seulement vous saviez! If only you knew! In Chapter 4, you studied the immediate past with the verb venir + de + infinitive. The immediate past can also be used in the imparfait to describe an action that had just happened. Elle vient de téléphoner. She has just called. Elle venait de téléphoner quand il est She had just called when he walked in entré. Il vient d’accepter ce poste. He just accepted this position. Il venait d’acccepter ce poste quand on He had just accepted this position wh lui en a proposé un autre. he was offered another one.

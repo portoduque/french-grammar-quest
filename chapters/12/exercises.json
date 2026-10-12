@@ -358,7 +358,7 @@
         {
           "id": "ch12-ex02-q10",
           "number": 10,
-          "prompt": "Marie thinks her father should be present for this occasion. __ Would When would refers to a repeated action in the past, the imparfait is used. Note the following examples: Quand j’étais étudiant, je lisais les When I was a student, I would read th journaux tous les jours. newspapers every day. Quand ils étaient adolescents, ils When they were teens, they would play jouaient au volley-ball le jeudi. volleyball on Thursdays. When would refers to a polite request, the présent du conditionnel is used. Note the following examples: Voudrais-tu me montrer le chemin? Would you mind showing me the way? Est-ce que tu voudrais bien m’aider à résoudre Could you help me solve that ce problème? problem? When would refers to a specific action in the past, the passé composé of vouloir is used. Note the following examples: Nous leur avons demandé de nous accorder un We asked them to give us a littl peu de temps; ils n’ont pas voulu le faire. time; they would not do it. Je lui ai posé la question plusieurs fois; elle n’a I asked her the question severa pas voulu répondre. times; she would not answe When would refers to an idea of the future, a hypothesis, or a suggestion, the présent du conditionnel of the main verb is used. The imparfait is used in the si clause. Je vous le dirais si je le savais. I would tell you if I knew. Elle serait si heureuse si son amie She would be happy if her friend Clair Claire l’invitait à la Philharmonie de invited her at the Paris Paris. Philharmonie.",
+          "prompt": "Marie thinks her father should be present for this occasion. __",
           "source_raw_prompt": "Marie thinks her father should be present for this occasion.\n   _____________________________________________________________Would\nWhen would refers to a repeated action in the past, the imparfait is used. Note the\nfollowing examples:\n\n      Quand j’étais étudiant, je lisais les    When I was a student, I would read th\n         journaux tous les jours.              newspapers every day.\n      Quand ils étaient adolescents, ils     When they were teens, they would play\n          jouaient au volley-ball le jeudi.         volleyball on Thursdays.\n\n  When would refers to a polite request, the présent du conditionnel is used. Note\nthe following examples:\n\n       Voudrais-tu me montrer le chemin?         Would you mind showing me\n                                                          the way?\n       Est-ce que tu voudrais bien m’aider à résoudre Could you help me solve that\n         ce problème?                              problem?\n\n  When would refers to a specific action in the past, the passé composé of vouloir\nis used. Note the following examples:\n\n      Nous leur avons demandé de nous accorder un We asked them to give us a littl\n         peu de temps; ils n’ont pas voulu le faire.     time; they would not do it.\n       Je lui ai posé la question plusieurs fois; elle n’a I asked her the question severa\n         pas voulu répondre.                          times; she would not answe\n\n  When would refers to an idea of the future, a hypothesis, or a suggestion, the\nprésent du conditionnel of the main verb is used. The imparfait is used in the si\nclause.\n\n       Je vous le dirais si je le savais.           I would tell you if I knew.\n       Elle serait si heureuse si son amie     She would be happy if her friend Clair\n          Claire l’invitait à la Philharmonie de   invited her at the Paris\n           Paris.                               Philharmonie.\n\n\n\n  ",
           "pdf_pages": [
             152,
@@ -370,6 +370,11 @@
               "Marie pense que son père devrait être présent pour cette occasion."
             ],
             "review_status": "publisher_source_not_independently_regraded"
+          },
+          "editorial_recovery": {
+            "moved_theory_to": "theory.md",
+            "source_text_retained_in": "source_raw_prompt",
+            "status": "recovered_requires_visual_editing"
           }
         }
       ],

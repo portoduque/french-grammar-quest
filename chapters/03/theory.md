@@ -1,4 +1,4 @@
-# Chapter 03 — Chapter 03
+# Chapter 03 — To be and to have
 
 > Automatically extracted from the source PDF. Text and bilingual columns must be checked visually before use in interactive lessons.
 > Literal source snapshots are preserved in `source-pages/`; a full source mirror is in `theory-source.md`.
@@ -188,3 +188,12 @@ for a polite request in the conditional form.
       Nous voulons une table près de la cheminée. We want a table by the fireplace       Je voudrais vous parler.                          I would like to speak with you.
 ```
 
+
+
+## Source theory recovered from exercise-boundary parsing
+
+> The paragraphs below were accidentally attached to the last exercise item in the automatic extraction. They are preserved here for learning-content completeness, but paragraph/table formatting and placement require visual editorial review against the PDF.
+
+### After ch03-ex09-q10 (source PDF pages 56,57)
+
+A number of other verbs ending in -oir are irregular. Let’s look at a few examples in their first-person singular and plural forms: apercevoir to see, to perceive j’aperçois I see, I perceive nous apercevons we see, we perceive décevoir to disappoint je déçois I disappoint nous décevons we disappoint devoir must, to have to je dois I must, I have to nous devons we must, we have to émouvoir to move, to stir j’émeus I move, I stir nous émouvons we move, we stir prévoir to foresee, to predict je prévois I foresee nous prévoyons we foresee promouvoir to promote je promeus I promote nous promouvons we promote recevoir to receive je reçois I receive nous recevons we receive valoir to be worth cela vaut it is worth nous valons we are worth voir to see je vois I see nous voyons we see Falloir and pleuvoir are used only in the third-person singular. falloir to be necessary il faut it is necessary pleuvoir to rain il pleut it is raining

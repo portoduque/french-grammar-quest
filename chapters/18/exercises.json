@@ -357,7 +357,7 @@
         {
           "id": "ch18-ex02-q10",
           "number": 10,
-          "prompt": "Le peintre habite. (Il ignore où) __ Learning la concordance des temps, that is, balancing tenses, is one of the most difficult tasks of a French learner. When switching from direct to indirect speech, some changes of tense occur when the main clause verb is in the passé composé. Here are the three main scenarios:",
+          "prompt": "Le peintre habite. (Il ignore où) __",
           "source_raw_prompt": "Le peintre habite. (Il ignore où)\n   _____________________________________________________________   Learning la concordance des temps, that is, balancing tenses, is one of the most\ndifficult tasks of a French learner. When switching from direct to indirect speech,\nsome changes of tense occur when the main clause verb is in the passé composé.\nHere are the three main scenarios:",
           "pdf_pages": [
             214,
@@ -370,6 +370,11 @@
               "Il ignore où le peintre habite."
             ],
             "review_status": "publisher_source_not_independently_regraded"
+          },
+          "editorial_recovery": {
+            "moved_theory_to": "theory.md",
+            "source_text_retained_in": "source_raw_prompt",
+            "status": "recovered_requires_visual_editing"
           }
         }
       ],
