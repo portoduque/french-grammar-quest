@@ -101,6 +101,8 @@ def audit(pdf=None):
                 require(qid not in all_questions, f"duplicate question {qid}")
                 all_questions.add(qid)
                 require(q["prompt"].strip() and q["source_raw_prompt"].strip(), f"empty prompt {qid}")
+                if n > 1:
+                    require(len(q["prompt"]) <= 250, f"likely theory text merged into question {qid}")
                 require(set(q["pdf_pages"]) <= set(pages), f"question page {qid}")
                 require(q["answer"]["source_key"].strip() and q["answer"]["accepted"], f"empty key {qid}")
                 if n > 1:
@@ -112,6 +114,8 @@ def audit(pdf=None):
                      "machine_gate": "pass", "visual_gate": "pending"})
     require(sorted(all_pages) == list(range(14,386)), "book chapter page coverage 14–385")
     require((len(all_groups), len(all_questions)) == (233,2227), "book exercise/item totals changed")
+    recovered = sum(1 for n in range(2, 29) for ex in read(ROOT / "chapters" / f"{n:02}" / "exercises.json")["exercises"] for q in ex["questions"] if "editorial_recovery" in q)
+    require(recovered == 29, f"expected 29 repaired question/theory boundary cases, got {recovered}")
     references = []
     for name,a,b in SUPPLEMENTS:
         md = (ROOT / "references" / (name + ".md")).read_text(encoding="utf-8")
