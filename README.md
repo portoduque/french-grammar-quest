@@ -1,52 +1,44 @@
-# French Grammar Quest — Content Foundation
+# French Grammar Quest — Content Foundation (private repository)
 
-**Phase A: chapter 01 conversion and structural validation implemented.** This is a content-first project, **not** a React application yet.
+This repository is **private** and contains the Phase A textbook-based content conversion. No React application, Supabase integration, Vercel deployment, or game engine has been implemented.
 
-## Public repository
+## Current content
 
-- `manifest.json`: chapter-level inventory of 28 chapters and source PDF page locations.
-- `schemas/chapter.schema.json`: chapter metadata and topic/exercise relationships.
-- `schemas/exercise.schema.json`: instructions, individual questions, publisher answers, source locations and future interaction types.
-- `scripts/validate_content.py`: inventory validation and optional private chapter-01 validation.
-- `reports/coverage.md`, `reports/validation.md`: evidence and limitations.
-- `.github/workflows/content-validation.yml`: structural checks on pushes and pull requests.
+- `manifest.json`: 527-page source inventory, 28 chapters, 233 detected exercise-group markers (a duplicate in chapter 26 is flagged).
+- `chapters/01/theory.md`: English-language source theory, extracted and ordered with page references.
+- `chapters/01/exercises.json`: 10 groups containing 100 individually identified French-language questions and 100 publisher-key associations.
+- `chapters/01/metadata.json`: topics, source-page and exercise relationships.
+- `chapters/01/lesson-sequence.json`: ordered theory/exercise source-text partition for audit.
+- `chapters/01/source-pages/`: the 17 raw selectable-text source snapshots, PDF pages 14–30.
+- `chapters/01/answer-key-source.txt`: source excerpt of chapter-one answer keys.
+- `reports/`: inventory, coverage, chapter-one conversion evidence, caveats and remaining editorial checks.
+- `content/archives/phase-a-content.tar.xz`: compact backup of the exact original Phase A private package.
+- `schemas/`, `scripts/`: JSON contracts and validators.
 
-## Phase A verified outputs
+## Run validation
 
-- 527-page PDF inventoried: 28 chapters; 233 detected exercise **markers** (one known duplicated/misnumbered marker in chapter 26). These are not individual questions.
-- Chapter 1 private package: 17/17 chapter pages, three primary theory topics, ten groups, **100 individual questions**, 100 publisher answer-key entries, and source page references.
-- Source text is partitioned into theory/exercise fragments without losing extracted characters. Chapter 1 Markdown retains text-aligned tables and chapter headings.
-- Source-specific exceptions are documented; visual fidelity and alternative acceptable translations are **not** claimed as completely human-certified.
-
-## Validate
-
-Public-only (requires Python 3.10+):
-
-```bash
-python scripts/validate_content.py
-```
-
-With a **separately downloaded, unzipped private source-content package**:
+With Python 3.12:
 
 ```bash
 python -m pip install 'jsonschema>=4.23,<5'
-python scripts/validate_content.py --private /path/to/french-grammar-content-private-phase-a-final
+python scripts/validate_content.py
+python scripts/validate_content.py --private .
 ```
 
-The optional `jsonschema` package enables full schema checking. The private package is **not** and must never be published to this repository.
+The GitHub Actions job runs both checks for every pull request. The second validates the checked-in chapter 1 corpus. Some checks rely on exact source text and are not proof of human word-by-word proofreading.
 
-## Phase A scope and known exceptions
+## Important exceptions
 
-- Original PDF page 28 contains clipped right-side English translation examples; missing text has **not** been invented.
-- Chapter 1 exercise 1·6 question 6 prints `Je` before a blank, while the source key is `J’habite`. Correct gameplay must handle the `Je` → `J’` elision. The original key is preserved and the item is flagged.
-- Publisher answers may not exhaust valid paraphrases; avoid using strict single-string grading for free responses without an editorial review.
-- Chapter 26 contains a duplicated/misnumbered exercise marker requiring later visual confirmation.
-- This is a machine-audited extraction, not a full manual proofreading certificate for every glyph.
+- The original PDF visually clips some English examples on PDF page 28. Missing wording is not fabricated.
+- Exercise 1·6 question 6 needs `Je` → `J’` elision to match the printed `J’habite` answer.
+- Alternative grammatically valid free-form answers beyond the publisher keys are not exhaustively enumerated.
+- Chapter 26 has a duplicate/misnumbered exercise marker.
+- Source-selectable text partition checks do not prove perfect visual fidelity of every PDF graphic or glyph.
 
-## Copyright and access
+## Copyright
 
-This **public repo must contain only tools, documentation, schemas, source references and original example fixtures**. Do not commit original book chapters, images, full exercises, answer keys, or derived private exports. `.gitignore` excludes their expected paths. The private study package is distributed separately for the user's authorized personal use; redistributing substantial book content to other users may require permission.
+The source book is copyrighted. Keep this repository private. **Do not expose source text through a publicly accessible API, Vercel build, public archive, or public Supabase table.** Private repository access is not a substitute for permission to redistribute the book to friends or other users.
 
-## Next phase
+## Next development step
 
-Do not build React, Supabase or Vercel in Phase A. Phase B may extend the validated chapter 01 pattern to chapters 02–28, with chapter-by-chapter extraction, source review, and reporting. See `docs/content-workflow.md`.
+Use the existing content contracts to map chapters 02–28 one chapter at a time. First compare the Chapter 01 structured corpus and its documented exceptions against the PDF visually. See `docs/content-workflow.md` for AI coding instructions.

@@ -1,24 +1,24 @@
-# Phase A validation evidence and residual risks
+# Phase A validation and known limitations
 
-## Verified
+## Completed machine-verifiable checks
 
-1. Book manifest: 28 chapters, contiguous PDF chapter ranges 14–385, 233 exercise markers, and chapter-26 duplicate marker recorded.
-2. Chapter 1: **17 original pages** (PDF 14–30); source text divided into theory/exercise spans with 100% character coverage against extracted page text.
-3. Exactly 10 exercise groups and **100 numbered questions** extracted; all have stable IDs, text, source PDF pages and a publisher-key answer.
-4. Answer key 1-1 through 1-10 is drawn from PDF pages 499–500; ten source answers associated to every group.
-5. Original English as explanation language and French target language maintained; no translation into Portuguese.
-6. Fenced verb and vocabulary columns in `theory.md` preserve the original extracted layout pending future semantic-table markup.
-7. The independent validator runs in both public-manifest and private-pilot modes; private mode also checks draft-2020-12 JSON Schemas when `jsonschema` is installed.
-8. Public PR content excludes copyrighted source PDF, source page text, complete chapter theory, questions and answer keys.
+- 28 distinct ordered chapters with source PDF page ranges 14–385.
+- 233 detected exercise-group markers (not 233 individual questions).
+- Chapter 01: 17 original pages, 3 primary theory topics, 10 group IDs, 100 numbered question IDs and 100 publisher answer-key associations.
+- Source selectable-text length partitioned into theory/exercise spans with no lost characters.
+- Source PDF SHA-256 is pinned in metadata for traceability.
+- Chapter 1 structured files are now versioned in the private GitHub repository.
+- GitHub Actions validates the manifest, chapter corpus and JSON Schemas.
 
-## Important exceptions
+## Explicit limitations
 
-- **PDF page 28 source defect:** English glosses visibly extend beyond the right edge and are clipped in the original PDF rendering. The unavailable parts are not inferred or silently repaired.
-- **Exercise 1·6 item 6:** the publisher key lists `J’habite`, while the item prints `Je` before the blank. A correct sentence requires elision to `J’`. The key `J’habite` is preserved as accepted, and the item is flagged for special gameplay rendering.
-- **Translation flexibility:** publisher keys are reference responses, not exhaustive sets of valid grammatical alternatives. Some alternatives explicitly printed for gender are represented, but others need editorial review.
-- **Visual proofing:** all machine-readable text is accounted for, but no full word-by-word human comparison of all 17 rendered pages is certified.
-- **Chapter 26:** duplicate `26·1` marker needs verification before Phase B.
+1. PDF page 28's English translation examples are clipped at the original page border; no reconstruction was invented.
+2. Exercise 1·6 item 6 requires elision from `Je` to `J’`, matching the publisher key `J’habite`.
+3. Publisher answers do not enumerate all acceptable open-response paraphrases.
+4. Complete word-by-word human visual comparison of all 17 source pages is **not certified**.
+5. Verb-table formatting is source-aligned text pending editorial semantic markup.
+6. The duplicated chapter 26 exercise marker requires source-page verification in the next phase.
 
-## Scope distinction
+## Scope
 
-The Phase A acceptance gate applies to **metadata for all 28 chapters** and a **fully numbered private pilot for chapter 01**. It does **not** mean chapters 02–28 are individually converted or validated. No frontend, backend, game engine, database or hosting was implemented.
+**Phase A:** book-level inventory and fully numbered Chapter 01 private structural pilot. Chapters 02–28 are not converted. No application infrastructure has been created. Private GitHub visibility should be checked before each source content import.

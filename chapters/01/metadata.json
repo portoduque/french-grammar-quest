@@ -1,0 +1,68 @@
+{
+  "chapter": 1,
+  "title": "The present tense of regular -er verbs",
+  "source": {
+    "pdf_pages": [
+      14,
+      30
+    ],
+    "answer_key_pdf_pages": [
+      499,
+      500
+    ],
+    "source_sha256": "297b92bc48e075449713c3b408ccf47de2466cfc6c4f4a25687a2a974276ae4d"
+  },
+  "topics": [
+    {
+      "id": "ch01-t01",
+      "title": "Regular -er verbs in the present",
+      "exercise_ids": [
+        "ch01-ex01",
+        "ch01-ex02"
+      ]
+    },
+    {
+      "id": "ch01-t02",
+      "title": "-er verbs with spelling and stem changes",
+      "exercise_ids": [
+        "ch01-ex03",
+        "ch01-ex04",
+        "ch01-ex05",
+        "ch01-ex06",
+        "ch01-ex07"
+      ]
+    },
+    {
+      "id": "ch01-t03",
+      "title": "When is the present tense used in French?",
+      "exercise_ids": [
+        "ch01-ex08",
+        "ch01-ex09",
+        "ch01-ex10"
+      ]
+    }
+  ],
+  "exercise_ids": [
+    "ch01-ex01",
+    "ch01-ex02",
+    "ch01-ex03",
+    "ch01-ex04",
+    "ch01-ex05",
+    "ch01-ex06",
+    "ch01-ex07",
+    "ch01-ex08",
+    "ch01-ex09",
+    "ch01-ex10"
+  ],
+  "question_total": 100,
+  "validation": {
+    "all_chapter_source_text_partitioned": true,
+    "exercises_detected": 10,
+    "questions_structured": 100,
+    "answer_key_entries_associated": 100,
+    "source_pages_with_text_retained": 17,
+    "automatic_text_coverage_percent": 100,
+    "visual_crosscheck": "spot_checked_not_entire_chapter_human_review",
+    "source_warning": "PDF page 28 original visually clips the English right-column examples; preserve as-is; requires alternate authorized source to restore."
+  }
+}

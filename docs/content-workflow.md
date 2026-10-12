@@ -1,32 +1,31 @@
-# Content workflow for Antigravity / Codex
+# Content workflow for Antigravity / Codex (private repo)
 
 ## Source of truth
+- `manifest.json`: mapped book chapter titles, topic identities and PDF page references.
+- `chapters/01/theory.md`: first-chapter theory extracted with PDF markers.
+- `chapters/01/exercises.json`: first-chapter structured exercise groups and publisher key answers.
+- `chapters/01/metadata.json`, `lesson-sequence.json` and `source-pages/`: provenance and completeness audit.
+- `schemas/*.schema.json`: normalized content contracts.
 
-Use the original copyrighted PDF only in the user's authorized private local workspace. The public `manifest.json` maps chapter and topic identities; `schemas/*.schema.json` define the normalized data model. The separately delivered private chapter 01 package is the **pilot corpus**; no app code is part of this phase.
+## Required workflow
+1. Confirm the GitHub repository remains **private** before committing any source-derived text.
+2. Never fill missing PDF sections by inference. Mark corrupt or clipped source explicitly.
+3. Preserve original chapter order, printed exercise numbers, references to PDF pages, source keys, and stable IDs.
+4. For every chapter record: theory headings, explanations, exceptions, examples and tables; group instructions, individual questions, source-page references, publisher answer keys and review flags.
+5. Distinguish a *source answer* from a comprehensive list of valid alternate responses.
+6. Keep question text and gameplay type independent so React game mechanics can be changed without altering the source corpus.
+7. After each chapter, run validation and publish coverage metrics with exceptions listed; no unverified claim of 100% visual fidelity.
+8. Do not publish the copyrighted materials through Vercel public assets or unauthenticated Supabase endpoints.
 
-## How to inspect chapter 01
-
-Unzip the private package **outside this public repo**. Review `chapters/01/metadata.json`, `theory.md`, `exercises.json`, `lesson-sequence.json`, raw `source-pages/`, and `reports/chapter01-validation.md`.
-
-If the private directory is unzipped at `/secure/french-grammar-content-private-phase-a-final`, run:
+## Phase A validation
 
 ```bash
 python -m pip install 'jsonschema>=4.23,<5'
-python scripts/validate_content.py --private /secure/french-grammar-content-private-phase-a-final
+python scripts/validate_content.py
+python scripts/validate_content.py --private .
 ```
 
-## Editorial rules for future chapters
+## Known chapter 1 edge cases
+PDF page 28 contains visibly truncated English translation examples in the original file. Exercise 1·6 question 6 requires `Je` → `J’` elision rather than a simple blank fill. Both are tracked without silently changing publisher content.
 
-- Preserve chapter order, source exercise labels and page numbers; never silently renumber a duplicated label.
-- Give each *question* (not only its containing exercise group) a stable unique ID.
-- Keep theory segments, paragraphs, verb tables, example pairs and vocabulary separate from interactive questions.
-- Keep each publisher answer in `answer.source_key`; only add `answer.accepted` values when justified. Record unresolved ambiguity in `review_status`.
-- For matching activities, capture every option and its source letter exactly.
-- Keep page-level snapshots and a lossless partition trace so every selectable-text character is accounted for. This proves extraction coverage, **not** visual equivalence.
-- Flag clipped PDF source text, broken accents, interrupted columns, typographic defects and ambiguous keys explicitly.
-- Re-run the validator after every conversion; do not declare missing human proofing to be complete.
-- Never publish full theory, actual questions, source answer keys or the original PDF to this public repo.
-
-## Future application separation
-
-Later, React reads structured content delivered through an authenticated/private content store. Game components should depend on `interaction_type` and schema fields, not PDF parsing at runtime. User progress/XP is separate from the book corpus.
+Phase B is future work; no React or game platform implementation is included.

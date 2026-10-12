@@ -1,0 +1,32 @@
+                    •1•
+
+ The present tense of regular -er verbs
+
+
+
+
+Before studying the present tense in French, you need to be familiar with the
+grammatical terms in the chapters where verbs are discussed. To conjugate a verb in
+the present tense, you’ll need to find the root (or stem) of a verb to which you’ll add
+the ending corresponding to the desired tense. The root of the verb is found in its
+infinitive form. In English, the infinitive is preceded by the preposition to: to say, to
+wear. Infinitives in French are not preceded by an equivalent of the preposition to.
+They are identified according to groups by their endings: -er, -ir, -re, -oir.
+
+Regular -er verbs in the present
+Let’s start with the infinitives of verbs of the first group, ending in -er, such as
+regarder (to look at) and chanter (to sing). Most verbs that end in -er in the
+infinitive follow the same conjugation. The pattern is easy. You remove the -er
+ending of the verb to get the root: parler (to speak) → parl-. Then, you add the
+endings corresponding to the subject pronoun.
+  The endings for the -er regular verbs are: -e, -es, -e, -ons, -ez, -ent. The -e, -es,
+and -ent endings of the verbs are all silent. The final -s of nous, vous, ils, elles links
+with verbs beginning with a vowel sound, making a z sound. This is called a liaison.
+   Let’s conjugate the verb parler (to speak). Note that, as in English, conjugated
+forms are preceded by a subject pronoun:
+
+        je parle        I speak        nous parlons     we speak
+        tu parles     you speak     vous parlez       you speak
+           il parle      he speaks        ils parlent         they (m., m./f.) speak
+        elle parle    she speaks      elles parlent       they (f.) speak
+      on parle     one/they/we speak
