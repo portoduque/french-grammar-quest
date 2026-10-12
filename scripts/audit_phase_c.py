@@ -103,6 +103,9 @@ def audit(pdf=None):
                 require(q["prompt"].strip() and q["source_raw_prompt"].strip(), f"empty prompt {qid}")
                 require(set(q["pdf_pages"]) <= set(pages), f"question page {qid}")
                 require(q["answer"]["source_key"].strip() and q["answer"]["accepted"], f"empty key {qid}")
+                if n > 1:
+                    require(q["source_raw_prompt"] in "".join(pages.values()),
+                            f"question {qid} is not found verbatim in preserved PDF text")
         rows.append({"chapter": n, "pages": len(pages), "groups": len(groups),
                      "questions": m["question_total"], "subtopics": len(subs),
                      "raw_code_blocks": markdown.count(chr(96)*3+"text"),
