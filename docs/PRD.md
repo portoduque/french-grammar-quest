@@ -725,6 +725,7 @@ Este PRD deve ser versionado em `docs/PRD.md` junto do plano de execução `docs
 - `docs/content-workflow.md` — governança do corpus.
 - `NOTICE.md` — titularidade e restrições de material de terceiros.
 - `docs/PRD-IMPLEMENTATION-PLAN.md` — histórias, backlog, critérios de aceite e sequência de desenvolvimento.
+- `docs/PRD-CONTENT-MAP.md` — capítulo a capítulo, contagem real de exercícios/questões e relação com mundos.
 
 ---
 
