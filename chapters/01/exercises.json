@@ -1,0 +1,1889 @@
+{
+  "chapter": 1,
+  "status": "structured_answer_key_matched_visual_spot_check",
+  "exercises": [
+    {
+      "id": "ch01-ex01",
+      "source": {
+        "chapter": 1,
+        "exercise": "1.1",
+        "pdf_pages": [
+          17
+        ]
+      },
+      "topic_ids": [
+        "ch01-t01"
+      ],
+      "instruction": "Mettre les verbes entre parenthèses au présent.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch01-ex01-q01",
+          "number": 1,
+          "prompt": "Lucie _________________ (travailler) à Lyon.",
+          "source_raw_prompt": "Lucie _________________ (travailler) à Lyon.",
+          "pdf_pages": [
+            17
+          ],
+          "answer": {
+            "source_key": "travaille",
+            "accepted": [
+              "travaille"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex01-q02",
+          "number": 2,
+          "prompt": "Mon frère et moi, nous _________________ (accepter) votre invitation.",
+          "source_raw_prompt": "Mon frère et moi, nous _________________ (accepter) votre invitation.",
+          "pdf_pages": [
+            17
+          ],
+          "answer": {
+            "source_key": "acceptons",
+            "accepted": [
+              "acceptons"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex01-q03",
+          "number": 3,
+          "prompt": "M. et Mme Benoît _________________ (chercher) un appartement.",
+          "source_raw_prompt": "M. et Mme Benoît _________________ (chercher) un appartement.",
+          "pdf_pages": [
+            17
+          ],
+          "answer": {
+            "source_key": "cherchent",
+            "accepted": [
+              "cherchent"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex01-q04",
+          "number": 4,
+          "prompt": "Tu _________________ (apporter) toujours des fleurs.",
+          "source_raw_prompt": "Tu _________________ (apporter) toujours des fleurs.",
+          "pdf_pages": [
+            17
+          ],
+          "answer": {
+            "source_key": "apportes",
+            "accepted": [
+              "apportes"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex01-q05",
+          "number": 5,
+          "prompt": "Vous _________________ (bavarder) sur la terrasse.",
+          "source_raw_prompt": "Vous _________________ (bavarder) sur la terrasse.",
+          "pdf_pages": [
+            17
+          ],
+          "answer": {
+            "source_key": "bavardez",
+            "accepted": [
+              "bavardez"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex01-q06",
+          "number": 6,
+          "prompt": "Je _________________ (commander) une soupe de légumes.",
+          "source_raw_prompt": "Je _________________ (commander) une soupe de légumes.",
+          "pdf_pages": [
+            17
+          ],
+          "answer": {
+            "source_key": "commande",
+            "accepted": [
+              "commande"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex01-q07",
+          "number": 7,
+          "prompt": "Ils _________________ (habiter) en Normandie.",
+          "source_raw_prompt": "Ils _________________ (habiter) en Normandie.",
+          "pdf_pages": [
+            17
+          ],
+          "answer": {
+            "source_key": "habitent",
+            "accepted": [
+              "habitent"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex01-q08",
+          "number": 8,
+          "prompt": "Elle _________________ (déjeuner) avec sa belle-sœur.",
+          "source_raw_prompt": "Elle _________________ (déjeuner) avec sa belle-sœur.",
+          "pdf_pages": [
+            17
+          ],
+          "answer": {
+            "source_key": "déjeune",
+            "accepted": [
+              "déjeune"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex01-q09",
+          "number": 9,
+          "prompt": "Vous _________________ (dessiner) très bien.",
+          "source_raw_prompt": "Vous _________________ (dessiner) très bien.",
+          "pdf_pages": [
+            17
+          ],
+          "answer": {
+            "source_key": "dessinez",
+            "accepted": [
+              "dessinez"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex01-q10",
+          "number": 10,
+          "prompt": "Nous _________________ (visiter) le château de Fontainebleau.",
+          "source_raw_prompt": "Nous _________________ (visiter) le château de Fontainebleau.",
+          "pdf_pages": [
+            17
+          ],
+          "answer": {
+            "source_key": "visitons",
+            "accepted": [
+              "visitons"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      }
+    },
+    {
+      "id": "ch01-ex02",
+      "source": {
+        "chapter": 1,
+        "exercise": "1.2",
+        "pdf_pages": [
+          17,
+          18
+        ]
+      },
+      "topic_ids": [
+        "ch01-t01"
+      ],
+      "instruction": "Traduire en français.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch01-ex02-q01",
+          "number": 1,
+          "prompt": "We refuse the invitation.",
+          "source_raw_prompt": "We refuse the invitation.",
+          "pdf_pages": [
+            17
+          ],
+          "answer": {
+            "source_key": "Nous refusons l’invitation.",
+            "accepted": [
+              "Nous refusons l’invitation."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex02-q02",
+          "number": 2,
+          "prompt": "She cancels the trip.",
+          "source_raw_prompt": "She cancels the trip.",
+          "pdf_pages": [
+            17
+          ],
+          "answer": {
+            "source_key": "Elle annule le voyage.",
+            "accepted": [
+              "Elle annule le voyage."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex02-q03",
+          "number": 3,
+          "prompt": "He speaks French.",
+          "source_raw_prompt": "He speaks French.\n[[PDF_PAGE_018]]",
+          "pdf_pages": [
+            17,
+            18
+          ],
+          "answer": {
+            "source_key": "Il parle français.",
+            "accepted": [
+              "Il parle français."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex02-q04",
+          "number": 4,
+          "prompt": "You bring some flowers. (formal)",
+          "source_raw_prompt": "You bring some flowers. (formal)",
+          "pdf_pages": [
+            18
+          ],
+          "answer": {
+            "source_key": "Vous apportez des fleurs.",
+            "accepted": [
+              "Vous apportez des fleurs."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex02-q05",
+          "number": 5,
+          "prompt": "I cut the bread.",
+          "source_raw_prompt": "I cut the bread.",
+          "pdf_pages": [
+            18
+          ],
+          "answer": {
+            "source_key": "Je coupe le pain.",
+            "accepted": [
+              "Je coupe le pain."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex02-q06",
+          "number": 6,
+          "prompt": "They are having lunch with Julie.",
+          "source_raw_prompt": "They are having lunch with Julie.",
+          "pdf_pages": [
+            18
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) déjeunent avec Julie.",
+            "accepted": [
+              "Ils déjeunent avec Julie.",
+              "Elles déjeunent avec Julie."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex02-q07",
+          "number": 7,
+          "prompt": "He borrows ten euros.",
+          "source_raw_prompt": "He borrows ten euros.",
+          "pdf_pages": [
+            18
+          ],
+          "answer": {
+            "source_key": "Il emprunte dix euros.",
+            "accepted": [
+              "Il emprunte dix euros."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex02-q08",
+          "number": 8,
+          "prompt": "I order a dessert.",
+          "source_raw_prompt": "I order a dessert.",
+          "pdf_pages": [
+            18
+          ],
+          "answer": {
+            "source_key": "Je commande un dessert.",
+            "accepted": [
+              "Je commande un dessert."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex02-q09",
+          "number": 9,
+          "prompt": "You study Italian. (informal)",
+          "source_raw_prompt": "You study Italian. (informal)",
+          "pdf_pages": [
+            18
+          ],
+          "answer": {
+            "source_key": "Tu étudies l’italien.",
+            "accepted": [
+              "Tu étudies l’italien."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex02-q10",
+          "number": 10,
+          "prompt": "They are looking for a good restaurant.",
+          "source_raw_prompt": "They are looking for a good restaurant.\n   _____________________________________________________________",
+          "pdf_pages": [
+            18
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) cherchent un bon restaurant.",
+            "accepted": [
+              "Ils cherchent un bon restaurant.",
+              "Elles cherchent un bon restaurant."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      }
+    },
+    {
+      "id": "ch01-ex03",
+      "source": {
+        "chapter": 1,
+        "exercise": "1.3",
+        "pdf_pages": [
+          20
+        ]
+      },
+      "topic_ids": [
+        "ch01-t02"
+      ],
+      "instruction": "Mettre au présent les verbes entre parenthèses.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch01-ex03-q01",
+          "number": 1,
+          "prompt": "Nous _________________ (commencer) à huit heures le matin.",
+          "source_raw_prompt": "Nous _________________ (commencer) à huit heures le matin.",
+          "pdf_pages": [
+            20
+          ],
+          "answer": {
+            "source_key": "commençons",
+            "accepted": [
+              "commençons"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex03-q02",
+          "number": 2,
+          "prompt": "Vous _________________ (avancer) rapidement.",
+          "source_raw_prompt": "Vous _________________ (avancer) rapidement.",
+          "pdf_pages": [
+            20
+          ],
+          "answer": {
+            "source_key": "avancez",
+            "accepted": [
+              "avancez"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex03-q03",
+          "number": 3,
+          "prompt": "Je _________________ (déplacer) les meubles du salon.",
+          "source_raw_prompt": "Je _________________ (déplacer) les meubles du salon.",
+          "pdf_pages": [
+            20
+          ],
+          "answer": {
+            "source_key": "déplace",
+            "accepted": [
+              "déplace"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex03-q04",
+          "number": 4,
+          "prompt": "Nous _________________ (devancer) nos concurrents.",
+          "source_raw_prompt": "Nous _________________ (devancer) nos concurrents.",
+          "pdf_pages": [
+            20
+          ],
+          "answer": {
+            "source_key": "devançons",
+            "accepted": [
+              "devançons"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex03-q05",
+          "number": 5,
+          "prompt": "Nous _________________ (annoncer) une augmentation de salaire au début de l’année.",
+          "source_raw_prompt": "Nous _________________ (annoncer) une augmentation de salaire au début\n    de l’année.",
+          "pdf_pages": [
+            20
+          ],
+          "answer": {
+            "source_key": "annonçons",
+            "accepted": [
+              "annonçons"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex03-q06",
+          "number": 6,
+          "prompt": "Tu _________________ (effacer) le tableau.",
+          "source_raw_prompt": "Tu _________________ (effacer) le tableau.",
+          "pdf_pages": [
+            20
+          ],
+          "answer": {
+            "source_key": "effaces",
+            "accepted": [
+              "effaces"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex03-q07",
+          "number": 7,
+          "prompt": "Nous _________________ (remplacer) toute l’équipe.",
+          "source_raw_prompt": "Nous _________________ (remplacer) toute l’équipe.",
+          "pdf_pages": [
+            20
+          ],
+          "answer": {
+            "source_key": "remplaçons",
+            "accepted": [
+              "remplaçons"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex03-q08",
+          "number": 8,
+          "prompt": "Ils _________________ (exercer) une grande influence.",
+          "source_raw_prompt": "Ils _________________ (exercer) une grande influence.",
+          "pdf_pages": [
+            20
+          ],
+          "answer": {
+            "source_key": "exercent",
+            "accepted": [
+              "exercent"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex03-q09",
+          "number": 9,
+          "prompt": "Nous _________________ (financer) ce projet.",
+          "source_raw_prompt": "Nous _________________ (financer) ce projet.",
+          "pdf_pages": [
+            20
+          ],
+          "answer": {
+            "source_key": "finançons",
+            "accepted": [
+              "finançons"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex03-q10",
+          "number": 10,
+          "prompt": "Elle _________________ (menacer) de partir.",
+          "source_raw_prompt": "Elle _________________ (menacer) de partir.",
+          "pdf_pages": [
+            20
+          ],
+          "answer": {
+            "source_key": "menace",
+            "accepted": [
+              "menace"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      }
+    },
+    {
+      "id": "ch01-ex04",
+      "source": {
+        "chapter": 1,
+        "exercise": "1.4",
+        "pdf_pages": [
+          21,
+          22
+        ]
+      },
+      "topic_ids": [
+        "ch01-t02"
+      ],
+      "instruction": "Mettre au présent les verbes entre parenthèses.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch01-ex04-q01",
+          "number": 1,
+          "prompt": "Vous _________________ (mélanger) les ingrédients.",
+          "source_raw_prompt": "Vous _________________ (mélanger) les ingrédients.",
+          "pdf_pages": [
+            21
+          ],
+          "answer": {
+            "source_key": "mélangez",
+            "accepted": [
+              "mélangez"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex04-q02",
+          "number": 2,
+          "prompt": "Je _________________ (ranger) mes affaires.",
+          "source_raw_prompt": "Je _________________ (ranger) mes affaires.",
+          "pdf_pages": [
+            21
+          ],
+          "answer": {
+            "source_key": "range",
+            "accepted": [
+              "range"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex04-q03",
+          "number": 3,
+          "prompt": "Nous _________________ (exiger) votre présence à la réunion.",
+          "source_raw_prompt": "Nous _________________ (exiger) votre présence à la réunion.\n[[PDF_PAGE_022]]",
+          "pdf_pages": [
+            21,
+            22
+          ],
+          "answer": {
+            "source_key": "exigeons",
+            "accepted": [
+              "exigeons"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex04-q04",
+          "number": 4,
+          "prompt": "Ils _________________ (déménager) demain.",
+          "source_raw_prompt": "Ils _________________ (déménager) demain.",
+          "pdf_pages": [
+            22
+          ],
+          "answer": {
+            "source_key": "déménagent",
+            "accepted": [
+              "déménagent"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex04-q05",
+          "number": 5,
+          "prompt": "Elle _________________ (héberger) ses amis.",
+          "source_raw_prompt": "Elle _________________ (héberger) ses amis.",
+          "pdf_pages": [
+            22
+          ],
+          "answer": {
+            "source_key": "héberge",
+            "accepted": [
+              "héberge"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex04-q06",
+          "number": 6,
+          "prompt": "Vous _________________ (corriger) les exercices.",
+          "source_raw_prompt": "Vous _________________ (corriger) les exercices.",
+          "pdf_pages": [
+            22
+          ],
+          "answer": {
+            "source_key": "corrigez",
+            "accepted": [
+              "corrigez"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex04-q07",
+          "number": 7,
+          "prompt": "Nous _________________ (manger) sur la terrasse à midi.",
+          "source_raw_prompt": "Nous _________________ (manger) sur la terrasse à midi.",
+          "pdf_pages": [
+            22
+          ],
+          "answer": {
+            "source_key": "mangeons",
+            "accepted": [
+              "mangeons"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex04-q08",
+          "number": 8,
+          "prompt": "Tu _________________ (nager) dans la piscine.",
+          "source_raw_prompt": "Tu _________________ (nager) dans la piscine.",
+          "pdf_pages": [
+            22
+          ],
+          "answer": {
+            "source_key": "nages",
+            "accepted": [
+              "nages"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex04-q09",
+          "number": 9,
+          "prompt": "Nous _________________ (encourager) ces jeunes talents.",
+          "source_raw_prompt": "Nous _________________ (encourager) ces jeunes talents.",
+          "pdf_pages": [
+            22
+          ],
+          "answer": {
+            "source_key": "encourageons",
+            "accepted": [
+              "encourageons"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex04-q10",
+          "number": 10,
+          "prompt": "Souvent, il _________________ (changer) d’avis.",
+          "source_raw_prompt": "Souvent, il _________________ (changer) d’avis.",
+          "pdf_pages": [
+            22
+          ],
+          "answer": {
+            "source_key": "change",
+            "accepted": [
+              "change"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      }
+    },
+    {
+      "id": "ch01-ex05",
+      "source": {
+        "chapter": 1,
+        "exercise": "1.5",
+        "pdf_pages": [
+          24
+        ]
+      },
+      "topic_ids": [
+        "ch01-t02"
+      ],
+      "instruction": "Mettre au présent les verbes entre parenthèses.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch01-ex05-q01",
+          "number": 1,
+          "prompt": "Il _________________ (renouveler) son passeport.",
+          "source_raw_prompt": "Il _________________ (renouveler) son passeport.",
+          "pdf_pages": [
+            24
+          ],
+          "answer": {
+            "source_key": "renouvelle",
+            "accepted": [
+              "renouvelle"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex05-q02",
+          "number": 2,
+          "prompt": "Je _________________ (emmener) ma nièce à l’opéra.",
+          "source_raw_prompt": "Je _________________ (emmener) ma nièce à l’opéra.",
+          "pdf_pages": [
+            24
+          ],
+          "answer": {
+            "source_key": "emmène",
+            "accepted": [
+              "emmène"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex05-q03",
+          "number": 3,
+          "prompt": "Vous _________________ (acheter) un kilo de haricots.",
+          "source_raw_prompt": "Vous _________________ (acheter) un kilo de haricots.",
+          "pdf_pages": [
+            24
+          ],
+          "answer": {
+            "source_key": "achetez",
+            "accepted": [
+              "achetez"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex05-q04",
+          "number": 4,
+          "prompt": "Le sorcier _________________ (ensorceler) le public.",
+          "source_raw_prompt": "Le sorcier _________________ (ensorceler) le public.",
+          "pdf_pages": [
+            24
+          ],
+          "answer": {
+            "source_key": "ensorcelle",
+            "accepted": [
+              "ensorcelle"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex05-q05",
+          "number": 5,
+          "prompt": "Elle _________________ (espérer) aller à Paris en mai.",
+          "source_raw_prompt": "Elle _________________ (espérer) aller à Paris en mai.",
+          "pdf_pages": [
+            24
+          ],
+          "answer": {
+            "source_key": "espère",
+            "accepted": [
+              "espère"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex05-q06",
+          "number": 6,
+          "prompt": "Vous _________________ (exagérer).",
+          "source_raw_prompt": "Vous _________________ (exagérer).",
+          "pdf_pages": [
+            24
+          ],
+          "answer": {
+            "source_key": "exagérez",
+            "accepted": [
+              "exagérez"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex05-q07",
+          "number": 7,
+          "prompt": "Elle _________________ (s’appeler) Juliette.",
+          "source_raw_prompt": "Elle _________________ (s’appeler) Juliette.",
+          "pdf_pages": [
+            24
+          ],
+          "answer": {
+            "source_key": "s’appelle",
+            "accepted": [
+              "s’appelle"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex05-q08",
+          "number": 8,
+          "prompt": "Ces diamants _________________ (étinceler) de mille feux.",
+          "source_raw_prompt": "Ces diamants _________________ (étinceler) de mille feux.",
+          "pdf_pages": [
+            24
+          ],
+          "answer": {
+            "source_key": "étincellent",
+            "accepted": [
+              "étincellent"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex05-q09",
+          "number": 9,
+          "prompt": "Il _________________ (répéter) mille fois la même chose.",
+          "source_raw_prompt": "Il _________________ (répéter) mille fois la même chose.",
+          "pdf_pages": [
+            24
+          ],
+          "answer": {
+            "source_key": "répète",
+            "accepted": [
+              "répète"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex05-q10",
+          "number": 10,
+          "prompt": "Nous _________________ (célébrer) son anniversaire.",
+          "source_raw_prompt": "Nous _________________ (célébrer) son anniversaire.",
+          "pdf_pages": [
+            24
+          ],
+          "answer": {
+            "source_key": "célébrons",
+            "accepted": [
+              "célébrons"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      }
+    },
+    {
+      "id": "ch01-ex06",
+      "source": {
+        "chapter": 1,
+        "exercise": "1.6",
+        "pdf_pages": [
+          24,
+          25
+        ]
+      },
+      "topic_ids": [
+        "ch01-t02"
+      ],
+      "instruction": "Mettre au présent les verbes entre parenthèses.",
+      "interaction_type": "fill_blank",
+      "questions": [
+        {
+          "id": "ch01-ex06-q01",
+          "number": 1,
+          "prompt": "Aujourd’hui, il _________________ (acheter) du poisson au marché.",
+          "source_raw_prompt": "Aujourd’hui, il _________________ (acheter) du poisson au marché.",
+          "pdf_pages": [
+            24
+          ],
+          "answer": {
+            "source_key": "achète",
+            "accepted": [
+              "achète"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex06-q02",
+          "number": 2,
+          "prompt": "Ils _________________ (travailler) le samedi.",
+          "source_raw_prompt": "Ils _________________ (travailler) le samedi.",
+          "pdf_pages": [
+            24
+          ],
+          "answer": {
+            "source_key": "travaillent",
+            "accepted": [
+              "travaillent"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex06-q03",
+          "number": 3,
+          "prompt": "Vous _________________ (emprunter) de l’argent à la banque.",
+          "source_raw_prompt": "Vous _________________ (emprunter) de l’argent à la banque.",
+          "pdf_pages": [
+            24
+          ],
+          "answer": {
+            "source_key": "empruntez",
+            "accepted": [
+              "empruntez"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex06-q04",
+          "number": 4,
+          "prompt": "Tu _________________ (aimer) voyager en bateau.",
+          "source_raw_prompt": "Tu _________________ (aimer) voyager en bateau.",
+          "pdf_pages": [
+            24
+          ],
+          "answer": {
+            "source_key": "aimes",
+            "accepted": [
+              "aimes"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex06-q05",
+          "number": 5,
+          "prompt": "Nous _________________ (renoncer) à notre projet.",
+          "source_raw_prompt": "Nous _________________ (renoncer) à notre projet.",
+          "pdf_pages": [
+            24
+          ],
+          "answer": {
+            "source_key": "renonçons",
+            "accepted": [
+              "renonçons"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex06-q06",
+          "number": 6,
+          "prompt": "Je _________________ (habiter) au dixième étage.",
+          "source_raw_prompt": "Je _________________ (habiter) au dixième étage.",
+          "pdf_pages": [
+            24
+          ],
+          "answer": {
+            "source_key": "J’habite",
+            "accepted": [
+              "J’habite"
+            ],
+            "review_status": "source_requires_prefix_elision_Je_to_J_apostrophe_manual_game_rendering"
+          }
+        },
+        {
+          "id": "ch01-ex06-q07",
+          "number": 7,
+          "prompt": "L’après-midi, elle _________________ (préférer) aller dans le parc.",
+          "source_raw_prompt": "L’après-midi, elle _________________ (préférer) aller dans le parc.\n[[PDF_PAGE_025]]",
+          "pdf_pages": [
+            24,
+            25
+          ],
+          "answer": {
+            "source_key": "préfère",
+            "accepted": [
+              "préfère"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex06-q08",
+          "number": 8,
+          "prompt": "Comment _________________ (s’appeler) sa sœur?",
+          "source_raw_prompt": "Comment _________________ (s’appeler) sa sœur?",
+          "pdf_pages": [
+            25
+          ],
+          "answer": {
+            "source_key": "s’appelle",
+            "accepted": [
+              "s’appelle"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex06-q09",
+          "number": 9,
+          "prompt": "De temps en temps, nous _________________ (bavarder) pendant la pause-café.",
+          "source_raw_prompt": "De temps en temps, nous _________________ (bavarder) pendant la pause-\n     café.",
+          "pdf_pages": [
+            25
+          ],
+          "answer": {
+            "source_key": "bavardons",
+            "accepted": [
+              "bavardons"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex06-q10",
+          "number": 10,
+          "prompt": "Il vous _________________ (rappeler) avant midi.",
+          "source_raw_prompt": "Il vous _________________ (rappeler) avant midi.",
+          "pdf_pages": [
+            25
+          ],
+          "answer": {
+            "source_key": "rappelle",
+            "accepted": [
+              "rappelle"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      }
+    },
+    {
+      "id": "ch01-ex07",
+      "source": {
+        "chapter": 1,
+        "exercise": "1.7",
+        "pdf_pages": [
+          25
+        ]
+      },
+      "topic_ids": [
+        "ch01-t02"
+      ],
+      "instruction": "Faire correspondre les deux colonnes.",
+      "interaction_type": "matching",
+      "questions": [
+        {
+          "id": "ch01-ex07-q01",
+          "number": 1,
+          "prompt": "Il épelle",
+          "source_raw_prompt": "Il épelle                           a. dans l’Atlantique",
+          "pdf_pages": [
+            25
+          ],
+          "answer": {
+            "source_key": "i",
+            "accepted": [
+              "i"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "a",
+            "text": "dans l’Atlantique"
+          }
+        },
+        {
+          "id": "ch01-ex07-q02",
+          "number": 2,
+          "prompt": "Je regarde",
+          "source_raw_prompt": "Je regarde                       b. à midi et demi",
+          "pdf_pages": [
+            25
+          ],
+          "answer": {
+            "source_key": "e",
+            "accepted": [
+              "e"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "b",
+            "text": "à midi et demi"
+          }
+        },
+        {
+          "id": "ch01-ex07-q03",
+          "number": 3,
+          "prompt": "Nous habitons",
+          "source_raw_prompt": "Nous habitons                    c. la comédienne malade",
+          "pdf_pages": [
+            25
+          ],
+          "answer": {
+            "source_key": "h",
+            "accepted": [
+              "h"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "c",
+            "text": "la comédienne malade"
+          }
+        },
+        {
+          "id": "ch01-ex07-q04",
+          "number": 4,
+          "prompt": "Tu aimes nager",
+          "source_raw_prompt": "Tu aimes nager                 d. Amélie",
+          "pdf_pages": [
+            25
+          ],
+          "answer": {
+            "source_key": "a",
+            "accepted": [
+              "a"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "d",
+            "text": "Amélie"
+          }
+        },
+        {
+          "id": "ch01-ex07-q05",
+          "number": 5,
+          "prompt": "Ils déjeunent toujours",
+          "source_raw_prompt": "Ils déjeunent toujours           e. la télévision",
+          "pdf_pages": [
+            25
+          ],
+          "answer": {
+            "source_key": "b",
+            "accepted": [
+              "b"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "e",
+            "text": "la télévision"
+          }
+        },
+        {
+          "id": "ch01-ex07-q06",
+          "number": 6,
+          "prompt": "Vous chantez",
+          "source_raw_prompt": "Vous chantez                         f. son voyage au Japon",
+          "pdf_pages": [
+            25
+          ],
+          "answer": {
+            "source_key": "j",
+            "accepted": [
+              "j"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "f",
+            "text": "son voyage au Japon"
+          }
+        },
+        {
+          "id": "ch01-ex07-q07",
+          "number": 7,
+          "prompt": "Elle remplace",
+          "source_raw_prompt": "Elle remplace                   g. à la fin du mois",
+          "pdf_pages": [
+            25
+          ],
+          "answer": {
+            "source_key": "c",
+            "accepted": [
+              "c"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "g",
+            "text": "à la fin du mois"
+          }
+        },
+        {
+          "id": "ch01-ex07-q08",
+          "number": 8,
+          "prompt": "Je m’appelle",
+          "source_raw_prompt": "Je m’appelle                                              h. au troisième étage",
+          "pdf_pages": [
+            25
+          ],
+          "answer": {
+            "source_key": "d",
+            "accepted": [
+              "d"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "h",
+            "text": "au troisième étage"
+          }
+        },
+        {
+          "id": "ch01-ex07-q09",
+          "number": 9,
+          "prompt": "Elle annule",
+          "source_raw_prompt": "Elle annule                               i. le mot",
+          "pdf_pages": [
+            25
+          ],
+          "answer": {
+            "source_key": "f",
+            "accepted": [
+              "f"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "i",
+            "text": "le mot"
+          }
+        },
+        {
+          "id": "ch01-ex07-q10",
+          "number": 10,
+          "prompt": "Nous déménageons",
+          "source_raw_prompt": "Nous déménageons                  j. une belle chanson",
+          "pdf_pages": [
+            25
+          ],
+          "answer": {
+            "source_key": "g",
+            "accepted": [
+              "g"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          },
+          "parallel_option": {
+            "label": "j",
+            "text": "une belle chanson"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      }
+    },
+    {
+      "id": "ch01-ex08",
+      "source": {
+        "chapter": 1,
+        "exercise": "1.8",
+        "pdf_pages": [
+          27
+        ]
+      },
+      "topic_ids": [
+        "ch01-t03"
+      ],
+      "instruction": "Reformuler les phrases en utilisant être en train de + infinitif.",
+      "interaction_type": "sentence_rewrite",
+      "questions": [
+        {
+          "id": "ch01-ex08-q01",
+          "number": 1,
+          "prompt": "Nous chantons une chanson.",
+          "source_raw_prompt": "Nous chantons une chanson.",
+          "pdf_pages": [
+            27
+          ],
+          "answer": {
+            "source_key": "Nous sommes en train de chanter une chanson.",
+            "accepted": [
+              "Nous sommes en train de chanter une chanson."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex08-q02",
+          "number": 2,
+          "prompt": "Elle dessine un mouton.",
+          "source_raw_prompt": "Elle dessine un mouton.",
+          "pdf_pages": [
+            27
+          ],
+          "answer": {
+            "source_key": "Elle est en train de dessiner un mouton.",
+            "accepted": [
+              "Elle est en train de dessiner un mouton."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex08-q03",
+          "number": 3,
+          "prompt": "Je travaille dans la cuisine.",
+          "source_raw_prompt": "Je travaille dans la cuisine.",
+          "pdf_pages": [
+            27
+          ],
+          "answer": {
+            "source_key": "Je suis en train de travailler dans la cuisine.",
+            "accepted": [
+              "Je suis en train de travailler dans la cuisine."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex08-q04",
+          "number": 4,
+          "prompt": "Tu effaces le tableau.",
+          "source_raw_prompt": "Tu effaces le tableau.",
+          "pdf_pages": [
+            27
+          ],
+          "answer": {
+            "source_key": "Tu es en train d’effacer le tableau.",
+            "accepted": [
+              "Tu es en train d’effacer le tableau."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex08-q05",
+          "number": 5,
+          "prompt": "Vous étudiez l’histoire européenne.",
+          "source_raw_prompt": "Vous étudiez l’histoire européenne.",
+          "pdf_pages": [
+            27
+          ],
+          "answer": {
+            "source_key": "Vous êtes en train d’étudier l’histoire européenne.",
+            "accepted": [
+              "Vous êtes en train d’étudier l’histoire européenne."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex08-q06",
+          "number": 6,
+          "prompt": "Nous bavardons dans le jardin.",
+          "source_raw_prompt": "Nous bavardons dans le jardin.",
+          "pdf_pages": [
+            27
+          ],
+          "answer": {
+            "source_key": "Nous sommes en train de bavarder dans le jardin.",
+            "accepted": [
+              "Nous sommes en train de bavarder dans le jardin."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex08-q07",
+          "number": 7,
+          "prompt": "Il corrige les copies.",
+          "source_raw_prompt": "Il corrige les copies.",
+          "pdf_pages": [
+            27
+          ],
+          "answer": {
+            "source_key": "Il est en train de corriger les copies.",
+            "accepted": [
+              "Il est en train de corriger les copies."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex08-q08",
+          "number": 8,
+          "prompt": "Tu laves la chemise.",
+          "source_raw_prompt": "Tu laves la chemise.",
+          "pdf_pages": [
+            27
+          ],
+          "answer": {
+            "source_key": "Tu es en train de laver la chemise.",
+            "accepted": [
+              "Tu es en train de laver la chemise."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex08-q09",
+          "number": 9,
+          "prompt": "Je range mes affaires.",
+          "source_raw_prompt": "Je range mes affaires.",
+          "pdf_pages": [
+            27
+          ],
+          "answer": {
+            "source_key": "Je suis en train de ranger mes affaires.",
+            "accepted": [
+              "Je suis en train de ranger mes affaires."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex08-q10",
+          "number": 10,
+          "prompt": "Elle mange une omelette aux champignons.",
+          "source_raw_prompt": "Elle mange une omelette aux champignons.\n   _____________________________________________________________",
+          "pdf_pages": [
+            27
+          ],
+          "answer": {
+            "source_key": "Elle est en train de manger une omelette aux champignons.",
+            "accepted": [
+              "Elle est en train de manger une omelette aux champignons."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      }
+    },
+    {
+      "id": "ch01-ex09",
+      "source": {
+        "chapter": 1,
+        "exercise": "1.9",
+        "pdf_pages": [
+          28,
+          29
+        ]
+      },
+      "topic_ids": [
+        "ch01-t03"
+      ],
+      "instruction": "Répondre aux questions en utilisant le présent et depuis.",
+      "interaction_type": "free_response",
+      "questions": [
+        {
+          "id": "ch01-ex09-q01",
+          "number": 1,
+          "prompt": "Depuis combien de temps chante-t-elle dans cette chorale? (trois ans)",
+          "source_raw_prompt": "Depuis combien de temps chante-t-elle dans cette chorale? (trois ans)",
+          "pdf_pages": [
+            28
+          ],
+          "answer": {
+            "source_key": "Elle chante dans cette chorale depuis trois ans.",
+            "accepted": [
+              "Elle chante dans cette chorale depuis trois ans."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex09-q02",
+          "number": 2,
+          "prompt": "Depuis combien de temps partages-tu cet appartement? (six mois)",
+          "source_raw_prompt": "Depuis combien de temps partages-tu cet appartement? (six mois)",
+          "pdf_pages": [
+            28
+          ],
+          "answer": {
+            "source_key": "Je partage cet appartement depuis six mois.",
+            "accepted": [
+              "Je partage cet appartement depuis six mois."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex09-q03",
+          "number": 3,
+          "prompt": "Depuis combien de temps nage-t-il dans cette piscine? (un mois)",
+          "source_raw_prompt": "Depuis combien de temps nage-t-il dans cette piscine? (un mois)\n    _____________________________________________________________\n[[PDF_PAGE_029]]",
+          "pdf_pages": [
+            28,
+            29
+          ],
+          "answer": {
+            "source_key": "Il nage dans cette piscine depuis un mois.",
+            "accepted": [
+              "Il nage dans cette piscine depuis un mois."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex09-q04",
+          "number": 4,
+          "prompt": "Depuis quand habitez-vous à Montpellier? (2022)",
+          "source_raw_prompt": "Depuis quand habitez-vous à Montpellier? (2022)",
+          "pdf_pages": [
+            29
+          ],
+          "answer": {
+            "source_key": "J’habite à Montpellier depuis 2022.",
+            "accepted": [
+              "J’habite à Montpellier depuis 2022."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex09-q05",
+          "number": 5,
+          "prompt": "Depuis combien de temps possède-t-il cette propriété? (dix ans)",
+          "source_raw_prompt": "Depuis combien de temps possède-t-il cette propriété? (dix ans)",
+          "pdf_pages": [
+            29
+          ],
+          "answer": {
+            "source_key": "Il possède cette propriété depuis dix ans.",
+            "accepted": [
+              "Il possède cette propriété depuis dix ans."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex09-q06",
+          "number": 6,
+          "prompt": "Depuis combien de temps regardez-vous cette émission? (des années)",
+          "source_raw_prompt": "Depuis combien de temps regardez-vous cette émission? (des années)",
+          "pdf_pages": [
+            29
+          ],
+          "answer": {
+            "source_key": "Je regarde cette émission depuis des années.",
+            "accepted": [
+              "Je regarde cette émission depuis des années."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex09-q07",
+          "number": 7,
+          "prompt": "Depuis quand travaille-t-il dans cette entreprise? (2002)",
+          "source_raw_prompt": "Depuis quand travaille-t-il dans cette entreprise? (2002)",
+          "pdf_pages": [
+            29
+          ],
+          "answer": {
+            "source_key": "Il travaille dans cette entreprise depuis 2002.",
+            "accepted": [
+              "Il travaille dans cette entreprise depuis 2002."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex09-q08",
+          "number": 8,
+          "prompt": "Depuis combien de temps portez-vous des lunettes? (dix ans)",
+          "source_raw_prompt": "Depuis combien de temps portez-vous des lunettes? (dix ans)",
+          "pdf_pages": [
+            29
+          ],
+          "answer": {
+            "source_key": "Je porte des lunettes depuis dix ans.",
+            "accepted": [
+              "Je porte des lunettes depuis dix ans."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex09-q09",
+          "number": 9,
+          "prompt": "Depuis quand est-il président? (2017)",
+          "source_raw_prompt": "Depuis quand est-il président? (2017)",
+          "pdf_pages": [
+            29
+          ],
+          "answer": {
+            "source_key": "Il est président depuis 2017.",
+            "accepted": [
+              "Il est président depuis 2017."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex09-q10",
+          "number": 10,
+          "prompt": "Depuis combien de temps ce magasin est-il fermé? (deux mois)",
+          "source_raw_prompt": "Depuis combien de temps ce magasin est-il fermé? (deux mois)\n   _____________________________________________________________",
+          "pdf_pages": [
+            29
+          ],
+          "answer": {
+            "source_key": "Ce magasin est fermé depuis deux mois.",
+            "accepted": [
+              "Ce magasin est fermé depuis deux mois."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      }
+    },
+    {
+      "id": "ch01-ex10",
+      "source": {
+        "chapter": 1,
+        "exercise": "1.10",
+        "pdf_pages": [
+          29,
+          30
+        ]
+      },
+      "topic_ids": [
+        "ch01-t03"
+      ],
+      "instruction": "Traduire les phrases suivantes en utilisant vous et l’inversion si nécessaire.",
+      "interaction_type": "translation",
+      "questions": [
+        {
+          "id": "ch01-ex10-q01",
+          "number": 1,
+          "prompt": "I study French.",
+          "source_raw_prompt": "I study French.",
+          "pdf_pages": [
+            29
+          ],
+          "answer": {
+            "source_key": "J’étudie le français.",
+            "accepted": [
+              "J’étudie le français."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex10-q02",
+          "number": 2,
+          "prompt": "I spell my name.",
+          "source_raw_prompt": "I spell my name.",
+          "pdf_pages": [
+            29
+          ],
+          "answer": {
+            "source_key": "J’épelle mon nom.",
+            "accepted": [
+              "J’épelle mon nom."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex10-q03",
+          "number": 3,
+          "prompt": "They are moving tomorrow.",
+          "source_raw_prompt": "They are moving tomorrow.",
+          "pdf_pages": [
+            29
+          ],
+          "answer": {
+            "source_key": "Ils (Elles) déménagent demain.",
+            "accepted": [
+              "Ils déménagent demain.",
+              "Elles déménagent demain."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex10-q04",
+          "number": 4,
+          "prompt": "She likes to travel by boat.",
+          "source_raw_prompt": "She likes to travel by boat.",
+          "pdf_pages": [
+            29
+          ],
+          "answer": {
+            "source_key": "Elle aime voyager en bateau.",
+            "accepted": [
+              "Elle aime voyager en bateau."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex10-q05",
+          "number": 5,
+          "prompt": "How long have you been studying French?",
+          "source_raw_prompt": "How long have you been studying French?\n[[PDF_PAGE_030]]",
+          "pdf_pages": [
+            29,
+            30
+          ],
+          "answer": {
+            "source_key": "Depuis combien de temps étudiez-vous le français?",
+            "accepted": [
+              "Depuis combien de temps étudiez-vous le français?"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex10-q06",
+          "number": 6,
+          "prompt": "You repeat the sentence. (informal)",
+          "source_raw_prompt": "You repeat the sentence. (informal)",
+          "pdf_pages": [
+            30
+          ],
+          "answer": {
+            "source_key": "Tu répètes la phrase.",
+            "accepted": [
+              "Tu répètes la phrase."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex10-q07",
+          "number": 7,
+          "prompt": "We are financing the project.",
+          "source_raw_prompt": "We are financing the project.",
+          "pdf_pages": [
+            30
+          ],
+          "answer": {
+            "source_key": "Nous finançons le projet.",
+            "accepted": [
+              "Nous finançons le projet."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex10-q08",
+          "number": 8,
+          "prompt": "She cancels the meeting.",
+          "source_raw_prompt": "She cancels the meeting.",
+          "pdf_pages": [
+            30
+          ],
+          "answer": {
+            "source_key": "Elle annule la réunion.",
+            "accepted": [
+              "Elle annule la réunion."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex10-q09",
+          "number": 9,
+          "prompt": "How long have you been living in this house?",
+          "source_raw_prompt": "How long have you been living in this house?",
+          "pdf_pages": [
+            30
+          ],
+          "answer": {
+            "source_key": "Depuis combien de temps habitez-vous dans cette maison?",
+            "accepted": [
+              "Depuis combien de temps habitez-vous dans cette maison?"
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        },
+        {
+          "id": "ch01-ex10-q10",
+          "number": 10,
+          "prompt": "I weigh the vegetables.",
+          "source_raw_prompt": "I weigh the vegetables.\n   _____________________________________________________________",
+          "pdf_pages": [
+            30
+          ],
+          "answer": {
+            "source_key": "Je pèse les légumes.",
+            "accepted": [
+              "Je pèse les légumes."
+            ],
+            "review_status": "publisher_key_transcribed_not_independently_regraded"
+          }
+        }
+      ],
+      "validation": {
+        "question_count": 10,
+        "source_partition_checked": true,
+        "answer_key_aligned": true,
+        "manual_visual_review": "pending"
+      }
+    }
+  ]
+}

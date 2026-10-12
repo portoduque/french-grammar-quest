@@ -1,13 +1,11 @@
-# Copyrighted source and generated private conversions
+# Source PDF and credentials are local-only; converted book text is tracked because this repository is private.
 *.pdf
-private/
-source-pages/
-**/answer-key-source.txt
-**/theory.md
-**/exercises.json
-*.zip
 .env
 .env.*
 !.env.example
+node_modules/
+dist/
+coverage/
 __pycache__/
 .pytest_cache/
+*.pyc

@@ -21,5 +21,9 @@ jobs:
           python-version: '3.12'
       - name: Compile validator
         run: python -m py_compile scripts/validate_content.py
-      - name: Validate public manifest and schema declarations
-        run: python scripts/validate_content.py
+      - name: Install JSON Schema validator
+        run: python -m pip install 'jsonschema>=4.23,<5'
+      - name: Validate manifest and private Chapter 01 corpus
+        run: |
+          python scripts/validate_content.py
+          python scripts/validate_content.py --private .
