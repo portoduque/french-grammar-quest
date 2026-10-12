@@ -255,3 +255,12 @@ Never add an -s to mille (one thousand).
      2028    deux mille vingt-huit
 ```
 
+
+
+## Source theory recovered from exercise-boundary parsing
+
+> The paragraphs below were accidentally attached to the last exercise item in the automatic extraction. They are preserved here for learning-content completeness, but paragraph/table formatting and placement require visual editorial review against the PDF.
+
+### After ch26-ex04-q10 (source PDF pages 334,335)
+
+Add an -s to cent greater than one hundred (deux cents, trois cents), except when cent is followed by another number. deux cents two hundred trois cents three hundred quatre cents four hundred cinq cents five hundred six cents six hundred sept cents seven hundred huit cents eight hundred neuf cents nine hundred Note the following examples: huit cent vingt-quatre eight hundred twenty-four deux cent quatre-vingt-trois two hundred eighty-three
