@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { CHAPTERS_SUMMARY } from '@/data/chaptersSummary';
+import { useCatalog } from '@/hooks/useCatalog';
 import { Card } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
 import { Input } from '@/components/ui/Input';
 import { LearningPathSnake, ChapterProgress } from '@/components/gamification/LearningPathSnake';
 
-const LearningPathPage: React.FC = () => {
+export const LearningPathPage: React.FC = () => {
   const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState('');
   const [viewMode, setViewMode] = useState<'snake' | 'grid'>('snake');
 
-  const chaptersProgress: ChapterProgress[] = CHAPTERS_SUMMARY.map((ch, idx) => ({
+  const { chapters, chaptersByWorld, isLoading } = useCatalog();
+
+  const chaptersProgress: ChapterProgress[] = chapters.map((ch, idx) => ({
     number: ch.number,
     id: ch.id,
     title: ch.title,
@@ -20,10 +22,11 @@ const LearningPathPage: React.FC = () => {
     stars: idx === 0 ? 0 : 0,
   }));
 
-  const filteredChapters = CHAPTERS_SUMMARY.filter((ch) =>
+  const filteredChapters = chapters.filter((ch) =>
     ch.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
     `chapter ${ch.number}`.includes(searchTerm.toLowerCase()) ||
-    ch.id.includes(searchTerm.toLowerCase())
+    ch.id.includes(searchTerm.toLowerCase()) ||
+    ch.worldName.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
@@ -32,7 +35,7 @@ const LearningPathPage: React.FC = () => {
         <div>
           <h1 className="page-title">Trilha de Aprendizado</h1>
           <p className="page-subtitle">
-            28 capítulos organizados em 5 Mundos para dominar a gramática francesa
+            28 capítulos organizados em 5 Mundos para dominar a gramática francesa com rigor pedagógico FLE
           </p>
         </div>
 
@@ -52,13 +55,13 @@ const LearningPathPage: React.FC = () => {
               onClick={() => setViewMode('grid')}
               aria-pressed={viewMode === 'grid'}
             >
-              📋 Lista / Grade
+              📋 Lista por Mundos
             </button>
           </div>
 
           {viewMode === 'grid' && (
             <Input
-              placeholder="Buscar capítulos..."
+              placeholder="Buscar capítulos ou mundos..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               icon="🔍"
@@ -68,37 +71,79 @@ const LearningPathPage: React.FC = () => {
         </div>
       </div>
 
+      {isLoading && (
+        <div className="catalog-loading" role="status" aria-label="Carregando catálogo">
+          <span className="loader-text">Chargement du catalogue des chapitres...</span>
+        </div>
+      )}
+
       {viewMode === 'snake' ? (
         <LearningPathSnake
           chapters={chaptersProgress}
           onSelectChapter={(id) => navigate(`/chapters/${id}`)}
         />
       ) : (
-        <>
-          <div className="learning-path-grid">
-            {filteredChapters.map((ch) => (
-              <Card key={ch.id} variant="interactive" className="chapter-card">
-                <Link to={`/chapters/${ch.id}`} className="chapter-card-link">
-                  <div className="chapter-card-header">
-                    <Badge variant="cyan">
-                      {String(ch.number).padStart(2, '0')}
-                    </Badge>
-                    <Badge variant="default">
-                      {ch.exerciseGroups} exercícios
-                    </Badge>
+        <div className="worlds-catalog-container">
+          {searchTerm ? (
+            <div className="learning-path-grid">
+              {filteredChapters.map((ch) => (
+                <Card key={ch.id} variant="interactive" className="chapter-card">
+                  <Link to={`/chapters/${ch.id}`} className="chapter-card-link">
+                    <div className="chapter-card-header">
+                      <Badge variant="cyan">
+                        Chapitre {String(ch.number).padStart(2, '0')}
+                      </Badge>
+                      <Badge variant="default">
+                        {ch.exerciseGroupsCount} séries
+                      </Badge>
+                    </div>
+                    <h3 className="chapter-title">{ch.title}</h3>
+                    <div className="chapter-card-footer">
+                      <span className="chapter-topics">{ch.topicsCount} sujets</span>
+                      <span className="chapter-pages">pp. {ch.pageRange}</span>
+                    </div>
+                  </Link>
+                </Card>
+              ))}
+            </div>
+          ) : (
+            chaptersByWorld.map((world) => (
+              <section key={world.worldNumber} className="world-section" aria-labelledby={`world-title-${world.worldNumber}`}>
+                <div className="world-banner card card-elevated">
+                  <div className="world-banner-badge" aria-hidden="true">{world.badge}</div>
+                  <div className="world-banner-info">
+                    <h2 id={`world-title-${world.worldNumber}`} className="world-title">{world.worldName}</h2>
+                    <p className="world-desc">{world.description}</p>
+                    <span className="world-range-badge">
+                      Chapitres {world.chaptersRange[0]} à {world.chaptersRange[1]} ({world.chapters.length} chapitres)
+                    </span>
                   </div>
-                  <h3 className="chapter-title">{ch.title}</h3>
-                  <div className="chapter-card-footer">
-                    <span className="chapter-topics">{ch.topicsCount} tópicos</span>
-                    <span className="chapter-pages">pp. {ch.pageRange}</span>
-                  </div>
-                  <div className="progress-bar" role="progressbar" aria-valuenow={0} aria-valuemin={0} aria-valuemax={100}>
-                    <div className="progress-bar-fill" style={{ width: '0%' }} />
-                  </div>
-                </Link>
-              </Card>
-            ))}
-          </div>
+                </div>
+
+                <div className="learning-path-grid">
+                  {world.chapters.map((ch) => (
+                    <Card key={ch.id} variant="interactive" className="chapter-card">
+                      <Link to={`/chapters/${ch.id}`} className="chapter-card-link">
+                        <div className="chapter-card-header">
+                          <Badge variant="cyan">
+                            Chapitre {String(ch.number).padStart(2, '0')}
+                          </Badge>
+                          <Badge variant="default">
+                            {ch.exerciseGroupsCount} séries
+                          </Badge>
+                        </div>
+                        <h3 className="chapter-title">{ch.title}</h3>
+                        <div className="chapter-card-footer">
+                          <span className="chapter-topics">{ch.topicsCount} sujets</span>
+                          <span className="chapter-pages">pp. {ch.pageRange}</span>
+                        </div>
+                      </Link>
+                    </Card>
+                  ))}
+                </div>
+              </section>
+            ))
+          )}
 
           {filteredChapters.length === 0 && (
             <div className="empty-state">
@@ -107,7 +152,7 @@ const LearningPathPage: React.FC = () => {
               <p className="empty-state-desc">Tente outro termo de busca</p>
             </div>
           )}
-        </>
+        </div>
       )}
     </div>
   );
