@@ -1,0 +1,32 @@
+minimum_pre_commit_version: "4.0.0"
+
+exclude: '^(chapters/|references/|content/)'
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: check-added-large-files
+        args: ["--maxkb=2000"]
+      - id: check-case-conflict
+      - id: check-json
+      - id: check-merge-conflict
+      - id: check-toml
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: mixed-line-ending
+      - id: trailing-whitespace
+
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.1
+    hooks:
+      - id: gitleaks
+
+  - repo: local
+    hooks:
+      - id: secure-vibe-fast-checks
+        name: Secure Vibe - verificações rápidas da stack
+        entry: python scripts/verify_fast.py
+        language: system
+        pass_filenames: false
+        stages: [pre-commit]

@@ -1,0 +1,90 @@
+name: Secure Vibe - CI
+
+on:
+  pull_request:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: secure-vibe-ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality-tests-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Detectar stacks para preparar o runner
+        id: stacks
+        shell: bash
+        run: |
+          if [[ -f package.json ]]; then echo "node=true" >> "$GITHUB_OUTPUT"; else echo "node=false" >> "$GITHUB_OUTPUT"; fi
+          if [[ -f go.mod ]]; then echo "go=true" >> "$GITHUB_OUTPUT"; else echo "go=false" >> "$GITHUB_OUTPUT"; fi
+          if [[ -f pom.xml || -f build.gradle || -f build.gradle.kts || -f settings.gradle || -f settings.gradle.kts ]]; then echo "java=true" >> "$GITHUB_OUTPUT"; else echo "java=false" >> "$GITHUB_OUTPUT"; fi
+          if [[ -f .python-version ]]; then echo "python_file=true" >> "$GITHUB_OUTPUT"; else echo "python_file=false" >> "$GITHUB_OUTPUT"; fi
+          if [[ -f .java-version ]]; then echo "java_file=true" >> "$GITHUB_OUTPUT"; else echo "java_file=false" >> "$GITHUB_OUTPUT"; fi
+          if [[ -f .nvmrc ]]; then echo "node_file=true" >> "$GITHUB_OUTPUT"; else echo "node_file=false" >> "$GITHUB_OUTPUT"; fi
+
+      # Python também executa os scripts universais do Secure Vibe.
+      - name: Setup Python do projeto
+        if: ${{ steps.stacks.outputs.python_file == 'true' }}
+        uses: actions/setup-python@v7
+        with:
+          python-version-file: .python-version
+
+      - name: Setup Python padrão para scripts Secure Vibe
+        if: ${{ steps.stacks.outputs.python_file != 'true' }}
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+
+      - name: Setup Node pela versão do projeto
+        if: ${{ steps.stacks.outputs.node == 'true' && steps.stacks.outputs.node_file == 'true' }}
+        uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          package-manager-cache: false
+
+      - name: Setup Node LTS padrão
+        if: ${{ steps.stacks.outputs.node == 'true' && steps.stacks.outputs.node_file != 'true' }}
+        uses: actions/setup-node@v7
+        with:
+          node-version: "lts/*"
+          package-manager-cache: false
+
+      - name: Setup Go
+        if: ${{ steps.stacks.outputs.go == 'true' }}
+        uses: actions/setup-go@v7
+        with:
+          go-version-file: go.mod
+
+      - name: Setup Java pela versão do projeto
+        if: ${{ steps.stacks.outputs.java == 'true' && steps.stacks.outputs.java_file == 'true' }}
+        uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version-file: .java-version
+
+      - name: Setup Java 21 padrão
+        if: ${{ steps.stacks.outputs.java == 'true' && steps.stacks.outputs.java_file != 'true' }}
+        uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: "21"
+
+      - name: Validar/detectar configuração Secure Vibe
+        run: python scripts/bootstrap.py --detect --ci
+
+      - name: Instalar dependências detectadas
+        run: python scripts/install_dependencies.py
+
+      - name: Executar qualidade, testes e build configurados
+        run: python scripts/verify_ci.py

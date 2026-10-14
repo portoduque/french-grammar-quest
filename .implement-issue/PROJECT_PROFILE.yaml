@@ -1,0 +1,295 @@
+schema_version: 1
+profile_version: 1
+project:
+  name: "french-grammar-quest"
+  repository_shape:
+    status: "observed"
+    value: "single-project"
+    scope: null
+    confidence: "high"
+    evidence:
+      - type: "manifest"
+        path: "manifest.json"
+        detail: "Índice de 527 páginas de origem, 28 capítulos e 233 marcadores de exercícios"
+      - type: "documentation"
+        path: "README.md"
+        detail: "Base de conteúdo privado sem frontend/backend implementados"
+  components:
+    - name: "content-corpus"
+      path: "chapters/"
+      description: "28 capítulos com teoria em Markdown, exercícios em JSON, metadados e páginas de origem"
+    - name: "references"
+      path: "references/"
+      description: "Tabelas de verbos, léxicos e dicionários Francês-Inglês / Inglês-Francês"
+    - name: "schemas-and-validation"
+      path: "schemas/, scripts/"
+      description: "Esquemas JSON Schema e scripts de validação e auditoria em Python"
+    - name: "product-planning"
+      path: "docs/"
+      description: "PRD completo (73 requisitos), plano de implementação, mapa de conteúdo e checklists de QA"
+
+observed:
+  languages:
+    - status: "observed"
+      value: "Python"
+      scope: "scripts/"
+      confidence: "high"
+      evidence:
+        - type: "script"
+          path: "scripts/"
+        - type: "ci"
+          path: ".github/workflows/content-validation.yml"
+    - status: "observed"
+      value: "JSON / JSON Schema"
+      scope: null
+      confidence: "high"
+      evidence:
+        - type: "manifest"
+          path: "manifest.json"
+        - type: "config"
+          path: "schemas/"
+    - status: "observed"
+      value: "Markdown"
+      scope: null
+      confidence: "high"
+      evidence:
+        - type: "documentation"
+          path: "docs/"
+        - type: "source"
+          path: "chapters/"
+  runtimes:
+    - status: "observed"
+      value: "Python 3.12 (CI) / Python 3.13 (Local)"
+      scope: null
+      confidence: "high"
+      evidence:
+        - type: "ci"
+          path: ".github/workflows/content-validation.yml"
+          detail: "GitHub Actions utiliza python-version: 3.12"
+        - type: "runtime"
+          path: "python --version"
+          detail: "Local: Python 3.13.1"
+  frameworks:
+    - status: "not_detected"
+      value: null
+      scope: null
+      confidence: "high"
+      evidence:
+        - type: "documentation"
+          path: "README.md"
+          detail: "Sem React, Supabase ou game engine no momento"
+  dependency_managers:
+    - status: "observed"
+      value: "pip"
+      scope: null
+      confidence: "high"
+      evidence:
+        - type: "documentation"
+          path: "README.md"
+          detail: "pip install jsonschema"
+        - type: "ci"
+          path: ".github/workflows/content-validation.yml"
+  persistence:
+    - status: "observed"
+      value: "Arquivos locais JSON e Markdown"
+      scope: "chapters/, manifest.json"
+      confidence: "high"
+      evidence:
+        - type: "source"
+          path: "chapters/"
+        - type: "manifest"
+          path: "manifest.json"
+  migration_systems: []
+  quality_tools:
+    - status: "observed"
+      value: "jsonschema"
+      scope: "scripts/validate_content.py"
+      confidence: "high"
+      evidence:
+        - type: "script"
+          path: "scripts/validate_content.py"
+        - type: "ci"
+          path: ".github/workflows/content-validation.yml"
+    - status: "observed"
+      value: "pre-commit hooks"
+      scope: ".pre-commit-config.yaml"
+      confidence: "high"
+      evidence:
+        - type: "config"
+          path: ".pre-commit-config.yaml"
+  testing_tools:
+    - status: "observed"
+      value: "Scripts customizados Python de validação e auditoria"
+      scope: "scripts/"
+      confidence: "high"
+      evidence:
+        - type: "script"
+          path: "scripts/validate_content.py"
+        - type: "script"
+          path: "scripts/validate_phase_b.py"
+        - type: "script"
+          path: "scripts/audit_phase_c.py"
+        - type: "script"
+          path: "scripts/validate_prd.py"
+    - status: "observed"
+      value: "Verificações rápidas e de CI do Secure Vibe (verify_fast.py, verify_ci.py, doctor.py)"
+      scope: "scripts/"
+      confidence: "high"
+      evidence:
+        - type: "script"
+          path: "scripts/verify_fast.py"
+        - type: "script"
+          path: "scripts/verify_ci.py"
+  security_tools:
+    - status: "observed"
+      value: "Validação de isolamento de conteúdo privado e direitos autorais"
+      scope: null
+      confidence: "high"
+      evidence:
+        - type: "documentation"
+          path: "NOTICE.md"
+        - type: "script"
+          path: "scripts/validate_content.py"
+    - status: "observed"
+      value: "Gitleaks, Semgrep CE, Trivy, SonarQube Free (Secure Vibe)"
+      scope: ".github/workflows/"
+      confidence: "high"
+      evidence:
+        - type: "ci"
+          path: ".github/workflows/secure-vibe-security.yml"
+        - type: "ci"
+          path: ".github/workflows/secure-vibe-sonar.yml"
+  performance_tools: []
+  observability_tools: []
+  coverage_policy:
+    - status: "observed"
+      value: "Verificação estrita de integridade de 100% dos dados da fonte (2.227 questões em 233 grupos)"
+      scope: "chapters/"
+      confidence: "high"
+      evidence:
+        - type: "script"
+          path: "scripts/audit_phase_c.py"
+        - type: "script"
+          path: "scripts/validate_prd.py"
+  ci_cd:
+    - status: "observed"
+      value: "GitHub Actions (content-validation.yml, secure-vibe-ci.yml, secure-vibe-security.yml, secure-vibe-sonar.yml, secure-vibe-zap.yml)"
+      scope: ".github/workflows/"
+      confidence: "high"
+      evidence:
+        - type: "ci"
+          path: ".github/workflows/"
+  architecture:
+    - status: "observed"
+      value: "Corpus pedagógico estruturado por fases (Fase A auditada, Fase B extraída, Fase C auditada, PRD detalhado)"
+      scope: null
+      confidence: "high"
+      evidence:
+        - type: "documentation"
+          path: "docs/PRD.md"
+        - type: "documentation"
+          path: "docs/PRD-IMPLEMENTATION-PLAN.md"
+
+commands:
+  dev: []
+  build: []
+  test:
+    - command: "python scripts/validate_content.py"
+      scope: null
+      confidence: "high"
+      kind: "acceptance"
+      destructive: false
+      production_safe: true
+      evidence:
+        - type: "ci"
+          path: ".github/workflows/content-validation.yml"
+    - command: "python scripts/validate_content.py --private ."
+      scope: null
+      confidence: "high"
+      kind: "acceptance"
+      destructive: false
+      production_safe: true
+      evidence:
+        - type: "ci"
+          path: ".github/workflows/content-validation.yml"
+    - command: "python scripts/validate_phase_b.py"
+      scope: null
+      confidence: "high"
+      kind: "acceptance"
+      destructive: false
+      production_safe: true
+      evidence:
+        - type: "ci"
+          path: ".github/workflows/content-validation.yml"
+    - command: "python scripts/audit_phase_c.py --check-report"
+      scope: null
+      confidence: "high"
+      kind: "acceptance"
+      destructive: false
+      production_safe: true
+      evidence:
+        - type: "ci"
+          path: ".github/workflows/content-validation.yml"
+    - command: "python scripts/validate_prd.py"
+      scope: null
+      confidence: "high"
+      kind: "acceptance"
+      destructive: false
+      production_safe: true
+      evidence:
+        - type: "ci"
+          path: ".github/workflows/content-validation.yml"
+    - command: "python scripts/verify_fast.py"
+      scope: null
+      confidence: "high"
+      kind: "smoke"
+      destructive: false
+      production_safe: true
+      evidence:
+        - type: "script"
+          path: "scripts/verify_fast.py"
+    - command: "python scripts/verify_ci.py"
+      scope: null
+      confidence: "high"
+      kind: "acceptance"
+      destructive: false
+      production_safe: true
+      evidence:
+        - type: "script"
+          path: "scripts/verify_ci.py"
+  lint:
+    - command: "python -m py_compile scripts/validate_content.py scripts/validate_phase_b.py scripts/audit_phase_c.py scripts/validate_prd.py"
+      scope: "scripts/"
+      confidence: "high"
+      kind: "lint"
+      destructive: false
+      production_safe: true
+      evidence:
+        - type: "ci"
+          path: ".github/workflows/content-validation.yml"
+  format_check: []
+  typecheck: []
+  coverage: []
+  migrate: []
+  smoke: []
+  security: []
+  benchmark: []
+  performance: []
+  load: []
+  stress: []
+  accessibility: []
+  compatibility: []
+  recovery: []
+
+unknowns:
+  - "Stack final da aplicação (o PRD especifica React, Supabase e Vercel, mas não há código de aplicação implementado no repositório atualmente)."
+  - "Revisão editorial humana direta pendente para os Capítulos 02 a 28 e página 28 do Capítulo 01."
+
+conflicts:
+  - topic: "Line endings (CRLF vs LF) on Windows"
+    description: "No Windows, core.autocrlf true altera o cálculo de hash Git em chapters/01/theory-source.md devido a CRLF; o repositório requer finais de linha LF para os scripts de validação estrita passarem."
+
+metadata:
+  approved_by_human: true
+  created_at: "2026-10-13T11:45:00Z"
+  last_verified_at: "2026-10-13T11:45:00Z"

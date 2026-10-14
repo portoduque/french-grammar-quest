@@ -47,7 +47,7 @@ python -m pip install pymupdf
 python scripts/audit_phase_c.py --pdf /caminho/para/livro.pdf --check-report
 ```
 
-**Gate de máquina:** passível de aprovação pelo CI.  
+**Gate de máquina:** passível de aprovação pelo CI.
 **Gate editorial:** **PENDENTE**. O projeto ainda não deve declarar fidelidade de 100% ao PDF nem estar pronto para correção automática indiscriminada. Ver `docs/editorial-qa-checklist.md`.
 
 ## Correção descoberta pela auditoria profunda: 29 enunciados contaminados

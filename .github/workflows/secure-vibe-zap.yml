@@ -1,0 +1,33 @@
+name: Secure Vibe - OWASP ZAP
+
+on:
+  workflow_dispatch:
+    inputs:
+      target:
+        description: "URL do ambiente de staging que você controla (ex.: https://staging.exemplo.com)"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  zap-baseline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: OWASP ZAP Baseline
+        uses: zaproxy/action-baseline@v0.15.0
+        with:
+          target: ${{ inputs.target }}
+          fail_action: true
+          allow_issue_writing: true
+
+      - name: Aviso de autorização
+        if: always()
+        run: echo "Execute ZAP somente contra ambientes sob seu controle ou para os quais você tenha autorização explícita."

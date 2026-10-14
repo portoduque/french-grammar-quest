@@ -9,3 +9,19 @@ coverage/
 __pycache__/
 .pytest_cache/
 *.pyc
+
+# >>> SECURE-VIBE-CODING >>>
+# Secure Vibe Coding - sugestões mínimas para incorporar ao .gitignore do projeto
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.secure-vibe/runtime/
+playwright-report/
+test-results/
+.zap/
+*.zip
+# <<< SECURE-VIBE-CODING <<<

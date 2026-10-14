@@ -1,0 +1,12 @@
+# SECURE-VIBE-MANAGED
+version: 2
+updates:
+  # Mantém as próprias GitHub Actions atualizadas.
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+
+  # O bootstrap/agente deve adicionar aqui o ecossistema da aplicação
+  # (npm, pip, maven, gradle, gomod etc.) quando aplicável.
