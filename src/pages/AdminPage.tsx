@@ -48,8 +48,29 @@ export const AdminPage: React.FC = () => {
     }
   };
 
+  const handleCopyInviteLink = async (email: string) => {
+    const inviteUrl = `${window.location.origin}/login?email=${encodeURIComponent(email)}`;
+    try {
+      if (navigator?.clipboard?.writeText) {
+        await navigator.clipboard.writeText(inviteUrl);
+      } else {
+        const textarea = document.createElement('textarea');
+        textarea.value = inviteUrl;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+      }
+      setStatusMessage(`📋 Lien d'invitation copié pour ${email} !`);
+      setTimeout(() => setStatusMessage(null), 4000);
+    } catch {
+      setStatusMessage(`ℹ️ Lien d'invitation : ${inviteUrl}`);
+      setTimeout(() => setStatusMessage(null), 8000);
+    }
+  };
+
   const handleRevoke = async (grantId: string, email: string) => {
-    if (!window.confirm(`Confirmez-vous la révocation de l'accès pour ${email} ?`)) return;
+    if (!window.confirm(`Êtes-vous sûr de vouloir révoquer l'accès pour ${email} ?`)) return;
     try {
       await revokeInvite(grantId);
       setStatusMessage(`✅ Accès révoqué pour ${email}.`);
@@ -75,7 +96,8 @@ export const AdminPage: React.FC = () => {
     const nextStatus = currentStatus === 'published' ? 'blocked' : 'published';
     try {
       await setChapterStatus({ chapterId, status: nextStatus });
-      setStatusMessage(`✅ Statut du chapitre mis à jour : ${nextStatus}.`);
+      const label = nextStatus === 'blocked' ? 'suspendu (soft-hide)' : 'publié';
+      setStatusMessage(`✅ Statut du chapitre mis à jour : ${label}.`);
       setTimeout(() => setStatusMessage(null), 4000);
     } catch (err: any) {
       setStatusMessage(`❌ Erreur : ${err.message}`);
@@ -361,16 +383,27 @@ export const AdminPage: React.FC = () => {
                             {grant.expires_at ? new Date(grant.expires_at).toLocaleDateString('fr-FR') : 'Permanente'}
                           </td>
                           <td style={{ padding: '0.75rem 0.5rem', textAlign: 'right' }}>
-                            {grant.status !== 'revoked' && (
-                              <Button
-                                variant="secondary"
-                                size="sm"
-                                disabled={isRevokingInvite}
-                                onClick={() => handleRevoke(grant.id, grant.email)}
-                              >
-                                Révoquer ✕
-                              </Button>
-                            )}
+                            <div style={{ display: 'inline-flex', gap: '0.5rem', justifyContent: 'flex-end' }}>
+                              {grant.status !== 'revoked' && (
+                                <>
+                                  <Button
+                                    variant="secondary"
+                                    size="sm"
+                                    onClick={() => handleCopyInviteLink(grant.email)}
+                                  >
+                                    Copier 📋
+                                  </Button>
+                                  <Button
+                                    variant="secondary"
+                                    size="sm"
+                                    disabled={isRevokingInvite}
+                                    onClick={() => handleRevoke(grant.id, grant.email)}
+                                  >
+                                    Révoquer ✕
+                                  </Button>
+                                </>
+                              )}
+                            </div>
                           </td>
                         </tr>
                       );
@@ -532,7 +565,7 @@ export const AdminPage: React.FC = () => {
               {/* Editorial Issues */}
               <Card variant="elevated" style={{ padding: '1.5rem' }}>
                 <h2 style={{ fontSize: '1.2rem', fontWeight: 700, margin: '0 0 0.5rem 0' }}>
-                  Pendências & Signalements Éditoriaux (RF-068)
+                  Signalements & Suivi Éditorial (RF-068)
                 </h2>
                 <p style={{ color: 'var(--color-text-muted)', fontSize: '0.875rem', marginBottom: '1rem' }}>
                   Suivi des anomalies de texte, mise en forme et points d'attention didactiques.
@@ -540,7 +573,7 @@ export const AdminPage: React.FC = () => {
 
                 {issues.length === 0 ? (
                   <p style={{ color: 'var(--color-text-muted)', fontStyle: 'italic' }}>
-                    Aucune pendance éditoriale signalée.
+                    Aucun signalement éditorial en attente.
                   </p>
                 ) : (
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>

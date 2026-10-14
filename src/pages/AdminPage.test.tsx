@@ -230,6 +230,72 @@ describe('AdminPage & AdminGuard (Etapa 7)', () => {
     });
   });
 
+  it('permite copiar link de convite e exibe feedback de sucesso', async () => {
+    const writeTextMock = vi.fn().mockResolvedValue(undefined);
+    Object.assign(navigator, {
+      clipboard: { writeText: writeTextMock }
+    });
+
+    renderComponent();
+
+    await waitFor(() => {
+      expect(screen.getByText('invite.test@fqg.com')).toBeInTheDocument();
+    });
+
+    const copyBtn = screen.getByRole('button', { name: /Copier 📋/i });
+    fireEvent.click(copyBtn);
+
+    await waitFor(() => {
+      expect(writeTextMock).toHaveBeenCalledWith(expect.stringContaining('/login?email=invite.test%40fqg.com'));
+      expect(screen.getByText(/Lien d'invitation copié/i)).toBeInTheDocument();
+    });
+  });
+
+  it('permite suspender e reativar capítulo via ação administrativa', async () => {
+    (supabase!.rpc as any).mockResolvedValueOnce({
+      data: { success: true },
+      error: null
+    });
+
+    renderComponent();
+
+    // Navega para aba de capítulos
+    const contentTab = screen.getByText(/Chapitres & Pilote/i);
+    fireEvent.click(contentTab);
+
+    await waitFor(() => {
+      expect(screen.getByText('The present tense of regular -er verbs')).toBeInTheDocument();
+    });
+
+    const toggleBtn = screen.getByRole('button', { name: /Suspendre \/ Bloquer/i });
+    fireEvent.click(toggleBtn);
+
+    await waitFor(() => {
+      expect(supabase!.rpc).toHaveBeenCalledWith('admin_set_chapter_status', {
+        p_chapter_id: 'ch01',
+        p_status: 'blocked'
+      });
+      expect(screen.getByText(/Statut du chapitre mis à jour : suspendu/i)).toBeInTheDocument();
+    });
+  });
+
+  it('permite marcar signalement éditorial como resolvido', async () => {
+    (supabase!.rpc as any).mockResolvedValueOnce({
+      data: { success: true },
+      error: null
+    });
+
+    renderComponent();
+
+    // Navega para aba de audit e issues
+    const auditTab = screen.getByText(/Audit Log & Issues/i);
+    fireEvent.click(auditTab);
+
+    await waitFor(() => {
+      expect(screen.getByText(/Signalements & Suivi Éditorial/i)).toBeInTheDocument();
+    });
+  });
+
   it('bloqueia e redireciona estudante comum que tentar acessar rota protegida por AdminGuard', async () => {
     useAuthStore.setState({
       user: { id: 'student-999', email: 'etudiant.normal@fqg.com' } as any,

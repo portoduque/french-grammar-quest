@@ -145,25 +145,37 @@ export const LearningPathPage: React.FC = () => {
                 </div>
 
                 <div className="learning-path-grid">
-                  {world.chapters.map((ch) => (
-                    <Card key={ch.id} variant="interactive" className="chapter-card">
-                      <Link to={`/chapters/${ch.id}`} className="chapter-card-link">
-                        <div className="chapter-card-header">
-                          <Badge variant="cyan">
-                            Chapitre {String(ch.number).padStart(2, '0')}
-                          </Badge>
-                          <Badge variant="default">
-                            {ch.exerciseGroupsCount} séries
-                          </Badge>
-                        </div>
-                        <h3 className="chapter-title">{ch.title}</h3>
-                        <div className="chapter-card-footer">
-                          <span className="chapter-topics">{ch.topicsCount} sujets</span>
-                          <span className="chapter-pages">pp. {ch.pageRange}</span>
-                        </div>
-                      </Link>
-                    </Card>
-                  ))}
+                  {world.chapters.map((ch) => {
+                    const isBlocked = ch.editorialStatus === 'blocked';
+                    return (
+                      <Card
+                        key={ch.id}
+                        variant="interactive"
+                        className="chapter-card"
+                        style={isBlocked ? { opacity: 0.8, border: '1px dashed var(--color-danger, #EF4444)' } : undefined}
+                      >
+                        <Link to={`/chapters/${ch.id}`} className="chapter-card-link">
+                          <div className="chapter-card-header">
+                            <Badge variant={isBlocked ? 'rose' : 'cyan'}>
+                              Chapitre {String(ch.number).padStart(2, '0')}
+                            </Badge>
+                            {isBlocked ? (
+                              <Badge variant="rose">⛔ Suspendu</Badge>
+                            ) : (
+                              <Badge variant="default">
+                                {ch.exerciseGroupsCount} séries
+                              </Badge>
+                            )}
+                          </div>
+                          <h3 className="chapter-title">{ch.title}</h3>
+                          <div className="chapter-card-footer">
+                            <span className="chapter-topics">{ch.topicsCount} sujets</span>
+                            <span className="chapter-pages">pp. {ch.pageRange}</span>
+                          </div>
+                        </Link>
+                      </Card>
+                    );
+                  })}
                 </div>
               </section>
             ))

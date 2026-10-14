@@ -60,6 +60,32 @@ vi.mock('@/hooks/useTheory', () => ({
         error: null,
       };
     }
+    if (chapterId === 'ch03') {
+      return {
+        data: {
+          chapter: {
+            id: 'ch03',
+            number: 3,
+            title: 'Chapitre en Maintenance',
+            slug: 'chapitre-en-maintenance',
+            world_number: 1,
+            world_name: 'Mundo 1: Les Fondations',
+            page_range: '46–60',
+            topics_count: 2,
+            exercise_groups_count: 2,
+            total_questions: 20,
+            theory_markdown: '## Règles',
+            editorial_status: 'blocked',
+          },
+          topics: [],
+          exerciseSets: [
+            { id: 'ch03-ex01', title: 'Exercice 3.1', instruction: 'Exercice test', interaction_type: 'fill_blank', questions_count: 10, order_index: 1 }
+          ],
+        },
+        isLoading: false,
+        error: null,
+      };
+    }
     return { data: null, isLoading: false, error: null };
   }),
 }));
@@ -133,5 +159,18 @@ describe('ChapterPage Component', () => {
     // Verify exercises tab became active
     const exercisesTab = screen.getByRole('tab', { name: /Exercices/i });
     expect(exercisesTab).toHaveAttribute('aria-selected', 'true');
+  });
+
+  it('affiche une bannière d avertissement et désactive les exercices lorsque le chapitre est suspendu (soft-hide)', () => {
+    renderWithProviders('/chapters/ch03');
+
+    expect(screen.getByRole('alert')).toBeInTheDocument();
+    expect(screen.getByText(/Chapitre temporairement suspendu pour révision éditoriale/i)).toBeInTheDocument();
+
+    const exercisesTab = screen.getByRole('tab', { name: /Exercices/i });
+    fireEvent.click(exercisesTab);
+
+    const btn = screen.getByRole('button', { name: /Suspendu 🚫/i });
+    expect(btn).toBeDisabled();
   });
 });

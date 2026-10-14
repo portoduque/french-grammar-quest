@@ -59,11 +59,11 @@ export const ChapterPage: React.FC = () => {
 
       <div className="chapter-overview-card card card-elevated">
         <div className="chapter-header-top">
-          <Badge variant="cyan" className="chapter-num-badge">
+          <Badge variant={editorialStatus === 'blocked' ? 'rose' : 'cyan'} className="chapter-num-badge">
             Chapitre {String(chapterNum).padStart(2, '0')}
           </Badge>
           <span className="chapter-status-pill">
-            {editorialStatus === 'published' ? '✅ Publié' : '⏳ En révision'}
+            {editorialStatus === 'published' ? '✅ Publié' : editorialStatus === 'blocked' ? '⛔ Suspendu' : '⏳ En révision'}
           </span>
         </div>
 
@@ -107,6 +107,32 @@ export const ChapterPage: React.FC = () => {
           </button>
         </div>
       </div>
+
+      {editorialStatus === 'blocked' && (
+        <div
+          role="alert"
+          style={{
+            padding: '1rem 1.25rem',
+            marginBottom: '1.5rem',
+            borderRadius: '10px',
+            backgroundColor: 'rgba(239, 68, 68, 0.08)',
+            border: '1px solid rgba(239, 68, 68, 0.3)',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '1rem'
+          }}
+        >
+          <span style={{ fontSize: '1.75rem' }}>⚠️</span>
+          <div>
+            <strong style={{ color: '#EF4444', fontSize: '1rem', display: 'block', marginBottom: '0.2rem' }}>
+              Chapitre temporairement suspendu pour révision éditoriale
+            </strong>
+            <p style={{ margin: 0, fontSize: '0.875rem', color: 'var(--color-text-muted)' }}>
+              Les exercices de ce chapitre sont temporairement inaccessibles pendant l'audit. Votre progression historique et vos points acquis restent intégralement préservés.
+            </p>
+          </div>
+        </div>
+      )}
 
       {/* Tab 1: Theory Reader */}
       {activeTab === 'theory' && (
@@ -193,9 +219,16 @@ export const ChapterPage: React.FC = () => {
                       <Button
                         variant={isCompleted ? 'secondary' : 'primary'}
                         size="sm"
+                        disabled={editorialStatus === 'blocked'}
                         onClick={() => navigate(`/exercise/${ex.id}`)}
                       >
-                        {isCompleted ? 'Refaire 🔄' : isInProgress ? 'Reprendre ▶️' : 'Commencer 🚀'}
+                        {editorialStatus === 'blocked'
+                          ? 'Suspendu 🚫'
+                          : isCompleted
+                          ? 'Refaire 🔄'
+                          : isInProgress
+                          ? 'Reprendre ▶️'
+                          : 'Commencer 🚀'}
                       </Button>
                     </div>
                   </div>
