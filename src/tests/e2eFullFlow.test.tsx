@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
-import { render, screen, waitFor } from '@testing-library/react';
+import { render, screen, waitFor, act } from '@testing-library/react';
 import { MemoryRouter, Routes, Route } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { useAuthStore } from '@/stores/authStore';
@@ -93,25 +93,29 @@ describe('E2E Complete User Journey Flow (PRD §24.1 — Etapa 8)', () => {
       </QueryClientProvider>
     );
 
-    expect(screen.getByText(/Connexion/i)).toBeInTheDocument();
+    await waitFor(() => {
+      expect(screen.getByText(/Connexion/i)).toBeInTheDocument();
+    });
     const emailInput = screen.getByLabelText(/Adresse e-mail/i) as HTMLInputElement;
     expect(emailInput.value).toBe('etudiant.teste@fqg.com');
 
     // 2. Simula login com sucesso
-    useAuthStore.setState({
-      user: { id: 'user-e2e-1', email: 'etudiant.teste@fqg.com' } as any,
-      profile: {
-        id: 'user-e2e-1',
-        email: 'etudiant.teste@fqg.com',
-        role: 'student',
-        display_name: 'Étudiant E2E',
-        xp: 150,
-        hearts: 5,
-        streak_days: 3
-      } as any,
-      isLoading: false,
-      isInitialized: true,
-      authError: null
+    act(() => {
+      useAuthStore.setState({
+        user: { id: 'user-e2e-1', email: 'etudiant.teste@fqg.com' } as any,
+        profile: {
+          id: 'user-e2e-1',
+          email: 'etudiant.teste@fqg.com',
+          role: 'student',
+          display_name: 'Étudiant E2E',
+          xp: 150,
+          hearts: 5,
+          streak_days: 3
+        } as any,
+        isLoading: false,
+        isInitialized: true,
+        authError: null
+      });
     });
 
     unmount();

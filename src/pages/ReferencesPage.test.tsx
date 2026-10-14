@@ -41,4 +41,13 @@ describe('ReferencesPage (RF-023 Références FLE)', () => {
 
     expect(screen.getByText('Aucune règle trouvée')).toBeInTheDocument();
   });
+
+  it('encontra termos mesmo quando o usuário pesquisa sem acento (ex: etre encontra Être)', () => {
+    render(<ReferencesPage />);
+
+    const searchInput = screen.getByLabelText(/Rechercher une règle/i);
+    fireEvent.change(searchInput, { target: { value: 'etre' } });
+
+    expect(screen.getByText('Verbe Auxiliaire : Être')).toBeInTheDocument();
+  });
 });

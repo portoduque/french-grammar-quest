@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { Card } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
 import { Input } from '@/components/ui/Input';
+import { stripAccents } from '@/utils/answerEvaluator';
 
 export interface ReferenceItem {
   id: string;
@@ -154,14 +155,15 @@ export const ReferencesPage: React.FC = () => {
   const filteredItems = useMemo(() => {
     return GRAMMAR_REFERENCES.filter((item) => {
       const matchesCategory = selectedCategory === 'all' || item.category === selectedCategory;
-      const term = searchTerm.toLowerCase().trim();
-      if (!term) return matchesCategory;
+      const rawTerm = searchTerm.trim();
+      if (!rawTerm) return matchesCategory;
 
+      const term = stripAccents(rawTerm);
       const matchesSearch =
-        item.title.toLowerCase().includes(term) ||
-        item.subtitle.toLowerCase().includes(term) ||
-        item.tags.some((t) => t.toLowerCase().includes(term)) ||
-        item.content.description.toLowerCase().includes(term);
+        stripAccents(item.title).includes(term) ||
+        stripAccents(item.subtitle).includes(term) ||
+        item.tags.some((t) => stripAccents(t).includes(term)) ||
+        stripAccents(item.content.description).includes(term);
 
       return matchesCategory && matchesSearch;
     });
