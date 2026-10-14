@@ -61,11 +61,17 @@ def main() -> int:
                 return 1
             total += 1
             print(f"\n[secure-vibe:{group}] $ {command}", flush=True)
+            import shutil
             try:
                 args = shlex.split(command, posix=(os.name != "nt"))
+                if args:
+                    args[0] = shutil.which(args[0]) or args[0]
                 code = subprocess.call(args, cwd=ROOT, shell=False, env=os.environ.copy())
             except Exception:
-                code = subprocess.call(shlex.split(command), cwd=ROOT, shell=False, env=os.environ.copy())
+                args = shlex.split(command)
+                if args:
+                    args[0] = shutil.which(args[0]) or args[0]
+                code = subprocess.call(args, cwd=ROOT, shell=False, env=os.environ.copy())
             if code != 0:
                 failures.append(f"{group}: {command}")
 

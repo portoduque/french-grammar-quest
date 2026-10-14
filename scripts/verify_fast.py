@@ -45,13 +45,21 @@ def detected_stacks() -> list[str]:
     return found
 
 
+import shutil
+
+
 def run_command(command: str) -> int:
     print(f"\n[secure-vibe] $ {command}", flush=True)
     try:
         args = shlex.split(command, posix=(os.name != "nt"))
+        if args:
+            args[0] = shutil.which(args[0]) or args[0]
         return subprocess.call(args, cwd=ROOT, shell=False, env=os.environ.copy())
     except Exception:
-        return subprocess.call(shlex.split(command), cwd=ROOT, shell=False, env=os.environ.copy())
+        args = shlex.split(command)
+        if args:
+            args[0] = shutil.which(args[0]) or args[0]
+        return subprocess.call(args, cwd=ROOT, shell=False, env=os.environ.copy())
 
 
 def main() -> int:
