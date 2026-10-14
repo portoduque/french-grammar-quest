@@ -4,6 +4,7 @@ export interface CardProps {
   children: React.ReactNode;
   variant?: 'default' | 'elevated' | 'interactive';
   className?: string;
+  style?: React.CSSProperties;
   onClick?: () => void;
 }
 
@@ -11,6 +12,7 @@ export const Card: React.FC<CardProps> = ({
   children,
   variant = 'default',
   className = '',
+  style,
   onClick,
 }) => {
   const isInteractive = variant === 'interactive' || !!onClick;
@@ -18,6 +20,7 @@ export const Card: React.FC<CardProps> = ({
   return (
     <div
       className={`card card-${variant} ${className}`}
+      style={style}
       onClick={onClick}
       role={isInteractive ? 'button' : undefined}
       tabIndex={isInteractive ? 0 : undefined}

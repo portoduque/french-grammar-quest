@@ -45,6 +45,42 @@ export type Database = {
         }
         Relationships: []
       }
+      achievements: {
+        Row: {
+          category: string
+          created_at: string
+          description: string
+          icon: string
+          id: string
+          requirement_type: string
+          requirement_value: number
+          title: string
+          xp_reward: number
+        }
+        Insert: {
+          category: string
+          created_at?: string
+          description: string
+          icon: string
+          id: string
+          requirement_type: string
+          requirement_value?: number
+          title: string
+          xp_reward?: number
+        }
+        Update: {
+          category?: string
+          created_at?: string
+          description?: string
+          icon?: string
+          id?: string
+          requirement_type?: string
+          requirement_value?: number
+          title?: string
+          xp_reward?: number
+        }
+        Relationships: []
+      }
       audit_log: {
         Row: {
           actor_id: string | null
@@ -591,12 +627,142 @@ export type Database = {
           },
         ]
       }
+      user_achievements: {
+        Row: {
+          achievement_id: string
+          id: string
+          unlocked_at: string
+          user_id: string
+        }
+        Insert: {
+          achievement_id: string
+          id?: string
+          unlocked_at?: string
+          user_id: string
+        }
+        Update: {
+          achievement_id?: string
+          id?: string
+          unlocked_at?: string
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "user_achievements_achievement_id_fkey"
+            columns: ["achievement_id"]
+            isOneToOne: false
+            referencedRelation: "achievements"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "user_achievements_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      user_mistakes: {
+        Row: {
+          chapter_id: string
+          exercise_set_id: string
+          id: string
+          last_attempted_at: string
+          last_wrong_answer: string
+          question_id: string
+          resolved_at: string | null
+          status: string
+          user_id: string
+          wrong_count: number
+        }
+        Insert: {
+          chapter_id: string
+          exercise_set_id: string
+          id?: string
+          last_attempted_at?: string
+          last_wrong_answer: string
+          question_id: string
+          resolved_at?: string | null
+          status?: string
+          user_id: string
+          wrong_count?: number
+        }
+        Update: {
+          chapter_id?: string
+          exercise_set_id?: string
+          id?: string
+          last_attempted_at?: string
+          last_wrong_answer?: string
+          question_id?: string
+          resolved_at?: string | null
+          status?: string
+          user_id?: string
+          wrong_count?: number
+        }
+        Relationships: [
+          {
+            foreignKeyName: "user_mistakes_chapter_id_fkey"
+            columns: ["chapter_id"]
+            isOneToOne: false
+            referencedRelation: "chapters"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "user_mistakes_exercise_set_id_fkey"
+            columns: ["exercise_set_id"]
+            isOneToOne: false
+            referencedRelation: "exercise_sets"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "user_mistakes_question_id_fkey"
+            columns: ["question_id"]
+            isOneToOne: false
+            referencedRelation: "questions"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "user_mistakes_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
+      check_and_award_achievements: {
+        Args: Record<string, never>
+        Returns: Json
+      }
+      complete_review_session: {
+        Args: { p_resolved_question_ids: string[] }
+        Returns: Json
+      }
       complete_study_session: { Args: { p_session_id: string }; Returns: Json }
+      get_user_mistakes: {
+        Args: { p_chapter_id?: string | null; p_status?: string | null }
+        Returns: {
+          accepted_answers: string[]
+          chapter_id: string
+          exercise_set_id: string
+          explanation: string | null
+          instruction: string | null
+          interaction_type: string
+          last_attempted_at: string
+          last_wrong_answer: string
+          mistake_id: string
+          prompt: string
+          question_id: string
+          status: string
+          wrong_count: number
+        }[]
+      }
       is_admin: { Args: never; Returns: boolean }
       record_question_attempt: {
         Args: {
@@ -681,3 +847,23 @@ export type StudySession = Database['public']['Tables']['study_sessions']['Row']
 export type QuestionAttempt = Database['public']['Tables']['question_attempts']['Row'];
 export type UserProgress = Database['public']['Tables']['user_progress']['Row'];
 export type XpLedger = Database['public']['Tables']['xp_ledger']['Row'];
+
+export type Achievement = Database['public']['Tables']['achievements']['Row'];
+export type UserAchievement = Database['public']['Tables']['user_achievements']['Row'];
+export type UserMistake = Database['public']['Tables']['user_mistakes']['Row'];
+
+export interface UserMistakeDetail {
+  mistake_id: string;
+  question_id: string;
+  exercise_set_id: string;
+  chapter_id: string;
+  last_wrong_answer: string;
+  wrong_count: number;
+  status: 'pending' | 'resolved' | 'dismissed';
+  last_attempted_at: string;
+  prompt: string;
+  instruction: string | null;
+  interaction_type: string;
+  accepted_answers: string[];
+  explanation: string | null;
+}

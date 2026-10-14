@@ -24,9 +24,13 @@ export const Modal: React.FC<ModalProps> = ({
 
     if (open) {
       previousFocusRef.current = document.activeElement as HTMLElement;
-      dialog.showModal();
+      if (typeof dialog.showModal === 'function') {
+        dialog.showModal();
+      }
     } else {
-      dialog.close();
+      if (typeof dialog.close === 'function') {
+        dialog.close();
+      }
       previousFocusRef.current?.focus();
     }
   }, [open]);
