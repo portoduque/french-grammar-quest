@@ -28,8 +28,9 @@ jobs:
         run: |
           docker run --rm \
             -v "$PWD:/repo" \
+            -w /repo \
             ghcr.io/gitleaks/gitleaks:v8.30.1 \
-            git --source=/repo --redact --verbose
+            git --redact --verbose
 
       - name: Setup Python para Semgrep CE
         uses: actions/setup-python@v7
