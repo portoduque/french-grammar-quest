@@ -95,9 +95,18 @@ export const ProfilePage: React.FC = () => {
               <p style={{ color: 'var(--color-text-muted)', margin: '0 0 0.5rem 0', fontSize: '0.9rem' }}>
                 {profile?.email || user?.email || 'Non connecté'}
               </p>
-              <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+              <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', alignItems: 'center' }}>
                 <Badge variant={roleBadgeVariant}>{roleLabel}</Badge>
                 {isMockMode && <Badge variant="amber">Mode Démo Local</Badge>}
+                {profile?.role === 'admin' && (
+                  <Button
+                    variant="secondary"
+                    size="sm"
+                    onClick={() => navigate('/admin')}
+                  >
+                    Panneau Admin 🛠️
+                  </Button>
+                )}
               </div>
             </div>
           </div>

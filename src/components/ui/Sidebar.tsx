@@ -2,6 +2,8 @@ import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { useTheme } from '@/app/providers/ThemeProvider';
 
+import { useAuth } from '@/hooks/useAuth';
+
 interface SidebarProps {
   collapsed: boolean;
   onToggle: () => void;
@@ -16,7 +18,12 @@ const NAV_ITEMS = [
 
 export const Sidebar: React.FC<SidebarProps> = ({ collapsed, onToggle }) => {
   const { theme, toggleTheme } = useTheme();
+  const { isAdmin } = useAuth();
   const location = useLocation();
+
+  const allItems = isAdmin
+    ? [...NAV_ITEMS, { path: '/admin', label: 'Admin', icon: '🛠️' }]
+    : NAV_ITEMS;
 
   return (
     <aside
@@ -40,7 +47,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ collapsed, onToggle }) => {
 
       <nav className="sidebar-nav">
         <ul className="sidebar-nav-list" role="list">
-          {NAV_ITEMS.map((item) => (
+          {allItems.map((item) => (
             <li key={item.path}>
               <NavLink
                 to={item.path}

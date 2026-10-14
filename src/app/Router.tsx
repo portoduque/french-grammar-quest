@@ -1,7 +1,7 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Layout } from './Layout';
-import { AuthGuard } from '@/components/auth/AuthGuard';
+import { AuthGuard, AdminGuard } from '@/components/auth/AuthGuard';
 
 /* Lazy-loaded pages for code splitting */
 const DashboardPage = lazy(() => import('@/pages/DashboardPage'));
@@ -10,6 +10,7 @@ const ChapterPage = lazy(() => import('@/pages/ChapterPage'));
 const ReviewPage = lazy(() => import('@/pages/ReviewPage'));
 const ProfilePage = lazy(() => import('@/pages/ProfilePage'));
 const ExercisePage = lazy(() => import('@/pages/ExercisePage'));
+const AdminPage = lazy(() => import('@/pages/AdminPage'));
 const LoginPage = lazy(() => import('@/pages/LoginPage'));
 const NotFoundPage = lazy(() => import('@/pages/NotFoundPage'));
 
@@ -50,6 +51,14 @@ export const AppRouter: React.FC = () => {
             <Route path="/chapters/:chapterId" element={<ChapterPage />} />
             <Route path="/review" element={<ReviewPage />} />
             <Route path="/profile" element={<ProfilePage />} />
+            <Route
+              path="/admin"
+              element={
+                <AdminGuard>
+                  <AdminPage />
+                </AdminGuard>
+              }
+            />
           </Route>
           <Route path="*" element={<NotFoundPage />} />
         </Routes>

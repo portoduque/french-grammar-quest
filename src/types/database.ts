@@ -203,6 +203,70 @@ export type Database = {
         }
         Relationships: []
       }
+      editorial_issues: {
+        Row: {
+          chapter_id: string | null
+          created_at: string
+          description: string
+          id: string
+          issue_type: string
+          page_number: number | null
+          question_id: string | null
+          reported_by: string | null
+          resolved_at: string | null
+          severity: string
+          status: string
+        }
+        Insert: {
+          chapter_id?: string | null
+          created_at?: string
+          description: string
+          id?: string
+          issue_type: string
+          page_number?: number | null
+          question_id?: string | null
+          reported_by?: string | null
+          resolved_at?: string | null
+          severity?: string
+          status?: string
+        }
+        Update: {
+          chapter_id?: string | null
+          created_at?: string
+          description?: string
+          id?: string
+          issue_type?: string
+          page_number?: number | null
+          question_id?: string | null
+          reported_by?: string | null
+          resolved_at?: string | null
+          severity?: string
+          status?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "editorial_issues_chapter_id_fkey"
+            columns: ["chapter_id"]
+            isOneToOne: false
+            referencedRelation: "chapters"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "editorial_issues_question_id_fkey"
+            columns: ["question_id"]
+            isOneToOne: false
+            referencedRelation: "questions"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "editorial_issues_reported_by_fkey"
+            columns: ["reported_by"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       exercise_sets: {
         Row: {
           chapter_id: string
@@ -736,6 +800,26 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
+      admin_create_access_grant: {
+        Args: { p_email: string; p_expires_days?: number; p_role?: string }
+        Returns: Json
+      }
+      admin_publish_release: {
+        Args: { p_release_id: string }
+        Returns: Json
+      }
+      admin_resolve_editorial_issue: {
+        Args: { p_issue_id: string; p_resolution_status?: string }
+        Returns: Json
+      }
+      admin_revoke_access_grant: {
+        Args: { p_grant_id: string }
+        Returns: Json
+      }
+      admin_set_chapter_status: {
+        Args: { p_chapter_id: string; p_status: string }
+        Returns: Json
+      }
       check_and_award_achievements: {
         Args: Record<string, never>
         Returns: Json
@@ -851,6 +935,7 @@ export type XpLedger = Database['public']['Tables']['xp_ledger']['Row'];
 export type Achievement = Database['public']['Tables']['achievements']['Row'];
 export type UserAchievement = Database['public']['Tables']['user_achievements']['Row'];
 export type UserMistake = Database['public']['Tables']['user_mistakes']['Row'];
+export type EditorialIssue = Database['public']['Tables']['editorial_issues']['Row'];
 
 export interface UserMistakeDetail {
   mistake_id: string;
