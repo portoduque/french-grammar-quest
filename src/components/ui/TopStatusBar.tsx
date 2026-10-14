@@ -2,6 +2,7 @@ import React from 'react';
 import { StreakBadge } from '@/components/gamification/StreakBadge';
 import { XpCounter } from '@/components/gamification/XpCounter';
 import { useTheme } from '@/app/providers/ThemeProvider';
+import { useAuth } from '@/hooks/useAuth';
 
 export interface TopStatusBarProps {
   hearts?: number;
@@ -13,15 +14,23 @@ export interface TopStatusBarProps {
 }
 
 export const TopStatusBar: React.FC<TopStatusBarProps> = ({
-  hearts = 5,
-  streakDays = 3,
-  hasFreeze = true,
-  totalXp = 120,
-  level = 2,
+  hearts,
+  streakDays,
+  hasFreeze,
+  totalXp,
+  level,
   className = '',
 }) => {
   const { theme, toggleTheme } = useTheme();
-  const safeHearts = Math.max(0, Math.floor(Number.isFinite(hearts) ? hearts : 0));
+  const { profile } = useAuth();
+
+  const resolvedHearts = hearts !== undefined ? hearts : (profile?.hearts ?? 5);
+  const resolvedStreak = streakDays !== undefined ? streakDays : (profile?.streak_days ?? 0);
+  const resolvedFreeze = hasFreeze !== undefined ? hasFreeze : (profile?.streak_frozen ?? false);
+  const resolvedXp = totalXp !== undefined ? totalXp : (profile?.xp ?? 0);
+  const resolvedLevel = level !== undefined ? level : (profile?.level ?? 1);
+
+  const safeHearts = Math.max(0, Math.floor(Number.isFinite(resolvedHearts) ? resolvedHearts : 0));
 
   return (
     <header className={`top-status-bar ${className}`} role="banner">
@@ -36,9 +45,9 @@ export const TopStatusBar: React.FC<TopStatusBarProps> = ({
           <span className="heart-count">{safeHearts}</span>
         </div>
 
-        <StreakBadge days={streakDays} hasFreeze={hasFreeze} />
+        <StreakBadge days={resolvedStreak} hasFreeze={resolvedFreeze} />
 
-        <XpCounter xp={totalXp} level={level} />
+        <XpCounter xp={resolvedXp} level={resolvedLevel} />
       </div>
 
       <div className="top-status-right">
