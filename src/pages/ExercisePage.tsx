@@ -20,11 +20,18 @@ export const ExercisePage: React.FC = () => {
   };
 
   const handleNextExercise = () => {
-    // Se for ch01-ex01, o próximo é ch01-ex02, etc.
+    // Se for ch01-ex01, o próximo é ch01-ex02, até a última série do capítulo
     if (exerciseId && exerciseId.includes('-ex')) {
       const parts = exerciseId.split('-ex');
       const prefix = parts[0];
       const num = parseInt(parts[1], 10);
+
+      // Se for a última série (ex: 10 em capítulos de 10 séries), retorna ao capítulo
+      if (num >= 10) {
+        handleClose();
+        return;
+      }
+
       const nextNum = String(num + 1).padStart(2, '0');
       const nextId = `${prefix}-ex${nextNum}`;
       navigate(`/exercise/${nextId}`);

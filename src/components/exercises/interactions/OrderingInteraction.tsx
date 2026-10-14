@@ -41,10 +41,10 @@ export const OrderingInteraction: React.FC<OrderingInteractionProps> = ({
       rawTokens = prompt.split(/\s+/).filter(Boolean);
     }
 
-    // Embaralha levemente para apresentar o desafio
+    // Embaralha para apresentar o desafio de ordenação
     const shuffled = rawTokens
       .map((t, idx) => ({ id: `token-${idx}-${t}`, text: t }))
-      .sort(() => Math.sin(rawTokens.length) - 0.5);
+      .sort(() => Math.random() - 0.5);
 
     setAvailableTokens(shuffled);
     setSelectedTokens([]);
