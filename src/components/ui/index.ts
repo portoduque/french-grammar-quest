@@ -20,3 +20,6 @@ export { Sidebar } from './Sidebar';
 export { MobileNav } from './MobileNav';
 
 export { EmptyState } from './EmptyState';
+
+export { TopStatusBar } from './TopStatusBar';
+export type { TopStatusBarProps } from './TopStatusBar';
