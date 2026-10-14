@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import json
 import os
+import shlex
 import shutil
 import subprocess
 import sys
@@ -24,7 +25,11 @@ def run(cmd: list[str]) -> None:
 
 def run_shell(command: str) -> None:
     print(f"[secure-vibe:deps] $ {command}", flush=True)
-    subprocess.check_call(command, cwd=ROOT, env=os.environ.copy(), shell=True)
+    try:
+        args = shlex.split(command, posix=(os.name != "nt"))
+        subprocess.check_call(args, cwd=ROOT, env=os.environ.copy(), shell=False)
+    except Exception:
+        subprocess.check_call(shlex.split(command), cwd=ROOT, env=os.environ.copy(), shell=False)
 
 
 def configured_install(cfg: dict) -> bool:

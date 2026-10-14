@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import os
+import shlex
 import subprocess
 from pathlib import Path
 
@@ -60,7 +61,11 @@ def main() -> int:
                 return 1
             total += 1
             print(f"\n[secure-vibe:{group}] $ {command}", flush=True)
-            code = subprocess.call(command, cwd=ROOT, shell=True, env=os.environ.copy())
+            try:
+                args = shlex.split(command, posix=(os.name != "nt"))
+                code = subprocess.call(args, cwd=ROOT, shell=False, env=os.environ.copy())
+            except Exception:
+                code = subprocess.call(shlex.split(command), cwd=ROOT, shell=False, env=os.environ.copy())
             if code != 0:
                 failures.append(f"{group}: {command}")
 

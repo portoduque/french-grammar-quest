@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import os
+import shlex
 import subprocess
 from pathlib import Path
 
@@ -46,7 +47,11 @@ def detected_stacks() -> list[str]:
 
 def run_command(command: str) -> int:
     print(f"\n[secure-vibe] $ {command}", flush=True)
-    return subprocess.call(command, cwd=ROOT, shell=True, env=os.environ.copy())
+    try:
+        args = shlex.split(command, posix=(os.name != "nt"))
+        return subprocess.call(args, cwd=ROOT, shell=False, env=os.environ.copy())
+    except Exception:
+        return subprocess.call(shlex.split(command), cwd=ROOT, shell=False, env=os.environ.copy())
 
 
 def main() -> int:

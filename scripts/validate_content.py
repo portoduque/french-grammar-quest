@@ -130,6 +130,7 @@ def private_checks(root, manifest):
 
     # Retain exact previous extraction even as theory.md becomes human-readable.
     raw_theory = (ch / "theory-source.md").read_bytes()
+    # nosemgrep: python.lang.security.insecure-hash-algorithms.insecure-hash-algorithm-sha1
     git_blob_sha = hashlib.sha1(b"blob " + str(len(raw_theory)).encode() + b"\0" + raw_theory, usedforsecurity=False).hexdigest()
     must(git_blob_sha == "5b1861900d00dc84b5ea116d3995c225354aea46",
          "original theory extraction no longer matches the preserved Git blob")
