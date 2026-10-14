@@ -403,38 +403,40 @@ begin
 
   if v_total_questions > 0 then
     v_accuracy := round((v_correct_count::numeric / v_total_questions::numeric) * 100);
-  end if;
 
-  -- Cálculo de Estrelas (RF-048 e T-028: 3★ exige ≥ 90% VERIFICADOS, não maioria autoavaliada)
-  if v_accuracy >= 90 then
-    v_stars := 3;
-  elsif v_accuracy >= 80 then
-    v_stars := 2;
+    -- Cálculo de Estrelas (RF-048 e T-028: 3★ exige ≥ 90% VERIFICADOS, não maioria autoavaliada)
+    if v_accuracy >= 90 then
+      v_stars := 3;
+    elsif v_accuracy >= 80 then
+      v_stars := 2;
+    else
+      v_stars := 1;
+    end if;
+
+    -- Conceder bônus de conclusão de sessão (+5 XP) de forma idempotente
+    insert into public.xp_ledger (
+      user_id,
+      exercise_set_id,
+      amount,
+      reward_type,
+      content_version
+    ) values (
+      v_user_id,
+      v_session.exercise_set_id,
+      5,
+      'session_completed',
+      v_session.content_version
+    )
+    on conflict do nothing;
+
+    if found then
+      v_completion_xp := 5;
+      update public.profiles
+      set xp = xp + 5, updated_at = now()
+      where id = v_user_id;
+    end if;
   else
-    v_stars := 1;
-  end if;
-
-  -- Conceder bônus de conclusão de sessão (+5 XP) de forma idempotente
-  insert into public.xp_ledger (
-    user_id,
-    exercise_set_id,
-    amount,
-    reward_type,
-    content_version
-  ) values (
-    v_user_id,
-    v_session.exercise_set_id,
-    5,
-    'session_completed',
-    v_session.content_version
-  )
-  on conflict do nothing;
-
-  if found then
-    v_completion_xp := 5;
-    update public.profiles
-    set xp = xp + 5, updated_at = now()
-    where id = v_user_id;
+    v_stars := 0;
   end if;
 
   -- Atualizar sessão para completed

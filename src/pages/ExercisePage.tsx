@@ -10,7 +10,7 @@ export const ExercisePage: React.FC = () => {
   const navigate = useNavigate();
 
   const { data, isLoading, isError, error } = useExerciseSet(exerciseId);
-  const { session, saveAttempt, finishSession } = useStudySession(exerciseId);
+  const { session, initSession, saveAttempt, finishSession } = useStudySession(exerciseId);
 
   const handleClose = () => {
     // Retorna para o capítulo correspondente ou para a lista de capítulos
@@ -66,14 +66,24 @@ export const ExercisePage: React.FC = () => {
     );
   }
 
+  const handleRetrySession = () => {
+    if (exerciseId) {
+      initSession(exerciseId);
+    }
+  };
+
   return (
     <main className="exercise-page-container">
       <ExerciseSession
         exerciseSet={data.exerciseSet}
         questions={data.questions}
         initialIndex={session.currentQuestionIndex}
+        initialCorrectCount={session.correctCount}
+        initialReviewedCount={session.reviewedCount}
+        initialEarnedXp={session.earnedXp}
         onSaveAttempt={saveAttempt}
         onFinishSession={finishSession}
+        onRetrySession={handleRetrySession}
         onClose={handleClose}
         onNextExercise={handleNextExercise}
       />

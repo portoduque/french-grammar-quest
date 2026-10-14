@@ -268,12 +268,14 @@ describe('ExerciseSession (Orchestrateur)', () => {
     expect(handleFinishSession).toHaveBeenCalled();
   });
 
-  it('inicia na questão indicada por initialIndex para retomada cross-device (AC-03, T-018)', () => {
+  it('inicia na questão indicada por initialIndex e restaura contadores para retomada cross-device (AC-03, T-018)', () => {
     render(
       <ExerciseSession
         exerciseSet={mockSet}
         questions={mockQuestions}
         initialIndex={1}
+        initialCorrectCount={1}
+        initialEarnedXp={10}
         onClose={vi.fn()}
       />
     );
@@ -281,5 +283,48 @@ describe('ExerciseSession (Orchestrateur)', () => {
     // Deve iniciar diretamente na questão 2/2 ("Je ... habiter")
     expect(screen.getByText('2 / 2')).toBeInTheDocument();
     expect(screen.getByText(/habiter/)).toBeInTheDocument();
+  });
+
+  it('chama onRetrySession ao reiniciar o exercício após conclusão', async () => {
+    const handleRetrySession = vi.fn();
+
+    render(
+      <ExerciseSession
+        exerciseSet={mockSet}
+        questions={mockQuestions}
+        onRetrySession={handleRetrySession}
+        onClose={vi.fn()}
+      />
+    );
+
+    // Conclui Q1
+    const input1 = screen.getByLabelText('Mot à compléter');
+    fireEvent.change(input1, { target: { value: 'travaille' } });
+    await act(async () => {
+      fireEvent.click(screen.getByText(/Vérifier/));
+    });
+    await act(async () => {
+      fireEvent.click(screen.getByText(/Continuer/));
+    });
+
+    // Conclui Q2
+    const input2 = screen.getByLabelText('Mot à compléter');
+    fireEvent.change(input2, { target: { value: "J'habite" } });
+    await act(async () => {
+      fireEvent.click(screen.getByText(/Vérifier/));
+    });
+    await act(async () => {
+      fireEvent.click(screen.getByText(/Continuer/));
+    });
+
+    // Clica em Recommencer
+    const retryBtn = screen.getByText(/Recommencer/);
+    await act(async () => {
+      fireEvent.click(retryBtn);
+    });
+
+    expect(handleRetrySession).toHaveBeenCalled();
+    // Volta para primeira questão
+    expect(screen.getByText('1 / 2')).toBeInTheDocument();
   });
 });

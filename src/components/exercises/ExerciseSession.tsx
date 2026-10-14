@@ -21,6 +21,9 @@ export interface ExerciseSessionProps {
   onClose: () => void;
   onNextExercise?: () => void;
   initialIndex?: number;
+  initialCorrectCount?: number;
+  initialReviewedCount?: number;
+  initialEarnedXp?: number;
   onSaveAttempt?: (
     questionId: string,
     userAnswer: string,
@@ -28,6 +31,7 @@ export interface ExerciseSessionProps {
     score: number
   ) => Promise<void> | void;
   onFinishSession?: () => Promise<{ stars: number; earnedXp: number } | null | void> | void;
+  onRetrySession?: () => void;
 }
 
 export const ExerciseSession: React.FC<ExerciseSessionProps> = ({
@@ -36,8 +40,12 @@ export const ExerciseSession: React.FC<ExerciseSessionProps> = ({
   onClose,
   onNextExercise,
   initialIndex = 0,
+  initialCorrectCount = 0,
+  initialReviewedCount = 0,
+  initialEarnedXp = 0,
   onSaveAttempt,
-  onFinishSession
+  onFinishSession,
+  onRetrySession
 }) => {
   const [currentIndex, setCurrentIndex] = useState(initialIndex);
   const [userAnswer, setUserAnswer] = useState('');
@@ -46,17 +54,20 @@ export const ExerciseSession: React.FC<ExerciseSessionProps> = ({
   const [finalStars, setFinalStars] = useState<number | undefined>(undefined);
 
   // Gamificação em tempo de sessão
-  const [correctCount, setCorrectCount] = useState(0);
-  const [reviewedCount, setReviewedCount] = useState(0);
+  const [correctCount, setCorrectCount] = useState(initialCorrectCount);
+  const [reviewedCount, setReviewedCount] = useState(initialReviewedCount);
   const [comboCount, setComboCount] = useState(0);
-  const [earnedXp, setEarnedXp] = useState(0);
+  const [earnedXp, setEarnedXp] = useState(initialEarnedXp);
 
   // Retomada cross-device/refresh (AC-03, T-018): se initialIndex carregar assincronamente
   React.useEffect(() => {
     if (initialIndex > 0 && currentIndex === 0 && !evaluation && questions.length > 0) {
       setCurrentIndex(Math.min(initialIndex, Math.max(0, questions.length - 1)));
+      if (initialCorrectCount > 0) setCorrectCount(initialCorrectCount);
+      if (initialReviewedCount > 0) setReviewedCount(initialReviewedCount);
+      if (initialEarnedXp > 0) setEarnedXp(initialEarnedXp);
     }
-  }, [initialIndex, questions.length, currentIndex, evaluation]);
+  }, [initialIndex, initialCorrectCount, initialReviewedCount, initialEarnedXp, questions.length, currentIndex, evaluation]);
 
   const currentQuestion = questions[currentIndex];
   const totalQuestions = questions.length;
@@ -152,6 +163,7 @@ export const ExerciseSession: React.FC<ExerciseSessionProps> = ({
     setEarnedXp(0);
     setFinalStars(undefined);
     setIsCompleted(false);
+    onRetrySession?.();
   };
 
   // Se a série foi finalizada

@@ -28,7 +28,8 @@ export const SessionCompletedView: React.FC<SessionCompletedViewProps> = ({
 
   // Cálculo de estrelas (PRD §11.1, RF-048 / T-028)
   let fallbackStars = 1;
-  if (accuracy >= 90) fallbackStars = 3;
+  if (totalQuestions === 0) fallbackStars = 0;
+  else if (accuracy >= 90) fallbackStars = 3;
   else if (accuracy >= 80) fallbackStars = 2;
 
   const activeStars = stars !== undefined ? stars : fallbackStars;
