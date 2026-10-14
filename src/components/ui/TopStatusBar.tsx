@@ -21,6 +21,7 @@ export const TopStatusBar: React.FC<TopStatusBarProps> = ({
   className = '',
 }) => {
   const { theme, toggleTheme } = useTheme();
+  const safeHearts = Math.max(0, Math.floor(Number.isFinite(hearts) ? hearts : 0));
 
   return (
     <header className={`top-status-bar ${className}`} role="banner">
@@ -30,9 +31,9 @@ export const TopStatusBar: React.FC<TopStatusBarProps> = ({
       </div>
 
       <div className="top-status-center">
-        <div className="hearts-display" title={`${hearts} vidas restantes`} aria-label={`${hearts} vidas`}>
+        <div className="hearts-display" title={`${safeHearts} vidas restantes`} aria-label={`${safeHearts} vidas`}>
           <span className="heart-icon" aria-hidden="true">❤️</span>
-          <span className="heart-count">{hearts}</span>
+          <span className="heart-count">{safeHearts}</span>
         </div>
 
         <StreakBadge days={streakDays} hasFreeze={hasFreeze} />

@@ -112,5 +112,17 @@ describe('UI Base Components', () => {
       fireEvent.click(themeToggle);
       expect(screen.getByRole('button', { name: /Alternar para tema/i })).toBeInTheDocument();
     });
+
+    it('safely handles negative or NaN values for hearts, streak and XP', () => {
+      render(
+        <ThemeProvider>
+          <TopStatusBar hearts={-1} streakDays={-4} totalXp={-100} level={NaN} />
+        </ThemeProvider>
+      );
+
+      expect(screen.getByLabelText(/0 vidas/i)).toBeInTheDocument();
+      expect(screen.getByLabelText(/0 dias de streak/i)).toBeInTheDocument();
+      expect(screen.getByLabelText(/0 XP/i)).toBeInTheDocument();
+    });
   });
 });

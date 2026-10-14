@@ -6,6 +6,7 @@ import {
   StreakBadge,
   XpCounter,
   TipsBottomSheet,
+  LearningPathSnake,
 } from './index';
 
 describe('Gamification Components', () => {
@@ -192,6 +193,62 @@ describe('Gamification Components', () => {
 
       fireEvent.keyDown(document, { key: 'Escape' });
       expect(handleClose).toHaveBeenCalledTimes(1);
+    });
+  });
+
+  describe('Edge Cases & Defensive Safeguards', () => {
+    it('handles stars > 3 without crashing and clamps to 3 stars', () => {
+      render(
+        <PathNode
+          id="ch-01"
+          number={1}
+          title="Test Exceeding Stars"
+          status="completed"
+          stars={5}
+        />
+      );
+
+      expect(screen.getByLabelText('3 étoiles')).toBeInTheDocument();
+      expect(screen.getByText('★★★')).toBeInTheDocument();
+    });
+
+    it('handles negative or NaN stars gracefully without rendering broken stars', () => {
+      const { container } = render(
+        <PathNode
+          id="ch-01"
+          number={1}
+          title="Negative Stars"
+          status="completed"
+          stars={-2}
+        />
+      );
+
+      expect(container.querySelector('.path-node-stars')).toBeNull();
+    });
+
+    it('handles negative or NaN XP gracefully in XpCounter', () => {
+      render(<XpCounter xp={-50} level={NaN} combo={-2} />);
+
+      expect(screen.getByLabelText('0 XP')).toBeInTheDocument();
+      expect(screen.getByText('0 XP')).toBeInTheDocument();
+    });
+
+    it('handles negative days gracefully in StreakBadge', () => {
+      render(<StreakBadge days={-10} />);
+
+      expect(screen.getByLabelText('0 dias de streak')).toBeInTheDocument();
+      expect(screen.getByText('0')).toBeInTheDocument();
+      expect(screen.getByText('❄️')).toBeInTheDocument();
+    });
+
+    it('renders LearningPathSnake safely when chapters list is empty', () => {
+      const { container } = render(
+        <LearningPathSnake chapters={[]} onSelectChapter={() => {}} />
+      );
+
+      expect(container.querySelector('.learning-path-snake')).toBeInTheDocument();
+      expect(container.querySelectorAll('.world-section')).toHaveLength(5);
+      expect(container.querySelectorAll('.path-node-wrapper')).toHaveLength(0);
     });
   });
 });

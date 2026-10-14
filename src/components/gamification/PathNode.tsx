@@ -29,6 +29,8 @@ export const PathNode: React.FC<PathNodeProps> = ({
 
   const defaultIcon = isBoss ? '👑' : isCompleted ? '⭐' : isActive ? '📍' : '🔒';
 
+  const clampedStars = Math.max(0, Math.min(3, Math.floor(stars || 0)));
+
   return (
     <div className={`path-node-wrapper path-offset-${offset}`}>
       <button
@@ -51,9 +53,9 @@ export const PathNode: React.FC<PathNodeProps> = ({
           </span>
         )}
 
-        {isCompleted && stars > 0 && (
-          <span className="path-node-stars" aria-label={`${stars} étoiles`}>
-            {'★'.repeat(stars)}{'☆'.repeat(3 - stars)}
+        {isCompleted && clampedStars > 0 && (
+          <span className="path-node-stars" aria-label={`${clampedStars} étoiles`}>
+            {'★'.repeat(clampedStars)}{'☆'.repeat(3 - clampedStars)}
           </span>
         )}
       </button>

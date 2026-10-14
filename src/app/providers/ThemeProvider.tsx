@@ -16,9 +16,15 @@ const STORAGE_KEY = 'fgq-theme';
 
 function getInitialTheme(): Theme {
   if (typeof window === 'undefined') return 'dark';
-  const stored = localStorage.getItem(STORAGE_KEY);
-  if (stored === 'light' || stored === 'dark') return stored;
-  if (window.matchMedia('(prefers-color-scheme: light)').matches) return 'light';
+  try {
+    const stored = localStorage.getItem(STORAGE_KEY);
+    if (stored === 'light' || stored === 'dark') return stored;
+    if (typeof window.matchMedia === 'function' && window.matchMedia('(prefers-color-scheme: light)').matches) {
+      return 'light';
+    }
+  } catch {
+    // Graceful fallback if localStorage is disabled or restricted (e.g. sandboxed iframes)
+  }
   return 'dark';
 }
 
@@ -27,7 +33,11 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem(STORAGE_KEY, theme);
+    try {
+      localStorage.setItem(STORAGE_KEY, theme);
+    } catch {
+      // Graceful fallback if localStorage is unavailable
+    }
   }, [theme]);
 
   const toggleTheme = useCallback(() => {
