@@ -90,7 +90,7 @@ export function useExerciseSet(exerciseSetId: string | undefined) {
         .maybeSingle();
 
       if (setError) {
-        console.warn(`[useExerciseSet] Erro ao buscar exercise_set ${exerciseSetId}:`, setError);
+        console.warn('[useExerciseSet] Erro ao buscar exercise_set:', exerciseSetId, setError);
       }
 
       // 2. Buscar perguntas associadas ordenadas por order_index
@@ -101,7 +101,7 @@ export function useExerciseSet(exerciseSetId: string | undefined) {
         .order('order_index', { ascending: true });
 
       if (questionsError) {
-        console.warn(`[useExerciseSet] Erro ao buscar questions para ${exerciseSetId}:`, questionsError);
+        console.warn('[useExerciseSet] Erro ao buscar questions:', exerciseSetId, questionsError);
       }
 
       // Se encontrou dados no banco
