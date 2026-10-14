@@ -209,7 +209,7 @@ export const ReviewPage: React.FC = () => {
 
       {/* Interactive review modal */}
       <ReviewSessionModal
-        isOpen={isSessionOpen}
+        open={isSessionOpen}
         onClose={() => {
           setIsSessionOpen(false);
           setSinglePracticeMistake(null);

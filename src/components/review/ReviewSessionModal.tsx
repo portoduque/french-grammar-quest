@@ -1,30 +1,41 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Modal } from '@/components/ui/Modal';
 import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
 import { Badge } from '@/components/ui/Badge';
+import { AccentToolbar } from '@/components/gamification/AccentToolbar';
+import { evaluateAnswer } from '@/utils/answerEvaluator';
 import { UserMistakeDetail } from '@/types/database';
 
 export interface ReviewSessionModalProps {
-  isOpen: boolean;
+  open?: boolean;
+  isOpen?: boolean;
   onClose: () => void;
   mistakes: UserMistakeDetail[];
   onComplete: (resolvedQuestionIds: string[]) => Promise<void>;
 }
 
 export const ReviewSessionModal: React.FC<ReviewSessionModalProps> = ({
+  open,
   isOpen,
   onClose,
   mistakes,
   onComplete
 }) => {
+  const isModalOpen = Boolean(open ?? isOpen);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [userAnswer, setUserAnswer] = useState('');
   const [hasEvaluated, setHasEvaluated] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
+  const [evaluationFeedback, setEvaluationFeedback] = useState<{
+    title: string;
+    message: string;
+    pedagogicalTip?: string;
+  } | null>(null);
   const [resolvedQuestionIds, setResolvedQuestionIds] = useState<string[]>([]);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isFinished, setIsFinished] = useState(false);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   if (!mistakes || mistakes.length === 0) {
     return null;
@@ -32,26 +43,30 @@ export const ReviewSessionModal: React.FC<ReviewSessionModalProps> = ({
 
   const currentMistake = mistakes[currentIndex];
 
-  const normalize = (text: string) => {
-    return text
-      .trim()
-      .normalize('NFC')
-      .toLowerCase()
-      .replace(/\s+/g, ' ');
+  const handleInsertAccent = (char: string) => {
+    setUserAnswer((prev) => prev + char);
+    inputRef.current?.focus();
   };
 
   const handleCheck = () => {
     if (!userAnswer.trim()) return;
 
-    const normalizedUser = normalize(userAnswer);
-    const matches = currentMistake.accepted_answers.some(
-      (ans) => normalize(ans) === normalizedUser
+    const result = evaluateAnswer(
+      userAnswer,
+      currentMistake.accepted_answers,
+      {
+        interactionType: currentMistake.interaction_type,
+        prompt: currentMistake.prompt,
+        instruction: currentMistake.instruction ?? undefined
+      }
     );
 
-    setIsCorrect(matches);
+    const correct = result.status === 'correct';
+    setIsCorrect(correct);
+    setEvaluationFeedback(result.feedback);
     setHasEvaluated(true);
 
-    if (matches && !resolvedQuestionIds.includes(currentMistake.question_id)) {
+    if (correct && !resolvedQuestionIds.includes(currentMistake.question_id)) {
       setResolvedQuestionIds((prev) => [...prev, currentMistake.question_id]);
     }
   };
@@ -62,6 +77,7 @@ export const ReviewSessionModal: React.FC<ReviewSessionModalProps> = ({
       setUserAnswer('');
       setHasEvaluated(false);
       setIsCorrect(false);
+      setEvaluationFeedback(null);
     } else {
       setIsSubmitting(true);
       try {
@@ -80,6 +96,7 @@ export const ReviewSessionModal: React.FC<ReviewSessionModalProps> = ({
     setUserAnswer('');
     setHasEvaluated(false);
     setIsCorrect(false);
+    setEvaluationFeedback(null);
     setResolvedQuestionIds([]);
     setIsFinished(false);
     onClose();
@@ -87,7 +104,7 @@ export const ReviewSessionModal: React.FC<ReviewSessionModalProps> = ({
 
   return (
     <Modal
-      open={isOpen}
+      open={isModalOpen}
       onClose={handleClose}
       title={isFinished ? '🎉 Session de Révision Terminée !' : `🎯 Révision Active (${currentIndex + 1}/${mistakes.length})`}
       size="md"
@@ -180,6 +197,7 @@ export const ReviewSessionModal: React.FC<ReviewSessionModalProps> = ({
           {!hasEvaluated ? (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               <Input
+                ref={inputRef}
                 label="Votre réponse en français :"
                 placeholder="Tapez ici..."
                 value={userAnswer}
@@ -189,6 +207,8 @@ export const ReviewSessionModal: React.FC<ReviewSessionModalProps> = ({
                 }}
                 autoFocus
               />
+
+              <AccentToolbar onInsert={handleInsertAccent} />
 
               <Button
                 variant="primary"
@@ -213,7 +233,7 @@ export const ReviewSessionModal: React.FC<ReviewSessionModalProps> = ({
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
                   <span style={{ fontSize: '1.25rem' }}>{isCorrect ? '✅' : '❌'}</span>
                   <span style={{ fontWeight: 700, color: isCorrect ? '#10B981' : '#EF4444' }}>
-                    {isCorrect ? 'Bravo ! Réponse correcte !' : 'Pas tout à fait...'}
+                    {evaluationFeedback?.title || (isCorrect ? 'Bravo ! Réponse correcte !' : 'Pas tout à fait...')}
                   </span>
                 </div>
 
@@ -221,9 +241,15 @@ export const ReviewSessionModal: React.FC<ReviewSessionModalProps> = ({
                   <strong>Réponse attendue :</strong> {currentMistake.accepted_answers.join(' ou ')}
                 </p>
 
-                {currentMistake.explanation && (
+                {evaluationFeedback?.message && (
+                  <p style={{ margin: '0.5rem 0 0', fontSize: '0.875rem', color: 'var(--color-text)' }}>
+                    {evaluationFeedback.message}
+                  </p>
+                )}
+
+                {(evaluationFeedback?.pedagogicalTip || currentMistake.explanation) && (
                   <p style={{ margin: '0.5rem 0 0', fontSize: '0.875rem', color: 'var(--color-text-muted)' }}>
-                    💡 {currentMistake.explanation}
+                    💡 {evaluationFeedback?.pedagogicalTip || currentMistake.explanation}
                   </p>
                 )}
               </div>

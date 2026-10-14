@@ -79,7 +79,7 @@ describe('ReviewPage (Mon Coffre d\'Erreurs)', () => {
     });
   });
 
-  it('exibe cards com erros e botão de iniciar revisão quando há pendências', async () => {
+  it('exibe cards com erros, permite treinar com AccentToolbar e concluir sessão interativa', async () => {
     const mockMistakes = [
       {
         mistake_id: 'm-1',
@@ -117,5 +117,85 @@ describe('ReviewPage (Mon Coffre d\'Erreurs)', () => {
     fireEvent.click(startBtn);
 
     expect(screen.getByText(/Révision Active/i)).toBeInTheDocument();
+
+    // AccentToolbar está disponível para digitação de caracteres acentuados
+    expect(screen.getByRole('toolbar', { name: /Caracteres acentuados franceses/i })).toBeInTheDocument();
+
+    // Digita resposta correta
+    const input = screen.getByPlaceholderText(/Tapez ici/i);
+    fireEvent.change(input, { target: { value: 'Je ne parle pas' } });
+
+    // Clica em verificar
+    const checkBtn = screen.getByRole('button', { name: /Vérifier/i });
+    fireEvent.click(checkBtn);
+
+    // Motor FLE avalia e dá feedback de acerto
+    await waitFor(() => {
+      expect(screen.getByText(/Excellente réponse/i)).toBeInTheDocument();
+    });
+
+    // Mock do retorno da RPC complete_review_session
+    (supabase!.rpc as any).mockResolvedValueOnce({
+      data: { success: true, resolved_count: 1, xp_granted: 5 },
+      error: null
+    });
+
+    // Conclui a sessão
+    const finishBtn = screen.getByRole('button', { name: /Terminer la session/i });
+    fireEvent.click(finishBtn);
+
+    await waitFor(() => {
+      expect(screen.getByText(/Session de Révision Terminée/i)).toBeInTheDocument();
+      expect(screen.getByText(/\+5 XP de Révision/i)).toBeInTheDocument();
+    });
+
+    expect(supabase!.rpc).toHaveBeenCalledWith('complete_review_session', {
+      p_resolved_question_ids: ['q-101']
+    });
+  });
+
+  it('permite marcar um erro como assimilado diretamente no card', async () => {
+    const mockMistakes = [
+      {
+        mistake_id: 'm-2',
+        question_id: 'q-102',
+        exercise_set_id: 'set-1',
+        chapter_id: 'ch01',
+        last_wrong_answer: 'Tu es',
+        wrong_count: 1,
+        status: 'pending',
+        last_attempted_at: '2026-10-14T10:00:00Z',
+        prompt: 'Complétez : Vous ___ ici.',
+        instruction: 'Verbe être',
+        interaction_type: 'fill_in_blank',
+        accepted_answers: ['êtes'],
+        explanation: 'Vous êtes.'
+      }
+    ];
+
+    (supabase!.rpc as any).mockResolvedValueOnce({
+      data: mockMistakes,
+      error: null
+    });
+
+    renderComponent();
+
+    await waitFor(() => {
+      expect(screen.getByText('Complétez : Vous ___ ici.')).toBeInTheDocument();
+    });
+
+    (supabase!.rpc as any).mockResolvedValueOnce({
+      data: { success: true, resolved_count: 1, xp_granted: 5 },
+      error: null
+    });
+
+    const resolveBtn = screen.getByRole('button', { name: /Marquer comme assimilé/i });
+    fireEvent.click(resolveBtn);
+
+    await waitFor(() => {
+      expect(supabase!.rpc).toHaveBeenCalledWith('complete_review_session', {
+        p_resolved_question_ids: ['q-102']
+      });
+    });
   });
 });
