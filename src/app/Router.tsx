@@ -9,6 +9,7 @@ const LearningPathPage = lazy(() => import('@/pages/LearningPathPage'));
 const ChapterPage = lazy(() => import('@/pages/ChapterPage'));
 const ReviewPage = lazy(() => import('@/pages/ReviewPage'));
 const ProfilePage = lazy(() => import('@/pages/ProfilePage'));
+const ExercisePage = lazy(() => import('@/pages/ExercisePage'));
 const LoginPage = lazy(() => import('@/pages/LoginPage'));
 const NotFoundPage = lazy(() => import('@/pages/NotFoundPage'));
 
@@ -25,6 +26,17 @@ export const AppRouter: React.FC = () => {
       <Suspense fallback={<PageLoader />}>
         <Routes>
           <Route path="/login" element={<LoginPage />} />
+
+          {/* Sessão de Exercício Imersiva em Tela Cheia (protegida por AuthGuard) */}
+          <Route
+            path="/exercise/:exerciseId"
+            element={
+              <AuthGuard>
+                <ExercisePage />
+              </AuthGuard>
+            }
+          />
+
           <Route
             element={
               <AuthGuard>

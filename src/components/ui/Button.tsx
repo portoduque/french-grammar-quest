@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'ghost' | 'danger';
@@ -7,7 +7,7 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   icon?: React.ReactNode;
 }
 
-export const Button: React.FC<ButtonProps> = ({
+export const Button = forwardRef<HTMLButtonElement, ButtonProps>(({
   variant = 'primary',
   size = 'md',
   loading = false,
@@ -16,9 +16,10 @@ export const Button: React.FC<ButtonProps> = ({
   className = '',
   disabled,
   ...props
-}) => {
+}, ref) => {
   return (
     <button
+      ref={ref}
       className={`btn btn-${variant} btn-${size} ${loading ? 'btn-loading' : ''} ${className}`}
       disabled={disabled || loading}
       {...props}
@@ -28,4 +29,6 @@ export const Button: React.FC<ButtonProps> = ({
       {children && <span className="btn-label">{children}</span>}
     </button>
   );
-};
+});
+
+Button.displayName = 'Button';

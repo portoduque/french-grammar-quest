@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { CHAPTERS_SUMMARY } from '@/data/chaptersSummary';
 import { useTheory } from '@/hooks/useTheory';
 import { TheoryReader } from '@/components/theory/TheoryReader';
@@ -10,6 +10,7 @@ import { Skeleton } from '@/components/ui/Skeleton';
 
 export const ChapterPage: React.FC = () => {
   const { chapterId } = useParams<{ chapterId: string }>();
+  const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState<'theory' | 'exercises' | 'tips'>('theory');
 
   // Static summary metadata
@@ -174,7 +175,7 @@ export const ChapterPage: React.FC = () => {
                     <Button
                       variant="primary"
                       size="sm"
-                      onClick={() => alert(`Démarrage de l'exercice ${ex.title} (Moteur d'exercices - Etapa 4)`)}
+                      onClick={() => navigate(`/exercise/${ex.id}`)}
                     >
                       Commencer 🚀
                     </Button>
