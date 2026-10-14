@@ -16,6 +16,7 @@ export function useAuth() {
   const addXp = useAuthStore((state) => state.addXp);
   const decrementHearts = useAuthStore((state) => state.decrementHearts);
   const refillHearts = useAuthStore((state) => state.refillHearts);
+  const incrementStreak = useAuthStore((state) => state.incrementStreak);
   const clearError = useAuthStore((state) => state.clearError);
 
   const isAuthenticated = Boolean(user);
@@ -42,6 +43,7 @@ export function useAuth() {
     addXp,
     decrementHearts,
     refillHearts,
+    incrementStreak,
     clearError,
   };
 }

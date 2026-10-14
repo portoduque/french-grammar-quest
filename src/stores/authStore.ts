@@ -23,6 +23,7 @@ export interface AuthActions {
   addXp: (amount: number) => Promise<void>;
   decrementHearts: () => Promise<number>;
   refillHearts: () => Promise<void>;
+  incrementStreak: () => Promise<void>;
   clearError: () => void;
 }
 
@@ -246,7 +247,15 @@ export const useAuthStore = create<AuthStore>()(
       const current = get().profile;
       if (!current) return;
 
-      const updatedProfile = { ...current, ...updates, updated_at: new Date().toISOString() };
+      const sanitizedUpdates: Partial<Profile> = { ...updates };
+      if (sanitizedUpdates.hearts !== undefined) {
+        sanitizedUpdates.hearts = Math.max(0, Math.min(5, Math.floor(Number.isFinite(sanitizedUpdates.hearts) ? sanitizedUpdates.hearts : 0)));
+      }
+      if (sanitizedUpdates.xp !== undefined) {
+        sanitizedUpdates.xp = Math.max(0, Math.floor(Number.isFinite(sanitizedUpdates.xp) ? sanitizedUpdates.xp : 0));
+      }
+
+      const updatedProfile = { ...current, ...sanitizedUpdates, updated_at: new Date().toISOString() };
 
       if (get().isMockMode || !isSupabaseConfigured || !supabase) {
         saveStoredMockProfile(updatedProfile);
@@ -257,7 +266,7 @@ export const useAuthStore = create<AuthStore>()(
       try {
         const { error } = await supabase
           .from('profiles')
-          .update(updates)
+          .update(sanitizedUpdates)
           .eq('id', current.id);
 
         if (error) throw error;
@@ -270,7 +279,8 @@ export const useAuthStore = create<AuthStore>()(
     addXp: async (amount: number) => {
       const current = get().profile;
       if (!current) return;
-      const newXp = Math.max(0, current.xp + amount);
+      const safeAmount = Number.isFinite(amount) ? Math.max(0, Math.floor(amount)) : 0;
+      const newXp = Math.max(0, current.xp + safeAmount);
       const newLevel = Math.max(1, Math.floor(newXp / 100) + 1);
       await get().updateProfile({ xp: newXp, level: newLevel });
     },
@@ -286,7 +296,48 @@ export const useAuthStore = create<AuthStore>()(
     refillHearts: async () => {
       const current = get().profile;
       if (!current) return;
-      await get().updateProfile({ hearts: current.max_hearts });
+      const targetHearts = Math.max(1, current.max_hearts || 5);
+      await get().updateProfile({ hearts: targetHearts });
+    },
+
+    incrementStreak: async () => {
+      const current = get().profile;
+      if (!current) return;
+
+      const today = new Date().toISOString().split('T')[0];
+      if (current.last_active_date === today) {
+        // Already logged activity today
+        return;
+      }
+
+      let newStreak = current.streak_days;
+      let newFrozen = current.streak_frozen;
+
+      if (!current.last_active_date) {
+        newStreak = 1;
+      } else {
+        const lastDate = new Date(current.last_active_date);
+        const currDate = new Date(today);
+        const diffTime = currDate.getTime() - lastDate.getTime();
+        const diffDays = Math.round(diffTime / (1000 * 60 * 60 * 24));
+
+        if (diffDays === 1) {
+          newStreak += 1;
+        } else if (diffDays === 2 && current.streak_frozen) {
+          // Streak Freeze protected the missed day
+          newFrozen = false;
+          newStreak += 1;
+        } else {
+          // More than 1 day missed without freeze
+          newStreak = 1;
+        }
+      }
+
+      await get().updateProfile({
+        streak_days: newStreak,
+        streak_frozen: newFrozen,
+        last_active_date: today,
+      });
     },
 
     clearError: () => set({ authError: null }),

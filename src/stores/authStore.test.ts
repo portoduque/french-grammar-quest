@@ -80,4 +80,67 @@ describe('AuthStore (Zustand & Gamification State)', () => {
     expect(useAuthStore.getState().user).toBeNull();
     expect(useAuthStore.getState().profile).toBeNull();
   });
+
+  describe('Edge Cases & Gamification Invariants', () => {
+    it('safely handles NaN and negative amounts in addXp without corrupting state', async () => {
+      useAuthStore.getState().setMockUser('user@french.app', 'student');
+      const initialXp = useAuthStore.getState().profile?.xp ?? 0;
+
+      await useAuthStore.getState().addXp(NaN);
+      expect(useAuthStore.getState().profile?.xp).toBe(initialXp);
+
+      await useAuthStore.getState().addXp(-100);
+      expect(useAuthStore.getState().profile?.xp).toBe(initialXp);
+    });
+
+    it('clamps hearts between 0 and 5 when updated directly', async () => {
+      useAuthStore.getState().setMockUser('user@french.app', 'student');
+
+      await useAuthStore.getState().updateProfile({ hearts: 10 });
+      expect(useAuthStore.getState().profile?.hearts).toBe(5);
+
+      await useAuthStore.getState().updateProfile({ hearts: -3 });
+      expect(useAuthStore.getState().profile?.hearts).toBe(0);
+    });
+
+    it('increments streak on consecutive day activity', async () => {
+      const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
+      useAuthStore.getState().setMockUser('user@french.app', 'student');
+      await useAuthStore.getState().updateProfile({
+        streak_days: 5,
+        last_active_date: yesterday,
+      });
+
+      await useAuthStore.getState().incrementStreak();
+      expect(useAuthStore.getState().profile?.streak_days).toBe(6);
+    });
+
+    it('protects streak using streak_frozen when 1 day was missed', async () => {
+      const twoDaysAgo = new Date(Date.now() - 86400000 * 2).toISOString().split('T')[0];
+      useAuthStore.getState().setMockUser('user@french.app', 'student');
+      await useAuthStore.getState().updateProfile({
+        streak_days: 10,
+        streak_frozen: true,
+        last_active_date: twoDaysAgo,
+      });
+
+      await useAuthStore.getState().incrementStreak();
+
+      expect(useAuthStore.getState().profile?.streak_days).toBe(11);
+      expect(useAuthStore.getState().profile?.streak_frozen).toBe(false); // Shield consumed
+    });
+
+    it('resets streak to 1 when days missed exceeds 1 without freeze', async () => {
+      const threeDaysAgo = new Date(Date.now() - 86400000 * 3).toISOString().split('T')[0];
+      useAuthStore.getState().setMockUser('user@french.app', 'student');
+      await useAuthStore.getState().updateProfile({
+        streak_days: 10,
+        streak_frozen: false,
+        last_active_date: threeDaysAgo,
+      });
+
+      await useAuthStore.getState().incrementStreak();
+      expect(useAuthStore.getState().profile?.streak_days).toBe(1);
+    });
+  });
 });

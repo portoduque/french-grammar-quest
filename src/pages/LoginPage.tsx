@@ -13,17 +13,19 @@ const LoginPage: React.FC = () => {
   const [email, setEmail] = useState('');
   const [sentMessage, setSentMessage] = useState<string | null>(null);
 
-  // Default redirect is /dashboard or where user came from
-  const fromLocation = (location.state as { from?: { pathname?: string } })?.from?.pathname || '/dashboard';
+  // Preserve full path including search query params on redirect
+  const fromState = (location.state as { from?: { pathname?: string; search?: string } })?.from;
+  const redirectTarget = fromState ? `${fromState.pathname || '/dashboard'}${fromState.search || ''}` : '/dashboard';
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!email || !email.includes('@')) return;
+    const cleanEmail = email.trim().toLowerCase();
+    if (!cleanEmail || !cleanEmail.includes('@')) return;
 
     clearError();
     setSentMessage(null);
 
-    const result = await loginWithMagicLink(email.trim());
+    const result = await loginWithMagicLink(cleanEmail);
     if (result.success) {
       setSentMessage(result.message);
     }
@@ -31,7 +33,7 @@ const LoginPage: React.FC = () => {
 
   const handleDemoLogin = (role: 'student' | 'admin') => {
     setMockUser(role === 'admin' ? 'professeur@frenchgrammarquest.app' : 'etudiant@frenchgrammarquest.app', role);
-    navigate(fromLocation, { replace: true });
+    navigate(redirectTarget, { replace: true });
   };
 
   return (
