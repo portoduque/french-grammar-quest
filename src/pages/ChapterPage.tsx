@@ -7,6 +7,7 @@ import { Badge } from '@/components/ui/Badge';
 import { Button } from '@/components/ui/Button';
 import { EmptyState } from '@/components/ui/EmptyState';
 import { Skeleton } from '@/components/ui/Skeleton';
+import { useUserProgress } from '@/hooks/useUserProgress';
 
 export const ChapterPage: React.FC = () => {
   const { chapterId } = useParams<{ chapterId: string }>();
@@ -18,6 +19,7 @@ export const ChapterPage: React.FC = () => {
 
   // Dynamic content query from Supabase
   const { data, isLoading } = useTheory(chapterId);
+  const { data: progressData } = useUserProgress();
 
   if (!summaryChapter && !data?.chapter) {
     return (
@@ -152,36 +154,53 @@ export const ChapterPage: React.FC = () => {
         <section className="chapter-tab-panel" role="tabpanel" aria-label="Exercices">
           {exerciseSets.length > 0 ? (
             <div className="exercises-grid">
-              {exerciseSets.map((ex) => (
-                <div key={ex.id} className="card card-default exercise-card">
-                  <div className="exercise-card-header">
-                    <div className="exercise-title-group">
-                      <span className="exercise-order-badge">#{ex.order_index}</span>
-                      <h3 className="exercise-title">{ex.title}</h3>
+              {exerciseSets.map((ex) => {
+                const setProgress = progressData?.progressBySet[ex.id];
+                const isCompleted = setProgress?.status === 'completed';
+                const isInProgress = setProgress?.status === 'in_progress';
+                const bestStars = setProgress?.best_stars ?? 0;
+
+                return (
+                  <div key={ex.id} className="card card-default exercise-card">
+                    <div className="exercise-card-header">
+                      <div className="exercise-title-group">
+                        <span className="exercise-order-badge">#{ex.order_index}</span>
+                        <h3 className="exercise-title">{ex.title}</h3>
+                      </div>
+                      <div className="exercise-badges-row">
+                        {isCompleted && (
+                          <Badge variant="emerald">
+                            Complété {bestStars > 0 ? `${'★'.repeat(bestStars)}` : '✓'}
+                          </Badge>
+                        )}
+                        {isInProgress && (
+                          <Badge variant="amber">En cours ▶️</Badge>
+                        )}
+                        <Badge variant={ex.interaction_type === 'fill_blank' ? 'cyan' : 'amber'}>
+                          {ex.interaction_type}
+                        </Badge>
+                      </div>
                     </div>
-                    <Badge variant={ex.interaction_type === 'fill_blank' ? 'cyan' : 'amber'}>
-                      {ex.interaction_type}
-                    </Badge>
-                  </div>
 
-                  <p className="exercise-instruction" lang="fr">
-                    {ex.instruction}
-                  </p>
+                    <p className="exercise-instruction" lang="fr">
+                      {ex.instruction}
+                    </p>
 
-                  <div className="exercise-card-footer">
-                    <span className="exercise-q-count">
-                      📝 {ex.questions_count} questions
-                    </span>
-                    <Button
-                      variant="primary"
-                      size="sm"
-                      onClick={() => navigate(`/exercise/${ex.id}`)}
-                    >
-                      Commencer 🚀
-                    </Button>
+                    <div className="exercise-card-footer">
+                      <span className="exercise-q-count">
+                        📝 {ex.questions_count} questions
+                      </span>
+                      <Button
+                        variant={isCompleted ? 'secondary' : 'primary'}
+                        size="sm"
+                        onClick={() => navigate(`/exercise/${ex.id}`)}
+                      >
+                        {isCompleted ? 'Refaire 🔄' : isInProgress ? 'Reprendre ▶️' : 'Commencer 🚀'}
+                      </Button>
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           ) : (
             <div className="exercises-grid">

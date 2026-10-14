@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useExerciseSet } from '@/hooks/useExerciseSet';
+import { useStudySession } from '@/hooks/useStudySession';
 import { ExerciseSession } from '@/components/exercises/ExerciseSession';
 import { Button } from '@/components/ui/Button';
 
@@ -9,6 +10,7 @@ export const ExercisePage: React.FC = () => {
   const navigate = useNavigate();
 
   const { data, isLoading, isError, error } = useExerciseSet(exerciseId);
+  const { session, saveAttempt, finishSession } = useStudySession(exerciseId);
 
   const handleClose = () => {
     // Retorna para o capítulo correspondente ou para a lista de capítulos
@@ -69,6 +71,9 @@ export const ExercisePage: React.FC = () => {
       <ExerciseSession
         exerciseSet={data.exerciseSet}
         questions={data.questions}
+        initialIndex={session.currentQuestionIndex}
+        onSaveAttempt={saveAttempt}
+        onFinishSession={finishSession}
         onClose={handleClose}
         onNextExercise={handleNextExercise}
       />

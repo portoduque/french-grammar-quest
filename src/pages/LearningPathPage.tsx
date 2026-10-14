@@ -5,6 +5,8 @@ import { Card } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
 import { Input } from '@/components/ui/Input';
 import { LearningPathSnake, ChapterProgress } from '@/components/gamification/LearningPathSnake';
+import { NodeStatus } from '@/components/gamification/PathNode';
+import { useUserProgress } from '@/hooks/useUserProgress';
 
 export const LearningPathPage: React.FC = () => {
   const navigate = useNavigate();
@@ -12,15 +14,37 @@ export const LearningPathPage: React.FC = () => {
   const [viewMode, setViewMode] = useState<'snake' | 'grid'>('snake');
 
   const { chapters, chaptersByWorld, isLoading } = useCatalog();
+  const { data: progressData } = useUserProgress();
 
-  const chaptersProgress: ChapterProgress[] = chapters.map((ch, idx) => ({
-    number: ch.number,
-    id: ch.id,
-    title: ch.title,
-    // Chapter 1 is active by default; others locked until unlocked
-    status: idx === 0 ? 'active' : 'locked',
-    stars: idx === 0 ? 0 : 0,
-  }));
+  const chaptersProgress: ChapterProgress[] = chapters.map((ch, idx) => {
+    const chProgress = progressData?.progressByChapter[ch.id];
+    const completedSets = chProgress?.completed ?? 0;
+    const stars = chProgress?.stars ?? 0;
+    const totalSets = ch.exerciseGroupsCount || 10;
+
+    let status: NodeStatus = 'locked';
+    if (ch.number === 28) {
+      status = completedSets >= totalSets ? 'completed' : 'boss';
+    } else if (completedSets >= totalSets && totalSets > 0) {
+      status = 'completed';
+    } else if (idx === 0) {
+      status = 'active';
+    } else {
+      const prevChId = chapters[idx - 1]?.id;
+      const prevProgress = prevChId ? progressData?.progressByChapter[prevChId] : null;
+      if (completedSets > 0 || (chProgress && chProgress.inProgress > 0) || (prevProgress && prevProgress.completed > 0)) {
+        status = 'active';
+      }
+    }
+
+    return {
+      number: ch.number,
+      id: ch.id,
+      title: ch.title,
+      status,
+      stars: Math.min(3, Math.round(stars / Math.max(1, totalSets))),
+    };
+  });
 
   const filteredChapters = chapters.filter((ch) =>
     ch.title.toLowerCase().includes(searchTerm.toLowerCase()) ||

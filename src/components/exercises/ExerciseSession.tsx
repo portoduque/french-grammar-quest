@@ -20,24 +20,43 @@ export interface ExerciseSessionProps {
   questions: Question[];
   onClose: () => void;
   onNextExercise?: () => void;
+  initialIndex?: number;
+  onSaveAttempt?: (
+    questionId: string,
+    userAnswer: string,
+    evaluationStatus: string,
+    score: number
+  ) => Promise<void> | void;
+  onFinishSession?: () => Promise<{ stars: number; earnedXp: number } | null | void> | void;
 }
 
 export const ExerciseSession: React.FC<ExerciseSessionProps> = ({
   exerciseSet,
   questions,
   onClose,
-  onNextExercise
+  onNextExercise,
+  initialIndex = 0,
+  onSaveAttempt,
+  onFinishSession
 }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(initialIndex);
   const [userAnswer, setUserAnswer] = useState('');
   const [evaluation, setEvaluation] = useState<EvaluationResult | null>(null);
   const [isCompleted, setIsCompleted] = useState(false);
+  const [finalStars, setFinalStars] = useState<number | undefined>(undefined);
 
   // Gamificação em tempo de sessão
   const [correctCount, setCorrectCount] = useState(0);
   const [reviewedCount, setReviewedCount] = useState(0);
   const [comboCount, setComboCount] = useState(0);
   const [earnedXp, setEarnedXp] = useState(0);
+
+  // Retomada cross-device/refresh (AC-03, T-018): se initialIndex carregar assincronamente
+  React.useEffect(() => {
+    if (initialIndex > 0 && currentIndex === 0 && !evaluation && questions.length > 0) {
+      setCurrentIndex(Math.min(initialIndex, Math.max(0, questions.length - 1)));
+    }
+  }, [initialIndex, questions.length, currentIndex, evaluation]);
 
   const currentQuestion = questions[currentIndex];
   const totalQuestions = questions.length;
@@ -64,10 +83,13 @@ export const ExerciseSession: React.FC<ExerciseSessionProps> = ({
     } else if (result.status === 'incorrect') {
       setComboCount(0); // Quebra o combo
     }
+
+    // Persistência assíncrona no Supabase (AC-04, T-006, T-010)
+    onSaveAttempt?.(currentQuestion.id, userAnswer, result.status, result.score);
   };
 
   const handleSelfReview = () => {
-    if (!evaluation) return;
+    if (!evaluation || !currentQuestion) return;
 
     // Converte status de needs_review para self_reviewed e premia XP de autoavaliação (+2 XP)
     const updated: EvaluationResult = {
@@ -84,9 +106,12 @@ export const ExerciseSession: React.FC<ExerciseSessionProps> = ({
     setEvaluation(updated);
     setReviewedCount(prev => prev + 1);
     setEarnedXp(prev => prev + 2);
+
+    // Persistência assíncrona da autoavaliação (+2 XP idempotente via RPC)
+    onSaveAttempt?.(currentQuestion.id, userAnswer, 'self_reviewed', 1.0);
   };
 
-  const handleContinue = () => {
+  const handleContinue = async () => {
     setEvaluation(null);
     setUserAnswer('');
 
@@ -95,6 +120,24 @@ export const ExerciseSession: React.FC<ExerciseSessionProps> = ({
     } else {
       // Concluiu a série: soma bônus de conclusão (+5 XP)
       setEarnedXp(prev => prev + 5);
+
+      // Persistência e cálculo de estrelas oficiais via complete_study_session (T-028)
+      if (onFinishSession) {
+        try {
+          const finishResult = await onFinishSession();
+          if (finishResult) {
+            if (typeof finishResult.stars === 'number') {
+              setFinalStars(finishResult.stars);
+            }
+            if (typeof finishResult.earnedXp === 'number') {
+              setEarnedXp(finishResult.earnedXp);
+            }
+          }
+        } catch (err) {
+          console.warn('[ExerciseSession] Erro ao finalizar sessão no Supabase:', err);
+        }
+      }
+
       setIsCompleted(true);
     }
   };
@@ -107,6 +150,7 @@ export const ExerciseSession: React.FC<ExerciseSessionProps> = ({
     setReviewedCount(0);
     setComboCount(0);
     setEarnedXp(0);
+    setFinalStars(undefined);
     setIsCompleted(false);
   };
 
@@ -120,6 +164,7 @@ export const ExerciseSession: React.FC<ExerciseSessionProps> = ({
           correctCount={correctCount}
           reviewedCount={reviewedCount}
           earnedXp={earnedXp}
+          stars={finalStars}
           onRetry={handleRetry}
           onBackToChapter={onClose}
           onNextExercise={onNextExercise}

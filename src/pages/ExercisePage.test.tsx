@@ -6,7 +6,22 @@ import { ExercisePage } from './ExercisePage';
 
 // Mock do supabase
 vi.mock('@/lib/supabase', () => ({
+  isSupabaseConfigured: true,
   supabase: {
+    rpc: vi.fn().mockResolvedValue({
+      data: {
+        session_id: 'test-session-123',
+        exercise_set_id: 'ch01-ex01',
+        chapter_id: 'ch01',
+        current_question_index: 0,
+        total_questions: 1,
+        correct_count: 0,
+        reviewed_count: 0,
+        earned_xp: 0,
+        status: 'in_progress'
+      },
+      error: null
+    }),
     from: vi.fn(() => ({
       select: vi.fn(() => ({
         eq: vi.fn(() => ({

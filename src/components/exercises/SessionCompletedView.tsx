@@ -7,6 +7,7 @@ export interface SessionCompletedViewProps {
   correctCount: number;
   reviewedCount: number;
   earnedXp: number;
+  stars?: number;
   onRetry: () => void;
   onBackToChapter: () => void;
   onNextExercise?: () => void;
@@ -18,16 +19,19 @@ export const SessionCompletedView: React.FC<SessionCompletedViewProps> = ({
   correctCount,
   reviewedCount,
   earnedXp,
+  stars,
   onRetry,
   onBackToChapter,
   onNextExercise
 }) => {
   const accuracy = totalQuestions > 0 ? Math.round((correctCount / totalQuestions) * 100) : 0;
 
-  // Cálculo de estrelas (PRD §11.1, RF-048)
-  let stars = 1;
-  if (accuracy >= 90) stars = 3;
-  else if (accuracy >= 80) stars = 2;
+  // Cálculo de estrelas (PRD §11.1, RF-048 / T-028)
+  let fallbackStars = 1;
+  if (accuracy >= 90) fallbackStars = 3;
+  else if (accuracy >= 80) fallbackStars = 2;
+
+  const activeStars = stars !== undefined ? stars : fallbackStars;
 
   return (
     <div className="session-completed-view card card-default" role="region" aria-label="Résultats de l'exercice">
@@ -41,10 +45,10 @@ export const SessionCompletedView: React.FC<SessionCompletedViewProps> = ({
       </p>
 
       {/* Estrelas */}
-      <div className="session-stars-row" aria-label={`${stars} étoiles sur 3`}>
-        <span className={`star-item ${stars >= 1 ? 'star-gold' : 'star-dim'}`}>★</span>
-        <span className={`star-item ${stars >= 2 ? 'star-gold' : 'star-dim'}`}>★</span>
-        <span className={`star-item ${stars >= 3 ? 'star-gold' : 'star-dim'}`}>★</span>
+      <div className="session-stars-row" aria-label={`${activeStars} étoiles sur 3`}>
+        <span className={`star-item ${activeStars >= 1 ? 'star-gold' : 'star-dim'}`}>★</span>
+        <span className={`star-item ${activeStars >= 2 ? 'star-gold' : 'star-dim'}`}>★</span>
+        <span className={`star-item ${activeStars >= 3 ? 'star-gold' : 'star-dim'}`}>★</span>
       </div>
 
       {/* Grid de estatísticas */}

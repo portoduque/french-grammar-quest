@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from 'vitest';
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen, fireEvent, act } from '@testing-library/react';
 import { ExerciseSession } from './ExerciseSession';
 import { AccentToolbar } from './AccentToolbar';
 import { FillBlankInteraction } from './interactions/FillBlankInteraction';
@@ -213,5 +213,73 @@ describe('ExerciseSession (Orchestrateur)', () => {
     expect(screen.getByText('Félicitations !')).toBeInTheDocument();
     expect(screen.getByText('Précision')).toBeInTheDocument();
     expect(screen.getByText('100%')).toBeInTheDocument();
+  });
+
+  it('chama onSaveAttempt ao verificar resposta e onFinishSession ao completar', async () => {
+    const handleSaveAttempt = vi.fn();
+    const handleFinishSession = vi.fn().mockResolvedValue({ stars: 3, earnedXp: 25 });
+
+    render(
+      <ExerciseSession
+        exerciseSet={mockSet}
+        questions={mockQuestions}
+        onSaveAttempt={handleSaveAttempt}
+        onFinishSession={handleFinishSession}
+        onClose={vi.fn()}
+      />
+    );
+
+    // Questão 1
+    const input1 = screen.getByLabelText('Mot à compléter');
+    fireEvent.change(input1, { target: { value: 'travaille' } });
+    await act(async () => {
+      fireEvent.click(screen.getByText(/Vérifier/));
+    });
+
+    expect(handleSaveAttempt).toHaveBeenCalledWith(
+      'ch01-ex01-q01',
+      'travaille',
+      'correct',
+      1.0
+    );
+
+    await act(async () => {
+      fireEvent.click(screen.getByText(/Continuer/));
+    });
+
+    // Questão 2
+    const input2 = screen.getByLabelText('Mot à compléter');
+    fireEvent.change(input2, { target: { value: "J'habite" } });
+    await act(async () => {
+      fireEvent.click(screen.getByText(/Vérifier/));
+    });
+
+    expect(handleSaveAttempt).toHaveBeenCalledWith(
+      'ch01-ex01-q02',
+      "J'habite",
+      'correct',
+      1.0
+    );
+
+    await act(async () => {
+      fireEvent.click(screen.getByText(/Continuer/));
+    });
+
+    expect(handleFinishSession).toHaveBeenCalled();
+  });
+
+  it('inicia na questão indicada por initialIndex para retomada cross-device (AC-03, T-018)', () => {
+    render(
+      <ExerciseSession
+        exerciseSet={mockSet}
+        questions={mockQuestions}
+        initialIndex={1}
+        onClose={vi.fn()}
+      />
+    );
+
+    // Deve iniciar diretamente na questão 2/2 ("Je ... habiter")
+    expect(screen.getByText('2 / 2')).toBeInTheDocument();
+    expect(screen.getByText(/habiter/)).toBeInTheDocument();
   });
 });
