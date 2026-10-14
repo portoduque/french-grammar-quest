@@ -86,6 +86,30 @@ vi.mock('@/hooks/useTheory', () => ({
         error: null,
       };
     }
+    if (chapterId === 'ch28') {
+      return {
+        data: {
+          chapter: {
+            id: 'ch28',
+            number: 28,
+            title: 'Pot-pourri',
+            slug: 'pot-pourri',
+            world_number: 5,
+            world_name: 'Mundo 5: Le Sommet de la Maîtrise',
+            page_range: '495–527',
+            topics_count: 5,
+            exercise_groups_count: 35,
+            total_questions: 345,
+            theory_markdown: '## Révision Générale',
+            editorial_status: 'published',
+          },
+          topics: [],
+          exerciseSets: [],
+        },
+        isLoading: false,
+        error: null,
+      };
+    }
     return { data: null, isLoading: false, error: null };
   }),
 }));
@@ -172,5 +196,13 @@ describe('ChapterPage Component', () => {
 
     const btn = screen.getByRole('button', { name: /Suspendu 🚫/i });
     expect(btn).toBeDisabled();
+  });
+
+  it('affiche la bannière épique du Final Boss avec les 7 checkpoints pour le chapitre 28 (AC-16)', () => {
+    renderWithProviders('/chapters/ch28');
+
+    expect(screen.getByText('Le Grand Boss : Pot-pourri des 28 Chapitres')).toBeInTheDocument();
+    expect(screen.getByText('35 séries · 345 questions')).toBeInTheDocument();
+    expect(screen.getByText('7 Checkpoints')).toBeInTheDocument();
   });
 });

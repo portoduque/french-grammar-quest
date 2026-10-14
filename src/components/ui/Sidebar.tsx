@@ -13,6 +13,7 @@ const NAV_ITEMS = [
   { path: '/dashboard', label: 'Dashboard', icon: '🏠' },
   { path: '/chapters', label: 'Learning Path', icon: '📚' },
   { path: '/review', label: 'Review', icon: '🔄' },
+  { path: '/references', label: 'Références FLE', icon: '📖' },
   { path: '/profile', label: 'Profile', icon: '👤' },
 ] as const;
 

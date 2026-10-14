@@ -147,29 +147,46 @@ export const LearningPathPage: React.FC = () => {
                 <div className="learning-path-grid">
                   {world.chapters.map((ch) => {
                     const isBlocked = ch.editorialStatus === 'blocked';
+                    const isFinalBoss = ch.number === 28;
                     return (
                       <Card
                         key={ch.id}
                         variant="interactive"
-                        className="chapter-card"
-                        style={isBlocked ? { opacity: 0.8, border: '1px dashed var(--color-danger, #EF4444)' } : undefined}
+                        className={`chapter-card ${isFinalBoss ? 'final-boss-card' : ''}`}
+                        style={
+                          isBlocked
+                            ? { opacity: 0.8, border: '1px dashed var(--color-danger, #EF4444)' }
+                            : isFinalBoss
+                            ? {
+                                border: '2px solid rgba(245, 158, 11, 0.7)',
+                                background: 'linear-gradient(145deg, var(--color-bg-secondary, rgba(0,0,0,0.02)), rgba(245, 158, 11, 0.08))',
+                                boxShadow: '0 4px 20px rgba(245, 158, 11, 0.15)'
+                              }
+                            : undefined
+                        }
                       >
                         <Link to={`/chapters/${ch.id}`} className="chapter-card-link">
                           <div className="chapter-card-header">
-                            <Badge variant={isBlocked ? 'rose' : 'cyan'}>
-                              Chapitre {String(ch.number).padStart(2, '0')}
+                            <Badge variant={isBlocked ? 'rose' : isFinalBoss ? 'amber' : 'cyan'}>
+                              {isFinalBoss ? '👑 Final Boss' : `Chapitre ${String(ch.number).padStart(2, '0')}`}
                             </Badge>
                             {isBlocked ? (
                               <Badge variant="rose">⛔ Suspendu</Badge>
+                            ) : isFinalBoss ? (
+                              <Badge variant="amber">35 séries · 7 checkpoints</Badge>
                             ) : (
                               <Badge variant="default">
                                 {ch.exerciseGroupsCount} séries
                               </Badge>
                             )}
                           </div>
-                          <h3 className="chapter-title">{ch.title}</h3>
+                          <h3 className="chapter-title" style={isFinalBoss ? { color: 'var(--color-text)', fontWeight: 800 } : undefined}>
+                            {ch.title}
+                          </h3>
                           <div className="chapter-card-footer">
-                            <span className="chapter-topics">{ch.topicsCount} sujets</span>
+                            <span className="chapter-topics">
+                              {isFinalBoss ? '🏆 Pot-pourri Global' : `${ch.topicsCount} sujets`}
+                            </span>
                             <span className="chapter-pages">pp. {ch.pageRange}</span>
                           </div>
                         </Link>

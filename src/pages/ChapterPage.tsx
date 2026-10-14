@@ -134,6 +134,38 @@ export const ChapterPage: React.FC = () => {
         </div>
       )}
 
+      {chapterNum === 28 && (
+        <div
+          role="region"
+          aria-label="Épreuve Finale"
+          style={{
+            padding: '1.25rem 1.5rem',
+            marginBottom: '1.5rem',
+            borderRadius: '12px',
+            background: 'linear-gradient(135deg, rgba(245, 158, 11, 0.12), rgba(59, 130, 246, 0.08))',
+            border: '2px solid rgba(245, 158, 11, 0.4)',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '1.25rem'
+          }}
+        >
+          <span style={{ fontSize: '2.5rem' }}>👑</span>
+          <div>
+            <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', marginBottom: '0.35rem' }}>
+              <Badge variant="amber">Épreuve Finale</Badge>
+              <Badge variant="cyan">35 séries · 345 questions</Badge>
+              <Badge variant="emerald">7 Checkpoints</Badge>
+            </div>
+            <strong style={{ fontSize: '1.1rem', display: 'block', color: 'var(--color-text)' }}>
+              Le Grand Boss : Pot-pourri des 28 Chapitres
+            </strong>
+            <p style={{ margin: '0.25rem 0 0', fontSize: '0.875rem', color: 'var(--color-text-muted)' }}>
+              Relevez l'ultime défi de grammaire française ! Votre avancée est sauvegardée automatiquement toutes les 5 séries.
+            </p>
+          </div>
+        </div>
+      )}
+
       {/* Tab 1: Theory Reader */}
       {activeTab === 'theory' && (
         <section className="chapter-tab-panel" role="tabpanel" aria-label="Théorie">

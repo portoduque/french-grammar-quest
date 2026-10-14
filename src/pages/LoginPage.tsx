@@ -10,7 +10,9 @@ const LoginPage: React.FC = () => {
   const location = useLocation();
   const { loginWithMagicLink, setMockUser, isLoading, authError, clearError } = useAuth();
 
-  const [email, setEmail] = useState('');
+  const searchParams = new URLSearchParams(location.search);
+  const initialEmail = searchParams.get('email') || '';
+  const [email, setEmail] = useState(initialEmail);
   const [sentMessage, setSentMessage] = useState<string | null>(null);
 
   // Preserve full path including search query params on redirect
