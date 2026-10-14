@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-14T15:03:50.536Z",
+  "entries": [
+    "anti-ui-slop",
+    "design-system",
+    "frontend-design",
+    "gamification-engine",
+    "i18n-localization",
+    "mobile-design",
+    "react-best-practices",
+    "systematic-debugging",
+    "ui-a11y",
+    "ui-motion",
+    "ui-ux-pro-max",
+    "vitest-skill",
+    "web-design-guidelines",
+    "zod-validation-expert",
+    "zustand-store-ts"
+  ]
+}
