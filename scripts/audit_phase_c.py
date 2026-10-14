@@ -32,7 +32,9 @@ def audit(pdf=None):
     doc = None
     if pdf:
         import fitz
-        content = Path(pdf).read_bytes()
+        pdf_path = Path(pdf).resolve()
+        require(pdf_path.is_file(), f"PDF file not found: {pdf_path}")
+        content = pdf_path.read_bytes()
         require(hashlib.sha256(content).hexdigest() == sha, "wrong source PDF SHA-256")
         doc = fitz.open(stream=content, filetype="pdf")
         require(len(doc) == 527, "wrong PDF length")

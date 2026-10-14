@@ -369,7 +369,7 @@ def print_summary(cfg: dict) -> None:
         print("[secure-vibe] ATENÇÃO: stack detectada, mas nenhum check foi configurado ainda. Peça ao agente para adaptar o projeto.")
 
 
-def main() -> int:
+def main() -> None:
     parser = argparse.ArgumentParser(description="Bootstrap do Secure Vibe Coding")
     parser.add_argument("--detect", action="store_true", help="Detecta stack e atualiza configuração (também é o comportamento padrão).")
     parser.add_argument("--install-local", action="store_true", help="Detecta e instala o hook pre-commit neste clone.")
@@ -379,7 +379,7 @@ def main() -> int:
 
     if args.run_precommit_all:
         run_precommit_all()
-        return 0
+        return
 
     current = load_json(CONFIG_PATH, DEFAULT_CONFIG, fatal=True)
     cfg = merge_defaults(DEFAULT_CONFIG, current)
@@ -407,8 +407,7 @@ def main() -> int:
     if not cfg["detected_stacks"]:
         print("[secure-vibe] Projeto sem stack detectável ainda. Isso é normal para template novo.")
         print("[secure-vibe] Inicialize a stack com seu agente e rode bootstrap novamente.")
-    return 0
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    main()

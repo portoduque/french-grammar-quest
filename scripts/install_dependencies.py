@@ -161,19 +161,18 @@ def go_install() -> None:
         run(["go", "mod", "download"])
 
 
-def main() -> int:
+def main() -> None:
     cfg = json.loads(CONFIG.read_text(encoding="utf-8")) if CONFIG.exists() else {"commands": {}}
 
     if configured_install(cfg):
         print("[secure-vibe:deps] Instalação personalizada concluída; autodetecção ignorada.")
-        return 0
+        return
 
     node_install(cfg)
     python_install()
     go_install()
     # Maven/Gradle resolvem dependências durante wrapper/test/build.
-    return 0
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    main()

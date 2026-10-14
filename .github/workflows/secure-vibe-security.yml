@@ -38,13 +38,14 @@ jobs:
           python-version: "3.13"
 
       - name: Instalar Semgrep Community Edition
-        run: python -m pip install --disable-pip-version-check "semgrep>=1,<2"
+        run: |
+          python -m pip install --disable-pip-version-check --only-binary :all: "semgrep==1.180.0"
 
       - name: Semgrep CE - SAST
         run: semgrep scan --config=p/default --exclude='chapters' --exclude='references' --exclude='.github' --error --metrics=off
 
       - name: Trivy - vulnerabilidades e misconfigurations
-        uses: aquasecurity/trivy-action@v0.36.0
+        uses: aquasecurity/trivy-action@a9c7b0f06e461e9d4b4d1711f154ee024b8d7ab8 # v0.36.0
         with:
           scan-type: "fs"
           scan-ref: "."
