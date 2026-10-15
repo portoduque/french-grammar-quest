@@ -181,8 +181,6 @@ export const ChapterPage: React.FC = () => {
             <div className="card card-default theory-container">
               <TheoryReader
                 content={theoryMarkdown}
-                chapterNumber={chapterNum}
-                chapterTitle={chapterTitle}
               />
             </div>
           ) : (

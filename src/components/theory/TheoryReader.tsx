@@ -39,7 +39,10 @@ export const TheoryReader: React.FC<TheoryReaderProps> = ({
   const processedContent = useMemo(() => {
     if (!content) return '';
     // Remove internal comment annotations like <!-- subtopic_id: ... -->
-    return content.replace(/<!--[\s\S]*?-->/g, '').trim();
+    let cleaned = content.replace(/<!--[\s\S]*?-->/g, '').trim();
+    // Remove redundant leading H1 chapter title from markdown if already presented
+    cleaned = cleaned.replace(/^#\s+(?:Chapter|Chapitre)\s+\d+[\s\S]*?\n+/i, '').trim();
+    return cleaned;
   }, [content]);
 
   return (
