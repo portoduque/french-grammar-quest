@@ -285,8 +285,12 @@ export const ChapterPage: React.FC = () => {
                   </p>
                   <div className="exercise-card-footer">
                     <span className="exercise-q-count">📝 10 questions</span>
-                    <Button variant="secondary" size="sm" disabled>
-                      Bientôt disponible
+                    <Button
+                      variant="primary"
+                      size="sm"
+                      onClick={() => navigate(`/exercise/${chapterId || 'ch01'}-ex${String(i + 1).padStart(2, '0')}`)}
+                    >
+                      Commencer 🚀
                     </Button>
                   </div>
                 </div>
