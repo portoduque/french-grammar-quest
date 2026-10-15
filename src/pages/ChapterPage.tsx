@@ -697,6 +697,102 @@ export const ChapterPage: React.FC = () => {
                 </div>
               </div>
             </div>
+          ) : chapterNum === 6 ? (
+            <div className="tips-deck">
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🧼</div>
+                <div className="tip-card-body">
+                  <h3>Corps Humain : Pas de Possessif Redondant !</h3>
+                  <p>
+                    En français, quand le verbe réfléchi indique déjà que l'action s'applique au sujet, on emploie l'article défini (<strong>le, la, les</strong>) et JAMAIS un adjectif possessif :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • ❌ Ne dites pas : <em>*Je me lave mes mains</em><br />
+                    • ✅ <strong>Je me lave les mains</strong>.<br />
+                    • ✅ <strong>Elle se coupe les cheveux</strong>.<br />
+                    • ✅ <strong>Il se brosse les dents</strong>.
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">👥</div>
+                <div className="tip-card-body">
+                  <h3>Verbes Réciproques : Uniquement au Pluriel</h3>
+                  <p>
+                    Les verbes réciproques expriment une action mutuelle exercée entre deux ou plusieurs personnes (« uns aos outros »). Ils n'existent donc qu'avec <strong>nous</strong>, <strong>vous</strong> ou <strong>ils/elles</strong> :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Ils s'aiment</strong> beaucoup (un à l'autre).<br />
+                    • <strong>Nous nous téléphonons</strong> chaque jour.<br />
+                    • <strong>Elles s'écrivent</strong> régulièrement.<br />
+                    • <strong>Ils se marient</strong> la semaine prochaine.
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🏷️</div>
+                <div className="tip-card-body">
+                  <h3>Pronominaux Passifs : Les Incontournables</h3>
+                  <p>
+                    Pour exprimer une vérité générale ou une habitude sans mentionner qui agit, le français utilise la tournure pronominale passive à la 3ᵉ personne du singulier :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Ça ne se dit pas !</strong> (Isso não se diz / é deselegante).<br />
+                    • <strong>Ça ne se fait pas !</strong> (Isso não se faz).<br />
+                    • <strong>Comment ça se traduit ?</strong> (Como se traduz isso?).<br />
+                    • <strong>Ça se voit !</strong> (Está na cara / Dá para ver).
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🎭</div>
+                <div className="tip-card-body">
+                  <h3>Verbes Essentiellement Pronominaux</h3>
+                  <p>
+                    Certains verbes n'ont aucun sens réfléchi direct : le pronom fait partie intégrante de leur identité lexicale :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>S'en aller :</strong> partir (<em>Je m'en vais !</em>).<br />
+                    • <strong>Se souvenir de :</strong> se rappeler (<em>Je me souviens</em>).<br />
+                    • <strong>Se rendre compte de :</strong> conscientiser (<em>Je me rends compte</em>).<br />
+                    • <strong>Se dépêcher :</strong> faire vite (<em>Dépêche-toi !</em>).
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">📢</div>
+                <div className="tip-card-body">
+                  <h3>L'Impératif : « Lève-toi ! » vs « Ne te couche pas ! »</h3>
+                  <p>
+                    À l'impératif affirmatif, le pronom passe APRÈS le verbe avec un trait d'union et devient <strong>toi</strong>. À la négation, il reprend sa place normale AVANT le verbe avec <strong>te</strong> :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em>Affirmatif :</em> <strong>Lève-toi !</strong> / <strong>Habillez-vous !</strong><br />
+                    • <em>Négatif :</em> <strong>Ne te couche pas</strong> si tard !<br />
+                    • <em>Pluriel négatif :</em> <strong>Ne vous inquiétez pas !</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🎯</div>
+                <div className="tip-card-body">
+                  <h3>La Règle d'Or à l'Infinitif : L'Accord Réfléchi</h3>
+                  <p>
+                    Quand un verbe pronominal dépend d'un verbe semi-auxiliaire (<em>aimer</em>, <em>aller</em>, <em>pouvoir</em>, <em>devoir</em>), le pronom réfléchi s'accorde TOUJOURS avec le sujet de la phrase :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • ❌ <em>*J'aime se promener</em> ➔ ✅ J'aime <strong>me</strong> promener.<br />
+                    • ❌ <em>*Tu vas se lever</em> ➔ ✅ Tu vas <strong>te</strong> lever.<br />
+                    • ❌ <em>*Nous voulons s'écrire</em> ➔ ✅ Nous voulons <strong>nous</strong> écrire.
+                  </div>
+                </div>
+              </div>
+            </div>
           ) : (
             <div className="tips-deck">
               <div className="tip-card card card-default">

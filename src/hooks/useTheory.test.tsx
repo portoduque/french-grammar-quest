@@ -433,4 +433,86 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
     expect(topics[2].id).toBe('ch05-t03');
     expect(topics[3].id).toBe('ch05-t04');
   });
+
+  it('fournit la théorie pédagogique complète et rigoureuse pour ch06 (verbes pronominaux)', async () => {
+    const { result } = renderHook(() => useTheory('ch06'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data).toBeDefined();
+    expect(data?.chapter.number).toBe(6);
+    expect(data?.chapter.title).toBe('Pronominal verbs');
+    expect(data?.chapter.page_range).toBe('81–88');
+
+    // Valide le contenu pédagogique FLE pour lusophones
+    const markdown = data?.chapter.theory_markdown || '';
+    expect(markdown).toContain("Tableau de Conjugaison au Présent de l'Indicatif");
+    expect(markdown).toContain("Les Verbes Réfléchis");
+    expect(markdown).toContain("Les Verbes Réciproques");
+    expect(markdown).toContain("Les Verbes Pronominaux Passifs");
+    expect(markdown).toContain("Les Verbes Subjectifs ou Essentiellement Pronominaux");
+    expect(markdown).toContain("L'Impératif des Verbes Pronominaux");
+    expect(markdown).toContain("Les Pronominaux à l'Infinitif : La Règle d'Or de l'Accord");
+    expect(markdown).toContain("Vocabulaire du Corps Humain et des Soins");
+  });
+
+  it('charge les 6 séries d exercices officielles du Chapitre 6 avec les moteurs de jeu calibrés', async () => {
+    const { result } = renderHook(() => useTheory('ch06'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const sets = result.current.data?.exerciseSets || [];
+    expect(sets).toHaveLength(6);
+
+    // 6.1: Verbes réfléchis -> fill_blank (10 questions)
+    expect(sets[0].id).toBe('ch06-ex01');
+    expect(sets[0].interaction_type).toBe('fill_blank');
+    expect(sets[0].questions_count).toBe(10);
+
+    // 6.2: Verbes réciproques -> fill_blank (10 questions)
+    expect(sets[1].id).toBe('ch06-ex02');
+    expect(sets[1].interaction_type).toBe('fill_blank');
+    expect(sets[1].questions_count).toBe(10);
+
+    // 6.3: Verbes subjectifs -> fill_blank (10 questions)
+    expect(sets[2].id).toBe('ch06-ex03');
+    expect(sets[2].interaction_type).toBe('fill_blank');
+    expect(sets[2].questions_count).toBe(10);
+
+    // 6.4: Accord à l'infinitif -> fill_blank (10 questions)
+    expect(sets[3].id).toBe('ch06-ex04');
+    expect(sets[3].interaction_type).toBe('fill_blank');
+    expect(sets[3].questions_count).toBe(10);
+
+    // 6.5: Matching réciproque/subjectif -> matching (5 questions)
+    expect(sets[4].id).toBe('ch06-ex05');
+    expect(sets[4].interaction_type).toBe('matching');
+    expect(sets[4].questions_count).toBe(5);
+
+    // 6.6: Traduction active avec tu et inversion -> translation (10 questions)
+    expect(sets[5].id).toBe('ch06-ex06');
+    expect(sets[5].interaction_type).toBe('translation');
+    expect(sets[5].questions_count).toBe(10);
+  });
+
+  it('fournit les 5 sujets principaux du chapitre 6', async () => {
+    const { result } = renderHook(() => useTheory('ch06'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const topics = result.current.data?.topics || [];
+    expect(topics).toHaveLength(5);
+    expect(topics[0].id).toBe('ch06-t01');
+    expect(topics[1].id).toBe('ch06-t02');
+    expect(topics[2].id).toBe('ch06-t03');
+    expect(topics[3].id).toBe('ch06-t04');
+    expect(topics[4].id).toBe('ch06-t05');
+  });
 });

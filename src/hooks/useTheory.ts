@@ -38,6 +38,12 @@ import {
   CHAPTER_05_EXERCISE_SETS
 } from '@/data/chapter05Data';
 
+import {
+  CHAPTER_06_THEORY_MARKDOWN,
+  CHAPTER_06_TOPICS,
+  CHAPTER_06_EXERCISE_SETS
+} from '@/data/chapter06Data';
+
 const CH01_FALLBACK_THEORY: ChapterTheoryData = {
   chapter: {
     id: 'ch01',
@@ -148,12 +154,35 @@ const CH05_FALLBACK_THEORY: ChapterTheoryData = {
   exerciseSets: CHAPTER_05_EXERCISE_SETS
 };
 
+const CH06_FALLBACK_THEORY: ChapterTheoryData = {
+  chapter: {
+    id: 'ch06',
+    number: 6,
+    title: 'Pronominal verbs',
+    slug: 'pronominal-verbs',
+    world_number: 1,
+    world_name: 'Mundo 1: Les Fondations',
+    page_range: '81–88',
+    topics_count: 5,
+    exercise_groups_count: 6,
+    total_questions: 55,
+    theory_markdown: CHAPTER_06_THEORY_MARKDOWN,
+    release_id: null,
+    editorial_status: 'published',
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+  },
+  topics: CHAPTER_06_TOPICS,
+  exerciseSets: CHAPTER_06_EXERCISE_SETS
+};
+
 function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch01') return CH01_FALLBACK_THEORY;
   if (chapterId === 'ch02') return CH02_FALLBACK_THEORY;
   if (chapterId === 'ch03') return CH03_FALLBACK_THEORY;
   if (chapterId === 'ch04') return CH04_FALLBACK_THEORY;
   if (chapterId === 'ch05') return CH05_FALLBACK_THEORY;
+  if (chapterId === 'ch06') return CH06_FALLBACK_THEORY;
   return null;
 }
 
@@ -223,6 +252,8 @@ export function useTheory(chapterId?: string) {
           ? CHAPTER_04_THEORY_MARKDOWN
           : chapterId === 'ch05'
           ? CHAPTER_05_THEORY_MARKDOWN
+          : chapterId === 'ch06'
+          ? CHAPTER_06_THEORY_MARKDOWN
           : (chapterData as Chapter).theory_markdown;
 
         return {

@@ -499,4 +499,121 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
     expect(data?.questions[9].prompt).toBe("It’s a matter of passion.");
     expect(data?.questions[9].accepted_answers).toContain('Il s’agit de passion.');
   });
+
+  it('charge la série 6.1 avec 10 questions de verbes réfléchis (fill_blank)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch06-ex01'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('Je (s’habiller) __ avant de prendre le petit déjeuner.');
+    expect(data?.questions[0].accepted_answers).toContain("m'habille");
+    expect(data?.questions[1].prompt).toBe('Nous (se lever) __ tôt le matin.');
+    expect(data?.questions[1].accepted_answers).toContain('nous levons');
+    expect(data?.questions[2].prompt).toBe('Elle (se couper) __ les cheveux elle-même.');
+    expect(data?.questions[2].accepted_answers).toContain('se coupe');
+  });
+
+  it('charge la série 6.2 avec 10 questions de verbes réciproques (fill_blank)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch06-ex02'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('Ils (se marier) __ la semaine prochaine.');
+    expect(data?.questions[0].accepted_answers).toContain('se marient');
+    expect(data?.questions[1].prompt).toBe('Vous (s’embrasser) __ sur le balcon.');
+    expect(data?.questions[1].accepted_answers).toContain('vous embrassez');
+    expect(data?.questions[2].prompt).toBe('Nous (s’écrire) __ une fois par an.');
+    expect(data?.questions[2].accepted_answers).toContain('nous écrivons');
+  });
+
+  it('charge la série 6.3 avec 10 questions de verbes subjectifs (fill_blank)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch06-ex03'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('Elle (s’apercevoir) __ de sa gaffe.');
+    expect(data?.questions[0].accepted_answers).toContain("s'aperçoit");
+    expect(data?.questions[2].prompt).toBe('Tu (s’attendre) __ à sa visite.');
+    expect(data?.questions[2].accepted_answers).toContain("t'attends");
+    expect(data?.questions[5].prompt).toBe('Je (se rendre compte) __ de mon erreur.');
+    expect(data?.questions[5].accepted_answers).toContain('me rends compte');
+  });
+
+  it('charge la série 6.4 avec 10 questions d’accord du pronom à l’infinitif (fill_blank)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch06-ex04'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('J’aime (se promener) __ le long de la Seine.');
+    expect(data?.questions[0].accepted_answers).toContain('me promener');
+    expect(data?.questions[1].prompt).toBe('À quelle heure est-ce que tu vas (se lever) __ ?');
+    expect(data?.questions[1].accepted_answers).toContain('te lever');
+    expect(data?.questions[2].prompt).toBe('Nous venons de (se rendre compte) __ des conséquences.');
+    expect(data?.questions[2].accepted_answers).toContain('nous rendre compte');
+  });
+
+  it('charge la série 6.5 (matching) avec les 5 options de correspondances logiques', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch06-ex05'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('matching');
+    expect(data?.questions).toHaveLength(5);
+
+    const q1 = data?.questions[0];
+    expect(q1?.prompt).toBe('Ils sont toujours ensemble.');
+    expect(q1?.accepted_answers).toContain('e');
+    expect(q1?.options).toHaveLength(5);
+
+    const q2 = data?.questions[1];
+    expect(q2?.prompt).toBe('Ils communiquent sans cesse.');
+    expect(q2?.accepted_answers).toContain('a');
+
+    const q5 = data?.questions[4];
+    expect(q5?.prompt).toBe('Ils ne se parlent jamais.');
+    expect(q5?.accepted_answers).toContain('b');
+  });
+
+  it('charge la série 6.6 avec 10 questions de thème (translation)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch06-ex06'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('translation');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('Get up!');
+    expect(data?.questions[0].accepted_answers).toContain('Lève-toi !');
+    expect(data?.questions[1].prompt).toBe('She is getting dressed for the party.');
+    expect(data?.questions[1].accepted_answers).toContain('Elle s’habille pour la soirée.');
+    expect(data?.questions[6].prompt).toBe('They just got married.');
+    expect(data?.questions[6].accepted_answers).toContain('Ils viennent de se marier.');
+    expect(data?.questions[9].prompt).toBe('They love each other.');
+    expect(data?.questions[9].accepted_answers).toContain('Ils s’aiment.');
+  });
 });
