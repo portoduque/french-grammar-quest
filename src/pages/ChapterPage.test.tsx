@@ -145,16 +145,20 @@ describe('ChapterPage Component', () => {
     // Theory is visible
     expect(screen.getByText(/Pour conjuguer les verbes en -er/i)).toBeInTheDocument();
 
-    // Click exercises tab
-    const exercisesTab = screen.getByRole('tab', { name: /Exercices/i });
-    fireEvent.click(exercisesTab);
+    // Roadmap call-to-action banner is visible at the end of theory
+    expect(screen.getByText(/Théorie assimilée \? Place à la pratique !/i)).toBeInTheDocument();
+    const startExercisesBtn = screen.getByRole('button', { name: /Passer aux Exercices 🚀/i });
+    expect(startExercisesBtn).toBeInTheDocument();
+
+    // Clicking roadmap CTA switches to exercises tab
+    fireEvent.click(startExercisesBtn);
 
     // Exercise sets visible
     expect(screen.getByText('Exercice 1.1')).toBeInTheDocument();
     expect(screen.getByText('Mettre les verbes entre parenthèses au présent.')).toBeInTheDocument();
   });
 
-  it('renders pedagogical Astuces FLE tab with professor tips', () => {
+  it('renders pedagogical Astuces FLE tab with all 6 professor tips for lusophones', () => {
     renderWithProviders('/chapters/ch01');
 
     // Click tips tab
@@ -164,6 +168,9 @@ describe('ChapterPage Component', () => {
     expect(screen.getByText('Les Terminaisons Muettes')).toBeInTheDocument();
     expect(screen.getByText("L'Élision Obligatoire avec « Je »")).toBeInTheDocument();
     expect(screen.getByText('La Liaison Euphonique')).toBeInTheDocument();
+    expect(screen.getByText('Le Pronom « On » (Le "A Gente" Français)')).toBeInTheDocument();
+    expect(screen.getByText('Ajustements Euphoniques (-cer & -ger)')).toBeInTheDocument();
+    expect(screen.getByText("L'Action Continue avec « Depuis »")).toBeInTheDocument();
   });
 
   it('renders empty state for invalid chapter ID', () => {

@@ -222,7 +222,8 @@
           "answer": {
             "source_key": "Nous refusons l’invitation.",
             "accepted": [
-              "Nous refusons l’invitation."
+              "Nous refusons l’invitation.",
+              "On refuse l’invitation."
             ],
             "review_status": "publisher_key_transcribed_not_independently_regraded"
           }
@@ -1718,7 +1719,8 @@
           "answer": {
             "source_key": "J’habite à Montpellier depuis 2022.",
             "accepted": [
-              "J’habite à Montpellier depuis 2022."
+              "J’habite à Montpellier depuis 2022.",
+              "Nous habitons à Montpellier depuis 2022."
             ],
             "review_status": "publisher_key_transcribed_not_independently_regraded"
           }
@@ -1750,7 +1752,8 @@
           "answer": {
             "source_key": "Je regarde cette émission depuis des années.",
             "accepted": [
-              "Je regarde cette émission depuis des années."
+              "Je regarde cette émission depuis des années.",
+              "Nous regardons cette émission depuis des années."
             ],
             "review_status": "publisher_key_transcribed_not_independently_regraded"
           }
@@ -1782,7 +1785,8 @@
           "answer": {
             "source_key": "Je porte des lunettes depuis dix ans.",
             "accepted": [
-              "Je porte des lunettes depuis dix ans."
+              "Je porte des lunettes depuis dix ans.",
+              "Nous portons des lunettes depuis dix ans."
             ],
             "review_status": "publisher_key_transcribed_not_independently_regraded"
           }

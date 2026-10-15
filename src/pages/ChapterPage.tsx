@@ -185,6 +185,29 @@ export const ChapterPage: React.FC = () => {
               <TheoryReader
                 content={theoryMarkdown}
               />
+
+              <div className="theory-next-action-card card card-elevated">
+                <div className="theory-next-action-header">
+                  <span className="theory-next-action-icon" aria-hidden="true">🎯</span>
+                  <div className="theory-next-action-body">
+                    <h3 className="theory-next-action-title">Théorie assimilée ? Place à la pratique !</h3>
+                    <p className="theory-next-action-desc">
+                      Vous avez compris les règles, les pronoms et les ajustements phonétiques. Testez vos réflexes dès maintenant sur les <strong>{exerciseCount} séries d'exercices gamifiés</strong> !
+                    </p>
+                  </div>
+                </div>
+                <Button
+                  variant="primary"
+                  size="lg"
+                  className="theory-start-exercises-btn"
+                  onClick={() => {
+                    setActiveTab('exercises');
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }}
+                >
+                  Passer aux Exercices 🚀
+                </Button>
+              </div>
             </div>
           ) : (
             <div className="card card-default theory-pending-card">
@@ -341,6 +364,47 @@ export const ChapterPage: React.FC = () => {
                 </p>
                 <div className="tip-example" lang="fr">
                   <em>Ils aiment</em> se prononce <strong>[il-z-ɛm]</strong>.
+                </div>
+              </div>
+            </div>
+
+            <div className="tip-card card card-default">
+              <div className="tip-card-icon">👥</div>
+              <div className="tip-card-body">
+                <h3>Le Pronom « On » (Le "A Gente" Français)</h3>
+                <p>
+                  Dans la langue quotidienne, <strong>on</strong> remplace <em>nous</em> 9 fois sur 10, mais se conjugue toujours au <strong>singulier</strong> comme <em>il/elle</em>.
+                </p>
+                <div className="tip-example" lang="fr">
+                  <em>On va au cinéma ce soir ?</em> (On + 3e personne du singulier).
+                </div>
+              </div>
+            </div>
+
+            <div className="tip-card card card-default">
+              <div className="tip-card-icon">🔤</div>
+              <div className="tip-card-body">
+                <h3>Ajustements Euphoniques (-cer & -ger)</h3>
+                <p>
+                  Pour préserver la prononciation du radical devant la voyelle <em>o</em> de <strong>nous</strong> :
+                </p>
+                <div className="tip-example" lang="fr">
+                  • <em>Commencer</em> → <strong>Nous commençons</strong> (cédille ç = son [s])<br />
+                  • <em>Manger</em> → <strong>Nous mangeons</strong> (e intercalé = son [ʒ])
+                </div>
+              </div>
+            </div>
+
+            <div className="tip-card card card-default">
+              <div className="tip-card-icon">⏳</div>
+              <div className="tip-card-body">
+                <h3>L'Action Continue avec « Depuis »</h3>
+                <p>
+                  Attention lusophones ! Une action débutée dans le passé qui continue aujourd'hui se dit toujours au <strong>PRÉSENT</strong> en français :
+                </p>
+                <div className="tip-example" lang="fr">
+                  ❌ <em>*J'ai habité à Nice pendant 3 ans</em> (passé)<br />
+                  ✅ <strong>J'habite à Nice depuis trois ans</strong> (présent toujours actif)
                 </div>
               </div>
             </div>

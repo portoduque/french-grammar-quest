@@ -2304,6 +2304,89 @@ dialog.modal::backdrop {
   border-left: 3px solid var(--accent-violet);
   font-size: 0.9375rem;
   color: var(--text-primary);
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+/* ─── Theory Next Action Roadmap Card ─────────────────── */
+.theory-next-action-card {
+  margin-top: var(--space-8);
+  padding: var(--space-6);
+  border-radius: var(--radius-xl);
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.14) 0%, rgba(6, 182, 212, 0.08) 100%);
+  border: 1px solid rgba(139, 92, 246, 0.35);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  box-shadow: 0 8px 30px rgba(139, 92, 246, 0.12);
+}
+
+.theory-next-action-header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+}
+
+.theory-next-action-icon {
+  font-size: 2.25rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.theory-next-action-body {
+  flex: 1;
+}
+
+.theory-next-action-title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0 0 var(--space-1) 0;
+}
+
+.theory-next-action-desc {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.theory-start-exercises-btn {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .theory-next-action-card {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .theory-start-exercises-btn {
+    width: auto;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .theory-next-action-card {
+    padding: var(--space-4);
+    gap: var(--space-3);
+  }
+
+  .theory-next-action-icon {
+    font-size: 1.75rem;
+  }
+
+  .tip-card {
+    padding: var(--space-4);
+    gap: var(--space-3);
+  }
+
+  .tip-card-icon {
+    font-size: 1.5rem;
+  }
 }
 
 /* ─── Worlds Catalog & Banners ───────────────────────── */
@@ -3244,6 +3327,19 @@ dialog.modal::backdrop {
 
 .feedback-continue-btn {
   flex: 1;
+}
+
+@media (max-width: 480px) {
+  .feedback-actions {
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .feedback-continue-btn,
+  .feedback-self-review-btn {
+    width: 100%;
+    min-height: 48px;
+  }
 }
 
 /* Session Completed View */

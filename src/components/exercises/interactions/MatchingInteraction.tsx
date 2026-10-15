@@ -1,6 +1,7 @@
 import React from 'react';
 
 export interface MatchingOption {
+  [key: string]: string;
   label: string;
   text: string;
 }

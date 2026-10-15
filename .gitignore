@@ -3,6 +3,7 @@
 .env
 .env.*
 !.env.example
+temp/
 node_modules/
 dist/
 coverage/

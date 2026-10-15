@@ -2,6 +2,11 @@ import { useQuery } from '@tanstack/react-query';
 import { supabase } from '@/lib/supabase';
 import { ExerciseSet, Question } from '@/types/database';
 
+import {
+  CHAPTER_01_EXERCISE_SETS,
+  CHAPTER_01_QUESTIONS_MAP
+} from '@/data/chapter01Data';
+
 export interface ExerciseSetWithQuestions {
   exerciseSet: ExerciseSet;
   questions: Question[];
@@ -12,6 +17,26 @@ function getFallbackSet(
   existingSet?: ExerciseSet | null,
   existingQuestions?: Question[] | null
 ): ExerciseSetWithQuestions {
+  if (CHAPTER_01_QUESTIONS_MAP[exerciseSetId]) {
+    const foundSet = CHAPTER_01_EXERCISE_SETS.find(s => s.id === exerciseSetId) || {
+      id: exerciseSetId,
+      chapter_id: 'ch01',
+      order_index: parseInt(exerciseSetId.split('-ex')[1] || '1', 10),
+      title: `Exercice 1.${parseInt(exerciseSetId.split('-ex')[1] || '1', 10)}`,
+      instruction: 'Exercice de grammaire française.',
+      interaction_type: 'fill_blank',
+      questions_count: CHAPTER_01_QUESTIONS_MAP[exerciseSetId].length,
+      created_at: new Date().toISOString()
+    };
+
+    return {
+      exerciseSet: existingSet || foundSet,
+      questions: (existingQuestions && existingQuestions.length > 0)
+        ? existingQuestions
+        : CHAPTER_01_QUESTIONS_MAP[exerciseSetId]
+    };
+  }
+
   const fallbackSet: ExerciseSet = existingSet || {
     id: exerciseSetId,
     chapter_id: exerciseSetId.split('-')[0] || 'ch01',
@@ -106,9 +131,22 @@ export function useExerciseSet(exerciseSetId: string | undefined) {
 
       // Se encontrou dados no banco
       if (setRow && questionsRows && questionsRows.length > 0) {
+        const fallbackList = CHAPTER_01_QUESTIONS_MAP[exerciseSetId];
+        const enrichedQuestions = fallbackList
+          ? (questionsRows as Question[]).map(q => {
+              const matchedFallback = fallbackList.find(fb => fb.id === q.id);
+              return {
+                ...q,
+                explanation: q.explanation || matchedFallback?.explanation || null,
+                options: q.options || matchedFallback?.options || null,
+                accepted_answers: Array.from(new Set([...(q.accepted_answers || []), ...(matchedFallback?.accepted_answers || [])]))
+              };
+            })
+          : (questionsRows as Question[]);
+
         return {
           exerciseSet: setRow as ExerciseSet,
-          questions: questionsRows as Question[]
+          questions: enrichedQuestions
         };
       }
 
