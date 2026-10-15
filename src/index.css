@@ -894,6 +894,28 @@ dialog.modal::backdrop {
   margin-top: var(--space-2);
 }
 
+.page-references,
+.page-admin {
+  max-width: 1080px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.reference-card,
+.profile-card {
+  padding: var(--space-6);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .reference-card,
+  .profile-card {
+    padding: var(--space-3.5);
+  }
+}
+
 .page-breadcrumb {
   display: flex;
   align-items: center;
@@ -975,6 +997,39 @@ dialog.modal::backdrop {
   color: var(--text-secondary);
   line-height: 1.7;
   margin-bottom: var(--space-8);
+}
+
+.dashboard-hero-actions {
+  display: flex;
+  gap: var(--space-3);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 480px) {
+  .dashboard-hero {
+    padding: var(--space-4) 0 var(--space-6);
+  }
+  .dashboard-hero-title {
+    font-size: 1.5rem;
+    line-height: 1.25;
+    margin-bottom: var(--space-3);
+  }
+  .dashboard-hero-subtitle {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: var(--space-5);
+  }
+  .dashboard-hero-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: var(--space-3);
+  }
+  .dashboard-hero-actions .btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 .dashboard-stats {
@@ -1149,12 +1204,37 @@ dialog.modal::backdrop {
   font-size: 0.9375rem;
 }
 
+.btn-full-width {
+  width: 100%;
+  max-width: 100%;
+  white-space: normal;
+  text-align: center;
+}
+
 .login-card {
   background: var(--bg-secondary);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-xl);
   padding: var(--space-8);
   box-shadow: var(--shadow-md);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .page-login {
+    padding: var(--space-4) var(--space-3);
+  }
+  .login-card {
+    padding: var(--space-5) var(--space-4);
+  }
+  .login-brand {
+    margin-bottom: var(--space-5);
+  }
+  .btn-lg {
+    padding: var(--space-3) var(--space-4);
+    font-size: 0.9375rem;
+  }
 }
 
 .login-title {
@@ -2042,12 +2122,25 @@ dialog.modal::backdrop {
 
 @media (max-width: 480px) {
   .chapter-tabs {
-    gap: 6px;
+    gap: 4px;
+    padding-top: var(--space-3);
+    padding-bottom: 2px;
   }
 
   .chapter-tab-btn {
-    padding: 6px 12px;
+    padding: 6px 9px;
     font-size: 0.8125rem;
+  }
+
+  .tab-desktop-text {
+    display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .chapter-tab-btn {
+    padding: 5px 7px;
+    font-size: 0.75rem;
   }
 }
 
@@ -2088,11 +2181,20 @@ dialog.modal::backdrop {
   margin-bottom: var(--space-3);
 }
 
-/* ─── Exercises Grid & Cards ─────────────────────────── */
 .exercises-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: var(--space-4);
+}
+
+@media (max-width: 480px) {
+  .exercises-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+  .exercise-card {
+    padding: var(--space-3.5);
+  }
 }
 
 .exercise-card {
@@ -2371,6 +2473,8 @@ dialog.modal::backdrop {
 }
 
 .theory-table-wrapper {
+  width: 100%;
+  max-width: 100%;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   margin: var(--space-4) 0;
@@ -2378,6 +2482,7 @@ dialog.modal::backdrop {
   border: 1px solid var(--border-subtle);
   background: var(--bg-surface);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
 }
 
 .theory-table {
@@ -2385,6 +2490,12 @@ dialog.modal::backdrop {
   border-collapse: collapse;
   text-align: left;
   font-size: 0.9375rem;
+}
+
+@media (max-width: 480px) {
+  .theory-table {
+    font-size: 0.8125rem;
+  }
 }
 
 .theory-th {
@@ -2400,6 +2511,13 @@ dialog.modal::backdrop {
   padding: var(--space-3) var(--space-4);
   border-bottom: 1px solid var(--border-subtle);
   color: var(--text-primary);
+}
+
+@media (max-width: 480px) {
+  .theory-th,
+  .theory-td {
+    padding: var(--space-2) var(--space-2.5);
+  }
 }
 
 .theory-table tr:last-child .theory-td {
@@ -2633,35 +2751,46 @@ dialog.modal::backdrop {
 /* Accent Toolbar */
 .accent-toolbar {
   width: 100%;
-  overflow-x: auto;
+  max-width: 100%;
   padding: var(--space-1) 0;
-  -webkit-overflow-scrolling: touch;
+  box-sizing: border-box;
 }
 
 .accent-toolbar-scroll {
   display: flex;
   align-items: center;
-  gap: var(--space-1);
-  padding: 2px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 4px 2px;
 }
 
 .accent-key {
-  min-width: 42px;
-  height: 42px;
-  padding: 0 8px;
+  min-width: 34px;
+  height: 38px;
+  padding: 0 6px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: var(--radius-md);
   background: var(--surface-card);
   border: 1px solid var(--border-subtle);
-  border-bottom: 3px solid var(--border-highlight);
+  border-bottom: 2px solid var(--border-highlight);
   color: var(--text-primary);
   font-family: var(--font-display);
-  font-size: 1.0625rem;
+  font-size: 0.9375rem;
   font-weight: 700;
   cursor: pointer;
   transition: all var(--duration-fast);
+}
+
+@media (max-width: 360px) {
+  .accent-key {
+    min-width: 29px;
+    height: 34px;
+    padding: 0 3px;
+    font-size: 0.8125rem;
+  }
 }
 
 .accent-key:hover:not(:disabled) {
@@ -2677,7 +2806,7 @@ dialog.modal::backdrop {
 .accent-key-shift {
   background: var(--accent-violet-dim);
   color: var(--accent-violet-light, var(--accent-violet));
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 }
 
 .accent-key-shift.active {

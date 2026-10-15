@@ -81,29 +81,32 @@ export const ChapterPage: React.FC = () => {
           <button
             type="button"
             role="tab"
+            aria-label="📖 Théorie & Règles"
             aria-selected={activeTab === 'theory'}
             className={`chapter-tab-btn ${activeTab === 'theory' ? 'tab-active' : ''}`}
             onClick={() => setActiveTab('theory')}
           >
-            📖 Théorie & Règles
+            <span>📖 Théorie<span className="tab-desktop-text"> & Règles</span></span>
           </button>
           <button
             type="button"
             role="tab"
+            aria-label={`🎯 Exercices (${exerciseCount})`}
             aria-selected={activeTab === 'exercises'}
             className={`chapter-tab-btn ${activeTab === 'exercises' ? 'tab-active' : ''}`}
             onClick={() => setActiveTab('exercises')}
           >
-            🎯 Exercices ({exerciseCount})
+            <span>🎯 Exercices ({exerciseCount})</span>
           </button>
           <button
             type="button"
             role="tab"
+            aria-label="👨‍🏫 Astuces FLE"
             aria-selected={activeTab === 'tips'}
             className={`chapter-tab-btn ${activeTab === 'tips' ? 'tab-active' : ''}`}
             onClick={() => setActiveTab('tips')}
           >
-            👨‍🏫 Astuces FLE
+            <span>👨‍🏫 Astuces<span className="tab-desktop-text"> FLE</span></span>
           </button>
         </div>
       </div>

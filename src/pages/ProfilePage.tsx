@@ -55,7 +55,7 @@ export const ProfilePage: React.FC = () => {
   const accuracyAvg = progressSummary?.accuracyAverage ?? 0;
 
   return (
-    <div className="page page-profile" style={{ maxWidth: '960px', margin: '0 auto', padding: '1.5rem 1rem 5rem' }}>
+    <div className="page page-profile" style={{ maxWidth: '960px', margin: '0 auto', width: '100%', boxSizing: 'border-box' }}>
       <div className="page-header" style={{ marginBottom: '1.5rem' }}>
         <h1 className="page-title" style={{ fontSize: '1.75rem', fontWeight: 800, margin: '0 0 0.5rem 0' }}>
           Profil & Progression
@@ -67,7 +67,7 @@ export const ProfilePage: React.FC = () => {
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
         {/* User Card */}
-        <Card variant="elevated" className="profile-card profile-user-card" style={{ padding: '1.5rem' }}>
+        <Card variant="elevated" className="profile-card profile-user-card">
           <div style={{ display: 'flex', gap: '1.25rem', alignItems: 'center', flexWrap: 'wrap' }}>
             <div
               className="profile-avatar-circle"
@@ -83,16 +83,17 @@ export const ProfilePage: React.FC = () => {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                boxShadow: '0 4px 12px rgba(37,99,235,0.25)'
+                boxShadow: '0 4px 12px rgba(37,99,235,0.25)',
+                flexShrink: 0
               }}
             >
               {profile?.display_name ? profile.display_name.charAt(0).toUpperCase() : '👤'}
             </div>
-            <div className="profile-user-info" style={{ flex: 1, minWidth: '220px' }}>
+            <div className="profile-user-info" style={{ flex: 1, minWidth: 0, width: '100%' }}>
               <h2 style={{ fontSize: '1.35rem', fontWeight: 700, margin: '0 0 0.25rem 0' }}>
                 {profile?.display_name || 'Étudiant'}
               </h2>
-              <p style={{ color: 'var(--color-text-muted)', margin: '0 0 0.5rem 0', fontSize: '0.9rem' }}>
+              <p style={{ color: 'var(--color-text-muted)', margin: '0 0 0.5rem 0', fontSize: '0.9rem', wordBreak: 'break-all' }}>
                 {profile?.email || user?.email || 'Non connecté'}
               </p>
               <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', alignItems: 'center' }}>
@@ -113,7 +114,7 @@ export const ProfilePage: React.FC = () => {
         </Card>
 
         {/* Global Statistics */}
-        <Card variant="elevated" style={{ padding: '1.5rem' }}>
+        <Card variant="elevated" className="profile-card">
           <h2 style={{ fontSize: '1.2rem', fontWeight: 700, marginBottom: '1.25rem' }}>
             📊 Statistiques d'Apprentissage & Gamification
           </h2>
@@ -167,7 +168,7 @@ export const ProfilePage: React.FC = () => {
         </Card>
 
         {/* Achievements Showcase (RF-056) */}
-        <Card variant="elevated" style={{ padding: '1.5rem' }}>
+        <Card variant="elevated" className="profile-card">
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', marginBottom: '1rem' }}>
             <div>
               <h2 style={{ fontSize: '1.2rem', fontWeight: 700, margin: '0 0 0.25rem 0' }}>
@@ -227,7 +228,7 @@ export const ProfilePage: React.FC = () => {
           </div>
 
           {isAchLoading ? (
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem' }}>
               <Skeleton height="110px" />
               <Skeleton height="110px" />
               <Skeleton height="110px" />
@@ -237,7 +238,7 @@ export const ProfilePage: React.FC = () => {
             <div
               style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
                 gap: '1rem'
               }}
             >
@@ -297,7 +298,7 @@ export const ProfilePage: React.FC = () => {
         </Card>
 
         {/* Preferences */}
-        <Card variant="elevated" style={{ padding: '1.5rem' }}>
+        <Card variant="elevated" className="profile-card">
           <h2 style={{ fontSize: '1.2rem', fontWeight: 700, marginBottom: '1rem' }}>
             ⚙️ Préférences d'Interface
           </h2>
@@ -320,7 +321,7 @@ export const ProfilePage: React.FC = () => {
         </Card>
 
         {/* Account actions */}
-        <Card variant="elevated" style={{ padding: '1.5rem' }}>
+        <Card variant="elevated" className="profile-card">
           <h2 style={{ fontSize: '1.2rem', fontWeight: 700, marginBottom: '0.5rem' }}>
             🔐 Compte & Sécurité
           </h2>

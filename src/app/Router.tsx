@@ -1,7 +1,18 @@
-import React, { Suspense, lazy } from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import React, { Suspense, lazy, useEffect } from 'react';
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { Layout } from './Layout';
 import { AuthGuard, AdminGuard } from '@/components/auth/AuthGuard';
+
+/* Scroll restoration helper */
+const ScrollToTop: React.FC = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
 
 /* Lazy-loaded pages for code splitting */
 const DashboardPage = lazy(() => import('@/pages/DashboardPage'));
@@ -25,6 +36,7 @@ const PageLoader: React.FC = () => (
 export const AppRouter: React.FC = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Suspense fallback={<PageLoader />}>
         <Routes>
           <Route path="/login" element={<LoginPage />} />

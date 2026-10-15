@@ -170,7 +170,7 @@ export const ReferencesPage: React.FC = () => {
   }, [searchTerm, selectedCategory]);
 
   return (
-    <div className="page page-references" style={{ maxWidth: '1080px', margin: '0 auto', padding: '1.5rem 1rem 5rem' }}>
+    <div className="page page-references">
       <div className="page-header" style={{ marginBottom: '1.5rem' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '1rem' }}>
           <div>
@@ -186,7 +186,7 @@ export const ReferencesPage: React.FC = () => {
       </div>
 
       {/* Search and Filters */}
-      <Card variant="elevated" style={{ padding: '1.25rem', marginBottom: '1.5rem' }}>
+      <Card variant="elevated" className="reference-card" style={{ marginBottom: '1.5rem' }}>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
           <Input
             label="Rechercher une règle, un verbe ou un pronom :"
@@ -233,7 +233,7 @@ export const ReferencesPage: React.FC = () => {
       {/* Reference Cards */}
       <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
         {filteredItems.map((item) => (
-          <Card key={item.id} variant="elevated" style={{ padding: '1.5rem' }}>
+          <Card key={item.id} variant="elevated" className="reference-card">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.75rem' }}>
               <div>
                 <h2 style={{ fontSize: '1.25rem', fontWeight: 800, margin: '0 0 0.25rem 0' }}>

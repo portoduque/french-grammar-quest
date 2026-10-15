@@ -30,6 +30,7 @@ export interface AuthActions {
 export type AuthStore = AuthState & AuthActions;
 
 const MOCK_STORAGE_KEY = 'fgq_mock_profile';
+const MOCK_ACTIVE_KEY = 'fgq_mock_active';
 
 const DEFAULT_MOCK_PROFILE: Profile = {
   id: '00000000-0000-0000-0000-000000000001',
@@ -79,8 +80,10 @@ export const useAuthStore = create<AuthStore>()(
     isMockMode: !isSupabaseConfigured,
 
     initialize: async () => {
-      // If store is in mock mode or Supabase is not configured, fall back to mock profile
-      if (get().isMockMode || !isSupabaseConfigured || !supabase) {
+      const isMockActive = typeof window !== 'undefined' && localStorage.getItem(MOCK_ACTIVE_KEY) === 'true';
+
+      // If store is in mock mode, mock session was explicitly active, or Supabase is not configured, fall back to mock profile
+      if (get().isMockMode || isMockActive || !isSupabaseConfigured || !supabase) {
         const mockProf = getStoredMockProfile();
         set({
           user: {
@@ -210,6 +213,12 @@ export const useAuthStore = create<AuthStore>()(
     logout: async () => {
       set({ isLoading: true });
       try {
+        try {
+          localStorage.removeItem(MOCK_ACTIVE_KEY);
+          localStorage.removeItem(MOCK_STORAGE_KEY);
+        } catch {
+          // ignore
+        }
         if (isSupabaseConfigured && supabase) {
           await signOutUser();
         }
@@ -219,6 +228,7 @@ export const useAuthStore = create<AuthStore>()(
           profile: null,
           isLoading: false,
           authError: null,
+          isMockMode: !isSupabaseConfigured,
         });
       } catch (err: unknown) {
         console.error('Logout error:', err);
@@ -234,6 +244,11 @@ export const useAuthStore = create<AuthStore>()(
         display_name: email.split('@')[0],
       };
       saveStoredMockProfile(mock);
+      try {
+        localStorage.setItem(MOCK_ACTIVE_KEY, 'true');
+      } catch {
+        // ignore
+      }
       set({
         user: { id: mock.id, email } as User,
         profile: mock,

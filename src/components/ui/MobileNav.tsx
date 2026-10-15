@@ -4,6 +4,7 @@ import { NavLink, useLocation } from 'react-router-dom';
 const MOBILE_NAV_ITEMS = [
   { path: '/dashboard', label: 'Home', icon: '🏠' },
   { path: '/chapters', label: 'Learn', icon: '📚' },
+  { path: '/references', label: 'Réf.', icon: '📖' },
   { path: '/review', label: 'Review', icon: '🔄' },
   { path: '/profile', label: 'Profile', icon: '👤' },
 ] as const;

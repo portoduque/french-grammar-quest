@@ -122,7 +122,7 @@ export const AdminPage: React.FC = () => {
   };
 
   return (
-    <div className="page page-admin" style={{ maxWidth: '1080px', margin: '0 auto', padding: '1.5rem 1rem 5rem' }}>
+    <div className="page page-admin">
       <div className="page-header" style={{ marginBottom: '1.5rem' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '1rem' }}>
           <div>
@@ -157,13 +157,17 @@ export const AdminPage: React.FC = () => {
 
       {/* Tabs */}
       <div
+        className="admin-tabs"
         style={{
           display: 'flex',
           gap: '0.75rem',
           borderBottom: '1px solid var(--color-border)',
           paddingBottom: '0.75rem',
           marginBottom: '1.5rem',
-          overflowX: 'auto'
+          overflowX: 'auto',
+          maxWidth: '100%',
+          scrollbarWidth: 'none',
+          WebkitOverflowScrolling: 'touch'
         }}
       >
         <button
