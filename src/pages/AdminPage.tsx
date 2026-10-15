@@ -186,7 +186,8 @@ export const AdminPage: React.FC = () => {
             display: 'flex',
             alignItems: 'center',
             gap: '0.5rem',
-            whiteSpace: 'nowrap'
+            whiteSpace: 'nowrap',
+            flexShrink: 0
           }}
         >
           <span>✉️ Invitations & Accès</span>
@@ -209,7 +210,8 @@ export const AdminPage: React.FC = () => {
             display: 'flex',
             alignItems: 'center',
             gap: '0.5rem',
-            whiteSpace: 'nowrap'
+            whiteSpace: 'nowrap',
+            flexShrink: 0
           }}
         >
           <span>📦 Releases & Workflow</span>
@@ -232,7 +234,8 @@ export const AdminPage: React.FC = () => {
             display: 'flex',
             alignItems: 'center',
             gap: '0.5rem',
-            whiteSpace: 'nowrap'
+            whiteSpace: 'nowrap',
+            flexShrink: 0
           }}
         >
           <span>📚 Chapitres & Pilote</span>
@@ -255,7 +258,8 @@ export const AdminPage: React.FC = () => {
             display: 'flex',
             alignItems: 'center',
             gap: '0.5rem',
-            whiteSpace: 'nowrap'
+            whiteSpace: 'nowrap',
+            flexShrink: 0
           }}
         >
           <span>📜 Audit Log & Issues</span>
@@ -514,7 +518,7 @@ export const AdminPage: React.FC = () => {
                   <Badge variant="emerald">Ch01 Pilote : 100 questions vérifiées</Badge>
                 </div>
 
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1rem' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1rem' }}>
                   {chapters.map((ch) => {
                     const isChPublished = ch.editorial_status === 'published';
                     const isBlocked = ch.editorial_status === 'blocked';

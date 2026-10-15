@@ -257,10 +257,23 @@ export const ReferencesPage: React.FC = () => {
             </p>
 
             {item.content.table && (
-              <div style={{ overflowX: 'auto', marginBottom: '1.25rem' }}>
-                <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.9rem', textAlign: 'left' }}>
+              <div
+                className="reference-table-wrapper"
+                style={{
+                  width: '100%',
+                  maxWidth: '100%',
+                  overflowX: 'auto',
+                  WebkitOverflowScrolling: 'touch',
+                  marginBottom: '1.25rem',
+                  borderRadius: 'var(--radius-md, 8px)',
+                  border: '1px solid var(--color-border)',
+                  backgroundColor: 'var(--color-bg-surface, #ffffff)',
+                  boxSizing: 'border-box'
+                }}
+              >
+                <table style={{ minWidth: '280px', width: '100%', borderCollapse: 'collapse', fontSize: '0.875rem', textAlign: 'left' }}>
                   <thead>
-                    <tr style={{ borderBottom: '2px solid var(--color-border)', backgroundColor: 'rgba(0,0,0,0.02)' }}>
+                    <tr style={{ borderBottom: '2px solid var(--color-border)', backgroundColor: 'rgba(0,0,0,0.03)' }}>
                       {item.content.table.headers.map((h, i) => (
                         <th key={i} style={{ padding: '0.6rem 0.75rem', fontWeight: 700 }}>
                           {h}
@@ -284,7 +297,7 @@ export const ReferencesPage: React.FC = () => {
             )}
 
             {/* Examples & Professor Tip */}
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1rem' }}>
               <div
                 style={{
                   padding: '1rem',
