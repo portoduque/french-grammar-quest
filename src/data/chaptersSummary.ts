@@ -38,7 +38,7 @@ export const CHAPTERS_SUMMARY: ChapterSummary[] = [
     "title": "More irregular verbs",
     "exerciseGroups": 9,
     "pageRange": "60–72",
-    "topicsCount": 6
+    "topicsCount": 7
   },
   {
     "number": 5,

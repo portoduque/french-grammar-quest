@@ -508,6 +508,101 @@ export const ChapterPage: React.FC = () => {
                 </div>
               </div>
             </div>
+          ) : chapterNum === 4 ? (
+            <div className="tips-deck">
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🚇</div>
+                <div className="tip-card-body">
+                  <h3>Aller & les Contractions de Lieu : « Au / Aux »</h3>
+                  <p>
+                    Pour indiquer une destination avec le verbe <em>aller</em>, utilisez la préposition <strong>à</strong> qui se contracte obligatoirement avec les articles masculins et pluriels (ne dites jamais <em>*en cinéma</em> !) :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>au</strong> (+ masc. sing.) : <em>Je vais <strong>au</strong> cinéma, <strong>au</strong> théâtre</em><br />
+                    • <strong>à la</strong> (+ fém. sing.) : <em>Elle va <strong>à la</strong> bibliothèque, <strong>à la</strong> plage</em><br />
+                    • <strong>à l'</strong> (+ voyelle/h) : <em>Il va <strong>à l'</strong>opéra, <strong>à l'</strong>école</em><br />
+                    • <strong>aux</strong> (+ pluriel) : <em>Ils vont <strong>aux</strong> États-Unis, <strong>aux</strong> Maldives</em>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">⏩</div>
+                <div className="tip-card-body">
+                  <h3>Le Futur Proche : Aller + Infinitif</h3>
+                  <p>
+                    C'est la périphrase temporelle la plus vivante du français oral pour exprimer un projet immédiat ou certain. La négation <strong>ne... pas</strong> entoure UNIQUEMENT l'auxiliaire <em>aller</em> :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em>Affirmation :</em> <strong>Je vais acheter</strong> une voiture en mai.<br />
+                    • <em>Négation :</em> Elle <strong>ne va pas</strong> déménager.<br />
+                    • <em>Adverbe :</em> Ils vont <strong>bientôt</strong> emménager.
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">⏪</div>
+                <div className="tip-card-body">
+                  <h3>Le Passé Récent & l'Élision Obligatoire « D' »</h3>
+                  <p>
+                    Construit avec <strong>venir au présent + de + infinitif</strong>, il traduit « acabou de... ». Attention à l'apostrophe obligatoire devant une voyelle ou un <em>h</em> muet :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • ❌ <em>*Il vient de annuler</em> ➔ ✅ <strong>Il vient d'annuler</strong> son vol.<br />
+                    • ❌ <em>*Tu viens de avoir</em> ➔ ✅ <strong>Tu viens d'avoir</strong> trente ans.<br />
+                    • ❌ <em>*Elle vient de appeler</em> ➔ ✅ <strong>Elle vient d'appeler</strong> François.
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🤲</div>
+                <div className="tip-card-body">
+                  <h3>Les Multiples Visages de « Tenir »</h3>
+                  <p>
+                    Conjugué exactement comme <em>venir</em>, <em>tenir</em> est un caméléon idiomatique :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Tenir ses promesses :</strong> respecter ses engagements.<br />
+                    • <strong>Tenir compte de :</strong> prendre en considération (ne pas ignorer).<br />
+                    • <strong>Tenir à quelqu'un / qqch :</strong> être très attaché.<br />
+                    • <strong>Tenir à + infinitif :</strong> vouloir absolument.<br />
+                    • <strong>Tenir de quelqu'un :</strong> ressembler à un parent (puxar a).
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🍳</div>
+                <div className="tip-card-body">
+                  <h3>Le Verbe Faire : « Vous faites » et [fəzɔ̃]</h3>
+                  <p>
+                    Deux pièges morphologiques et une particularité phonétique à retenir absolument :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • ❌ <em>*Vous faisez</em> ➔ ✅ <strong>Vous faites</strong><br />
+                    • ❌ <em>*Ils faisent</em> ➔ ✅ <strong>Ils font</strong><br />
+                    • <em>Phonétique :</em> <strong>Nous faisons</strong> s'écrit avec <em>ai</em> mais se prononce <strong>[nu fəzɔ̃]</strong> (avec un e moyen !).
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🏭</div>
+                <div className="tip-card-body">
+                  <h3>La Forme Causative : Faire + Infinitif</h3>
+                  <p>
+                    Pour exprimer l'idée de « faire faire par autrui » ou « faire en sorte que quelque chose se produise » :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em>Elle écrit la lettre</em> (elle-même) ➔ <strong>Elle fait écrire la lettre</strong> (par sa secrétaire).<br />
+                    • <em>Vous lavez la voiture</em> ➔ <strong>Vous faites laver la voiture</strong> (au lave-auto).<br />
+                    • <em>Elle fait la robe</em> (couturière) ➔ <strong>Elle fait faire la robe</strong> (cliente chez le couturier).
+                  </div>
+                </div>
+              </div>
+            </div>
           ) : (
             <div className="tips-deck">
               <div className="tip-card card card-default">

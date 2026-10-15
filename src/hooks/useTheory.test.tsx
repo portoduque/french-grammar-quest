@@ -249,4 +249,112 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
     expect(sets[10].id).toBe('ch03-ex11');
     expect(sets[10].interaction_type).toBe('translation');
   });
+
+  it('fournit la théorie pédagogique complète et rigoureuse pour ch04 (aller, futur proche, venir, passé récent, tenir, faire, causatif)', async () => {
+    const { result } = renderHook(() => useTheory('ch04'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data).toBeDefined();
+    expect(data?.chapter.number).toBe(4);
+    expect(data?.chapter.title).toBe('More irregular verbs');
+    expect(data?.chapter.page_range).toBe('60–72');
+    expect(data?.chapter.total_questions).toBe(85);
+
+    // Valide le contenu pédagogique FLE pour lusophones
+    const markdown = data?.chapter.theory_markdown || '';
+    expect(markdown).toContain("A Família do « Aller » e a Contração Preposicional Obrigatória");
+    expect(markdown).toContain("O « Futur Proche » (Futur Immédiat)");
+    expect(markdown).toContain("O « Passé Récent » (Passé Immédiat)");
+    expect(markdown).toContain("O Verbo VENIR e seus Derivados");
+    expect(markdown).toContain("O Verbo TENIR e sua Riqueza Polissêmica");
+    expect(markdown).toContain("O Verbo FAIRE : Pronúncia [fəzɔ̃]");
+    expect(markdown).toContain("A Forma Causativa (« Faire Causatif »)");
+    expect(markdown).toContain("Les 7 Jours de la Semaine");
+    expect(markdown).toContain("Les 12 Mois de l'Année");
+    expect(markdown).toContain("Les 4 Saisons");
+    expect(markdown).toContain("Tenir à");
+    expect(markdown).toContain("Tenir de");
+    expect(markdown.toLowerCase()).toContain("faire les courses");
+    expect(markdown.toLowerCase()).toContain("il pleut");
+    expect(markdown.toLowerCase()).toContain("nous faisons");
+    expect(markdown.toLowerCase()).toContain("vous faites");
+  });
+
+  it('charge les 9 séries d exercices officielles du Chapitre 4 avec les moteurs de jeu calibrés', async () => {
+    const { result } = renderHook(() => useTheory('ch04'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const sets = result.current.data?.exerciseSets || [];
+    expect(sets).toHaveLength(9);
+
+    // 4.1: Aller au présent -> fill_blank (10 questions)
+    expect(sets[0].id).toBe('ch04-ex01');
+    expect(sets[0].interaction_type).toBe('fill_blank');
+    expect(sets[0].questions_count).toBe(10);
+
+    // 4.2: Futur immédiat -> sentence_rewrite (10 questions)
+    expect(sets[1].id).toBe('ch04-ex02');
+    expect(sets[1].interaction_type).toBe('sentence_rewrite');
+    expect(sets[1].questions_count).toBe(10);
+
+    // 4.3: Venir et ses dérivés -> fill_blank (10 questions)
+    expect(sets[2].id).toBe('ch04-ex03');
+    expect(sets[2].interaction_type).toBe('fill_blank');
+    expect(sets[2].questions_count).toBe(10);
+
+    // 4.4: Passé immédiat -> sentence_rewrite (10 questions)
+    expect(sets[3].id).toBe('ch04-ex04');
+    expect(sets[3].interaction_type).toBe('sentence_rewrite');
+    expect(sets[3].questions_count).toBe(10);
+
+    // 4.5: Traduction avec tu et inversion -> translation (10 questions)
+    expect(sets[4].id).toBe('ch04-ex05');
+    expect(sets[4].interaction_type).toBe('translation');
+    expect(sets[4].questions_count).toBe(10);
+
+    // 4.6: Tenir matching -> matching (5 questions)
+    expect(sets[5].id).toBe('ch04-ex06');
+    expect(sets[5].interaction_type).toBe('matching');
+    expect(sets[5].questions_count).toBe(5);
+
+    // 4.7: Faire au présent -> fill_blank (10 questions)
+    expect(sets[6].id).toBe('ch04-ex07');
+    expect(sets[6].interaction_type).toBe('fill_blank');
+    expect(sets[6].questions_count).toBe(10);
+
+    // 4.8: Forme causative -> sentence_rewrite (10 questions)
+    expect(sets[7].id).toBe('ch04-ex08');
+    expect(sets[7].interaction_type).toBe('sentence_rewrite');
+    expect(sets[7].questions_count).toBe(10);
+
+    // 4.9: Traduction avec vous et est-ce que -> translation (10 questions)
+    expect(sets[8].id).toBe('ch04-ex09');
+    expect(sets[8].interaction_type).toBe('translation');
+    expect(sets[8].questions_count).toBe(10);
+  });
+
+  it('fournit les 7 sujets principaux du chapitre 4', async () => {
+    const { result } = renderHook(() => useTheory('ch04'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const topics = result.current.data?.topics || [];
+    expect(topics).toHaveLength(7);
+    expect(topics[0].id).toBe('ch04-t01');
+    expect(topics[1].id).toBe('ch04-t02');
+    expect(topics[2].id).toBe('ch04-t03');
+    expect(topics[3].id).toBe('ch04-t04');
+    expect(topics[4].id).toBe('ch04-t05');
+    expect(topics[5].id).toBe('ch04-t06');
+    expect(topics[6].id).toBe('ch04-t07');
+  });
 });

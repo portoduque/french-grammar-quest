@@ -294,4 +294,110 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
     expect(data?.questions[4].prompt).toBe('She knows Caroline.');
     expect(data?.questions[4].accepted_answers).toContain('Elle connaît Caroline.');
   });
+
+  it('charge la série 4.1 avec 10 questions de conjugaison fill_blank sur aller', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch04-ex01'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toContain('plage');
+    expect(data?.questions[0].accepted_answers).toContain('allons');
+    expect(data?.questions[1].accepted_answers).toContain('vont');
+    expect(data?.questions[9].prompt).toContain('Comment');
+    expect(data?.questions[9].accepted_answers).toContain('allez');
+  });
+
+  it('charge la série 4.2 au futur immédiat avec sentence_rewrite', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch04-ex02'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('Nous achetons une nouvelle machine à laver.');
+    expect(data?.questions[0].accepted_answers).toContain('Nous allons acheter une nouvelle machine à laver.');
+    expect(data?.questions[4].prompt).toBe('Cette agence promeut cette marchandise.');
+    expect(data?.questions[4].accepted_answers).toContain('Cette agence va promouvoir cette marchandise.');
+  });
+
+  it('charge la série 4.4 au passé immédiat avec sentence_rewrite et élisions', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch04-ex04'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('Je téléphone à Bernard.');
+    expect(data?.questions[0].accepted_answers).toContain('Je viens de téléphoner à Bernard.');
+    expect(data?.questions[1].prompt).toBe('Il annule son vol.');
+    expect(data?.questions[1].accepted_answers).toContain("Il vient d'annuler son vol.");
+    expect(data?.questions[6].prompt).toBe('Tu as trente ans.');
+    expect(data?.questions[6].accepted_answers).toContain("Tu viens d'avoir trente ans.");
+  });
+
+  it('charge la série 4.6 (matching) avec les 5 options de correspondances de tenir', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch04-ex06'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('matching');
+    expect(data?.questions).toHaveLength(5);
+
+    const q1 = data?.questions[0];
+    expect(q1?.prompt).toBe('Il tient à sa voiture.');
+    expect(q1?.accepted_answers).toContain('c');
+    expect(q1?.options).toHaveLength(5);
+
+    const q3 = data?.questions[2];
+    expect(q3?.prompt).toBe('Il ne tient pas ses promesses.');
+    expect(q3?.accepted_answers).toContain('e');
+  });
+
+  it('charge la série 4.8 à la forme causative avec sentence_rewrite', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch04-ex08'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('Je lis le dossier.');
+    expect(data?.questions[0].accepted_answers).toContain('Je fais lire le dossier.');
+    expect(data?.questions[1].prompt).toBe('Vous lavez la voiture.');
+    expect(data?.questions[1].accepted_answers).toContain('Vous faites laver la voiture.');
+  });
+
+  it('charge la série 4.9 avec la traduction intégrative vous et est-ce que', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch04-ex09'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('translation');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('They have the letter sent to Paris.');
+    expect(data?.questions[0].accepted_answers).toContain('Ils font envoyer la lettre à Paris.');
+    expect(data?.questions[7].prompt).toBe('Can you cook?');
+    expect(data?.questions[7].accepted_answers).toContain('Est-ce que vous savez faire la cuisine ?');
+    expect(data?.questions[9].prompt).toBe("It's cold.");
+    expect(data?.questions[9].accepted_answers).toContain('Il fait froid.');
+  });
 });

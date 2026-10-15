@@ -25,8 +25,8 @@ export const FillBlankInteraction: React.FC<FillBlankInteractionProps> = ({
     }
   }, [prompt, disabled]);
 
-  // Divide o prompt na lacuna: procura por sequências de underline '___+' ou pontos '....+'
-  const parts = prompt.split(/(?:_{3,}|\.{4,})/);
+  // Divide o prompt na lacuna: procura por sequências de underline '__+' ou pontos '...+'
+  const parts = prompt.split(/(?:_{2,}|\.{3,})/);
   const beforeBlank = parts[0] || '';
   const afterBlank = parts.length > 1 ? parts.slice(1).join('___') : '';
 
