@@ -32,6 +32,12 @@ import {
   CHAPTER_04_EXERCISE_SETS
 } from '@/data/chapter04Data';
 
+import {
+  CHAPTER_05_THEORY_MARKDOWN,
+  CHAPTER_05_TOPICS,
+  CHAPTER_05_EXERCISE_SETS
+} from '@/data/chapter05Data';
+
 const CH01_FALLBACK_THEORY: ChapterTheoryData = {
   chapter: {
     id: 'ch01',
@@ -120,11 +126,34 @@ const CH04_FALLBACK_THEORY: ChapterTheoryData = {
   exerciseSets: CHAPTER_04_EXERCISE_SETS
 };
 
+const CH05_FALLBACK_THEORY: ChapterTheoryData = {
+  chapter: {
+    id: 'ch05',
+    number: 5,
+    title: 'Devoir and its many facets',
+    slug: 'devoir-and-its-many-facets',
+    world_number: 1,
+    world_name: 'Mundo 1: Les Fondations',
+    page_range: '73–80',
+    topics_count: 4,
+    exercise_groups_count: 5,
+    total_questions: 45,
+    theory_markdown: CHAPTER_05_THEORY_MARKDOWN,
+    release_id: null,
+    editorial_status: 'published',
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+  },
+  topics: CHAPTER_05_TOPICS,
+  exerciseSets: CHAPTER_05_EXERCISE_SETS
+};
+
 function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch01') return CH01_FALLBACK_THEORY;
   if (chapterId === 'ch02') return CH02_FALLBACK_THEORY;
   if (chapterId === 'ch03') return CH03_FALLBACK_THEORY;
   if (chapterId === 'ch04') return CH04_FALLBACK_THEORY;
+  if (chapterId === 'ch05') return CH05_FALLBACK_THEORY;
   return null;
 }
 
@@ -192,6 +221,8 @@ export function useTheory(chapterId?: string) {
           ? CHAPTER_03_THEORY_MARKDOWN
           : chapterId === 'ch04'
           ? CHAPTER_04_THEORY_MARKDOWN
+          : chapterId === 'ch05'
+          ? CHAPTER_05_THEORY_MARKDOWN
           : (chapterData as Chapter).theory_markdown;
 
         return {

@@ -357,4 +357,80 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
     expect(topics[5].id).toBe('ch04-t06');
     expect(topics[6].id).toBe('ch04-t07');
   });
+
+  it('fournit la théorie pédagogique complète et rigoureuse pour ch05 (devoir, il y a, il s’agit de, -eindre/-aindre)', async () => {
+    const { result } = renderHook(() => useTheory('ch05'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data).toBeDefined();
+    expect(data?.chapter.number).toBe(5);
+    expect(data?.chapter.title).toBe('Devoir and its many facets');
+    expect(data?.chapter.page_range).toBe('73–80');
+
+    // Valide le contenu pédagogique FLE pour lusophones
+    const markdown = data?.chapter.theory_markdown || '';
+    expect(markdown).toContain("Morphologie et Phonétique");
+    expect(markdown).toContain("Les 4 Visages Sémantiques de « Devoir »");
+    expect(markdown).toContain("Faux-Ami Négatif");
+    expect(markdown).toContain("Le Vocabulaire des Transports et Déplacements");
+    expect(markdown).toContain("L'Expression Impersonnelle « Il y a »");
+    expect(markdown).toContain("La Formule Impersonnelle « Il s'agit de »");
+    expect(markdown).toContain("Les Verbes en « -eindre » et « -aindre »");
+    expect(markdown).toContain("L'Apparition du « GN »");
+  });
+
+  it('charge les 5 séries d exercices officielles du Chapitre 5 avec les moteurs de jeu calibrés', async () => {
+    const { result } = renderHook(() => useTheory('ch05'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const sets = result.current.data?.exerciseSets || [];
+    expect(sets).toHaveLength(5);
+
+    // 5.1: Conjugaison de devoir -> fill_blank (10 questions)
+    expect(sets[0].id).toBe('ch05-ex01');
+    expect(sets[0].interaction_type).toBe('fill_blank');
+    expect(sets[0].questions_count).toBe(10);
+
+    // 5.2: Traduction active -> translation (10 questions)
+    expect(sets[1].id).toBe('ch05-ex02');
+    expect(sets[1].interaction_type).toBe('translation');
+    expect(sets[1].questions_count).toBe(10);
+
+    // 5.3: Nuances sémantiques matching -> matching (5 questions)
+    expect(sets[2].id).toBe('ch05-ex03');
+    expect(sets[2].interaction_type).toBe('matching');
+    expect(sets[2].questions_count).toBe(5);
+
+    // 5.4: Verbes en -eindre/-aindre -> fill_blank (10 questions)
+    expect(sets[3].id).toBe('ch05-ex04');
+    expect(sets[3].interaction_type).toBe('fill_blank');
+    expect(sets[3].questions_count).toBe(10);
+
+    // 5.5: Thème intégratif -> translation (10 questions)
+    expect(sets[4].id).toBe('ch05-ex05');
+    expect(sets[4].interaction_type).toBe('translation');
+    expect(sets[4].questions_count).toBe(10);
+  });
+
+  it('fournit les 4 sujets principaux du chapitre 5', async () => {
+    const { result } = renderHook(() => useTheory('ch05'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const topics = result.current.data?.topics || [];
+    expect(topics).toHaveLength(4);
+    expect(topics[0].id).toBe('ch05-t01');
+    expect(topics[1].id).toBe('ch05-t02');
+    expect(topics[2].id).toBe('ch05-t03');
+    expect(topics[3].id).toBe('ch05-t04');
+  });
 });

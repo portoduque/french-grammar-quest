@@ -603,6 +603,100 @@ export const ChapterPage: React.FC = () => {
                 </div>
               </div>
             </div>
+          ) : chapterNum === 5 ? (
+            <div className="tips-deck">
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🧭</div>
+                <div className="tip-card-body">
+                  <h3>Les 4 Facettes de « Devoir »</h3>
+                  <p>
+                    Le verbe <strong>devoir</strong> est un véritable caméléon selon son contexte syntaxique :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Dette :</strong> <em>Elle me <strong>doit</strong> 1000 euros / Il <strong>doit</strong> une excuse</em><br />
+                    • <strong>Obligation :</strong> <em>Vous <strong>devez</strong> partir immédiatement</em><br />
+                    • <strong>Probabilité / Horaire :</strong> <em>L'avion <strong>doit</strong> atterrir à 10h</em><br />
+                    • <strong>Conseil (conditionnel) :</strong> <em>Vous <strong>devriez</strong> appeler Vincent</em>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🛑</div>
+                <div className="tip-card-body">
+                  <h3>Faux-Ami : « Ne pas devoir » = Interdiction !</h3>
+                  <p>
+                    Attention au piège pour les lusophones ! En français, la forme négative de <em>devoir</em> n'exprime pas l'absence d'obligation (« não precisa »), mais une <strong>interdiction formelle</strong> (« não pode / proibido ») :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • ❌ <em>Vous ne devez pas payer</em> ≠ Você não precisa pagar.<br />
+                    • ✅ <strong>Vous ne devez pas fumer ici</strong> = É proibido fumar aqui !<br />
+                    • <em>Pour « não precisa » :</em> Utilisez <strong>« Ce n'est pas nécessaire de... »</strong> ou <strong>« Vous n'avez pas besoin de... »</strong>.
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">📦</div>
+                <div className="tip-card-body">
+                  <h3>« Il y a » : Invariable en Toutes Circonstances !</h3>
+                  <p>
+                    Tout comme « há » en portugais soigné, <strong>il y a</strong> ne se met JAMAIS au pluriel :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • ❌ Ne dites jamais : <em>*Ils y ont des livres</em><br />
+                    • ✅ <strong>Il y a</strong> un chien dans la voiture.<br />
+                    • ✅ <strong>Il y a</strong> des livres sur la table.<br />
+                    • <em>Question :</em> <strong>Est-ce qu'il y a</strong> un ordinateur ?
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">📖</div>
+                <div className="tip-card-body">
+                  <h3>« Il s'agit de » : Le Sujet Impersonnel Fixe</h3>
+                  <p>
+                    Pour présenter le sujet d'un livre ou d'un film, la langue française exige le pronom neutre <strong>il</strong> :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • ❌ <em>*Ce livre s'agit du président</em> (erreur calquée du portugais !)<br />
+                    • ✅ <strong>Dans ce livre, il s'agit du</strong> président français.<br />
+                    • ✅ <strong>De quoi est-ce qu'il s'agit ?</strong> (De que se trata?)<br />
+                    • ✅ <strong>Il s'agit de</strong> passion / d'amour.
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🎨</div>
+                <div className="tip-card-body">
+                  <h3>Verbes en -eindre et -aindre : L'Insolite Son « GN »</h3>
+                  <p>
+                    Les verbes comme <em>peindre</em>, <em>craindre</em>, <em>plaindre</em> changent de morphologie :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Singulier (en -s, -s, -t) :</strong> <em>Je peins, tu crains, il craint / peint</em> (avec un t final et non un d !)<br />
+                    • <strong>Pluriel (en -GN-) :</strong> <em>Nous pei<strong>gnons</strong>, vous crai<strong>gnez</strong>, ils plai<strong>gnent</strong></em> (son /ɲ/ comme le « nh » portugais).
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🤝</div>
+                <div className="tip-card-body">
+                  <h3>Le Conseil Poli : « Vous devriez »</h3>
+                  <p>
+                    Pour donner un conseil bienveillant et amical sans sonner autoritaire, privilégiez le conditionnel présent :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em>Autoritaire :</em> <strong>Vous devez</strong> teindre le mur.<br />
+                    • <em>Diplomate & Poli :</em> <strong>Vous devriez</strong> appeler Vincent.<br />
+                    • <em>Forme négative :</em> <strong>Vous ne devriez pas</strong> inviter Pierre.
+                  </div>
+                </div>
+              </div>
+            </div>
           ) : (
             <div className="tips-deck">
               <div className="tip-card card card-default">

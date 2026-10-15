@@ -400,4 +400,103 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
     expect(data?.questions[9].prompt).toBe("It's cold.");
     expect(data?.questions[9].accepted_answers).toContain('Il fait froid.');
   });
+
+  it('charge la série 5.1 avec 10 questions de conjugaison de devoir (fill_blank)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch05-ex01'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('Elle (devoir) __ prévenir sa mère.');
+    expect(data?.questions[0].accepted_answers).toContain('doit');
+    expect(data?.questions[2].prompt).toBe('Vous (devoir) __ refuser leur offre.');
+    expect(data?.questions[2].accepted_answers).toContain('devez');
+    expect(data?.questions[4].prompt).toBe('Ils (ne pas devoir) __ arriver avant dimanche.');
+    expect(data?.questions[4].accepted_answers).toContain('ne doivent pas');
+  });
+
+  it('charge la série 5.2 avec 10 questions de traduction de devoir (translation)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch05-ex02'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('translation');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('You must cook tonight.');
+    expect(data?.questions[0].accepted_answers).toContain('Vous devez faire la cuisine ce soir.');
+    expect(data?.questions[1].prompt).toBe('She must not work today.');
+    expect(data?.questions[1].accepted_answers).toContain('Elle ne doit pas travailler aujourd’hui.');
+    expect(data?.questions[8].prompt).toBe('You should call Vincent.');
+    expect(data?.questions[8].accepted_answers).toContain('Vous devriez appeler Vincent.');
+  });
+
+  it('charge la série 5.3 (matching) avec les 5 options de correspondances logiques de devoir', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch05-ex03'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('matching');
+    expect(data?.questions).toHaveLength(5);
+
+    const q1 = data?.questions[0];
+    expect(q1?.prompt).toBe('Elle a des dettes.');
+    expect(q1?.accepted_answers).toContain('e');
+    expect(q1?.options).toHaveLength(5);
+
+    const q2 = data?.questions[1];
+    expect(q2?.prompt).toBe('Elle n’est pas morte.');
+    expect(q2?.accepted_answers).toContain('a');
+
+    const q5 = data?.questions[4];
+    expect(q5?.prompt).toBe('Elle hésite encore.');
+    expect(q5?.accepted_answers).toContain('b');
+  });
+
+  it('charge la série 5.4 avec 10 questions de verbes en -eindre/-aindre (fill_blank)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch05-ex04'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('Elle (craindre) __ de profonds changements.');
+    expect(data?.questions[0].accepted_answers).toContain('craint');
+    expect(data?.questions[2].prompt).toBe('Ils (plaindre) __ la pauvre femme.');
+    expect(data?.questions[2].accepted_answers).toContain('plaignent');
+    expect(data?.questions[9].prompt).toBe('Elle (se plaindre) __ tout le temps.');
+    expect(data?.questions[9].accepted_answers).toContain('se plaint');
+  });
+
+  it('charge la série 5.5 avec 10 questions de thème (translation)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch05-ex05'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('translation');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('She is painting the kitchen.');
+    expect(data?.questions[0].accepted_answers).toContain('Elle peint la cuisine.');
+    expect(data?.questions[1].prompt).toBe('There is a dog in the car.');
+    expect(data?.questions[1].accepted_answers).toContain('Il y a un chien dans la voiture.');
+    expect(data?.questions[3].prompt).toBe('This book is about the French president.');
+    expect(data?.questions[3].accepted_answers).toContain('Dans ce livre, il s’agit du président français.');
+    expect(data?.questions[9].prompt).toBe("It’s a matter of passion.");
+    expect(data?.questions[9].accepted_answers).toContain('Il s’agit de passion.');
+  });
 });
