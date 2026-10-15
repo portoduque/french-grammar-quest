@@ -2789,7 +2789,7 @@ dialog.modal::backdrop {
   display: flex;
   flex-direction: column;
   gap: var(--space-5);
-  padding-bottom: 120px; /* Previne sobreposição pela barra fixa de verificação/feedback */
+  padding-bottom: max(140px, calc(120px + env(safe-area-inset-bottom, 0px))); /* Previne sobreposição pela barra fixa de verificação/feedback */
   box-sizing: border-box;
   width: 100%;
 }
@@ -2889,6 +2889,21 @@ dialog.modal::backdrop {
   box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
 }
 
+@media (max-width: 480px) {
+  .prompt-sentence-card {
+    padding: var(--space-4);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    gap: var(--space-1);
+  }
+  .blank-inline-input {
+    min-width: 90px;
+    max-width: 100%;
+    font-size: 1rem;
+    padding: 6px 8px;
+  }
+}
+
 /* Accent Toolbar */
 .accent-toolbar {
   width: 100%;
@@ -2922,6 +2937,9 @@ dialog.modal::backdrop {
   font-size: 0.9375rem;
   font-weight: 700;
   cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
   transition: all var(--duration-fast);
 }
 
@@ -3252,6 +3270,7 @@ dialog.modal::backdrop {
   left: 0;
   right: 0;
   padding: var(--space-4);
+  padding-bottom: max(var(--space-4), calc(var(--space-3) + env(safe-area-inset-bottom, 0px)));
   background: var(--surface-card);
   border-top: 1px solid var(--border-subtle);
   display: flex;
@@ -3271,7 +3290,8 @@ dialog.modal::backdrop {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: var(--space-6) var(--space-4);
+  padding: var(--space-5) var(--space-4);
+  padding-bottom: max(var(--space-6), calc(var(--space-4) + env(safe-area-inset-bottom, 0px)));
   display: flex;
   justify-content: center;
   z-index: 60;

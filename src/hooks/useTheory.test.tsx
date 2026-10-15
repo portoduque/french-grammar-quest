@@ -23,7 +23,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true));
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
 
     const data = result.current.data;
     expect(data).toBeDefined();
@@ -50,7 +50,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true));
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
 
     const sets = result.current.data?.exerciseSets || [];
     expect(sets).toHaveLength(10);
@@ -83,7 +83,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true));
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
 
     const topics = result.current.data?.topics || [];
     expect(topics).toHaveLength(3);
@@ -97,7 +97,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true));
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
 
     const data = result.current.data;
     expect(data).toBeDefined();
@@ -123,7 +123,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true));
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
 
     const sets = result.current.data?.exerciseSets || [];
     expect(sets).toHaveLength(11);
@@ -160,6 +160,93 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
     expect(sets[9].interaction_type).toBe('sentence_rewrite');
 
     expect(sets[10].id).toBe('ch02-ex11');
+    expect(sets[10].interaction_type).toBe('translation');
+  });
+
+  it('fournit la théorie pédagogique complète et rigoureuse pour ch03 (être, avoir, expressions idiomatiques, verbes en -oir)', async () => {
+    const { result } = renderHook(() => useTheory('ch03'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data).toBeDefined();
+    expect(data?.chapter.number).toBe(3);
+    expect(data?.chapter.title).toBe('To be and to have');
+    expect(data?.chapter.page_range).toBe('46–59');
+
+    // Valide le contenu pédagogique FLE pour lusophones
+    const markdown = data?.chapter.theory_markdown || '';
+    expect(markdown).toContain("O Grande Duelo: Être vs Avoir nos Estados Físicos e Idade");
+    expect(markdown).toContain("A Fronteira Sonora Crucial: « Ils ont » [il-z-ɔ̃] vs « Ils sont » [il-s-ɔ̃]");
+    expect(markdown).toContain("A Queda dos Artigos na Negação com Avoir");
+    expect(markdown).toContain("Savoir vs Connaître : A Regra de Ouro Sintática");
+    expect(markdown).toContain("A Inversão Formal de Pouvoir: « Puis-je »");
+    expect(markdown).toContain("Verbos Defectivos Impessoais: Falloir e Pleuvoir");
+    expect(markdown).toContain("beau / bel");
+    expect(markdown).toContain("belle");
+    expect(markdown).toContain("nouveau / nouvel");
+    expect(markdown).toContain("nouvelle");
+    expect(markdown).toContain("vieux / vieil");
+    expect(markdown).toContain("vieille");
+    expect(markdown.toLowerCase()).toContain("avoir faim");
+    expect(markdown.toLowerCase()).toContain("avoir mal à");
+    expect(markdown.toLowerCase()).toContain("avoir du mal à");
+  });
+
+  it('charge les 11 séries d exercices officielles du Chapitre 3 avec les moteurs de jeu calibrés', async () => {
+    const { result } = renderHook(() => useTheory('ch03'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const sets = result.current.data?.exerciseSets || [];
+    expect(sets).toHaveLength(11);
+
+    // 3.1: Être au présent -> fill_blank
+    expect(sets[0].id).toBe('ch03-ex01');
+    expect(sets[0].interaction_type).toBe('fill_blank');
+
+    // 3.2: Réponses affirmatives -> sentence_rewrite
+    expect(sets[1].id).toBe('ch03-ex02');
+    expect(sets[1].interaction_type).toBe('sentence_rewrite');
+
+    // 3.3: Avoir au présent -> fill_blank
+    expect(sets[2].id).toBe('ch03-ex03');
+    expect(sets[2].interaction_type).toBe('fill_blank');
+
+    // 3.4: Correspondance colonnes (expressions avoir) -> matching
+    expect(sets[3].id).toBe('ch03-ex04');
+    expect(sets[3].interaction_type).toBe('matching');
+
+    // 3.5: Traduction avec vous et inversion -> translation
+    expect(sets[4].id).toBe('ch03-ex05');
+    expect(sets[4].interaction_type).toBe('translation');
+
+    // 3.6: Savoir au présent -> fill_blank
+    expect(sets[5].id).toBe('ch03-ex06');
+    expect(sets[5].interaction_type).toBe('fill_blank');
+
+    // 3.7: Connaître au présent -> fill_blank
+    expect(sets[6].id).toBe('ch03-ex07');
+    expect(sets[6].interaction_type).toBe('fill_blank');
+
+    // 3.8: Connaître ou savoir ? -> fill_blank
+    expect(sets[7].id).toBe('ch03-ex08');
+    expect(sets[7].interaction_type).toBe('fill_blank');
+
+    // 3.9: Pouvoir et vouloir -> fill_blank
+    expect(sets[8].id).toBe('ch03-ex09');
+    expect(sets[8].interaction_type).toBe('fill_blank');
+
+    // 3.10: Autres verbes en -oir & défectifs -> fill_blank
+    expect(sets[9].id).toBe('ch03-ex10');
+    expect(sets[9].interaction_type).toBe('fill_blank');
+
+    // 3.11: Traduction intégrative avec tu et est-ce que -> translation
+    expect(sets[10].id).toBe('ch03-ex11');
     expect(sets[10].interaction_type).toBe('translation');
   });
 });

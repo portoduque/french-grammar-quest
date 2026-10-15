@@ -419,6 +419,95 @@ export const ChapterPage: React.FC = () => {
                 </div>
               </div>
             </div>
+          ) : chapterNum === 3 ? (
+            <div className="tips-deck">
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🔥</div>
+                <div className="tip-card-body">
+                  <h3>Être vs Avoir dans les États Physiques et l'Âge</h3>
+                  <p>
+                    Pour exprimer les sensations corporelles, les besoins vitaux et l'âge, le français utilise <strong>toujours AVOIR</strong> (et jamais *être*) :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>J'ai faim</strong>, <strong>j'ai soif</strong>, <strong>j'ai froid</strong>, <strong>j'ai chaud</strong><br />
+                    • <strong>J'ai sommeil</strong>, <strong>j'ai peur</strong>, <strong>j'ai honte</strong><br />
+                    • <strong>J'ai 25 ans</strong> (e jamais <em>*Je suis 25 ans</em> comme en anglais !)
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🐝</div>
+                <div className="tip-card-body">
+                  <h3>Le Piège Phonétique : « Ils ont » [il-z-ɔ̃] vs « Ils sont » [il-s-ɔ̃]</h3>
+                  <p>
+                    La différence entre <em>Avoir</em> et <em>Être</em> à la 3e personne du pluriel repose sur la vibration des cordes vocales :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em>Ils ont</em> → Liaison sonore <strong>[z]</strong> (comme le bourdonnement d'une abeille) ➔ <em>Ils ont une maison</em><br />
+                    • <em>Ils sont</em> → Consonne sourde <strong>[s]</strong> (comme le sifflement du serpent) ➔ <em>Ils sont contents</em>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🎯</div>
+                <div className="tip-card-body">
+                  <h3>Savoir vs Connaître : La Règle Infaillible</h3>
+                  <p>
+                    La distinction est purement syntaxique et ne laisse aucune place au doute :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Savoir + Verbe à l'infinitif</strong> : <em>Elle sait nager</em>, <em>il sait jouer du piano</em><br />
+                    • <strong>Savoir + Proposition subordonnée</strong> : <em>Je sais qu'il vient</em>, <em>je sais où il est</em><br />
+                    • <strong>Connaître + Nom direct</strong> : <em>Je connais Paris</em>, <em>nous connaissons Julien</em> (jamais de verbe ni de "que" après !)
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🎩</div>
+                <div className="tip-card-body">
+                  <h3>L'Inversion Formelle de Pouvoir : « Puis-je »</h3>
+                  <p>
+                    En style soutenu ou lors d'une demande polie avec inversion, le français refuse la forme <em>*Peux-je</em> et emploie toujours <strong>Puis-je</strong> :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Puis-je vous aider ?</strong> (Puis-je vous être utile ?)<br />
+                    • <strong>Puis-je vous donner un conseil ?</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🌧️</div>
+                <div className="tip-card-body">
+                  <h3>Verbes Défectifs Impersonnels : « Il faut » et « Il pleut »</h3>
+                  <p>
+                    Ces deux verbes n'ont pas de sujet humain. Ils se conjuguent uniquement à la 3e personne du singulier avec le pronom neutre <strong>il</strong> :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em>Falloir</em> → <strong>Il faut</strong> apprendre les conjugaisons.<br />
+                    • <em>Pleuvoir</em> → <strong>Il pleut</strong> toujours dans cette région.
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">✨</div>
+                <div className="tip-card-body">
+                  <h3>Le Trio Euphonique : Beau, Nouveau, Vieux</h3>
+                  <p>
+                    Devant un nom masculin commençant par une voyelle ou un <em>h</em> muet, ces trois adjectifs prennent une forme en <strong>-l</strong> pour préserver l'harmonie sonore :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em>Un beau garçon</em> ➔ mais <strong>Un bel appartement</strong><br />
+                    • <em>Un nouveau livre</em> ➔ mais <strong>Un nouvel hôtel</strong><br />
+                    • <em>Un vieux château</em> ➔ mais <strong>Un vieil ami</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
           ) : (
             <div className="tips-deck">
               <div className="tip-card card card-default">

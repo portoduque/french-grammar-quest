@@ -20,6 +20,12 @@ import {
   CHAPTER_02_EXERCISE_SETS
 } from '@/data/chapter02Data';
 
+import {
+  CHAPTER_03_THEORY_MARKDOWN,
+  CHAPTER_03_TOPICS,
+  CHAPTER_03_EXERCISE_SETS
+} from '@/data/chapter03Data';
+
 const CH01_FALLBACK_THEORY: ChapterTheoryData = {
   chapter: {
     id: 'ch01',
@@ -64,9 +70,32 @@ const CH02_FALLBACK_THEORY: ChapterTheoryData = {
   exerciseSets: CHAPTER_02_EXERCISE_SETS
 };
 
+const CH03_FALLBACK_THEORY: ChapterTheoryData = {
+  chapter: {
+    id: 'ch03',
+    number: 3,
+    title: 'To be and to have',
+    slug: 'to-be-and-to-have',
+    world_number: 1,
+    world_name: 'Mundo 1: Les Fondations',
+    page_range: '46–59',
+    topics_count: 3,
+    exercise_groups_count: 11,
+    total_questions: 110,
+    theory_markdown: CHAPTER_03_THEORY_MARKDOWN,
+    release_id: null,
+    editorial_status: 'published',
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+  },
+  topics: CHAPTER_03_TOPICS,
+  exerciseSets: CHAPTER_03_EXERCISE_SETS
+};
+
 function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch01') return CH01_FALLBACK_THEORY;
   if (chapterId === 'ch02') return CH02_FALLBACK_THEORY;
+  if (chapterId === 'ch03') return CH03_FALLBACK_THEORY;
   return null;
 }
 
@@ -130,6 +159,8 @@ export function useTheory(chapterId?: string) {
           ? CHAPTER_01_THEORY_MARKDOWN
           : chapterId === 'ch02'
           ? CHAPTER_02_THEORY_MARKDOWN
+          : chapterId === 'ch03'
+          ? CHAPTER_03_THEORY_MARKDOWN
           : (chapterData as Chapter).theory_markdown;
 
         return {

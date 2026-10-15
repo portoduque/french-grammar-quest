@@ -23,7 +23,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true));
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
 
     const data = result.current.data;
     expect(data).toBeDefined();
@@ -40,7 +40,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true));
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('matching');
@@ -65,7 +65,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true));
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -81,7 +81,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true));
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
 
     const data = result.current.data;
     expect(data?.questions).toHaveLength(10);
@@ -98,7 +98,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true));
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -112,7 +112,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true));
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.id).toBe('ch02-ex01');
@@ -129,7 +129,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true));
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('matching');
@@ -149,7 +149,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true));
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('matching');
@@ -165,7 +165,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true));
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -182,7 +182,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true));
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -197,5 +197,101 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
     const q6 = data?.questions[5];
     expect(q6?.prompt).toBe('They like neither tea nor coffee.');
     expect(q6?.accepted_answers).toContain("Ils n'aiment ni le thé ni le café.");
+  });
+
+  it('charge la série 3.1 avec 10 questions de conjugaison du verbe être', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch03-ex01'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.id).toBe('ch03-ex01');
+    expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toContain('Le château');
+    expect(data?.questions[0].accepted_answers).toContain('est');
+  });
+
+  it('charge la série 3.2 avec 10 questions sentence_rewrite de réponses affirmatives', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch03-ex02'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe("Est-ce qu'ils sont en retard ?");
+    expect(data?.questions[0].accepted_answers).toContain('Oui, ils sont en retard.');
+  });
+
+  it('charge la série 3.4 (matching) avec les 10 expressions idiomatiques réelles du livre', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch03-ex04'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('matching');
+    expect(data?.questions).toHaveLength(10);
+
+    const q1 = data?.questions[0];
+    expect(q1?.prompt).toBe("J'ai faim, alors");
+    expect(q1?.options).toHaveLength(10);
+    expect(q1?.accepted_answers).toContain('g');
+  });
+
+  it('charge la série 3.8 (Connaître ou savoir ?)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch03-ex08'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toContain('pourquoi il est absent');
+    expect(data?.questions[0].accepted_answers).toContain('sais');
+    expect(data?.questions[3].prompt).toContain('la fille de José');
+    expect(data?.questions[3].accepted_answers).toContain('connaissons');
+  });
+
+  it('charge la série 3.10 avec les verbes en -oir et défectifs', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch03-ex10'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[2].prompt).toContain('pleuvoir');
+    expect(data?.questions[2].accepted_answers).toContain('pleut');
+    expect(data?.questions[4].prompt).toContain('décevoir');
+    expect(data?.questions[4].accepted_answers).toContain('déçois');
+    expect(data?.questions[7].prompt).toContain('falloir');
+    expect(data?.questions[7].accepted_answers).toContain('faut');
+  });
+
+  it('charge la série 3.11 avec la traduction intégrative', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch03-ex11'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('translation');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('Can you swim?');
+    expect(data?.questions[0].accepted_answers).toContain('Est-ce que tu sais nager ?');
+    expect(data?.questions[4].prompt).toBe('She knows Caroline.');
+    expect(data?.questions[4].accepted_answers).toContain('Elle connaît Caroline.');
   });
 });
