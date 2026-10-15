@@ -50,6 +50,35 @@ vi.mock('@/hooks/useTheory', () => ({
             topics_count: 4,
             exercise_groups_count: 11,
             total_questions: 110,
+            theory_markdown: '## Les Deux Types de Verbes en -IR\n\nType 1 régulier (choisir) et Type 2 irrégulier (sortir).',
+            editorial_status: 'published',
+          },
+          topics: [
+            { id: 'ch02-t01', title: '-ir verbs in the present', order_index: 1 },
+          ],
+          exerciseSets: [
+            { id: 'ch02-ex01', title: 'Exercice 2.1', instruction: 'Mettre les verbes entre parenthèses au présent.', interaction_type: 'fill_blank', questions_count: 10, order_index: 1 },
+            { id: 'ch02-ex02', title: 'Exercice 2.2', instruction: 'Faire correspondre les deux colonnes.', interaction_type: 'matching', questions_count: 10, order_index: 2 },
+          ],
+        },
+        isLoading: false,
+        error: null,
+      };
+    }
+    if (chapterId === 'ch04') {
+      return {
+        data: {
+          chapter: {
+            id: 'ch04',
+            number: 4,
+            title: 'More irregular verbs',
+            slug: 'more-irregular-verbs',
+            world_number: 1,
+            world_name: 'Mundo 1: Les Fondations',
+            page_range: '60–72',
+            topics_count: 6,
+            exercise_groups_count: 9,
+            total_questions: 85,
             theory_markdown: null,
             editorial_status: 'review',
           },
@@ -180,7 +209,7 @@ describe('ChapterPage Component', () => {
   });
 
   it('renders editorial pending card when theory is null and allows navigating to exercises', () => {
-    renderWithProviders('/chapters/ch02');
+    renderWithProviders('/chapters/ch04');
 
     expect(screen.getByText(/Théorie en cours de révision éditoriale/i)).toBeInTheDocument();
 
@@ -190,6 +219,24 @@ describe('ChapterPage Component', () => {
     // Verify exercises tab became active
     const exercisesTab = screen.getByRole('tab', { name: /Exercices/i });
     expect(exercisesTab).toHaveAttribute('aria-selected', 'true');
+  });
+
+  it('renders Chapter 2 theory and pedagogical tips correctly', () => {
+    renderWithProviders('/chapters/ch02');
+
+    // Should render the chapter title
+    expect(screen.getByText(/The present tense of -ir and -re verbs/i)).toBeInTheDocument();
+
+    // Verify Theory Reader is present (not editorial pending)
+    expect(screen.queryByText(/Théorie en cours de révision éditoriale/i)).not.toBeInTheDocument();
+
+    // Check Astuces FLE tab for Chapter 2
+    const tipsTab = screen.getByRole('tab', { name: /Astuces FLE/i });
+    fireEvent.click(tipsTab);
+
+    expect(screen.getByText(/Les Deux Types de Verbes en -IR/i)).toBeInTheDocument();
+    expect(screen.getByText(/Les « Faux -IR »/i)).toBeInTheDocument();
+    expect(screen.getByText(/La Règle d'Or de « Ni/i)).toBeInTheDocument();
   });
 
   it('affiche une bannière d avertissement et désactive les exercices lorsque le chapitre est suspendu (soft-hide)', () => {

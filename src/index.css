@@ -2769,11 +2769,54 @@ dialog.modal::backdrop {
   font-weight: 800;
 }
 
+/* Exercise Session Container & Mobile Optimization */
+.exercise-page-container {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: var(--space-4);
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+@media (max-width: 480px) {
+  .exercise-page-container {
+    padding: var(--space-3) var(--space-2.5);
+  }
+}
+
+.exercise-session-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  padding-bottom: 120px; /* Previne sobreposição pela barra fixa de verificação/feedback */
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.exercise-stage-area {
+  width: 100%;
+  box-sizing: border-box;
+}
+
 /* Exercise Instructions */
 .exercise-instruction-header {
   display: flex;
   flex-direction: column;
   gap: var(--space-1);
+}
+
+.exercise-title-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.exercise-title-badge {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.8125rem;
+  color: var(--accent-violet-light, var(--accent-violet));
 }
 
 .exercise-type-tag {
@@ -2796,6 +2839,12 @@ dialog.modal::backdrop {
   color: var(--text-primary);
   line-height: 1.4;
   margin: 0;
+}
+
+@media (max-width: 480px) {
+  .exercise-instruction-text {
+    font-size: 1.05rem;
+  }
 }
 
 /* Prompt Card & Interactions */

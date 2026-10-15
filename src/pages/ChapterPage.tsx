@@ -327,88 +327,182 @@ export const ChapterPage: React.FC = () => {
       {/* Tab 3: Professor Tips (FLE Pedagogy) */}
       {activeTab === 'tips' && (
         <section className="chapter-tab-panel" role="tabpanel" aria-label="Astuces FLE">
-          <div className="tips-deck">
-            <div className="tip-card card card-default">
-              <div className="tip-card-icon">🔇</div>
-              <div className="tip-card-body">
-                <h3>Les Terminaisons Muettes</h3>
-                <p>
-                  En français, les terminaisons du présent en <strong>-e, -es, -ent</strong> ne se prononcent JAMAIS.
-                </p>
-                <div className="tip-example" lang="fr">
-                  <em>Je parle</em>, <em>tu parles</em>, <em>il parle</em>, <em>ils parlent</em> se prononcent tous <strong>/paʁl/</strong>.
+          {chapterNum === 2 ? (
+            <div className="tips-deck">
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">⚡</div>
+                <div className="tip-card-body">
+                  <h3>Les Deux Types de Verbes en -IR</h3>
+                  <p>
+                    Au 2e groupe (régulier), le pluriel s'enrichit de l'interfixe <strong>-iss-</strong>. Au 3e groupe (irrégulier), pas d'interfixe et le radical du singulier perd souvent sa consonne finale !
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em>Finir</em> (type 1) → <strong>Nous finissons</strong>, <strong>ils finissent</strong><br />
+                    • <em>Sortir</em> (type 2) → <strong>Je sors</strong>, <strong>nous sortons</strong> (sans -iss-)
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="tip-card card card-default">
-              <div className="tip-card-icon">✂️</div>
-              <div className="tip-card-body">
-                <h3>L'Élision Obligatoire avec « Je »</h3>
-                <p>
-                  Devant une voyelle ou un <em>h</em> muet, le pronom <strong>je</strong> s'élide obligatoirement en <strong>j'</strong>.
-                </p>
-                <div className="tip-example" lang="fr">
-                  ❌ <em>*Je aime</em> → ✅ <strong>J'aime</strong><br />
-                  ❌ <em>*Je habite</em> → ✅ <strong>J'habite</strong>
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🎭</div>
+                <div className="tip-card-body">
+                  <h3>Les « Faux -IR » Conjugués comme des -ER</h3>
+                  <p>
+                    Ces 4 verbes terminent en <em>-ir</em>, mais s'habillent avec les terminaisons des verbes en <em>-er</em> au présent :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em>Ouvrir</em> → <strong>J'ouvre</strong>, <strong>tu ouvres</strong>, <strong>il ouvre</strong><br />
+                    • <em>Offrir</em> → <strong>J'offre</strong>, <strong>ils offrent</strong><br />
+                    • <em>Cueillir</em> → <strong>Je cueille</strong>, <strong>nous cueillons</strong><br />
+                    • <em>Couvrir</em> / <em>Souffrir</em> → <strong>Je couvre</strong>, <strong>je souffre</strong>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="tip-card card card-default">
-              <div className="tip-card-icon">🎵</div>
-              <div className="tip-card-body">
-                <h3>La Liaison Euphonique</h3>
-                <p>
-                  Le <em>-s</em> final de <strong>nous, vous, ils, elles</strong> se lie au verbe débutant par une voyelle avec un son <strong>[z]</strong>.
-                </p>
-                <div className="tip-example" lang="fr">
-                  <em>Ils aiment</em> se prononce <strong>[il-z-ɛm]</strong>.
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🛑</div>
+                <div className="tip-card-body">
+                  <h3>Verbes en -RE : Le 'D' à la 3e Personne</h3>
+                  <p>
+                    Avec <em>il / elle / on</em>, ne rajoutez rien ! Le <strong>d</strong> du radical reste nu et silencieux :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em>Vendre</em> → <strong>Il vend</strong> (se prononce [vɑ̃])<br />
+                    • <em>Attendre</em> → <strong>Elle attend</strong> (se prononce [atɑ̃])<br />
+                    • <em>Répondre</em> → <strong>On répond</strong>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="tip-card card card-default">
-              <div className="tip-card-icon">👥</div>
-              <div className="tip-card-body">
-                <h3>Le Pronom « On » (Le "A Gente" Français)</h3>
-                <p>
-                  Dans la langue quotidienne, <strong>on</strong> remplace <em>nous</em> 9 fois sur 10, mais se conjugue toujours au <strong>singulier</strong> comme <em>il/elle</em>.
-                </p>
-                <div className="tip-example" lang="fr">
-                  <em>On va au cinéma ce soir ?</em> (On + 3e personne du singulier).
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🖐️</div>
+                <div className="tip-card-body">
+                  <h3>La Famille « Prendre » et ses Pièges</h3>
+                  <p>
+                    Attention aux changements de radical spectaculaires de <em>prendre</em>, <em>apprendre</em>, <em>comprendre</em> :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • Avec <em>nous / vous</em> : le <strong>d</strong> disparaît ! → <strong>Nous prenons</strong>, <strong>vous comprenez</strong><br />
+                    • Avec <em>ils / elles</em> : le <strong>n</strong> double ! → <strong>Ils prennent</strong>, <strong>elles apprennent</strong> [pʁɛn]
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="tip-card card card-default">
-              <div className="tip-card-icon">🔤</div>
-              <div className="tip-card-body">
-                <h3>Ajustements Euphoniques (-cer & -ger)</h3>
-                <p>
-                  Pour préserver la prononciation du radical devant la voyelle <em>o</em> de <strong>nous</strong> :
-                </p>
-                <div className="tip-example" lang="fr">
-                  • <em>Commencer</em> → <strong>Nous commençons</strong> (cédille ç = son [s])<br />
-                  • <em>Manger</em> → <strong>Nous mangeons</strong> (e intercalé = son [ʒ])
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🔀</div>
+                <div className="tip-card-body">
+                  <h3>L'Inversion et le « -t- » Euphonique</h3>
+                  <p>
+                    Quand le verbe se termine par une voyelle à la 3e personne du singulier, insérez obligatoirement un <strong>-t-</strong> entre traits d'union :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    ❌ <em>*Parle-elle russe ?</em> → ✅ <strong>Parle-t-elle russe ?</strong><br />
+                    ❌ <em>*Préfère-elle voyager ?</em> → ✅ <strong>Préfère-t-elle voyager ?</strong><br />
+                    <em>Attention :</em> si le verbe finit déjà par d ou t, pas de t ajouté : <strong>Réfléchit-il ?</strong>, <strong>Agrandit-elle ?</strong>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="tip-card card card-default">
-              <div className="tip-card-icon">⏳</div>
-              <div className="tip-card-body">
-                <h3>L'Action Continue avec « Depuis »</h3>
-                <p>
-                  Attention lusophones ! Une action débutée dans le passé qui continue aujourd'hui se dit toujours au <strong>PRÉSENT</strong> en français :
-                </p>
-                <div className="tip-example" lang="fr">
-                  ❌ <em>*J'ai habité à Nice pendant 3 ans</em> (passé)<br />
-                  ✅ <strong>J'habite à Nice depuis trois ans</strong> (présent toujours actif)
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">⚖️</div>
+                <div className="tip-card-body">
+                  <h3>La Règle d'Or de « Ni ... Ni ... » (Cruciale !)</h3>
+                  <p>
+                    C'est l'un des pièges les plus fréquents pour les lusophones :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Articles définis (le, la, l', les)</strong> : ON LES GARDE !<br />
+                    → <em>Il n'aime <strong>ni le</strong> café <strong>ni le</strong> chocolat.</em><br />
+                    • <strong>Articles partitifs (du, de la, des) ou indéfinis</strong> : ILS DISPARAISSENT !<br />
+                    → <em>Elle ne mange <strong>ni</strong> viande <strong>ni</strong> fromage.</em> (Pas de "de la" ni "du" !)
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          ) : (
+            <div className="tips-deck">
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🔇</div>
+                <div className="tip-card-body">
+                  <h3>Les Terminaisons Muettes</h3>
+                  <p>
+                    En français, les terminaisons du présent en <strong>-e, -es, -ent</strong> ne se prononcent JAMAIS.
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    <em>Je parle</em>, <em>tu parles</em>, <em>il parle</em>, <em>ils parlent</em> se prononcent tous <strong>/paʁl/</strong>.
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">✂️</div>
+                <div className="tip-card-body">
+                  <h3>L'Élision Obligatoire avec « Je »</h3>
+                  <p>
+                    Devant une voyelle ou un <em>h</em> muet, le pronom <strong>je</strong> s'élide obligatoirement en <strong>j'</strong>.
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    ❌ <em>*Je aime</em> → ✅ <strong>J'aime</strong><br />
+                    ❌ <em>*Je habite</em> → ✅ <strong>J'habite</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🎵</div>
+                <div className="tip-card-body">
+                  <h3>La Liaison Euphonique</h3>
+                  <p>
+                    Le <em>-s</em> final de <strong>nous, vous, ils, elles</strong> se lie au verbe débutant par une voyelle avec un son <strong>[z]</strong>.
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    <em>Ils aiment</em> se prononce <strong>[il-z-ɛm]</strong>.
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">👥</div>
+                <div className="tip-card-body">
+                  <h3>Le Pronom « On » (Le "A Gente" Français)</h3>
+                  <p>
+                    Dans la langue quotidienne, <strong>on</strong> remplace <em>nous</em> 9 fois sur 10, mais se conjugue toujours au <strong>singulier</strong> comme <em>il/elle</em>.
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    <em>On va au cinéma ce soir ?</em> (On + 3e personne du singulier).
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🔤</div>
+                <div className="tip-card-body">
+                  <h3>Ajustements Euphoniques (-cer & -ger)</h3>
+                  <p>
+                    Pour préserver la prononciation du radical devant la voyelle <em>o</em> de <strong>nous</strong> :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em>Commencer</em> → <strong>Nous commençons</strong> (cédille ç = son [s])<br />
+                    • <em>Manger</em> → <strong>Nous mangeons</strong> (e intercalé = son [ʒ])
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">⏳</div>
+                <div className="tip-card-body">
+                  <h3>L'Action Continue avec « Depuis »</h3>
+                  <p>
+                    Attention lusophones ! Une action débutée dans le passé qui continue aujourd'hui se dit toujours au <strong>PRÉSENT</strong> en français :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    ❌ <em>*J'ai habité à Nice pendant 3 ans</em> (passé)<br />
+                    ✅ <strong>J'habite à Nice depuis trois ans</strong> (présent toujours actif)
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
         </section>
       )}
     </div>

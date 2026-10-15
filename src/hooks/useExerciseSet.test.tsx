@@ -106,4 +106,96 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
     expect(data?.questions[0].prompt).toBe('I study French.');
     expect(data?.questions[0].accepted_answers).toContain("J'étudie le français.");
   });
+
+  it('charge la série 2.1 (verbes en -ir) avec 10 questions de type fill_blank', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch02-ex01'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true));
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.id).toBe('ch02-ex01');
+    expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toContain('cueillir');
+    expect(data?.questions[0].accepted_answers).toContain('cueillons');
+    expect(data?.questions[9].prompt).toContain('mourir');
+    expect(data?.questions[9].accepted_answers).toContain('meurt');
+  });
+
+  it('charge la série 2.2 (matching -ir) avec prompts propres et 10 options réelles', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch02-ex02'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true));
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('matching');
+    expect(data?.questions).toHaveLength(10);
+
+    const q1 = data?.questions[0];
+    expect(q1?.prompt).toBe('Il agrandit');
+    expect(q1?.options).toHaveLength(10);
+    expect(q1?.accepted_answers).toContain('h');
+
+    const optionH = (q1?.options as Array<{ label: string; text: string }>).find((o) => o.label === 'h');
+    expect(optionH?.text).toBe('la photo');
+  });
+
+  it('charge la série 2.5 (matching -re) avec prompts propres et 10 options', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch02-ex05'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true));
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('matching');
+    expect(data?.questions).toHaveLength(10);
+
+    const q1 = data?.questions[0];
+    expect(q1?.prompt).toBe('Le chat mord');
+    expect(q1?.accepted_answers).toContain('h');
+  });
+
+  it('charge la série 2.8 (inversion) avec le -t- euphonique et les 10 questions', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch02-ex08'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true));
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+    expect(data?.questions).toHaveLength(10);
+
+    // Question 4 : Préfère-t-elle avec -t- euphonique
+    const q4 = data?.questions[3];
+    expect(q4?.prompt).toContain('Elle préfère voyager en Italie.');
+    expect(q4?.accepted_answers).toContain('Préfère-t-elle voyager en Italie ?');
+  });
+
+  it('charge la série 2.11 (défi synthèse) avec ni... ni... et inversion', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch02-ex11'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true));
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('translation');
+    expect(data?.questions).toHaveLength(10);
+
+    // Question 3 : She eats neither meat nor cheese -> omission des partitifs
+    const q3 = data?.questions[2];
+    expect(q3?.prompt).toBe('She eats neither meat nor cheese.');
+    expect(q3?.accepted_answers).toContain('Elle ne mange ni viande ni fromage.');
+
+    // Question 6 : They like neither tea nor coffee -> maintien des articles définis
+    const q6 = data?.questions[5];
+    expect(q6?.prompt).toBe('They like neither tea nor coffee.');
+    expect(q6?.accepted_answers).toContain("Ils n'aiment ni le thé ni le café.");
+  });
 });

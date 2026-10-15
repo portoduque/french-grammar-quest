@@ -4,6 +4,7 @@ import { useExerciseSet } from '@/hooks/useExerciseSet';
 import { useStudySession } from '@/hooks/useStudySession';
 import { ExerciseSession } from '@/components/exercises/ExerciseSession';
 import { Button } from '@/components/ui/Button';
+import { CHAPTERS_SUMMARY } from '@/data/chaptersSummary';
 
 export const ExercisePage: React.FC = () => {
   const { exerciseId } = useParams<{ exerciseId: string }>();
@@ -22,14 +23,16 @@ export const ExercisePage: React.FC = () => {
   };
 
   const handleNextExercise = () => {
-    // Se for ch01-ex01, o próximo é ch01-ex02, até a última série do capítulo
     if (exerciseId && exerciseId.includes('-ex')) {
       const parts = exerciseId.split('-ex');
       const prefix = parts[0];
       const num = parseInt(parts[1], 10);
+      const chapterId = data?.exerciseSet?.chapter_id || prefix;
+      const chapterSummary = CHAPTERS_SUMMARY.find(c => c.id === chapterId);
+      const totalSets = chapterSummary?.exerciseGroups ?? 10;
 
-      // Se for a última série (ex: 10 em capítulos de 10 séries), retorna ao capítulo
-      if (num >= 10) {
+      // Se for a última série do capítulo, retorna ao capítulo
+      if (num >= totalSets) {
         handleClose();
         return;
       }

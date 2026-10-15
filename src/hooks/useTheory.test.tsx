@@ -91,4 +91,75 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
     expect(topics[1].id).toBe('ch01-t02');
     expect(topics[2].id).toBe('ch01-t03');
   });
+
+  it('fournit la théorie pédagogique complète et rigoureuse pour ch02 (verbes en -ir et -re, inversion, négation)', async () => {
+    const { result } = renderHook(() => useTheory('ch02'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true));
+
+    const data = result.current.data;
+    expect(data).toBeDefined();
+    expect(data?.chapter.number).toBe(2);
+    expect(data?.chapter.title).toBe('The present tense of -ir and -re verbs');
+    expect(data?.chapter.page_range).toBe('31–45');
+
+    // Valide le contenu pédagogique FLE pour lusophones
+    const markdown = data?.chapter.theory_markdown || '';
+    expect(markdown).toContain("Os Dois Tipos de Verbos em -IR");
+    expect(markdown).toContain("A Família dos \"Falsos -IR\" Conjugados como -ER");
+    expect(markdown).toContain("Verbos em -RE : O 'D' Permanece na 3ª Pessoa");
+    expect(markdown).toContain("A Inversão Interrogativa e o Enigmático « -t- » Eufônico");
+    expect(markdown).toContain("A Regra de Ouro da Negação « Ni ... Ni ... »");
+    expect(markdown).toContain("Quelle langue parlez-vous ?");
+    expect(markdown.toLowerCase()).toContain("choisir");
+    expect(markdown.toLowerCase()).toContain("vendre");
+    expect(markdown.toLowerCase()).toContain("prendre");
+  });
+
+  it('charge les 11 séries d exercices officielles du Chapitre 2 avec les moteurs de jeu calibrés', async () => {
+    const { result } = renderHook(() => useTheory('ch02'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true));
+
+    const sets = result.current.data?.exerciseSets || [];
+    expect(sets).toHaveLength(11);
+
+    // Vérifie les moteurs de jeu spécifiques
+    expect(sets[0].id).toBe('ch02-ex01');
+    expect(sets[0].interaction_type).toBe('fill_blank');
+
+    expect(sets[1].id).toBe('ch02-ex02');
+    expect(sets[1].interaction_type).toBe('matching');
+
+    expect(sets[2].id).toBe('ch02-ex03');
+    expect(sets[2].interaction_type).toBe('translation');
+
+    expect(sets[3].id).toBe('ch02-ex04');
+    expect(sets[3].interaction_type).toBe('fill_blank');
+
+    expect(sets[4].id).toBe('ch02-ex05');
+    expect(sets[4].interaction_type).toBe('matching');
+
+    expect(sets[5].id).toBe('ch02-ex06');
+    expect(sets[5].interaction_type).toBe('fill_blank');
+
+    expect(sets[6].id).toBe('ch02-ex07');
+    expect(sets[6].interaction_type).toBe('translation');
+
+    expect(sets[7].id).toBe('ch02-ex08');
+    expect(sets[7].interaction_type).toBe('sentence_rewrite');
+
+    expect(sets[8].id).toBe('ch02-ex09');
+    expect(sets[8].interaction_type).toBe('sentence_rewrite');
+
+    expect(sets[9].id).toBe('ch02-ex10');
+    expect(sets[9].interaction_type).toBe('sentence_rewrite');
+
+    expect(sets[10].id).toBe('ch02-ex11');
+    expect(sets[10].interaction_type).toBe('translation');
+  });
 });
