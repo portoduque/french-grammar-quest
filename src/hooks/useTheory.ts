@@ -80,6 +80,12 @@ import {
   CHAPTER_12_EXERCISE_SETS
 } from '@/data/chapter12Data';
 
+import {
+  CHAPTER_13_THEORY_MARKDOWN,
+  CHAPTER_13_TOPICS,
+  CHAPTER_13_EXERCISE_SETS
+} from '@/data/chapter13Data';
+
 const CH01_FALLBACK_THEORY: ChapterTheoryData = {
   chapter: {
     id: 'ch01',
@@ -344,6 +350,28 @@ const CH12_FALLBACK_THEORY: ChapterTheoryData = {
   exerciseSets: CHAPTER_12_EXERCISE_SETS
 };
 
+const CH13_FALLBACK_THEORY: ChapterTheoryData = {
+  chapter: {
+    id: 'ch13',
+    number: 13,
+    title: 'The present subjunctive and the past subjunctive',
+    slug: 'the-present-subjunctive-and-the-past-subjunctive',
+    world_number: 3,
+    world_name: 'Mundo 3: Le Subjonctif et les Nuances',
+    page_range: '158–172',
+    topics_count: 4,
+    exercise_groups_count: 9,
+    total_questions: 85,
+    theory_markdown: CHAPTER_13_THEORY_MARKDOWN,
+    release_id: null,
+    editorial_status: 'published',
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+  },
+  topics: CHAPTER_13_TOPICS,
+  exerciseSets: CHAPTER_13_EXERCISE_SETS
+};
+
 function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch01') return CH01_FALLBACK_THEORY;
   if (chapterId === 'ch02') return CH02_FALLBACK_THEORY;
@@ -357,6 +385,7 @@ function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch10') return CH10_FALLBACK_THEORY;
   if (chapterId === 'ch11') return CH11_FALLBACK_THEORY;
   if (chapterId === 'ch12') return CH12_FALLBACK_THEORY;
+  if (chapterId === 'ch13') return CH13_FALLBACK_THEORY;
   return null;
 }
 
@@ -440,6 +469,8 @@ export function useTheory(chapterId?: string) {
           ? CHAPTER_11_THEORY_MARKDOWN
           : chapterId === 'ch12'
           ? CHAPTER_12_THEORY_MARKDOWN
+          : chapterId === 'ch13'
+          ? CHAPTER_13_THEORY_MARKDOWN
           : (chapterData as Chapter).theory_markdown;
 
         return {

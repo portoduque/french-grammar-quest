@@ -1432,4 +1432,149 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       expect(data?.questions[4].accepted_answers).toContain('d');
     });
   });
+
+  describe('useExerciseSet Hook — Chapitre 13 (The present and past subjunctive)', () => {
+    it('charge la série 13.1 (fill_blank) pour le subjonctif présent régulier et verbes fréquents (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch13-ex01'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('Elle préfère que tout le monde (être) __ là avant de commencer.');
+      expect(data?.questions[0].accepted_answers).toContain('soit');
+      expect(data?.questions[9].prompt).toBe("Le juge ne croit pas qu'il (dire) __ la vérité.");
+      expect(data?.questions[9].accepted_answers).toContain('dise');
+    });
+
+    it('charge la série 13.2 (fill_blank) pour les verbes irréguliers du subjonctif (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch13-ex02'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('Il faut que vous (aller) __ voir ce film.');
+      expect(data?.questions[0].accepted_answers).toContain('alliez');
+      expect(data?.questions[9].prompt).toBe('Il est rare que nous (emporter) __ du travail à la maison.');
+      expect(data?.questions[9].accepted_answers).toContain('emportions');
+    });
+
+    it('charge la série 13.3 (fill_blank) pour les conjonctions déclenchant le subjonctif (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch13-ex03'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('Il ne commencera pas son discours avant que vous (donner) __ le signal.');
+      expect(data?.questions[0].accepted_answers).toContain('donniez');
+      expect(data?.questions[9].prompt).toBe('Elle achètera un appareil numérique pour que sa fille (pouvoir) __ lui envoyer des photos au cours de son voyage.');
+      expect(data?.questions[9].accepted_answers).toContain('puisse');
+    });
+
+    it('charge la série 13.4 (fill_blank) pour le contraste indicatif vs subjonctif (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch13-ex04'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe("Il dit que leur page d'accueil (être) __ attrayante.");
+      expect(data?.questions[0].accepted_answers).toContain('est');
+      expect(data?.questions[1].prompt).toBe("Elle doute qu'il (faire) __ chaud demain.");
+      expect(data?.questions[1].accepted_answers).toContain('fasse');
+    });
+
+    it('charge la série 13.5 (fill_blank) pour les nuances de certitude et d’opinion (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch13-ex05'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('Il est rare que nous (voyager) __ dans cette région.');
+      expect(data?.questions[0].accepted_answers).toContain('voyagions');
+      expect(data?.questions[1].prompt).toBe('Il me semble que vous (se tromper) __ souvent.');
+      expect(data?.questions[1].accepted_answers).toContain('vous trompez');
+    });
+
+    it('charge la série 13.6 (translation) avec « Pourvu que » et le subjonctif de souhait (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch13-ex06'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('translation');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe("Let's hope he is right!");
+      expect(data?.questions[0].accepted_answers).toContain("Pourvu qu'il ait raison !");
+      expect(data?.questions[0].tokens).toBeDefined();
+    });
+
+    it('charge la série 13.7 (fill_blank) pour le subjonctif passé (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch13-ex07'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('Je doute que tu (lire) __ tout le livre.');
+      expect(data?.questions[0].accepted_answers).toContain('aies lu');
+      expect(data?.questions[7].prompt).toBe("Il a envoyé le courriel avant que je (pouvoir) __ ajouter un mot.");
+      expect(data?.questions[7].accepted_answers).toContain("aie pu");
+    });
+
+    it('charge la série 13.8 (sentence_rewrite) de conversion présent vers passé du subjonctif (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch13-ex08'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('Il est content que nous partions.');
+      expect(data?.questions[0].accepted_answers).toContain('Il est content que nous soyons partis.');
+      expect(data?.questions[0].tokens).toBeDefined();
+    });
+
+    it('charge la série 13.9 (matching) d’associations logiques subjonctif/indicatif (5 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch13-ex09'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('matching');
+      expect(data?.questions).toHaveLength(5);
+      expect(data?.questions[0].prompt).toBe('Je pense');
+      expect(data?.questions[0].accepted_answers).toContain('d');
+      expect(data?.questions[0].options).toHaveLength(5);
+      expect(data?.questions[4].prompt).toBe('Ils sont ravis');
+      expect(data?.questions[4].accepted_answers).toContain('b');
+    });
+  });
 });

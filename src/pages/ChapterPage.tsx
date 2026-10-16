@@ -1359,6 +1359,101 @@ export const ChapterPage: React.FC = () => {
                 </div>
               </div>
             </div>
+          ) : chapterNum === 13 ? (
+            <div className="tips-deck">
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">💡</div>
+                <div className="tip-card-body">
+                  <h3>A Regra de Ouro dos Radicais (O Segredo Fonético)</h3>
+                  <p>
+                    O presente do subjuntivo é construído a partir de <strong>duas bases</strong> muito lógicas do indicativo:
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Je, Tu, Il, Ils :</strong> Radical de <em>ils/elles</em> no presente sem <em>-ent</em> (ex.: <em>ils finiss-ent</em> ➔ <em>que je finisse, tu finisses, il finisse, ils finissent</em>). Todas têm exatamente a mesma pronúncia!<br />
+                    • <strong>Nous, Vous :</strong> Radical de <em>nous</em> sem <em>-ons</em>, exatamente idêntico ao <strong>imparfait</strong> (<em>nous pensions, vous pensiez</em>).<br />
+                    • Terminações universais : <strong>-e, -es, -e, -ions, -iez, -ent</strong> para todos os verbos regulares!
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">⚡</div>
+                <div className="tip-card-body">
+                  <h3>O Duelo Didático : Indicatif vs Subjonctif</h3>
+                  <p>
+                    A fronteira entre o real/objetivo (indicativo) e o subjetivo/incerto (subjuntivo):
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Afirmativa de opinião ➔ INDICATIF :</strong> <em>Je pense qu'il <strong>a</strong> raison.</em> / <em>Vous savez qu'ils <strong>sont</strong> là.</em><br />
+                    • <strong>Negação ou dúvida ➔ SUBJONCTIF :</strong> <em>Je ne pense pas qu'il <strong>ait</strong> raison.</em> / <em>Elle doute qu'il <strong>fasse</strong> beau.</em><br />
+                    • <strong>Certeza ➔ INDICATIF :</strong> <em>Il est certain / évident / sûr qu'il <strong>viendra</strong>.</em><br />
+                    • <strong>Possibilidade / Necessidade ➔ SUBJONCTIF :</strong> <em>Il est possible / essentiel qu'il <strong>vienne</strong>.</em>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🎯</div>
+                <div className="tip-card-body">
+                  <h3>A Armadilha de « Il me semble que » vs « Il semble que »</h3>
+                  <p>
+                    Uma das sutilezas mais sofisticadas e cobradas do FLE:
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Il me semble que + INDICATIF :</strong> Com o pronome pessoal <em>me</em>, expressa uma percepção forte equivalente a uma certeza pessoal :<br />
+                    ✅ <em>Il me semble que vous vous <strong>trompez</strong>.</em><br />
+                    • <strong>Il semble que + SUBJONCTIF :</strong> Sem o pronome, expressa uma mera aparência vaga e incerta :<br />
+                    ✅ <em>Il semble qu'il <strong>soit</strong> malade.</em>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🌟</div>
+                <div className="tip-card-body">
+                  <h3>O Poder de « Pourvu que » : O "Tomara que..." Francês</h3>
+                  <p>
+                    A locução conjuntiva <strong>pourvu que</strong> possui dois papéis cruciais:
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Subordinada (Contanto que / Desde que) :</strong> <em>Je viendrai pourvu qu'il fasse beau.</em><br />
+                    • <strong>Oração Isolada Exclamativa (Tomara que... ! / Queira Deus que... !) :</strong><br />
+                    • <strong>Pourvu qu'il ait raison !</strong> (Tomara que ele tenha razão!)<br />
+                    • <strong>Pourvu qu'il puisse venir !</strong> (Tomara que ele possa vir!)
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">⏳</div>
+                <div className="tip-card-body">
+                  <h3>Subjonctif Passé : A Marca da Anterioridade</h3>
+                  <p>
+                    Quando o fato da oração subordinada ocorreu <strong>antes</strong> do verbo principal, use o subjonctif passé:
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Fórmula :</strong> Auxiliar <em>avoir</em> ou <em>être</em> no subjonctif présent + Particípio Passado.<br />
+                    • <em>Nous sommes ravis que tu <strong>aies pu</strong> venir avec nous.</em><br />
+                    • <strong>Concordância obrigatória com être :</strong> <em>Il est content que nous <strong>soyons partis</strong>.</em> / <em>Laurent <strong>se soit marié</strong>.</em>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">💻</div>
+                <div className="tip-card-body">
+                  <h3>Vocabulário do Capítulo : Informática e Mundo Digital</h3>
+                  <p>
+                    O Capítulo 13 é ambientado no universo tecnológico. Guarde os gêneros e expressões:
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Masculins :</strong> un ordinateur, un logiciel (software), un mot de passe, un fichier, un clavier, un écran, un disque dur.<br />
+                    • <strong>Féminins :</strong> la Toile (a Web), une souris (mouse), une touche, une imprimante, une base de données.<br />
+                    • <strong>Verbes utiles :</strong> sauvegarder (salvar), télécharger (baixar), cliquer, numériser, effacer (apagar).
+                  </div>
+                </div>
+              </div>
+            </div>
           ) : (
             <div className="tips-deck">
               <div className="tip-card card card-default">

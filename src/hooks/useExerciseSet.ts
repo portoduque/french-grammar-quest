@@ -62,6 +62,11 @@ import {
   CHAPTER_12_QUESTIONS_MAP
 } from '@/data/chapter12Data';
 
+import {
+  CHAPTER_13_EXERCISE_SETS,
+  CHAPTER_13_QUESTIONS_MAP
+} from '@/data/chapter13Data';
+
 export interface ExerciseSetWithQuestions {
   exerciseSet: ExerciseSet;
   questions: Question[];
@@ -312,6 +317,26 @@ function getFallbackSet(
     };
   }
 
+  if (CHAPTER_13_QUESTIONS_MAP[exerciseSetId]) {
+    const foundSet = CHAPTER_13_EXERCISE_SETS.find(s => s.id === exerciseSetId) || {
+      id: exerciseSetId,
+      chapter_id: 'ch13',
+      order_index: parseInt(exerciseSetId.split('-ex')[1] || '1', 10),
+      title: `Exercice 13.${parseInt(exerciseSetId.split('-ex')[1] || '1', 10)}`,
+      instruction: 'Exercice de grammaire française.',
+      interaction_type: 'fill_blank',
+      questions_count: CHAPTER_13_QUESTIONS_MAP[exerciseSetId].length,
+      created_at: new Date().toISOString()
+    };
+
+    return {
+      exerciseSet: existingSet || foundSet,
+      questions: (existingQuestions && existingQuestions.length > 0)
+        ? existingQuestions
+        : CHAPTER_13_QUESTIONS_MAP[exerciseSetId]
+    };
+  }
+
   const fallbackSet: ExerciseSet = existingSet || {
     id: exerciseSetId,
     chapter_id: exerciseSetId.split('-')[0] || 'ch01',
@@ -412,7 +437,8 @@ export function useExerciseSet(exerciseSetId: string | undefined) {
           CHAPTER_03_QUESTIONS_MAP[exerciseSetId] ||
           CHAPTER_10_QUESTIONS_MAP[exerciseSetId] ||
           CHAPTER_11_QUESTIONS_MAP[exerciseSetId] ||
-          CHAPTER_12_QUESTIONS_MAP[exerciseSetId];
+          CHAPTER_12_QUESTIONS_MAP[exerciseSetId] ||
+          CHAPTER_13_QUESTIONS_MAP[exerciseSetId];
         const enrichedQuestions = fallbackList
           ? (questionsRows as Question[]).map(q => {
               const matchedFallback = fallbackList.find(fb => fb.id === q.id);
