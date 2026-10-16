@@ -616,4 +616,181 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
     expect(data?.questions[9].prompt).toBe('They love each other.');
     expect(data?.questions[9].accepted_answers).toContain('Ils s’aiment.');
   });
+
+  it('charge la série 7.1 avec 10 questions régulières en -er avec avoir (fill_blank)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch07-ex01'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('Il (inviter) ___ beaucoup de monde.');
+    expect(data?.questions[0].accepted_answers).toContain('a invité');
+    expect(data?.questions[3].prompt).toBe('Il (comprendre) ___ l\'intrigue.');
+    expect(data?.questions[3].accepted_answers).toContain('a compris');
+    expect(data?.questions[5].prompt).toBe('Je (voyager) ___ avec Rémi.');
+    expect(data?.questions[5].accepted_answers).toContain('J\'ai voyagé');
+  });
+
+  it('charge la série 7.2 avec 10 questions régulières en -ir et -re avec avoir (fill_blank)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch07-ex02'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('Ils (investir) ___ une grosse somme.');
+    expect(data?.questions[0].accepted_answers).toContain('ont investi');
+    expect(data?.questions[4].prompt).toBe('Ils (attendre) ___ le train une demi-heure.');
+    expect(data?.questions[4].accepted_answers).toContain('ont attendu');
+  });
+
+  it('charge la série 7.3 avec 10 questions de thème / traduction (translation)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch07-ex03'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('translation');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('Traduire : "They sold the house in France."');
+    expect(data?.questions[0].accepted_answers).toContain('Ils ont vendu la maison en France.');
+    expect(data?.questions[0].accepted_answers).toContain('Elles ont vendu la maison en France.');
+  });
+
+  it('charge la série 7.4 avec 10 questions de participes passés irréguliers (fill_blank)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch07-ex04'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('Je (prendre) ___ le train à Lille.');
+    expect(data?.questions[0].accepted_answers).toContain('J\'ai pris');
+    expect(data?.questions[1].prompt).toBe('Nous (ne pas pouvoir) ___ joindre les Quentin.');
+    expect(data?.questions[1].accepted_answers).toContain('n\'avons pas pu');
+    expect(data?.questions[3].prompt).toBe('Elle (peindre) ___ un paysage breton.');
+    expect(data?.questions[3].accepted_answers).toContain('a peint');
+  });
+
+  it('charge la série 7.5 (matching) avec les 5 options de correspondances logiques', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch07-ex05'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('matching');
+    expect(data?.questions).toHaveLength(5);
+    expect(data?.questions[0].prompt).toBe('Elle a conduit');
+    expect(data?.questions[0].accepted_answers).toContain('e');
+    expect(data?.questions[1].prompt).toBe('Tu as compris');
+    expect(data?.questions[1].accepted_answers).toContain('d');
+    expect(data?.questions[4].prompt).toBe('Nous avons fait');
+    expect(data?.questions[4].accepted_answers).toContain('c');
+  });
+
+  it('charge la série 7.6 avec 10 questions avec l\'auxiliaire être et accords (fill_blank)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch07-ex06'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('À quel âge ce comédien (monter) ___ sur scène?');
+    expect(data?.questions[0].accepted_answers).toContain('est-il monté');
+    expect(data?.questions[1].prompt).toBe('Nous (rentrer) ___ du théâtre à minuit.');
+    expect(data?.questions[1].accepted_answers).toContain('sommes rentrés');
+    expect(data?.questions[8].prompt).toBe('Molière (mourir) ___ en 1673.');
+    expect(data?.questions[8].accepted_answers).toContain('est mort');
+  });
+
+  it('charge la série 7.7 avec 10 questions de traduction avoir vs être (translation)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch07-ex07'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('translation');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[1].prompt).toBe('Traduire : "We went to Paris."');
+    expect(data?.questions[1].accepted_answers).toContain('Nous sommes allés à Paris.');
+    expect(data?.questions[5].prompt).toBe('Traduire : "Zola died in 1902."');
+    expect(data?.questions[5].accepted_answers).toContain('Zola est mort en 1902.');
+  });
+
+  it('charge la série 7.8 avec 10 questions de verbes pronominaux et accords fins (fill_blank)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch07-ex08'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('Ils (se promener) ___ le long de la rivière.');
+    expect(data?.questions[0].accepted_answers).toContain('se sont promenés');
+    // Règle du COI sans accord
+    expect(data?.questions[3].prompt).toBe('Ils (s\'écrire) ___ régulièrement.');
+    expect(data?.questions[3].accepted_answers).toContain('se sont écrit');
+    // Règle des parties du corps sans accord
+    expect(data?.questions[8].prompt).toBe('Tu (se couper) ___ le doigt.');
+    expect(data?.questions[8].accepted_answers).toContain('t\'es coupé');
+  });
+
+  it('charge la série 7.9 (matching) avec 5 paires sur les verbes à double auxiliaire', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch07-ex09'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('matching');
+    expect(data?.questions).toHaveLength(5);
+    expect(data?.questions[0].prompt).toBe('Elle a sorti');
+    expect(data?.questions[0].accepted_answers).toContain('e');
+    expect(data?.questions[1].prompt).toBe('Il a retourné');
+    expect(data?.questions[1].accepted_answers).toContain('a');
+    expect(data?.questions[2].prompt).toBe('Elle est rentrée');
+    expect(data?.questions[2].accepted_answers).toContain('d');
+  });
+
+  it('charge la série 7.10 avec 10 questions de thème de synthèse (translation)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch07-ex10'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('translation');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('Traduire : "They spent a month in China."');
+    expect(data?.questions[0].accepted_answers).toContain('Ils ont passé un mois en Chine.');
+    expect(data?.questions[4].prompt).toBe('Traduire : "She took the suitcases down."');
+    expect(data?.questions[4].accepted_answers).toContain('Elle a descendu les valises.');
+    expect(data?.questions[5].prompt).toBe('Traduire : "He brushed his teeth."');
+    expect(data?.questions[5].accepted_answers).toContain('Il s\'est brossé les dents.');
+    expect(data?.questions[7].prompt).toBe('Traduire : "They wrote each other regularly."');
+    expect(data?.questions[7].accepted_answers).toContain('Ils se sont écrit régulièrement.');
+  });
 });

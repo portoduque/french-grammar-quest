@@ -793,6 +793,102 @@ export const ChapterPage: React.FC = () => {
                 </div>
               </div>
             </div>
+          ) : chapterNum === 7 ? (
+            <div className="tips-deck">
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🏠</div>
+                <div className="tip-card-body">
+                  <h3>La Maison d'Être : Accord avec le Sujet</h3>
+                  <p>
+                    Les 14 verbes intransitifs de mouvement et de transformation (<em>aller, venir, naître, mourir, monter, descendre, partir, arriver, etc.</em>) se conjuguent avec <strong>ÊTRE</strong>. Le participe s'accorde toujours avec le sujet :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Il est parti</strong> / <strong>Elle est partie</strong> (+e).<br />
+                    • <strong>Ils sont arrivés</strong> / <strong>Elles sont arrivées</strong> (+es).<br />
+                    • <strong>Zola est mort</strong> en 1902.<br />
+                    • <strong>La voiture est tombée</strong> en panne.
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🦎</div>
+                <div className="tip-card-body">
+                  <h3>Les 6 Verbes Caméléons : Avoir ou Être ?</h3>
+                  <p>
+                    Six verbes (<em>monter, descendre, sortir, rentrer, passer, retourner</em>) changent d'auxiliaire ! S'ils sont suivis d'un <strong>C.O.D. direct</strong>, ils prennent <strong>AVOIR</strong> et ne s'accordent pas :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em>Être (intransitif) :</em> Elle <strong>est sortie</strong> avec des amis.<br />
+                    • <em>Avoir (+ C.O.D.) :</em> Elle <strong>a sorti la voiture</strong> du garage.<br />
+                    • <em>Avoir (+ C.O.D.) :</em> Elle <strong>a descendu les valises</strong>.<br />
+                    • <em>Avoir (+ C.O.D.) :</em> Il <strong>a retourné l'omelette</strong>.
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">📜</div>
+                <div className="tip-card-body">
+                  <h3>L'Accord avec AVOIR : La Règle du C.O.D. Antéposé</h3>
+                  <p>
+                    Avec <strong>avoir</strong>, le participe ne s'accorde JAMAIS avec le sujet. Il s'accorde uniquement en genre et nombre avec le <strong>C.O.D. placé AVANT le verbe</strong> :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • C.O.D. après (pas d'accord) : <em>Il a pris <strong>la décision</strong></em>.<br />
+                    • C.O.D. avant (accord) : <em>La décision qu'il a <strong>prise</strong></em> (+e).<br />
+                    • Pronom avant (accord) : <em>Il <strong>l'</strong>a <strong>prise</strong></em>.<br />
+                    • Pronom pluriel avant : <em>Elle <strong>les</strong> a <strong>comprises</strong></em> (+es).
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🦷</div>
+                <div className="tip-card-body">
+                  <h3>Verbes Pronominaux & Parties du Corps</h3>
+                  <p>
+                    Les pronominaux prennent <strong>être</strong>, mais le participe reste INVARIABLE si le C.O.D. est placé après le verbe (comme les parties du corps avec l'article défini) :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Elle s'est lavée</strong> (accord car <em>se</em> est C.O.D.).<br />
+                    • <strong>Elle s'est lavé les mains</strong> (invariable : C.O.D. <em>les mains</em> après).<br />
+                    • <strong>Il s'est brossé les dents</strong> (invariable : C.O.D. <em>les dents</em> après).<br />
+                    • <strong>Tu t'es coupé le doigt</strong> (invariable : C.O.D. <em>le doigt</em> après).
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">💌</div>
+                <div className="tip-card-body">
+                  <h3>Verbes Réciproques Indirects : JAMAIS d'Accord !</h3>
+                  <p>
+                    Quand un verbe se construit avec la préposition <em>à</em> (<em>parler à, téléphoner à, écrire à, plaire à</em>), le pronom réfléchi est un <strong>C.O.I.</strong> : aucun accord n'est possible :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • ❌ <em>*Ils se sont écrits</em> ➔ ✅ <strong>Ils se sont écrit</strong> (sans -s !).<br />
+                    • ❌ <em>*Elles se sont téléphonées</em> ➔ ✅ <strong>Elles se sont téléphoné</strong>.<br />
+                    • ✅ <strong>Ils se sont parlé</strong> pendant deux heures.
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🇧🇷</div>
+                <div className="tip-card-body">
+                  <h3>Passé Composé vs Portugais : Faux Ami Temporel</h3>
+                  <p>
+                    En portugais, « tenho falado » exprime une action continue dans le présent. En français, <strong>j'ai parlé</strong> exprime une <strong>action ponctuelle achevée</strong> (« falei ») :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • « J'ai habité en Italie » = Morei / vivi na Itália (terminé).<br />
+                    • « J'ai attendu dix minutes » = Esperei dez minutos.<br />
+                    • Pour une action qui continue : <em>J'habite ici depuis 2 ans</em> (au présent !).
+                  </div>
+                </div>
+              </div>
+            </div>
           ) : (
             <div className="tips-deck">
               <div className="tip-card card card-default">

@@ -515,4 +515,106 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
     expect(topics[3].id).toBe('ch06-t04');
     expect(topics[4].id).toBe('ch06-t05');
   });
+
+  it('fournit la théorie pédagogique complète et rigoureuse pour ch07 (passé composé, être vs avoir, accords, double auxiliaire, pronominaux)', async () => {
+    const { result } = renderHook(() => useTheory('ch07'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data).toBeDefined();
+    expect(data?.chapter.number).toBe(7);
+    expect(data?.chapter.title).toBe('The passé composé');
+    expect(data?.chapter.page_range).toBe('89–102');
+    expect(data?.chapter.total_questions).toBe(90);
+
+    // Valide le contenu pédagogique FLE pour lusophones
+    const markdown = data?.chapter.theory_markdown || '';
+    expect(markdown).toContain("La Formation Régulière du Participe Passé");
+    expect(markdown).toContain("Le Participe Passé avec AVOIR et l'Accord du C.O.D.");
+    expect(markdown).toContain("Les Participes Passés Irréguliers par Familles");
+    expect(markdown).toContain("Le Passé Composé avec ÊTRE (La Maison d'Être)");
+    expect(markdown).toContain("Les Verbes à Double Auxiliaire");
+    expect(markdown).toContain("Les Verbes Pronominaux au Passé Composé");
+  });
+
+  it('charge les 10 séries d exercices officielles du Chapitre 7 avec les moteurs de jeu calibrés (90 questions au total)', async () => {
+    const { result } = renderHook(() => useTheory('ch07'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const sets = result.current.data?.exerciseSets || [];
+    expect(sets).toHaveLength(10);
+
+    // 7.1: Réguliers en -er avec avoir -> fill_blank (10)
+    expect(sets[0].id).toBe('ch07-ex01');
+    expect(sets[0].interaction_type).toBe('fill_blank');
+    expect(sets[0].questions_count).toBe(10);
+
+    // 7.2: Réguliers en -ir et -re avec avoir -> fill_blank (10)
+    expect(sets[1].id).toBe('ch07-ex02');
+    expect(sets[1].interaction_type).toBe('fill_blank');
+    expect(sets[1].questions_count).toBe(10);
+
+    // 7.3: Traduction active avec avoir -> translation (10)
+    expect(sets[2].id).toBe('ch07-ex03');
+    expect(sets[2].interaction_type).toBe('translation');
+    expect(sets[2].questions_count).toBe(10);
+
+    // 7.4: Participes passés irréguliers fréquents -> fill_blank (10)
+    expect(sets[3].id).toBe('ch07-ex04');
+    expect(sets[3].interaction_type).toBe('fill_blank');
+    expect(sets[3].questions_count).toBe(10);
+
+    // 7.5: Association logique verbe et complément -> matching (5)
+    expect(sets[4].id).toBe('ch07-ex05');
+    expect(sets[4].interaction_type).toBe('matching');
+    expect(sets[4].questions_count).toBe(5);
+
+    // 7.6: Passé composé avec être et inversion -> fill_blank (10)
+    expect(sets[5].id).toBe('ch07-ex06');
+    expect(sets[5].interaction_type).toBe('fill_blank');
+    expect(sets[5].questions_count).toBe(10);
+
+    // 7.7: Traduction active avoir ou être -> translation (10)
+    expect(sets[6].id).toBe('ch07-ex07');
+    expect(sets[6].interaction_type).toBe('translation');
+    expect(sets[6].questions_count).toBe(10);
+
+    // 7.8: Verbes pronominaux au passé composé -> fill_blank (10)
+    expect(sets[7].id).toBe('ch07-ex08');
+    expect(sets[7].interaction_type).toBe('fill_blank');
+    expect(sets[7].questions_count).toBe(10);
+
+    // 7.9: Verbes à double auxiliaire -> matching (5)
+    expect(sets[8].id).toBe('ch07-ex09');
+    expect(sets[8].interaction_type).toBe('matching');
+    expect(sets[8].questions_count).toBe(5);
+
+    // 7.10: Traduction de synthèse -> translation (10)
+    expect(sets[9].id).toBe('ch07-ex10');
+    expect(sets[9].interaction_type).toBe('translation');
+    expect(sets[9].questions_count).toBe(10);
+  });
+
+  it('fournit les 6 sujets principaux du chapitre 7', async () => {
+    const { result } = renderHook(() => useTheory('ch07'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const topics = result.current.data?.topics || [];
+    expect(topics).toHaveLength(6);
+    expect(topics[0].id).toBe('ch07-t01');
+    expect(topics[1].id).toBe('ch07-t02');
+    expect(topics[2].id).toBe('ch07-t03');
+    expect(topics[3].id).toBe('ch07-t04');
+    expect(topics[4].id).toBe('ch07-t05');
+    expect(topics[5].id).toBe('ch07-t06');
+  });
 });

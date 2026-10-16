@@ -44,6 +44,12 @@ import {
   CHAPTER_06_EXERCISE_SETS
 } from '@/data/chapter06Data';
 
+import {
+  CHAPTER_07_THEORY_MARKDOWN,
+  CHAPTER_07_TOPICS,
+  CHAPTER_07_EXERCISE_SETS
+} from '@/data/chapter07Data';
+
 const CH01_FALLBACK_THEORY: ChapterTheoryData = {
   chapter: {
     id: 'ch01',
@@ -176,6 +182,28 @@ const CH06_FALLBACK_THEORY: ChapterTheoryData = {
   exerciseSets: CHAPTER_06_EXERCISE_SETS
 };
 
+const CH07_FALLBACK_THEORY: ChapterTheoryData = {
+  chapter: {
+    id: 'ch07',
+    number: 7,
+    title: 'The passé composé',
+    slug: 'the-passe-compose',
+    world_number: 1,
+    world_name: 'Mundo 1: Les Fondations',
+    page_range: '89–102',
+    topics_count: 6,
+    exercise_groups_count: 10,
+    total_questions: 90,
+    theory_markdown: CHAPTER_07_THEORY_MARKDOWN,
+    release_id: null,
+    editorial_status: 'published',
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+  },
+  topics: CHAPTER_07_TOPICS,
+  exerciseSets: CHAPTER_07_EXERCISE_SETS
+};
+
 function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch01') return CH01_FALLBACK_THEORY;
   if (chapterId === 'ch02') return CH02_FALLBACK_THEORY;
@@ -183,6 +211,7 @@ function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch04') return CH04_FALLBACK_THEORY;
   if (chapterId === 'ch05') return CH05_FALLBACK_THEORY;
   if (chapterId === 'ch06') return CH06_FALLBACK_THEORY;
+  if (chapterId === 'ch07') return CH07_FALLBACK_THEORY;
   return null;
 }
 
@@ -254,6 +283,8 @@ export function useTheory(chapterId?: string) {
           ? CHAPTER_05_THEORY_MARKDOWN
           : chapterId === 'ch06'
           ? CHAPTER_06_THEORY_MARKDOWN
+          : chapterId === 'ch07'
+          ? CHAPTER_07_THEORY_MARKDOWN
           : (chapterData as Chapter).theory_markdown;
 
         return {
