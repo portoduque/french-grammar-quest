@@ -1339,4 +1339,97 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       expect(data?.questions[0].options).toHaveLength(5);
     });
   });
+
+  describe('useExerciseSet Hook — Chapitre 12 (Could, should, would?)', () => {
+    it('charge la série 12.1 (translation) pour les nuances de « Could » (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch12-ex01'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('translation');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('Could you help clean the house after the party?');
+      expect(data?.questions[0].accepted_answers).toContain('Pourriez-vous aider à nettoyer la maison après la soirée ?');
+      expect(data?.questions[0].tokens).toBeDefined();
+    });
+
+    it('charge la série 12.2 (translation) pour le devoir et regret de « Should » (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch12-ex02'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('translation');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('You should learn to play the guitar.');
+      expect(data?.questions[0].accepted_answers).toContain('Vous devriez apprendre à jouer de la guitare.');
+      expect(data?.questions[1].prompt).toBe("They shouldn't have said that.");
+      expect(data?.questions[1].accepted_answers).toContain("Ils n'auraient pas dû dire cela.");
+    });
+
+    it('charge la série 12.3 (translation) pour l’habitude passée et le refus avec « Would » (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch12-ex03'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('translation');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe("S'il était moins paresseux, il aurait de meilleures notes à l'école.");
+      expect(data?.questions[0].accepted_answers).toContain('If he were less lazy, he would have better grades at school.');
+    });
+
+    it('charge la série 12.4 (translation) pour la révision mixte des modaux (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch12-ex04'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('translation');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('Could you read this document?');
+      expect(data?.questions[0].accepted_answers).toContain('Pourrais-tu lire ce document ?');
+    });
+
+    it('charge la série 12.5 (translation) pour les instruments de musique et « jouer de » (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch12-ex05'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('translation');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('Pourrais-tu ouvrir la porte ?');
+      expect(data?.questions[0].accepted_answers).toContain('Could you open the door?');
+    });
+
+    it('charge la série 12.6 (matching) avec les 5 clauses logiques (a à e)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch12-ex06'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('matching');
+      expect(data?.questions).toHaveLength(5);
+      expect(data?.questions[0].prompt).toBe('Marie serait ravie');
+      expect(data?.questions[0].accepted_answers).toContain('c');
+      expect(data?.questions[0].options).toHaveLength(5);
+
+      expect(data?.questions[4].prompt).toBe('Tu aurais dû');
+      expect(data?.questions[4].accepted_answers).toContain('d');
+    });
+  });
 });

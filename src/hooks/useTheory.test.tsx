@@ -975,4 +975,86 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
     expect(topics[2].id).toBe('ch11-t03');
     expect(topics[3].id).toBe('ch11-t04');
   });
+
+  it('fournit la théorie pédagogique complète et rigoureuse pour ch12 (Could, should, would?)', async () => {
+    const { result } = renderHook(() => useTheory('ch12'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data).toBeDefined();
+    expect(data?.chapter.number).toBe(12);
+    expect(data?.chapter.title).toBe('Could, should, would?');
+    expect(data?.chapter.page_range).toBe('148–157');
+
+    // Valide le contenu pédagogique FLE pour lusophones
+    const markdown = data?.chapter.theory_markdown || '';
+    expect(markdown).toContain("Desvendando o « COULD » com o verbo POUVOIR");
+    expect(markdown).toContain("Desvendando o « SHOULD » com o verbo DEVOIR");
+    expect(markdown).toContain("Comment traduire « Would » en français ?");
+    expect(markdown).toContain("Vocabulaire Thématique : Les Instruments de Musique");
+    expect(markdown.toLowerCase()).toContain("jouer du piano");
+    expect(markdown.toLowerCase()).toContain("jouer de la guitare");
+  });
+
+  it('charge les 6 séries d exercices officielles du Chapitre 12 avec 55 questions au total', async () => {
+    const { result } = renderHook(() => useTheory('ch12'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const sets = result.current.data?.exerciseSets || [];
+    expect(sets).toHaveLength(6);
+
+    // 12.1: Could -> translation (10)
+    expect(sets[0].id).toBe('ch12-ex01');
+    expect(sets[0].interaction_type).toBe('translation');
+    expect(sets[0].questions_count).toBe(10);
+
+    // 12.2: Should -> translation (10)
+    expect(sets[1].id).toBe('ch12-ex02');
+    expect(sets[1].interaction_type).toBe('translation');
+    expect(sets[1].questions_count).toBe(10);
+
+    // 12.3: Would (past habit & refusal) -> translation (10)
+    expect(sets[2].id).toBe('ch12-ex03');
+    expect(sets[2].interaction_type).toBe('translation');
+    expect(sets[2].questions_count).toBe(10);
+
+    // 12.4: Mixed Modal Review -> translation (10)
+    expect(sets[3].id).toBe('ch12-ex04');
+    expect(sets[3].interaction_type).toBe('translation');
+    expect(sets[3].questions_count).toBe(10);
+
+    // 12.5: Musical Instruments & Jouer de -> translation (10)
+    expect(sets[4].id).toBe('ch12-ex05');
+    expect(sets[4].interaction_type).toBe('translation');
+    expect(sets[4].questions_count).toBe(10);
+
+    // 12.6: Modal Clauses Matching -> matching (5)
+    expect(sets[5].id).toBe('ch12-ex06');
+    expect(sets[5].interaction_type).toBe('matching');
+    expect(sets[5].questions_count).toBe(5);
+
+    // Total questions check (55 questions)
+    const totalQ = sets.reduce((acc, s) => acc + s.questions_count, 0);
+    expect(totalQ).toBe(55);
+  });
+
+  it('fournit les 3 sujets principaux du chapitre 12', async () => {
+    const { result } = renderHook(() => useTheory('ch12'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const topics = result.current.data?.topics || [];
+    expect(topics).toHaveLength(3);
+    expect(topics[0].id).toBe('ch12-t01');
+    expect(topics[1].id).toBe('ch12-t02');
+    expect(topics[2].id).toBe('ch12-t03');
+  });
 });

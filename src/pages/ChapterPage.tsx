@@ -1267,6 +1267,98 @@ export const ChapterPage: React.FC = () => {
                 </div>
               </div>
             </div>
+          ) : chapterNum === 12 ? (
+            <div className="tips-deck">
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">💡</div>
+                <div className="tip-card-body">
+                  <h3>« Could » no Passado : J'ai pu vs Je pouvais vs Je pourrais</h3>
+                  <p>
+                    O inglês <em>could</em> é uma armadilha clássica para lusófonos porque traduz três tempos verbais franceses diferentes:
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Passé Composé (Ação pontual concretizada/falha) :</strong> <em>Hier, j'ai pu réparer la voiture</em> (consegui consertar). <em>Elle n'a pas pu venir à la fête.</em><br />
+                    • <strong>Imparfait (Capacidade geral duradoura no passado) :</strong> <em>Quand il était jeune, il pouvait nager des heures.</em><br />
+                    • <strong>Conditionnel Présent (Hipótese ou polidez atual) :</strong> <em>Pourriez-vous m'indiquer le chemin ?</em>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">⚡</div>
+                <div className="tip-card-body">
+                  <h3>« Should » : Conselho com Devoir (Présent vs Passé com « DÛ »)</h3>
+                  <p>
+                    Recomendações e remorsos expressam-se pelo verbo <strong>devoir</strong> no condicional:
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Conselho no Presente (Conditionnel Présent) :</strong> <em>Tu devrais dormir plus</em> (Você deveria dormir mais).<br />
+                    • <strong>Arrependimento / Cobrança no Passado (Conditionnel Passé) :</strong> <em>Tu aurais dû me prévenir !</em> (Você deveria ter me avisado).<br />
+                    • <strong>Atenção Ortográfica :</strong> O particípio masculino <strong>dû</strong> leva acento circunflexo obrigatório para não se confundir com o artigo <em>du</em>.
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🎭</div>
+                <div className="tip-card-body">
+                  <h3>A Grande Armadilha de « Would » : Hábito Passado é IMPARFAIT !</h3>
+                  <p>
+                    Em inglês, <em>would</em> indica tanto hipótese futura (<em>I would travel</em>) quanto hábito repetido no passado (<em>Every summer we would visit him</em>).
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    ❌ <em>*Chaque soir, il jouerait du violon...</em> (ERRO GRAVE!)<br />
+                    ✅ <strong>Chaque soir, il jouait du violon.</strong> (Imparfait obrigatório para repetição passada!)<br />
+                    • Guarde bem: se <em>would</em> equivale a <em>used to</em> no passado, o tempo em francês é sempre o <strong>Imparfait</strong>!
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🛑</div>
+                <div className="tip-card-body">
+                  <h3>A Recusa Obstinada : « Would not » = N'a pas voulu</h3>
+                  <p>
+                    Quando <em>would not</em> expressa uma recusa deliberada e teimosa no passado, o francês emprega o <strong>Passé Composé de vouloir</strong> na negativa:
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em>He would not answer my letters</em> ➔ <strong>Il n'a pas voulu répondre à mes lettres.</strong><br />
+                    • <em>The witness would not speak</em> ➔ <strong>Le témoin n'a pas voulu parler.</strong><br />
+                    • Diferente de <em>ne voulait pas</em> (vontade difusa), <em>n'a pas voulu</em> marca o ato firme da recusa.
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🎻</div>
+                <div className="tip-card-body">
+                  <h3>Música e Gramática : Jouer DE vs Jouer À</h3>
+                  <p>
+                    O vocabulário do Capítulo 12 apresenta 27 instrumentos musicais. A regência do verbo <strong>jouer</strong> é uma regra de ouro:
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Instrumentos Musicais ➔ JOUER DE :</strong> <em>jouer du piano</em> (m.), <em>jouer de la trompette</em> (f.), <em>jouer de l'accordéon</em> (vogal), <em>jouer des castagnettes</em> (pl.).<br />
+                    • <strong>Esportes e Jogos ➔ JOUER À :</strong> <em>jouer au tennis</em>, <em>jouer aux échecs</em>, <em>jouer à la belote</em>.<br />
+                    • <em>Mnemônico:</em> De l'instrument (sons vêm DE dentro dele) / Au sport (vai AO jogo).
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🎩</div>
+                <div className="tip-card-body">
+                  <h3>Polidez e Inversão : Pourriez-vous / Voudriez-vous</h3>
+                  <p>
+                    Para pedidos corteses em registro formal ou profissional, use a inversão sujeito-verbo com o condicional:
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Pourriez-vous m'accorder un instant ?</strong> (Poderia me conceder um instante?)<br />
+                    • <strong>Voudriez-vous vous asseoir ?</strong> (Gostaria de se sentar?)<br />
+                    • Lembre-se: hífen obrigatório na inversão e entonação suave ao final da pergunta.
+                  </div>
+                </div>
+              </div>
+            </div>
           ) : (
             <div className="tips-deck">
               <div className="tip-card card card-default">

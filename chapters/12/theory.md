@@ -1,132 +1,152 @@
 # Chapter 12 — Could, should, would?
 
-> Automatically extracted from the source PDF. Text and bilingual columns must be checked visually before use in interactive lessons.
-> Literal source snapshots are preserved in `source-pages/`; a full source mirror is in `theory-source.md`.
+> ### 💡 Dica do Professor de Francês (FLE) : O Segredo dos Modais em Francês
+> 1. **Por que este capítulo é decisivo para quem fala Português e Inglês ?** :
+>    - Em inglês, *could*, *should* e *would* são verbos auxiliares modais muito frequentes e carregados de múltiplos sentidos.
+>    - Em português e em francês, **não existem verbos modais defectivos** : nós usamos verbos plenos conjugados em tempos verbais específicos (*pouvoir*, *devoir*, *vouloir* ou o tempo *imparfait*).
+>    - O segredo consiste em identificar qual é a **nuance real da frase** antes de traduzir.
+> 2. **Desvendando o « COULD » com o verbo POUVOIR** :
+>    - **Ação pontual concluída no passado (Conseguiu / Não conseguiu)** ➔ **Passé Composé** :
+>      - *« J'ai pu la convaincre. »* (Consegui convencê-la / *I managed to convince her*).
+>      - *« Il n'a pas pu lui parler. »* (Ele não conseguiu / não pôde falar com ele).
+>    - **Capacidade habitual, contínua ou estado no passado** ➔ **Imparfait** :
+>      - *« En ce temps-là, les femmes ne pouvaient pas voter. »* (Naquela época, as mulheres não podiam votar).
+>    - **Hipótese, sugestão ou polidez no presente** ➔ **Conditionnel Présent** :
+>      - *« Pourriez-vous m'expliquer ? »* (O senhor poderia me explicar ?).
+>      - *« Je pourrais vous prêter ma voiture. »* (Eu poderia lhe emprestar meu carro).
+>    - **Possibilidade não realizada no passado (Poderia ter...)** ➔ **Conditionnel Passé** :
+>      - *« Tu aurais pu me prévenir ! »* (Você poderia ter me avisado !).
+> 3. **Desvendando o « SHOULD » com o verbo DEVOIR** :
+>    - **Conselho ou recomendação no presente (Deveria...)** ➔ **Conditionnel Présent** :
+>      - *« Vous devriez aller au concert. »* (Vocês deveriam ir ao show).
+>      - *« Elle devrait se détendre un peu. »* (Ela deveria relaxar um pouco).
+>      - Conjugação : *je devrais, tu devrais, il devrait, nous devrions, vous devriez, ils devraient*.
+>    - **Censura, remorso ou dever não cumprido no passado (Deveria ter...)** ➔ **Conditionnel Passé** :
+>      - *« Tu aurais dû lui demander des explications. »* (Você deveria ter pedido explicações a ele).
+>      - *« Vous auriez dû l'emmener au festival. »* (Vocês deveriam tê-lo levado ao festival).
+>      - *Atenção ao acento* : o particípio *dû* leva acento circunflexo no masculino singular (*j'aurais dû*).
+> 4. **A Grande Armadilha do « WOULD » (Hábito no passado é IMPARFAIT !)** :
+>    - Em inglês, *would* é muito usado para descrever ações habituais no passado (*« When I was a kid, I would play outside »*).
+>    - **EM FRANCÊS, ISSO NUNCA É CONDICIONAL !** Traduz-se obrigatoriamente pelo **IMPARFAIT** :
+>      - *« Quand j'étais étudiant, je lisais les journaux tous les jours. »* (Quando eu era estudante, eu lia os jornais todos os dias).
+>      - ❌ *Erro comum de lusófono que estuda inglês* : Usar o condicional *je lirais*. O correto é o imperfeito *je lisais*.
+>    - **Pedido cortês no presente** ➔ **Conditionnel Présent de VOULOIR** :
+>      - *« Voudriez-vous m'accompagner ? »* (Gostaria de me acompanhar ?).
+>    - **Recusa voluntária obstinada no passado (Não quis / recusou-se)** ➔ **Passé Composé Négatif de VOULOIR** :
+>      - *« Son patron n'a pas voulu le lui donner. »* (O chefe dele não quis / se recusou a dar a ele / *would not give it*).
+> 5. **Vocabulário : A Música e a Regra do « JOUER DE »** :
+>    - Em francês, com instrumentos musicais, usa-se a preposição **DE** :
+>      - *Jouer du piano (de + le)*, *jouer de la guitare*, *jouer de l'accordéon*, *jouer des castagnettes*.
+>      - Com esportes e jogos coletivos, usa-se **À** : *jouer au football*, *jouer aux cartes*.
 
-## Could
-<!-- PDF pages 148–150; source chars 0–3965 -->
+---
 
-```text
-•12•
+## 1. Comment traduire « Could » en français ?
 
-        Could, should, would?
+Le modal anglais *could* exprime plusieurs nuances distinctes qui déterminent le temps du verbe **pouvoir** :
 
+### A. Action ponctuelle et réussie (ou non) dans le passé ➔ Passé Composé
+On utilise le passé composé de *pouvoir* (*j'ai pu*, *tu as pu*, *il a pu*, *nous avons pu*, *vous avez pu*, *ils ont pu*) pour exprimer qu'on a eu la possibilité de faire une action précise ou qu'on a réussi à l'accomplir (*managed to*, *succeeded in*) :
+- *Il n'a pas pu lui parler.* (Ele não conseguiu falar com ele / *He could not talk to him*).
+- *J'ai pu la convaincre.* (Consegui convencê-la / *I managed to convince her*).
+- *Nous n'avons pas pu y aller.* (Não pudemos ir lá / *We could not go there*).
+- *Grâce à sa tante riche, elle a pu payer ses études.* (Graças à sua tia rica, ela pôde pagar seus estudos).
 
+### B. Capacité continue, description ou habitude dans le passé ➔ Imparfait
+On utilise l'imparfait de *pouvoir* (*je pouvais*, *tu pouvais*, *il pouvait*, *nous pouvions*, *vous pouviez*, *ils pouvaient*) pour décrire une situation passée, un état d'aptitude général ou une interdiction permanente :
+- *En ce temps-là, les femmes ne pouvaient pas voter.* (Naquela época, as mulheres não podiam votar).
+- *À cette époque, les voitures ne pouvaient pas traverser la ville.* (Naquela época, os carros não podiam atravessar a cidade).
+- *Si jeune, il pouvait quand même prendre une telle décision !* (Tão jovem, ele podia mesmo assim tomar tal decisão !).
+- *Après la mort de sa femme, il ne pouvait plus écrire.* (Após a morte da esposa, ele já não conseguia escrever).
 
+### C. Hypothèse, suggestion ou politesse dans le présent/futur ➔ Présent du Conditionnel
+On utilise le conditionnel présent de *pouvoir* (*je pourrais*, *tu pourrais*, *il pourrait*, *nous pourrions*, *vous pourriez*, *ils pourraient*) pour formuler une demande polie ou une suggestion :
+- *Pourriez-vous m'expliquer votre méthode de travail ?* (O senhor poderia me explicar seu método de trabalho ?).
+- *Pourrais-tu me prêter ce livre ?* (Você poderia me emprestar este livro ?).
+- *Je pourrais vous prêter ma voiture.* (Eu poderia lhe emprestar meu carro).
+- *Ils pourraient apprendre à jouer de la clarinette.* (Eles poderiam aprender a tocar clarinete).
 
-Could, should, and would have different meanings in English and are translated in
-several ways in French. Each time you come across one of these verbs, try to
-consider its nuance in English.
+---
 
-Could
-When could refers to a single, unique action in the past, the passé composé of
-pouvoir is used.
+## 2. Comment traduire « Should » en français ?
 
-         j’ai pu              I could            nous avons pu       we could
-        tu as pu        you could         vous avez pu          you could
-         il/elle a pu       he/she could          ils/elles ont pu          they could
+Le modal anglais *should* (ou *ought to*) traduit le conseil, la recommandation morale ou le reproche à l'aide du verbe **devoir** :
 
-  Note the following examples:
+### A. Conseil ou devoir au présent ➔ Conditionnel Présent de Devoir
+- **Formation** : *je devrais*, *tu devrais*, *il/elle devrait*, *nous devrions*, *vous devriez*, *ils/elles devraient*.
+- *Elle devrait se détendre un peu.* (Ela deveria relaxar um pouco / *She should relax a bit*).
+- *Vous devriez aller au concert.* (Vocês deveriam ir ao concerto).
+- *Vous devriez louer un piano pour la soirée.* (Vocês deveriam alugar um piano para a festa).
+- *Marie pense que son père devrait être présent.* (Marie acha que o pai dela deveria estar presente).
 
-          Il n’a pas pu lui parler.        He could not talk to him.
-        J’ai pu la convaincre.               I managed to convince her.
-      Nous n’avons pas pu y aller.    We could not go there.
-          Il a pu obtenir les fonds.       He succeeded in obtaining the funding.
+### B. Reproche ou regret rétrospectif dans le passé ➔ Conditionnel Passé de Devoir
+- **Formation** : Auxiliaire *avoir* au conditionnel présent + participe passé *dû* (*j'aurais dû*, *tu aurais dû*, *il aurait dû*, *nous aurions dû*, *vous auriez dû*, *ils auraient dû*).
+- *Tu aurais dû lui demander des explications.* (Você deveria ter pedido explicações a ele / *You should have asked him for explanations*).
+- *Vous auriez dû l'emmener au festival de musique.* (Vocês deveriam tê-lo levado ao festival de música).
+- *Ils n'auraient pas dû dire cela.* (Eles não deveriam ter dito aquilo).
+- *J'aurais dû leur parler.* (Eu deveria ter falado com eles).
 
-  When could refers to a description or a habitual action, the imparfait of pouvoir
-is used.
+---
 
-        je pouvais            I could         nous pouvions         we could
-        tu pouvais        you could       vous pouviez           you could
-         il/elle pouvait      he/she could       ils/elles pouvaient        they could  Note the following examples:
+## 3. Comment traduire « Would » en français ?
 
-     En ce temps-là, les femmes ne pouvaient  At that time, women could not vote
-         pas voter.
-    À cette époque, les voitures ne pouvaient  At that time, cars couldn’t drive
-         pas traverser la ville.                     through the city.
-       Si jeune, il pouvait quand même prendre  So young, he was still able to mak
-         une telle décision!                       such a decision!
-      Après la mort de sa femme, il ne pouvait   After his wife’s death, he could no
-          plus écrire.                               longer write.
+Le modal anglais *would* est l'un des plus riches en nuances :
 
-  When could refers to an idea of the future, a hypothesis, a suggestion, or a
-request, the présent du conditionnel of pouvoir is used.
+### A. Répétition habituelle dans le passé = IMPARFAIT
+Lorsque *would* exprime une coutume passée (*« every Sunday, she would visit »*), on utilise **TOUJOURS l'imparfait** en français :
+- *Quand j'étais étudiant, je lisais les journaux tous les jours.* (Quando eu era estudante, eu lia os jornais todos os dias).
+- *Quand ils étaient adolescents, ils jouaient au volley-ball le jeudi.* (Quando eram adolescentes, jogavam vôlei às quintas-feiras).
+- *Quand nous étions enfants, nos parents nous emmenaient en vacances au Maroc tous les ans.* (Quando éramos crianças, nossos pais nos levavam de férias ao Marrocos todos os anos).
 
-        je pourrais            I could         nous pourrions        we could
-        tu pourrais        you could       vous pourriez           you could
-         il/elle pourrait      he/she could      ils/elles pourraient        they could
+### B. Demande polie = Conditionnel Présent de VOULOIR
+- *« Voudriez-vous bien participer à ce projet ? »* (O senhor gostaria de participar deste projeto ?).
+- *« Voudrais-tu me dire ce qui s'est passé ? »* (Você gostaria de me dizer o que aconteceu ?).
 
-  Note the following examples:
+### C. Refus obstiné dans le passé = Passé Composé Négatif de VOULOIR
+Lorsque *would not* indique un refus déterminé (*« they would not do it »* = *eles não quiseram fazer*), on emploie le passé composé négatif :
+- *Son patron n'a pas voulu le lui donner.* (O chefe dele não quis dar a ele / recusou-se).
+- *Je suis venu le chercher ; il n'a pas voulu venir avec moi.* (Vim buscá-lo; ele não quis vir comigo).
+- *Je lui ai posé la question ; elle n'a pas voulu répondre.* (Fiz-lhe a pergunta; ela não quis responder).
 
-       Pourrais-tu me prêter le livre dont tu m’as Could you lend me the book you tol
-          parlé?                         me about?
-       Pourriez-vous m’expliquer votre méthode Could you explain to me your
-         de travail?                            working method?
-       Je pourrais vous prêter ma voiture.         I could lend you my car.
-         Ils pourraient apprendre à jouer de la    They could learn how to play the
-            clarinette.                                    clarinet.
+### D. Hypothèse avec SI = Conditionnel Présent
+- *Si Emmanuelle était disponible, elle viendrait.* (Se Emmanuelle estivesse disponível, ela viria).
+- *S'ils avaient le choix, ils ne déménageraient pas.* (Se tivessem escolha, não se mudariam).
 
+---
 
-   VOCABULAIRE
+## 4. Vocabulaire Thématique : Les Instruments de Musique
 
+Voici les 27 instruments de musique présentés dans le chapitre 12, accompagnés de leur genre grammatical :
 
- les instruments (m.pl.)            instruments
- l’accordéon (m.)                 accordion
- l’alto (m.)                          viola
- la basse                             string bass; bass guitar
- la batterie                    drums
- les castagnettes (f.pl.)              castanets
- la clarinette                        clarinetle clavecin                       harpsichord
-le cor                          French horn
-la contrebasse                   double bass (= la basse)
-la cymbale                     cymbal
-la flûte                                 flute
-la guitare                          guitar
-la guitare électrique                electric guitar
-l’harmonica (m.)                harmonica
-la harpe                       harp
-le hautbois                    oboe
-le piano                         piano
-le saxophone                   saxophone
-le synthétiseur                     synthesizer
-le tambour                   drum
-le tambourin                    tambourine
-le trombone                    trombone
-la trompette                     trumpet
-le violon                             violin
-le violoncelle                       cello
-le xylophone                    xylophone
-```
+| Instrument | Genre | Traduction Portugais | Équivalent Anglais |
+|---|---|---|---|
+| **les instruments** | nom masculin pluriel | os instrumentos | instruments |
+| **l'accordéon** | nom masculin | o acordeão / sanfona | accordion |
+| **l'alto** | nom masculin | a viola de arco | viola |
+| **la basse** | nom féminin | o contrabaixo / baixo elétrico | string bass / bass guitar |
+| **la batterie** | nom féminin | a bateria | drums |
+| **les castagnettes** | nom féminin pluriel | as castanholas | castanets |
+| **la clarinette** | nom féminin | o clarinete | clarinet |
+| **le clavecin** | nom masculin | o cravo | harpsichord |
+| **le cor** | nom masculin | a trompa | French horn |
+| **la contrebasse** | nom féminin | o contrabaixo | double bass |
+| **la cymbale** | nom féminin | o prato (de percussão) | cymbal |
+| **la flûte** | nom féminin | a flauta | flute |
+| **la guitare** | nom féminin | o violão / a guitarra | guitar |
+| **la guitare électrique** | nom féminin | a guitarra elétrica | electric guitar |
+| **l'harmonica** | nom masculin | a gaita de boca | harmonica |
+| **la harpe** | nom féminin | a harpa | harp |
+| **le hautbois** | nom masculin | o oboé | oboe |
+| **le piano** | nom masculin | o piano | piano |
+| **le saxophone** | nom masculin | o saxofone | saxophone |
+| **le synthétiseur** | nom masculin | o sintetizador / teclado | synthesizer |
+| **le tambour** | nom masculin | o tambor | drum |
+| **le tambourin** | nom masculin | o pandeiro / tamborim | tambourine |
+| **le trombone** | nom masculin | o trombone | trombone |
+| **la trompette** | nom féminin | o trompete / pistom | trumpet |
+| **le violon** | nom masculin | o violino | violin |
+| **le violoncelle** | nom masculin | o violoncelo | cello |
+| **le xylophone** | nom masculin | o xilofone | xylophone |
 
-## Should
-<!-- PDF pages 151–152; source chars 5173–6197 -->
-
-```text
-Should
-When should means ought to, the conditionnel (présent or passé) is used.
-
-        je devrais             I should       j’aurais dû              I should have
-        tu devrais         you should     tu aurais dû         you should have
-         il/elle devrait      he/she should  il/elle aurait dû       he/she should have
-      nous devrions     we should     nous aurions dû     we should have
-      vous devriez      you should    vous auriez dû       you should have
-         ils/elles devraient  they should     ils/elles auraient dû   they should have
-
-  Note the following examples:
-
-       Elle devrait se détendre un peu.       She should relax a bit.
-      Vous devriez aller au concert.         You should go to the concert.
-      Tu aurais dû lui demander des        You should have asked him for
-           explications.                            explanations.     Vous auriez dû l’emmener au festival  You should have taken him to the
-        de musique.                         music festival.
-```
-
-
-
-## Source theory recovered from exercise-boundary parsing
-
-> The paragraphs below were accidentally attached to the last exercise item in the automatic extraction. They are preserved here for learning-content completeness, but paragraph/table formatting and placement require visual editorial review against the PDF.
-
-### After ch12-ex02-q10 (source PDF pages 152,153)
-
-Would When would refers to a repeated action in the past, the imparfait is used. Note the following examples: Quand j’étais étudiant, je lisais les When I was a student, I would read th journaux tous les jours. newspapers every day. Quand ils étaient adolescents, ils When they were teens, they would play jouaient au volley-ball le jeudi. volleyball on Thursdays. When would refers to a polite request, the présent du conditionnel is used. Note the following examples: Voudrais-tu me montrer le chemin? Would you mind showing me the way? Est-ce que tu voudrais bien m’aider à résoudre Could you help me solve that ce problème? problem? When would refers to a specific action in the past, the passé composé of vouloir is used. Note the following examples: Nous leur avons demandé de nous accorder un We asked them to give us a littl peu de temps; ils n’ont pas voulu le faire. time; they would not do it. Je lui ai posé la question plusieurs fois; elle n’a I asked her the question severa pas voulu répondre. times; she would not answe When would refers to an idea of the future, a hypothesis, or a suggestion, the présent du conditionnel of the main verb is used. The imparfait is used in the si clause. Je vous le dirais si je le savais. I would tell you if I knew. Elle serait si heureuse si son amie She would be happy if her friend Clair Claire l’invitait à la Philharmonie de invited her at the Paris Paris. Philharmonie.
+> **Règle essentielle FLE** :
+> On dit **jouer DU piano** (*de + le*), **jouer DE LA guitare**, **jouer DE L'accordéon**, mais **jouer AU tennis**, **jouer AUX cartes** (*à + le/les*).

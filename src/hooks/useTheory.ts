@@ -74,6 +74,12 @@ import {
   CHAPTER_11_EXERCISE_SETS
 } from '@/data/chapter11Data';
 
+import {
+  CHAPTER_12_THEORY_MARKDOWN,
+  CHAPTER_12_TOPICS,
+  CHAPTER_12_EXERCISE_SETS
+} from '@/data/chapter12Data';
+
 const CH01_FALLBACK_THEORY: ChapterTheoryData = {
   chapter: {
     id: 'ch01',
@@ -316,6 +322,28 @@ const CH11_FALLBACK_THEORY: ChapterTheoryData = {
   exerciseSets: CHAPTER_11_EXERCISE_SETS
 };
 
+const CH12_FALLBACK_THEORY: ChapterTheoryData = {
+  chapter: {
+    id: 'ch12',
+    number: 12,
+    title: 'Could, should, would?',
+    slug: 'could-should-would',
+    world_number: 2,
+    world_name: 'Mundo 2: Les Temps du Passé',
+    page_range: '148–157',
+    topics_count: 3,
+    exercise_groups_count: 6,
+    total_questions: 55,
+    theory_markdown: CHAPTER_12_THEORY_MARKDOWN,
+    release_id: null,
+    editorial_status: 'published',
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+  },
+  topics: CHAPTER_12_TOPICS,
+  exerciseSets: CHAPTER_12_EXERCISE_SETS
+};
+
 function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch01') return CH01_FALLBACK_THEORY;
   if (chapterId === 'ch02') return CH02_FALLBACK_THEORY;
@@ -328,6 +356,7 @@ function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch09') return CH09_FALLBACK_THEORY;
   if (chapterId === 'ch10') return CH10_FALLBACK_THEORY;
   if (chapterId === 'ch11') return CH11_FALLBACK_THEORY;
+  if (chapterId === 'ch12') return CH12_FALLBACK_THEORY;
   return null;
 }
 
@@ -409,6 +438,8 @@ export function useTheory(chapterId?: string) {
           ? CHAPTER_10_THEORY_MARKDOWN
           : chapterId === 'ch11'
           ? CHAPTER_11_THEORY_MARKDOWN
+          : chapterId === 'ch12'
+          ? CHAPTER_12_THEORY_MARKDOWN
           : (chapterData as Chapter).theory_markdown;
 
         return {
