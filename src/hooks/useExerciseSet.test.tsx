@@ -1071,4 +1071,124 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
     expect(data?.questions[5].prompt).toBe('Dès que j’aurai terminé l’enregistrement, je vous (envoyer) ___ un CD.');
     expect(data?.questions[5].accepted_answers).toContain('enverrai');
   });
+
+  // ─── Tests Chapitre 10 (Le Plus-que-parfait) ───────────────────────────
+  it('charge la série 10.1 avec 10 questions régulières de conjugaison (fill_blank)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch10-ex01'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('Je (dîner) ___ place d’Italie.');
+    expect(data?.questions[0].accepted_answers).toContain("J'avais dîné");
+    expect(data?.questions[3].prompt).toBe('Elles (arriver) ___ à la réception en retard.');
+    expect(data?.questions[3].accepted_answers).toContain('étaient arrivées');
+    expect(data?.questions[8].prompt).toBe('Je (obtenir) ___ un nouveau poste.');
+    expect(data?.questions[8].accepted_answers).toContain("J'avais obtenu");
+    expect(data?.questions[9].prompt).toBe('Il (boire) ___ un très bon vin.');
+    expect(data?.questions[9].accepted_answers).toContain('avait bu');
+  });
+
+  it('charge la série 10.2 avec 10 verbes pronominaux et accords (fill_blank)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch10-ex02'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[1].prompt).toBe('Nous (se réveiller) ___ à l’aube.');
+    expect(data?.questions[1].accepted_answers).toContain('nous étions réveillés');
+    expect(data?.questions[3].prompt).toBe('Elle (s’habiller) ___ pour la soirée.');
+    expect(data?.questions[3].accepted_answers).toContain("s'était habillée");
+    expect(data?.questions[5].prompt).toBe('Louise et Julie (se coucher) ___ tard.');
+    expect(data?.questions[5].accepted_answers).toContain("s'étaient couchées");
+    // Q10: s'écrire -> accord interdit (COI) !
+    expect(data?.questions[9].prompt).toBe('Elles (s’écrire) ___ pendant des années.');
+    expect(data?.questions[9].accepted_answers).toContain("s'étaient écrit");
+  });
+
+  it('charge la série 10.3 avec 10 phrases d\'antériorité contextuelle (fill_blank)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch10-ex03'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('Il était en retard car sa voiture (tomber) ___ en panne sur l’autoroute.');
+    expect(data?.questions[0].accepted_answers).toContain('était tombée');
+    expect(data?.questions[2].prompt).toBe('Elle a pensé que je (ne pas expliquer) ___ la situation.');
+    expect(data?.questions[2].accepted_answers).toContain("n'avais pas expliqué");
+    expect(data?.questions[3].prompt).toBe('Il a refusé de prendre le médicament que le médecin (prescrire) ___ .');
+    expect(data?.questions[3].accepted_answers).toContain('avait prescrit');
+    expect(data?.questions[5].prompt).toBe('Lorsque Lucie est arrivée, Paul (partir) ___ .');
+    expect(data?.questions[5].accepted_answers).toContain('était parti');
+  });
+
+  it('charge la série 10.4 avec 5 associations logiques de correspondance (matching)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch10-ex04'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('matching');
+    expect(data?.questions).toHaveLength(5);
+    expect(data?.questions[0].prompt).toBe('Il avait commandé un sandwich');
+    expect(data?.questions[0].accepted_answers).toContain('d');
+    expect(data?.questions[1].prompt).toBe('Il était arrivé en retard');
+    expect(data?.questions[1].accepted_answers).toContain('c');
+    expect(data?.questions[2].prompt).toBe('Il avait perdu son carnet d’adresses');
+    expect(data?.questions[2].accepted_answers).toContain('e');
+    expect(data?.questions[3].prompt).toBe('Il avait échoué à son examen');
+    expect(data?.questions[3].accepted_answers).toContain('b');
+    expect(data?.questions[4].prompt).toBe('Il avait beaucoup souffert');
+    expect(data?.questions[4].accepted_answers).toContain('a');
+  });
+
+  it('charge la série 10.5 avec 10 expressions de regret avec Si seulement (sentence_rewrite)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch10-ex05'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('(vous) (ne pas être) en retard');
+    expect(data?.questions[0].accepted_answers).toContain("Si seulement vous n'aviez pas été en retard !");
+    expect(data?.questions[1].prompt).toBe('(tu) (étudier) le français plus jeune');
+    expect(data?.questions[1].accepted_answers).toContain("Si seulement tu avais étudié le français plus jeune !");
+    expect(data?.questions[3].prompt).toBe('(elle) (rester) plus longtemps');
+    expect(data?.questions[3].accepted_answers).toContain("Si seulement elle était restée plus longtemps !");
+  });
+
+  it('charge la série 10.6 avec 10 traductions actives (translation)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch10-ex06'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('translation');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('He took the medicine the doctor had prescribed.');
+    expect(data?.questions[0].accepted_answers).toContain('Il a pris le médicament que le médecin avait prescrit.');
+    expect(data?.questions[1].prompt).toBe('She knew they had made a mistake.');
+    expect(data?.questions[1].accepted_answers).toContain("Elle savait qu'ils avaient fait une erreur.");
+    expect(data?.questions[5].prompt).toBe('If only he had not been late!');
+    expect(data?.questions[5].accepted_answers).toContain("Si seulement il n'avait pas été en retard !");
+  });
 });

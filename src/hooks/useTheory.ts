@@ -62,6 +62,12 @@ import {
   CHAPTER_09_EXERCISE_SETS
 } from '@/data/chapter09Data';
 
+import {
+  CHAPTER_10_THEORY_MARKDOWN,
+  CHAPTER_10_TOPICS,
+  CHAPTER_10_EXERCISE_SETS
+} from '@/data/chapter10Data';
+
 const CH01_FALLBACK_THEORY: ChapterTheoryData = {
   chapter: {
     id: 'ch01',
@@ -260,6 +266,28 @@ const CH09_FALLBACK_THEORY: ChapterTheoryData = {
   exerciseSets: CHAPTER_09_EXERCISE_SETS
 };
 
+const CH10_FALLBACK_THEORY: ChapterTheoryData = {
+  chapter: {
+    id: 'ch10',
+    number: 10,
+    title: 'The plus-que-parfait',
+    slug: 'the-plus-que-parfait',
+    world_number: 2,
+    world_name: 'Mundo 2: Les Temps du Passé',
+    page_range: '126–133',
+    topics_count: 3,
+    exercise_groups_count: 6,
+    total_questions: 55,
+    theory_markdown: CHAPTER_10_THEORY_MARKDOWN,
+    release_id: null,
+    editorial_status: 'published',
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+  },
+  topics: CHAPTER_10_TOPICS,
+  exerciseSets: CHAPTER_10_EXERCISE_SETS
+};
+
 function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch01') return CH01_FALLBACK_THEORY;
   if (chapterId === 'ch02') return CH02_FALLBACK_THEORY;
@@ -270,6 +298,7 @@ function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch07') return CH07_FALLBACK_THEORY;
   if (chapterId === 'ch08') return CH08_FALLBACK_THEORY;
   if (chapterId === 'ch09') return CH09_FALLBACK_THEORY;
+  if (chapterId === 'ch10') return CH10_FALLBACK_THEORY;
   return null;
 }
 
@@ -347,6 +376,8 @@ export function useTheory(chapterId?: string) {
           ? CHAPTER_08_THEORY_MARKDOWN
           : chapterId === 'ch09'
           ? CHAPTER_09_THEORY_MARKDOWN
+          : chapterId === 'ch10'
+          ? CHAPTER_10_THEORY_MARKDOWN
           : (chapterData as Chapter).theory_markdown;
 
         return {

@@ -1,145 +1,138 @@
 # Chapter 10 — The plus-que-parfait
 
-> Automatically extracted from the source PDF. Text and bilingual columns must be checked visually before use in interactive lessons.
-> Literal source snapshots are preserved in `source-pages/`; a full source mirror is in `theory-source.md`.
+> [!TIP]
+> ### 👨‍🏫 Dica do Professor de Francês (FLE) : Regras de Ouro do Plus-que-parfait
+> 1. **O Sentido Essencial : O Passado do Passado (Antériorité)** :
+>    - O *plus-que-parfait* equivale exatamente ao **pretérito mais-que-perfeito composto** em português (*eu tinha falado / havia falado*).
+>    - Ele expressa uma ação concluída no passado que aconteceu **antes** de outra ação passada :
+>      - *« Lorsque Lucie est arrivée (passé composé, ação 2), Paul **était** déjà **parti** (plus-que-parfait, ação 1 anterior). »*
+>      - *« Il était fatigué (imparfait) parce qu'il **n'avait dormi** que cinq heures (plus-que-parfait anterior). »*
+> 2. **A Fórmula de Construção : Auxiliar no Imparfait + Particípio Passado** :
+>    - Diferente do *passé composé* (que usa os auxiliares no presente), o *plus-que-parfait* usa os auxiliares **AVOIR** ou **ÊTRE conjugados no IMPARFAIT** :
+>      - **AVOIR** : *j'avais, tu avais, il/elle/on avait, nous avions, vous aviez, ils/elles avaient* + particípio.
+>      - **ÊTRE** : *j'étais, tu étais, il/elle/on était, nous étions, vous étiez, ils/elles étaient* + particípio.
+> 3. **Quando usar ÊTRE ? As Duas Regras Claras** :
+>    - A imensa maioria dos verbos franceses usa o auxiliar **avoir**.
+>    - Usa-se **être** unicamente para :
+>      a) Os verbos de movimento e mudança de estado da *Maison d'Être* (*aller, venir, partir, arriver, entrer, sortir, monter, descendre, naître, mourir, rester, tomber, retourner, passer*).
+>      b) **TODOS os verbos pronominais / reflexivos** (*se réveiller, s'habiller, se promener, se coucher, etc.*).
+> 4. **Concordância do Particípio Passado com ÊTRE (Accord)** :
+>    - Com o auxiliar **être**, o particípio passado concorda obrigatoriamente em **gênero e número com o sujeito** :
+>      - *Elle était partie* (+e feminino singular)
+>      - *Elles étaient arrivées* (+es feminino plural)
+>      - *Nous étions réveillés / réveillées* (+s ou +es plural)
+> 5. **A Grande Pegadinha FLE dos Verbos Pronominais (Exercício 10.2, Q10)** :
+>    - Com verbos pronominais, o particípio **NÃO concorda** se o pronome reflexivo for objeto indireto (COI) :
+>      - Em francês, diz-se *écrire **à** quelqu'un* (objeto indireto).
+>      - Logo, na frase : *« Elles s'étaient **écrit** pendant des années »*, o particípio fica **invariável** (sem "e", sem "s") !
+> 6. **A Armadilha de Tradução Francês vs Português/Inglês** :
+>    - Em português e inglês, muitas vezes usamos dois passados simples na mesma frase (*"Ele tomou o remédio que o médico receitou" / "He took the medicine the doctor prescribed"*).
+>    - Em francês, se duas ações passadas não forem simultâneas, a anterioridade exige **OBRIGATORIAMENTE** o *plus-que-parfait* :
+>      - ❌ *Il a pris le médicament que le médecin a prescrit.*
+>      - ✅ **Il a pris le médicament que le médecin avait prescrit.**
+> 7. **Lamento e Desejo : « Si seulement... » + Plus-que-parfait** :
+>    - A estrutura *« Si seulement... »* acompanhada de *plus-que-parfait* expressa arrependimento, lamento ou desejo nostálgico (*"Se ao menos...", "Quem dera..."*) :
+>      - *« Si seulement vous n'aviez pas été en retard ! »* (Se ao menos vocês não tivessem se atrasado !)
+>      - *« Si seulement il était allé chez le médecin plus tôt ! »* (Quem dera ele tivesse ido ao médico mais cedo !)
+>      - *Atenção à elisão :* diante de *il/ils*, o *si* elide (*s'il*). Diante de *tu* ou *elle*, não elide (*si tu avais...*, *si elle était...*).
 
-## Source theory segment 1
-<!-- PDF pages 126–127; source chars 0–1492 -->
+---
 
-```text
-•10•
+## 1. Formation du Plus-que-parfait
 
-       The plus-que-parfait
+Pour former le plus-que-parfait, on conjugue l'auxiliaire **avoir** ou **être** à l'**imparfait**, auquel on ajoute le **participe passé** du verbe principal.
 
+### A. Imparfait des Deux Auxiliaires
 
+| Pronom Sujet | Auxiliaire ÊTRE (à l'imparfait) | Auxiliaire AVOIR (à l'imparfait) |
+|---|---|---|
+| **J' / Je** | j'**étais** | j'**avais** |
+| **Tu** | tu **étais** | tu **avais** |
+| **Il / Elle / On** | il / elle **était** | il / elle **avait** |
+| **Nous** | nous **étions** | nous **avions** |
+| **Vous** | vous **étiez** | vous **aviez** |
+| **Ils / Elles** | ils / elles **étaient** | ils / elles **avaient** |
 
+### B. Exemples Fondamentaux
 
-The plus-que-parfait (pluperfect) indicates a past action that happened before
-another past action started (in English, had done). It can be seen as “past” past tense.
+- **Finir** (*avoir*) : *Il **avait toujours fini** avant les autres.* (Ele sempre tinha terminado antes dos outros).
+- **Oublier** (*avoir*) : *Tu **avais oublié** l'anniversaire de ta meilleure amie.* (Você tinha esquecido o aniversário da sua melhor amiga).
+- **Pouvoir** (*avoir, forme négative*) : *Il **n'avait pas pu** les joindre.* (Ele não tinha conseguido contatá-los).
+- **Partir** (*être, accord féminin*) : *Elle **était partie** sans laisser d'adresse.* (Ela tinha partido sem deixar endereço).
 
-Formation of the plus-que-parfait
-To form the plus-que-parfait, use the forms of avoir or être in the imparfait + the
-past participle of the main verb.
-   Let’s review the imparfait of the auxiliaries être and avoir:
+---
 
-        être to be
-         j’étais               I was           nous étions           we were
-        tu étais          you were        vous étiez             you were
-          il/elle était        he/she was         ils/elles étaient          they were
+## 2. Vocabulaire Fondamental : La Santé et la Pharmacie
 
-       avoir to have
-        j’avais                I had           nous avions           we had
-        tu avais          you had         vous aviez              you had
-          il/elle avait        he/she had         ils/elles avaient           they had
+Voici les termes indispensables issus du chapitre 10 pour comprendre et réussir l'ensemble des exercices :
 
-          Il avait toujours fini avant les autres.    He had always finished before the
-                                                       others.
-      Tu avais oublié l’anniversaire de ta      You had forgotten your best friend’s
-          meilleure amie.                            birthday.
-          Il n’avait pas pu les joindre.          He had not been able to reach them
-       Elle était partie sans laisser d’adresse.    She had departed without leaving a
-                                                    address.
-```
+| Terme Français | Traduction en Portugais | Équivalent Anglais | Notes & Genre |
+|---|---|---|---|
+| **une pharmacie** | farmácia | a pharmacy | nom féminin |
+| **un pharmacien, une pharmacienne** | farmacêutico, farmacêutica | a pharmacist | nom masc. / fém. |
+| **une ordonnance** | receita médica | a prescription | nom féminin |
+| **un médicament** | medicamento, remédio | medicine, medication | nom masculin |
+| **un remède** | remédio, solução curativa | a remedy | nom masculin |
+| **un sirop** | xarope | a syrup | nom masculin |
+| **un traitement** | tratamento | a treatment | nom masculin |
+| **des contre-indications** | contraindicações | contraindications | féminin pluriel |
+| **des effets secondaires** | efeitos colaterais | side effects | masculin pluriel |
+| **un cachet d'aspirine** | comprimido de aspirina | an aspirin tablet | nom masculin |
+| **une gélule** | cápsula | a capsule | nom féminin |
+| **un analgésique** | analgésico | a painkiller | nom masculin |
+| **une toux** | tosse | a cough | nom féminin |
+| **tousser** | tossir | to cough | verbe régulier en -er |
+| **avoir un rhume** | estar resfriado(a) | to have a cold | expression avec avoir |
+| **avoir la grippe** | estar com gripe | to have the flu | expression avec avoir |
+| **avoir mal à la tête** | estar com dor de cabeça | to have a headache | à la + nom fém. |
+| **avoir mal au dos** | estar com dor nas costas | to have a backache | au (à + le) + nom masc. |
+| **avoir mal au ventre** | estar com dor de barriga | to have a stomachache | au + nom masc. |
+| **être allergique** | ser / estar alérgico(a) | to be allergic | adjectif variable |
+| **une douleur** | uma dor | a pain, an ache | nom féminin |
+| **souffrir** | sofrer | to suffer | part. passé : *souffert* |
+| **conseiller** | aconselhar, recomendar | to advise | conseiller qch à qqn |
 
-## Source theory segment 2
-<!-- PDF pages 127–128; source chars 2120–4053 -->
+---
 
-```text
-VOCABULAIRE
+## 3. Les Verbes Pronominaux au Plus-que-parfait
 
+Tous les verbes pronominaux (verbes avec *se*) se conjuguent avec l'auxiliaire **être** :
 
-une pharmacie                        a pharmacy
-un pharmacien, une pharmacienne       a pharmacist
-une ordonnance                       a prescription
-un médicament                           medicine, a medication
-un remède                            a remedy
-un sirop                              a syrup
-un traitement                         a treatment
-des contre-indications (f.pl.)                contraindications
-des effets secondaires (m.pl.)                side effects
-un cachet d’aspirine                   an aspirin tablet
-une gélule                            a capsule
-un analgésique                        a painkiller une toux                             a cough
- tousser                                       to cough
- avoir un rhume                              to have a cold
- avoir la grippe                               to have the flu
- avoir mal à la tête                            to have a headache
- avoir mal au dos                             to have a backache
- avoir mal au ventre                          to have a stomachache
- être allergique                               to be allergic
- une douleur                          a pain, an ache
- souffrir                                       to suffer
- conseiller                                     to advise
+$$\textbf{Sujet} + \textbf{Pronom réfléchi} + \textbf{ÊTRE (imparfait)} + \textbf{Participe passé}$$
 
+- **S'évanouir** : *Je **m'étais évanouie** dans la pharmacie.* (Eu tinha desmaiado na farmácia).
+- **Se promener** : *Vous **vous étiez promenés** le long du canal Saint-Martin.*
+- **S'embrasser** : *Nous **nous étions embrassés** sur le Pont-Neuf.*
+- **Se souvenir** : *Il **s'était souvenu** de cet incident avant de revoir son ancienne amie.*
 
+> [!WARNING]
+> ### ⚠️ Accord du Participe Passé : Le Cas de « S'écrire »
+> - *Ils se sont rencontrés* ➔ *rencontrer quelqu'un* (COD) ➔ accord masculin pluriel (-s).
+> - *Elles s'étaient **écrit*** ➔ *écrire **à** quelqu'un* (COI) ➔ **PAS d'accord** ! Le participe reste invariable.
 
-   In the plus-que-parfait, all pronominal verbs are conjugated with être and agree
-in gender and number with the subject.
+---
 
-      Je m’étais évanouie dans la             I had fainted in the pharmacy.
-          pharmacie.
-      Vous vous étiez promenés le long du You had walked along the Saint-Martin
-          canal Saint-Martin.                   canal.
-      Nous nous étions embrassés sur le  We had kissed on the Pont-Neuf.
-          Pont-Neuf.
-         Il s’était souvenu de cet incident    He had remembered this incident befor
-          avant de revoir son ancienne amie.    seeing his former girlfriend again.
-```
+## 4. L'Emploi en Contexte : Antériorité et Subordonnées
 
-## Use of the plus-que-parfait
-<!-- PDF pages 129–129; source chars 4718–5311 -->
+Le plus-que-parfait est quasi systématiquement employé en relation avec un autre temps du passé (*passé composé* ou *imparfait*) :
 
-```text
-Use of the plus-que-parfait
-As we mentioned earlier, the plus-que-parfait (pluperfect) indicates a past action
-that happened before another past action started. This anteriority can be implied or
-stated. For example, within some sentences in the plus-que-parfait, this anteriority
-is made explicit in the dependent clause.
+1. **Avec des conjonctions de cause (*parce que, car, comme*)** :
+   - *Elle avait faim parce qu'elle **n'avait pas eu** le temps de déjeuner.*
+   - *Comme il **n'avait pas pris** d'analgésique, il a souffert pendant des heures.*
+2. **Avec des subordonnées relatives (*que*)** :
+   - *Léa a pris le médicament que le médecin lui **avait prescrit**.*
+   - *Elle a eu une réaction allergique au médicament qu'elle **avait pris**.*
+3. **Avec des marqueurs temporels (*lorsque, quand*)** :
+   - *Lorsque Lucie est arrivée, Paul **était déjà parti**.*
 
-       Je ne m’étais pas rendu compte que        I had not realized I was sick.
-            j’étais malade.
-       Elle avait faim parce qu’elle n’avait pas eu She was hungry because she had n
-            le temps de déjeuner.                  had time for lunch.
-```
+---
 
-## Don’t be misled by the English language
-<!-- PDF pages 130–131; source chars 6753–8937 -->
+## 5. L'Expression du Regret : « Si seulement » + Plus-que-parfait
 
-```text
-Don’t be misled by the English language
-Sometimes in English the past tense is used in two clauses, even when the two past
-actions are clearly not simultaneous. This is never allowed in French: the anterior of
-the two past actions must always be in the plus-que-parfait.
+Pour exprimer un regret ou un souhait rétrospectif sur un événement passé qui ne s'est pas produit :
 
-      Léa a dû prendre le médicament que le Léa had to take the medicine the docto
-         médecin lui avait prescrit.            (had) prescribed for her.       Elle a eu une réaction allergique au    She had an allergic reaction to the
-         médicament qu’elle avait pris.        medicine she took (had taken).
+$$\textbf{Si seulement} + \textbf{Sujet} + \textbf{Plus-que-parfait} \ !$$
 
-   In Chapter 1, you studied depuis with the present tense. In Chapter 8, you studied
-depuis with the imparfait. Let’s review a few examples.
-
-         Ils dînent dans ce restaurant thaïlandais  They have been dining at this Thai
-         depuis des années.                      restaurant for years.
-         Ils dînaient dans ce restaurant thaïlandais They had been dining at this Thai
-         depuis des années quand ils ont         restaurant for years when they
-         décidé d’essayer le restaurant d’en       decided to try the restaurant acro
-           face.                                     the street.
-       Elle prend de la vitamine C depuis des  She has been taking vitamin C for
-         mois.                                 months.
-       Elle prenait de la vitamine C depuis des She had been taking vitamin C for
-        mois quand le médecin lui a dit de      months when the doctor told her
-          prendre aussi du calcium.                take calcium also.
-
-  The plus-que-parfait, when used with si seulement, expresses a wish or regret
-about past events.
-
-       Si seulement il n’avait pas attrapé un      If only he had not caught a cold!
-         rhume!
-       Si seulement il était allé chez le médecin   If only he had gone to the doctor’s
-          plus tôt!                                     earlier!
-       Si seulement elle n’avait pas raté son       If only she had not failed her exam
-         examen!
-       Si seulement vous aviez pu être parmi      If only you had been able to be wit
-         nous!                                      us!
-```
-
+- *Si seulement il **n'avait pas attrapé** un rhume !* (Se ao menos ele não tivesse pegado um resfriado !)
+- *Si seulement il **était allé** chez le médecin plus tôt !* (Quem dera ele tivesse ido ao médico mais cedo !)
+- *Si seulement vous **aviez pu être** parmi nous !* (Se ao menos vocês tivessem podido estar conosco !)

@@ -589,13 +589,13 @@
       "topic_ids": [
         "ch10-t02"
       ],
-      "instruction": "Faire correspondre les deux colonnes. ______",
+      "instruction": "Faire correspondre les deux colonnes.",
       "interaction_type": "matching",
       "questions": [
         {
           "id": "ch10-ex04-q01",
           "number": 1,
-          "prompt": "Il avait commandé un a. car il avait mal au dos sandwich __",
+          "prompt": "Il avait commandé un sandwich",
           "source_raw_prompt": "Il avait commandé un          a. car il avait mal au dos\n    sandwich\n\n ______ ",
           "pdf_pages": [
             130
@@ -603,7 +603,9 @@
           "answer": {
             "source_key": "d",
             "accepted": [
-              "d"
+              "d",
+              "parce qu’il avait faim",
+              "parce qu'il avait faim"
             ],
             "review_status": "publisher_source_not_independently_regraded"
           },
@@ -615,7 +617,7 @@
         {
           "id": "ch10-ex04-q02",
           "number": 2,
-          "prompt": "Il était arrivé en retard b. car il n’avait pas assez étudié __",
+          "prompt": "Il était arrivé en retard",
           "source_raw_prompt": "Il était arrivé en retard        b. car il n’avait pas assez étudié\n\n ______ ",
           "pdf_pages": [
             130
@@ -623,7 +625,9 @@
           "answer": {
             "source_key": "c",
             "accepted": [
-              "c"
+              "c",
+              "en raison d’une panne",
+              "en raison d'une panne"
             ],
             "review_status": "publisher_source_not_independently_regraded"
           },
@@ -635,7 +639,7 @@
         {
           "id": "ch10-ex04-q03",
           "number": 3,
-          "prompt": "Il avait perdu son carnet c. en raison d’une panne d’adresses __",
+          "prompt": "Il avait perdu son carnet d’adresses",
           "source_raw_prompt": "Il avait perdu son carnet       c. en raison d’une panne\n    d’adresses\n\n ______ ",
           "pdf_pages": [
             130
@@ -643,7 +647,9 @@
           "answer": {
             "source_key": "e",
             "accepted": [
-              "e"
+              "e",
+              "et il n’avait pas pu nous téléphoner",
+              "et il n'avait pas pu nous téléphoner"
             ],
             "review_status": "publisher_source_not_independently_regraded"
           },
@@ -655,7 +661,7 @@
         {
           "id": "ch10-ex04-q04",
           "number": 4,
-          "prompt": "Il avait échoué à son examen d. parce qu’il avait faim __",
+          "prompt": "Il avait échoué à son examen",
           "source_raw_prompt": "Il avait échoué à son examen d. parce qu’il avait faim\n\n ______ ",
           "pdf_pages": [
             130
@@ -663,7 +669,9 @@
           "answer": {
             "source_key": "b",
             "accepted": [
-              "b"
+              "b",
+              "car il n’avait pas assez étudié",
+              "car il n'avait pas assez étudié"
             ],
             "review_status": "publisher_source_not_independently_regraded"
           },
@@ -675,7 +683,7 @@
         {
           "id": "ch10-ex04-q05",
           "number": 5,
-          "prompt": "Il avait beaucoup souffert e. et il n’avait pas pu nous téléphoner",
+          "prompt": "Il avait beaucoup souffert",
           "source_raw_prompt": "Il avait beaucoup souffert     e. et il n’avait pas pu nous\n                                           téléphoner",
           "pdf_pages": [
             130,
@@ -684,13 +692,14 @@
           "answer": {
             "source_key": "a",
             "accepted": [
-              "a"
+              "a",
+              "car il avait mal au dos"
             ],
             "review_status": "publisher_source_not_independently_regraded"
           },
           "parallel_option": {
             "label": "e",
-            "text": "et il n’avait pas pu nous"
+            "text": "et il n’avait pas pu nous téléphoner"
           }
         }
       ],
@@ -726,7 +735,7 @@
         },
         {
           "label": "e",
-          "text": "et il n’avait pas pu nous"
+          "text": "et il n’avait pas pu nous téléphoner"
         }
       ]
     },

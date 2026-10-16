@@ -787,4 +787,87 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
     expect(topics[1].id).toBe('ch09-t02');
     expect(topics[2].id).toBe('ch09-t03');
   });
+
+  it('fournit la théorie pédagogique complète et rigoureuse pour ch10 (le plus-que-parfait)', async () => {
+    const { result } = renderHook(() => useTheory('ch10'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data).toBeDefined();
+    expect(data?.chapter.number).toBe(10);
+    expect(data?.chapter.title).toBe('The plus-que-parfait');
+    expect(data?.chapter.page_range).toBe('126–133');
+
+    // Valide le contenu pédagogique FLE pour lusophones
+    const markdown = data?.chapter.theory_markdown || '';
+    expect(markdown).toContain("Antériorité");
+    expect(markdown).toContain("Auxiliaires");
+    expect(markdown).toContain("Maison d'Être");
+    expect(markdown).toContain("Accord");
+    expect(markdown).toContain("S'écrire");
+    expect(markdown).toContain("Si seulement");
+    expect(markdown).toContain("pharmacie");
+  });
+
+  it('charge les 6 séries d exercices officielles du Chapitre 10 avec les bons types d interaction', async () => {
+    const { result } = renderHook(() => useTheory('ch10'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const sets = result.current.data?.exerciseSets || [];
+    expect(sets).toHaveLength(6);
+
+    // 10.1: Conjugaison régulière -> fill_blank (10)
+    expect(sets[0].id).toBe('ch10-ex01');
+    expect(sets[0].interaction_type).toBe('fill_blank');
+    expect(sets[0].questions_count).toBe(10);
+
+    // 10.2: Verbes pronominaux et accords -> fill_blank (10)
+    expect(sets[1].id).toBe('ch10-ex02');
+    expect(sets[1].interaction_type).toBe('fill_blank');
+    expect(sets[1].questions_count).toBe(10);
+
+    // 10.3: Antériorité dans les phrases complexes -> fill_blank (10)
+    expect(sets[2].id).toBe('ch10-ex03');
+    expect(sets[2].interaction_type).toBe('fill_blank');
+    expect(sets[2].questions_count).toBe(10);
+
+    // 10.4: Cause et conséquence -> matching (5)
+    expect(sets[3].id).toBe('ch10-ex04');
+    expect(sets[3].interaction_type).toBe('matching');
+    expect(sets[3].questions_count).toBe(5);
+
+    // 10.5: Si seulement -> sentence_rewrite (10)
+    expect(sets[4].id).toBe('ch10-ex05');
+    expect(sets[4].interaction_type).toBe('sentence_rewrite');
+    expect(sets[4].questions_count).toBe(10);
+
+    // 10.6: Traduction active -> translation (10)
+    expect(sets[5].id).toBe('ch10-ex06');
+    expect(sets[5].interaction_type).toBe('translation');
+    expect(sets[5].questions_count).toBe(10);
+
+    // Total questions check
+    const totalQ = sets.reduce((acc, s) => acc + s.questions_count, 0);
+    expect(totalQ).toBe(55);
+  });
+
+  it('fournit les 3 sujets principaux du chapitre 10', async () => {
+    const { result } = renderHook(() => useTheory('ch10'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const topics = result.current.data?.topics || [];
+    expect(topics).toHaveLength(3);
+    expect(topics[0].id).toBe('ch10-t01');
+    expect(topics[1].id).toBe('ch10-t02');
+    expect(topics[2].id).toBe('ch10-t03');
+  });
 });

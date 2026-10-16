@@ -47,6 +47,11 @@ import {
   CHAPTER_09_QUESTIONS_MAP
 } from '@/data/chapter09Data';
 
+import {
+  CHAPTER_10_EXERCISE_SETS,
+  CHAPTER_10_QUESTIONS_MAP
+} from '@/data/chapter10Data';
+
 export interface ExerciseSetWithQuestions {
   exerciseSet: ExerciseSet;
   questions: Question[];
@@ -234,6 +239,26 @@ function getFallbackSet(
       questions: (existingQuestions && existingQuestions.length > 0)
         ? existingQuestions
         : CHAPTER_09_QUESTIONS_MAP[exerciseSetId]
+    };
+  }
+
+  if (CHAPTER_10_QUESTIONS_MAP[exerciseSetId]) {
+    const foundSet = CHAPTER_10_EXERCISE_SETS.find(s => s.id === exerciseSetId) || {
+      id: exerciseSetId,
+      chapter_id: 'ch10',
+      order_index: parseInt(exerciseSetId.split('-ex')[1] || '1', 10),
+      title: `Exercice 10.${parseInt(exerciseSetId.split('-ex')[1] || '1', 10)}`,
+      instruction: 'Exercice de grammaire française.',
+      interaction_type: 'fill_blank',
+      questions_count: CHAPTER_10_QUESTIONS_MAP[exerciseSetId].length,
+      created_at: new Date().toISOString()
+    };
+
+    return {
+      exerciseSet: existingSet || foundSet,
+      questions: (existingQuestions && existingQuestions.length > 0)
+        ? existingQuestions
+        : CHAPTER_10_QUESTIONS_MAP[exerciseSetId]
     };
   }
 

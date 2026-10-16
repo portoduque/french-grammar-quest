@@ -1083,6 +1083,96 @@ export const ChapterPage: React.FC = () => {
                 </div>
               </div>
             </div>
+          ) : chapterNum === 10 ? (
+            <div className="tips-deck">
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">⏳</div>
+                <div className="tip-card-body">
+                  <h3>Antériorité : O Passado do Passado</h3>
+                  <p>
+                    O <em>plus-que-parfait</em> expressa uma ação concluída no passado antes de outro fato passado. Equivale ao pretérito mais-que-perfeito composto do português (<em>tinha feito / havia chegado</em>) :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em>Lorsque Lucie est arrivée (passé composé)...</em><br />
+                    • <em>... Paul <strong>était déjà parti</strong> (plus-que-parfait, ação anterior) !</em><br />
+                    • <em>Il était malade car il <strong>avait trop mangé</strong>.</em>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🏰</div>
+                <div className="tip-card-body">
+                  <h3>Auxiliares no Imparfait : AVOIR vs ÊTRE</h3>
+                  <p>
+                    A regra de ouro de formação : <strong>Auxiliar no IMPARFAIT + Particípio Passado</strong>. A maioria dos verbos usa <em>avoir</em> (<em>j'avais, tu avais...</em>). Usa-se <em>être</em> (<em>j'étais, tu étais...</em>) para :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Verbos da Maison d'Être</strong> (movimento/estado) : <em>aller, venir, arriver, partir, tomber, rester, etc.</em><br />
+                    • <strong>TODOS os verbos pronominais</strong> : <em>se réveiller, s'habiller, se reposer, se demander...</em>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🤝</div>
+                <div className="tip-card-body">
+                  <h3>A Pegadinha de Ouro dos Pronominais : « S'écrire »</h3>
+                  <p>
+                    Com verbos pronominais, o particípio <strong>NÃO CONCORDA</strong> quando o pronome reflexivo for objeto indireto (COI) :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em>Elle s'était <strong>habillée</strong></em> ➔ habiller qqn (COD) ➔ accord féminin (-ée).<br />
+                    • <em>Elles s'étaient <strong>écrit</strong></em> ➔ écrire <strong>À</strong> qqn (COI) ➔ <strong>INVARIABLE</strong> (sans -e ni -s) !
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🩺</div>
+                <div className="tip-card-body">
+                  <h3>Vocabulaire Médical & Expressions avec Avoir</h3>
+                  <p>
+                    Para dores e sensações de saúde, o francês usa <strong>AVOIR MAL À</strong> (com contrações <em>au / à la / aux</em>) :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Avoir mal à la tête</strong> (dor de cabeça), <strong>au dos</strong> (dor nas costas), <strong>au ventre</strong> (dor de barriga)<br />
+                    • <strong>Avoir un rhume</strong> (resfriado), <strong>avoir la grippe</strong> (gripe)<br />
+                    • <strong>Prendre un cachet d'aspirine</strong> / <strong>une gélule</strong> / <strong>un sirop</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">💔</div>
+                <div className="tip-card-body">
+                  <h3>Exprimer le Regret : « Si seulement » + Plus-que-parfait</h3>
+                  <p>
+                    Para exprimir arrependimento ou lamento retrospectivo no passado (« Se ao menos... », « Quem dera... ») :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Si seulement vous n'aviez pas été en retard !</strong><br />
+                    • <strong>Si seulement il était allé chez le médecin plus tôt !</strong><br />
+                    • <em>Règle d'élision :</em> devant <em>il/ils</em> le « si » s'élide (<em>s'il</em>), mais <strong>JAMAIS</strong> devant <em>tu</em> ou <em>elle</em> (<em>Si seulement tu avais...</em>).
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🎯</div>
+                <div className="tip-card-body">
+                  <h3>Anterioridade Obrigatória (A Armadilha de Tradução)</h3>
+                  <p>
+                    Em português e inglês dizemos : <em>« Ele tomou o remédio que o médico receitou »</em>. Em francês, o segundo passado anterior é <strong>OBRIGATÓRIO no plus-que-parfait</strong> :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    ❌ <em>*Il a pris le médicament que le médecin a prescrit.</em><br />
+                    ✅ <strong>Il a pris le médicament que le médecin avait prescrit.</strong><br />
+                    • <em>Elle a pensé que je <strong>n'avais pas expliqué</strong> la situation.</em>
+                  </div>
+                </div>
+              </div>
+            </div>
           ) : (
             <div className="tips-deck">
               <div className="tip-card card card-default">
