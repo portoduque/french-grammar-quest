@@ -1,296 +1,194 @@
 # Chapter 14 — The infinitive mood
 
-> Automatically extracted from the source PDF. Text and bilingual columns must be checked visually before use in interactive lessons.
-> Literal source snapshots are preserved in `source-pages/`; a full source mirror is in `theory-source.md`.
+L'**infinitif** est une forme verbale non conjuguée qui exprime le sens fondamental du verbe, sans marque de personne ni de nombre. En français, il joue un rôle syntaxique majeur et s'utilise bien plus fréquemment qu'en anglais ou en portugais.
 
-## The infinitif présent
-<!-- PDF pages 173–175; source chars 0–3881 -->
+---
 
-```text
-•14•
+## 1. L'Infinitif Présent
 
-        The infinitive mood
+### A. L'Infinitif comme Sujet du Verbe
+En français, un infinitif (ou une proposition infinitive) peut être le **sujet** direct d'un verbe. En anglais, on utilise généralement le gérondif (*-ing*), tandis qu'en portugais on utilise également l'infinitif :
+- ***Faire la cuisine** est son passe-temps favori.* (Cozinhar é seu passatempo favorito.)
+- ***Suivre des cours de cuisine** est amusant.* (Fazer aulas de culinária é divertido.)
+- ***Voyager par le train** est rapide.* (Viajar de trem é rápido.)
+- ***Apprendre une langue étrangère** est très utile.* (Aprender uma língua estrangeira é muito útil.)
 
+### B. Instructions Générales, Recettes et Avis Publics
+L'infinitif remplace souvent l'impératif dans les règlements, ordonnances médicales, modes d'emploi et livres de cuisine professionnels :
+- *Prendre une fois par jour.* (Tomar uma vez ao dia.)
+- *Ne pas se pencher par la fenêtre.* (Não se debruçar na janela.)
+- *Ne pas marcher sur la pelouse.* (Não pise na grama.)
+- *Lire le mode d'emploi avant utilisation.* (Ler o manual de instruções antes do uso.)
+- *Hacher le persil.* (Picar a salsinha.)
+- *Farcir la dinde.* (Rechear o peru.)
+- *Râper une demi-livre de fromage.* (Ralar 250g de queijo.)
+- *Pocher le poisson.* (Pocar o peixe.)
 
+### C. La Règle d'Or de la Négation à l'Infinitif
+> [!IMPORTANT]
+> **Règle absolue :** Lorsque le verbe est à l'infinitif, les deux éléments de la négation (**ne pas**, **ne jamais**, **ne rien**) restent **groupés et placés DEVANT le verbe**, sans le séparer :
+> - *Il a promis de **ne pas ajouter** trop d'ail.* (Ele prometeu não adicionar muito alho.)
+> - *Je lui ai demandé de **ne pas faire frire** le poisson.*
+> - *Elle m'a dit de **ne pas mettre** d'huile.*
+> - *Je lui ai conseillé de **ne pas mettre** le gâteau au four avant midi.*
+> - *Il a décidé de **ne rien dire**.*
 
-The infinitif présent
-You will come across the infinitif, the infinitive mood, on many occasions. It is used
-more frequently in French than in English. The infinitif can be used as the subject of
-a verb. (Note that English uses the gerund in the examples below.)
+---
 
-       Faire la cuisine est son passe-temps     Cooking is his favorite pastime.
-           favori.
-       Suivre des cours de cuisine est amusant. Taking cooking classes is fun.
-      Voyager par le train est rapide.          Traveling by train is fast.
-      Apprendre une langue étrangère est très Learning a foreign language is very
-            utile.                                       useful.
+## 2. Emplois Particuliers de l'Infinitif
 
-  The infinitif is also used for general instructions, prescriptions, public notices,
-and proverbs (where the imperative is often used in English).
+### A. Après les Verbes de Perception
+Après des verbes exprimant la perception sensorielle (*voir*, *entendre*, *écouter*, *sentir*, *regarder*), le français emploie l'infinitif là où l'anglais utilise souvent le participe présent :
+- *J'ai vu les moutons **traverser** la route.* (Vi as ovelhas atravessando / cruzar a estrada.)
+- *Elle a entendu le coq **chanter**.* (Ela ouviu o galo cantando / cantar.)
+- *On entendait le chef **fredonner** une chanson.* (Ouvia-se o chef cantarolando uma canção.)
+- *Elle a vu la biche **sauter** par-dessus la clôture.* (Ela viu a corça pular por cima da cerca.)
 
-      Prendre une fois par jour.               Take once a day.
-     Ne pas se pencher par la fenêtre.      Do not lean out of the window.
-     Ne pas marcher sur la pelouse.         Keep off the lawn.
-       Lire le mode d’emploi avant utilisation.   Read the instructions before using.
+### B. L'Infinitif Interrogatif Délibératif
+S'utilise dans des questions oratoires ou d'hésitation personnelle :
+- *Que **répondre** ?* (O que responder? / O que posso responder?)
+- *Comment le lui **expliquer** ?* (Como explicar isso a ele?)
+- *Pourquoi **protester** ?* (Por que protestar?)
+- *Que **dire** ?* (O que dizer?)
+- *Quoi **faire** ?* (O que fazer?)
 
-   Since a verb in the infinitive mood is not conjugated, the negation (ne… pas)
-does not surround the verb but rather precedes it, and is not separated.
+### C. Le Causatif avec « Faire »
+Rappel du Chapitre 4 : *faire + infinitif* indique qu'on fait accomplir l'action par autrui ou qu'on provoque un processus :
+- *Il a **fait macérer** la viande vingt-quatre heures.* (Ele deixou a carne macerar por 24 horas.)
+- *Elle a **fait rôtir** le poulet.* (Ela assou o frango / mandou assar.)
+- *J'ai **fait griller** le pain.* (Eu torrei o pão.)
+- *J'ai **fait tremper** les pruneaux.* (Coloquei as ameixas de molho.)
 
-          Il a promis de ne pas ajouter trop d’ail.  He promised not to add too much
-                                                         garlic.      Je lui ai demandé de ne pas faire frire le  I asked her not to fry the fish.
-         poisson.
-      Elle m’a dit de ne pas mettre d’huile.    She told me not to put any oil in.
-      Je lui ai conseillé de ne pas mettre le       I advised her not to put the cake in
-         gâteau au four avant midi.                 the oven before noon.
+### D. Expressions de Temps Passé et de Posture avec « À »
+1. **Passer son temps / gaspiller :**
+   - *Elle passe son temps **à créer** de nouvelles recettes.* (Passa o tempo criando novas receitas.)
+   - *Il passe ses vacances **à lire** des livres de cuisine.*
+   - *Il a gaspillé sa vie **à ne rien faire**.* (Desperdiçou sua vida fazendo nada.)
+   - *Je passe mon temps **à chercher** de nouvelles épices.*
+2. **Posture corporelle (debout, assis, allongé, accroupi, à genoux) :**
+   - *Il est debout **à éplucher** des carottes.* (Ele está de pé descascando cenouras.)
+   - *Elle est assise **à écosser** des petits pois.* (Ela está sentada debulhando ervilhas.)
+   - *Il est accroupi dans le jardin **à cueillir** des fraises.* (Ele está agachado colhendo morangos.)
+   - *Elle est à genoux **à arracher** les mauvaises herbes.* (Ela está de joelhos arrancando ervas daninhas.)
+   - *Je suis allongée sur la plage **à lire**.* (Estou deitada na praia lendo.)
 
+---
 
-   VOCABULAIRE
+## 3. L'Infinitif Passé
 
+### A. Formation et Rôle
+L'**infinitif passé** marque l'**antériorité** d'une action par rapport au verbe principal :
 
-ajouter                    to add
-assaisonner               to season
-bouillir                    to boil
-braiser                    to braise
-broyer                    to grind, to crush
-caraméliser               to caramelize
-couper                    to cut
-cuire                      to cook
-décortiquer               to shell, to husk
-écailler                    to scale (fish)
-écraser                    to crush, to squash
-écumer                    to skim (soup)
-émincer                   to slice thinly
-épicer                     to spice
-éplucher                  to peel (vegetables)
-faire la cuisine            to cook
-faire revenir              to brown
-faire sauter               to sauté
-farcir                      to stuff
-flamber                   to flambé
-frire                       to fry
-garnir                     to garnish
-glacer                     to glaze
-gratiner                   to brown, to cook au gratin
-griller                     to grill, to toast
-hacher                    to chop, to mince macérer                   to macerate, to soak
- mariner                   to marinate
- mettre au four            to put in the oven
- mijoter                    to simmer
- paner                     to coat with bread crumbs
- pétrir                     to knead
- piler                       to crush
- pocher                    to poach
- râper                      to grate
- réduire                    to reduce (by boiling)
- rôtir                       to roast
- tremper                   to soak
- verser                     to pour
+$$\textbf{Auxiliaire AVOIR ou ÊTRE à l'infinitif} + \textbf{Participe Passé}$$
 
+- Avec **Avoir** : *avoir dormi*, *avoir mangé*, *avoir regardé*, *avoir préparé*, *avoir allumé*.
+- Avec **Être** (verbes de mouvement et pronominaux) : *être allé(e)*, *être tombé(e)*, *être parti(e)*, *s'être promené(e)*, *s'être levé(e)*, *s'être habillé(e)*.
 
+> [!NOTE]
+> Avec l'auxiliaire *être*, le participe passé s'accorde en genre et en nombre avec le sujet :
+> - *Nous nous sommes excusés d'**être partis** avant le dessert.*
+> - *Elle lit le journal après **s'être levée**.*
 
-   Although nowadays French household magazines tend to use the imperative
-mood in recipes and other  instructions, the  infinitif présent  is often used in
-professional cookbooks and other instruction manuals.
+### B. Le Contraste Capital : « Avant de » vs « Après »
+- **Avant de** est suivi de l'**infinitif présent** (action future/postérieure) :
+  - *Gérard fait mariner la viande **avant d'éplucher** un oignon.*
+  - *Je fais la cuisine **avant d'aller** au cinéma.*
+  - *Elle se lave les mains **avant de décortiquer** les crevettes.*
+- **Après** est suivi obligatoirement de l'**infinitif passé** (action accomplie/antérieure) :
+  - *Gérard fait mariner la viande **après avoir épluché** un oignon.*
+  - *Je fais la cuisine **après être allé** au cinéma.*
+  - *Elle se lave les mains **après avoir décortiqué** les crevettes.*
+  - *Elle lit le journal **après s'être levée**.*
 
-      Hacher le persil.                    Chop the parsley.
-       Farcir la dinde.                              Stuff the turkey.
-      Râper une demi-livre de fromage.        Grate half a pound of cheese.
-      Pocher le poisson.                   Poach the fish.
-```
+---
 
-## The infinitif passé
-<!-- PDF pages 178–179; source chars 8928–9818 -->
+## 4. Les Prépositions après les Verbes
 
-```text
-The infinitif passé
-The infinitif passé (past infinitive) is used to mark anteriority. It is formed with the
-infinitive of avoir or être and the past participle of the main verb. (Note that, for
-verbs conjugated with être, the past participle of the infinitif passé agrees with the
-subject of the sentence.)
+Lorsque deux verbes se suivent, le deuxième est généralement à l'infinitif. La liaison entre les deux dépend du premier verbe :
 
-      Les hôtes ont remercié le chef d’avoir  The guests thanked the chef for having
-         préparé un si bon repas.              prepared such a good meal.      Nous nous sommes excusés d’être    We apologized for leaving before
-          partis avant le dessert.                   dessert.
-          Il a regretté d’avoir oublié          He regretted having forgotten Clara’s
-           l’anniversaire de Clara.                  birthday.
-     Comment pouvait-il avoir brûlé tout le How could he have burnt the whole
-          dîner?                               dinner?
-```
+### A. Verbes Directs (Sans Préposition)
+Ces verbes sont immédiatement suivis de l'infinitif, sans `à` ni `de` :
+- *aimer, aller, avouer, compter, désirer, détester, devoir, écouter, espérer, faire, falloir, laisser, oser, paraître, penser, pouvoir, préférer, prétendre, savoir, sembler, sentir, souhaiter, venir (mouvement), voir, vouloir.*
 
-## Verbs with their prepositions
-<!-- PDF pages 181–182; source chars 12614–16214 -->
+**Exemples :**
+- *Les Corbin **aiment manger** au restaurant.*
+- *Elle **voudrait devenir** traiteur.*
+- *J'avoue **ne pas comprendre** son but.*
+- *Il **sait faire** la sauce béchamel.*
 
-```text
-Verbs with their prepositions
-When a verb is followed by another verb in the infinitive (j’aime danser), the first
-thing to ask is whether or not it is followed by a preposition. There is no magic
-recipe, you need to learn them by heart as you go along. Some verbs are not
-followed by a preposition, others are followed by  à, de, sur,  etc., before an
-infinitive, and sometimes before a noun or pronoun.
+> [!TIP]
+> **Même sujet vs Sujets différents :**
+> - Même sujet ➔ **Infinitif** : *J'espère obtenir ce poste.* / *Tu veux apprendre ce métier.*
+> - Sujets différents ➔ **Proposition subordonnée avec « que »** : *J'espère **qu'elle obtiendra** ce poste.* / *Tu veux **qu'il apprenne** ce métier.*
 
-Verbs not followed by a preposition
-Let’s start with verbs that are not followed by a preposition:
+### B. Verbes suivis de la Préposition « À »
+S'associent à l'idée d'effort, de tendance, de but ou d'apprentissage :
+- *s'accoutumer à, aider à, s'amuser à, apprendre à, arriver à, aspirer à, s'attendre à, autoriser à, chercher à, commencer à, consentir à, continuer à, se décider à, encourager à, se faire à, faire attention à, s'habituer à, hésiter à, inciter à, s'intéresser à, inviter à, se mettre à, parvenir à, préparer à, renoncer à, se résigner à, réussir à, songer à, tenir à, viser à.*
 
-      aimer                                    to like, to love
-        aller                                      to go
-      avouer                                   to admit
-      compter                                  to intend, to plan
-       désirer                                   to desire, to wish
-       détester                                  to hate (to)
-       devoir                                must, to have to
-       écouter                                   to listen to
-       espérer                                   to hope to
-        faire                                      to do
-        falloir                                 must, to be necessary to
-        laisser                                    to let, to allow
-       oser                                      to dare (to)
-       paraître                                  to appear, to seem
-      penser                                   to think
-      pouvoir                               can, to be able to
-       préférer                                  to prefer
-      prétendre                                to claim       savoir                                    to know (how to)
-      sembler                                  to seem to
-       sentir                                    to feel, to think
-       souhaiter                                to wish to
-       venir                                     to come
-       voir                                      to see
-       vouloir                                   to want to
+**Exemples :**
+- *Il commence **à travailler** à huit heures.*
+- *Ils se préparent **à partir**.*
+- *Elle l'a encouragé **à s'inscrire**.*
+- *Tu as réussi **à obtenir** un prix.*
+- *Elle apprend **à faire** la cuisine.*
 
-      Les Corbin aiment manger au        The Corbins love to eat out.
-           restaurant.
-       Elle voudrait devenir traiteur.         She would like to become a caterer.
-       J’avoue ne pas comprendre son but.     I admit I do not understand his goal.
-          Il sait faire la sauce béchamel.       He knows how to make béchamel
-                                                 sauce.
+### C. Verbes suivis de la Préposition « DE » (ou « D' »)
+S'associent au point de départ, au sentiment, au conseil, à l'interdiction ou à l'achèvement :
+- *accepter de, accuser de, s'arrêter de, avoir besoin de, avoir envie de, avoir l'intention de, avoir peur de, cesser de, choisir de, conseiller de, se contenter de, convaincre de, craindre de, défendre de, demander de, se dépêcher de, s'efforcer de, empêcher de, s'empêcher de, envisager de, essayer de, éviter de, s'excuser de, faire semblant de, feindre de, finir de, interdire de, menacer de, mériter de, offrir de, oublier de, permettre de, persuader de, se plaindre de, projeter de, promettre de, refuser de, regretter de, remercier de, reprocher de, soupçonner de, se souvenir de, tâcher de.*
 
-   In the above examples, the subject of the first verb is the same as the one for the
-second verb; that’s why the infinitive form is used. When the subjects are different, a
-dependent clause introduced by que is required. Depending on the verb in the main
-clause, the dependent clause can be in the indicative or the subjunctive.
+**Exemples :**
+- *Il a essayé **de faire** un soufflé.*
+- *Elle a refusé **de nous donner** sa recette.*
+- *Ils ont promis **de l'envoyer** au Cordon Bleu.*
+- *J'ai fini **de lire** le roman.*
+- *N'oubliez pas **d'ajouter** du sel !*
+- *Il a peur **de brûler** la viande.*
+- *Il a cessé **de fumer**.*
 
-       J’espère obtenir ce poste.                   I am hoping to get this position.
-       J’espère qu’elle obtiendra ce poste.      I am hoping she’ll get this position.
-      Tu veux apprendre ce métier.          You want to learn this craft.
-      Tu veux qu’il apprenne ce métier.     You want him to learn this craft.
+---
 
-   In some cases, a French verb does not need a preposition even though its English
-equivalent requires one. Never rely on English when you’re trying to decide whether
-a French verb needs a preposition.
+## 5. Vocabulaire Thématique : Les Arts Culinaires et la Cuisine
 
-       Elle attend le train.                 She is waiting for the train.
-          Il a abandonné le projet.          He gave up the project.
-      Nous écoutons la conférence.       We are listening to the lecture.
-       Soudain, ils sont entrés.              Suddenly they walked in.
-```
+Le chapitre 14 est riche en vocabulaire gastronomique indispensable en contexte francophone :
 
-## Verbs followed by the preposition à
-<!-- PDF pages 183–186; source chars 16873–22220 -->
-
-```text
-Verbs followed by the preposition à
-Many verbs are followed by the preposition à when they precede an infinitive. You
-have already encountered quite a few in previous chapters. These will also need to be
-memorized.
-
-      s’accoutumer à                            to get accustomed to
-       aider à                                     to help to
-      s’amuser à                                 to enjoy
-      apprendre à                                to learn to, to show how to
-       arriver à                                   to manage to
-       aspirer à                                   to aspire to
-       s’attendre à                                to expect to
-       autoriser à                                 to authorize to
-      chercher à                                 to try to, to attempt to
-     commencer à                              to start to
-       consentir à                                 to agree to, to consent to
-       continuer à                                 to continue to, to keep on
-       se décider à                                to make up one’s mind to      encourager à                               to encourage to
-       se faire à                                   to get used to
-        faire attention à                           to pay attention to
-       s’habituer à                                to get used to
-       hésiter à                                    to hesitate to
-        inciter à                                    to encourage to
-       s’intéresser à                               to get interested in
-       inviter à                                    to invite to
-       se mettre à                                 to start to, to begin to
-      parvenir à                                  to manage to
-      préparer à                                 to get ready to
-      renoncer à                                 to give up
-       se résigner à                               to resign oneself to
-       réussir à                                    to succeed in
-      songer à                                    to think about
-       tenir à                                      to insist on, to be eager to
-       viser à                                      to aim at
-
-          Il commence à travailler à huit heures.   He starts to work at eight o’clock.
-         Ils se préparent à partir.               They are getting ready to leave.
-       Elle l’a encouragé à s’inscrire.          She encouraged him to sign up.
-      Tu as réussi à obtenir un prix.          You managed to get an award.
-
-Verbs followed by the preposition de
-Now that you have memorized some of the à verbs,  let’s look at some verbs
-followed by the preposition de when they precede an infinitive.
-
-       accepter de                       to accept, to agree to
-       accuser de                        to accuse (of)
-       s’arrêter de                       to stop
-       avoir besoin de                   to need to
-       avoir envie de                    to feel like, to want
-       avoir l’intention de               to intend to
-       avoir peur de                     to be afraid of
-       cesser de                          to stop, to ceasechoisir de                         to choose to
-conseiller de                      to advise (to)
-se contenter de                   to content oneself with
-convaincre de                    to convince (to)
-craindre de                       to fear (to)
-défendre de                       to forbid (to)
-demander de                     to ask (to)
-se dépêcher de                    to hurry to
-s’efforcer de                      to try hard to
-empêcher de                      to prevent (from)
-s’empêcher de                    to refrain from
-envisager de                      to contemplate
-essayer de                        to try to
-éviter de                          to avoid
-s’excuser de                      to apologize for
-faire semblant de                 to pretend to
-feindre de                        to feign to, to pretend to
-finir de                           to finish, to end up
-interdire de                       to forbid (to)
-menacer de                       to threaten to
-mériter de                        to deserve to
-offrir de                          to offer to
-oublier de                        to forget to
-permettre de                     to allow (to), to permit (to)
-persuader de                     to persuade (to), to convince (to)
-se plaindre de                    to complain of
-projeter de                       to plan to/on
-promettre de                     to promise to
-refuser de                         to refuse to
-regretter de                       to regret
-remercier de                      to thank (for)
-reprocher de                     to reproach for
-soupçonner de                    to suspect of
-se souvenir de                    to remember to      tâcher de                         to try to
-
-        Il a essayé de faire un soufflé.   He tried to make a soufflé.
-      Elle a refusé de nous donner sa  She refused to give us her recipe.
-          recette.
-       Ils ont promis de l’envoyer au   They promised to send him to the Cordon Bl
-       Cordon Bleu.                   cooking school.
-       J’ai fini de lire le roman.           I finished reading the novel.
-```
-
-
-
-## Source theory recovered from exercise-boundary parsing
-
-> The paragraphs below were accidentally attached to the last exercise item in the automatic extraction. They are preserved here for learning-content completeness, but paragraph/table formatting and placement require visual editorial review against the PDF.
-
-### After ch14-ex01-q10 (source PDF pages 176,177)
-
-The infinitive is used after verbs of perception (where the present participle is used in English). J’ai vu les moutons traverser la route. I saw the sheep crossing (cross) the road. Elle a entendu le coq chanter. She heard the rooster crowing (crow). On entendait le chef fredonner une We could hear the chef humming (hum chanson. a song. Elle a vu la biche sauter par-dessus la She saw the doe jumping (jump) over clôture. the fence. The infinitive is used in the interrogative infinitive. Que répondre? What can I (can we) answer? Comment le lui expliquer? How to explain it to him? Pourquoi protester? Why protest? Que dire? What is there to say? Quoi faire? What can we do? You learned faire in Chapter 4. This causative form with faire is used to express the idea of having something done by someone or of causing something to happen. Il a fait macérer la viande vingt-quatre He macerated the meat twenty-four heures. hours. Elle a fait rôtir le poulet. She roasted the chicken. J’ai fait griller le pain. I toasted the bread. J’ai fait tremper les pruneaux. I soaked the prunes. The infinitive is used after expressions conveying the idea of spending time. Elle passe son temps à créer de nouvelles She spends her time creating new recettes. recipes. Il passe ses vacances à lire des livres de He spends his vacation reading cuisine. cookbooks. Il a gaspillé sa vie à ne rien faire. He wasted his life doing nothing. Je passe mon temps à chercher de I spend my time looking for new nouvelles épices. spices. The infinitive often follows statements indicating a person’s posture. The preposition à precedes the infinitive. (Note the present participles in English.) Il est debout à éplucher des carottes. He is standing peeling carrots. Elle est assise à écosser des petits pois. She is sitting shelling peas. Il est accroupi dans le jardin à cueillir He is squatting in the garden picking des fraises. strawberries. Elle est à genoux à arracher les She is kneeling pulling out weeds. mauvaises herbes.
-
-### After ch14-ex03-q10 (source PDF pages 179,180)
-
-The infinitif passé commonly occurs after the preposition après (after), while the infinitif présent follows avant de (before). Gérard fait mariner la viande avant Gérard marinates the meat before d’éplucher un oignon. peeling an onion. Gérard fait mariner la viande après avoir Gérard marinates the meat after épluché un oignon. peeling an onion. Elle se lave les mains avant de décortiquer She washes her hands before les crevettes. shelling the shrimp. Elle se lave les mains après avoir She washes her hands after shellin décortiqué les crevettes. the shrimp. Je fais la cuisine avant d’aller au cinéma. I cook before going to the movies. Je fais la cuisine après être allé au cinéma. I cook after going to the movies. Elle lit le journal avant de se lever. She reads the paper before getting up. Elle lit le journal après s’être levée. She reads the paper after getting u
+| Terme Français | Catégorie | Traduction Portugaise | Traduction Anglaise |
+|---|---|---|---|
+| **ajouter** | verbe | adicionar, acrescentar | to add |
+| **assaisonner** | verbe | temperar | to season |
+| **bouillir** | verbe | ferver | to boil |
+| **braiser** | verbe | brasear | to braise |
+| **broyer** | verbe | moer, triturar | to grind, to crush |
+| **caraméliser** | verbe | caramelizar | to caramelize |
+| **couper** | verbe | cortar | to cut |
+| **cuire** | verbe | cozinhar, assar | to cook |
+| **décortiquer** | verbe | descascar (crustáceos, grãos) | to shell, to husk |
+| **écailler** | verbe | descamar (peixe) | to scale (fish) |
+| **écraser** | verbe | amassar, esmagar | to crush, to squash |
+| **éplucher** | verbe | descascar (legumes, frutas) | to peel (vegetables) |
+| **écosser** | verbe | debulhar (ervilhas, favas) | to shell (peas) |
+| **émincer** | verbe | fatiar finamente | to slice thinly |
+| **épicer** | verbe | condimentar, apimentar | to spice |
+| **faire la cuisine** | expression | cozinhar | to cook |
+| **faire revenir** | expression | dourar, refogar | to brown |
+| **faire sauter** | expression | saltear | to sauté |
+| **farcir** | verbe | rechear | to stuff |
+| **flamber** | verbe | flambar | to flambé |
+| **frire** | verbe | fritar | to fry |
+| **garnir** | verbe | guarnecer, enfeitar | to garnish |
+| **glacer** | verbe | glaciar, caramelizar | to glaze |
+| **gratiner** | verbe | gratinar | to brown, au gratin |
+| **griller** | verbe | grelhar, tostar | to grill, to toast |
+| **hacher** | verbe | picar, moer | to chop, to mince |
+| **macérer** | verbe | macerar | to macerate, to soak |
+| **mariner** | verbe | marinar | to marinate |
+| **mettre au four** | expression | levar ao forno | to put in the oven |
+| **mijoter** | verbe | cozinhar em fogo brando | to simmer |
+| **paner** | verbe | empanar | to coat with bread crumbs |
+| **pétrir** | verbe | sovar, amassar (massa) | to knead |
+| **piler** | verbe | pilar, esmagar | to crush |
+| **pocher** | verbe | escalfar, pocar | to poach |
+| **râper** | verbe | ralar | to grate |
+| **réduire** | verbe | reduzir (molho por fervura) | to reduce (by boiling) |
+| **rôtir** | verbe | assar | to roast |
+| **tremper** | verbe | embeber, molhar | to soak |
+| **verser** | verbe | despejar, servir líquido | to pour |

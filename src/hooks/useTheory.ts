@@ -86,6 +86,12 @@ import {
   CHAPTER_13_EXERCISE_SETS
 } from '@/data/chapter13Data';
 
+import {
+  CHAPTER_14_THEORY_MARKDOWN,
+  CHAPTER_14_TOPICS,
+  CHAPTER_14_EXERCISE_SETS
+} from '@/data/chapter14Data';
+
 const CH01_FALLBACK_THEORY: ChapterTheoryData = {
   chapter: {
     id: 'ch01',
@@ -372,6 +378,28 @@ const CH13_FALLBACK_THEORY: ChapterTheoryData = {
   exerciseSets: CHAPTER_13_EXERCISE_SETS
 };
 
+const CH14_FALLBACK_THEORY: ChapterTheoryData = {
+  chapter: {
+    id: 'ch14',
+    number: 14,
+    title: 'The infinitive mood',
+    slug: 'the-infinitive-mood',
+    world_number: 3,
+    world_name: 'Mundo 3: Les Structures Avancées',
+    page_range: '173–187',
+    topics_count: 4,
+    exercise_groups_count: 7,
+    total_questions: 70,
+    theory_markdown: CHAPTER_14_THEORY_MARKDOWN,
+    release_id: null,
+    editorial_status: 'published',
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+  },
+  topics: CHAPTER_14_TOPICS,
+  exerciseSets: CHAPTER_14_EXERCISE_SETS
+};
+
 function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch01') return CH01_FALLBACK_THEORY;
   if (chapterId === 'ch02') return CH02_FALLBACK_THEORY;
@@ -386,6 +414,7 @@ function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch11') return CH11_FALLBACK_THEORY;
   if (chapterId === 'ch12') return CH12_FALLBACK_THEORY;
   if (chapterId === 'ch13') return CH13_FALLBACK_THEORY;
+  if (chapterId === 'ch14') return CH14_FALLBACK_THEORY;
   return null;
 }
 
@@ -471,6 +500,8 @@ export function useTheory(chapterId?: string) {
           ? CHAPTER_12_THEORY_MARKDOWN
           : chapterId === 'ch13'
           ? CHAPTER_13_THEORY_MARKDOWN
+          : chapterId === 'ch14'
+          ? CHAPTER_14_THEORY_MARKDOWN
           : (chapterData as Chapter).theory_markdown;
 
         return {

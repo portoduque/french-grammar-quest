@@ -1577,4 +1577,128 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       expect(data?.questions[4].accepted_answers).toContain('b');
     });
   });
+
+  describe('useExerciseSet Hook — Chapitre 14 (The infinitive mood)', () => {
+    it('charge la série 14.1 (translation) avec infinitif sujet et négation en bloc (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch14-ex01'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('translation');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('Writing this book was a challenge.');
+      expect(data?.questions[0].accepted_answers).toContain('Écrire ce livre était un défi.');
+      expect(data?.questions[0].tokens).toBeDefined();
+      expect(data?.questions[4].prompt).toBe('Walking along the Seine is pleasant.');
+      expect(data?.questions[4].accepted_answers).toContain('Marcher le long de la Seine est agréable.');
+      expect(data?.questions[9].prompt).toBe('Do not put in any garlic.');
+      expect(data?.questions[9].accepted_answers).toContain("Ne pas mettre d'ail.");
+    });
+
+    it('charge la série 14.2 (sentence_rewrite) pour les verbes de posture et expressions avec « à » (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch14-ex02'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('Elle passe ses après-midi (cooking).');
+      expect(data?.questions[0].accepted_answers).toContain('Elle passe ses après-midi à faire la cuisine.');
+      expect(data?.questions[0].tokens).toBeDefined();
+      expect(data?.questions[9].prompt).toBe('Ils passent leurs journées (shopping).');
+      expect(data?.questions[9].accepted_answers).toContain('Ils passent leurs journées à faire les courses.');
+    });
+
+    it('charge la série 14.3 (fill_blank) pour la formation de l infinitif passé (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch14-ex03'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('dormir __');
+      expect(data?.questions[0].accepted_answers).toContain('avoir dormi');
+      expect(data?.questions[1].prompt).toBe('aller __');
+      expect(data?.questions[1].accepted_answers).toContain('être allé');
+      expect(data?.questions[9].prompt).toBe('allumer __');
+      expect(data?.questions[9].accepted_answers).toContain('avoir allumé');
+    });
+
+    it('charge la série 14.4 (sentence_rewrite) de transformation « avant de » vers « après » (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch14-ex04'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('Elle prend des vacances avant de compléter son projet.');
+      expect(data?.questions[0].accepted_answers).toContain('Elle prend des vacances après avoir complété son projet.');
+      expect(data?.questions[0].tokens).toBeDefined();
+      expect(data?.questions[2].prompt).toBe('Je prépare un thé avant de cueillir des fruits.');
+      expect(data?.questions[2].accepted_answers).toContain('Je prépare un thé après avoir cueilli des fruits.');
+      expect(data?.questions[5].prompt).toBe("Elle se maquille avant de s'habiller.");
+      expect(data?.questions[5].accepted_answers).toContain("Elle se maquille après s'être habillée.");
+    });
+
+    it('charge la série 14.5 (fill_blank) pour les verbes directs avec infinitif (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch14-ex05'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('Il (détester) __ attendre.');
+      expect(data?.questions[0].accepted_answers).toContain('déteste');
+      expect(data?.questions[9].prompt).toBe('Vous (aller) __ passer une bonne soirée.');
+      expect(data?.questions[9].accepted_answers).toContain('allez');
+    });
+
+    it('charge la série 14.6 (fill_blank) pour le choix des prépositions « à » ou « de » (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch14-ex06'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe("J'ai appris __ faire une mousse au chocolat.");
+      expect(data?.questions[0].accepted_answers).toContain('à');
+      expect(data?.questions[1].prompt).toBe("Ils ont choisi __ s'installer dans une région gastronomique.");
+      expect(data?.questions[1].accepted_answers).toContain('de');
+    });
+
+    it('charge la série 14.7 (translation) de thème grammatical global (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch14-ex07'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('translation');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('They want to travel to France.');
+      expect(data?.questions[0].accepted_answers).toContain('Ils veulent voyager en France.');
+      expect(data?.questions[0].tokens).toBeDefined();
+      expect(data?.questions[9].prompt).toBe('Try to understand the situation!');
+      expect(data?.questions[9].accepted_answers).toContain('Essayez de comprendre la situation !');
+    });
+  });
 });

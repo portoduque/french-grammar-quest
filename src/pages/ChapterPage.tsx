@@ -1454,6 +1454,101 @@ export const ChapterPage: React.FC = () => {
                 </div>
               </div>
             </div>
+          ) : chapterNum === 14 ? (
+            <div className="tips-deck">
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">💡</div>
+                <div className="tip-card-body">
+                  <h3>A Negação em Bloco : « Ne pas » Colado no Infinitivo</h3>
+                  <p>
+                    Quando o verbo está no infinitivo, a negação <strong>não abraça</strong> o verbo como nos tempos conjugados. Ela fica <strong>100% agrupada na frente</strong>:
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Tempo conjugado :</strong> <em>Je <strong>ne</strong> mets <strong>pas</strong> d'ail.</em><br />
+                    • <strong>Infinitivo :</strong> <em>Elle m'a dit de <strong>ne pas mettre</strong> d'huile.</em> / <em><strong>Ne pas marcher</strong> sur la pelouse.</em><br />
+                    • Vale também para outras negações : <em>de <strong>ne rien</strong> dire</em>, <em>de <strong>ne jamais</strong> abandonner</em>.
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">⏱️</div>
+                <div className="tip-card-body">
+                  <h3>A Dupla Temporal : « Avant de » (Présent) vs « Après » (Passé)</h3>
+                  <p>
+                    Uma das distinções estruturais mais avaliadas no Francês:
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Avant de + Infinitif Présent :</strong> Ação posterior (ainda não ocorrida) :<br />
+                    ✅ <em>Je fais la cuisine <strong>avant d'aller</strong> au cinéma.</em><br />
+                    • <strong>Après + Infinitif Passé :</strong> Ação anterior já concluída :<br />
+                    ✅ <em>Je fais la cuisine <strong>après être allé</strong> au cinéma.</em><br />
+                    ✅ <em>Elle lit le journal <strong>après s'être levée</strong>.</em> (Atenção ao acordo com <em>être</em>!).
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">⚖️</div>
+                <div className="tip-card-body">
+                  <h3>O Trio das Preposições : Construção Direta, À ou DE</h3>
+                  <p>
+                    A ponte entre dois verbos depende rigorosamente da regência do primeiro:
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Construção Direta (sem preposição) :</strong> <em>aimer, vouloir, pouvoir, devoir, falloir, savoir, préférer</em> ➔ <em>Je veux <strong>partir</strong>.</em><br />
+                    • <strong>Com « À » (ideia de esforço, tendência, aprendizagem) :</strong> <em>apprendre à, commencer à, réussir à, hésiter à</em> ➔ <em>Elle apprend <strong>à cuisiner</strong>.</em><br />
+                    • <strong>Com « DE » (sentimento, ordem, conselho, desistência) :</strong> <em>refuser de, oublier de, avoir peur de, cesser de</em> ➔ <em>N'oubliez pas <strong>d'ajouter</strong> du sel.</em>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">👁️</div>
+                <div className="tip-card-body">
+                  <h3>Verbos de Percepção & Postura Corporal</h3>
+                  <p>
+                    Onde o português ou inglês usam gerúndio (-ando / -ing), o francês emprega o infinitivo:
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Percepção sensorial (voir, entendre) :</strong> <em>J'ai vu les moutons <strong>traverser</strong> la route.</em> / <em>Elle a entendu le coq <strong>chanter</strong>.</em><br />
+                    • <strong>Postura corporal (debout, assis, allongé) + À :</strong> <em>Il est debout <strong>à éplucher</strong> des carottes.</em> / <em>Elle est assise <strong>à écosser</strong> des petits pois.</em>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🍳</div>
+                <div className="tip-card-body">
+                  <h3>Vocabulário Gourmet : O Léxico Gastronômico do Capítulo</h3>
+                  <p>
+                    O francês possui verbos com precisão cirúrgica para cada preparo na cozinha:
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>éplucher :</strong> descascar legumes e frutas (batatas, cenouras).<br />
+                    • <strong>écosser :</strong> debulhar grãos e vagens (ervilhas).<br />
+                    • <strong>décortiquer :</strong> descascar frutos do mar (camarões) e sementes.<br />
+                    • <strong>écailler :</strong> retirar as escamas do peixe.<br />
+                    • <strong>braiser / mijoter :</strong> cozinhar em fogo baixo e lentamente.<br />
+                    • <strong>pétrir :</strong> sovar massa de pão ou confeitaria.
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🎯</div>
+                <div className="tip-card-body">
+                  <h3>Mesmo Sujeito vs Sujeitos Diferentes : Infinitivo ou Subjuntivo ?</h3>
+                  <p>
+                    Em francês, é obrigatório simplificar para o infinitivo quando os sujeitos são iguais:
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Mesmo sujeito ➔ INFINITIF :</strong> <em>J'espère <strong>obtenir</strong> ce poste.</em> / <em>Tu veux <strong>apprendre</strong> ce métier.</em> (Nunca diga <em>« J'espère que j'obtienne »</em>!).<br />
+                    • <strong>Sujeitos diferentes ➔ Proposition avec « QUE » :</strong> <em>J'espère <strong>qu'elle obtiendra</strong> ce poste.</em> / <em>Tu veux <strong>qu'il apprenne</strong> ce métier.</em>
+                  </div>
+                </div>
+              </div>
+            </div>
           ) : (
             <div className="tips-deck">
               <div className="tip-card card card-default">

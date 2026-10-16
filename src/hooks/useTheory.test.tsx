@@ -1157,4 +1157,96 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
     expect(topics[2].id).toBe('ch13-t03');
     expect(topics[3].id).toBe('ch13-t04');
   });
+
+  it('fournit la théorie pédagogique complète et rigoureuse pour ch14 (The infinitive mood)', async () => {
+    const { result } = renderHook(() => useTheory('ch14'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data).toBeDefined();
+    expect(data?.chapter.number).toBe(14);
+    expect(data?.chapter.title).toBe('The infinitive mood');
+    expect(data?.chapter.page_range).toBe('173–187');
+
+    // Valide le contenu pédagogique FLE pour lusophones
+    const markdown = data?.chapter.theory_markdown || '';
+    expect(markdown).toContain("L'Infinitif Présent");
+    expect(markdown).toContain("La Règle d'Or de la Négation");
+    expect(markdown).toContain("Emplois Particuliers de l'Infinitif");
+    expect(markdown).toContain("L'Infinitif Passé");
+    expect(markdown).toContain("Le Contraste Capital : « Avant de » vs « Après »");
+    expect(markdown).toContain("Les Prépositions après les Verbes");
+    expect(markdown).toContain("Vocabulaire Thématique : Les Arts Culinaires et la Cuisine");
+    expect(markdown.toLowerCase()).toContain("éplucher");
+    expect(markdown.toLowerCase()).toContain("bouillir");
+    expect(markdown.toLowerCase()).toContain("râper");
+  });
+
+  it('charge les 7 séries d exercices officielles du Chapitre 14 avec les bons types d interaction (70 questions au total)', async () => {
+    const { result } = renderHook(() => useTheory('ch14'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const sets = result.current.data?.exerciseSets || [];
+    expect(sets).toHaveLength(7);
+
+    // 14.1: Traduction de l'infinitif sujet et négation en bloc -> translation (10)
+    expect(sets[0].id).toBe('ch14-ex01');
+    expect(sets[0].interaction_type).toBe('translation');
+    expect(sets[0].questions_count).toBe(10);
+
+    // 14.2: Infinitif en contexte et expressions avec "à" -> sentence_rewrite (10)
+    expect(sets[1].id).toBe('ch14-ex02');
+    expect(sets[1].interaction_type).toBe('sentence_rewrite');
+    expect(sets[1].questions_count).toBe(10);
+
+    // 14.3: Formation de l'infinitif passé -> fill_blank (10)
+    expect(sets[2].id).toBe('ch14-ex03');
+    expect(sets[2].interaction_type).toBe('fill_blank');
+    expect(sets[2].questions_count).toBe(10);
+
+    // 14.4: Transformation avant de (présent) -> après (passé) -> sentence_rewrite (10)
+    expect(sets[3].id).toBe('ch14-ex04');
+    expect(sets[3].interaction_type).toBe('sentence_rewrite');
+    expect(sets[3].questions_count).toBe(10);
+
+    // 14.5: Conjugaison du verbe principal suivi d'un infinitif direct -> fill_blank (10)
+    expect(sets[4].id).toBe('ch14-ex05');
+    expect(sets[4].interaction_type).toBe('fill_blank');
+    expect(sets[4].questions_count).toBe(10);
+
+    // 14.6: Choix de préposition : à ou de -> fill_blank (10)
+    expect(sets[5].id).toBe('ch14-ex06');
+    expect(sets[5].interaction_type).toBe('fill_blank');
+    expect(sets[5].questions_count).toBe(10);
+
+    // 14.7: Thème grammatical et intégration -> translation (10)
+    expect(sets[6].id).toBe('ch14-ex07');
+    expect(sets[6].interaction_type).toBe('translation');
+    expect(sets[6].questions_count).toBe(10);
+
+    // Total questions check (70 questions)
+    const totalQ = sets.reduce((acc, s) => acc + s.questions_count, 0);
+    expect(totalQ).toBe(70);
+  });
+
+  it('fournit les 4 sujets principaux du chapitre 14', async () => {
+    const { result } = renderHook(() => useTheory('ch14'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const topics = result.current.data?.topics || [];
+    expect(topics).toHaveLength(4);
+    expect(topics[0].id).toBe('ch14-t01');
+    expect(topics[1].id).toBe('ch14-t02');
+    expect(topics[2].id).toBe('ch14-t03');
+    expect(topics[3].id).toBe('ch14-t04');
+  });
 });
