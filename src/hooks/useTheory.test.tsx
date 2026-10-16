@@ -699,4 +699,92 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
     expect(topics[1].id).toBe('ch08-t02');
     expect(topics[2].id).toBe('ch08-t03');
   });
+
+  it('fournit la théorie pédagogique complète et rigoureuse pour ch09', async () => {
+    const { result } = renderHook(() => useTheory('ch09'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data).toBeDefined();
+    expect(data?.chapter.number).toBe(9);
+    expect(data?.chapter.title).toBe('The futur simple and the futur antérieur');
+    expect(data?.chapter.page_range).toBe('113–125');
+    expect(data?.chapter.world_number).toBe(2);
+
+    const markdown = data?.chapter.theory_markdown || '';
+    expect(markdown).toContain('O Segredo Histórico das Terminações : O Presente de AVOIR');
+    expect(markdown).toContain('As Orações Temporais (« Quand / Dès que »)');
+    expect(markdown).toContain('O Clube do Duplo « R »');
+    expect(markdown).toContain('Futur Antérieur : Ação Concluída no Futuro');
+    expect(markdown).toContain('A Proibição Absoluta do « Si » Condicional');
+    expect(markdown).toContain('passer un examen');
+  });
+
+  it('charge les 8 séries d exercices officielles du Chapitre 9 avec les bons types d interaction', async () => {
+    const { result } = renderHook(() => useTheory('ch09'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const sets = result.current.data?.exerciseSets || [];
+    expect(sets).toHaveLength(8);
+
+    // 9.1: Conjugaison régulière -> fill_blank (10)
+    expect(sets[0].id).toBe('ch09-ex01');
+    expect(sets[0].interaction_type).toBe('fill_blank');
+    expect(sets[0].questions_count).toBe(10);
+
+    // 9.2: Radicaux irréguliers -> fill_blank (10)
+    expect(sets[1].id).toBe('ch09-ex02');
+    expect(sets[1].interaction_type).toBe('fill_blank');
+    expect(sets[1].questions_count).toBe(10);
+
+    // 9.3: Phrases composées temporelles -> fill_blank (10)
+    expect(sets[2].id).toBe('ch09-ex03');
+    expect(sets[2].interaction_type).toBe('fill_blank');
+    expect(sets[2].questions_count).toBe(10);
+
+    // 9.4: Du futur immédiat au futur simple -> sentence_rewrite (10)
+    expect(sets[3].id).toBe('ch09-ex04');
+    expect(sets[3].interaction_type).toBe('sentence_rewrite');
+    expect(sets[3].questions_count).toBe(10);
+
+    // 9.5: Correspondance colonnes -> matching (5)
+    expect(sets[4].id).toBe('ch09-ex05');
+    expect(sets[4].interaction_type).toBe('matching');
+    expect(sets[4].questions_count).toBe(5);
+
+    // 9.6: Futur antérieur -> fill_blank (10)
+    expect(sets[5].id).toBe('ch09-ex06');
+    expect(sets[5].interaction_type).toBe('fill_blank');
+    expect(sets[5].questions_count).toBe(10);
+
+    // 9.7: Traduction active -> translation (10)
+    expect(sets[6].id).toBe('ch09-ex07');
+    expect(sets[6].interaction_type).toBe('translation');
+    expect(sets[6].questions_count).toBe(10);
+
+    // 9.8: Conjonctions de l indicatif -> fill_blank (10)
+    expect(sets[7].id).toBe('ch09-ex08');
+    expect(sets[7].interaction_type).toBe('fill_blank');
+    expect(sets[7].questions_count).toBe(10);
+  });
+
+  it('fournit les 3 sujets principaux du chapitre 9', async () => {
+    const { result } = renderHook(() => useTheory('ch09'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const topics = result.current.data?.topics || [];
+    expect(topics).toHaveLength(3);
+    expect(topics[0].id).toBe('ch09-t01');
+    expect(topics[1].id).toBe('ch09-t02');
+    expect(topics[2].id).toBe('ch09-t03');
+  });
 });

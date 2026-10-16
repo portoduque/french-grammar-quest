@@ -921,4 +921,154 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
     expect(data?.questions[8].prompt).toBe('Je (regarder) ___ un film quand elle (arriver) ___ .');
     expect(data?.questions[8].accepted_answers).toContain('regardais, est arrivée');
   });
+
+  it('charge la série 9.1 avec 10 questions de conjugaison régulière au futur simple (fill_blank)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch09-ex01'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('Vous (suivre) ___ un cours de français.');
+    expect(data?.questions[0].accepted_answers).toContain('suivrez');
+    expect(data?.questions[1].prompt).toBe('Nous (dîner) ___ chez Yann la semaine prochaine.');
+    expect(data?.questions[1].accepted_answers).toContain('dînerons');
+    expect(data?.questions[4].prompt).toBe('Ils (ne jamais oublier) ___ votre générosité.');
+    expect(data?.questions[4].accepted_answers).toContain("n'oublieront jamais");
+  });
+
+  it('charge la série 9.2 avec 10 questions de radicaux irréguliers (fill_blank)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch09-ex02'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('Il (être) ___ déçu de ne pas vous voir.');
+    expect(data?.questions[0].accepted_answers).toContain('sera');
+    expect(data?.questions[1].prompt).toBe('L’étudiant (faire) ___ un stage à Nantes.');
+    expect(data?.questions[1].accepted_answers).toContain('fera');
+    expect(data?.questions[6].prompt).toBe('Nous (voir) ___ un bon film au cinéma.');
+    expect(data?.questions[6].accepted_answers).toContain('verrons');
+    expect(data?.questions[8].prompt).toBe('Elle (pouvoir) ___ aller à la campagne avec nous.');
+    expect(data?.questions[8].accepted_answers).toContain('pourra');
+  });
+
+  it('charge la série 9.3 avec 10 questions de phrases composées temporelles (fill_blank)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch09-ex03'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('Vous (aller) ___ à l’opéra quand vos amis (être) ___ à Lyon.');
+    expect(data?.questions[0].accepted_answers).toContain('irez, seront');
+    expect(data?.questions[5].prompt).toBe('Tant qu’il y (avoir) ___ des hommes, il y (avoir) ___ des guerres.');
+    expect(data?.questions[5].accepted_answers).toContain('aura, aura');
+  });
+
+  it('charge la série 9.4 avec 10 questions de transformation futur immédiat au futur simple (sentence_rewrite)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch09-ex04'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('L’avion va décoller à onze heures.');
+    expect(data?.questions[0].accepted_answers).toContain('L’avion décollera à onze heures.');
+    expect(data?.questions[1].prompt).toBe('Tu vas apprendre à conduire.');
+    expect(data?.questions[1].accepted_answers).toContain('Tu apprendras à conduire.');
+    expect(data?.questions[8].prompt).toBe('Ils vont aller en Bolivie.');
+    expect(data?.questions[8].accepted_answers).toContain('Ils iront en Bolivie.');
+  });
+
+  it('charge la série 9.5 avec 5 questions de correspondance de deux colonnes (matching)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch09-ex05'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('matching');
+    expect(data?.questions).toHaveLength(5);
+    expect(data?.questions[0].prompt).toBe('Elle recevra');
+    expect(data?.questions[0].accepted_answers).toContain('c');
+    expect(data?.questions[1].prompt).toBe('Tu courras');
+    expect(data?.questions[1].accepted_answers).toContain('e');
+    expect(data?.questions[2].prompt).toBe('Il enseignera');
+    expect(data?.questions[2].accepted_answers).toContain('a');
+    expect(data?.questions[3].prompt).toBe('Elle mourra');
+    expect(data?.questions[3].accepted_answers).toContain('b');
+    expect(data?.questions[4].prompt).toBe('Il deviendra');
+    expect(data?.questions[4].accepted_answers).toContain('d');
+  });
+
+  it('charge la série 9.6 avec 10 questions de futur antérieur (fill_blank)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch09-ex06'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('Elle (apprendre) ___ le français au Laos.');
+    expect(data?.questions[0].accepted_answers).toContain('aura appris');
+    expect(data?.questions[6].prompt).toBe('Elle (se reposer) ___ des semaines au bord du lac.');
+    expect(data?.questions[6].accepted_answers).toContain('se sera reposée');
+    expect(data?.questions[8].prompt).toBe('Il (mourir) ___ depuis longtemps.');
+    expect(data?.questions[8].accepted_answers).toContain('sera mort');
+  });
+
+  it('charge la série 9.7 avec 10 questions de traduction active (translation)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch09-ex07'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('translation');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('We’ll play tennis.');
+    expect(data?.questions[0].accepted_answers).toContain('Nous jouerons au tennis.');
+    expect(data?.questions[3].prompt).toBe('We’ll visit Venice when we are in Italy.');
+    expect(data?.questions[3].accepted_answers).toContain('Nous visiterons Venise quand nous serons en Italie.');
+    expect(data?.questions[9].prompt).toBe('He’ll become a doctor.');
+    expect(data?.questions[9].accepted_answers).toContain('Il deviendra médecin.');
+  });
+
+  it('charge la série 9.8 avec 10 questions de conjonctions de l\'indicatif (fill_blank)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch09-ex08'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('Puisqu’il a raté son examen, il (ne pas aller) ___ en vacances.');
+    expect(data?.questions[0].accepted_answers).toContain("n'ira pas");
+    expect(data?.questions[3].prompt).toBe('Il fera chaud chez elle alors que chez lui, on (geler) ___ .');
+    expect(data?.questions[3].accepted_answers).toContain('gèlera');
+    expect(data?.questions[4].prompt).toBe('Si nous avons le temps, nous (se promener) ___ au bord du lac.');
+    expect(data?.questions[4].accepted_answers).toContain('nous promènerons');
+    expect(data?.questions[5].prompt).toBe('Dès que j’aurai terminé l’enregistrement, je vous (envoyer) ___ un CD.');
+    expect(data?.questions[5].accepted_answers).toContain('enverrai');
+  });
 });

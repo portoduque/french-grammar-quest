@@ -802,7 +802,7 @@
         {
           "id": "ch09-ex05-q01",
           "number": 1,
-          "prompt": "Elle recevra a. le français __",
+          "prompt": "Elle recevra",
           "source_raw_prompt": "Elle recevra                  a. le français\n\n ______ ",
           "pdf_pages": [
             120
@@ -822,7 +822,7 @@
         {
           "id": "ch09-ex05-q02",
           "number": 2,
-          "prompt": "Tu courras b. à un âge avancé __",
+          "prompt": "Tu courras",
           "source_raw_prompt": "Tu courras                  b. à un âge avancé\n\n ______ ",
           "pdf_pages": [
             120
@@ -842,7 +842,7 @@
         {
           "id": "ch09-ex05-q03",
           "number": 3,
-          "prompt": "Il enseignera c. son diplôme en juin __",
+          "prompt": "Il enseignera",
           "source_raw_prompt": "Il enseignera                 c. son diplôme en juin\n\n ______ ",
           "pdf_pages": [
             120
@@ -862,7 +862,7 @@
         {
           "id": "ch09-ex05-q04",
           "number": 4,
-          "prompt": "Elle mourra d. pilote de ligne __",
+          "prompt": "Elle mourra",
           "source_raw_prompt": "Elle mourra                 d. pilote de ligne\n\n ______ ",
           "pdf_pages": [
             120
@@ -882,7 +882,7 @@
         {
           "id": "ch09-ex05-q05",
           "number": 5,
-          "prompt": "Il deviendra e. dans le parc",
+          "prompt": "Il deviendra",
           "source_raw_prompt": "Il deviendra                  e. dans le parc",
           "pdf_pages": [
             120,

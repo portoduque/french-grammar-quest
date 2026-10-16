@@ -1,165 +1,236 @@
 # Chapter 09 — The futur simple and the futur antérieur
 
-> Automatically extracted from the source PDF. Text and bilingual columns must be checked visually before use in interactive lessons.
-> Literal source snapshots are preserved in `source-pages/`; a full source mirror is in `theory-source.md`.
+> [!TIP]
+> ### 👨‍🏫 Dica do Professor de Francês (FLE) : Regras de Ouro do Futur Simple e Futur Antérieur
+> 1. **O Segredo Histórico das Terminações : O Presente de AVOIR** :
+>    - Você já reparou de onde vêm as terminações do *futur simple* ? Elas vêm diretamente do verbo **avoir** no presente !
+>      - *J'**ai*** ➔ **-ai**
+>      - *Tu **as*** ➔ **-as**
+>      - *Il **a*** ➔ **-a**
+>      - *Nous (av)**ons*** ➔ **-ons**
+>      - *Vous (av)**ez*** ➔ **-ez**
+>      - *Ils **ont*** ➔ **-ont**
+>    - Nunca mais esqueça uma terminação : são idênticas para **absolutamente todos os verbos** da língua francesa !
+> 2. **A Fórmula Morfológica : O Infinitivo como Radical** :
+>    - Verbos regulares em **-er** e **-ir** : conserve o infinitivo completo como radical (*décider ➔ je déciderai*, *choisir ➔ tu choisiras*).
+>    - Verbos em **-re** : elimine apenas o **-e** final antes de colocar a terminação (*répondre ➔ répondr- ➔ nous répondrons*, *vendre ➔ vendr- ➔ ils vendront*).
+> 3. **Pronúncia : Cuidado com o « -ont » da 3ª Pessoa do Plural** :
+>    - No presente da maioria dos verbos, a terminação *-ent* é completamente silenciosa (*ils parlent* [il paʁl]).
+>    - No **futur simple**, a terminação é **-ont** : ela é **sempre sonora e nasal** (*ils décideront* [il desidʁɔ̃]) !
+> 4. **A Maior Armadilha para Falantes de Português : As Orações Temporais (« Quand / Dès que »)** :
+>    - Em português, quando projetamos o futuro com conjunções de tempo, usamos o *Futuro do Subjuntivo* :
+>      - *"Quando eu **chegar** a Paris..."* / *"Assim que ela **terminar** o livro..."*
+>    - Em inglês, usa-se o presente : *"When I **arrive**..."* / *"As soon as she **finishes**..."*
+>    - **EM FRANCÊS É OBRIGATÓRIO O FUTUR SIMPLE** :
+>      - ❌ *Quand j'arrive...* ou *Quand j'arrive (subjuntivo)*
+>      - ✅ **Quand j'arriverai à Paris...**
+>      - ✅ **Dès qu'elle finira son livre...**
+>      - ✅ **Tant qu'il y aura du soleil, nous resterons sur la terrasse.**
+> 5. **O Clube do Duplo « R » nos Radicais Irregulares** :
+>    - Alguns dos verbos mais frequentes dobram o **r** no futuro simples :
+>      - *Pouvoir* ➔ **je pourrai** (não confunda com *je pourrais* do condicional !)
+>      - *Voir* ➔ **je verrai**
+>      - *Envoyer* ➔ **j'enverrai**
+>      - *Courir* ➔ **je courrai**
+>      - *Mourir* ➔ **je mourrai**
+> 6. **Futur Antérieur : Ação Concluída no Futuro** :
+>    - Formado pelo futuro de **avoir** ou **être** + particípio passado (*j'aurai fini*, *elle sera partie*).
+>    - Expressa que algo estará terminado antes de outro fato futuro : *Dès qu'elle **aura fini** son roman, elle vous téléphonera.*
+> 7. **A Proibição Absoluta do « Si » Condicional** :
+>    - Em francês, a conjunção condicional **SI NUNCA ACEITA FUTURO** :
+>      - ❌ *S'il aura le temps, il viendra.*
+>      - ✅ **S'il a le temps, il viendra.** (Se tiver tempo, virá).
+>    - Só usamos o futuro/futur antérieur após *si* quando significa "se porventura / saber se" (interrogação indireta) : *Je me demande s'ils auront signé le contrat.*
 
-## The futur simple
-<!-- PDF pages 113–114; source chars 0–2530 -->
+---
 
-```text
-•9•
+## 1. Formation Régulière du Futur Simple
 
-    The futur simple and the futur
-               antérieur
+Pour former le futur simple des verbes réguliers, on prend en principe **l'infinitif complet** comme radical et on ajoute les terminaisons universelles :
+$$\textbf{-ai, -as, -a, -ons, -ez, -ont}$$
 
+Pour les verbes terminés en **-re**, on retire le **-e** final avant d'ajouter les terminaisons.
 
+| Pronom | Terminaison | Décider (-er) | Choisir (-ir) | Répondre (-re) |
+|---|---|---|---|---|
+| **Je / J'** | **-ai** | je déciderai | je choisirai | je répondrai |
+| **Tu** | **-as** | tu décideras | tu choisiras | tu répondras |
+| **Il / Elle / On** | **-a** | il décidera | elle choisira | on répondra |
+| **Nous** | **-ons** | nous déciderons | nous choisirons | nous répondrons |
+| **Vous** | **-ez** | vous déciderez | vous choisirez | vous répondrez |
+| **Ils / Elles** | **-ont** | ils décideront | elles choisiront | ils répondront |
 
-The futur simple
-You became acquainted with the future in Chapter 4 when you studied the futur
-immédiat. French has two other future constructions: the futur simple and the futur
-antérieur. To form the futur simple of most verbs, use the infinitive as the stem and
-add the endings -ai, -as, -a, -ons, -ez, -ont. For -re verbs, drop the e from the
-infinitive before adding the endings. Here are some examples:
+---
 
-       décider to decide
-         je déciderai         I’ll decide          nous déciderons       we’ll decide
-        tu décideras       you’ll decide        vous déciderez         you’ll decide
-          il/elle décidera    he’ll/she’ll decide     ils/elles décideront     they’ll decide
+## 2. Vocabulaire Fondamental : Les Études et la Vie Académique
 
-        choisir to choose
-         je choisirai         I’ll choose          nous choisirons       we’ll choose
-        tu choisiras       you’ll choose        vous choisirez         you’ll choose
-          il/elle choisira    he’ll/she’ll choose     ils/elles choisiront     they’ll choose
+Voici les termes indispensables issus du chapitre pour comprendre et réussir les exercices :
 
-       répondre to answer
-         je répondrai        I’ll answer          nous répondrons      we’ll answer
-        tu répondras      you’ll answer       vous répondrez        you’ll answer
-          il/elle répondra   he’ll/she’ll answer    ils/elles répondront    they’ll answer   VOCABULAIRE
+| Terme Français | Traduction en Portugais | Équivalent Anglais |
+|---|---|---|
+| **un(e) élève** | aluno(a) (ensino fundamental/médio) | a student (elementary/high school) |
+| **un étudiant, une étudiante** | estudante universitário(a) | a student (university) |
+| **un professeur** | professor, docente | a teacher, a professor |
+| **un cours** | um curso, uma aula | a course, a class |
+| **un examen** | um exame, uma prova | an exam |
+| **un stage** | um estágio | an internship, training |
+| **apprendre** | aprender | to learn |
+| **enseigner** | ensinar | to teach |
+| **étudier** | estudar | to study |
+| **suivre un cours** | cursar / assistir a uma disciplina | to take a class |
+| **les devoirs (m. pl.)** | tarefas de casa, lição | homework |
+| **un brouillon** | um rascunho | a first draft |
+| **passer un examen** | prestar / fazer uma prova *(faux ami !)* | to take an exam |
+| **réussir à un examen** | ser aprovado / passar na prova | to pass an exam |
+| **échouer à un examen / rater** | reprovar na prova | to fail an exam |
+| **parler couramment** | falar fluentemente | to be fluent |
+| **être rouillé(e)** | estar enferrujado(a) (sem praticar) | to be rusty |
+| **un curriculum vitae (C.V.)** | currículo | a résumé |
+| **faire l'école buissonnière** | matar aula, cabular aula | to play hooky |
+| **recevoir son diplôme** | colar grau / receber o diploma | to get one's degree |
+| **une note** | uma nota escolar | a grade |
 
+> [!WARNING]
+> ### ⚠️ Falso Amigo Crucial : *Passer un examen* ≠ Passar na prova !
+> - Em francês, **passer un examen** significa apenas **fazer / prestar a prova** (sem garantia de resultado).
+> - Para dizer que você **passou / foi aprovado**, use **réussir un examen** ou **être reçu à l'examen** !
+> - E para dizer que reprovou, use **échouer à un examen** ou o verbo coloquial **rater son examen**.
 
-un(e) élève                     a student (elementary school)
-un étudiant, une étudiante        a student (university)
-un professeur                   a teacher, a professor
-un cours                       a course
-un examen                     an exam
-un stage                              training, an internship
-apprendre                           to learn
-enseigner                            to teach
-étudier                               to study
-suivre un cours                      to take a class
-les devoirs (m.pl.)               homework
-un brouillon                    a first draft
-passer un examen                   to take an exam
-réussir à un examen                 to pass an exam
-échouer à un examen                to fail an exam
-parler l’anglais couramment        to be fluent in English
-être rouillé(e)                        to be rusty
-un curriculum vitae (C.V.)        a résumé
-analyser                              to analyze
-expliquer                            to explain
-faire l’école buissonnière            to play hooky
-recevoir son diplôme                to get one’s degree
-une note                       a grade
-```
+---
 
-## The futur antérieur
-<!-- PDF pages 120–121; source chars 11834–13436 -->
+## 3. Radicaux Irréguliers et Ajustements Orthographiques
 
-```text
-The futur antérieur
-The futur antérieur (future perfect) describes an action that will take place and be
-completed before another future action. To form this compound tense, use the future
-tense of avoir or être + the past participle of the main verb. Agreement rules are the
-same as for the passé composé. Although it is rarely used in English, it must be used
-in French under certain circumstances.
+Même si les terminaisons ne changent jamais, une vingtaine de verbes très fréquents modifient leur radical :
 
-        écrire to write
-        j’aurai écrit      I’ll have written      nous aurons écrit   we’ll have writte
-        tu auras écrit   you’ll have written    vous aurez écrit    you’ll have
-                                                                        written
-          il/elle aura     he/she will have         ils/elles auront      they’ll have
-            écrit            written                 écrit                written
+### A. Les Radicaux Entièrement Irréguliers
 
-       devenir to become
-         je serai devenu(e) I’ll have become   nous serons           we’ll have
-                                               devenu(e)s          become
-        tu seras            you’ll have become vous serez devenu(e)  you’ll have
-          devenu(e)                                  (s)                become          il/elle sera          he’ll/she’ll have     ils/elles seront         they’ll have
-          devenu(e)       become           devenu(e)s         become
+| Verbe | Radical du Futur | 1ʳᵉ personne (Je) | Traduction en Portugais |
+|---|---|---|---|
+| **Aller** | **ir-** | j'irai | irei / vou |
+| **Apercevoir** | **apercevr-** | j'apercevrai | avistarei |
+| **Avoir** | **aur-** | j'aurai | terei |
+| **Courir** | **courr-** *(double r)* | je courrai | correrei |
+| **Devenir** | **deviendr-** | je deviendrai | me tornarei |
+| **Devoir** | **devr-** | je devrai | deverei / terei que |
+| **Envoyer** | **enverr-** *(double r)* | j'enverrai | enviarei |
+| **Être** | **ser-** | je serai | serei / estarei |
+| **Faire** | **fer-** | je ferai | farei |
+| **Falloir** | **faudr-** *(impersonnel)* | il faudra | será necessário |
+| **Mourir** | **mourr-** *(double r)* | je mourrai | morrerei |
+| **Pleuvoir** | **pleuvr-** *(impersonnel)* | il pleuvra | choverá |
+| **Pouvoir** | **pourr-** *(double r)* | je pourrai | poderei |
+| **Recevoir** | **recevr-** | je recevrai | receberei |
+| **Revenir** | **reviendr-** | je reviendrai | voltarei |
+| **Savoir** | **saur-** | je saurai | saberei |
+| **Tenir** | **tiendr-** | je tiendrai | segurarei / manterei |
+| **Valoir** | **vaudr-** | il vaudra | valerá |
+| **Venir** | **viendr-** | je viendrai | virei |
+| **Voir** | **verr-** *(double r)* | je verrai | verei |
+| **Vouloir** | **voudr-** | je voudrai | quererei |
 
-      Nous aurons résolu tous les problèmes   We’ll have solved all the problems b
-           d’ici la fin de l’année.                     the end of the year.
-          Il aura enseigné le français toute sa vie.   He’ll have taught French all his life
-```
+### B. Ajustements Orthographiques
 
-## The futur simple
-<!-- PDF pages 123–125; source chars 17732–20731 -->
+- **Changement d'accent (e muet ➔ è)** :
+  - *Acheter* ➔ **j'achèterai**, *tu achèteras*, *il achètera*
+  - *Se promener* ➔ **nous nous promènerons**
+  - *Geler* ➔ **il gèlera**
+  - *Préférer* ➔ **je préférerai** (ou *je préfèrerai* selon la réforme)
+- **Consonne doublée (-eler / -eter)** :
+  - *Appeler* ➔ **j'appellerai** (deux 'l')
+  - *Jeter* ➔ **je jetterai** (deux 't')
+- **Transformation du Y en I (-oyer / -uyer)** :
+  - *Nettoyer* ➔ **je nettoierai**
+  - *Employer* ➔ **j'emploierai**
+  - *Essuyer* ➔ **j'essuierai**
 
-```text
-Conjunctions used with the indicative mood
-You have just seen examples of conjunctions frequently used with the futur simple
-and the futur antérieur. These include:
+---
 
-       aussitôt que                             as soon as
-      dès que                                 as soon as
-       lorsque                            when      quand                             when
-       tant que                                as long as
+## 4. Emplois Majeurs du Futur Simple
 
-   Let’s learn a few more conjunctions followed by the indicative mood. In Chapter
-13 we’ll study other conjunctions followed by the subjunctive mood.
+### A. Projets et Événements Futurs
+- *Les étudiants **passeront** leurs examens en mai.*
+- *Les cours **recommenceront** en décembre.*
 
-       alors que                           while, whereas
-      après que                             after
-     comme                               as, since
-       étant donné que                    given, in view of
-      maintenant que               now that
-      parce que                       because
-      pendant que                      while
-      puisque                            since
-         si                                                    if
-       sous prétexte que                under the pretext that
-       tandis que                      whereas
-      vu que                              given, in view of
+### B. Subordonnées Temporelles (Règle d'or avec quand, dès que, etc.)
+Quand la proposition principale est au futur simple, la proposition subordonnée introduite par une conjonction temporelle doit **également être au futur simple** :
+- **Aussitôt que** (assim que) : *Aussitôt qu'il **arrivera**, nous **partirons**.*
+- **Dès que** (assim que / logo que) : *Elle vous préviendra dès qu'elle **aura** les résultats.*
+- **Lorsque / Quand** (quando) : *Elle ira à Paris quand elle **aura** le temps.*
+- **Tant que** (enquanto / contanto que) : *Tant qu'il y **aura** du soleil, nous **resterons** sur la terrasse.*
 
-  As we saw earlier in this chapter, some conjunctions require the future tense in
-both the main and the dependent clauses. However, in other cases, the French
-sequence of tenses must be respected (see page 142).
+### C. La Probabilité dans le Présent (avec être et avoir)
+Le futur simple d'*être* ou *avoir* permet de faire une déduction probable sur le présent :
+- *L'étudiant n'est pas en classe. Il **sera** encore endormi.* (= Ele deve estar dormindo / Provavelmente ainda está dormindo).
+- *Le professeur n'a pas demandé nos devoirs. Il **sera** distrait.* (= Deve estar distraído).
 
-       Elle apprendra le portugais quand elle sera  She’ll learn Portuguese when she
-         au Portugal.                                        is in Portugal.
-       Je t’écrirai dès que je serai à Rio.               I’ll write to you as soon as I am i
-                                                      Rio.
-      Dès qu’ils sortaient de l’école, ils allaient au As soon as they left school, they
-           stade.                                   used to go to the stadium.
-          Il a fondu en larmes quand il a appris qu’il He burst into tears when he found
-           avait raté l’examen.                        out he had failed the exam.
-      Puisque tu as le temps, aide-moi à finir mes Since you have time, help me fini
-           devoirs.                          my homework.
-          Il lisait pendant qu’elle écrivait.         He was reading while she was
-                                                         writing.
-      Étant donné que vous avez démissionné,   Given that you resigned, we cann
-         nous ne pouvons rien faire pour vous.      do anything for you.        Il t’a fait ce cadeau parce que tu le mérites. He gave you this present because
-                                             you deserve it.
-    Comme il pleuvait, ils sont partis.          Since it was raining, they left.
-     Le téléphone a sonné alors que j’étais dans The phone rang while I was in my
-      mon bain.                                   bath.
-      Si tu veux y aller, appelle-moi!                   If you want to go there, call me!
-```
+### D. Le Futur Historique ou de Narration
+Dans une biographie ou un récit historique au passé :
+- *Malheureusement, ses œuvres ne **seront** reconnues qu'après sa mort.*
+- *Un des génies du dix-huitième siècle et il **mourra** dans la misère.*
 
+### E. Atténuation de Politesse (Impératif Adouci)
+Pour donner une consigne avec une extrême élégance :
+- *Vous **voudrez bien** lui envoyer ma réponse.* (Tenha a gentileza de lhe enviar minha resposta).
+- *Je vous **demanderai** de faire preuve de compassion.*
 
+---
 
-## Source theory recovered from exercise-boundary parsing
+## 5. Le Futur Antérieur
 
-> The paragraphs below were accidentally attached to the last exercise item in the automatic extraction. They are preserved here for learning-content completeness, but paragraph/table formatting and placement require visual editorial review against the PDF.
+### A. Définition et Formation
+Le **futur antérieur** exprime une action qui aura eu lieu et qui sera **achevée** avant une autre action future.
+Formule :
+$$\textbf{Auxiliaire AVOIR ou ÊTRE au Futur Simple} + \textbf{Participe Passé}$$
 
-### After ch09-ex01-q10 (source PDF pages 115,116)
+Les règles d'accord sont exactement les mêmes que pour le *passé composé* :
+- Avec **être** : accord systématique en genre et nombre avec le sujet (*elle sera devenue*, *ils seront morts*).
+- Avec **avoir** : accord uniquement si le Complément d'Objet Direct (C.O.D.) précède le verbe.
 
-The endings of the futur simple are the same for all verbs. However, some irregular verbs have irregular stems. You simply have to memorize them. aller to go j’irai I’ll go apercevoir to notice j’apercevrai I’ll notice avoir to have j’aurai I’ll have courir to run je courrai I’ll run devenir to become je deviendrai I’ll become devoir must, to have to je devrai I’ll have to envoyer to send j’enverrai I’ll send être to be je serai I’ll be faire to do je ferai I’ll do falloir to have to il faudra one will have to mourir to die je mourrai I’ll die pleuvoir to rain il pleuvra it’ll rain pouvoir can, to be able to je pourrai I’ll be able to recevoir to receive je recevrai I’ll receive revenir to return, to come back je reviendrai I’ll return, I’ll come back savoir to know je saurai I’ll know tenir to hold je tiendrai I’ll hold valoir to be worth il vaudra it will be worth venir to come je viendrai I’ll come voir to see je verrai I’ll see vouloir to want je voudrai I’ll want Some slight spelling modifications occur with some verbs. These are seen throughout all persons of the future conjugation. acheter to buy j’achèterai I’ll buy appeler to call j’appellerai I’ll call employer to hire j’emploierai I’ll use, I’ll hire essuyer to wipe j’essuierai I’ll wipe jeter to throw je jetterai I’ll throw nettoyer to clean je nettoierai I’ll clean préférer to prefer je préférerai I’ll prefer
+| Pronom | Écrire (*avec Avoir*) | Devenir (*avec Être*) |
+|---|---|---|
+| **Je / J'** | j'aurai écrit | je serai devenu(e) |
+| **Tu** | tu auras écrit | tu seras devenu(e) |
+| **Il / Elle / On** | il aura écrit | elle sera devenue |
+| **Nous** | nous aurons écrit | nous serons devenu(e)s |
+| **Vous** | vous aurez écrit | vous serez devenu(e)(s) |
+| **Ils / Elles** | ils auront écrit | elles seront devenues |
 
-### After ch09-ex02-q10 (source PDF pages 116,117,118)
+### B. Nuance : Futur Simple vs Futur Antérieur
+- **Actions simultanées (futur simple + futur simple)** :
+  - *Elle vous téléphonera dès qu'elle **finira** son roman.* (Assim que terminar, na mesma hora).
+- **Action préalable terminée (futur antérieur + futur simple)** :
+  - *Elle vous téléphonera dès qu'elle **aura fini** son roman.* (Depois de já ter deixado o livro 100% concluído).
 
-As in English, the French future tense is used to describe future events. Les étudiants passeront leurs examens en Students will take their exams in mai. May. Les cours recommenceront en décembre. Courses will resume in December In a compound sentence in French, if the main clause is in the futur simple, the dependent clause, introduced by some conjunctions, will also be in the futur simple. Note that in English, such a dependent clause will be in the present tense. aussitôt que as soon as dès que as soon as lorsque when quand when tant que as long as Elle ira à Paris quand elle aura le temps. She’ll go to Paris when she has time. Il nous dira lorsqu’il faudra parler. He’ll tell us when we have to talk. Elle vous préviendra dès qu’elle aura les She’ll inform you as soon as she résultats. gets the results. Aussitôt qu’il arrivera, nous partirons. As soon as he arrives, we’ll leave. Elle vous téléphonera aussitôt qu’elle She’ll call you as soon as she land atterrira à Londres. in London. Tant qu’il y aura du soleil, nous resterons As long as the sun is out, we’ll stay sur la terrasse. on the terrace. The future tense of être and avoir is sometimes used to express probability in the present, to indicate something that is likely or allegedly true. L’étudiant n’est pas en classe. Il sera The student is not in class. He is probabl encore endormi. still asleep. Le professeur n’a pas demandé nos The teacher did not ask for our homewor devoirs. Il sera distrait. He’s probably distracted. In a narration, the futur simple can be used to express a future idea from the standpoint of the past, as shown in the following examples. (Note that English uses a conditional form, would, in this case.) Malheureusement, ses œuvres ne seront Unfortunately, her works would becom reconnues qu’après sa mort. recognized only after her death. Un des génies du dix-huitième siècle et One of the geniuses of the eighteenth il mourra dans la misère. century, and he would die in misery The futur simple can be used instead of an imperative (command form) to make the tone less peremptory. Vous voudrez bien lui envoyer ma réponse. Please send him my answer. Je vous demanderai de faire preuve de Please show a little compassion. compassion. Vous voudrez bien nous excuser. Please excuse us.
+### C. Probabilité d'une Action Passée
+- *Elle **aura encore échoué** à ses examens !* (Provavelmente reprovou de novo!).
+- *Il **aura encore brûlé** le gigot d'agneau !* (Deve ter queimado o assado!).
+- *Ils **auront manqué** leur train.* (Devem ter perdido o trem).
 
-### After ch09-ex06-q10 (source PDF pages 121,122)
+### D. « Si » d'Interrogation Indirecte vs « Si » de Condition
+- **Interrogation indirecte (se porventura / saber se)** ➔ Futur antérieur autorisé :
+  - *Je me demande s'ils **auront signé** le contrat.*
+  - *Je me demande si j'**aurai tout réglé** avant ce soir.*
+- **Condition avec SI** ➔ **JAMAIS DE FUTUR** :
+  - *S'il **a** le temps, il passera vous voir.* (et jamais *s'il aura le temps*).
 
-Sometimes you have a choice between the futur simple and the futur antérieur. When both clauses use the futur simple, it is implied that both actions are almost simultaneous. Elle vous téléphonera dès qu’elle finira She’ll call you as soon as she finish son roman. her novel. The futur antérieur describes two sequential and related future actions. Elle vous téléphonera dès qu’elle aura She’ll call you as soon as she finishes fini son roman. (will have finished) her novel. Dès que vous accepterez cette théorie, As soon as you accept this theory, we on en discutera plus longuement. discuss it at length. Dès que vous aurez accepté cette As soon as you accept (will have théorie, on en discutera plus accepted) this theory, we’ll discus longuement. it at length. The futur antérieur can also express the probability of a past action, in the same way that the futur simple can be used to express probability in the present. Elle aura encore échoué à ses She probably failed her exams again! examens! Il aura encore brûlé le gigot d’agneau! He probably burnt the leg of lamb again! Ils auront manqué leur train. They probably missed their train. Son fils aura encore fait des bêtises! His son probably got in trouble again! The futur antérieur is also used after si, implying a completed action. Si means whether in this case. Je me demande s’ils auront signé I wonder whether they’ll have signed the le contrat. contract. Je me demande si j’aurai tout I am wondering whether I’ll have resolved réglé avant ce soir. everything by tonight. Il se demande s’il aura terminé à He wonders whether he’ll have finished on temps. time. In French, the futur antérieur is never used after si implying a future condition. Use the present instead. S’il a le temps, il passera vous voir. If he has time, he’ll stop by to see yo Si vous pouvez, envoyez-moi votre CV If you can, send me your résumé avant lundi. before Monday.
+---
+
+## 6. Conjonctions Régissant le Mode Indicatif
+
+Les conjonctions suivantes introduisent des faits réels ou temporels et demandent **toujours l'indicatif** (contrairement aux conjonctions du subjonctif) :
+
+| Conjonction | Sens en Français | Traduction en Portugais |
+|---|---|---|
+| **aussitôt que / dès que** | simultanéité immédiate | assim que, logo que |
+| **lorsque / quand** | repère temporel | quando |
+| **tant que** | durée continue | enquanto, contanto que |
+| **alors que / tandis que** | contraste ou simultanéité | enquanto, ao passo que |
+| **après que** | postériorité | depois que *(toujours indicatif en bon français !)* |
+| **comme** | cause en début de phrase | como, já que |
+| **étant donné que / vu que** | cause constatable | dado que, visto que |
+| **maintenant que** | repère présent | agora que |
+| **parce que** | cause directe | porque |
+| **pendant que** | simultanéité durable | enquanto |
+| **puisque** | cause évidente ou partagée | já que, visto que |
+| **si** | condition directe | se |
+| **sous prétexte que** | fausse cause | sob o pretexto de que |

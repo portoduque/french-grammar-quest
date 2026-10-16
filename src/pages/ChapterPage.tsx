@@ -982,6 +982,107 @@ export const ChapterPage: React.FC = () => {
                 </div>
               </div>
             </div>
+          ) : chapterNum === 9 ? (
+            <div className="tips-deck">
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🔮</div>
+                <div className="tip-card-body">
+                  <h3>A Origem das Terminações : O Presente de AVOIR</h3>
+                  <p>
+                    Para nunca mais esquecer as terminações do <em>futur simple</em>, lembre-se do presente do verbo <strong>avoir</strong> ! Elas são idênticas para todos os verbos :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>-ai</strong> (j'ai) : <em>je déciderai, j'irai, je serai</em><br />
+                    • <strong>-as</strong> (tu as) : <em>tu parleras, tu finiras</em><br />
+                    • <strong>-a</strong> (il a) : <em>elle saura, on répondra</em><br />
+                    • <strong>-ons</strong> (nous avons) : <em>nous partirons, nous aurons</em><br />
+                    • <strong>-ez</strong> (vous avez) : <em>vous ferez, vous viendrez</em><br />
+                    • <strong>-ont</strong> (ils ont) : <em>ils verront</em> [vɛʁɔ̃] (cuidado : som nasal [ɔ̃], nunca mudo !)
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🚨</div>
+                <div className="tip-card-body">
+                  <h3>A Grande Armadilha : « Quand » et « Dès que »</h3>
+                  <p>
+                    Em português, usamos o <em>Futuro do Subjuntivo</em> (« quando eu chegar », « assim que tiver »). Em francês, <strong>É OBRIGATÓRIO O FUTUR SIMPLE</strong> :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    ❌ <em>*Quand j'arrive à Paris...</em><br />
+                    ✅ <strong>Quand j'arriverai à Paris, je t'appellerai.</strong><br />
+                    ❌ <em>*Dès qu'elle a le temps...</em><br />
+                    ✅ <strong>Dès qu'elle aura le temps, elle viendra.</strong><br />
+                    • <em>Tant qu'il y aura du soleil, nous resterons dehors.</em>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🏎️</div>
+                <div className="tip-card-body">
+                  <h3>O Clube do Duplo « R » nos Radicais</h3>
+                  <p>
+                    Cinco dos verbos mais frequentes dobram a letra <strong>r</strong> no futuro simples. Guarde esse quinteto :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Pouvoir</strong> ➔ <em>Je pourrai</em> (não confunda com o condicional <em>pourrais</em> !)<br />
+                    • <strong>Voir</strong> ➔ <em>Je verrai</em> / <em>Nous verrons</em><br />
+                    • <strong>Envoyer</strong> ➔ <em>J'enverrai</em> / <em>Ils enverront</em><br />
+                    • <strong>Courir</strong> ➔ <em>Je courrai</em> (dobra o r !)<br />
+                    • <strong>Mourir</strong> ➔ <em>Je mourrai</em> (dobra o r !)
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">⏳</div>
+                <div className="tip-card-body">
+                  <h3>Futur Antérieur : Ação Concluída no Futuro</h3>
+                  <p>
+                    O <em>futur antérieur</em> indica que uma ação já estará 100% finalizada antes que outra ocorra no futuro (formado por <strong>avoir/être no futuro + particípio</strong>) :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Dès qu'elle aura fini son roman</strong>, elle vous téléphonera.<br />
+                    • <strong>Quand nous serons arrivés</strong>, nous pourrons dîner.<br />
+                    • <em>Probabilité passée :</em> <strong>Elle aura encore oublié ses clés !</strong> (Ela deve ter esquecido as chaves de novo !)
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🛑</div>
+                <div className="tip-card-body">
+                  <h3>A Regra de Ouro do « Si » Condicional : JAMAIS de Futuro !</h3>
+                  <p>
+                    Em orações condicionais com <strong>SI</strong>, nunca use futuro simples nem futur antérieur em francês. Use o presente :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    ❌ <em>*S'il aura le temps, il passera vous voir.</em><br />
+                    ✅ <strong>S'il a le temps, il passera vous voir.</strong><br />
+                    <em>Exception (interrogation indirecte « se porventura ») :</em><br />
+                    • <strong>Je me demande s'ils auront signé le contrat.</strong> (Aqui pode !)
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🎓</div>
+                <div className="tip-card-body">
+                  <h3>Vocabulário Acadêmico & Falso Amigo Crucial</h3>
+                  <p>
+                    Atenção redobrada para os termos universitários deste capítulo :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Passer un examen</strong> = Fazer / prestar a prova (NÃO significa ser aprovado !)<br />
+                    • <strong>Réussir un examen</strong> = Ser aprovado / passar na prova<br />
+                    • <strong>Échouer / Rater un examen</strong> = Reprovar na prova<br />
+                    • <strong>Faire l'école buissonnière</strong> = Cabular / matar aula
+                  </div>
+                </div>
+              </div>
+            </div>
           ) : (
             <div className="tips-deck">
               <div className="tip-card card card-default">
