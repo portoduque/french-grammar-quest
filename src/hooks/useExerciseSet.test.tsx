@@ -1191,4 +1191,152 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
     expect(data?.questions[5].prompt).toBe('If only he had not been late!');
     expect(data?.questions[5].accepted_answers).toContain("Si seulement il n'avait pas été en retard !");
   });
+
+  describe('Séries et Moteurs de Jeu du Chapitre 11', () => {
+    it('charge la série 11.1 (fill_blank) pour le conditionnel présent régulier et irrégulier', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch11-ex01'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toContain('aller (nous)');
+      expect(data?.questions[0].accepted_answers).toContain('irions');
+      expect(data?.questions[3].prompt).toContain('avoir (je)');
+      expect(data?.questions[3].accepted_answers).toContain("j'aurais");
+    });
+
+    it('charge la série 11.2 (fill_blank) pour le conditionnel et inversion de politesse', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch11-ex02'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toContain('aller au théâtre');
+      expect(data?.questions[0].accepted_answers).toContain('Iriez-vous');
+      expect(data?.questions[1].prompt).toContain('passer chez vous');
+      expect(data?.questions[1].accepted_answers).toContain('Pourrions-nous');
+    });
+
+    it('charge la série 11.3 (sentence_rewrite) pour Si + Imparfait', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch11-ex03'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toContain('voyager');
+      expect(data?.questions[0].accepted_answers).toContain("Si j'avais moins de travail, je voyagerais plus.");
+    });
+
+    it('charge la série 11.4 (sentence_rewrite) pour Conséquence et condition', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch11-ex04'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toContain('Elle (être) contente');
+      expect(data?.questions[0].accepted_answers).toContain('Elle serait contente si tu venais ce soir.');
+    });
+
+    it('charge la série 11.5 (translation) pour la traduction active du conditionnel', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch11-ex05'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('translation');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('He would go to Paris if he had more time.');
+      expect(data?.questions[0].accepted_answers).toContain("Il irait à Paris s'il avait plus de temps.");
+    });
+
+    it('charge la série 11.6 (matching) avec les 5 paires du Bestiaire (a à e)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch11-ex06'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('matching');
+      expect(data?.questions).toHaveLength(5);
+      expect(data?.questions[0].prompt).toBe('Le chat serait content');
+      expect(data?.questions[0].accepted_answers).toContain('c');
+      expect(data?.questions[0].options).toHaveLength(5);
+    });
+
+    it('charge la série 11.7 (sentence_rewrite) pour le passé du conditionnel puis plus-que-parfait', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch11-ex07'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toContain('Nous (dîner) avec vous');
+      expect(data?.questions[0].accepted_answers).toContain('Nous aurions dîné avec vous si nous avions pu.');
+    });
+
+    it('charge la série 11.8 (sentence_rewrite) pour les hypothèses irréelles du passé', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch11-ex08'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toContain('S’il (finir) son projet');
+      expect(data?.questions[0].accepted_answers).toContain("S'il avait fini son projet, il n'aurait pas dû travailler le week-end.");
+    });
+
+    it('charge la série 11.9 (translation) avec le conditionnel journalistique et de politesse', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch11-ex09'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('translation');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('The prime minister reportedly went to China yesterday.');
+      expect(data?.questions[0].accepted_answers).toContain('Le Premier ministre serait allé en Chine hier.');
+    });
+
+    it('charge la série 11.10 (matching) avec les 5 paires « Au cas où » (a à e)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch11-ex10'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('matching');
+      expect(data?.questions).toHaveLength(5);
+      expect(data?.questions[0].prompt).toBe('Au cas où il pleuvrait');
+      expect(data?.questions[0].accepted_answers).toContain('c');
+      expect(data?.questions[0].options).toHaveLength(5);
+    });
+  });
 });

@@ -1173,6 +1173,100 @@ export const ChapterPage: React.FC = () => {
                 </div>
               </div>
             </div>
+          ) : chapterNum === 11 ? (
+            <div className="tips-deck">
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">💡</div>
+                <div className="tip-card-body">
+                  <h3>« Les SI n'aiment pas les -RAIS ! »</h3>
+                  <p>
+                    A regra de ouro mais célebre do FLE: <strong>NUNCA use o condicional logo após a conjunção « si »</strong> em orações condicionais de hipótese!
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    ❌ <em>*Si j'aurais de l'argent, j'achèterais...</em><br />
+                    ✅ <strong>Si j'avais de l'argent, j'achèterais un cheval.</strong> (Si + Imparfait → Conditionnel présent)<br />
+                    ✅ <strong>Si vous étiez venu, nous aurions fêté ensemble.</strong> (Si + Plus-que-parfait → Conditionnel passé)<br />
+                    • <em>Mnemônico:</em> O « si » já introduz a condição; a terminação <strong>-rais</strong> fica na oração principal!
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">⚡</div>
+                <div className="tip-card-body">
+                  <h3>Futur Simple vs Conditionnel Présent : Je ferai vs Je ferais</h3>
+                  <p>
+                    Atenção à ortografia e à fonética da 1ª pessoa do singular (<em>Je</em>) :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Futur Simple (sans « s ») :</strong> <em>Je ferai</em>, <em>je mangerai</em> [fe.ʁe] — Som fechado [e], certeza no futuro.<br />
+                    • <strong>Conditionnel (avec « s ») :</strong> <em>Je ferais</em>, <em>je mangerais</em> [fe.ʁɛ] — Som aberto [ɛ], hipótese ou desejo.<br />
+                    • <em>Dica:</em> Teste trocar mentalmente por <em>Il</em> : se virar <em>Il fera</em> é futuro; se virar <em>Il ferait</em> é condicional!
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🎩</div>
+                <div className="tip-card-body">
+                  <h3>Politesse Absolue & Inversion : Pourriez-vous... ?</h3>
+                  <p>
+                    O condicional atenua ordens e transforma pedidos em atos de máxima elegância e cortesia diplomática francesa:
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Pourriez-vous</strong> m'indiquer le chemin, s'il vous plaît ?<br />
+                    • <strong>Voudriez-vous</strong> répéter plus lentement ?<br />
+                    • <strong>Auriez-vous</strong> l'obligeance d'ouvrir la porte ?<br />
+                    • <em>Au restaurant :</em> « <strong>Je voudrais</strong> un café » ou « <strong>J'aimerais</strong> commander ».
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">📰</div>
+                <div className="tip-card-body">
+                  <h3>Le Conditionnel Journalistique (Information Non Confirmée)</h3>
+                  <p>
+                    Na imprensa francesa (<em>Le Figaro, Le Monde, AFP</em>), o condicional é obrigatório para fatos não homologados oficialmente (« segundo consta », « teria ocorrido »):
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Le président se rendrait à Bruxelles demain.</strong> (Consta que o presidente irá amanhã).<br />
+                    • <strong>L'accident aurait fait cinq blessés.</strong> (O acidente teria deixado cinco feridos).<br />
+                    • Transmite neutralidade e prudência antes da confirmação factual dos fatos.
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🛡️</div>
+                <div className="tip-card-body">
+                  <h3>Atenção : « Au cas où » Exige o Condicional !</h3>
+                  <p>
+                    Enquanto « si » proíbe o condicional, a locução conjuntiva <strong>au cas où</strong> (caso, para o caso de) <strong>EXIGE SEMPRE o condicional</strong> (nunca subjuntivo nem indicativo):
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    ❌ <em>*Au cas où il pleuve / pleuvra...</em><br />
+                    ✅ <strong>Prends un imperméable au cas où il pleuvrait.</strong><br />
+                    ✅ <strong>Au cas où vous auriez des doutes, relisez la fiche de grammaire.</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🐾</div>
+                <div className="tip-card-body">
+                  <h3>Bestiaire & Fables : Gêneros e Vocabulário do Capítulo</h3>
+                  <p>
+                    O Capítulo 11 homenageia as fábulas de Jean de La Fontaine (<em>La grenouille qui se veut faire aussi grosse que le bœuf</em>). Memorize o gênero dos animais:
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Masculins :</strong> un bœuf, un écureuil, un dauphin, un perroquet, un taureau, un rhinocéros, un singe.<br />
+                    • <strong>Féminins :</strong> une grenouille, une baleine, une chauve-souris, une abeille, une autruche, une tortue.<br />
+                    • <em>Fable morale :</em> « Si la grenouille ne s'était pas enflée, elle n'aurait point éclaté ! »
+                  </div>
+                </div>
+              </div>
+            </div>
           ) : (
             <div className="tips-deck">
               <div className="tip-card card card-default">

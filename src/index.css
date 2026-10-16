@@ -10,6 +10,7 @@
   --bg-secondary: #111728;
   --bg-surface: #182238;
   --bg-surface-elevated: #1f2d4a;
+  --surface-card: #182238;
   --bg-glass: rgba(24, 34, 56, 0.7);
   --bg-overlay: rgba(0, 0, 0, 0.6);
 
@@ -91,6 +92,7 @@
   --bg-secondary: #ffffff;
   --bg-surface: #f1f5f9;
   --bg-surface-elevated: #ffffff;
+  --surface-card: #ffffff;
   --bg-glass: rgba(255, 255, 255, 0.85);
   --bg-overlay: rgba(0, 0, 0, 0.4);
 
@@ -2789,7 +2791,7 @@ dialog.modal::backdrop {
   display: flex;
   flex-direction: column;
   gap: var(--space-5);
-  padding-bottom: max(140px, calc(120px + env(safe-area-inset-bottom, 0px))); /* Previne sobreposição pela barra fixa de verificação/feedback */
+  padding-bottom: max(160px, calc(140px + env(safe-area-inset-bottom, 0px))); /* Previne sobreposição pela barra fixa de verificação/feedback */
   box-sizing: border-box;
   width: 100%;
 }
@@ -3311,20 +3313,20 @@ dialog.modal::backdrop {
 }
 
 .feedback-banner-correct {
-  background: rgba(16, 185, 129, 0.95);
-  border-top: 3px solid #059669;
+  background: #059669;
+  border-top: 3px solid #34d399;
   color: #ffffff;
 }
 
 .feedback-banner-incorrect {
-  background: rgba(239, 68, 68, 0.95);
-  border-top: 3px solid #dc2626;
+  background: #dc2626;
+  border-top: 3px solid #f87171;
   color: #ffffff;
 }
 
 .feedback-banner-review {
-  background: rgba(245, 158, 11, 0.95);
-  border-top: 3px solid #d97706;
+  background: #d97706;
+  border-top: 3px solid #fbbf24;
   color: #ffffff;
 }
 

@@ -68,6 +68,12 @@ import {
   CHAPTER_10_EXERCISE_SETS
 } from '@/data/chapter10Data';
 
+import {
+  CHAPTER_11_THEORY_MARKDOWN,
+  CHAPTER_11_TOPICS,
+  CHAPTER_11_EXERCISE_SETS
+} from '@/data/chapter11Data';
+
 const CH01_FALLBACK_THEORY: ChapterTheoryData = {
   chapter: {
     id: 'ch01',
@@ -288,6 +294,28 @@ const CH10_FALLBACK_THEORY: ChapterTheoryData = {
   exerciseSets: CHAPTER_10_EXERCISE_SETS
 };
 
+const CH11_FALLBACK_THEORY: ChapterTheoryData = {
+  chapter: {
+    id: 'ch11',
+    number: 11,
+    title: 'The present conditional and the past conditional',
+    slug: 'the-present-conditional-and-the-past-conditional',
+    world_number: 2,
+    world_name: 'Mundo 2: Les Temps du Passé',
+    page_range: '134–147',
+    topics_count: 4,
+    exercise_groups_count: 10,
+    total_questions: 90,
+    theory_markdown: CHAPTER_11_THEORY_MARKDOWN,
+    release_id: null,
+    editorial_status: 'published',
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+  },
+  topics: CHAPTER_11_TOPICS,
+  exerciseSets: CHAPTER_11_EXERCISE_SETS
+};
+
 function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch01') return CH01_FALLBACK_THEORY;
   if (chapterId === 'ch02') return CH02_FALLBACK_THEORY;
@@ -299,6 +327,7 @@ function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch08') return CH08_FALLBACK_THEORY;
   if (chapterId === 'ch09') return CH09_FALLBACK_THEORY;
   if (chapterId === 'ch10') return CH10_FALLBACK_THEORY;
+  if (chapterId === 'ch11') return CH11_FALLBACK_THEORY;
   return null;
 }
 
@@ -378,6 +407,8 @@ export function useTheory(chapterId?: string) {
           ? CHAPTER_09_THEORY_MARKDOWN
           : chapterId === 'ch10'
           ? CHAPTER_10_THEORY_MARKDOWN
+          : chapterId === 'ch11'
+          ? CHAPTER_11_THEORY_MARKDOWN
           : (chapterData as Chapter).theory_markdown;
 
         return {

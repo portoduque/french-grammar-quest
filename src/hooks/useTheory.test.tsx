@@ -870,4 +870,109 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
     expect(topics[1].id).toBe('ch10-t02');
     expect(topics[2].id).toBe('ch10-t03');
   });
+
+  it('fournit la théorie pédagogique complète et rigoureuse pour ch11 (Conditionnel présent et passé)', async () => {
+    const { result } = renderHook(() => useTheory('ch11'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data).toBeDefined();
+    expect(data?.chapter.number).toBe(11);
+    expect(data?.chapter.title).toBe('The present conditional and the past conditional');
+    expect(data?.chapter.page_range).toBe('134–147');
+
+    // Valide le contenu pédagogique FLE pour lusophones
+    const markdown = data?.chapter.theory_markdown || '';
+    expect(markdown).toContain("Les SI n'aiment pas les -RAIS !");
+    expect(markdown).toContain("Je ferai");
+    expect(markdown).toContain("Formules de Politesse et Inversion");
+    expect(markdown).toContain("Conditionnel Journalistique");
+    expect(markdown).toContain("Au cas où");
+    expect(markdown).toContain("Le Règne Animal");
+    expect(markdown.toLowerCase()).toContain("grenouille");
+    expect(markdown.toLowerCase()).toContain("rhinocéros");
+  });
+
+  it('charge les 10 séries d exercices officielles du Chapitre 11 avec les bons moteurs de jeu (90 questions au total)', async () => {
+    const { result } = renderHook(() => useTheory('ch11'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const sets = result.current.data?.exerciseSets || [];
+    expect(sets).toHaveLength(10);
+
+    // 11.1: Conditionnel Présent (Conjugaisons régulières et irrégulières) -> fill_blank (10)
+    expect(sets[0].id).toBe('ch11-ex01');
+    expect(sets[0].interaction_type).toBe('fill_blank');
+    expect(sets[0].questions_count).toBe(10);
+
+    // 11.2: Conditionnel Passé -> fill_blank (10)
+    expect(sets[1].id).toBe('ch11-ex02');
+    expect(sets[1].interaction_type).toBe('fill_blank');
+    expect(sets[1].questions_count).toBe(10);
+
+    // 11.3: Si + Imparfait -> sentence_rewrite (10)
+    expect(sets[2].id).toBe('ch11-ex03');
+    expect(sets[2].interaction_type).toBe('sentence_rewrite');
+    expect(sets[2].questions_count).toBe(10);
+
+    // 11.4: Si + Plus-que-parfait -> sentence_rewrite (10)
+    expect(sets[3].id).toBe('ch11-ex04');
+    expect(sets[3].interaction_type).toBe('sentence_rewrite');
+    expect(sets[3].questions_count).toBe(10);
+
+    // 11.5: Traduction active -> translation (10)
+    expect(sets[4].id).toBe('ch11-ex05');
+    expect(sets[4].interaction_type).toBe('translation');
+    expect(sets[4].questions_count).toBe(10);
+
+    // 11.6: Matching Si + Imparfait -> matching (5)
+    expect(sets[5].id).toBe('ch11-ex06');
+    expect(sets[5].interaction_type).toBe('matching');
+    expect(sets[5].questions_count).toBe(5);
+
+    // 11.7: Réécriture Si + Imparfait -> sentence_rewrite (10)
+    expect(sets[6].id).toBe('ch11-ex07');
+    expect(sets[6].interaction_type).toBe('sentence_rewrite');
+    expect(sets[6].questions_count).toBe(10);
+
+    // 11.8: Réécriture Si + Plus-que-parfait -> sentence_rewrite (10)
+    expect(sets[7].id).toBe('ch11-ex08');
+    expect(sets[7].interaction_type).toBe('sentence_rewrite');
+    expect(sets[7].questions_count).toBe(10);
+
+    // 11.9: Traduction journalistique et avancée -> translation (10)
+    expect(sets[8].id).toBe('ch11-ex09');
+    expect(sets[8].interaction_type).toBe('translation');
+    expect(sets[8].questions_count).toBe(10);
+
+    // 11.10: Matching Si + Plus-que-parfait -> matching (5)
+    expect(sets[9].id).toBe('ch11-ex10');
+    expect(sets[9].interaction_type).toBe('matching');
+    expect(sets[9].questions_count).toBe(5);
+
+    // Total questions check
+    const totalQ = sets.reduce((acc, s) => acc + s.questions_count, 0);
+    expect(totalQ).toBe(90);
+  });
+
+  it('fournit les 4 sujets principaux du chapitre 11', async () => {
+    const { result } = renderHook(() => useTheory('ch11'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const topics = result.current.data?.topics || [];
+    expect(topics).toHaveLength(4);
+    expect(topics[0].id).toBe('ch11-t01');
+    expect(topics[1].id).toBe('ch11-t02');
+    expect(topics[2].id).toBe('ch11-t03');
+    expect(topics[3].id).toBe('ch11-t04');
+  });
 });
