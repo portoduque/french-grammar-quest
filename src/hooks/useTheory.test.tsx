@@ -1249,4 +1249,73 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
     expect(topics[2].id).toBe('ch14-t03');
     expect(topics[3].id).toBe('ch14-t04');
   });
+
+  it('fournit la théorie pédagogique complète et rigoureuse pour ch15 (The present participle and the gerundive)', async () => {
+    const { result } = renderHook(() => useTheory('ch15'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data).toBeDefined();
+    expect(data?.chapter.number).toBe(15);
+    expect(data?.chapter.title).toBe('The present participle and the gerundive');
+    expect(data?.chapter.page_range).toBe('188–194');
+
+    // Valide le contenu pédagogique FLE pour lusophones
+    const markdown = data?.chapter.theory_markdown || '';
+    expect(markdown).toContain("Le Participe Présent (The Present Participle)");
+    expect(markdown).toContain("Ajustements Orthographiques (-cer et -ger)");
+    expect(markdown).toContain("Les Trois Seules Exceptions Irrévocables");
+    expect(markdown).toContain("Le Gérondif (The Gerundive)");
+    expect(markdown).toContain("L'Opposition et la Concession avec « Tout en »");
+    expect(markdown).toContain("Vocabulaire Thématique : Les Sports, les Jeux et la Compétition");
+    expect(markdown.toLowerCase()).toContain("natation");
+    expect(markdown.toLowerCase()).toContain("cyclisme");
+    expect(markdown.toLowerCase()).toContain("raquette");
+  });
+
+  it('charge les 3 séries d exercices officielles du Chapitre 15 avec les bons types d interaction (30 questions au total)', async () => {
+    const { result } = renderHook(() => useTheory('ch15'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const sets = result.current.data?.exerciseSets || [];
+    expect(sets).toHaveLength(3);
+
+    // 15.1: Morphologie du participe présent -> fill_blank (10)
+    expect(sets[0].id).toBe('ch15-ex01');
+    expect(sets[0].interaction_type).toBe('fill_blank');
+    expect(sets[0].questions_count).toBe(10);
+
+    // 15.2: Gérondif en contexte avec en et tout en -> fill_blank (10)
+    expect(sets[1].id).toBe('ch15-ex02');
+    expect(sets[1].interaction_type).toBe('fill_blank');
+    expect(sets[1].questions_count).toBe(10);
+
+    // 15.3: Traduction active intégrative -> translation (10)
+    expect(sets[2].id).toBe('ch15-ex03');
+    expect(sets[2].interaction_type).toBe('translation');
+    expect(sets[2].questions_count).toBe(10);
+
+    // Total questions check (30 questions)
+    const totalQ = sets.reduce((acc, s) => acc + s.questions_count, 0);
+    expect(totalQ).toBe(30);
+  });
+
+  it('fournit les 2 sujets principaux du chapitre 15', async () => {
+    const { result } = renderHook(() => useTheory('ch15'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const topics = result.current.data?.topics || [];
+    expect(topics).toHaveLength(2);
+    expect(topics[0].id).toBe('ch15-t01');
+    expect(topics[1].id).toBe('ch15-t02');
+  });
 });

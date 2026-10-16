@@ -1,187 +1,186 @@
 # Chapter 15 — The present participle and the gerundive
 
-> Automatically extracted from the source PDF. Text and bilingual columns must be checked visually before use in interactive lessons.
-> Literal source snapshots are preserved in `source-pages/`; a full source mirror is in `theory-source.md`.
+Le **participe présent** (*le participe présent*) et le **gérondif** (*le gérondif*) sont deux formes verbales impersonnelles très fréquentes en français, à l'oral comme à l'écrit soutenu. Pour les apprenants lusophones, maîtriser leur distinction syntaxique et orthographique est une étape clé vers un français naturel et idiomatique.
 
-## The present participle
-<!-- PDF pages 188–192; source chars 0–6826 -->
+---
 
-```text
-•15•
+## 1. Le Participe Présent (The Present Participle)
 
-    The present participle and the
-             gerundive
+### A. Règle Générale de Formation
+Le participe présent se forme de manière extrêmement régulière :
+$$\textbf{Radical de la forme « NOUS » au présent de l'indicatif} + \textbf{-ANT}$$
 
+| Infinitif | Forme « Nous » au Présent | Radical | Participe Présent | Traduction Portugaise | Traduction Anglaise |
+|---|---|---|---|---|---|
+| **chanter** | nous chant**ons** | *chant-* | **chantant** | cantando | singing |
+| **partir** | nous part**ons** | *part-* | **partant** | partindo | leaving |
+| **choisir** | nous choisiss**ons** | *choisiss-* | **choisissant** | escolhendo | choosing |
+| **boire** | nous buv**ons** | *buv-* | **buvant** | bebendo | drinking |
+| **voir** | nous voy**ons** | *voy-* | **voyant** | vendo | seeing |
+| **répondre** | nous répond**ons** | *répond-* | **répondant** | respondendo | answering |
+| **finir** | nous finiss**ons** | *finiss-* | **finissant** | terminando | finishing |
+| **vendre** | nous vend**ons** | *vend-* | **vendant** | vendendo | selling |
+| **donner** | nous donn**ons** | *donn-* | **donnant** | dando | giving |
+| **faire** | nous fais**ons** | *fais-* | **faisant** | fazendo | doing, making |
 
+---
 
-The present participle
-You have used the participe passé (past participle) many times with the compound
-tenses. Another participle is the participe présent (present participle). It is formed
-by dropping the -ons ending from the present tense nous form and adding -ant.
+### B. Ajustements Orthographiques (-cer et -ger)
+Pour préserver la prononciation du radical devant le **« a »** du suffixe **`-ant`** :
+1. **Verbes en `-cer`** : prennent une cédille **`ç`** devant le *a* pour conserver le son $[s]$ :
+   - *commencer* (nous commençons) ➔ **commençant** (começando)
+   - *avancer* (nous avançons) ➔ **avançant** (avançando)
+   - *prononcer* (nous prononçons) ➔ **prononçant** (pronunciando)
+   - *influencer* (nous influençons) ➔ **influençant** (influenciando)
+2. **Verbes en `-ger`** : conservent le **`e`** muet devant le *a* pour conserver le son $[ʒ]$ :
+   - *manger* (nous mangeons) ➔ **mangeant** (comendo)
+   - *nager* (nous nageons) ➔ **nageant** (nadando)
+   - *protéger* (nous protégeons) ➔ **protégeant** (protegendo)
 
-       chanter to sing
-       nous chantons           we sing       chantant         singing
+---
 
-        partir to leave
-       nous partons           we leave         partant         leaving
+### C. Verbes Pronominaux au Participe Présent
+Pour les verbes pronominaux, le pronom réfléchi s'adapte toujours à la personne du sujet auquel il se réfère :
+- *(moi)* **me promenant** (eu passeando)
+- *(toi)* **te promenant** (tu passeando)
+- *(lui / elle)* **se promenant** (ele/ela passeando)
+- *(nous)* **nous promenant** (nós passeando)
+- *(vous)* **vous promenant** (vocês passeando)
+- *(eux / elles)* **se promenant** (eles/elas passeando)
+- *se plaindre* ➔ **se plaignant** (nous nous plaignons)
 
-        choisir to choose
-       nous choisissons        we choose       choisissant       choosing
+---
 
-       boire to drink
-       nous buvons          we drink        buvant        drinking
+### D. Les Trois Seules Exceptions Irrévocables
+Seuls trois verbes ont un participe présent totalement irrégulier :
 
-        voir to see
-       nous voyons             we see        voyant          seeing
+| Infinitif | Participe Présent | Traduction Portugaise | Traduction Anglaise |
+|---|---|---|---|
+| **être** | **étant** | sendo, estando | being |
+| **avoir** | **ayant** | tendo | having |
+| **savoir** | **sachant** | sabendo | knowing |
 
-       répondre to answer
-       nous répondons        we answer      répondant      answering
+> [!NOTE]
+> Remarquez la parenté morphologique directe avec le subjonctif : *que nous ayons* ➔ *ayant*, *que nous sachions* ➔ *sachant*.
 
-  Some spelling changes occur with some -cer and -ger verbs:
+---
 
-      commencer to start
-       nous commençons         we start    commençant         starting        influencer to influence
-       nous influençons      we influence      influençant      influencing
+## 2. Emplois et Accords du Participe Présent
 
-      manger to eat
-       nous mangeons            we eat      mangeant           eating
+Le participe présent français a trois grandes valeurs syntaxiques distinctes :
 
-       nager to swim
-       nous nageons         we swim       nageant       swimming
+### A. Emploi comme Nom (Substantif)
+Il désigne une personne et s'accorde en genre et en nombre :
+- *un **gagnant** / une **gagnante*** (um vencedor / uma vencedora)
+- *un **perdant** / une **perdante*** (um perdedor / uma perdedora)
+- *les **participants** / les **participantes*** (os participantes / as participantes)
 
-   Pronominal  verbs  follow  the  same  pattern. Do  not  forget  the  pronoun
-corresponding to the subject. Let’s look at the present participle of se promener (to
-take a walk):
+### B. Emploi comme Adjectif Verbal
+Il qualifie un nom, exprime un état ou une qualité permanente, et **s'accorde en genre et en nombre** avec le nom :
+- *des matchs **épuisants*** (jogos exaustivos)
+- *un commentateur **fascinant*** / *une histoire **fascinante*** (um comentarista fascinante / uma história fascinante)
+- *un sport **exigeant*** (um esporte exigente)
+- *une pièce **amusante*** (uma peça divertida)
 
-     me promenant         walking     nous promenant           walking
-        te promenant           walking     vous promenant           walking
-       se promenant          walking      se promenant             walking
+### C. Emploi comme Verbe (Participe Présent Verbal)
+Il exprime une action et reste **strictement INVARIABLE** :
+- *La police l'a aperçu **entrant** dans un laboratoire médical.* (A polícia o viu entrando...)
+- ***Étant** blessé au genou, il n'a pas pu jouer.* (Estando machucado no joelho...)
+- ***Ne sachant pas** comment nous excuser, nous lui avons offert des fleurs.* (Não sabendo como nos desculpar...)
+- ***Traversant** la rue, elle a perdu son chapeau.* (Atravessando a rua...)
 
-   Three verbs have an irregular present participle:
+---
 
-       être             to be              étant              being
-       avoir            to have           ayant              having
-       savoir           to know           sachant           knowing
+## 3. Le Participe Passé Composé (Forme Composée)
 
+Quand une action précède une autre dans le passé, on combine le participe présent de l'auxiliaire (**ayant** ou **étant**) avec le **participe passé** du verbe :
+- Avec **avoir** : *ayant vu*, *ayant compris*, *ayant joué*, *ayant traversé*, *ayant fini*.
+- Avec **être** (verbes de déplacement et pronominaux — accord en genre et nombre avec le sujet) :
+  - *étant allé(e)(s)*, *étant parti(e)(s)*, *nous étant promené(e)s*, *nous étant retrouvé(e)s*, *m'étant couchée*.
 
-   VOCABULAIRE
+**Exemples :**
+- ***Ayant accepté** la défaite, les joueurs sont rentrés chez eux.* (Tendo aceitado a derrota...)
+- ***Étant partis** très tôt, nous sommes arrivés les premiers.* (Tendo partido muito cedo...)
+- ***Nous étant promenés** toute la journée, nous étions fatigués.* (Tendo passeado o dia todo...)
+- ***M'étant couchée** à l'aube, j'ai fait la grasse matinée.* (Tendo ido dormir de madrugada, dormi até tarde.)
+- ***N'ayant pas dormi** de la nuit, il était de mauvaise humeur.* (Não tendo dormido a noite toda...)
 
+---
 
- jouer                                    to play
- un joueur, une joueuse             a player
- un(e) adversaire                   an opponent
- une équipe                       a team
- gagner                                  to win
- remporter une victoire                 to win
- battre                                   to beat
- un vainqueur                     a winner
- un(e) gagnant(e)                  a winner
- un(e) perdant(e)                   a loser
- un match                        a game
- manquer                                to miss courir                                   to run
- sauter                                   to jump
- lancer                                   to throw
- s’entraîner                              to train
- un entraîneur                     a trainer
- le base-ball                           baseball
- le basket-ball                          basketball
- la boxe                             boxing
- le cyclisme                              biking, cycling
- le football                            soccer
- le football américain                   football
- le golf                                   golf
- le jogging                            jogging
- la lutte                                wrestling
- la natation                       swimming
- le patinage                              ice skating
- la plongée                             diving
- le ski                                   skiing
- la descente                          downhill skiing
- le ski de fond                         cross-country skiing
- le ski nautique                        waterskiing
- le tennis                                tennis
- la voile                                  sailing
- un stade                         a stadium
- une raquette                      a racket
- un ballon                        a ball
+## 4. Le Gérondif (The Gerundive)
 
+### A. Formation et Règle d'Or Syntaxique
+Le **gérondif** se forme par l'adjonction de la préposition **`en`** devant le participe présent :
+$$\textbf{EN} + \textbf{Participe Présent}$$
 
+> [!IMPORTANT]
+> **Règle absolue du gérondif :** Le gérondif a **obligatoirement le MÊME SUJET** que le verbe principal de la proposition !
+> - *Correct :* **En marchant** dans le parc, **Paul** a perdu ses clés. (C'est Paul qui marchait et qui a perdu ses clés.)
+> - *Incorrect :* *En marchant dans le parc, un chien m'a mordu.* (Le chien ne marchait pas pour vous mordre !)
 
-  Some participes présents can be used as nouns. When used as a noun, the
-present participle changes according to gender and number. For example:
+### B. Les 4 Valeurs du Gérondif
+1. **La Simultanéité (en même temps que) :**
+   - *Elle écoute de la musique **en conduisant**.* (Ela escuta música dirigindo / enquanto dirige.)
+   - *Il s'est foulé la cheville **en jouant** au foot.* (Ele torceu o tornozelo enquanto jogava futebol.)
+   - *Je tricote **en regardant** la télévision.* (Faço tricô enquanto assisto à televisão.)
+2. **Le Moyen ou la Manière (comment ?) :**
+   - *M. Vincent a gagné beaucoup d'argent **en achetant** ces toiles.* (Ganhou dinheiro comprando estas telas.)
+   - *C'est **en faisant** de l'exercice que vous serez en forme.* (É fazendo exercício que você ficará em forma.)
+   - *Il a gagné de l'argent **en vendant** des tableaux.* (Ganhou dinheiro vendendo quadros.)
+3. **La Condition (hypothèse) :**
+   - ***En renvoyant** ce joueur, vous feriez une grosse erreur.* (Se demitisse este jogador / Demitindo este jogador, cometeria um grande erro.)
+4. **La Causalité (cause temporelle) :**
+   - *Il est tombé **en sautant** par-dessus le mur.* (Caiu ao pular por cima do muro.)
 
-     un gagnant  a winner (masculine)   une gagnante  a winner (feminine)
-     un perdant  a loser (masculine)     une perdante  a loser (feminine)  Many participes présents can be used as adjectives. When used as an adjective,
-the participe présent agrees with the noun it modifies. For example:
+### C. L'Opposition et la Concession avec « Tout en »
+Lorsque l'adverbe **`tout`** précède le gérondif, il souligne une **tension**, une **contradiction** ou une **concession** (*mesmo enquanto*, *ao mesmo tempo que*, *apesar de*) :
+- ***Tout en étant** un bon joueur, il ne marquait jamais de but.* (Mesmo sendo um bom jogador, ele nunca marcava gol.)
+- ***Tout en faisant semblant** d'écouter le professeur, il jouait avec son téléphone.* (Enquanto fingia escutar o professor, jogava no celular.)
+- ***Tout en pleurant**, il riait.* (Ao mesmo tempo que chorava, ele ria.)
+- ***Tout en prétendant** le contraire, elle voulait être élue.* (Apesar de fingir o contrário, ela queria ser eleita.)
+- ***Tout en se plaignant**, elle avait l'air satisfaite.* (Mesmo reclamando, ela parecia satisfeita.)
 
-      des matchs épuisants                  exhausting games
-     un commentateur fascinant          a fascinating commentator
-     un sport exigeant                   a demanding sport
-      une pièce amusante                 an amusing play
+---
 
-  The participe présent can also be used as a verb. Note that when used as a verb,
-the present participle is invariable.
+## 5. Vocabulaire Thématique : Les Sports, les Jeux et la Compétition
 
-      La police l’a aperçu entrant dans un     The police saw him entering (as he
-           laboratoire médical.                  was entering) a medical lab.
-      Étant blessé au genou, il n’a pas pu jouer. Since he has a knee injury, he was
-                                                  not able to play.
-     Ne sachant pas comment nous excuser,   Not knowing how to apologize, we
-         nous lui avons offert des fleurs.          gave her some flowers.
-      Traversant la rue, elle a perdu son       Crossing (As she crossed) the stree
-          chapeau.                               she lost her hat.
-
-  When an action precedes another one, avoir and être in the participe présent can
-be combined with a participe passé. Note that the past participle agrees with the
-subject of the sentence if the verb is conjugated with être.
-
-      ayant vu                              having seen
-      ayant compris                         having understood
-      ayant joué                             having played
-      ayant traversé                         having crossed
-       étant allé(e)(s)                         having gone
-       étant parti(e)(s)                        having left
-      nous étant promené(e)s                 having walked
-      nous étant retrouvé(e)s                 having met
-                                          Having accepted the defeat, the
-      Ayant accepté la défaite, les joueurs sont                                                    players went home.
-          rentrés chez eux.
-      Étant partis très tôt, nous sommes arrivés Having left very early, we were the
-           les premiers.                                      first to arrive.      Nous étant promenés toute la journée,    Having walked all day, we were
-         nous étions fatigués.                          tired.
-      M’étant couchée à l’aube, j’ai fait la     Having gone to bed at dawn, I slep
-          grasse matinée.                                late.
-      N’ayant pas dormi de la nuit, il était de  Not having slept all night, he was i
-         mauvaise humeur.                    a bad mood.
-```
-
-## The present participle
-<!-- PDF pages 192–193; source chars 7204–8742 -->
-
-```text
-The gerundive
-When a present participle is introduced by an en, it becomes a gérondif (gerundive).
-It is formed with en + the present participle. It describes the relationship between
-two actions. It can express simultaneity, manner, condition, or causality.
-
-          Il s’est foulé la cheville en jouant au He sprained his ankle while playing
-           foot.                                    football.       Elle écoute de la musique en        She listens to music while driving.
-         conduisant.
-     M. Vincent a gagné beaucoup       Mr. Vincent made a lot of money buying
-          d’argent en achetant ces toiles.     (when he bought) these paintings.
-     En renvoyant ce joueur, vous feriez  If you fired this player, you would make
-         une grosse erreur.                   big mistake.
-
-  When tout precedes the gerundive,  it underscores a tension, a contradiction
-between two actions. For example:
-
-      Tout en étant un bon joueur, il ne      While being (Even though he was) a
-         marquait jamais de but.              good player, he never scored a go
-      Tout en faisant semblant d’écouter le  While pretending to listen to the
-           professeur, il jouait avec son phone.      teacher, he was playing with his
-                                              phone.
-      Tout en pleurant, il riait.              While crying, he was laughing.
-      Tout en prétendant le contraire, elle   While claiming otherwise, she wante
-           voulait être élue.                          to be elected.
-```
-
+| Terme Français | Catégorie | Traduction Portugaise | Traduction Anglaise |
+|---|---|---|---|
+| **jouer** | verbe | jogar, brincar | to play |
+| **un joueur, une joueuse** | nom | um jogador, uma jogadora | a player |
+| **un(e) adversaire** | nom | um(a) adversário(a) | an opponent |
+| **une équipe** | nom | um time, uma equipe | a team |
+| **gagner** | verbe | ganhar, vencer | to win |
+| **remporter une victoire** | expression | conquistar uma vitória | to win |
+| **battre** | verbe | derrotar, bater | to beat |
+| **un vainqueur** | nom | um vencedor | a winner |
+| **un(e) gagnant(e)** | nom | um(a) ganhador(a) | a winner |
+| **un(e) perdant(e)** | nom | um(a) perdedor(a) | a loser |
+| **un match** | nom | uma partida, um jogo | a game, a match |
+| **manquer** | verbe | perder, errar, faltar | to miss |
+| **courir** | verbe | correr | to run |
+| **sauter** | verbe | pular, saltar | to jump |
+| **lancer** | verbe | lançar, arremessar | to throw |
+| **s'entraîner** | verbe | treinar, exercitar-se | to train |
+| **un entraîneur** | nom | um treinador, técnico | a trainer, a coach |
+| **le base-ball** | nom | o beisebol | baseball |
+| **le basket-ball** | nom | o basquete | basketball |
+| **la boxe** | nom | o boxe | boxing |
+| **le cyclisme** | nom | o ciclismo | cycling, biking |
+| **le football** | nom | o futebol | soccer |
+| **le football américain** | nom | o futebol americano | American football |
+| **le golf** | nom | o golfe | golf |
+| **le jogging** | nom | o cooper, corrida leve | jogging |
+| **la lutte** | nom | a luta livre, wrestling | wrestling |
+| **la natation** | nom | a natação | swimming |
+| **le patinage** | nom | a patinação no gelo | ice skating |
+| **la plongée** | nom | o mergulho | diving |
+| **le ski** | nom | o esqui | skiing |
+| **la descente** | nom | o esqui alpino / descida | downhill skiing |
+| **le ski de fond** | nom | o esqui cross-country | cross-country skiing |
+| **le ski nautique** | nom | o esqui aquático | waterskiing |
+| **le tennis** | nom | o tênis | tennis |
+| **la voile** | nom | o iatismo, vela | sailing |
+| **un stade** | nom | um estádio | a stadium |
+| **une raquette** | nom | uma raquete | a racket |
+| **un ballon** | nom | uma bola (grande) | a ball |

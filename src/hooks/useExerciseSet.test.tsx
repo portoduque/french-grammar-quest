@@ -1701,4 +1701,69 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       expect(data?.questions[9].accepted_answers).toContain('Essayez de comprendre la situation !');
     });
   });
+
+  describe('useExerciseSet Hook — Chapitre 15 (The present participle and the gerundive)', () => {
+    it('charge la série 15.1 (fill_blank) pour la morphologie du participe présent (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch15-ex01'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('finir __');
+      expect(data?.questions[0].accepted_answers).toContain('finissant');
+      expect(data?.questions[1].prompt).toBe('savoir __');
+      expect(data?.questions[1].accepted_answers).toContain('sachant');
+      expect(data?.questions[3].prompt).toBe('protéger __');
+      expect(data?.questions[3].accepted_answers).toContain('protégeant');
+      expect(data?.questions[6].prompt).toBe('avancer __');
+      expect(data?.questions[6].accepted_answers).toContain('avançant');
+      expect(data?.questions[7].prompt).toBe('être __');
+      expect(data?.questions[7].accepted_answers).toContain('étant');
+      expect(data?.questions[9].prompt).toBe('vendre __');
+      expect(data?.questions[9].accepted_answers).toContain('vendant');
+    });
+
+    it('charge la série 15.2 (fill_blank) pour le gérondif en contexte (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch15-ex02'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('C’est en (faire) __ de l’exercice que vous serez en forme.');
+      expect(data?.questions[0].accepted_answers).toContain('faisant');
+      expect(data?.questions[1].prompt).toBe('Elle chante en (prendre) __ une douche.');
+      expect(data?.questions[1].accepted_answers).toContain('prenant');
+      expect(data?.questions[6].prompt).toBe('Tout en (se plaindre) __ , elle avait l’air satisfaite.');
+      expect(data?.questions[6].accepted_answers).toContain('se plaignant');
+      expect(data?.questions[9].prompt).toBe('Il a tout perdu en (parier) __ tous les jours au casino.');
+      expect(data?.questions[9].accepted_answers).toContain('pariant');
+    });
+
+    it('charge la série 15.3 (translation) de thème intégratif (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch15-ex03'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('translation');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('He lost his keys while walking in the park.');
+      expect(data?.questions[0].accepted_answers).toContain('Il a perdu ses clés en marchant dans le parc.');
+      expect(data?.questions[0].tokens).toBeDefined();
+      expect(data?.questions[5].prompt).toBe('It was a fascinating game.');
+      expect(data?.questions[5].accepted_answers).toContain('C’était un match fascinant.');
+      expect(data?.questions[9].prompt).toBe('He fell while jumping over the wall.');
+      expect(data?.questions[9].accepted_answers).toContain('Il est tombé en sautant par-dessus le mur.');
+    });
+  });
 });

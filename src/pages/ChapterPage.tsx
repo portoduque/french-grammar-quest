@@ -1549,6 +1549,97 @@ export const ChapterPage: React.FC = () => {
                 </div>
               </div>
             </div>
+          ) : chapterNum === 15 ? (
+            <div className="tips-deck">
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">💡</div>
+                <div className="tip-card-body">
+                  <h3>A Fórmula do Participe Présent : Radical de « Nous » + -ANT</h3>
+                  <p>
+                    A regra de ouro é quase 100% matemática : pegue a forma de <strong>nous</strong> no presente do indicativo, remova o <em>-ons</em> e acrescente <strong>-ant</strong> :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em>nous chantons</em> ➔ <strong>chantant</strong> (cantando)<br />
+                    • <em>nous choisissons</em> ➔ <strong>choisissant</strong> (escolhendo)<br />
+                    • <em>nous buvons</em> ➔ <strong>buvant</strong> (bebendo)<br />
+                    • <em>nous répondons</em> ➔ <strong>répondant</strong> (respondendo)
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">⚠️</div>
+                <div className="tip-card-body">
+                  <h3>Atenção à Grafia : Cédilha em -CER e « E » em -GER</h3>
+                  <p>
+                    Para manter a fonética correta diante do <em>a</em> de <em>-ant</em> :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Verbos em -cer (som [s]) :</strong> ganham cédilha ➔ <em>avancer</em> ➔ <strong>avançant</strong>, <em>commencer</em> ➔ <strong>commençant</strong>, <em>prononcer</em> ➔ <strong>prononçant</strong>.<br />
+                    • <strong>Verbos em -ger (som [ʒ]) :</strong> mantêm o <em>e</em> mudo ➔ <em>manger</em> ➔ <strong>mangeant</strong>, <em>protéger</em> ➔ <strong>protégeant</strong>, <em>nager</em> ➔ <strong>nageant</strong>.
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">👑</div>
+                <div className="tip-card-body">
+                  <h3>O Trio Real das Únicas Exceções : Étant, Ayant, Sachant</h3>
+                  <p>
+                    Apenas 3 verbos em todo o francês possuem particípio presente irregular (guarde-os de memória) :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>être</strong> ➔ <strong>étant</strong> (sendo, estando)<br />
+                    • <strong>avoir</strong> ➔ <strong>ayant</strong> (tendo)<br />
+                    • <strong>savoir</strong> ➔ <strong>sachant</strong> (sabendo)
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">⚖️</div>
+                <div className="tip-card-body">
+                  <h3>Particípio Verbal (Invariável) vs Adjetivo Verbal (Concorda)</h3>
+                  <p>
+                    Uma distinção clássica dos exames DELF e concursos :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Como verbo (indica ação) ➔ INVARIÁVEL :</strong> <em>La police l'a aperçu <strong>entrant</strong> dans le labo.</em> / <em><strong>Sachant</strong> la vérité, elle s'est tue.</em><br />
+                    • <strong>Como adjetivo (qualifica o nome) ➔ CONCORDA :</strong> <em>Des matchs <strong>épuisants</strong></em> (masc. pl.), <em>Une histoire <strong>fascinante</strong></em> (fém. sing.).
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🔄</div>
+                <div className="tip-card-body">
+                  <h3>O Gérondif (« En + Participe ») & o Sujeito Idêntico</h3>
+                  <p>
+                    O gerúndio francês é formado por <strong>en + participe présent</strong>. Exprime simultaneidade (<em>while</em>) ou meio/modo (<em>by</em>) :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Simultaneidade :</strong> <em>Elle écoute de la musique <strong>en conduisant</strong>.</em><br />
+                    • <strong>Meio/Modo :</strong> <em>Il a gagné de l'argent <strong>en vendant</strong> des tableaux.</em><br />
+                    • <strong>Regra de ouro :</strong> O gérondif refere-se OBRIGATORIAMENTE ao mesmo sujeito da oração principal!
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">⚡</div>
+                <div className="tip-card-body">
+                  <h3>A Força de « Tout en » : Oposição e Concessão Elegante</h3>
+                  <p>
+                    Adicionar <strong>tout</strong> antes do gérondif expressa contraste ou concessão (<em>mesmo enquanto</em>, <em>apesar de</em>) :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em><strong>Tout en étant</strong> un bon joueur, il ne marquait jamais.</em> (Mesmo sendo um bom jogador...)<br />
+                    • <em><strong>Tout en pleurant</strong>, il riait.</em> (Ao mesmo tempo em que chorava, ria.)<br />
+                    • <em><strong>Tout en se plaignant</strong>, elle avait l'air satisfaite.</em> (Mesmo reclamando, parecia satisfeita.)
+                  </div>
+                </div>
+              </div>
+            </div>
           ) : (
             <div className="tips-deck">
               <div className="tip-card card card-default">
