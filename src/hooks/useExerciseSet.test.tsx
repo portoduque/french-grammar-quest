@@ -793,4 +793,132 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
     expect(data?.questions[7].prompt).toBe('Traduire : "They wrote each other regularly."');
     expect(data?.questions[7].accepted_answers).toContain('Ils se sont écrit régulièrement.');
   });
+
+  it('charge la série 8.1 avec 10 questions de conjugaison régulière à l\'imparfait (fill_blank)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch08-ex01'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('Il (voyager) ___ chaque année en Australie.');
+    expect(data?.questions[0].accepted_answers).toContain('voyageait');
+    expect(data?.questions[2].prompt).toBe('Nous (être) ___ enchantés de notre expédition.');
+    expect(data?.questions[2].accepted_answers).toContain('étions');
+    expect(data?.questions[4].prompt).toBe('Je (être) ___ champion de tennis.');
+    expect(data?.questions[4].accepted_answers).toContain('J\'étais');
+    expect(data?.questions[8].prompt).toBe('Le guide (encourager) ___ les marcheurs.');
+    expect(data?.questions[8].accepted_answers).toContain('encourageait');
+  });
+
+  it('charge la série 8.2 avec 10 questions de description et états d\'esprit (fill_blank)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch08-ex02'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('Il (croire) ___ que tu ne voulais pas venir.');
+    expect(data?.questions[0].accepted_answers).toContain('croyait');
+    expect(data?.questions[4].prompt).toBe('Elle (avoir) ___ très faim.');
+    expect(data?.questions[4].accepted_answers).toContain('avait');
+    expect(data?.questions[7].prompt).toBe('Vous (paraître) ___ sceptique.');
+    expect(data?.questions[7].accepted_answers).toContain('paraissiez');
+  });
+
+  it('charge la série 8.3 avec 10 questions d\'habitude et répétition (fill_blank)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch08-ex03'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('Nous (suivre) ___ des cours de danse tous les mardis.');
+    expect(data?.questions[0].accepted_answers).toContain('suivions');
+    expect(data?.questions[3].prompt).toBe('Nous (faire) ___ la grasse matinée tous les dimanches.');
+    expect(data?.questions[3].accepted_answers).toContain('faisions');
+    expect(data?.questions[8].prompt).toBe('Dans le passé, vous (se voir) ___ plus souvent.');
+    expect(data?.questions[8].accepted_answers).toContain('vous voyiez');
+  });
+
+  it('charge la série 8.4 avec 10 questions d\'action continue interrompue (fill_blank)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch08-ex04'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('Il (faire) ___ un discours quand quelqu\'un dans l\'assistance l\'a interrompu.');
+    expect(data?.questions[0].accepted_answers).toContain('faisait');
+    expect(data?.questions[1].prompt).toBe('Je (dormir) ___ quand le chat a sauté sur mon lit.');
+    expect(data?.questions[1].accepted_answers).toContain('dormais');
+    expect(data?.questions[9].prompt).toBe('Je (attendre) ___ Roland depuis dix minutes quand enfin il est arrivé.');
+    expect(data?.questions[9].accepted_answers).toContain('J\'attendais');
+  });
+
+  it('charge la série 8.5 avec 10 questions de thème / traduction (translation)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch08-ex05'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('translation');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('Traduire : "I used to play tennis every Thursday."');
+    expect(data?.questions[0].accepted_answers).toContain('Je jouais au tennis tous les jeudis.');
+    expect(data?.questions[3].prompt).toBe('Traduire : "The restaurant was crowded."');
+    expect(data?.questions[3].accepted_answers).toContain('Le restaurant était bondé.');
+    expect(data?.questions[5].prompt).toBe('Traduire : "They looked tired."');
+    expect(data?.questions[5].accepted_answers).toContain('Ils avaient l\'air fatigué.');
+  });
+
+  it('charge la série 8.6 avec 10 questions de suggestions Si on (fill_blank)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch08-ex06'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('Si on (aller) ___ se promener dans la forêt?');
+    expect(data?.questions[0].accepted_answers).toContain('allait');
+    expect(data?.questions[1].prompt).toBe('Si on (déjeuner) ___ ensemble?');
+    expect(data?.questions[1].accepted_answers).toContain('déjeunait');
+  });
+
+  it('charge la série 8.7 avec 10 questions de choix passé composé ou imparfait (fill_blank)', async () => {
+    const { result } = renderHook(() => useExerciseSet('ch08-ex07'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+    expect(data?.questions).toHaveLength(10);
+    expect(data?.questions[0].prompt).toBe('Je (aller) ___ chez le dentiste hier.');
+    expect(data?.questions[0].accepted_answers).toContain('Je suis allé');
+    expect(data?.questions[1].prompt).toBe('Quand il (être) ___ adolescent, il (jouer) ___ au football.');
+    expect(data?.questions[1].accepted_answers).toContain('était, jouait');
+    expect(data?.questions[3].prompt).toBe('Ils (randonner) ___ dans les Alpes le week-end passé.');
+    expect(data?.questions[3].accepted_answers).toContain('ont randonné');
+    expect(data?.questions[8].prompt).toBe('Je (regarder) ___ un film quand elle (arriver) ___ .');
+    expect(data?.questions[8].accepted_answers).toContain('regardais, est arrivée');
+  });
 });

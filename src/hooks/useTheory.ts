@@ -50,6 +50,12 @@ import {
   CHAPTER_07_EXERCISE_SETS
 } from '@/data/chapter07Data';
 
+import {
+  CHAPTER_08_THEORY_MARKDOWN,
+  CHAPTER_08_TOPICS,
+  CHAPTER_08_EXERCISE_SETS
+} from '@/data/chapter08Data';
+
 const CH01_FALLBACK_THEORY: ChapterTheoryData = {
   chapter: {
     id: 'ch01',
@@ -204,6 +210,28 @@ const CH07_FALLBACK_THEORY: ChapterTheoryData = {
   exerciseSets: CHAPTER_07_EXERCISE_SETS
 };
 
+const CH08_FALLBACK_THEORY: ChapterTheoryData = {
+  chapter: {
+    id: 'ch08',
+    number: 8,
+    title: 'The imparfait',
+    slug: 'the-imparfait',
+    world_number: 1,
+    world_name: 'Mundo 1: Les Fondations',
+    page_range: '103–112',
+    topics_count: 3,
+    exercise_groups_count: 7,
+    total_questions: 70,
+    theory_markdown: CHAPTER_08_THEORY_MARKDOWN,
+    release_id: null,
+    editorial_status: 'published',
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+  },
+  topics: CHAPTER_08_TOPICS,
+  exerciseSets: CHAPTER_08_EXERCISE_SETS
+};
+
 function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch01') return CH01_FALLBACK_THEORY;
   if (chapterId === 'ch02') return CH02_FALLBACK_THEORY;
@@ -212,6 +240,7 @@ function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch05') return CH05_FALLBACK_THEORY;
   if (chapterId === 'ch06') return CH06_FALLBACK_THEORY;
   if (chapterId === 'ch07') return CH07_FALLBACK_THEORY;
+  if (chapterId === 'ch08') return CH08_FALLBACK_THEORY;
   return null;
 }
 
@@ -285,6 +314,8 @@ export function useTheory(chapterId?: string) {
           ? CHAPTER_06_THEORY_MARKDOWN
           : chapterId === 'ch07'
           ? CHAPTER_07_THEORY_MARKDOWN
+          : chapterId === 'ch08'
+          ? CHAPTER_08_THEORY_MARKDOWN
           : (chapterData as Chapter).theory_markdown;
 
         return {

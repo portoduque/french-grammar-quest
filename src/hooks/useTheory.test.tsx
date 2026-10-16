@@ -617,4 +617,86 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
     expect(topics[4].id).toBe('ch07-t05');
     expect(topics[5].id).toBe('ch07-t06');
   });
+
+  it('fournit la théorie pédagogique complète et rigoureuse pour ch08 (imparfait, radical de nous, valeurs d\'emploi, si on, duel imparfait vs passé composé)', async () => {
+    const { result } = renderHook(() => useTheory('ch08'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data).toBeDefined();
+    expect(data?.chapter.number).toBe(8);
+    expect(data?.chapter.title).toBe('The imparfait');
+    expect(data?.chapter.page_range).toBe('103–112');
+    expect(data?.chapter.total_questions).toBe(70);
+
+    // Valide le contenu pédagogique FLE pour lusophones
+    const markdown = data?.chapter.theory_markdown || '';
+    expect(markdown).toContain("Formation Régulière de l'Imparfait");
+    expect(markdown).toContain("Les Trois Grandes Valeurs de l'Imparfait");
+    expect(markdown).toContain("Le Grand Duel : Imparfait vs Passé Composé");
+    expect(markdown).toContain("Constructions Spéciales avec l'Imparfait");
+  });
+
+  it('charge les 7 séries d exercices officielles du Chapitre 8 avec les moteurs de jeu calibrés (70 questions au total)', async () => {
+    const { result } = renderHook(() => useTheory('ch08'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const sets = result.current.data?.exerciseSets || [];
+    expect(sets).toHaveLength(7);
+
+    // 8.1: Conjugaison régulière -> fill_blank (10)
+    expect(sets[0].id).toBe('ch08-ex01');
+    expect(sets[0].interaction_type).toBe('fill_blank');
+    expect(sets[0].questions_count).toBe(10);
+
+    // 8.2: Description et états d'esprit -> fill_blank (10)
+    expect(sets[1].id).toBe('ch08-ex02');
+    expect(sets[1].interaction_type).toBe('fill_blank');
+    expect(sets[1].questions_count).toBe(10);
+
+    // 8.3: Habitude et répétition -> fill_blank (10)
+    expect(sets[2].id).toBe('ch08-ex03');
+    expect(sets[2].interaction_type).toBe('fill_blank');
+    expect(sets[2].questions_count).toBe(10);
+
+    // 8.4: Action continue interrompue -> fill_blank (10)
+    expect(sets[3].id).toBe('ch08-ex04');
+    expect(sets[3].interaction_type).toBe('fill_blank');
+    expect(sets[3].questions_count).toBe(10);
+
+    // 8.5: Traduction active -> translation (10)
+    expect(sets[4].id).toBe('ch08-ex05');
+    expect(sets[4].interaction_type).toBe('translation');
+    expect(sets[4].questions_count).toBe(10);
+
+    // 8.6: Suggestions avec Si on -> fill_blank (10)
+    expect(sets[5].id).toBe('ch08-ex06');
+    expect(sets[5].interaction_type).toBe('fill_blank');
+    expect(sets[5].questions_count).toBe(10);
+
+    // 8.7: Passé composé ou imparfait -> fill_blank (10)
+    expect(sets[6].id).toBe('ch08-ex07');
+    expect(sets[6].interaction_type).toBe('fill_blank');
+    expect(sets[6].questions_count).toBe(10);
+  });
+
+  it('fournit les 3 sujets principaux du chapitre 8', async () => {
+    const { result } = renderHook(() => useTheory('ch08'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const topics = result.current.data?.topics || [];
+    expect(topics).toHaveLength(3);
+    expect(topics[0].id).toBe('ch08-t01');
+    expect(topics[1].id).toBe('ch08-t02');
+    expect(topics[2].id).toBe('ch08-t03');
+  });
 });

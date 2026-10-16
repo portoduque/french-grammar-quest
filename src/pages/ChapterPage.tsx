@@ -889,6 +889,99 @@ export const ChapterPage: React.FC = () => {
                 </div>
               </div>
             </div>
+          ) : chapterNum === 8 ? (
+            <div className="tips-deck">
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🪄</div>
+                <div className="tip-card-body">
+                  <h3>La Formule Magique du Radical de NOUS</h3>
+                  <p>
+                    Pour former l'imparfait de n'importe quel verbe régulier ou irrégulier : prenez <strong>nous au présent</strong>, retirez <strong>-ons</strong> et ajoutez : <strong>-ais, -ais, -ait, -ions, -iez, -aient</strong> :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em>Nous parlons</em> ➔ <strong>je parlais</strong><br />
+                    • <em>Nous finissons</em> ➔ <strong>nous finissions</strong><br />
+                    • <em>Nous buvons</em> ➔ <strong>ils buvaient</strong><br />
+                    • <em>Nous prenons</em> ➔ <strong>il prenait</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">👑</div>
+                <div className="tip-card-body">
+                  <h3>ÊTRE : L'Unique Radical Irrégulier (ét-)</h3>
+                  <p>
+                    Le verbe <strong>être</strong> est le SEUL verbe de toute la langue française avec un radical irrégulier à l'imparfait : <strong>ét-</strong>. Même <em>avoir</em> est régulier (*nous avons ➔ j'avais*) :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>J'étais</strong> champion de tennis.<br />
+                    • <strong>Nous étions</strong> réalistes.<br />
+                    • <strong>L'exposition était</strong> fascinante.<br />
+                    • <strong>Ils étaient</strong> à la montagne.
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">👂</div>
+                <div className="tip-card-body">
+                  <h3>Phonétique : 4 Terminaisons pour un Seul Son /ɛ/</h3>
+                  <p>
+                    Les terminaisons <strong>-ais, -ais, -ait, -aient</strong> se prononcent toutes de manière identique : <strong>/ɛ/</strong> (comme dans <em>fête</em> ou <em>café</em>) :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em>Je parlais, tu parlais, il parlait, ils parlaient</em> ➔ tous prononcés <strong>/paʁlɛ/</strong> !<br />
+                    • Seuls <strong>nous</strong> (-ions /jɔ̃/) et <strong>vous</strong> (-iez /je/) se distinguent à l'oreille.
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">✍️</div>
+                <div className="tip-card-body">
+                  <h3>Pièges Orthographiques : -GER et -CER</h3>
+                  <p>
+                    Attention au maintien du son [ʒ] et [s] devant la voyelle *a* :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em>-GER :</em> On garde le <strong>e</strong> devant <em>a</em> (<strong>je voyageais</strong>, <strong>il encourageait</strong>), mais on le retire devant <em>i</em> (<strong>nous voyagions</strong>).<br />
+                    • <em>-CER :</em> On met la cédille <strong>ç</strong> devant <em>a</em> (<strong>j'avançais</strong>, <strong>il commençait</strong>), mais pas devant <em>i</em> (<strong>nous avancions</strong>).
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🎬</div>
+                <div className="tip-card-body">
+                  <h3>Imparfait vs Passé Composé : Décor vs Événement</h3>
+                  <p>
+                    L'imparfait campe le décor et l'action continue en cours. Le passé composé apporte l'événement soudain qui interrompt l'histoire :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Je dormais</strong> (imparfait, décor continu)...<br />
+                    • ... quand le chat <strong>a sauté</strong> sur mon lit (passé composé, événement soudain) !<br />
+                    • <strong>Nous bavardions</strong> depuis une heure quand il <strong>est arrivé</strong>.
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">☕</div>
+                <div className="tip-card-body">
+                  <h3>La Suggestion Quotidienne : « Si on + Imparfait »</h3>
+                  <p>
+                    En français familier et courant, pour proposer une activité ou inviter quelqu'un (« Que tal se... », « E se a gente... »), on utilise <strong>Si on + imparfait</strong> :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Si on prenait un café ?</strong> (Que tal tomarmos um café?)<br />
+                    • <strong>Si on déjeunait ensemble ?</strong> (E se almoçássemos juntos?)<br />
+                    • <strong>Si on allait au cinéma ?</strong> (Que tal se fôssemos ao cinema?)<br />
+                    • <em>Règle d'or :</em> avec <strong>on</strong>, la terminaison est toujours <strong>-ait</strong> !
+                  </div>
+                </div>
+              </div>
+            </div>
           ) : (
             <div className="tips-deck">
               <div className="tip-card card card-default">
