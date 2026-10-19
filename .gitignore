@@ -10,6 +10,7 @@ __pycache__/
 .pytest_cache/
 *.pyc
 *.tsbuildinfo
+temp/
 
 # >>> SECURE-VIBE-CODING >>>
 # Secure Vibe Coding - sugestões mínimas para incorporar ao .gitignore do projeto

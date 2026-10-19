@@ -1833,6 +1833,84 @@ export const ChapterPage: React.FC = () => {
                 </div>
               </div>
             </div>
+          ) : chapterNum === 18 ? (
+            <div className="tips-deck">
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">⚡</div>
+                <div className="tip-card-body">
+                  <h3>A Regra de Ouro do « QUE » Obrigatório</h3>
+                  <p>
+                    Em inglês, a conjunção <em>that</em> é costumeiramente omitida (<em>"He says he is tired"</em>) e, na fala coloquial em português, às vezes cortamos o "que". <strong>Em francês, « QUE » (ou « QU' ») é 100% OBRIGATÓRIO</strong> :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    ❌ <em>*Il dit il est fatigué</em><br />
+                    ✅ <strong>Il dit qu'il est fatigué.</strong><br />
+                    ✅ <strong>La marchande dit que ses produits sont les meilleurs.</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🎯</div>
+                <div className="tip-card-body">
+                  <h3>A Cilada da Elisão do « SI » : Apenas « Il » e « Ils » !</h3>
+                  <p>
+                    Uma das pegadinhas mais comuns em provas e na conversação : a conjunção interrogativa <strong>si</strong> só elide com a 3ª pessoa masculina :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • Com <em>il / ils</em> ➔ <strong>Il veut savoir s'il vient</strong> / <strong>s'ils votent</strong>.<br />
+                    • Com <em>elle / elles</em> ➔ ❌ <em>*s'elle</em> ➔ ✅ <strong>Il veut savoir si elle acceptera notre proposition</strong>.<br />
+                    • Com <em>on</em> ➔ ❌ <em>*s'on</em> ➔ ✅ <strong>Il veut savoir si on va voter</strong>.
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">⏳</div>
+                <div className="tip-card-body">
+                  <h3>A Matriz Mágica da « Concordance des Temps »</h3>
+                  <p>
+                    Quando o verbo que relata a fala está no <strong>passado</strong> (<em>J'ai entendu dire...</em>, <em>On m'a dit...</em>), os tempos mudam em cascata :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Présent ➔ Imparfait :</strong> <em>Elle est en Inde</em> ➔ J'ai entendu dire qu'elle <strong>était</strong> en Inde.<br />
+                    • <strong>Passé composé ➔ Plus-que-parfait :</strong> <em>Elle a vendu sa voiture</em> ➔ J'ai entendu dire qu'elle <strong>avait vendu</strong> sa voiture.<br />
+                    • <strong>Futur simple ➔ Conditionnel présent :</strong> <em>Tu iras en France</em> ➔ J'ai entendu dire que tu <strong>irais</strong> en France.
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🔄</div>
+                <div className="tip-card-body">
+                  <h3>Fim da Inversão no Discurso Indireto</h3>
+                  <p>
+                    Na pergunta direta, o sujeito e o verbo podem se inverter (<em>« Où habite le peintre ? »</em>). No discurso indireto, a ordem volta a ser estritamente <strong>Sujeto + Verbo</strong> :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    ❌ <em>*Il ignore où habite le peintre</em><br />
+                    ✅ <strong>Il ignore où le peintre habite.</strong><br />
+                    ✅ <strong>Quentin demande où vous allez.</strong> (e não *où allez-vous).
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🗳️</div>
+                <div className="tip-card-body">
+                  <h3>Falsos Amigos Políticos & Cívicos Franceses</h3>
+                  <p>
+                    Fique atento ao vocabulário oficial francês de política e eleições :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>La voix :</strong> Além de voz humana, significa « o voto » (<em>obtenir 52 % des voix</em>).<br />
+                    • <strong>Le scrutin :</strong> Não é só a apuração, é toda a votação em si (<em>scrutin uninominal</em>).<br />
+                    • <strong>Le bulletin de vote :</strong> A cédula impressa usada na cabine (<em>l'isoloir</em>).<br />
+                    • <strong>La parité :</strong> Princípio constitucional de igualdade numérica entre homens e mulheres nas listas eleitorais.
+                  </div>
+                </div>
+              </div>
+            </div>
           ) : (
             <div className="tips-deck">
               <div className="tip-card card card-default">

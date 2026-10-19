@@ -87,6 +87,11 @@ import {
   CHAPTER_17_QUESTIONS_MAP
 } from '@/data/chapter17Data';
 
+import {
+  CHAPTER_18_EXERCISE_SETS,
+  CHAPTER_18_QUESTIONS_MAP
+} from '@/data/chapter18Data';
+
 export interface ExerciseSetWithQuestions {
   exerciseSet: ExerciseSet;
   questions: Question[];
@@ -437,6 +442,26 @@ function getFallbackSet(
     };
   }
 
+  if (CHAPTER_18_QUESTIONS_MAP[exerciseSetId]) {
+    const foundSet = CHAPTER_18_EXERCISE_SETS.find(s => s.id === exerciseSetId) || {
+      id: exerciseSetId,
+      chapter_id: 'ch18',
+      order_index: parseInt(exerciseSetId.split('-ex')[1] || '1', 10),
+      title: `Exercice 18.${parseInt(exerciseSetId.split('-ex')[1] || '1', 10)}`,
+      instruction: 'Exercice sur le discours indirect et la concordance des temps.',
+      interaction_type: exerciseSetId.endsWith('ex04') ? 'translation' : 'sentence_rewrite',
+      questions_count: CHAPTER_18_QUESTIONS_MAP[exerciseSetId].length,
+      created_at: new Date().toISOString()
+    };
+
+    return {
+      exerciseSet: existingSet || foundSet,
+      questions: (existingQuestions && existingQuestions.length > 0)
+        ? existingQuestions
+        : CHAPTER_18_QUESTIONS_MAP[exerciseSetId]
+    };
+  }
+
   const fallbackSet: ExerciseSet = existingSet || {
     id: exerciseSetId,
     chapter_id: exerciseSetId.split('-')[0] || 'ch01',
@@ -548,7 +573,8 @@ export function useExerciseSet(exerciseSetId: string | undefined) {
           CHAPTER_14_QUESTIONS_MAP[exerciseSetId] ||
           CHAPTER_15_QUESTIONS_MAP[exerciseSetId] ||
           CHAPTER_16_QUESTIONS_MAP[exerciseSetId] ||
-          CHAPTER_17_QUESTIONS_MAP[exerciseSetId];
+          CHAPTER_17_QUESTIONS_MAP[exerciseSetId] ||
+          CHAPTER_18_QUESTIONS_MAP[exerciseSetId];
         const enrichedQuestions = fallbackList
           ? (questionsRows as Question[]).map(q => {
               const matchedFallback = fallbackList.find(fb => fb.id === q.id);

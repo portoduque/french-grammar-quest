@@ -1460,4 +1460,78 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
     expect(topics[1].id).toBe('ch17-t02');
     expect(topics[2].id).toBe('ch17-t03');
   });
+
+  it('fournit la théorie pédagogique complète et rigoureuse pour ch18 (Indirect speech, concordance des temps, politique)', async () => {
+    const { result } = renderHook(() => useTheory('ch18'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data).toBeDefined();
+    expect(data?.chapter.number).toBe(18);
+    expect(data?.chapter.title).toBe('Indirect speech');
+    expect(data?.chapter.page_range).toBe('210–218');
+
+    // Valide le contenu pédagogique FLE pour lusophones
+    const markdown = data?.chapter.theory_markdown || '';
+    expect(markdown).toContain("Indirect speech (Le discours indirect)");
+    expect(markdown).toContain("Discours Direct vs Discours Indirect");
+    expect(markdown).toContain("Le Répertoire des Verbes Introducteurs");
+    expect(markdown).toContain("Les Connecteurs Interrogatifs : Passer au Style Indirect");
+    expect(markdown).toContain("La Concordance des Temps");
+    expect(markdown).toContain("Lexique Thématique : La Politique et les Élections");
+    expect(markdown).toContain("Les 5 Commandements FLE pour Lusophones");
+    expect(markdown.toLowerCase()).toContain("suffrage universel");
+    expect(markdown.toLowerCase()).toContain("boycotter");
+  });
+
+  it('charge les 4 séries d exercices officielles du Chapitre 18 avec les bons types d interaction (40 questions au total)', async () => {
+    const { result } = renderHook(() => useTheory('ch18'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const sets = result.current.data?.exerciseSets || [];
+    expect(sets).toHaveLength(4);
+
+    // 18.1: Questions indirectes avec Si -> sentence_rewrite (10)
+    expect(sets[0].id).toBe('ch18-ex01');
+    expect(sets[0].interaction_type).toBe('sentence_rewrite');
+    expect(sets[0].questions_count).toBe(10);
+
+    // 18.2: Relier avec Que -> sentence_rewrite (10)
+    expect(sets[1].id).toBe('ch18-ex02');
+    expect(sets[1].interaction_type).toBe('sentence_rewrite');
+    expect(sets[1].questions_count).toBe(10);
+
+    // 18.3: Concordance au passé -> sentence_rewrite (10)
+    expect(sets[2].id).toBe('ch18-ex03');
+    expect(sets[2].interaction_type).toBe('sentence_rewrite');
+    expect(sets[2].questions_count).toBe(10);
+
+    // 18.4: Traduction anglaise -> française -> translation (10)
+    expect(sets[3].id).toBe('ch18-ex04');
+    expect(sets[3].interaction_type).toBe('translation');
+    expect(sets[3].questions_count).toBe(10);
+
+    // Total questions check (40 questions)
+    const totalQ = sets.reduce((acc, s) => acc + s.questions_count, 0);
+    expect(totalQ).toBe(40);
+  });
+
+  it('fournit les 2 sujets principaux du chapitre 18', async () => {
+    const { result } = renderHook(() => useTheory('ch18'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const topics = result.current.data?.topics || [];
+    expect(topics).toHaveLength(2);
+    expect(topics[0].id).toBe('ch18-t01');
+    expect(topics[1].id).toBe('ch18-t02');
+  });
 });

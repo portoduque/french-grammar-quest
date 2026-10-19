@@ -1946,4 +1946,119 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       expect(data?.questions[9].accepted_answers).toContain("La maison est entourée d'arbres.");
     });
   });
+
+  describe('Chapitre 18: Indirect speech (Le discours indirect)', () => {
+    it('charge la série 18.1 (sentence_rewrite) pour les questions indirectes commençant par « Il veut savoir si » (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch18-ex01'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('Le programme du parti est bien défini.');
+      expect(data?.questions[0].accepted_answers).toContain('Il veut savoir si le programme du parti est bien défini.');
+      expect(data?.questions[0].tokens).toBeDefined();
+
+      expect(data?.questions[1].prompt).toBe('Nous allons boycotter les prochaines élections.');
+      expect(data?.questions[1].accepted_answers).toContain('Il veut savoir si nous allons boycotter les prochaines élections.');
+
+      expect(data?.questions[4].prompt).toBe('Elle acceptera notre proposition.');
+      expect(data?.questions[4].accepted_answers).toContain('Il veut savoir si elle acceptera notre proposition.');
+
+      expect(data?.questions[9].prompt).toBe('La parité sera jamais réalisée.');
+      expect(data?.questions[9].accepted_answers).toContain('Il veut savoir si la parité sera jamais réalisée.');
+    });
+
+    it('charge la série 18.2 (sentence_rewrite) pour relier les propositions avec « Que » et connecteurs (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch18-ex02'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('Elle sera absente mardi. (Elle annonce que)');
+      expect(data?.questions[0].accepted_answers).toContain('Elle annonce qu’elle sera absente mardi.');
+      expect(data?.questions[0].accepted_answers).toContain("Elle annonce qu'elle sera absente mardi.");
+
+      expect(data?.questions[1].prompt).toBe('Paul s’est trompé. (Ils avouent que)');
+      expect(data?.questions[1].accepted_answers).toContain('Ils avouent que Paul s’est trompé.');
+
+      expect(data?.questions[2].prompt).toBe('Ses produits sont les meilleurs. (La marchande dit)');
+      expect(data?.questions[2].accepted_answers).toContain('La marchande dit que ses produits sont les meilleurs.');
+
+      expect(data?.questions[7].prompt).toBe('Il n’est jamais allé en France. (Elle nous apprend que)');
+      expect(data?.questions[7].accepted_answers).toContain('Elle nous apprend qu’il n’est jamais allé en France.');
+
+      expect(data?.questions[9].prompt).toBe('Où habite le peintre ? (Il ignore)');
+      expect(data?.questions[9].accepted_answers).toContain('Il ignore où le peintre habite.');
+    });
+
+    it('charge la série 18.3 (sentence_rewrite) pour la concordance des temps au passé avec « J’ai entendu dire que » (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch18-ex03'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+      expect(data?.questions).toHaveLength(10);
+
+      // Passé composé -> Plus-que-parfait
+      expect(data?.questions[0].prompt).toBe('Tu as accepté leur offre la semaine dernière.');
+      expect(data?.questions[0].accepted_answers).toContain('J’ai entendu dire que tu avais accepté leur offre la semaine dernière.');
+
+      // Passé composé -> Plus-que-parfait avec élision
+      expect(data?.questions[1].prompt).toBe('Elle a vendu sa voiture hier.');
+      expect(data?.questions[1].accepted_answers).toContain('J’ai entendu dire qu’elle avait vendu sa voiture hier.');
+
+      // Futur simple -> Conditionnel présent
+      expect(data?.questions[2].prompt).toBe('Tu travailleras à Chicago l’an prochain.');
+      expect(data?.questions[2].accepted_answers).toContain('J’ai entendu dire que tu travaillerais à Chicago l’an prochain.');
+
+      // Présent -> Imparfait
+      expect(data?.questions[5].prompt).toBe('Il fait froid en Alaska aujourd’hui.');
+      expect(data?.questions[5].accepted_answers).toContain('J’ai entendu dire qu’il faisait froid en Alaska aujourd’hui.');
+
+      // Pronominal passé composé -> plus-que-parfait
+      expect(data?.questions[4].prompt).toBe('Ils se sont mariés le mois dernier.');
+      expect(data?.questions[4].accepted_answers).toContain('J’ai entendu dire qu’ils s’étaient mariés le mois dernier.');
+    });
+
+    it('charge la série 18.4 (translation) pour la traduction de phrases complexes avec concordance (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch18-ex04'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('translation');
+      expect(data?.questions).toHaveLength(10);
+
+      expect(data?.questions[0].prompt).toBe('They know you are living in Paris.');
+      expect(data?.questions[0].accepted_answers).toContain('Ils savent que vous habitez à Paris.');
+
+      expect(data?.questions[1].prompt).toBe('I have heard you are living in Paris.');
+      expect(data?.questions[1].accepted_answers).toContain('J’ai entendu dire que vous habitiez à Paris.');
+
+      expect(data?.questions[2].prompt).toBe('I heard you lived in Paris in 2020.');
+      expect(data?.questions[2].accepted_answers).toContain('J’ai entendu dire que vous aviez vécu à Paris en 2020.');
+
+      expect(data?.questions[3].prompt).toBe('I heard you’ll go to Paris next year.');
+      expect(data?.questions[3].accepted_answers).toContain('J’ai entendu dire que vous iriez à Paris l’année prochaine.');
+
+      expect(data?.questions[8].prompt).toBe('I was told that you voted for me.');
+      expect(data?.questions[8].accepted_answers).toContain('On m’a dit que vous aviez voté pour moi.');
+
+      expect(data?.questions[9].prompt).toBe('We realize she has a chance of winning.');
+      expect(data?.questions[9].accepted_answers).toContain('Nous nous rendons compte qu’elle a une chance de gagner.');
+    });
+  });
 });

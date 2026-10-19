@@ -110,6 +110,12 @@ import {
   CHAPTER_17_EXERCISE_SETS
 } from '@/data/chapter17Data';
 
+import {
+  CHAPTER_18_THEORY_MARKDOWN,
+  CHAPTER_18_TOPICS,
+  CHAPTER_18_EXERCISE_SETS
+} from '@/data/chapter18Data';
+
 const CH01_FALLBACK_THEORY: ChapterTheoryData = {
   chapter: {
     id: 'ch01',
@@ -484,6 +490,28 @@ const CH17_FALLBACK_THEORY: ChapterTheoryData = {
   exerciseSets: CHAPTER_17_EXERCISE_SETS
 };
 
+const CH18_FALLBACK_THEORY: ChapterTheoryData = {
+  chapter: {
+    id: 'ch18',
+    number: 18,
+    title: 'Indirect speech',
+    slug: 'indirect-speech',
+    world_number: 4,
+    world_name: 'Mundo 4: Le Discours et la Maîtrise',
+    page_range: '210–218',
+    topics_count: 2,
+    exercise_groups_count: 4,
+    total_questions: 40,
+    theory_markdown: CHAPTER_18_THEORY_MARKDOWN,
+    release_id: null,
+    editorial_status: 'published',
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+  },
+  topics: CHAPTER_18_TOPICS,
+  exerciseSets: CHAPTER_18_EXERCISE_SETS
+};
+
 function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch01') return CH01_FALLBACK_THEORY;
   if (chapterId === 'ch02') return CH02_FALLBACK_THEORY;
@@ -502,6 +530,7 @@ function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch15') return CH15_FALLBACK_THEORY;
   if (chapterId === 'ch16') return CH16_FALLBACK_THEORY;
   if (chapterId === 'ch17') return CH17_FALLBACK_THEORY;
+  if (chapterId === 'ch18') return CH18_FALLBACK_THEORY;
   return null;
 }
 
@@ -595,6 +624,8 @@ export function useTheory(chapterId?: string) {
           ? CHAPTER_16_THEORY_MARKDOWN
           : chapterId === 'ch17'
           ? CHAPTER_17_THEORY_MARKDOWN
+          : chapterId === 'ch18'
+          ? CHAPTER_18_THEORY_MARKDOWN
           : (chapterData as Chapter).theory_markdown;
 
         return {
