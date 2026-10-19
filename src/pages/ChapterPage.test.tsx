@@ -333,6 +333,47 @@ vi.mock('@/hooks/useTheory', () => ({
         error: null,
       };
     }
+    if (chapterId === 'ch24') {
+      return {
+        data: {
+          chapter: {
+            id: 'ch24',
+            number: 24,
+            title: 'Relative pronouns',
+            slug: 'relative-pronouns',
+            world_number: 4,
+            world_name: 'Mundo 4: Les Nuances et le Virtuel',
+            page_range: '298–312',
+            topics_count: 6,
+            exercise_groups_count: 9,
+            total_questions: 85,
+            theory_markdown: '## Relative pronouns (Les pronoms relatifs)\n\nLes pronoms relatifs qui, que, où, dont, lequel et les formes indéfinies ce qui, ce que, ce dont, ce à quoi.',
+            editorial_status: 'published',
+          },
+          topics: [
+            { id: 'ch24-t01', title: 'Introduction aux pronoms relatifs et le pronom sujet Qui', order_index: 1 },
+            { id: 'ch24-t02', title: 'Le pronom objet direct Que / Qu\' et l\'accord du participe passé', order_index: 2 },
+            { id: 'ch24-t03', title: 'Les pronoms relatifs avec prépositions : Lequel, Laquelle, Lesquels, Lesquelles', order_index: 3 },
+            { id: 'ch24-t04', title: 'Le pronom relatif de lieu et de temps : Où', order_index: 4 },
+            { id: 'ch24-t05', title: 'Le pronom relatif Dont et l\'expression de la possession', order_index: 5 },
+            { id: 'ch24-t06', title: 'Les pronoms relatifs indéfinis : Ce qui, Ce que, Ce dont, Ce à quoi et le subjonctif', order_index: 6 },
+          ],
+          exerciseSets: [
+            { id: 'ch24-ex01', title: 'Exercice 24.1', instruction: 'Accord verbe après C\'est ... qui', interaction_type: 'fill_blank', questions_count: 10, order_index: 1 },
+            { id: 'ch24-ex02', title: 'Exercice 24.2', instruction: 'Qui ou que', interaction_type: 'fill_blank', questions_count: 10, order_index: 2 },
+            { id: 'ch24-ex03', title: 'Exercice 24.3', instruction: 'Accord participe passé', interaction_type: 'matching', questions_count: 5, order_index: 3 },
+            { id: 'ch24-ex04', title: 'Exercice 24.4', instruction: 'Préposition + relatif', interaction_type: 'fill_blank', questions_count: 10, order_index: 4 },
+            { id: 'ch24-ex05', title: 'Exercice 24.5', instruction: 'Qui, que, dont', interaction_type: 'fill_blank', questions_count: 10, order_index: 5 },
+            { id: 'ch24-ex06', title: 'Exercice 24.6', instruction: 'Traduction avec relatifs', interaction_type: 'translation', questions_count: 10, order_index: 6 },
+            { id: 'ch24-ex07', title: 'Exercice 24.7', instruction: 'Pronoms neutres ce qui / ce que', interaction_type: 'fill_blank', questions_count: 10, order_index: 7 },
+            { id: 'ch24-ex08', title: 'Exercice 24.8', instruction: 'Mise en relief ce qui / ce dont', interaction_type: 'translation', questions_count: 10, order_index: 8 },
+            { id: 'ch24-ex09', title: 'Exercice 24.9', instruction: 'Bilan de synthèse relatifs', interaction_type: 'fill_blank', questions_count: 10, order_index: 9 },
+          ],
+        },
+        isLoading: false,
+        error: null,
+      };
+    }
     return { data: null, isLoading: false, error: null };
   }),
 }));
@@ -575,5 +616,33 @@ describe('ChapterPage Component', () => {
     expect(screen.getByText(/Pronoms Possessifs : Circonflexe et Contractions/i)).toBeInTheDocument();
     expect(screen.getByText(/Pronoms Démonstratifs : Simples vs Composés \(-ci \/ -là\)/i)).toBeInTheDocument();
     expect(screen.getByText(/Le Neutre « C'est » et les Expressions Idiomatiques/i)).toBeInTheDocument();
+  });
+
+  it('affiche la théorie, les 9 séries d exercices et les astuces FLE pour le chapitre 24 (Relative pronouns)', () => {
+    renderWithProviders('/chapters/ch24');
+
+    expect(screen.getByText('Relative pronouns')).toBeInTheDocument();
+
+    // Onglet Théorie actif par défaut
+    expect(screen.getByText(/Les pronoms relatifs qui, que, où, dont, lequel et les formes indéfinies/i)).toBeInTheDocument();
+
+    // Passage à l'onglet Exercices (9)
+    const exercisesTab = screen.getByRole('tab', { name: /Exercices \(9\)/i });
+    fireEvent.click(exercisesTab);
+
+    expect(screen.getByText('Exercice 24.1')).toBeInTheDocument();
+    expect(screen.getByText('Exercice 24.4')).toBeInTheDocument();
+    expect(screen.getByText('Exercice 24.9')).toBeInTheDocument();
+
+    // Passage à l'onglet Astuces FLE
+    const tipsTab = screen.getByRole('tab', { name: /Astuces FLE/i });
+    fireEvent.click(tipsTab);
+
+    expect(screen.getByText(/Qui vs Que : La Frontière Sujet vs Complément d'Objet/i)).toBeInTheDocument();
+    expect(screen.getByText(/L'Élision Phonétique : « Qui » JAMAIS, « Que » TOUJOURS !/i)).toBeInTheDocument();
+    expect(screen.getByText(/« C'est moi qui... » : Accord Obligatoire du Verbe/i)).toBeInTheDocument();
+    expect(screen.getByText(/Temps Composés avec « Que » : L'Accord du Participe Passé/i)).toBeInTheDocument();
+    expect(screen.getByText(/Le Pronom « Dont » : Verbes en « De » et Possession/i)).toBeInTheDocument();
+    expect(screen.getByText(/Repère Temporel « Où » et Neutres « Ce qui \/ Ce que »/i)).toBeInTheDocument();
   });
 });

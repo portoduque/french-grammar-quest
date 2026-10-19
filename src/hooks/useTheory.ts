@@ -146,6 +146,13 @@ import {
   CHAPTER_23_EXERCISE_SETS
 } from '@/data/chapter23Data';
 
+import {
+  CHAPTER_24_THEORY_MARKDOWN,
+  CHAPTER_24_TOPICS,
+  CHAPTER_24_EXERCISE_SETS
+} from '@/data/chapter24Data';
+
+
 
 const CH01_FALLBACK_THEORY: ChapterTheoryData = {
   chapter: {
@@ -654,6 +661,29 @@ const CH23_FALLBACK_THEORY: ChapterTheoryData = {
 };
 
 
+const CH24_FALLBACK_THEORY: ChapterTheoryData = {
+  chapter: {
+    id: 'ch24',
+    number: 24,
+    title: 'Relative pronouns',
+    slug: 'relative-pronouns',
+    world_number: 4,
+    world_name: 'Mundo 4: Les Nuances et le Virtuel',
+    page_range: '298–312',
+    topics_count: 6,
+    exercise_groups_count: 9,
+    total_questions: 85,
+    theory_markdown: CHAPTER_24_THEORY_MARKDOWN,
+    release_id: null,
+    editorial_status: 'published',
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+  },
+  topics: CHAPTER_24_TOPICS,
+  exerciseSets: CHAPTER_24_EXERCISE_SETS
+};
+
+
 function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch01') return CH01_FALLBACK_THEORY;
   if (chapterId === 'ch02') return CH02_FALLBACK_THEORY;
@@ -678,6 +708,7 @@ function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch21') return CH21_FALLBACK_THEORY;
   if (chapterId === 'ch22') return CH22_FALLBACK_THEORY;
   if (chapterId === 'ch23') return CH23_FALLBACK_THEORY;
+  if (chapterId === 'ch24') return CH24_FALLBACK_THEORY;
   return null;
 }
 
@@ -783,6 +814,8 @@ export function useTheory(chapterId?: string) {
           ? CHAPTER_22_THEORY_MARKDOWN
           : chapterId === 'ch23'
           ? CHAPTER_23_THEORY_MARKDOWN
+          : chapterId === 'ch24'
+          ? CHAPTER_24_THEORY_MARKDOWN
           : (chapterData as Chapter).theory_markdown;
 
         return {

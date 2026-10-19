@@ -2040,4 +2040,108 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
     expect(topics[3].id).toBe('ch23-t04');
     expect(topics[4].id).toBe('ch23-t05');
   });
+
+  it('fournit la théorie pédagogique complète et rigoureuse pour ch24 (pronoms relatifs qui, que, où, dont, lequel, ce qui, ce que, subjonctif)', async () => {
+    const { result } = renderHook(() => useTheory('ch24'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data).toBeDefined();
+    expect(data?.chapter.number).toBe(24);
+    expect(data?.chapter.title).toBe('Relative pronouns');
+    expect(data?.chapter.page_range).toBe('298–312');
+
+    const markdown = data?.chapter.theory_markdown || '';
+    expect(markdown).toContain('Le Pronom Relatif Sujet : « Qui »');
+    expect(markdown).toContain('JAMAIS d\'élision pour QUI !');
+    expect(markdown).toContain('C\'est moi qui');
+    expect(markdown).toContain('Le Pronom Relatif Objet Direct : « Que »');
+    expect(markdown).toContain('Lequel');
+    expect(markdown).toContain('Le Pronom Relatif de Lieu et de Temps : « Où »');
+    expect(markdown).toContain('Le Pronom Relatif « Dont »');
+    expect(markdown).toContain('Ce qui');
+    expect(markdown).toContain('Ce dont');
+    expect(markdown).toContain('Ce à quoi');
+    expect(markdown).toContain('Subjonctif');
+  });
+
+  it('charge les 9 séries d exercices officielles du Chapitre 24 avec les bons types d interaction (85 questions au total)', async () => {
+    const { result } = renderHook(() => useTheory('ch24'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const sets = result.current.data?.exerciseSets || [];
+    expect(sets).toHaveLength(9);
+
+    // 24.1: Conjugaison après C'est moi/toi qui... -> fill_blank (10)
+    expect(sets[0].id).toBe('ch24-ex01');
+    expect(sets[0].interaction_type).toBe('fill_blank');
+    expect(sets[0].questions_count).toBe(10);
+
+    // 24.2: Qui vs Que vs Qu' -> fill_blank (10)
+    expect(sets[1].id).toBe('ch24-ex02');
+    expect(sets[1].interaction_type).toBe('fill_blank');
+    expect(sets[1].questions_count).toBe(10);
+
+    // 24.3: Accord du participe passé avec que -> matching (5)
+    expect(sets[2].id).toBe('ch24-ex03');
+    expect(sets[2].interaction_type).toBe('matching');
+    expect(sets[2].questions_count).toBe(5);
+
+    // 24.4: Préposition + relatif (pour qui, avec lequel...) -> fill_blank (10)
+    expect(sets[3].id).toBe('ch24-ex04');
+    expect(sets[3].interaction_type).toBe('fill_blank');
+    expect(sets[3].questions_count).toBe(10);
+
+    // 24.5: Qui, que, qu', dont -> fill_blank (10)
+    expect(sets[4].id).toBe('ch24-ex05');
+    expect(sets[4].interaction_type).toBe('fill_blank');
+    expect(sets[4].questions_count).toBe(10);
+
+    // 24.6: Traduction phrases complexes avec relatifs -> translation (10)
+    expect(sets[5].id).toBe('ch24-ex06');
+    expect(sets[5].interaction_type).toBe('translation');
+    expect(sets[5].questions_count).toBe(10);
+
+    // 24.7: Ce qui, ce que, ce à quoi, ce dont -> fill_blank (10)
+    expect(sets[6].id).toBe('ch24-ex07');
+    expect(sets[6].interaction_type).toBe('fill_blank');
+    expect(sets[6].questions_count).toBe(10);
+
+    // 24.8: Traduction mise en relief ce qui/que/dont/à quoi -> translation (10)
+    expect(sets[7].id).toBe('ch24-ex08');
+    expect(sets[7].interaction_type).toBe('translation');
+    expect(sets[7].questions_count).toBe(10);
+
+    // 24.9: Bilan de synthèse relatif -> fill_blank (10)
+    expect(sets[8].id).toBe('ch24-ex09');
+    expect(sets[8].interaction_type).toBe('fill_blank');
+    expect(sets[8].questions_count).toBe(10);
+
+    // Total questions check (85 questions)
+    const totalQ = sets.reduce((acc, s) => acc + s.questions_count, 0);
+    expect(totalQ).toBe(85);
+  });
+
+  it('fournit les 6 sujets principaux du chapitre 24', async () => {
+    const { result } = renderHook(() => useTheory('ch24'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const topics = result.current.data?.topics || [];
+    expect(topics).toHaveLength(6);
+    expect(topics[0].id).toBe('ch24-t01');
+    expect(topics[1].id).toBe('ch24-t02');
+    expect(topics[2].id).toBe('ch24-t03');
+    expect(topics[3].id).toBe('ch24-t04');
+    expect(topics[4].id).toBe('ch24-t05');
+    expect(topics[5].id).toBe('ch24-t06');
+  });
 });

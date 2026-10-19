@@ -2387,6 +2387,99 @@ export const ChapterPage: React.FC = () => {
                 </div>
               </div>
             </div>
+          ) : chapterNum === 24 ? (
+            <div className="tips-deck">
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">👑</div>
+                <div className="tip-card-body">
+                  <h3>Qui vs Que : La Frontière Sujet vs Complément d'Objet</h3>
+                  <p>
+                    Contrairement au portugais qui emploie « que » partout, le français sépare strictement le sujet de l'objet direct :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>QUI = SUJET :</strong> suivi directement du verbe (<em>la personne <strong>qui parle</strong></em>, <em>le coffre <strong>qui est</strong> dans le salon</em>).<br />
+                    • <strong>QUE = OBJET DIRECT :</strong> suivi d'un sujet + verbe (<em>le livre <strong>que je lis</strong></em>, <em>le lustre <strong>que Daniel a acheté</strong></em>).
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🚫</div>
+                <div className="tip-card-body">
+                  <h3>L'Élision Phonétique : « Qui » JAMAIS, « Que » TOUJOURS !</h3>
+                  <p>
+                    L'une des fautes les plus pénalisantes chez les apprenants lusophones concerne la chute de voyelle :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>QUI ne s'élide JAMAIS :</strong> <em>l'artiste <strong>qui a pris</strong> cette photo</em> [ki.a] (❌ jamais *qu'a pris !).<br />
+                    • <strong>QUE s'élide TOUJOURS devant voyelle / h muet :</strong> <em>l'article <strong>qu'elle</strong> écrit</em>, <em>les objets <strong>qu'il</strong> vend</em>, <em>le tableau <strong>qu'il</strong> peint</em>.
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🎯</div>
+                <div className="tip-card-body">
+                  <h3>« C'est moi qui... » : Accord Obligatoire du Verbe</h3>
+                  <p>
+                    Dans les structures de mise en relief avec pronom tonique, le verbe s'accorde avec l'antécédent, et <strong>non</strong> à la 3e personne :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em>C'est moi qui <strong>suis</strong> en charge</em> (❌ jamais *est)<br />
+                    • <em>C'est toi qui <strong>es</strong> responsable</em> / <em>qui <strong>écris</strong> l'article</em><br />
+                    • <em>C'est nous qui <strong>avons</strong> les documents</em><br />
+                    • <em>C'est vous qui <strong>êtes</strong> le propriétaire</em> / <em>qui <strong>devez</strong> nous aider</em><br />
+                    • <em>Ce sont eux qui <strong>peuvent</strong> décider</em> / <em>qui <strong>veulent</strong> acheter</em>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🎨</div>
+                <div className="tip-card-body">
+                  <h3>Temps Composés avec « Que » : L'Accord du Participe Passé</h3>
+                  <p>
+                    Quand le pronom relatif <strong>que (qu')</strong> est COD placé avant l'auxiliaire <em>avoir</em>, le participe passé s'accorde en genre et nombre avec l'antécédent :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em>La table [fém. sg.] que nous avons <strong>trouvée</strong></em><br />
+                    • <em>La pièce [fém. sg.] qu'il a <strong>écrite</strong></em><br />
+                    • <em>Les chaises [fém. pl.] qu'ils ont <strong>restaurées</strong></em><br />
+                    • <em>Les photos [fém. pl.] que tu as <strong>prises</strong></em><br />
+                    • <em>Les documents [masc. pl.] qu'il a <strong>consultés</strong></em>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🔗</div>
+                <div className="tip-card-body">
+                  <h3>Le Pronom « Dont » : Verbes en « De » et Possession</h3>
+                  <p>
+                    <strong>Dont</strong> remplace tout complément introduit par <em>de</em> (*parler de*, *avoir besoin de*, *se servir de*, *se souvenir de*). Pour la possession (<em>cujo</em>), l'ordre français est strict :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Régence avec de :</strong> <em>l'artisan <strong>dont</strong> tu parles</em>, <em>les pinceaux <strong>dont</strong> elle a besoin</em>.<br />
+                    • <strong>Possession :</strong> <em>Un artisan <strong>dont j'ai rencontré le père</strong></em> (❌ jamais *dont le père j'ai rencontré !).
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🧭</div>
+                <div className="tip-card-body">
+                  <h3>Repère Temporel « Où » et Neutres « Ce qui / Ce que »</h3>
+                  <p>
+                    En français, un repère de temps prend <strong>où</strong> (pas *que* comme en portugais). Pour une idée neutre, utilisez les formes avec <strong>ce</strong> :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Temps :</strong> <em>l'année <strong>où</strong> il a ouvert sa boutique</em>, <em>le jour <strong>où</strong> il a été élu</em>.<br />
+                    • <strong>Neutres &amp; Emphase :</strong> <em>Ce qui</em> (sujet), <em>Ce que</em> (COD), <em>Ce dont</em> (avec <em>de</em>), <em>Ce à quoi</em> (avec <em>à</em>).<br />
+                    • <em><strong>Ce dont</strong> j'ai besoin, c'est <strong>de</strong> votre aide.</em> (Répétition de <em>de</em> après <em>c'est</em> !).
+                  </div>
+                </div>
+              </div>
+            </div>
           ) : (
             <div className="tips-deck">
               <div className="tip-card card card-default">

@@ -2851,4 +2851,192 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       expect(data?.questions[6].accepted_answers).toContain('S’il n’y met pas du sien, la présentation sera un désastre!');
     });
   });
+
+  describe('Chapitre 24 - Relative pronouns', () => {
+    it('charge la série 24.1 (fill_blank) pour l\'accord du verbe avec l\'antécédent après C\'est ... qui (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch24-ex01'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe("C'est moi qui (être) ___ en charge de l'exposition.");
+      expect(data?.questions[0].accepted_answers).toContain('suis');
+      expect(data?.questions[1].prompt).toBe("C'est lui qui (suivre) ___ l'affaire.");
+      expect(data?.questions[1].accepted_answers).toContain('suit');
+      expect(data?.questions[2].prompt).toBe("C'est nous qui (avoir) ___ les documents d'authenticité.");
+      expect(data?.questions[2].accepted_answers).toContain('avons');
+      expect(data?.questions[3].prompt).toBe("Ce sont eux qui (pouvoir) ___ prendre cette décision.");
+      expect(data?.questions[3].accepted_answers).toContain('peuvent');
+      expect(data?.questions[6].prompt).toBe("C'est vous qui (devoir) ___ nous aider à choisir.");
+      expect(data?.questions[6].accepted_answers).toContain('devez');
+    });
+
+    it('charge la série 24.2 (fill_blank) pour l\'alternance qui / que / qu\' (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch24-ex02'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe("Le magasin ___ se trouve place d'Italie a beaucoup de choix.");
+      expect(data?.questions[0].accepted_answers).toContain('qui');
+      expect(data?.questions[1].prompt).toBe("L'antiquaire ___ elle a conseillé est fermé le dimanche.");
+      expect(data?.questions[1].accepted_answers).toContain("qu'");
+      expect(data?.questions[4].prompt).toBe("Le livre ___ je lis en ce moment est passionnant.");
+      expect(data?.questions[4].accepted_answers).toContain('que');
+      expect(data?.questions[9].prompt).toBe("Il n'est pas satisfait du tableau ___ il peint.");
+      expect(data?.questions[9].accepted_answers).toContain("qu'");
+    });
+
+    it('charge la série 24.3 (matching) pour l\'accord du participe passé avec que (5 paires)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch24-ex03'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('matching');
+      expect(data?.questions).toHaveLength(5);
+      expect(data?.questions[0].prompt).toBe('Les chemises [féminin pluriel] :');
+      expect(data?.questions[0].accepted_answers).toContain("qu'elle a lavées");
+      expect(data?.questions[1].prompt).toBe('Les documents [masculin pluriel] :');
+      expect(data?.questions[1].accepted_answers).toContain("qu'il a consultés");
+      expect(data?.questions[2].prompt).toBe('Le livre [masculin singulier] :');
+      expect(data?.questions[2].accepted_answers).toContain("qu'elle a lu");
+      expect(data?.questions[3].prompt).toBe("L'histoire [féminin singulier] :");
+      expect(data?.questions[3].accepted_answers).toContain("qu'ils ont racontée");
+      expect(data?.questions[4].prompt).toBe('Les photos [féminin pluriel] :');
+      expect(data?.questions[4].accepted_answers).toContain('que tu as prises');
+    });
+
+    it('charge la série 24.4 (fill_blank) pour les pronoms avec préposition (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch24-ex04'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe("La femme ___ je restaure ces meubles, est australienne. (pour)");
+      expect(data?.questions[0].accepted_answers).toContain('pour qui');
+      expect(data?.questions[1].prompt).toBe("La route ___ nous devons passer, est dangereuse. (par)");
+      expect(data?.questions[1].accepted_answers).toContain('par laquelle');
+      expect(data?.questions[2].prompt).toBe("Le tissu ___ il recouvre le canapé, est de la soie sauvage. (avec)");
+      expect(data?.questions[2].accepted_answers).toContain('avec lequel');
+      expect(data?.questions[6].prompt).toBe("Le poste ___ elle aspire, sera vacant d'ici la fin de l'année. (à)");
+      expect(data?.questions[6].accepted_answers).toContain('auquel');
+      expect(data?.questions[8].prompt).toBe("Il pense à ses vacances ? À ses projets ? Je ne sais pas ___ il pense. (à)");
+      expect(data?.questions[8].accepted_answers).toContain('à quoi');
+    });
+
+    it('charge la série 24.5 (fill_blank) pour le contraste qui, que, qu\', dont (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch24-ex05'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe("L'artisan ___ tu parles est à la retraite.");
+      expect(data?.questions[0].accepted_answers).toContain('dont');
+      expect(data?.questions[1].prompt).toBe("Le film ___ nous regardons est sous-titré.");
+      expect(data?.questions[1].accepted_answers).toContain('que');
+      expect(data?.questions[2].prompt).toBe("Le dictionnaire ___ ils se servent est bilingue.");
+      expect(data?.questions[2].accepted_answers).toContain('dont');
+      expect(data?.questions[3].prompt).toBe("Le cadre ___ vous plaît n'est pas à vendre.");
+      expect(data?.questions[3].accepted_answers).toContain('qui');
+      expect(data?.questions[4].prompt).toBe("Les pinceaux ___ elle a besoin sont dans l'autre atelier.");
+      expect(data?.questions[4].accepted_answers).toContain('dont');
+    });
+
+    it('charge la série 24.6 (translation) pour la traduction avec relatifs (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch24-ex06'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('translation');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toContain('I can remember the year he opened his shop.');
+      expect(data?.questions[0].accepted_answers).toContain("Je peux me souvenir de l'année où il a ouvert son magasin.");
+      expect(data?.questions[1].prompt).toContain('The chandelier he bought is for the living room.');
+      expect(data?.questions[1].accepted_answers).toContain("Le lustre qu'il a acheté est pour le salon.");
+      expect(data?.questions[2].prompt).toContain('The tool with which she is working is very old.');
+      expect(data?.questions[2].accepted_answers).toContain("L'outil avec lequel elle travaille est très vieux.");
+    });
+
+    it('charge la série 24.7 (fill_blank) pour les pronoms neutres ce qui, ce que, ce à quoi, ce dont (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch24-ex07'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe("___ ils s'intéressent, c'est à l'opéra.");
+      expect(data?.questions[0].accepted_answers).toContain('Ce à quoi');
+      expect(data?.questions[1].prompt).toBe("___ Marguerite Duras se souvient, c'est de son enfance en Indochine.");
+      expect(data?.questions[1].accepted_answers).toContain('Ce dont');
+      expect(data?.questions[2].prompt).toBe("___ ils aiment, c'est l'art déco.");
+      expect(data?.questions[2].accepted_answers).toContain("Ce qu'");
+      expect(data?.questions[5].prompt).toBe("___ est arrivé hier risque d'avoir des conséquences graves.");
+      expect(data?.questions[5].accepted_answers).toContain('Ce qui');
+    });
+
+    it('charge la série 24.8 (translation) pour la traduction de phrases emphatiques (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch24-ex08'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('translation');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toContain('What he wants is more free time.');
+      expect(data?.questions[0].accepted_answers).toContain("Ce qu'il veut, c'est plus de temps libre.");
+      expect(data?.questions[1].prompt).toContain('What the glassblower uses is in the other workshop.');
+      expect(data?.questions[1].accepted_answers).toContain("Ce dont le souffleur de verre se sert est dans l'autre atelier.");
+      expect(data?.questions[3].prompt).toContain('What I expected was different.');
+      expect(data?.questions[3].accepted_answers).toContain("Ce à quoi je m'attendais était différent.");
+    });
+
+    it('charge la série 24.9 (fill_blank) pour le bilan de synthèse des relatifs (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch24-ex09'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe("Pourquoi la bibliothèque, ___ est dans le coin à gauche, est-elle si chère ?");
+      expect(data?.questions[0].accepted_answers).toContain('qui');
+      expect(data?.questions[1].prompt).toBe("L'artiste ___ tu parles vit actuellement à Paris.");
+      expect(data?.questions[1].accepted_answers).toContain('dont');
+      expect(data?.questions[2].prompt).toBe("La chaise sur ___ elle est assise a besoin d'être repeinte.");
+      expect(data?.questions[2].accepted_answers).toContain('laquelle');
+      expect(data?.questions[7].prompt).toBe("Les objets ___ il s'intéresse sont du dix-huitième siècle.");
+      expect(data?.questions[7].accepted_answers).toContain('auxquels');
+      expect(data?.questions[9].prompt).toBe("___ est fait, est fait.");
+      expect(data?.questions[9].accepted_answers).toContain('Ce qui');
+    });
+  });
 });

@@ -117,6 +117,12 @@ import {
   CHAPTER_23_QUESTIONS_MAP
 } from '@/data/chapter23Data';
 
+import {
+  CHAPTER_24_EXERCISE_SETS,
+  CHAPTER_24_QUESTIONS_MAP
+} from '@/data/chapter24Data';
+
+
 
 export interface ExerciseSetWithQuestions {
   exerciseSet: ExerciseSet;
@@ -612,6 +618,31 @@ function getFallbackSet(
     };
   }
 
+  if (CHAPTER_24_QUESTIONS_MAP[exerciseSetId]) {
+    const foundSet = CHAPTER_24_EXERCISE_SETS.find(s => s.id === exerciseSetId) || {
+      id: exerciseSetId,
+      chapter_id: 'ch24',
+      order_index: parseInt(exerciseSetId.split('-ex')[1] || '1', 10),
+      title: `Exercice 24.${parseInt(exerciseSetId.split('-ex')[1] || '1', 10)}`,
+      instruction: 'Exercice sur les pronoms relatifs.',
+      interaction_type: exerciseSetId.endsWith('ex03')
+        ? 'matching'
+        : (exerciseSetId.endsWith('ex06') || exerciseSetId.endsWith('ex08'))
+        ? 'translation'
+        : 'fill_blank',
+      questions_count: CHAPTER_24_QUESTIONS_MAP[exerciseSetId].length,
+      created_at: new Date().toISOString()
+    };
+
+    return {
+      exerciseSet: existingSet || foundSet,
+      questions: (existingQuestions && existingQuestions.length > 0)
+        ? existingQuestions
+        : CHAPTER_24_QUESTIONS_MAP[exerciseSetId]
+    };
+  }
+
+
 
   const fallbackSet: ExerciseSet = existingSet || {
     id: exerciseSetId,
@@ -730,7 +761,8 @@ export function useExerciseSet(exerciseSetId: string | undefined) {
           CHAPTER_20_QUESTIONS_MAP[exerciseSetId] ||
           CHAPTER_21_QUESTIONS_MAP[exerciseSetId] ||
           CHAPTER_22_QUESTIONS_MAP[exerciseSetId] ||
-          CHAPTER_23_QUESTIONS_MAP[exerciseSetId];
+          CHAPTER_23_QUESTIONS_MAP[exerciseSetId] ||
+          CHAPTER_24_QUESTIONS_MAP[exerciseSetId];
         const enrichedQuestions = fallbackList
           ? (questionsRows as Question[]).map(q => {
               const matchedFallback = fallbackList.find(fb => fb.id === q.id);
