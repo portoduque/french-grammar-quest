@@ -104,6 +104,12 @@ import {
   CHAPTER_16_EXERCISE_SETS
 } from '@/data/chapter16Data';
 
+import {
+  CHAPTER_17_THEORY_MARKDOWN,
+  CHAPTER_17_TOPICS,
+  CHAPTER_17_EXERCISE_SETS
+} from '@/data/chapter17Data';
+
 const CH01_FALLBACK_THEORY: ChapterTheoryData = {
   chapter: {
     id: 'ch01',
@@ -456,6 +462,28 @@ const CH16_FALLBACK_THEORY: ChapterTheoryData = {
   exerciseSets: CHAPTER_16_EXERCISE_SETS
 };
 
+const CH17_FALLBACK_THEORY: ChapterTheoryData = {
+  chapter: {
+    id: 'ch17',
+    number: 17,
+    title: 'The passive voice',
+    slug: 'the-passive-voice',
+    world_number: 3,
+    world_name: 'Mundo 3: L’Espace et les Pronoms',
+    page_range: '203–209',
+    topics_count: 3,
+    exercise_groups_count: 3,
+    total_questions: 30,
+    theory_markdown: CHAPTER_17_THEORY_MARKDOWN,
+    release_id: null,
+    editorial_status: 'published',
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+  },
+  topics: CHAPTER_17_TOPICS,
+  exerciseSets: CHAPTER_17_EXERCISE_SETS
+};
+
 function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch01') return CH01_FALLBACK_THEORY;
   if (chapterId === 'ch02') return CH02_FALLBACK_THEORY;
@@ -473,6 +501,7 @@ function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch14') return CH14_FALLBACK_THEORY;
   if (chapterId === 'ch15') return CH15_FALLBACK_THEORY;
   if (chapterId === 'ch16') return CH16_FALLBACK_THEORY;
+  if (chapterId === 'ch17') return CH17_FALLBACK_THEORY;
   return null;
 }
 
@@ -564,6 +593,8 @@ export function useTheory(chapterId?: string) {
           ? CHAPTER_15_THEORY_MARKDOWN
           : chapterId === 'ch16'
           ? CHAPTER_16_THEORY_MARKDOWN
+          : chapterId === 'ch17'
+          ? CHAPTER_17_THEORY_MARKDOWN
           : (chapterData as Chapter).theory_markdown;
 
         return {

@@ -1388,4 +1388,76 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
     expect(topics[0].id).toBe('ch16-t01');
     expect(topics[1].id).toBe('ch16-t02');
   });
+
+  it('fournit la théorie pédagogique complète et rigoureuse pour ch17 (la voix passive)', async () => {
+    const { result } = renderHook(() => useTheory('ch17'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data).toBeDefined();
+    expect(data?.chapter.number).toBe(17);
+    expect(data?.chapter.title).toBe('The passive voice');
+    expect(data?.chapter.page_range).toBe('203–209');
+
+    // Valide le contenu pédagogique FLE pour lusophones
+    const markdown = data?.chapter.theory_markdown || '';
+    expect(markdown).toContain("The passive voice (La voix passive)");
+    expect(markdown).toContain("Formation Complète de la Voix Passive");
+    expect(markdown).toContain("L'Accord Obligatoire du Participe Passé");
+    expect(markdown).toContain("Le Grand Duel « PAR » vs « DE »");
+    expect(markdown).toContain("Comment Éviter la Voix Passive en Français");
+    expect(markdown).toContain("Le Pronom Indéfini « ON »");
+    expect(markdown).toContain("Le Passif Pronominal");
+    expect(markdown).toContain("Vocabulaire Thématique : La Police, la Justice et les Faits Divers");
+    expect(markdown.toLowerCase()).toContain("croisés");
+    expect(markdown.toLowerCase()).toContain("médecin légiste");
+    expect(markdown.toLowerCase()).toContain("blanchiment d'argent");
+  });
+
+  it('charge les 3 séries d exercices officielles du Chapitre 17 avec les bons types d interaction (30 questions au total)', async () => {
+    const { result } = renderHook(() => useTheory('ch17'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const sets = result.current.data?.exerciseSets || [];
+    expect(sets).toHaveLength(3);
+
+    // 17.1: Active -> Passive -> sentence_rewrite (10)
+    expect(sets[0].id).toBe('ch17-ex01');
+    expect(sets[0].interaction_type).toBe('sentence_rewrite');
+    expect(sets[0].questions_count).toBe(10);
+
+    // 17.2: Passive -> Active -> sentence_rewrite (10)
+    expect(sets[1].id).toBe('ch17-ex02');
+    expect(sets[1].interaction_type).toBe('sentence_rewrite');
+    expect(sets[1].questions_count).toBe(10);
+
+    // 17.3: English -> French Passive Translation -> translation (10)
+    expect(sets[2].id).toBe('ch17-ex03');
+    expect(sets[2].interaction_type).toBe('translation');
+    expect(sets[2].questions_count).toBe(10);
+
+    // Total questions check (30 questions)
+    const totalQ = sets.reduce((acc, s) => acc + s.questions_count, 0);
+    expect(totalQ).toBe(30);
+  });
+
+  it('fournit les 3 sujets principaux du chapitre 17', async () => {
+    const { result } = renderHook(() => useTheory('ch17'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const topics = result.current.data?.topics || [];
+    expect(topics).toHaveLength(3);
+    expect(topics[0].id).toBe('ch17-t01');
+    expect(topics[1].id).toBe('ch17-t02');
+    expect(topics[2].id).toBe('ch17-t03');
+  });
 });

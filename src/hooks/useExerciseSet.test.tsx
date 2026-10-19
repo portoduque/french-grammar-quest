@@ -1861,4 +1861,89 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       expect(data?.questions[9].accepted_answers).toContain('Il sourit et partit.');
     });
   });
+
+  describe('useExerciseSet Hook — Chapitre 17 (The passive voice)', () => {
+    it('charge la série 17.1 (sentence_rewrite) pour la transformation active vers passive (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch17-ex01'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('Le policier a attrapé le voleur.');
+      expect(data?.questions[0].accepted_answers).toContain('Le voleur a été attrapé par le policier.');
+      expect(data?.questions[0].tokens).toBeDefined();
+
+      expect(data?.questions[2].prompt).toBe('Le médecin prescrit un nouveau traitement.');
+      expect(data?.questions[2].accepted_answers).toContain('Un nouveau traitement est prescrit par le médecin.');
+
+      expect(data?.questions[7].prompt).toBe("Le marchand d'art vendra un célèbre tableau.");
+      expect(data?.questions[7].accepted_answers).toContain("Un célèbre tableau sera vendu par le marchand d'art.");
+
+      expect(data?.questions[8].prompt).toBe('Les envahisseurs prennent la forteresse.');
+      expect(data?.questions[8].accepted_answers).toContain('La forteresse est prise par les envahisseurs.');
+
+      expect(data?.questions[9].prompt).toBe('Le professeur félicite les étudiants.');
+      expect(data?.questions[9].accepted_answers).toContain('Les étudiants sont félicités par le professeur.');
+    });
+
+    it('charge la série 17.2 (sentence_rewrite) pour le rétablissement de la voix active (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch17-ex02'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('Le gâteau a été fait par le chef.');
+      expect(data?.questions[0].accepted_answers).toContain('Le chef a fait le gâteau.');
+      expect(data?.questions[0].tokens).toBeDefined();
+
+      expect(data?.questions[3].prompt).toBe("Le document sera signé par l'ambassadeur.");
+      expect(data?.questions[3].accepted_answers).toContain("L'ambassadeur signera le document.");
+
+      expect(data?.questions[5].prompt).toBe('Le fauteuil est griffé par le chat.');
+      expect(data?.questions[5].accepted_answers).toContain('Le chat griffe le fauteuil.');
+
+      expect(data?.questions[6].prompt).toBe("L'amende a été payée par le malfaiteur.");
+      expect(data?.questions[6].accepted_answers).toContain("Le malfaiteur a payé l'amende.");
+
+      expect(data?.questions[9].prompt).toBe('Les élèves sont punis par le professeur.');
+      expect(data?.questions[9].accepted_answers).toContain('Le professeur punit les élèves.');
+    });
+
+    it('charge la série 17.3 (translation) pour la traduction vers la voix passive avec choix par/de (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch17-ex03'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('translation');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('The castle is being built by the queen.');
+      expect(data?.questions[0].accepted_answers).toContain('Le château est construit par la reine.');
+
+      expect(data?.questions[1].prompt).toBe('The painting was stolen by an art dealer.');
+      expect(data?.questions[1].accepted_answers).toContain("Le tableau a été volé par un marchand d'art.");
+
+      expect(data?.questions[3].prompt).toBe('This verb is followed by the indicative (mood).');
+      expect(data?.questions[3].accepted_answers).toContain("Ce verbe est suivi de l'indicatif.");
+
+      expect(data?.questions[4].prompt).toBe('The house is surrounded by the police.');
+      expect(data?.questions[4].accepted_answers).toContain('La maison est entourée par la police.');
+
+      expect(data?.questions[7].prompt).toBe('The decision was made on Monday.');
+      expect(data?.questions[7].accepted_answers).toContain('La décision a été prise lundi.');
+
+      expect(data?.questions[9].prompt).toBe('The house is surrounded by trees.');
+      expect(data?.questions[9].accepted_answers).toContain("La maison est entourée d'arbres.");
+    });
+  });
 });

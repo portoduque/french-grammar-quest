@@ -1741,6 +1741,98 @@ export const ChapterPage: React.FC = () => {
                 </div>
               </div>
             </div>
+          ) : chapterNum === 17 ? (
+            <div className="tips-deck">
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🎯</div>
+                <div className="tip-card-body">
+                  <h3>Concordância Absoluta do Particípio Passado (Auxiliar Être)</h3>
+                  <p>
+                    Como a voz passiva é formada exclusivamente com o auxiliar <strong>être</strong>, o particípio passado <strong>concorda obrigatoriamente em gênero e número com o novo sujeito</strong> :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em>Le voleur a été <strong>attrapé</strong></em> (masculin singulier)<br />
+                    • <em>La forteresse est <strong>prise</strong></em> (féminin singulier : atenção ao particípio irregular de <em>prendre</em> !)<br />
+                    • <em>Les étudiants sont <strong>félicités</strong></em> (masculin pluriel : +s)<br />
+                    • <em>Les maisons sont <strong>entourées</strong></em> (féminin pluriel : +es)
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">⚔️</div>
+                <div className="tip-card-body">
+                  <h3>O Duelo Crucial : « PAR » vs « DE » para o Agente da Passiva</h3>
+                  <p>
+                    É o maior divisor de águas entre o francês formal e a fala comum :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>PAR (Ação Dinâmica & Física) :</strong> <em>Le voleur a été attrapé <strong>par</strong> la police</em> / <em>Le château est entouré <strong>par</strong> les envahisseurs</em> (cerco militar ativo).<br />
+                    • <strong>DE / d' (Sentimentos & Estados Descritivos) :</strong> <em>Ce professeur est apprécié <strong>de</strong> ses étudiants</em> / <em>La maison est entourée <strong>d'arbres</strong></em> (as árvores são estáticas, não realizam ação !) / <em>Ce verbe est suivi <strong>de</strong> l'indicatif</em>.
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🛡️</div>
+                <div className="tip-card-body">
+                  <h3>A Invariabilidade Mágica de « Été »</h3>
+                  <p>
+                    Atenção lusophones : a palavra <strong>été</strong> (particípio do auxiliar être) é estritamente <strong>INVARIÁVEL</strong> !
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    ❌ <em>*La maison a étée vendue</em><br />
+                    ✅ <strong>La maison a été vendue</strong> (apenas <em>vendue</em> concorda com a casa).<br />
+                    ✅ <strong>Les lettres ont été lues</strong> (été permanece intacto, <em>lues</em> vai para o feminino plural).
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🗣️</div>
+                <div className="tip-card-body">
+                  <h3>Fugir da Passiva com « ON » : O Toque Francês Autêntico</h3>
+                  <p>
+                    Em francês do dia a dia, a voz passiva é evitada sempre que possível. Em vez de estruturas passivas pesadas, os nativos usam o pronome <strong>on</strong> :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • Em vez de : <em>L'anglais est parlé ici</em> ➔ ✅ <strong>Ici, on parle anglais.</strong><br />
+                    • Em vez de : <em>Vous êtes demandé au téléphone</em> ➔ ✅ <strong>On vous demande au téléphone.</strong><br />
+                    • Em vez de : <em>Le voleur a été arrêté</em> ➔ ✅ <strong>On a arrêté le voleur.</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🔄</div>
+                <div className="tip-card-body">
+                  <h3>O Passivo Pronominal : Irmão Gêmeo da Partícula « -SE »</h3>
+                  <p>
+                    Expressões de senso comum, regras gerais e consumo usam a voz pronominal passiva, idêntica ao português :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Ça ne se dit pas.</strong> (Não se diz isso / Isso não se fala).<br />
+                    • <strong>Comment ça se traduit ?</strong> (Como se traduz isso ?).<br />
+                    • <strong>Ça se voit.</strong> (Dá para ver / É evidente).<br />
+                    • <strong>Le vin blanc se boit frais.</strong> (Vinho branco bebe-se gelado).
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">📅</div>
+                <div className="tip-card-body">
+                  <h3>Dias da Semana em Francês : Nada de Preposições !</h3>
+                  <p>
+                    Ao traduzir <em>« The decision was made on Monday »</em> :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    ❌ <em>*La décision a été prise sur lundi / en lundi</em><br />
+                    ✅ <strong>La décision a été prise lundi.</strong> (Os dias da semana em francês para uma data pontual não levam preposição nem artigo !).
+                  </div>
+                </div>
+              </div>
+            </div>
           ) : (
             <div className="tips-deck">
               <div className="tip-card card card-default">
