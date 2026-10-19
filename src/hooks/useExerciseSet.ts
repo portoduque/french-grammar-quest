@@ -92,6 +92,11 @@ import {
   CHAPTER_18_QUESTIONS_MAP
 } from '@/data/chapter18Data';
 
+import {
+  CHAPTER_19_EXERCISE_SETS,
+  CHAPTER_19_QUESTIONS_MAP
+} from '@/data/chapter19Data';
+
 export interface ExerciseSetWithQuestions {
   exerciseSet: ExerciseSet;
   questions: Question[];
@@ -459,6 +464,26 @@ function getFallbackSet(
       questions: (existingQuestions && existingQuestions.length > 0)
         ? existingQuestions
         : CHAPTER_18_QUESTIONS_MAP[exerciseSetId]
+    };
+  }
+
+  if (CHAPTER_19_QUESTIONS_MAP[exerciseSetId]) {
+    const foundSet = CHAPTER_19_EXERCISE_SETS.find(s => s.id === exerciseSetId) || {
+      id: exerciseSetId,
+      chapter_id: 'ch19',
+      order_index: parseInt(exerciseSetId.split('-ex')[1] || '1', 10),
+      title: `Exercice 19.${parseInt(exerciseSetId.split('-ex')[1] || '1', 10)}`,
+      instruction: 'Exercice sur le mode impératif.',
+      interaction_type: exerciseSetId.endsWith('ex03') ? 'translation' : 'sentence_rewrite',
+      questions_count: CHAPTER_19_QUESTIONS_MAP[exerciseSetId].length,
+      created_at: new Date().toISOString()
+    };
+
+    return {
+      exerciseSet: existingSet || foundSet,
+      questions: (existingQuestions && existingQuestions.length > 0)
+        ? existingQuestions
+        : CHAPTER_19_QUESTIONS_MAP[exerciseSetId]
     };
   }
 

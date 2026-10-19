@@ -1534,4 +1534,78 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
     expect(topics[0].id).toBe('ch18-t01');
     expect(topics[1].id).toBe('ch18-t02');
   });
+
+  it('fournit la théorie pédagogique complète et rigoureuse pour ch19 (The imperative mood, verbes en -er sans -s, pronominaux, état civil)', async () => {
+    const { result } = renderHook(() => useTheory('ch19'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data).toBeDefined();
+    expect(data?.chapter.number).toBe(19);
+    expect(data?.chapter.title).toBe('The imperative mood');
+    expect(data?.chapter.page_range).toBe('219–225');
+    expect(data?.chapter.total_questions).toBe(30);
+
+    // Valide le contenu pédagogique FLE pour lusophones
+    const markdown = data?.chapter.theory_markdown || '';
+    expect(markdown).toContain("The imperative mood (L'impératif)");
+    expect(markdown).toContain("Formation Régulière de l'Impératif");
+    expect(markdown).toContain("La Règle Capitale de la Chute du « -s »");
+    expect(markdown).toContain("La Forme Négative de l'Impératif");
+    expect(markdown).toContain("Les Impératifs Irréguliers");
+    expect(markdown).toContain("L'Impératif des Verbes Pronominaux");
+    expect(markdown).toContain("L'Astuce Phonétique du « -s » Eufonique devant Y et EN");
+    expect(markdown).toContain("Vocabulaire Cívico & Administrativo");
+    expect(markdown).toContain("Les 6 Commandements FLE pour Lusophones");
+    expect(markdown.toLowerCase()).toContain("carte d’identité");
+    expect(markdown.toLowerCase()).toContain("vas-y");
+    expect(markdown.toLowerCase()).toContain("lave-toi");
+  });
+
+  it('charge les 3 séries d exercices officielles du Chapitre 19 avec les bons types d interaction (30 questions au total)', async () => {
+    const { result } = renderHook(() => useTheory('ch19'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const sets = result.current.data?.exerciseSets || [];
+    expect(sets).toHaveLength(3);
+
+    // 19.1: Formation de l'impératif -> sentence_rewrite (10)
+    expect(sets[0].id).toBe('ch19-ex01');
+    expect(sets[0].interaction_type).toBe('sentence_rewrite');
+    expect(sets[0].questions_count).toBe(10);
+
+    // 19.2: Verbes pronominaux à l'impératif -> sentence_rewrite (10)
+    expect(sets[1].id).toBe('ch19-ex02');
+    expect(sets[1].interaction_type).toBe('sentence_rewrite');
+    expect(sets[1].questions_count).toBe(10);
+
+    // 19.3: Traduction thématique et impératif -> translation (10)
+    expect(sets[2].id).toBe('ch19-ex03');
+    expect(sets[2].interaction_type).toBe('translation');
+    expect(sets[2].questions_count).toBe(10);
+
+    // Total questions check (30 questions)
+    const totalQ = sets.reduce((acc, s) => acc + s.questions_count, 0);
+    expect(totalQ).toBe(30);
+  });
+
+  it('fournit les 3 sujets principaux du chapitre 19', async () => {
+    const { result } = renderHook(() => useTheory('ch19'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const topics = result.current.data?.topics || [];
+    expect(topics).toHaveLength(3);
+    expect(topics[0].id).toBe('ch19-t01');
+    expect(topics[1].id).toBe('ch19-t02');
+    expect(topics[2].id).toBe('ch19-t03');
+  });
 });

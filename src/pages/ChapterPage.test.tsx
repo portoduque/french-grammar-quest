@@ -139,6 +139,38 @@ vi.mock('@/hooks/useTheory', () => ({
         error: null,
       };
     }
+    if (chapterId === 'ch19') {
+      return {
+        data: {
+          chapter: {
+            id: 'ch19',
+            number: 19,
+            title: 'The imperative mood',
+            slug: 'the-imperative-mood',
+            world_number: 4,
+            world_name: 'Mundo 4: Le Discours et la Maîtrise',
+            page_range: '219–225',
+            topics_count: 3,
+            exercise_groups_count: 3,
+            total_questions: 30,
+            theory_markdown: '## The imperative mood (L’impératif)\n\nFormation et règles FLE.',
+            editorial_status: 'published',
+          },
+          topics: [
+            { id: 'ch19-t01', title: "Formation de l'impératif", order_index: 1 },
+            { id: 'ch19-t02', title: "Impératifs irréguliers", order_index: 2 },
+            { id: 'ch19-t03', title: "Verbes pronominaux", order_index: 3 },
+          ],
+          exerciseSets: [
+            { id: 'ch19-ex01', title: 'Exercice 19.1', instruction: 'Formation de l\'impératif', interaction_type: 'sentence_rewrite', questions_count: 10, order_index: 1 },
+            { id: 'ch19-ex02', title: 'Exercice 19.2', instruction: 'Verbes pronominaux', interaction_type: 'sentence_rewrite', questions_count: 10, order_index: 2 },
+            { id: 'ch19-ex03', title: 'Exercice 19.3', instruction: 'Traduction thématique', interaction_type: 'translation', questions_count: 10, order_index: 3 },
+          ],
+        },
+        isLoading: false,
+        error: null,
+      };
+    }
     return { data: null, isLoading: false, error: null };
   }),
 }));
@@ -258,5 +290,18 @@ describe('ChapterPage Component', () => {
     expect(screen.getByText('Le Grand Boss : Pot-pourri des 28 Chapitres')).toBeInTheDocument();
     expect(screen.getByText('35 séries · 345 questions')).toBeInTheDocument();
     expect(screen.getByText('7 Checkpoints')).toBeInTheDocument();
+  });
+
+  it('affiche les astuces FLE pédagogiques du chapitre 19 pour l\'impératif et les verbes pronominaux', () => {
+    renderWithProviders('/chapters/ch19');
+
+    expect(screen.getByText('The imperative mood')).toBeInTheDocument();
+
+    const tipsTab = screen.getByRole('tab', { name: /Astuces FLE/i });
+    fireEvent.click(tipsTab);
+
+    expect(screen.getByText(/A Queda Obrigatória do « -s » no Tu dos Verbos em -ER/i)).toBeInTheDocument();
+    expect(screen.getByText(/Verbos Pronnominais : A Dança da Posição dos Pronomes/i)).toBeInTheDocument();
+    expect(screen.getByText(/Os 4 Comandantes Irregulares do Subjuntivo/i)).toBeInTheDocument();
   });
 });

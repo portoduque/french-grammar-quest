@@ -1911,6 +1911,101 @@ export const ChapterPage: React.FC = () => {
                 </div>
               </div>
             </div>
+          ) : chapterNum === 19 ? (
+            <div className="tips-deck">
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🛑</div>
+                <div className="tip-card-body">
+                  <h3>A Queda Obrigatória do « -s » no Tu dos Verbos em -ER</h3>
+                  <p>
+                    O erro número 1 de lusófonos e anglófonos ! Nos verbos terminados em <strong>-er</strong> (e verbos com conjugação análoga como <em>ouvrir</em>, <em>offrir</em>, <em>aller</em>), a forma do <strong>tu</strong> perde obrigatoriamente o <strong>-s</strong> final :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    ❌ <em>*Parles plus fort !</em> ➔ ✅ <strong>Parle plus fort !</strong><br />
+                    ❌ <em>*Regardes ce film !</em> ➔ ✅ <strong>Regarde ce film !</strong><br />
+                    ❌ <em>*Vas à la gare !</em> ➔ ✅ <strong>Va à la gare !</strong><br />
+                    • <em>Atenção :</em> Os verbos em <em>-ir</em> e <em>-re</em> do 2º e 3º grupos mantêm o -s : <strong>Choisis !</strong>, <strong>Prends !</strong>, <strong>Bois !</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🔀</div>
+                <div className="tip-card-body">
+                  <h3>Verbos Pronnominais : A Dança da Posição dos Pronomes</h3>
+                  <p>
+                    A posição do pronome reflexivo muda 180 graus entre a ordem afirmativa e a proibição negativa :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Afirmativo (Verbo + Hífen + Pronome Tônico) :</strong> O pronome vai para DEPOIS do verbo com hífen obrigatório ➔ <strong>Lave-toi les mains !</strong>, <strong>Reposez-vous !</strong><br />
+                    • <strong>Negativo (Ne + Pronome Átono + Verbo + Pas) :</strong> O pronome volta para ANTES do verbo e sem hífen ➔ <strong>Ne te couche pas trop tard !</strong>, <strong>Ne vous trompez pas !</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">⚡</div>
+                <div className="tip-card-body">
+                  <h3>A Mudança de « Te » para « Toi » e « Me » para « Moi »</h3>
+                  <p>
+                    No imperativo afirmativo, os pronomes átonos <em>me</em> e <em>te</em> ganham força tônica e viram <strong>moi</strong> e <strong>toi</strong> :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em>Se dépêcher</em> ➔ ❌ <em>*Dépêche-te !</em> ➔ ✅ <strong>Dépêche-toi !</strong><br />
+                    • <em>Attendre</em> ➔ ❌ <em>*Attendez-me !</em> ➔ ✅ <strong>Attendez-moi !</strong><br />
+                    • Mas no negativo, retornam : <strong>Ne te dépêche pas !</strong>, <strong>Ne m'attendez pas !</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🎭</div>
+                <div className="tip-card-body">
+                  <h3>Os 4 Comandantes Irregulares do Subjuntivo</h3>
+                  <p>
+                    Quatro verbos indispensáveis não derivam do presente do indicativo, mas sim do radical do <strong>subjonctif</strong> :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Être :</strong> <em>Sois sage !</em> / <em>Soyons patients !</em> / <em>Ne soyez pas en retard !</em><br />
+                    • <strong>Avoir :</strong> <em>Aie confiance !</em> / <em>Ayons du courage !</em> / <em>Ayez l'obligeance de...</em><br />
+                    • <strong>Savoir :</strong> <em>Sache que je t'aime !</em> / <em>Sachez écouter.</em><br />
+                    • <strong>Vouloir :</strong> Forma exclusiva de cortesia para vous ➔ <strong>Veuillez agréer...</strong>, <strong>Veuillez patienter</strong>.
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🎵</div>
+                <div className="tip-card-body">
+                  <h3>O « -s » Eufônico Diante de Y e EN (Salvação Fonética)</h3>
+                  <p>
+                    Para evitar o choque feio de duas vogais (hiato fonético), o francês ressuscita o <strong>-s</strong> nos verbos em -er antes dos pronomes <em>y</em> e <em>en</em> :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em>Va !</em> + <em>y</em> ➔ ❌ <em>*Va y !</em> ➔ ✅ <strong>Vas-y !</strong> (pronuncia-se [va.zi])<br />
+                    • <em>Mange !</em> + <em>en</em> ➔ ❌ <em>*Mange en !</em> ➔ ✅ <strong>Manges-en !</strong> (pronuncia-se [mɑ̃.ʒzɑ̃])<br />
+                    • <em>Pense à cela !</em> ➔ ✅ <strong>Penses-y !</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">📋</div>
+                <div className="tip-card-body">
+                  <h3>Vocabulário Cívico & Administrativo Francês</h3>
+                  <p>
+                    Dicas práticas para formulários oficiais, vistos e registros civis na França :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Nom vs Prénom :</strong> <em>Nom</em> = Sobrenome de família (ex: Dupont) ; <em>Prénom</em> = Primeiro nome (ex: Jean).<br />
+                    • <strong>Surnom :</strong> Apelido informal carinhoso.<br />
+                    • <strong>Extrait de naissance :</strong> Certidão de nascimento oficial emitida pela mairie.<br />
+                    • <strong>Permis de conduire :</strong> Carteira de habilitação (CNH francesa).<br />
+                    • <strong>Cocher la case :</strong> Assinalar o quadradinho com um 'X' no formulário.
+                  </div>
+                </div>
+              </div>
+            </div>
           ) : (
             <div className="tips-deck">
               <div className="tip-card card card-default">

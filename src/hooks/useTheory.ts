@@ -116,6 +116,12 @@ import {
   CHAPTER_18_EXERCISE_SETS
 } from '@/data/chapter18Data';
 
+import {
+  CHAPTER_19_THEORY_MARKDOWN,
+  CHAPTER_19_TOPICS,
+  CHAPTER_19_EXERCISE_SETS
+} from '@/data/chapter19Data';
+
 const CH01_FALLBACK_THEORY: ChapterTheoryData = {
   chapter: {
     id: 'ch01',
@@ -512,6 +518,28 @@ const CH18_FALLBACK_THEORY: ChapterTheoryData = {
   exerciseSets: CHAPTER_18_EXERCISE_SETS
 };
 
+const CH19_FALLBACK_THEORY: ChapterTheoryData = {
+  chapter: {
+    id: 'ch19',
+    number: 19,
+    title: 'The imperative mood',
+    slug: 'the-imperative-mood',
+    world_number: 4,
+    world_name: 'Mundo 4: Le Discours et la Maîtrise',
+    page_range: '219–225',
+    topics_count: 3,
+    exercise_groups_count: 3,
+    total_questions: 30,
+    theory_markdown: CHAPTER_19_THEORY_MARKDOWN,
+    release_id: null,
+    editorial_status: 'published',
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+  },
+  topics: CHAPTER_19_TOPICS,
+  exerciseSets: CHAPTER_19_EXERCISE_SETS
+};
+
 function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch01') return CH01_FALLBACK_THEORY;
   if (chapterId === 'ch02') return CH02_FALLBACK_THEORY;
@@ -531,6 +559,7 @@ function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch16') return CH16_FALLBACK_THEORY;
   if (chapterId === 'ch17') return CH17_FALLBACK_THEORY;
   if (chapterId === 'ch18') return CH18_FALLBACK_THEORY;
+  if (chapterId === 'ch19') return CH19_FALLBACK_THEORY;
   return null;
 }
 
@@ -626,6 +655,8 @@ export function useTheory(chapterId?: string) {
           ? CHAPTER_17_THEORY_MARKDOWN
           : chapterId === 'ch18'
           ? CHAPTER_18_THEORY_MARKDOWN
+          : chapterId === 'ch19'
+          ? CHAPTER_19_THEORY_MARKDOWN
           : (chapterData as Chapter).theory_markdown;
 
         return {

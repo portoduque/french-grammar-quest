@@ -158,7 +158,7 @@ export const CHAPTERS_SUMMARY: ChapterSummary[] = [
     "title": "The imperative mood",
     "exerciseGroups": 3,
     "pageRange": "219–225",
-    "topicsCount": 2
+    "topicsCount": 3
   },
   {
     "number": 20,

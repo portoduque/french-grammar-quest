@@ -2061,4 +2061,96 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       expect(data?.questions[9].accepted_answers).toContain('Nous nous rendons compte qu’elle a une chance de gagner.');
     });
   });
+
+  describe('useExerciseSet Hook — Chapitre 19 (The imperative mood)', () => {
+    it('charge la série 19.1 (sentence_rewrite) pour la formation de l\'impératif et chute du -s aux verbes en -er (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch19-ex01'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+      expect(data?.questions).toHaveLength(10);
+
+      // Verbe 3e groupe garde le -s
+      expect(data?.questions[0].prompt).toBe('Prendre le train de neuf heures. (tu)');
+      expect(data?.questions[0].accepted_answers).toContain('Prends le train de neuf heures !');
+
+      // Verbe 1er groupe avec vous
+      expect(data?.questions[1].prompt).toBe('Regarder le film à la télé ce soir. (vous)');
+      expect(data?.questions[1].accepted_answers).toContain('Regardez le film à la télé ce soir !');
+
+      // Verbe en -er perd le -s et prend l'accent grave
+      expect(data?.questions[3].prompt).toBe('Acheter le journal. (tu)');
+      expect(data?.questions[3].accepted_answers).toContain('Achète le journal !');
+
+      // Verbe en -eler double la consonne et perd le -s
+      expect(data?.questions[7].prompt).toBe('Épeler ton nom. (tu)');
+      expect(data?.questions[7].accepted_answers).toContain('Épelle ton nom !');
+
+      // Verbe en -er négatif avec élision
+      expect(data?.questions[9].prompt).toBe('Ne pas inviter Denis. (tu)');
+      expect(data?.questions[9].accepted_answers).toContain('N’invite pas Denis !');
+      expect(data?.questions[9].accepted_answers).toContain('N\'invite pas Denis !');
+    });
+
+    it('charge la série 19.2 (sentence_rewrite) pour l\'impératif des verbes pronominaux affirmatifs et négatifs (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch19-ex02'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+      expect(data?.questions).toHaveLength(10);
+
+      // Affirmatif : verbe + trait d'union + toi (chute du -s)
+      expect(data?.questions[0].prompt).toBe('Se laver les mains. (tu)');
+      expect(data?.questions[0].accepted_answers).toContain('Lave-toi les mains !');
+
+      // Affirmatif vous
+      expect(data?.questions[1].prompt).toBe('Se balader dans la forêt. (vous)');
+      expect(data?.questions[1].accepted_answers).toContain('Baladez-vous dans la forêt.');
+
+      // Négatif : ne + te + verbe + pas (le pronom redevient te)
+      expect(data?.questions[3].prompt).toBe('Ne pas se coucher trop tard. (tu)');
+      expect(data?.questions[3].accepted_answers).toContain('Ne te couche pas trop tard !');
+
+      // Affirmatif se dépêcher
+      expect(data?.questions[8].prompt).toBe('Se dépêcher. (tu)');
+      expect(data?.questions[8].accepted_answers).toContain('Dépêche-toi !');
+    });
+
+    it('charge la série 19.3 (translation) pour la traduction thématique et l\'impératif actif (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch19-ex03'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('translation');
+      expect(data?.questions).toHaveLength(10);
+
+      // Don't forget your passport!
+      expect(data?.questions[0].prompt).toBe('Don’t forget your passport! (tu)');
+      expect(data?.questions[0].accepted_answers).toContain('N’oublie pas ton passeport !');
+      expect(data?.questions[0].accepted_answers).toContain('N\'oublie pas ton passeport !');
+
+      // Bring your identification card!
+      expect(data?.questions[2].prompt).toBe('Bring your identification card! (vous)');
+      expect(data?.questions[2].accepted_answers).toContain('Apportez votre carte d’identité !');
+
+      // Don't be late! (irrégulier être)
+      expect(data?.questions[5].prompt).toBe('Don’t be late! (vous)');
+      expect(data?.questions[5].accepted_answers).toContain('Ne soyez pas en retard !');
+
+      // Wait for me! (faux-ami attendre + moi)
+      expect(data?.questions[8].prompt).toBe('Wait for me! (vous)');
+      expect(data?.questions[8].accepted_answers).toContain('Attendez-moi !');
+    });
+  });
 });
