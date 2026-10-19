@@ -2345,4 +2345,184 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       expect(data?.questions[9].accepted_answers).toContain('Allons en Argentine !');
     });
   });
+
+  describe('useExerciseSet Hook — Chapitre 21 (All the pronouns)', () => {
+    it('charge la série 21.1 (sentence_rewrite) pour le remplacement par un COD (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch21-ex01'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('Elle achète les fleurs bleues.');
+      expect(data?.questions[0].accepted_answers).toContain('Elle les achète.');
+      expect(data?.questions[4].prompt).toBe("J'ouvre la porte.");
+      expect(data?.questions[4].accepted_answers).toContain("Je l'ouvre.");
+      expect(data?.questions[9].prompt).toBe('Elle étudie sa leçon.');
+      expect(data?.questions[9].accepted_answers).toContain("Elle l'étudie.");
+    });
+
+    it('charge la série 21.2 (translation) pour la traduction COD avec vous et inversion (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch21-ex02'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('translation');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('He thanks me.');
+      expect(data?.questions[0].accepted_answers).toContain('Il me remercie.');
+      expect(data?.questions[4].prompt).toBe('She called them.');
+      expect(data?.questions[4].accepted_answers).toContain('Elle les a appelés.');
+      expect(data?.questions[9].prompt).toBe('Do you know her?');
+      expect(data?.questions[9].accepted_answers).toContain('La connaissez-vous ?');
+    });
+
+    it('charge la série 21.3 (sentence_rewrite) pour les pronoms COI lui et leur (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch21-ex03'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('La grand-mère a raconté une histoire aux petits-enfants.');
+      expect(data?.questions[0].accepted_answers).toContain('La grand-mère leur a raconté une histoire.');
+      expect(data?.questions[1].prompt).toBe('Nous avons fait un cadeau à Marie.');
+      expect(data?.questions[1].accepted_answers).toContain('Nous lui avons fait un cadeau.');
+      expect(data?.questions[6].prompt).toBe('Téléphonez à Louise aussitôt que possible !');
+      expect(data?.questions[6].accepted_answers).toContain('Téléphonez-lui aussitôt que possible !');
+    });
+
+    it('charge la série 21.5 (sentence_rewrite) pour le pronom adverbial Y (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch21-ex05'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe("Elle s'habitue à tout.");
+      expect(data?.questions[0].accepted_answers).toContain("Elle s'y habitue.");
+      expect(data?.questions[4].prompt).toBe('Elle tient à ses bijoux.');
+      expect(data?.questions[4].accepted_answers).toContain('Elle y tient.');
+      expect(data?.questions[5].prompt).toBe('Nous ne croyons pas à cette nouvelle théorie scientifique.');
+      expect(data?.questions[5].accepted_answers).toContain("Nous n'y croyons pas.");
+    });
+
+    it('charge la série 21.6 (sentence_rewrite) pour le pronom adverbial EN (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch21-ex06'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('J\'ai parlé de tous nos problèmes.');
+      expect(data?.questions[0].accepted_answers).toContain("J'en ai parlé.");
+      expect(data?.questions[2].prompt).toBe("Nous avons besoin d'un logiciel plus performant.");
+      expect(data?.questions[2].accepted_answers).toContain('Nous en avons besoin.');
+      expect(data?.questions[6].prompt).toBe('Il a peur des changements.');
+      expect(data?.questions[6].accepted_answers).toContain('Il en a peur.');
+    });
+
+    it('charge la série 21.7 (matching) pour les verbes à / de (5 questions interactives)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch21-ex07'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('matching');
+      expect(data?.questions).toHaveLength(5);
+      expect(data?.questions[0].prompt).toBe('1. Il a peur');
+      expect(data?.questions[0].accepted_answers).toContain('e');
+      expect(data?.questions[1].prompt).toBe("2. Elle s'intéresse");
+      expect(data?.questions[1].accepted_answers).toContain('d');
+      expect(data?.questions[2].prompt).toBe('3. Je me sers');
+      expect(data?.questions[2].accepted_answers).toContain('a');
+    });
+
+    it('charge la série 21.8 (sentence_rewrite) pour les doubles pronoms et accords (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch21-ex08'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('Ne parlez pas de ce détail à Zoé !');
+      expect(data?.questions[0].accepted_answers).toContain('Ne lui en parlez pas !');
+      expect(data?.questions[3].prompt).toBe('Patrick a raconté ses aventures (f.pl.) à son frère.');
+      expect(data?.questions[3].accepted_answers).toContain('Patrick les lui a racontées.');
+      expect(data?.questions[4].prompt).toBe('Le musicien a envoyé sa nouvelle composition à son agent.');
+      expect(data?.questions[4].accepted_answers).toContain('Le musicien la lui a envoyée.');
+    });
+
+    it('charge la série 21.10 (sentence_rewrite) pour C\'est... qui avec toniques (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch21-ex10'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('Il a gagné le prix.');
+      expect(data?.questions[0].accepted_answers).toContain("C'est lui qui a gagné le prix.");
+      expect(data?.questions[1].prompt).toBe('Je prendrai la décision.');
+      expect(data?.questions[1].accepted_answers).toContain("C'est moi qui prendrai la décision.");
+      expect(data?.questions[4].prompt).toBe('Tu as fait cette erreur.');
+      expect(data?.questions[4].accepted_answers).toContain("C'est toi qui as fait cette erreur.");
+    });
+
+    it('charge la série 21.11 (translation) pour les pronoms toniques avec personnes (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch21-ex11'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('translation');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[1].prompt).toBe('I hate coffee!');
+      expect(data?.questions[1].accepted_answers).toContain('Moi, je déteste le café !');
+      expect(data?.questions[7].prompt).toBe('I am thinking about her.');
+      expect(data?.questions[7].accepted_answers).toContain('Je pense à elle.');
+      expect(data?.questions[8].prompt).toBe('They are afraid of him.');
+      expect(data?.questions[8].accepted_answers).toContain('Ils ont peur de lui.');
+    });
+
+    it('charge la série 21.12 (fill_blank) pour aussi vs non plus avec chips (5 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch21-ex12'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(5);
+      expect(data?.questions[0].prompt).toContain("Il n'aime pas le froid. Je n'aime pas le froid.");
+      expect(data?.questions[0].accepted_answers).toContain('Moi non plus.');
+      expect(data?.questions[0].options).toBeDefined();
+      expect(data?.questions[1].accepted_answers).toContain('Eux aussi.');
+    });
+  });
 });

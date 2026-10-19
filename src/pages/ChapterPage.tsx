@@ -2099,6 +2099,103 @@ export const ChapterPage: React.FC = () => {
                 </div>
               </div>
             </div>
+          ) : chapterNum === 21 ? (
+            <div className="tips-deck">
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🎯</div>
+                <div className="tip-card-body">
+                  <h3>L'Accord du Participe Passé avec le COD Antécédent</h3>
+                  <p>
+                    C'est la règle d'or par excellence : au <em>passé composé</em> avec <strong>avoir</strong>, le participe passé s'accorde obligatoirement en genre et en nombre avec le pronom COD placé <strong>avant</strong> l'auxiliaire :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em>Le journaliste a pris les photos</em> ➔ <strong>Le journaliste les a prises</strong> [fém. pl.]<br />
+                    • <em>Elle a appelé mes frères</em> ➔ <strong>Elle les a appelés</strong> [masc. pl.]<br />
+                    • <em>J'ai acheté la maison</em> ➔ <strong>Je l'ai achetée</strong> [fém. sg.]<br />
+                    <em>Attention :</em> si le complément est un COI (lui, leur), <strong>jamais d'accord</strong> (<em>Nous leur avons parlé</em>) !
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🎭</div>
+                <div className="tip-card-body">
+                  <h3>Le Duo « Lui » et « Leur » : Unisexe et Invariable</h3>
+                  <p>
+                    Ne cherchez pas de forme féminine pour le complément d'objet indirect :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Lui</strong> s'utilise pour « a ele » ET pour « a ela » : <em>Tu parles à Paul ?</em> ➔ <strong>Tu lui parles</strong>. <em>Tu réponds à Sophie ?</em> ➔ <strong>Tu lui réponds</strong>.<br />
+                    • <strong>Leur</strong> s'utilise pour les deux genres et ne prend <strong>JAMAIS de 's'</strong> comme pronom personnel : <em>Je leur envoie un message</em> (invariable !).
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">👤</div>
+                <div className="tip-card-body">
+                  <h3>Choses vs Personnes : Le Grand Piège de « Y » et « EN »</h3>
+                  <p>
+                    Les pronoms <em>y</em> et <em>en</em> ne remplacent en principe que des <strong>choses ou idées</strong>. Pour des êtres humains, conservez la préposition et ajoutez un pronom tonique :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em>Penser à ce livre</em> ➔ <strong>J'y pense</strong> (chose)<br />
+                    • <em>Penser à cette amie</em> ➔ <strong>Je pense à elle</strong> (personne — ❌ <em>*J'y pense</em> est interdit !)<br />
+                    • <em>Parler de ce film</em> ➔ <strong>J'en parle</strong> (chose)<br />
+                    • <em>Parler de ce réalisateur</em> ➔ <strong>Je parle de lui</strong> (personne — ❌ <em>*J'en parle</em> est interdit !)
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🚦</div>
+                <div className="tip-card-body">
+                  <h3>L'Ordre des Doubles Pronoms : Le Schéma Infaillible</h3>
+                  <p>
+                    Quand deux pronoms se bousculent devant le verbe, leur ordre est strictement déterminé :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    <strong>Sujet</strong> + [me/te/se/nous/vous] ➔ [le/la/l'/les] ➔ [lui/leur] ➔ [y] ➔ [en] + <strong>Verbe</strong><br />
+                    • <em>Elle te donne le rôle</em> ➔ <em>Elle <strong>te le</strong> donne</em><br />
+                    • <em>J'envoie la lettre au directeur</em> ➔ <em>Je <strong>la lui</strong> envoie</em> (COD avant COI pour la 3e personne !)<br />
+                    • <em>Elle donne des fleurs à sa mère</em> ➔ <em>Elle <strong>lui en</strong> donne</em>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">👥</div>
+                <div className="tip-card-body">
+                  <h3>Les 5 Visages du Pronom « On »</h3>
+                  <p>
+                    Bien plus que le simple « a gente », <em>on</em> possède cinq fonctions essentielles :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    1. <strong>Indéfini</strong> : <em>On a sonné à la porte</em> (quelqu'un)<br />
+                    2. <strong>Coutume / Vérité générale</strong> : <em>En France, on mange du fromage</em><br />
+                    3. <strong>Nous quotidien</strong> : <em>On part en vacances ?</em> (verbe au singulier !)<br />
+                    4. <strong>Tu affectueux</strong> : <em>Alors, on fait la grasse matinée ?</em><br />
+                    5. <strong>Voix passive</strong> : <em>Ici, on parle français</em> (Aqui se fala francês)
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">⚡</div>
+                <div className="tip-card-body">
+                  <h3>Mise en Relief : C'est... qui et l'Accord Verbal</h3>
+                  <p>
+                    Dans la formule d'insistance <em>C'est... qui</em>, le verbe s'accorde obligatoirement avec la personne du pronom tonique :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em>C'est <strong>moi qui ai</strong> gagné</em> (et NON <em>*qui a gagné</em> !)<br />
+                    • <em>C'est <strong>toi qui as</strong> fait cette erreur</em> (avec un -s !)<br />
+                    • <em>C'est <strong>nous qui préparons</strong> le dîner</em><br />
+                    • <em>Ce sont <strong>eux qui sont</strong> responsables</em>
+                  </div>
+                </div>
+              </div>
+            </div>
           ) : (
             <div className="tips-deck">
               <div className="tip-card card card-default">

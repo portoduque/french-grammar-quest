@@ -1724,4 +1724,124 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
     expect(topics[4].id).toBe('ch20-t05');
     expect(topics[5].id).toBe('ch20-t06');
   });
+
+  it('fournit la théorie pédagogique complète et rigoureuse pour ch21 (tous les pronoms)', async () => {
+    const { result } = renderHook(() => useTheory('ch21'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data).toBeDefined();
+    expect(data?.chapter.number).toBe(21);
+    expect(data?.chapter.title).toBe('All the pronouns');
+    expect(data?.chapter.page_range).toBe('247–270');
+    expect([110, 120]).toContain(data?.chapter.total_questions);
+
+    // Valide le contenu pédagogique FLE pour lusophones
+    const markdown = data?.chapter.theory_markdown || '';
+    expect(markdown).toContain('Tous les pronoms');
+    expect(markdown).toContain('Les Pronoms Sujets');
+    expect(markdown).toContain('Le Pronom Caméléon « ON » : Ses 5 Facettes');
+    expect(markdown).toContain('Les Professions');
+    expect(markdown).toContain('Les Pronoms Objets Directs');
+    expect(markdown).toContain("l'Accord du Participe Passé avec le COD");
+    expect(markdown).toContain('Les Pronoms Objets Indirects');
+    expect(markdown).toContain('Les Pronoms Adverbiaux « Y » et « EN »');
+    expect(markdown).toContain("L'Ordre des Doubles Pronoms");
+    expect(markdown).toContain('Les Pronoms Disjoints / Toniques');
+    expect(markdown).toContain('Personnes vs Choses avec « À » et « DE »');
+  });
+
+  it('charge les 12 séries d exercices officielles du Chapitre 21 avec les moteurs de jeu calibrés', async () => {
+    const { result } = renderHook(() => useTheory('ch21'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const sets = result.current.data?.exerciseSets || [];
+    expect(sets).toHaveLength(12);
+
+    // 21.1: COD remplacement -> sentence_rewrite (10)
+    expect(sets[0].id).toBe('ch21-ex01');
+    expect(sets[0].interaction_type).toBe('sentence_rewrite');
+    expect(sets[0].questions_count).toBe(10);
+
+    // 21.2: Traduction COD + inversion -> translation (10)
+    expect(sets[1].id).toBe('ch21-ex02');
+    expect(sets[1].interaction_type).toBe('translation');
+    expect(sets[1].questions_count).toBe(10);
+
+    // 21.3: COI remplacement -> sentence_rewrite (10)
+    expect(sets[2].id).toBe('ch21-ex03');
+    expect(sets[2].interaction_type).toBe('sentence_rewrite');
+    expect(sets[2].questions_count).toBe(10);
+
+    // 21.4: Traduction COI + impératif -> translation (10)
+    expect(sets[3].id).toBe('ch21-ex04');
+    expect(sets[3].interaction_type).toBe('translation');
+    expect(sets[3].questions_count).toBe(10);
+
+    // 21.5: Pronom Y -> sentence_rewrite (10)
+    expect(sets[4].id).toBe('ch21-ex05');
+    expect(sets[4].interaction_type).toBe('sentence_rewrite');
+    expect(sets[4].questions_count).toBe(10);
+
+    // 21.6: Pronom EN -> sentence_rewrite (10)
+    expect(sets[5].id).toBe('ch21-ex06');
+    expect(sets[5].interaction_type).toBe('sentence_rewrite');
+    expect(sets[5].questions_count).toBe(10);
+
+    // 21.7: Matching verbes prépositionnels -> matching (5)
+    expect(sets[6].id).toBe('ch21-ex07');
+    expect(sets[6].interaction_type).toBe('matching');
+    expect(sets[6].questions_count).toBe(5);
+
+    // 21.8: Ordre des doubles pronoms -> sentence_rewrite (10)
+    expect(sets[7].id).toBe('ch21-ex08');
+    expect(sets[7].interaction_type).toBe('sentence_rewrite');
+    expect(sets[7].questions_count).toBe(10);
+
+    // 21.9: Traduction doubles pronoms, Y et EN -> translation (10)
+    expect(sets[8].id).toBe('ch21-ex09');
+    expect(sets[8].interaction_type).toBe('translation');
+    expect(sets[8].questions_count).toBe(10);
+
+    // 21.10: C'est... qui avec toniques -> sentence_rewrite (10)
+    expect(sets[9].id).toBe('ch21-ex10');
+    expect(sets[9].interaction_type).toBe('sentence_rewrite');
+    expect(sets[9].questions_count).toBe(10);
+
+    // 21.11: Traduction toniques & personnes -> translation (10)
+    expect(sets[10].id).toBe('ch21-ex11');
+    expect(sets[10].interaction_type).toBe('translation');
+    expect(sets[10].questions_count).toBe(10);
+
+    // 21.12: Réponses courtes aussi / non plus -> fill_blank (5)
+    expect(sets[11].id).toBe('ch21-ex12');
+    expect(sets[11].interaction_type).toBe('fill_blank');
+    expect(sets[11].questions_count).toBe(5);
+
+    // Total questions check (110 questions)
+    const totalQ = sets.reduce((acc, s) => acc + s.questions_count, 0);
+    expect(totalQ).toBe(110);
+  });
+
+  it('fournit les 5 sujets principaux du chapitre 21', async () => {
+    const { result } = renderHook(() => useTheory('ch21'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const topics = result.current.data?.topics || [];
+    expect(topics).toHaveLength(5);
+    expect(topics[0].id).toBe('ch21-t01');
+    expect(topics[1].id).toBe('ch21-t02');
+    expect(topics[2].id).toBe('ch21-t03');
+    expect(topics[3].id).toBe('ch21-t04');
+    expect(topics[4].id).toBe('ch21-t05');
+  });
 });

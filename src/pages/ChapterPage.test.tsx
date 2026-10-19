@@ -212,6 +212,49 @@ vi.mock('@/hooks/useTheory', () => ({
         error: null,
       };
     }
+    if (chapterId === 'ch21') {
+      return {
+        data: {
+          chapter: {
+            id: 'ch21',
+            number: 21,
+            title: 'All the pronouns',
+            slug: 'all-the-pronouns',
+            world_number: 4,
+            world_name: 'Mundo 4: Les Nuances et le Virtuel',
+            page_range: '247–270',
+            topics_count: 5,
+            exercise_groups_count: 12,
+            total_questions: 110,
+            theory_markdown: '## All the pronouns (Tous les pronoms)\n\nLes pronoms sujets, COD, COI, y, en et disjoints.',
+            editorial_status: 'published',
+          },
+          topics: [
+            { id: 'ch21-t01', title: 'Pronoms sujets et pronom on', order_index: 1 },
+            { id: 'ch21-t02', title: 'Pronoms COD et accords', order_index: 2 },
+            { id: 'ch21-t03', title: 'Pronoms COI lui et leur', order_index: 3 },
+            { id: 'ch21-t04', title: 'Pronoms y, en et doubles pronoms', order_index: 4 },
+            { id: 'ch21-t05', title: 'Pronoms toniques et personnes', order_index: 5 },
+          ],
+          exerciseSets: [
+            { id: 'ch21-ex01', title: 'Exercice 21.1', instruction: 'Pronoms COD', interaction_type: 'sentence_rewrite', questions_count: 10, order_index: 1 },
+            { id: 'ch21-ex02', title: 'Exercice 21.2', instruction: 'Traduction COD', interaction_type: 'translation', questions_count: 10, order_index: 2 },
+            { id: 'ch21-ex03', title: 'Exercice 21.3', instruction: 'Pronoms COI', interaction_type: 'sentence_rewrite', questions_count: 10, order_index: 3 },
+            { id: 'ch21-ex04', title: 'Exercice 21.4', instruction: 'Traduction COI', interaction_type: 'translation', questions_count: 10, order_index: 4 },
+            { id: 'ch21-ex05', title: 'Exercice 21.5', instruction: 'Pronom y', interaction_type: 'sentence_rewrite', questions_count: 10, order_index: 5 },
+            { id: 'ch21-ex06', title: 'Exercice 21.6', instruction: 'Pronom en', interaction_type: 'sentence_rewrite', questions_count: 10, order_index: 6 },
+            { id: 'ch21-ex07', title: 'Exercice 21.7', instruction: 'Matching', interaction_type: 'matching', questions_count: 5, order_index: 7 },
+            { id: 'ch21-ex08', title: 'Exercice 21.8', instruction: 'Doubles pronoms', interaction_type: 'sentence_rewrite', questions_count: 10, order_index: 8 },
+            { id: 'ch21-ex09', title: 'Exercice 21.9', instruction: 'Traduction mixte', interaction_type: 'translation', questions_count: 10, order_index: 9 },
+            { id: 'ch21-ex10', title: 'Exercice 21.10', instruction: 'Cest qui', interaction_type: 'sentence_rewrite', questions_count: 10, order_index: 10 },
+            { id: 'ch21-ex11', title: 'Exercice 21.11', instruction: 'Toniques personnes', interaction_type: 'translation', questions_count: 10, order_index: 11 },
+            { id: 'ch21-ex12', title: 'Exercice 21.12', instruction: 'Aussi non plus', interaction_type: 'fill_blank', questions_count: 5, order_index: 12 },
+          ],
+        },
+        isLoading: false,
+        error: null,
+      };
+    }
     return { data: null, isLoading: false, error: null };
   }),
 }));
@@ -370,5 +413,33 @@ describe('ChapterPage Component', () => {
     expect(screen.getByText(/La Règle d'Or de la Négation \(DE \/ D'\)/i)).toBeInTheDocument();
     expect(screen.getByText(/Genre des Pays : La Règle Magique du « -E » Final/i)).toBeInTheDocument();
     expect(screen.getByText(/Homonymes de Genre : Deux Sens Totalement Différents !/i)).toBeInTheDocument();
+  });
+
+  it('affiche la théorie, les 12 séries d exercices et les astuces FLE pour le chapitre 21 (All the pronouns)', () => {
+    renderWithProviders('/chapters/ch21');
+
+    expect(screen.getByText('All the pronouns')).toBeInTheDocument();
+
+    // Onglet Théorie actif par défaut
+    expect(screen.getByText(/Les pronoms sujets, COD, COI, y, en et disjoints/i)).toBeInTheDocument();
+
+    // Passage à l'onglet Exercices (12)
+    const exercisesTab = screen.getByRole('tab', { name: /Exercices \(12\)/i });
+    fireEvent.click(exercisesTab);
+
+    expect(screen.getByText('Exercice 21.1')).toBeInTheDocument();
+    expect(screen.getByText('Exercice 21.7')).toBeInTheDocument();
+    expect(screen.getByText('Exercice 21.12')).toBeInTheDocument();
+
+    // Passage à l'onglet Astuces FLE
+    const tipsTab = screen.getByRole('tab', { name: /Astuces FLE/i });
+    fireEvent.click(tipsTab);
+
+    expect(screen.getByText(/L'Accord du Participe Passé avec le COD Antécédent/i)).toBeInTheDocument();
+    expect(screen.getByText(/Le Duo « Lui » et « Leur » : Unisexe et Invariable/i)).toBeInTheDocument();
+    expect(screen.getByText(/Choses vs Personnes : Le Grand Piège de « Y » et « EN »/i)).toBeInTheDocument();
+    expect(screen.getByText(/L'Ordre des Doubles Pronoms : Le Schéma Infaillible/i)).toBeInTheDocument();
+    expect(screen.getByText(/Les 5 Visages du Pronom « On »/i)).toBeInTheDocument();
+    expect(screen.getByText(/Mise en Relief : C'est... qui et l'Accord Verbal/i)).toBeInTheDocument();
   });
 });

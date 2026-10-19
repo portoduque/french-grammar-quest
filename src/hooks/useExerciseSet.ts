@@ -102,6 +102,11 @@ import {
   CHAPTER_20_QUESTIONS_MAP
 } from '@/data/chapter20Data';
 
+import {
+  CHAPTER_21_EXERCISE_SETS,
+  CHAPTER_21_QUESTIONS_MAP
+} from '@/data/chapter21Data';
+
 export interface ExerciseSetWithQuestions {
   exerciseSet: ExerciseSet;
   questions: Question[];
@@ -518,6 +523,32 @@ function getFallbackSet(
     };
   }
 
+  if (CHAPTER_21_QUESTIONS_MAP[exerciseSetId]) {
+    const foundSet = CHAPTER_21_EXERCISE_SETS.find(s => s.id === exerciseSetId) || {
+      id: exerciseSetId,
+      chapter_id: 'ch21',
+      order_index: parseInt(exerciseSetId.split('-ex')[1] || '1', 10),
+      title: `Exercice 21.${parseInt(exerciseSetId.split('-ex')[1] || '1', 10)}`,
+      instruction: 'Exercice sur tous les pronoms.',
+      interaction_type: exerciseSetId.endsWith('ex07')
+        ? 'matching'
+        : exerciseSetId.endsWith('ex12')
+        ? 'fill_blank'
+        : (exerciseSetId.endsWith('ex02') || exerciseSetId.endsWith('ex04') || exerciseSetId.endsWith('ex09') || exerciseSetId.endsWith('ex11'))
+        ? 'translation'
+        : 'sentence_rewrite',
+      questions_count: CHAPTER_21_QUESTIONS_MAP[exerciseSetId].length,
+      created_at: new Date().toISOString()
+    };
+
+    return {
+      exerciseSet: existingSet || foundSet,
+      questions: (existingQuestions && existingQuestions.length > 0)
+        ? existingQuestions
+        : CHAPTER_21_QUESTIONS_MAP[exerciseSetId]
+    };
+  }
+
   const fallbackSet: ExerciseSet = existingSet || {
     id: exerciseSetId,
     chapter_id: exerciseSetId.split('-')[0] || 'ch01',
@@ -632,7 +663,8 @@ export function useExerciseSet(exerciseSetId: string | undefined) {
           CHAPTER_17_QUESTIONS_MAP[exerciseSetId] ||
           CHAPTER_18_QUESTIONS_MAP[exerciseSetId] ||
           CHAPTER_19_QUESTIONS_MAP[exerciseSetId] ||
-          CHAPTER_20_QUESTIONS_MAP[exerciseSetId];
+          CHAPTER_20_QUESTIONS_MAP[exerciseSetId] ||
+          CHAPTER_21_QUESTIONS_MAP[exerciseSetId];
         const enrichedQuestions = fallbackList
           ? (questionsRows as Question[]).map(q => {
               const matchedFallback = fallbackList.find(fb => fb.id === q.id);
