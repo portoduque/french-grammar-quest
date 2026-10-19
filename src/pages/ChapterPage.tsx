@@ -1640,6 +1640,107 @@ export const ChapterPage: React.FC = () => {
                 </div>
               </div>
             </div>
+          ) : chapterNum === 16 ? (
+            <div className="tips-deck">
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">📖</div>
+                <div className="tip-card-body">
+                  <h3>O Segredo Sociolinguístico : Passé Simple (Escrito) vs Passé Composé (Oral)</h3>
+                  <p>
+                    Em português usamos o pretérito perfeito (*eu comi, ele foi*) em qualquer situação. Em francês moderno, o <strong>passé simple é estritamente literário e formal</strong> (romances, história, artigos de imprensa). No dia a dia falado, usa-se 100% o <strong>passé composé</strong> :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Na conversa cotidiana :</strong> <em>Hier, j'ai vu une exposition au Louvre.</em> (Passé composé)<br />
+                    • <strong>No romance / história :</strong> <em>Le peintre prit son pinceau et commença son chef-d'œuvre.</em> (Passé simple)
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🎯</div>
+                <div className="tip-card-body">
+                  <h3>A Fórmula dos Radicais : Família em -A- vs Família em -I-</h3>
+                  <p>
+                    A identificação do passado simples é facilitada pelas vogais características das terminações :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Verbos em -ER (1º grupo) :</strong> vogal <strong>-a-</strong> (*-ai, -as, -a, -âmes, -âtes, -èrent*) ➔ <em>je répétai</em>, <em>il répéta</em>, <em>ils répétèrent</em>.<br />
+                    • <strong>Verbos em -IR e -RE :</strong> vogal <strong>-i-</strong> (*-is, -is, -it, -îmes, -îtes, -irent*) ➔ <em>je partis</em>, <em>il répondit</em>, <em>ils répondirent</em>.
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">👑</div>
+                <div className="tip-card-body">
+                  <h3>Os Dois Acentos Circunflexos Mágicos : Somente em « Nous » e « Vous »</h3>
+                  <p>
+                    Uma regra de ouro absoluta para nunca errar a acentuação gráfica :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Nous & Vous :</strong> SEMPRE levam acento circunflexo ➔ <em>nous répétâmes</em>, <em>vous répétâtes</em>, <em>nous partîmes</em>, <em>vous eûtes</em>, <em>nous fûmes</em>.<br />
+                    • <strong>Il / Elle :</strong> NUNCA leva acento circunflexo no passé simple ➔ <em>il répéta</em>, <em>il partit</em>, <em>il fut</em>, <em>il eut</em> (o acento em <em>qu'il fît</em> só existe no subjuntivo imperfeito!).
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🤝</div>
+                <div className="tip-card-body">
+                  <h3>O Gêmeo Português de ÊTRE : « Je fus, il fut, ils furent »</h3>
+                  <p>
+                    A raiz latina em <strong>f-</strong> do verbo <em>être</em> é a irmã quase idêntica do pretérito perfeito português :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em>je fus</em> = eu fui / estive<br />
+                    • <em>il fut</em> = ele foi / esteve (ex: <em>Aliénor d'Aquitaine fut une reine remarquable</em>)<br />
+                    • <em>nous fûmes</em> = nós fomos / estivemos<br />
+                    • <em>ils furent</em> = eles foram / estiveram (ex: <em>Ils furent de grands collectionneurs</em>)
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🔊</div>
+                <div className="tip-card-body">
+                  <h3>A Pronúncia Secreta de AVOIR : « J'eus, il eut » [y] (Som de U Francês)</h3>
+                  <p>
+                    Atenção phonétique redobrada para falantes de português :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    O dígrafo <strong>« eu »</strong> nas formas do verbo <em>avoir</em> (<em>j'eus, tu eus, il eut, nous eûmes, ils eurent</em>) e no particípio (<em>eu</em>) se pronuncia <strong>[y]</strong> (o som do 'u' francês com os lábios arredondados em biquinho), e <strong>NUNCA</strong> [ø] ou 'êu'!
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">⚡</div>
+                <div className="tip-card-body">
+                  <h3>O Enigma de « Il plut » : Plaire (Agradar) vs Pleuvoir (Chover)</h3>
+                  <p>
+                    Ambos os verbos geram a forma idêntica <em>il plut</em>. O segredo da diferenciação está na estrutura da frase :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Plaire (Agradar a alguém) :</strong> vem acompanhado de complemento indireto ➔ <em>Ce tableau <strong>plut</strong> à tout le monde.</em> (O quadro agradou a todos).<br />
+                    • <strong>Pleuvoir (Chover) :</strong> verbo impessoal sem objeto de agrado ➔ <em><strong>Il plut</strong> sur la Normandie pendant trois jours.</em> (Choveu na Normandia...).
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🎨</div>
+                <div className="tip-card-body">
+                  <h3>Cédilha em -CER e « E » em -GER : Preservando a Fonética</h3>
+                  <p>
+                    Diante da vogal <em>a</em> das terminações do passé simple :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Verbos em -cer :</strong> ganham cédilha para preservar o som [s] ➔ <em>Elle <strong>prononça</strong> un discours</em> / <em>Je <strong>remplaçai</strong> le comédien</em>.<br />
+                    • <strong>Verbos em -ger :</strong> mantêm o <em>e</em> mudo para preservar o som [ʒ] ➔ <em>Il <strong>partagea</strong> sa fortune</em> / <em>Nous <strong>déménageâmes</strong></em>.
+                  </div>
+                </div>
+              </div>
+            </div>
           ) : (
             <div className="tips-deck">
               <div className="tip-card card card-default">

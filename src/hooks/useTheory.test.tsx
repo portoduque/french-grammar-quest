@@ -1318,4 +1318,74 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
     expect(topics[0].id).toBe('ch15-t01');
     expect(topics[1].id).toBe('ch15-t02');
   });
+
+  it('fournit la théorie pédagogique complète et rigoureuse pour ch16 (passé simple, verbes en -cer/-ger, verbes irréguliers et vocabulaire de l art)', async () => {
+    const { result } = renderHook(() => useTheory('ch16'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data).toBeDefined();
+    expect(data?.chapter.number).toBe(16);
+    expect(data?.chapter.title).toBe('The passé simple');
+    expect(data?.chapter.page_range).toBe('195–202');
+
+    // Valide le contenu pédagogique FLE pour lusophones
+    const markdown = data?.chapter.theory_markdown || '';
+    expect(markdown).toContain("Formation des Verbes Réguliers en -ER");
+    expect(markdown).toContain("Ajustements Orthographiques Indispensables (-cer et -ger)");
+    expect(markdown).toContain("Formation des Verbes en -IR et -RE");
+    expect(markdown).toContain("Les Deux Piliers Fondamentaux : AVOIR et ÊTRE");
+    expect(markdown).toContain("Vocabulaire Thématique : L'Art, les Beaux-Arts et la Culture");
+    expect(markdown).toContain("Les Verbes Irréguliers au Passé Simple");
+    expect(markdown).toContain("Les 5 Réflexes d'Or du Professeur FLE");
+    expect(markdown.toLowerCase()).toContain("vernissage");
+    expect(markdown.toLowerCase()).toContain("chevalet");
+    expect(markdown.toLowerCase()).toContain("aliénor d'aquitaine");
+  });
+
+  it('charge les 3 séries d exercices officielles du Chapitre 16 avec les bons types d interaction (30 questions au total)', async () => {
+    const { result } = renderHook(() => useTheory('ch16'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const sets = result.current.data?.exerciseSets || [];
+    expect(sets).toHaveLength(3);
+
+    // 16.1: Reconnaissance morphologique (infinitif) -> fill_blank (10)
+    expect(sets[0].id).toBe('ch16-ex01');
+    expect(sets[0].interaction_type).toBe('fill_blank');
+    expect(sets[0].questions_count).toBe(10);
+
+    // 16.2: Conjugaison historique au passé simple -> fill_blank (10)
+    expect(sets[1].id).toBe('ch16-ex02');
+    expect(sets[1].interaction_type).toBe('fill_blank');
+    expect(sets[1].questions_count).toBe(10);
+
+    // 16.3: Traduction littéraire vers le passé simple -> translation (10)
+    expect(sets[2].id).toBe('ch16-ex03');
+    expect(sets[2].interaction_type).toBe('translation');
+    expect(sets[2].questions_count).toBe(10);
+
+    // Total questions check (30 questions)
+    const totalQ = sets.reduce((acc, s) => acc + s.questions_count, 0);
+    expect(totalQ).toBe(30);
+  });
+
+  it('fournit les 2 sujets principaux du chapitre 16', async () => {
+    const { result } = renderHook(() => useTheory('ch16'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const topics = result.current.data?.topics || [];
+    expect(topics).toHaveLength(2);
+    expect(topics[0].id).toBe('ch16-t01');
+    expect(topics[1].id).toBe('ch16-t02');
+  });
 });

@@ -1766,4 +1766,99 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       expect(data?.questions[9].accepted_answers).toContain('Il est tombé en sautant par-dessus le mur.');
     });
   });
+
+  describe('useExerciseSet Hook — Chapitre 16 (The passé simple)', () => {
+    it('charge la série 16.1 (fill_blank) pour la reconnaissance morphologique des infinitifs (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch16-ex01'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toContain('Ils furent de grands collectionneurs');
+      expect(data?.questions[0].accepted_answers).toContain('être');
+      expect(data?.questions[1].prompt).toContain('J’eus un profond respect');
+      expect(data?.questions[1].accepted_answers).toContain('avoir');
+      expect(data?.questions[2].prompt).toContain('Elles peignirent des natures mortes');
+      expect(data?.questions[2].accepted_answers).toContain('peindre');
+      expect(data?.questions[3].prompt).toContain('Nous fîmes un tour de son atelier');
+      expect(data?.questions[3].accepted_answers).toContain('faire');
+      expect(data?.questions[4].prompt).toContain('Il vint nous rejoindre au vernissage');
+      expect(data?.questions[4].accepted_answers).toContain('venir');
+      expect(data?.questions[7].prompt).toContain('Elle sut tout de suite que c’était un chef-d’œuvre');
+      expect(data?.questions[7].accepted_answers).toContain('savoir');
+      expect(data?.questions[8].prompt).toContain('Il plut à tout le monde');
+      expect(data?.questions[8].accepted_answers).toContain('plaire');
+      expect(data?.questions[9].prompt).toContain('J’éteignis la lumière');
+      expect(data?.questions[9].accepted_answers).toContain('éteindre');
+    });
+
+    it('charge la série 16.2 (fill_blank) pour la conjugaison historique au passé simple (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch16-ex02'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toContain('Le Rouge et le noir (être)');
+      expect(data?.questions[0].accepted_answers).toContain('fut');
+      expect(data?.questions[1].prompt).toContain('En France, les femmes (obtenir)');
+      expect(data?.questions[1].accepted_answers).toContain('obtinrent');
+      expect(data?.questions[2].prompt).toContain('Jacques Cartier (explorer)');
+      expect(data?.questions[2].accepted_answers).toContain('explora');
+      expect(data?.questions[3].prompt).toContain('Charles de Gaulle (mourir)');
+      expect(data?.questions[3].accepted_answers).toContain('mourut');
+      expect(data?.questions[4].prompt).toContain('Édouard Manet (peindre)');
+      expect(data?.questions[4].accepted_answers).toContain('peignit');
+      expect(data?.questions[5].prompt).toContain('La terre (trembler)');
+      expect(data?.questions[5].accepted_answers).toContain('trembla');
+      expect(data?.questions[6].prompt).toContain('Catherine de Médicis (introduire)');
+      expect(data?.questions[6].accepted_answers).toContain('introduisit');
+      expect(data?.questions[7].prompt).toContain('Le voyage inaugural du TGV (avoir lieu)');
+      expect(data?.questions[7].accepted_answers).toContain('eut lieu');
+      expect(data?.questions[8].prompt).toContain('Johnny Hallyday (faire)');
+      expect(data?.questions[8].accepted_answers).toContain('fit');
+      expect(data?.questions[9].prompt).toContain('La Côte d’Ivoire (devenir)');
+      expect(data?.questions[9].accepted_answers).toContain('devint');
+    });
+
+    it('charge la série 16.3 (translation) pour la traduction littéraire vers le passé simple (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch16-ex03'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('translation');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('He lived in Amsterdam for ten years.');
+      expect(data?.questions[0].accepted_answers).toContain('Il vécut dix ans à Amsterdam.');
+      expect(data?.questions[1].prompt).toBe('She introduced this new method.');
+      expect(data?.questions[1].accepted_answers).toContain('Elle introduisit cette nouvelle méthode.');
+      expect(data?.questions[2].prompt).toBe('They read all his books.');
+      expect(data?.questions[2].accepted_answers).toContain('Ils lurent tous ses livres.');
+      expect(data?.questions[2].accepted_answers).toContain('Elles lurent tous ses livres.');
+      expect(data?.questions[3].prompt).toBe('He died in Italy.');
+      expect(data?.questions[3].accepted_answers).toContain('Il mourut en Italie.');
+      expect(data?.questions[4].prompt).toBe('He was surprised.');
+      expect(data?.questions[4].accepted_answers).toContain('Il fut surpris.');
+      expect(data?.questions[5].prompt).toBe('I wanted to thank him.');
+      expect(data?.questions[5].accepted_answers).toContain('Je voulus le remercier.');
+      expect(data?.questions[6].prompt).toBe('She was born in Rouen.');
+      expect(data?.questions[6].accepted_answers).toContain('Elle naquit à Rouen.');
+      expect(data?.questions[7].prompt).toBe('They bought a new easel.');
+      expect(data?.questions[7].accepted_answers).toContain('Ils achetèrent un nouveau chevalet.');
+      expect(data?.questions[8].prompt).toBe('She became a portrait painter.');
+      expect(data?.questions[8].accepted_answers).toContain('Elle devint portraitiste.');
+      expect(data?.questions[9].prompt).toBe('He smiled and left.');
+      expect(data?.questions[9].accepted_answers).toContain('Il sourit et partit.');
+    });
+  });
 });

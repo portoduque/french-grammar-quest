@@ -98,6 +98,12 @@ import {
   CHAPTER_15_EXERCISE_SETS
 } from '@/data/chapter15Data';
 
+import {
+  CHAPTER_16_THEORY_MARKDOWN,
+  CHAPTER_16_TOPICS,
+  CHAPTER_16_EXERCISE_SETS
+} from '@/data/chapter16Data';
+
 const CH01_FALLBACK_THEORY: ChapterTheoryData = {
   chapter: {
     id: 'ch01',
@@ -428,6 +434,28 @@ const CH15_FALLBACK_THEORY: ChapterTheoryData = {
   exerciseSets: CHAPTER_15_EXERCISE_SETS
 };
 
+const CH16_FALLBACK_THEORY: ChapterTheoryData = {
+  chapter: {
+    id: 'ch16',
+    number: 16,
+    title: 'The passé simple',
+    slug: 'the-passe-simple',
+    world_number: 3,
+    world_name: 'Mundo 3: L’Espace et les Pronoms',
+    page_range: '195–202',
+    topics_count: 2,
+    exercise_groups_count: 3,
+    total_questions: 30,
+    theory_markdown: CHAPTER_16_THEORY_MARKDOWN,
+    release_id: null,
+    editorial_status: 'published',
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+  },
+  topics: CHAPTER_16_TOPICS,
+  exerciseSets: CHAPTER_16_EXERCISE_SETS
+};
+
 function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch01') return CH01_FALLBACK_THEORY;
   if (chapterId === 'ch02') return CH02_FALLBACK_THEORY;
@@ -444,6 +472,7 @@ function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch13') return CH13_FALLBACK_THEORY;
   if (chapterId === 'ch14') return CH14_FALLBACK_THEORY;
   if (chapterId === 'ch15') return CH15_FALLBACK_THEORY;
+  if (chapterId === 'ch16') return CH16_FALLBACK_THEORY;
   return null;
 }
 
@@ -533,6 +562,8 @@ export function useTheory(chapterId?: string) {
           ? CHAPTER_14_THEORY_MARKDOWN
           : chapterId === 'ch15'
           ? CHAPTER_15_THEORY_MARKDOWN
+          : chapterId === 'ch16'
+          ? CHAPTER_16_THEORY_MARKDOWN
           : (chapterData as Chapter).theory_markdown;
 
         return {

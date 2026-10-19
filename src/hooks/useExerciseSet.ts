@@ -77,6 +77,11 @@ import {
   CHAPTER_15_QUESTIONS_MAP
 } from '@/data/chapter15Data';
 
+import {
+  CHAPTER_16_EXERCISE_SETS,
+  CHAPTER_16_QUESTIONS_MAP
+} from '@/data/chapter16Data';
+
 export interface ExerciseSetWithQuestions {
   exerciseSet: ExerciseSet;
   questions: Question[];
@@ -387,6 +392,26 @@ function getFallbackSet(
     };
   }
 
+  if (CHAPTER_16_QUESTIONS_MAP[exerciseSetId]) {
+    const foundSet = CHAPTER_16_EXERCISE_SETS.find(s => s.id === exerciseSetId) || {
+      id: exerciseSetId,
+      chapter_id: 'ch16',
+      order_index: parseInt(exerciseSetId.split('-ex')[1] || '1', 10),
+      title: `Exercice 16.${parseInt(exerciseSetId.split('-ex')[1] || '1', 10)}`,
+      instruction: 'Exercice de grammaire française.',
+      interaction_type: exerciseSetId.endsWith('ex03') ? 'translation' : 'fill_blank',
+      questions_count: CHAPTER_16_QUESTIONS_MAP[exerciseSetId].length,
+      created_at: new Date().toISOString()
+    };
+
+    return {
+      exerciseSet: existingSet || foundSet,
+      questions: (existingQuestions && existingQuestions.length > 0)
+        ? existingQuestions
+        : CHAPTER_16_QUESTIONS_MAP[exerciseSetId]
+    };
+  }
+
   const fallbackSet: ExerciseSet = existingSet || {
     id: exerciseSetId,
     chapter_id: exerciseSetId.split('-')[0] || 'ch01',
@@ -485,12 +510,19 @@ export function useExerciseSet(exerciseSetId: string | undefined) {
           CHAPTER_01_QUESTIONS_MAP[exerciseSetId] ||
           CHAPTER_02_QUESTIONS_MAP[exerciseSetId] ||
           CHAPTER_03_QUESTIONS_MAP[exerciseSetId] ||
+          CHAPTER_04_QUESTIONS_MAP[exerciseSetId] ||
+          CHAPTER_05_QUESTIONS_MAP[exerciseSetId] ||
+          CHAPTER_06_QUESTIONS_MAP[exerciseSetId] ||
+          CHAPTER_07_QUESTIONS_MAP[exerciseSetId] ||
+          CHAPTER_08_QUESTIONS_MAP[exerciseSetId] ||
+          CHAPTER_09_QUESTIONS_MAP[exerciseSetId] ||
           CHAPTER_10_QUESTIONS_MAP[exerciseSetId] ||
           CHAPTER_11_QUESTIONS_MAP[exerciseSetId] ||
           CHAPTER_12_QUESTIONS_MAP[exerciseSetId] ||
           CHAPTER_13_QUESTIONS_MAP[exerciseSetId] ||
           CHAPTER_14_QUESTIONS_MAP[exerciseSetId] ||
-          CHAPTER_15_QUESTIONS_MAP[exerciseSetId];
+          CHAPTER_15_QUESTIONS_MAP[exerciseSetId] ||
+          CHAPTER_16_QUESTIONS_MAP[exerciseSetId];
         const enrichedQuestions = fallbackList
           ? (questionsRows as Question[]).map(q => {
               const matchedFallback = fallbackList.find(fb => fb.id === q.id);
