@@ -255,6 +255,44 @@ vi.mock('@/hooks/useTheory', () => ({
         error: null,
       };
     }
+    if (chapterId === 'ch22') {
+      return {
+        data: {
+          chapter: {
+            id: 'ch22',
+            number: 22,
+            title: 'Adjectives and comparisons',
+            slug: 'adjectives-and-comparisons',
+            world_number: 4,
+            world_name: 'Mundo 4: Les Nuances et le Virtuel',
+            page_range: '271–282',
+            topics_count: 5,
+            exercise_groups_count: 7,
+            total_questions: 55,
+            theory_markdown: '## Adjectives and comparisons (Les adjectifs et les comparaisons)\n\nL\'accord des adjectifs, la place (BANGS) et les comparatifs.',
+            editorial_status: 'published',
+          },
+          topics: [
+            { id: 'ch22-t01', title: 'Accord en genre et féminins irréguliers', order_index: 1 },
+            { id: 'ch22-t02', title: 'Adjectifs spéciaux devant voyelle', order_index: 2 },
+            { id: 'ch22-t03', title: 'Place de l\'adjectif et changements de sens', order_index: 3 },
+            { id: 'ch22-t04', title: 'Adjectifs de couleur', order_index: 4 },
+            { id: 'ch22-t05', title: 'Comparatifs et superlatifs', order_index: 5 },
+          ],
+          exerciseSets: [
+            { id: 'ch22-ex01', title: 'Exercice 22.1', instruction: 'Traduction adjectifs', interaction_type: 'translation', questions_count: 10, order_index: 1 },
+            { id: 'ch22-ex02', title: 'Exercice 22.2', instruction: 'Adjectif logique', interaction_type: 'fill_blank', questions_count: 5, order_index: 2 },
+            { id: 'ch22-ex03', title: 'Exercice 22.3', instruction: 'Féminin Patrick Sonia', interaction_type: 'fill_blank', questions_count: 10, order_index: 3 },
+            { id: 'ch22-ex04', title: 'Exercice 22.4', instruction: 'Comparatifs contexte', interaction_type: 'translation', questions_count: 10, order_index: 4 },
+            { id: 'ch22-ex05', title: 'Exercice 22.5', instruction: 'Formulation comparatif', interaction_type: 'sentence_rewrite', questions_count: 5, order_index: 5 },
+            { id: 'ch22-ex06', title: 'Exercice 22.6', instruction: 'Traduction synthèse', interaction_type: 'translation', questions_count: 10, order_index: 6 },
+            { id: 'ch22-ex07', title: 'Exercice 22.7', instruction: 'Matching sens', interaction_type: 'matching', questions_count: 5, order_index: 7 },
+          ],
+        },
+        isLoading: false,
+        error: null,
+      };
+    }
     return { data: null, isLoading: false, error: null };
   }),
 }));
@@ -441,5 +479,33 @@ describe('ChapterPage Component', () => {
     expect(screen.getByText(/L'Ordre des Doubles Pronoms : Le Schéma Infaillible/i)).toBeInTheDocument();
     expect(screen.getByText(/Les 5 Visages du Pronom « On »/i)).toBeInTheDocument();
     expect(screen.getByText(/Mise en Relief : C'est... qui et l'Accord Verbal/i)).toBeInTheDocument();
+  });
+
+  it('affiche la théorie, les 7 séries d exercices et les astuces FLE pour le chapitre 22 (Adjectives and comparisons)', () => {
+    renderWithProviders('/chapters/ch22');
+
+    expect(screen.getByText('Adjectives and comparisons')).toBeInTheDocument();
+
+    // Onglet Théorie actif par défaut
+    expect(screen.getByText(/L'accord des adjectifs, la place \(BANGS\) et les comparatifs/i)).toBeInTheDocument();
+
+    // Passage à l'onglet Exercices (7)
+    const exercisesTab = screen.getByRole('tab', { name: /Exercices \(7\)/i });
+    fireEvent.click(exercisesTab);
+
+    expect(screen.getByText('Exercice 22.1')).toBeInTheDocument();
+    expect(screen.getByText('Exercice 22.2')).toBeInTheDocument();
+    expect(screen.getByText('Exercice 22.7')).toBeInTheDocument();
+
+    // Passage à l'onglet Astuces FLE
+    const tipsTab = screen.getByRole('tab', { name: /Astuces FLE/i });
+    fireEvent.click(tipsTab);
+
+    expect(screen.getByText(/L'Effet Phonétique du « -e » Féminin/i)).toBeInTheDocument();
+    expect(screen.getByText(/Les 5 Formes Euphoniques Devant Voyelle/i)).toBeInTheDocument();
+    expect(screen.getByText(/La Règle BANGS : Les Rares Adjectifs Avant le Nom/i)).toBeInTheDocument();
+    expect(screen.getByText(/Changement de Sens selon la Place/i)).toBeInTheDocument();
+    expect(screen.getByText(/L'Invariabilité des Couleurs Composées et Fruits/i)).toBeInTheDocument();
+    expect(screen.getByText(/Comparatifs : AUSSI vs AUTANT \(Le Piège Lusophone\)/i)).toBeInTheDocument();
   });
 });

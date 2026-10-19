@@ -1844,4 +1844,98 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
     expect(topics[3].id).toBe('ch21-t04');
     expect(topics[4].id).toBe('ch21-t05');
   });
+
+  it('fournit la théorie pédagogique complète et rigoureuse pour ch22 (adjectifs et comparaisons)', async () => {
+    const { result } = renderHook(() => useTheory('ch22'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data).toBeDefined();
+    expect(data?.chapter.number).toBe(22);
+    expect(data?.chapter.title).toBe('Adjectives and comparisons');
+    expect(data?.chapter.page_range).toBe('271–282');
+    expect([55, 70]).toContain(data?.chapter.total_questions);
+
+    // Valide le contenu pédagogique FLE pour lusophones
+    const markdown = data?.chapter.theory_markdown || '';
+    expect(markdown).toContain('Les adjectifs et les comparaisons');
+    expect(markdown).toContain('Accord en Genre des Adjectifs');
+    expect(markdown).toContain('Féminins Irréguliers Systématiques');
+    expect(markdown).toContain('Cinq Adjectifs Spéciaux Devant Voyelle');
+    expect(markdown).toContain('La Place de l\'Adjectif');
+    expect(markdown).toContain('Sens qui Change Selon la Position');
+    expect(markdown).toContain('Adjectifs de Couleur');
+    expect(markdown).toContain('Les Comparatifs');
+    expect(markdown).toContain('Comparatifs et Superlatifs Irréguliers');
+    expect(markdown).toContain('Les Superlatifs');
+  });
+
+  it('charge les 7 séries d exercices officielles du Chapitre 22 avec les moteurs de jeu calibrés', async () => {
+    const { result } = renderHook(() => useTheory('ch22'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const sets = result.current.data?.exerciseSets || [];
+    expect(sets).toHaveLength(7);
+
+    // 22.1: Traduction / accord adjectifs -> translation (10)
+    expect(sets[0].id).toBe('ch22-ex01');
+    expect(sets[0].interaction_type).toBe('translation');
+    expect(sets[0].questions_count).toBe(10);
+
+    // 22.2: Adjectif logique -> fill_blank (5)
+    expect(sets[1].id).toBe('ch22-ex02');
+    expect(sets[1].interaction_type).toBe('fill_blank');
+    expect(sets[1].questions_count).toBe(5);
+
+    // 22.3: Féminin Patrick Sonia -> fill_blank (10)
+    expect(sets[2].id).toBe('ch22-ex03');
+    expect(sets[2].interaction_type).toBe('fill_blank');
+    expect(sets[2].questions_count).toBe(10);
+
+    // 22.4: Comparatifs contexte -> translation (10)
+    expect(sets[3].id).toBe('ch22-ex04');
+    expect(sets[3].interaction_type).toBe('translation');
+    expect(sets[3].questions_count).toBe(10);
+
+    // 22.5: Formulation comparatif -> sentence_rewrite (5)
+    expect(sets[4].id).toBe('ch22-ex05');
+    expect(sets[4].interaction_type).toBe('sentence_rewrite');
+    expect(sets[4].questions_count).toBe(5);
+
+    // 22.6: Traduction synthèse -> translation (10)
+    expect(sets[5].id).toBe('ch22-ex06');
+    expect(sets[5].interaction_type).toBe('translation');
+    expect(sets[5].questions_count).toBe(10);
+
+    // 22.7: Matching sens place adjectif -> matching (5)
+    expect(sets[6].id).toBe('ch22-ex07');
+    expect(sets[6].interaction_type).toBe('matching');
+    expect(sets[6].questions_count).toBe(5);
+
+    // Total questions check (55 questions)
+    const totalQ = sets.reduce((acc, s) => acc + s.questions_count, 0);
+    expect(totalQ).toBe(55);
+  });
+
+  it('fournit les 5 sujets principaux du chapitre 22', async () => {
+    const { result } = renderHook(() => useTheory('ch22'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const topics = result.current.data?.topics || [];
+    expect(topics).toHaveLength(5);
+    expect(topics[0].id).toBe('ch22-t01');
+    expect(topics[1].id).toBe('ch22-t02');
+    expect(topics[2].id).toBe('ch22-t03');
+    expect(topics[3].id).toBe('ch22-t04');
+    expect(topics[4].id).toBe('ch22-t05');
+  });
 });

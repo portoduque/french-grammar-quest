@@ -2196,6 +2196,105 @@ export const ChapterPage: React.FC = () => {
                 </div>
               </div>
             </div>
+          ) : chapterNum === 22 ? (
+            <div className="tips-deck">
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🔊</div>
+                <div className="tip-card-body">
+                  <h3>L'Effet Phonétique du « -e » Féminin</h3>
+                  <p>
+                    En français, l'ajout du <strong>-e</strong> au féminin a pour rôle fondamental de réveiller la consonne finale muette au masculin :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em>grand</em> [ɡʁɑ̃] ➔ <strong>grande</strong> [ɡʁɑ̃d] (le <strong>d</strong> se fait entendre)<br />
+                    • <em>français</em> [fʁɑ̃sɛ] ➔ <strong>française</strong> [fʁɑ̃sɛz] (le <strong>s</strong> devient sonore [z])<br />
+                    • <em>charmant</em> [ʃaʁmɑ̃] ➔ <strong>charmante</strong> [ʃaʁmɑ̃t] (le <strong>t</strong> se prononce)<br />
+                    <em>Rappel :</em> les adjectifs terminés par un <em>-e</em> muet au masculin sont identiques au féminin (<em>propre, sale, drôle, optimiste</em>).
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🎭</div>
+                <div className="tip-card-body">
+                  <h3>Les 5 Formes Euphoniques Devant Voyelle</h3>
+                  <p>
+                    Cinq adjectifs indispensables adoptent une forme masculine spéciale devant un nom masculin singulier commençant par une voyelle ou un <em>h</em> muet :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>beau</strong> ➔ un <strong>bel</strong> homme / un <strong>bel</strong> appartement<br />
+                    • <strong>nouveau</strong> ➔ un <strong>nouvel</strong> emploi / le <strong>nouvel</strong> an<br />
+                    • <strong>vieux</strong> ➔ un <strong>vieil</strong> édifice / un <strong>vieil</strong> ami<br />
+                    • <strong>fou</strong> ➔ un <strong>fol</strong> espoir / un <strong>fol</strong> amour<br />
+                    • <strong>mou</strong> ➔ un <strong>mol</strong> oreiller
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🚦</div>
+                <div className="tip-card-body">
+                  <h3>La Règle BANGS : Les Rares Adjectifs Avant le Nom</h3>
+                  <p>
+                    La majorité des adjectifs français se place APRÈS le nom (couleurs, nationalités, formes). Seuls les adjectifs courts du groupe <strong>BANGS</strong> se placent AVANT :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>B</strong>eauty : un <em>beau</em> jardin, une <em>jolie</em> robe<br />
+                    • <strong>A</strong>ge : un <em>jeune</em> homme, une <em>vieille</em> maison, un <em>nouveau</em> livre<br />
+                    • <strong>N</strong>umber : la <em>première</em> fois, le <em>dernier</em> train<br />
+                    • <strong>G</strong>oodness : une <em>bonne</em> idée, un <em>mauvais</em> signe<br />
+                    • <strong>S</strong>ize : un <em>grand</em> voyage, une <em>petite</em> ville, un <em>long</em> trajet
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🔄</div>
+                <div className="tip-card-body">
+                  <h3>Changement de Sens selon la Place</h3>
+                  <p>
+                    Certains adjectifs changent totalement de sens selon qu'ils sont placés avant (sens figuré/affectif) ou après le nom (sens propre/physique) :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em>un <strong>grand</strong> homme</em> (illustre, historique) vs <em>un homme <strong>grand</strong></em> (de haute taille)<br />
+                    • <em>mon <strong>ancien</strong> directeur</em> (ex-directeur) vs <em>un meuble <strong>ancien</strong></em> (antique, d'époque)<br />
+                    • <em>mon <strong>pauvre</strong> chien !</em> (à plaindre, blessé) vs <em>des pays <strong>pauvres</strong></em> (sans argent)<br />
+                    • <em>une <strong>sale</strong> affaire</em> (scandaleuse) vs <em>une chemise <strong>sale</strong></em> (à laver)
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🎨</div>
+                <div className="tip-card-body">
+                  <h3>L'Invariabilité des Couleurs Composées et Fruits</h3>
+                  <p>
+                    Attention au piège d'orthographe le plus célèbre de la langue française :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Couleurs issues de noms (fruits/minéraux) : INVARIABLES !</strong><br />
+                    <em>Des chaussures <strong>marron</strong></em> (jamais de -s !), <em>des pulls <strong>orange</strong></em>, <em>des robes <strong>bordeaux</strong></em>.<br />
+                    • <strong>Couleurs composées : 100 % INVARIABLES !</strong><br />
+                    <em>Des chaussures <strong>bleu marine</strong></em> (ni au féminin ni au pluriel !), <em>une veste <strong>gris foncé</strong></em>, <em>des yeux <strong>vert clair</strong></em>.
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">⚖️</div>
+                <div className="tip-card-body">
+                  <h3>Comparatifs : AUSSI vs AUTANT (Le Piège Lusophone)</h3>
+                  <p>
+                    Ne confondez pas la comparaison de qualité et la comparaison de quantité :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • Avec un <strong>adjectif</strong> ➔ <strong>aussi ... que</strong> : <em>Elle est <strong>aussi ambitieuse que</strong> lui.</em><br />
+                    • Avec un <strong>nom (quantité)</strong> ➔ <strong>autant de ... que</strong> : <em>Arnaud a <strong>autant d'argent que</strong> vous ?</em> (jamais <em>*aussi de</em> !)<br />
+                    • Formes irrégulières : <em>bon ➔ <strong>meilleur</strong></em> (jamais <em>*plus bon</em>), <em>bien ➔ <strong>mieux</strong></em>, <em>mauvais ➔ <strong>pire</strong></em>.
+                  </div>
+                </div>
+              </div>
+            </div>
           ) : (
             <div className="tips-deck">
               <div className="tip-card card card-default">

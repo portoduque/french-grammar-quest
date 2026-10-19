@@ -2525,4 +2525,150 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       expect(data?.questions[1].accepted_answers).toContain('Eux aussi.');
     });
   });
+
+  describe('useExerciseSet Hook — Chapitre 22 (Adjectives and comparisons)', () => {
+    it('charge la série 22.1 (translation) pour la traduction et accord des adjectifs (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch22-ex01'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('translation');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('Ta grand-mère est (French)? —Non, elle est (Italian).');
+      expect(data?.questions[0].accepted_answers).toContain('Ta grand-mère est française? —Non, elle est italienne.');
+      expect(data?.questions[3].prompt).toBe('Il porte ses chaussures (black)? —Non, il porte des chaussures (navy blue).');
+      expect(data?.questions[3].accepted_answers).toContain('Il porte ses chaussures noires? —Non, il porte des chaussures bleu marine.');
+      expect(data?.questions[6].prompt).toBe('C’est un (long) voyage? —Non, c’est assez (short).');
+      expect(data?.questions[6].accepted_answers).toContain('C’est un long voyage? —Non, c’est assez court.');
+    });
+
+    it('charge la série 22.2 (fill_blank) pour le choix logique avec options chips (5 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch22-ex02'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(5);
+      expect(data?.questions[0].prompt).toBe('Les antiquités sont _________.');
+      expect(data?.questions[0].options).toEqual([
+        { id: '1', text: 'méchantes' },
+        { id: '2', text: 'vieilles' },
+        { id: '3', text: 'courtes' }
+      ]);
+      expect(data?.questions[0].accepted_answers).toContain('vieilles');
+      expect(data?.questions[1].accepted_answers).toContain('adorable');
+      expect(data?.questions[2].accepted_answers).toContain('fascinant');
+      expect(data?.questions[4].accepted_answers).toContain('folle');
+    });
+
+    it('charge la série 22.3 (fill_blank) pour la transformation au féminin (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch22-ex03'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('Patrick est français. Sonia est _________.');
+      expect(data?.questions[0].accepted_answers).toContain('française');
+      expect(data?.questions[3].prompt).toBe('Patrick est beau. Sonia est _________.');
+      expect(data?.questions[3].accepted_answers).toContain('belle');
+      expect(data?.questions[6].prompt).toBe('Patrick est fou. Sonia est _________.');
+      expect(data?.questions[6].accepted_answers).toContain('folle');
+      expect(data?.questions[8].prompt).toBe('Patrick est roux. Sonia est _________.');
+      expect(data?.questions[8].accepted_answers).toContain('rousse');
+    });
+
+    it('charge la série 22.4 (translation) pour les comparatifs et superlatifs en contexte (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch22-ex04'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('translation');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('Je suis (more optimistic) que lui.');
+      expect(data?.questions[0].accepted_answers).toContain('Je suis plus optimiste que lui.');
+      expect(data?.questions[2].prompt).toBe('Ce vin-ci est (better) que ce vin-là.');
+      expect(data?.questions[2].accepted_answers).toContain('Ce vin-ci est meilleur que ce vin-là.');
+      expect(data?.questions[5].prompt).toBe('Arnaud a (as much) argent que vous?');
+      expect(data?.questions[5].accepted_answers).toContain('Arnaud a autant d’argent que vous?');
+      expect(data?.questions[6].prompt).toBe('Ce prix est (the best)!');
+      expect(data?.questions[6].accepted_answers).toContain('Ce prix est le meilleur!');
+      expect(data?.questions[9].prompt).toBe('Cet appartement est (the most beautiful) de l’immeuble.');
+      expect(data?.questions[9].accepted_answers).toContain('Cet appartement est le plus beau de l’immeuble.');
+    });
+
+    it('charge la série 22.5 (sentence_rewrite) pour la formulation de comparatifs (+, -, =) (5 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch22-ex05'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+      expect(data?.questions).toHaveLength(5);
+      expect(data?.questions[0].prompt).toBe('Charlotte/Lucie/grande/+');
+      expect(data?.questions[0].accepted_answers).toContain('Charlotte est plus grande que Lucie.');
+      expect(data?.questions[1].prompt).toBe('Charles/Xavier/drôle/=');
+      expect(data?.questions[1].accepted_answers).toContain('Charles est aussi drôle que Xavier.');
+      expect(data?.questions[2].prompt).toBe('Véronique/Sébastien/optimiste/–');
+      expect(data?.questions[2].accepted_answers).toContain('Véronique est moins optimiste que Sébastien.');
+    });
+
+    it('charge la série 22.6 (translation) pour la traduction de synthèse (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch22-ex06'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('translation');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('It’s a good idea.');
+      expect(data?.questions[0].accepted_answers).toContain('C’est une bonne idée.');
+      expect(data?.questions[1].prompt).toBe('They bought an old house in Normandy.');
+      expect(data?.questions[1].accepted_answers).toContain('Ils ont acheté une vieille maison en Normandie.');
+      expect(data?.questions[4].prompt).toBe('Her aunt loves old French songs.');
+      expect(data?.questions[4].accepted_answers).toContain('Sa tante aime les vieilles chansons françaises.');
+      expect(data?.questions[6].prompt).toBe('Norway is smaller than France.');
+      expect(data?.questions[6].accepted_answers).toContain('La Norvège est plus petite que la France.');
+      expect(data?.questions[8].prompt).toBe('She is as ambitious as he is.');
+      expect(data?.questions[8].accepted_answers).toContain('Elle est aussi ambitieuse que lui.');
+    });
+
+    it('charge la série 22.7 (matching) pour les nuances de sens selon la position (5 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch22-ex07'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('matching');
+      expect(data?.questions).toHaveLength(5);
+      expect(data?.questions[0].prompt).toBe('Il travaillait ici dans le passé. ➔ __');
+      expect(data?.questions[0].accepted_answers).toContain('e');
+      expect(data?.questions[1].prompt).toBe('Ils n’ont pas d’argent. ➔ __');
+      expect(data?.questions[1].accepted_answers).toContain('d');
+      expect(data?.questions[2].prompt).toBe('Il n’a pas de chemise à porter. ➔ __');
+      expect(data?.questions[2].accepted_answers).toContain('a');
+      expect(data?.questions[3].prompt).toBe('C’est une femme grande. ➔ __');
+      expect(data?.questions[3].accepted_answers).toContain('b');
+      expect(data?.questions[4].prompt).toBe('Elle est tombée. ➔ __');
+      expect(data?.questions[4].accepted_answers).toContain('c');
+    });
+  });
 });
