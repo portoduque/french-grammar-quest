@@ -2671,4 +2671,184 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       expect(data?.questions[4].accepted_answers).toContain('c');
     });
   });
+
+  describe('useExerciseSet Hook — Chapitre 23 (Demonstrative adjectives and pronouns)', () => {
+    it('charge la série 23.1 (fill_blank) pour les adjectifs démonstratifs (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch23-ex01'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('Ma sœur n’aime pas (this) __ robe rouge.');
+      expect(data?.questions[0].accepted_answers).toContain('cette');
+      expect(data?.questions[1].prompt).toBe('Mon petit frère préfère (this) __ dessin animé.');
+      expect(data?.questions[1].accepted_answers).toContain('ce');
+      expect(data?.questions[4].prompt).toBe('J’achète (these) __ cadeaux pour mes enfants.');
+      expect(data?.questions[4].accepted_answers).toContain('ces');
+      expect(data?.questions[8].prompt).toBe('(This) __ famille habite ici depuis longtemps et les enfants aiment (this) __ quartier.');
+      expect(data?.questions[8].accepted_answers).toContain('Cette/ce');
+      expect(data?.questions[9].prompt).toBe('(This) __ bébé est adorable.');
+      expect(data?.questions[9].accepted_answers).toContain('Ce');
+    });
+
+    it('charge la série 23.2 (fill_blank) pour la distinction -ci et -là (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch23-ex02'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toContain('dans (this) __ pâtisserie et les gâteaux dans (that) __ pâtisserie');
+      expect(data?.questions[0].accepted_answers).toContain('cette pâtisserie-ci / cette pâtisserie-là');
+      expect(data?.questions[1].accepted_answers).toContain('ce jouet-ci / ce jouet-là');
+      expect(data?.questions[5].accepted_answers).toContain('cette belle-sœur-ci / cette belle-sœur-là');
+    });
+
+    it('charge la série 23.3 (fill_blank) pour les adjectifs possessifs en contexte (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch23-ex03'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('Aimez-vous (his) __ nouvelle pièce?');
+      expect(data?.questions[0].accepted_answers).toContain('sa');
+      expect(data?.questions[1].prompt).toBe('Non, mais j’aime (his) __ nouveau conte de fée.');
+      expect(data?.questions[1].accepted_answers).toContain('son');
+      expect(data?.questions[2].prompt).toBe('Que penses-tu de (her) __ dernier roman?');
+      expect(data?.questions[2].accepted_answers).toContain('son');
+      expect(data?.questions[9].prompt).toBe('(Their) __ filles sont jumelles. Elles ont quatre ans.');
+      expect(data?.questions[9].accepted_answers).toContain('Leurs');
+    });
+
+    it('charge la série 23.4 (matching) pour la correspondance possessifs (5 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch23-ex04'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('matching');
+      expect(data?.questions).toHaveLength(5);
+      expect(data?.questions[0].prompt).toBe('frère ➔ __');
+      expect(data?.questions[0].accepted_answers).toContain('mon');
+      expect(data?.questions[1].prompt).toBe('amies ➔ __');
+      expect(data?.questions[1].accepted_answers).toContain('mes');
+      expect(data?.questions[2].prompt).toBe('oncle ➔ __');
+      expect(data?.questions[2].accepted_answers).toContain('mon');
+      expect(data?.questions[3].prompt).toBe('maison ➔ __');
+      expect(data?.questions[3].accepted_answers).toContain('ma');
+      expect(data?.questions[4].prompt).toBe('belle-sœur ➔ __');
+      expect(data?.questions[4].accepted_answers).toContain('ma');
+    });
+
+    it('charge la série 23.5 (fill_blank) pour la traduction des pronoms possessifs (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch23-ex05'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('Mes documents sont en anglais. (His) __ sont en français.');
+      expect(data?.questions[0].accepted_answers).toContain('Les siens');
+      expect(data?.questions[1].prompt).toBe('Ses parents viennent d’Écosse. (Mine) __ viennent d’Irlande.');
+      expect(data?.questions[1].accepted_answers).toContain('Les miens');
+      expect(data?.questions[3].prompt).toBe('Nous avons choisi notre itinéraire. Avez-vous choisi (yours) __ ?');
+      expect(data?.questions[3].accepted_answers).toContain('le vôtre');
+      expect(data?.questions[6].prompt).toBe('Je suis vos conseils et je vous demande de suivre (ours) __ .');
+      expect(data?.questions[6].accepted_answers).toContain('les nôtres');
+    });
+
+    it('charge la série 23.6 (translation) pour les comparaisons possessives (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch23-ex06'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('translation');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('My family is larger than yours. __');
+      expect(data?.questions[0].accepted_answers).toContain('Ma famille est plus grande que la vôtre.');
+      expect(data?.questions[1].prompt).toBe('Our situation is more difficult than his. __');
+      expect(data?.questions[1].accepted_answers).toContain('Notre situation est plus difficile que la sienne.');
+      expect(data?.questions[3].prompt).toBe('Their city is cleaner than ours. __');
+      expect(data?.questions[3].accepted_answers).toContain('Leur ville est plus propre que la nôtre.');
+      expect(data?.questions[9].prompt).toBe('Your children are more active than mine. __');
+      expect(data?.questions[9].accepted_answers).toContain('Vos enfants sont plus actifs que les miens.');
+    });
+
+    it('charge la série 23.7 (translation) pour les dialogues démonstratifs (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch23-ex07'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('translation');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toContain('What dress are you going to wear?');
+      expect(data?.questions[0].accepted_answers).toContain('—Quelle robe vas-tu porter? —Celle que j’ai achetée à Paris.');
+      expect(data?.questions[1].prompt).toContain('What do you think of his new novel?');
+      expect(data?.questions[1].accepted_answers).toContain('—Que pensez-vous de son nouveau roman? —C’est affreux!');
+      expect(data?.questions[3].prompt).toContain('What do you think of my new house?');
+      expect(data?.questions[3].accepted_answers).toContain('—Que penses-tu de ma nouvelle maison? —C’est beau!');
+    });
+
+    it('charge la série 23.8 (sentence_rewrite) pour le remplacement par les démonstratifs composés (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch23-ex08'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('Cette robe est rose. Cette robe est blanche. __');
+      expect(data?.questions[0].accepted_answers).toContain('Celle-ci est rose. Celle-là est blanche.');
+      expect(data?.questions[1].prompt).toBe('Ces écrivains sont inconnus. Ces écrivains sont célèbres. __');
+      expect(data?.questions[1].accepted_answers).toContain('Ceux-ci sont inconnus. Ceux-là sont célèbres.');
+      expect(data?.questions[9].prompt).toBe('Ces arguments sont bons. Ces arguments sont nuls. __');
+      expect(data?.questions[9].accepted_answers).toContain('Ceux-ci sont bons. Ceux-là sont nuls.');
+    });
+
+    it('charge la série 23.9 (translation) pour les expressions idiomatiques avec possessifs (7 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch23-ex09'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('translation');
+      expect(data?.questions).toHaveLength(7);
+      expect(data?.questions[0].prompt).toBe('After ten difficult years, she went back to her family. __');
+      expect(data?.questions[0].accepted_answers).toContain('Après dix années difficiles, elle est retournée chez les siens.');
+      expect(data?.questions[2].prompt).toBe('His young dog has been acting up again! __');
+      expect(data?.questions[2].accepted_answers).toContain('Son jeune chien a encore fait des siennes!');
+      expect(data?.questions[4].prompt).toBe('Cheers! It’s your birthday. __');
+      expect(data?.questions[4].accepted_answers).toContain('À la tienne! C’est ton anniversaire.');
+      expect(data?.questions[5].prompt).toBe('You are going to lose everything if you don’t make an effort! __');
+      expect(data?.questions[5].accepted_answers).toContain('Tu vas tout perdre si tu n’y mets pas du tien!');
+      expect(data?.questions[6].prompt).toBe('If he does not contribute his share, the presentation will be a disaster! __');
+      expect(data?.questions[6].accepted_answers).toContain('S’il n’y met pas du sien, la présentation sera un désastre!');
+    });
+  });
 });

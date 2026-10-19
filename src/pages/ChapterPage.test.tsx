@@ -293,6 +293,46 @@ vi.mock('@/hooks/useTheory', () => ({
         error: null,
       };
     }
+    if (chapterId === 'ch23') {
+      return {
+        data: {
+          chapter: {
+            id: 'ch23',
+            number: 23,
+            title: 'Demonstrative adjectives and pronouns',
+            slug: 'demonstrative-adjectives-and-pronouns',
+            world_number: 4,
+            world_name: 'Mundo 4: Les Nuances et le Virtuel',
+            page_range: '283–297',
+            topics_count: 5,
+            exercise_groups_count: 9,
+            total_questions: 82,
+            theory_markdown: '## Demonstrative adjectives and pronouns (Les démonstratifs et possessifs)\n\nLes adjectifs démonstratifs et possessifs, pronoms et tournures idiomatiques.',
+            editorial_status: 'published',
+          },
+          topics: [
+            { id: 'ch23-t01', title: 'Adjectifs démonstratifs et suffixes -ci / -là', order_index: 1 },
+            { id: 'ch23-t02', title: 'Adjectifs possessifs et règle euphonique devant voyelle', order_index: 2 },
+            { id: 'ch23-t03', title: 'Pronoms possessifs, contractions et être à', order_index: 3 },
+            { id: 'ch23-t04', title: 'Pronoms démonstratifs simples et composés', order_index: 4 },
+            { id: 'ch23-t05', title: 'Pronom neutre ce (c\'), ceci/cela/ça et expressions', order_index: 5 },
+          ],
+          exerciseSets: [
+            { id: 'ch23-ex01', title: 'Exercice 23.1', instruction: 'Adjectifs démonstratifs', interaction_type: 'fill_blank', questions_count: 10, order_index: 1 },
+            { id: 'ch23-ex02', title: 'Exercice 23.2', instruction: 'Distinction -ci et -là', interaction_type: 'fill_blank', questions_count: 10, order_index: 2 },
+            { id: 'ch23-ex03', title: 'Exercice 23.3', instruction: 'Adjectifs possessifs', interaction_type: 'fill_blank', questions_count: 10, order_index: 3 },
+            { id: 'ch23-ex04', title: 'Exercice 23.4', instruction: 'Correspondance possessifs', interaction_type: 'matching', questions_count: 5, order_index: 4 },
+            { id: 'ch23-ex05', title: 'Exercice 23.5', instruction: 'Traduction pronoms possessifs', interaction_type: 'fill_blank', questions_count: 10, order_index: 5 },
+            { id: 'ch23-ex06', title: 'Exercice 23.6', instruction: 'Comparaisons avec possessifs', interaction_type: 'translation', questions_count: 10, order_index: 6 },
+            { id: 'ch23-ex07', title: 'Exercice 23.7', instruction: 'Démonstratifs dialogue', interaction_type: 'translation', questions_count: 10, order_index: 7 },
+            { id: 'ch23-ex08', title: 'Exercice 23.8', instruction: 'Remplacement composés', interaction_type: 'sentence_rewrite', questions_count: 10, order_index: 8 },
+            { id: 'ch23-ex09', title: 'Exercice 23.9', instruction: 'Expressions idiomatiques', interaction_type: 'translation', questions_count: 7, order_index: 9 },
+          ],
+        },
+        isLoading: false,
+        error: null,
+      };
+    }
     return { data: null, isLoading: false, error: null };
   }),
 }));
@@ -507,5 +547,33 @@ describe('ChapterPage Component', () => {
     expect(screen.getByText(/Changement de Sens selon la Place/i)).toBeInTheDocument();
     expect(screen.getByText(/L'Invariabilité des Couleurs Composées et Fruits/i)).toBeInTheDocument();
     expect(screen.getByText(/Comparatifs : AUSSI vs AUTANT \(Le Piège Lusophone\)/i)).toBeInTheDocument();
+  });
+
+  it('affiche la théorie, les 9 séries d exercices et les astuces FLE pour le chapitre 23 (Demonstrative adjectives and pronouns)', () => {
+    renderWithProviders('/chapters/ch23');
+
+    expect(screen.getByText('Demonstrative adjectives and pronouns')).toBeInTheDocument();
+
+    // Onglet Théorie actif par défaut
+    expect(screen.getByText(/Les adjectifs démonstratifs et possessifs, pronoms et tournures idiomatiques/i)).toBeInTheDocument();
+
+    // Passage à l'onglet Exercices (9)
+    const exercisesTab = screen.getByRole('tab', { name: /Exercices \(9\)/i });
+    fireEvent.click(exercisesTab);
+
+    expect(screen.getByText('Exercice 23.1')).toBeInTheDocument();
+    expect(screen.getByText('Exercice 23.4')).toBeInTheDocument();
+    expect(screen.getByText('Exercice 23.9')).toBeInTheDocument();
+
+    // Passage à l'onglet Astuces FLE
+    const tipsTab = screen.getByRole('tab', { name: /Astuces FLE/i });
+    fireEvent.click(tipsTab);
+
+    expect(screen.getByText(/L'Euphonie de « Cet » : Éviter le Choc de Deux Voyelles/i)).toBeInTheDocument();
+    expect(screen.getByText(/Adjectifs Possessifs : L'Accord avec l'Objet Possédé !/i)).toBeInTheDocument();
+    expect(screen.getByText(/La Règle d'Or d'Euphonie : « Mon amie », « Son honnêteté »/i)).toBeInTheDocument();
+    expect(screen.getByText(/Pronoms Possessifs : Circonflexe et Contractions/i)).toBeInTheDocument();
+    expect(screen.getByText(/Pronoms Démonstratifs : Simples vs Composés \(-ci \/ -là\)/i)).toBeInTheDocument();
+    expect(screen.getByText(/Le Neutre « C'est » et les Expressions Idiomatiques/i)).toBeInTheDocument();
   });
 });

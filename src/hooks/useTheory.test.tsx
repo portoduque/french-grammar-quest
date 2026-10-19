@@ -1938,4 +1938,106 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
     expect(topics[3].id).toBe('ch22-t04');
     expect(topics[4].id).toBe('ch22-t05');
   });
+
+  it('fournit la théorie pédagogique complète et rigoureuse pour ch23 (démonstratifs, possessifs, euphonie, expressions)', async () => {
+    const { result } = renderHook(() => useTheory('ch23'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data).toBeDefined();
+    expect(data?.chapter.number).toBe(23);
+    expect(data?.chapter.title).toBe('Demonstrative adjectives and pronouns');
+    expect(data?.chapter.page_range).toBe('283–297');
+
+    const markdown = data?.chapter.theory_markdown || '';
+    expect(markdown).toContain('Les Adjectifs Démonstratifs');
+    expect(markdown).toContain('cet auteur');
+    expect(markdown).toContain('mon amie');
+    expect(markdown).toContain('Être + à');
+    expect(markdown).toContain('le mien');
+    expect(markdown).toContain('le nôtre');
+    expect(markdown).toContain('celui-ci');
+    expect(markdown).toContain('faire des siennes');
+    expect(markdown).toContain('y mettre du sien');
+    expect(markdown).toContain('À la tienne !');
+  });
+
+  it('charge les 9 séries d exercices officielles du Chapitre 23 avec les bons types d interaction (82 questions au total)', async () => {
+    const { result } = renderHook(() => useTheory('ch23'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const sets = result.current.data?.exerciseSets || [];
+    expect(sets).toHaveLength(9);
+
+    // 23.1: Adjectifs démonstratifs -> fill_blank (10)
+    expect(sets[0].id).toBe('ch23-ex01');
+    expect(sets[0].interaction_type).toBe('fill_blank');
+    expect(sets[0].questions_count).toBe(10);
+
+    // 23.2: Distinction -ci et -là -> fill_blank (10)
+    expect(sets[1].id).toBe('ch23-ex02');
+    expect(sets[1].interaction_type).toBe('fill_blank');
+    expect(sets[1].questions_count).toBe(10);
+
+    // 23.3: Adjectifs possessifs -> fill_blank (10)
+    expect(sets[2].id).toBe('ch23-ex03');
+    expect(sets[2].interaction_type).toBe('fill_blank');
+    expect(sets[2].questions_count).toBe(10);
+
+    // 23.4: Correspondance possessifs -> matching (5)
+    expect(sets[3].id).toBe('ch23-ex04');
+    expect(sets[3].interaction_type).toBe('matching');
+    expect(sets[3].questions_count).toBe(5);
+
+    // 23.5: Traduction pronoms possessifs -> fill_blank (10)
+    expect(sets[4].id).toBe('ch23-ex05');
+    expect(sets[4].interaction_type).toBe('fill_blank');
+    expect(sets[4].questions_count).toBe(10);
+
+    // 23.6: Comparaisons avec possessifs -> translation (10)
+    expect(sets[5].id).toBe('ch23-ex06');
+    expect(sets[5].interaction_type).toBe('translation');
+    expect(sets[5].questions_count).toBe(10);
+
+    // 23.7: Démonstratifs dialogue -> translation (10)
+    expect(sets[6].id).toBe('ch23-ex07');
+    expect(sets[6].interaction_type).toBe('translation');
+    expect(sets[6].questions_count).toBe(10);
+
+    // 23.8: Remplacement composés -> sentence_rewrite (10)
+    expect(sets[7].id).toBe('ch23-ex08');
+    expect(sets[7].interaction_type).toBe('sentence_rewrite');
+    expect(sets[7].questions_count).toBe(10);
+
+    // 23.9: Expressions idiomatiques -> translation (7)
+    expect(sets[8].id).toBe('ch23-ex09');
+    expect(sets[8].interaction_type).toBe('translation');
+    expect(sets[8].questions_count).toBe(7);
+
+    // Total questions check (82 questions)
+    const totalQ = sets.reduce((acc, s) => acc + s.questions_count, 0);
+    expect(totalQ).toBe(82);
+  });
+
+  it('fournit les 5 sujets principaux du chapitre 23', async () => {
+    const { result } = renderHook(() => useTheory('ch23'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const topics = result.current.data?.topics || [];
+    expect(topics).toHaveLength(5);
+    expect(topics[0].id).toBe('ch23-t01');
+    expect(topics[1].id).toBe('ch23-t02');
+    expect(topics[2].id).toBe('ch23-t03');
+    expect(topics[3].id).toBe('ch23-t04');
+    expect(topics[4].id).toBe('ch23-t05');
+  });
 });

@@ -140,6 +140,13 @@ import {
   CHAPTER_22_EXERCISE_SETS
 } from '@/data/chapter22Data';
 
+import {
+  CHAPTER_23_THEORY_MARKDOWN,
+  CHAPTER_23_TOPICS,
+  CHAPTER_23_EXERCISE_SETS
+} from '@/data/chapter23Data';
+
+
 const CH01_FALLBACK_THEORY: ChapterTheoryData = {
   chapter: {
     id: 'ch01',
@@ -624,6 +631,29 @@ const CH22_FALLBACK_THEORY: ChapterTheoryData = {
   exerciseSets: CHAPTER_22_EXERCISE_SETS
 };
 
+const CH23_FALLBACK_THEORY: ChapterTheoryData = {
+  chapter: {
+    id: 'ch23',
+    number: 23,
+    title: 'Demonstrative adjectives and pronouns',
+    slug: 'demonstrative-adjectives-and-pronouns',
+    world_number: 4,
+    world_name: 'Mundo 4: Les Nuances et le Virtuel',
+    page_range: '283–297',
+    topics_count: 5,
+    exercise_groups_count: 9,
+    total_questions: 82,
+    theory_markdown: CHAPTER_23_THEORY_MARKDOWN,
+    release_id: null,
+    editorial_status: 'published',
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+  },
+  topics: CHAPTER_23_TOPICS,
+  exerciseSets: CHAPTER_23_EXERCISE_SETS
+};
+
+
 function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch01') return CH01_FALLBACK_THEORY;
   if (chapterId === 'ch02') return CH02_FALLBACK_THEORY;
@@ -647,6 +677,7 @@ function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch20') return CH20_FALLBACK_THEORY;
   if (chapterId === 'ch21') return CH21_FALLBACK_THEORY;
   if (chapterId === 'ch22') return CH22_FALLBACK_THEORY;
+  if (chapterId === 'ch23') return CH23_FALLBACK_THEORY;
   return null;
 }
 
@@ -750,6 +781,8 @@ export function useTheory(chapterId?: string) {
           ? CHAPTER_21_THEORY_MARKDOWN
           : chapterId === 'ch22'
           ? CHAPTER_22_THEORY_MARKDOWN
+          : chapterId === 'ch23'
+          ? CHAPTER_23_THEORY_MARKDOWN
           : (chapterData as Chapter).theory_markdown;
 
         return {

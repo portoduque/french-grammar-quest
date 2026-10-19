@@ -2295,6 +2295,98 @@ export const ChapterPage: React.FC = () => {
                 </div>
               </div>
             </div>
+          ) : chapterNum === 23 ? (
+            <div className="tips-deck">
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">💡</div>
+                <div className="tip-card-body">
+                  <h3>L'Euphonie de « Cet » : Éviter le Choc de Deux Voyelles</h3>
+                  <p>
+                    Devant un nom masculin singulier commençant par une voyelle ou un <em>h</em> muet, l'adjectif démonstratif <strong>ce</strong> devient obligatoirement <strong>cet</strong> :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em>ce livre</em>, <em>ce jeu</em> (consonne) vs <strong>cet</strong> <em>homme</em>, <strong>cet</strong> <em>auteur</em>, <strong>cet</strong> <em>appartement</em><br />
+                    • <strong>Rappel phonétique :</strong> <em>cet</em> et <em>cette</em> se prononcent tous deux <strong>/sɛt/</strong> !<br />
+                    • Au pluriel, la forme est universelle : <strong>ces</strong> (<em>ces arbres</em> [sez-aʁbʁ] avec liaison en [z]).
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🔄</div>
+                <div className="tip-card-body">
+                  <h3>Adjectifs Possessifs : L'Accord avec l'Objet Possédé !</h3>
+                  <p>
+                    En français, le possessif s'accorde <strong>toujours avec le nom possédé</strong>, jamais avec le genre du possesseur comme en portugais (<em>dele / dela</em>) ou anglais (<em>his / her</em>) :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em>Que penses-tu de <strong>son</strong> roman ?</em> (roman = masculin ➔ <em>son</em>, que l'auteur soit un homme ou une femme !)<br />
+                    • <em>J'aime <strong>sa</strong> nouvelle pièce</em> (pièce = féminin ➔ <em>sa</em>).<br />
+                    • Seul le contexte général indique à qui appartient l'objet.
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🎵</div>
+                <div className="tip-card-body">
+                  <h3>La Règle d'Or d'Euphonie : « Mon amie », « Son honnêteté »</h3>
+                  <p>
+                    Pour éliminer le hiatus (deux voyelles qui s'entrechoquent), on remplace <em>ma, ta, sa</em> par <strong>mon, ton, son</strong> devant un nom féminin singulier commençant par voyelle ou <em>h</em> muet :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    ❌ <em>*ma amie</em> ➔ ✅ <strong>mon amie</strong> Suzanne<br />
+                    ❌ <em>*ta amitié</em> ➔ ✅ <strong>ton amitié</strong> sincère<br />
+                    ❌ <em>*sa honnêteté</em> ➔ ✅ <strong>son honnêteté</strong> indiscutable
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🎩</div>
+                <div className="tip-card-body">
+                  <h3>Pronoms Possessifs : Circonflexe et Contractions</h3>
+                  <p>
+                    Distinguez bien l'adjectif (sans accent) du pronom possessif (avec accent circonflexe sur le <em>o</em>) :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • Adjectif : <em>notre ville</em>, <em>votre chien</em> (sans accent)<br />
+                    • Pronom : <em>la <strong>nôtre</strong></em>, <em>le <strong>vôtre</strong></em>, <em>les <strong>nôtres</strong></em>, <em>les <strong>vôtres</strong></em> (avec accent circonflexe !)<br />
+                    • <strong>Contractions avec à et de :</strong> <em>au mien</em> (à + le mien), <em>du sien</em> (de + le sien), <em>des leurs</em>.
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🧭</div>
+                <div className="tip-card-body">
+                  <h3>Pronoms Démonstratifs : Simples vs Composés (-ci / -là)</h3>
+                  <p>
+                    Les pronoms simples ne peuvent <strong>JAMAIS</strong> être employés seuls dans la phrase :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Simples (+ qui, que, de) :</strong> <em>celui qui</em> vient, <em>celle que</em> j'ai achetée, <em>celui de</em> Juliette.<br />
+                    • <strong>Composés (autonomes, choix, opposition) :</strong> <strong>celui-ci</strong> (proximité) vs <strong>celui-là</strong> (éloignement).<br />
+                    • <em>Cette robe est rose, cette robe est blanche ➔ <strong>Celle-ci</strong> est rose. <strong>Celle-là</strong> est blanche.</em>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🎯</div>
+                <div className="tip-card-body">
+                  <h3>Le Neutre « C'est » et les Expressions Idiomatiques</h3>
+                  <p>
+                    Après le présentateur <em>c'est</em>, l'adjectif qualificatif est <strong>toujours au masculin singulier</strong>, quelle que soit la réalité évoquée :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em>Les erreurs qu'elle a faites ! <strong>C'est idiot !</strong></em> (jamais *idiotes)<br />
+                    • <em>Cette maison ! <strong>C'est si beau !</strong></em> (jamais *belle)<br />
+                    • <strong>Expressions clés :</strong> <em>À la tienne !</em> (saúde !), <em>parmi les siens</em> (com a família), <em>faire des siennes</em> (aprontar), <em>y mettre du sien</em> (fazer a sua parte).
+                  </div>
+                </div>
+              </div>
+            </div>
           ) : (
             <div className="tips-deck">
               <div className="tip-card card card-default">
