@@ -171,6 +171,47 @@ vi.mock('@/hooks/useTheory', () => ({
         error: null,
       };
     }
+    if (chapterId === 'ch20') {
+      return {
+        data: {
+          chapter: {
+            id: 'ch20',
+            number: 20,
+            title: 'Articles and nouns',
+            slug: 'articles-and-nouns',
+            world_number: 4,
+            world_name: 'Mundo 4: Les Nuances et le Virtuel',
+            page_range: '226–246',
+            topics_count: 6,
+            exercise_groups_count: 9,
+            total_questions: 90,
+            theory_markdown: '## Articles and nouns (Les articles et les noms)\n\nLes articles définis, partitifs et prépositions géographiques.',
+            editorial_status: 'published',
+          },
+          topics: [
+            { id: 'ch20-t01', title: 'Les articles définis, indéfinis et partitifs', order_index: 1 },
+            { id: 'ch20-t02', title: 'La négation des partitifs', order_index: 2 },
+            { id: 'ch20-t03', title: 'Le genre des noms', order_index: 3 },
+            { id: 'ch20-t04', title: 'Féminisation et pluriel', order_index: 4 },
+            { id: 'ch20-t05', title: 'Le genre des pays', order_index: 5 },
+            { id: 'ch20-t06', title: 'La provenance géographique', order_index: 6 },
+          ],
+          exerciseSets: [
+            { id: 'ch20-ex01', title: 'Exercice 20.1', instruction: 'Articles partitifs', interaction_type: 'fill_blank', questions_count: 10, order_index: 1 },
+            { id: 'ch20-ex02', title: 'Exercice 20.2', instruction: 'Le ou la', interaction_type: 'fill_blank', questions_count: 10, order_index: 2 },
+            { id: 'ch20-ex03', title: 'Exercice 20.3', instruction: 'Au masculin', interaction_type: 'sentence_rewrite', questions_count: 10, order_index: 3 },
+            { id: 'ch20-ex04', title: 'Exercice 20.4', instruction: 'Au féminin', interaction_type: 'sentence_rewrite', questions_count: 10, order_index: 4 },
+            { id: 'ch20-ex05', title: 'Exercice 20.5', instruction: 'Genre pays', interaction_type: 'fill_blank', questions_count: 10, order_index: 5 },
+            { id: 'ch20-ex06', title: 'Exercice 20.6', instruction: 'Prépositions', interaction_type: 'fill_blank', questions_count: 10, order_index: 6 },
+            { id: 'ch20-ex07', title: 'Exercice 20.7', instruction: 'Habiter puzzle', interaction_type: 'ordering', questions_count: 10, order_index: 7 },
+            { id: 'ch20-ex08', title: 'Exercice 20.8', instruction: 'Provenance', interaction_type: 'fill_blank', questions_count: 10, order_index: 8 },
+            { id: 'ch20-ex09', title: 'Exercice 20.9', instruction: 'Traduction', interaction_type: 'translation', questions_count: 10, order_index: 9 },
+          ],
+        },
+        isLoading: false,
+        error: null,
+      };
+    }
     return { data: null, isLoading: false, error: null };
   }),
 }));
@@ -303,5 +344,31 @@ describe('ChapterPage Component', () => {
     expect(screen.getByText(/A Queda Obrigatória do « -s » no Tu dos Verbos em -ER/i)).toBeInTheDocument();
     expect(screen.getByText(/Verbos Pronnominais : A Dança da Posição dos Pronomes/i)).toBeInTheDocument();
     expect(screen.getByText(/Os 4 Comandantes Irregulares do Subjuntivo/i)).toBeInTheDocument();
+  });
+
+  it('affiche la théorie, les 9 séries d exercices et les astuces FLE pour le chapitre 20 (Articles and nouns)', () => {
+    renderWithProviders('/chapters/ch20');
+
+    expect(screen.getByText('Articles and nouns')).toBeInTheDocument();
+
+    // Onglet Théorie actif par défaut
+    expect(screen.getByText(/Les articles définis, partitifs et prépositions géographiques/i)).toBeInTheDocument();
+
+    // Passage à l'onglet Exercices
+    const exercisesTab = screen.getByRole('tab', { name: /Exercices \(9\)/i });
+    fireEvent.click(exercisesTab);
+
+    expect(screen.getByText('Exercice 20.1')).toBeInTheDocument();
+    expect(screen.getByText('Exercice 20.7')).toBeInTheDocument();
+    expect(screen.getByText('Exercice 20.9')).toBeInTheDocument();
+
+    // Passage à l'onglet Astuces FLE
+    const tipsTab = screen.getByRole('tab', { name: /Astuces FLE/i });
+    fireEvent.click(tipsTab);
+
+    expect(screen.getByText(/L'Article Partitif Obligatoire/i)).toBeInTheDocument();
+    expect(screen.getByText(/La Règle d'Or de la Négation \(DE \/ D'\)/i)).toBeInTheDocument();
+    expect(screen.getByText(/Genre des Pays : La Règle Magique du « -E » Final/i)).toBeInTheDocument();
+    expect(screen.getByText(/Homonymes de Genre : Deux Sens Totalement Différents !/i)).toBeInTheDocument();
   });
 });

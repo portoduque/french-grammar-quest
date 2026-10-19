@@ -97,6 +97,11 @@ import {
   CHAPTER_19_QUESTIONS_MAP
 } from '@/data/chapter19Data';
 
+import {
+  CHAPTER_20_EXERCISE_SETS,
+  CHAPTER_20_QUESTIONS_MAP
+} from '@/data/chapter20Data';
+
 export interface ExerciseSetWithQuestions {
   exerciseSet: ExerciseSet;
   questions: Question[];
@@ -487,6 +492,32 @@ function getFallbackSet(
     };
   }
 
+  if (CHAPTER_20_QUESTIONS_MAP[exerciseSetId]) {
+    const foundSet = CHAPTER_20_EXERCISE_SETS.find(s => s.id === exerciseSetId) || {
+      id: exerciseSetId,
+      chapter_id: 'ch20',
+      order_index: parseInt(exerciseSetId.split('-ex')[1] || '1', 10),
+      title: `Exercice 20.${parseInt(exerciseSetId.split('-ex')[1] || '1', 10)}`,
+      instruction: 'Exercice sur les articles et les noms.',
+      interaction_type: exerciseSetId.endsWith('ex07')
+        ? 'ordering'
+        : exerciseSetId.endsWith('ex09')
+        ? 'translation'
+        : exerciseSetId.endsWith('ex03') || exerciseSetId.endsWith('ex04')
+        ? 'sentence_rewrite'
+        : 'fill_blank',
+      questions_count: CHAPTER_20_QUESTIONS_MAP[exerciseSetId].length,
+      created_at: new Date().toISOString()
+    };
+
+    return {
+      exerciseSet: existingSet || foundSet,
+      questions: (existingQuestions && existingQuestions.length > 0)
+        ? existingQuestions
+        : CHAPTER_20_QUESTIONS_MAP[exerciseSetId]
+    };
+  }
+
   const fallbackSet: ExerciseSet = existingSet || {
     id: exerciseSetId,
     chapter_id: exerciseSetId.split('-')[0] || 'ch01',
@@ -599,7 +630,9 @@ export function useExerciseSet(exerciseSetId: string | undefined) {
           CHAPTER_15_QUESTIONS_MAP[exerciseSetId] ||
           CHAPTER_16_QUESTIONS_MAP[exerciseSetId] ||
           CHAPTER_17_QUESTIONS_MAP[exerciseSetId] ||
-          CHAPTER_18_QUESTIONS_MAP[exerciseSetId];
+          CHAPTER_18_QUESTIONS_MAP[exerciseSetId] ||
+          CHAPTER_19_QUESTIONS_MAP[exerciseSetId] ||
+          CHAPTER_20_QUESTIONS_MAP[exerciseSetId];
         const enrichedQuestions = fallbackList
           ? (questionsRows as Question[]).map(q => {
               const matchedFallback = fallbackList.find(fb => fb.id === q.id);

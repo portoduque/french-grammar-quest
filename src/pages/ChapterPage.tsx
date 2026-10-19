@@ -2006,6 +2006,99 @@ export const ChapterPage: React.FC = () => {
                 </div>
               </div>
             </div>
+          ) : chapterNum === 20 ? (
+            <div className="tips-deck">
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🥖</div>
+                <div className="tip-card-body">
+                  <h3>L'Article Partitif Obligatoire (Zéro Article en Portugais)</h3>
+                  <p>
+                    L'erreur n°1 des lusophones ! En portugais, on dit naturellement <em>« Bebo água »</em> ou <em>« Quero pão »</em> sans déterminant. En français, un nom indénombrable exige TOUJOURS un partitif :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    ❌ <em>*Je bois eau</em> ➔ ✅ <strong>Je bois de l'eau</strong><br />
+                    ❌ <em>*Il mange pain</em> ➔ ✅ <strong>Il mange du pain</strong> (de + le)<br />
+                    ❌ <em>*Elle achète viande</em> ➔ ✅ <strong>Elle achète de la viande</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🛑</div>
+                <div className="tip-card-body">
+                  <h3>La Règle d'Or de la Négation (DE / D') et l'Exception du Verbe ÊTRE</h3>
+                  <p>
+                    À la forme négative, la quantité disparaît : <strong>du, de la, de l', des, un, une</strong> deviennent obligatoirement <strong>DE</strong> (ou <strong>D'</strong> devant voyelle), <strong>SAUF</strong> avec le verbe <strong>être</strong> où ils restent inchangés !
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • Verbe ordinaire : <em>J'ai de la chance</em> ➔ <strong>Je n'ai pas de chance</strong><br />
+                    • Verbe ordinaire : <em>Il a des amis</em> ➔ <strong>Il n'a pas d'amis</strong><br />
+                    • ⚡ <strong>Exception ÊTRE :</strong> <em>C'est du fromage</em> ➔ <strong>Ce n'est pas du fromage</strong> (et non *pas de fromage) !
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🌍</div>
+                <div className="tip-card-body">
+                  <h3>Genre des Pays : La Règle Magique du « -E » Final</h3>
+                  <p>
+                    Pour savoir quel article ou préposition utiliser avec un pays ou une région :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Terminé par un « -e » = FÉMININ ➔ préposition EN :</strong> <em>la France</em> (en France), <em>l'Italie</em> (en Italie), <em>l'Espagne</em> (en Espagne), <em>la Chine</em> (en Chine).<br />
+                    • <strong>Terminé par une autre lettre = MASCULIN ➔ préposition AU :</strong> <em>le Brésil</em> (au Brésil), <em>le Canada</em> (au Canada), <em>le Japon</em> (au Japon), <em>le Maroc</em> (au Maroc).<br />
+                    • 🚨 <strong>Les 4 exceptions masculines en -e :</strong> <strong>Le Mexique</strong> (au Mexique), <strong>le Cambodge</strong> (au Cambodge), <strong>le Mozambique</strong> (au Mozambique) et <strong>le Maine</strong> (au Maine).
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🎭</div>
+                <div className="tip-card-body">
+                  <h3>Faux-Amis de Genre (Masculin vs Féminin)</h3>
+                  <p>
+                    Attention aux mots dont le genre est inversé entre le portugais et le français :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Féminins en français (masculins en pt) :</strong> <em>la planète</em> (o planeta), <em>la mer</em> (o mar), <em>la couleur</em> (a cor), <em>la fin</em> (o fim), <em>la dent</em> (o dente).<br />
+                    • <strong>Masculins en français (féminins en pt) :</strong> <em>le voyage</em> (a viagem), <em>le courage</em> (a coragem), <em>le pont</em> (a ponte), <em>le message</em> (a mensagem), <em>le silence</em> (o silêncio), <em>le fromage</em> (o queijo).
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">📚</div>
+                <div className="tip-card-body">
+                  <h3>Homonymes de Genre : Deux Sens Totalement Différents !</h3>
+                  <p>
+                    Certains noms changent radicalement de signification selon qu'ils sont masculins ou féminins :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Le livre</strong> (o livro) vs <strong>La livre</strong> (a moeda libra / peso de 500g)<br />
+                    • <strong>Le tour</strong> (a volta, o passeio, o turno) vs <strong>La tour</strong> (a torre)<br />
+                    • <strong>Le poste</strong> (o cargo, o emprego, o receptor) vs <strong>La poste</strong> (a agência de correios)<br />
+                    • <strong>Le moule</strong> (a forma de bolo/molde) vs <strong>La moule</strong> (o mexilhão - fruto do mar)<br />
+                    • <strong>Le manche</strong> (o cabo de vassoura/ferramenta) vs <strong>La manche</strong> (a manga da camisa / Canal da Mancha)
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">✈️</div>
+                <div className="tip-card-body">
+                  <h3>Exprimer la Provenance : De / D' vs Du vs Des</h3>
+                  <p>
+                    Pour dire d'où l'on vient (<em>from</em> en anglais, <em>de/do/da</em> en portugais) :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>De / D'</strong> devant pays féminins, continents et villes : <em>Je viens de France</em>, <em>d'Italie</em>, <em>d'Asie</em>, <em>de Paris</em>.<br />
+                    • <strong>Du</strong> devant pays masculins consonne : <em>Elle revient du Brésil</em>, <em>du Canada</em>, <em>du Maroc</em>, <em>du Mexique</em>.<br />
+                    • <strong>Des</strong> devant pays pluriels : <em>Le vol arrive des États-Unis</em>.
+                  </div>
+                </div>
+              </div>
+            </div>
           ) : (
             <div className="tips-deck">
               <div className="tip-card card card-default">

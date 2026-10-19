@@ -2906,6 +2906,75 @@ dialog.modal::backdrop {
   }
 }
 
+/* Fill Blank Quick Choice Chips (Mobile & Touch First) */
+.fill-blank-options-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+  margin-bottom: var(--space-2);
+  width: 100%;
+}
+
+.chip-choice-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  min-width: 52px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  background: var(--surface-card);
+  border: 1.5px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  touch-action: manipulation;
+  user-select: none;
+  transition: all var(--duration-fast) ease-out;
+  box-shadow: var(--shadow-xs);
+}
+
+.chip-choice-btn:hover:not(:disabled) {
+  background: var(--surface-hover);
+  border-color: var(--accent-violet);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+.chip-choice-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.chip-choice-btn.chip-selected {
+  background: var(--accent-violet);
+  border-color: var(--accent-violet);
+  color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.25);
+  font-weight: 700;
+}
+
+.chip-choice-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+  .fill-blank-options-chips {
+    gap: 6px;
+    margin-top: var(--space-2);
+  }
+  .chip-choice-btn {
+    min-height: 44px;
+    padding: 6px 12px;
+    font-size: 0.9375rem;
+    flex: 1 1 calc(25% - 6px);
+    max-width: calc(50% - 6px);
+  }
+}
+
 /* Accent Toolbar */
 .accent-toolbar {
   width: 100%;

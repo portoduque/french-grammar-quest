@@ -4,6 +4,7 @@ import { AccentToolbar } from '../AccentToolbar';
 export interface FillBlankInteractionProps {
   prompt: string;
   value: string;
+  options?: Array<{ id?: string; label?: string; text: string } | string> | null;
   onChange: (value: string) => void;
   onSubmit: () => void;
   disabled?: boolean;
@@ -12,6 +13,7 @@ export interface FillBlankInteractionProps {
 export const FillBlankInteraction: React.FC<FillBlankInteractionProps> = ({
   prompt,
   value,
+  options,
   onChange,
   onSubmit,
   disabled = false
@@ -76,6 +78,33 @@ export const FillBlankInteraction: React.FC<FillBlankInteractionProps> = ({
 
         {afterBlank && <span className="prompt-after">{afterBlank}</span>}
       </div>
+
+      {/* Puces de choix rapide (optimisation mobile tactile) */}
+      {options && options.length > 0 && (
+        <div className="fill-blank-options-chips" role="group" aria-label="Suggestions rapides">
+          {options.map((opt, i) => {
+            const text = typeof opt === 'string' ? opt : opt.text;
+            const isSelected = value.trim().toLowerCase() === text.trim().toLowerCase();
+            return (
+              <button
+                key={typeof opt === 'object' && opt?.id ? opt.id : i}
+                type="button"
+                className={`chip-choice-btn ${isSelected ? 'chip-selected' : ''}`}
+                onClick={() => {
+                  if (!disabled) {
+                    onChange(text);
+                  }
+                }}
+                disabled={disabled}
+                lang="fr"
+                aria-pressed={isSelected}
+              >
+                {text}
+              </button>
+            );
+          })}
+        </div>
+      )}
 
       {/* Barra de acentos franceses logo abaixo da frase */}
       <div className="interaction-toolbar-wrapper">

@@ -205,6 +205,7 @@ export const ExerciseSession: React.FC<ExerciseSessionProps> = ({
         return (
           <FillBlankInteraction
             prompt={currentQuestion.prompt}
+            options={currentQuestion.options as any}
             value={userAnswer}
             onChange={setUserAnswer}
             onSubmit={handleVerify}

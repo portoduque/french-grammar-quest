@@ -2152,5 +2152,197 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       expect(data?.questions[8].prompt).toBe('Wait for me! (vous)');
       expect(data?.questions[8].accepted_answers).toContain('Attendez-moi !');
     });
+
+    it('charge la série 20.1 (fill_blank) pour les articles partitifs (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch20-ex01'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('Il prend __ vacances.');
+      expect(data?.questions[0].accepted_answers).toContain('des');
+      expect(data?.questions[1].prompt).toBe('Nous mangeons __ pain.');
+      expect(data?.questions[1].accepted_answers).toContain('du');
+      expect(data?.questions[3].prompt).toBe('Elle a __ chance.');
+      expect(data?.questions[3].accepted_answers).toContain('de la');
+      expect(data?.questions[4].prompt).toBe('Il met __ ail dans la salade.');
+      expect(data?.questions[4].accepted_answers).toContain('de l’');
+      expect(data?.questions[9].prompt).toBe('Elle veut __ crème fraîche.');
+      expect(data?.questions[9].accepted_answers).toContain('de la');
+    });
+
+    it('charge la série 20.2 (fill_blank) pour le choix masculin/féminin le ou la (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch20-ex02'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('__ réveil');
+      expect(data?.questions[0].accepted_answers).toContain('le');
+      expect(data?.questions[2].prompt).toBe('__ culture');
+      expect(data?.questions[2].accepted_answers).toContain('la');
+      expect(data?.questions[4].prompt).toBe('__ courage');
+      expect(data?.questions[4].accepted_answers).toContain('le');
+      expect(data?.questions[9].prompt).toBe('__ gouvernement');
+      expect(data?.questions[9].accepted_answers).toContain('le');
+    });
+
+    it('charge la série 20.3 (sentence_rewrite) pour la mise au masculin avec article (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch20-ex03'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('reine');
+      expect(data?.questions[0].accepted_answers).toContain('le roi');
+      expect(data?.questions[1].prompt).toBe('sœur');
+      expect(data?.questions[1].accepted_answers).toContain('le frère');
+      expect(data?.questions[3].prompt).toBe('vendeuse');
+      expect(data?.questions[3].accepted_answers).toContain('le vendeur');
+      expect(data?.questions[8].prompt).toBe('Brésilienne');
+      expect(data?.questions[8].accepted_answers).toContain('le Brésilien');
+    });
+
+    it('charge la série 20.4 (sentence_rewrite) pour la féminisation complète (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch20-ex04'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('C’est le directeur.');
+      expect(data?.questions[0].accepted_answers).toContain('la directrice');
+      expect(data?.questions[1].prompt).toBe('C’est mon coiffeur.');
+      expect(data?.questions[1].accepted_answers).toContain('ma coiffeuse');
+      expect(data?.questions[4].prompt).toBe('C’est mon frère.');
+      expect(data?.questions[4].accepted_answers).toContain('ma sœur');
+      expect(data?.questions[9].prompt).toBe('C’est le boucher.');
+      expect(data?.questions[9].accepted_answers).toContain('la bouchère');
+    });
+
+    it('charge la série 20.5 (fill_blank) pour le genre des pays (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch20-ex05'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('__ Belgique');
+      expect(data?.questions[0].accepted_answers).toContain('la');
+      expect(data?.questions[2].prompt).toBe('__ Canada');
+      expect(data?.questions[2].accepted_answers).toContain('le');
+      expect(data?.questions[3].prompt).toBe('__ Angleterre');
+      expect(data?.questions[3].accepted_answers).toContain('l’');
+      expect(data?.questions[9].prompt).toBe('__ Hongrie');
+      expect(data?.questions[9].accepted_answers).toContain('la');
+    });
+
+    it('charge la série 20.6 (fill_blank) pour les prépositions géographiques (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch20-ex06'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('Jean habite __ Italie.');
+      expect(data?.questions[0].accepted_answers).toContain('en');
+      expect(data?.questions[3].prompt).toBe('Il envisage d’acheter une maison __ Maroc.');
+      expect(data?.questions[3].accepted_answers).toContain('au');
+      expect(data?.questions[4].prompt).toBe('Renée est en voyage d’affaires __ Canada.');
+      expect(data?.questions[4].accepted_answers).toContain('au');
+      expect(data?.questions[8].prompt).toBe('Nous aimerions aller __ Japon.');
+      expect(data?.questions[8].accepted_answers).toContain('au');
+      expect(data?.questions[9].prompt).toBe('Voudriez-vous aller __ Inde avec nous?');
+      expect(data?.questions[9].accepted_answers).toContain('en');
+    });
+
+    it('charge la série 20.7 (ordering) pour la formulation de phrases habiter (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch20-ex07'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('ordering');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('Marie / Lyon / France');
+      expect(data?.questions[0].tokens).toEqual(['Marie', 'habite', 'à', 'Lyon,', 'en', 'France.']);
+      expect(data?.questions[0].accepted_answers).toContain('Marie habite à Lyon, en France.');
+      expect(data?.questions[4].prompt).toBe('Vincent / Caracas / Venezuela');
+      expect(data?.questions[4].tokens).toEqual(['Vincent', 'habite', 'à', 'Caracas,', 'au', 'Venezuela.']);
+      expect(data?.questions[4].accepted_answers).toContain('Vincent habite à Caracas, au Venezuela.');
+      expect(data?.questions[6].prompt).toBe('Xavier / Mexico / Mexique');
+      expect(data?.questions[6].tokens).toEqual(['Xavier', 'habite', 'à', 'Mexico,', 'au', 'Mexique.']);
+      expect(data?.questions[6].accepted_answers).toContain('Xavier habite à Mexico, au Mexique.');
+      expect(data?.questions[7].prompt).toBe('Patrick / Boston / États-Unis');
+      expect(data?.questions[7].tokens).toEqual(['Patrick', 'habite', 'à', 'Boston,', 'aux', 'États-Unis.']);
+      expect(data?.questions[7].accepted_answers).toContain('Patrick habite à Boston, aux États-Unis.');
+    });
+
+    it('charge la série 20.8 (fill_blank) pour la provenance de/d\'/du/des (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch20-ex08'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('Cet objet vient __ Égypte.');
+      expect(data?.questions[0].accepted_answers).toContain('d’');
+      expect(data?.questions[2].prompt).toBe('Marc vient __ Normandie.');
+      expect(data?.questions[2].accepted_answers).toContain('de');
+      expect(data?.questions[4].prompt).toBe('Ils sont natifs __ Chili.');
+      expect(data?.questions[4].accepted_answers).toContain('du');
+      expect(data?.questions[6].prompt).toBe('Ce paquet est arrivé ce matin __ États-Unis.');
+      expect(data?.questions[6].accepted_answers).toContain('des');
+      expect(data?.questions[9].prompt).toBe('Il est tout juste revenu __ Mexique.');
+      expect(data?.questions[9].accepted_answers).toContain('du');
+    });
+
+    it('charge la série 20.9 (translation) pour la traduction de synthèse (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch20-ex09'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('translation');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('She lives in a village in Ireland.');
+      expect(data?.questions[0].accepted_answers).toContain('Elle habite dans un village en Irlande.');
+      expect(data?.questions[1].prompt).toBe('Her brother lives in Croatia.');
+      expect(data?.questions[1].accepted_answers).toContain('Son frère vit en Croatie.');
+      expect(data?.questions[2].prompt).toBe('He studied in France.');
+      expect(data?.questions[2].accepted_answers).toContain('Il a étudié en France.');
+      expect(data?.questions[7].prompt).toBe('She took this picture in Japan.');
+      expect(data?.questions[7].accepted_answers).toContain('Elle a pris cette photo au Japon.');
+      expect(data?.questions[9].prompt).toBe('Let’s go to Argentina!');
+      expect(data?.questions[9].accepted_answers).toContain('Allons en Argentine !');
+    });
   });
 });

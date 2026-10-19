@@ -1608,4 +1608,120 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
     expect(topics[1].id).toBe('ch19-t02');
     expect(topics[2].id).toBe('ch19-t03');
   });
+
+  it('fournit la théorie pédagogique complète et rigoureuse pour ch20 (articles et noms)', async () => {
+    const { result } = renderHook(() => useTheory('ch20'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data).toBeDefined();
+    expect(data?.chapter.number).toBe(20);
+    expect(data?.chapter.title).toBe('Articles and nouns');
+    expect(data?.chapter.page_range).toBe('226–246');
+    expect(data?.chapter.total_questions).toBe(90);
+
+    // Valide le contenu pédagogique FLE pour lusophones
+    const markdown = data?.chapter.theory_markdown || '';
+    expect(markdown).toContain("Articles and nouns (Les articles et les noms)");
+    expect(markdown).toContain("Les Articles Définis (L'article défini)");
+    expect(markdown).toContain("Les Articles Indéfinis et Partitifs");
+    expect(markdown).toContain("La Règle d'Or de la Négation avec les Partitifs et Indéfinis");
+    expect(markdown).toContain("L'Exception Capitale : Le Verbe ÊTRE !");
+    expect(markdown).toContain("Le Genre des Noms : Reconnaître le Masculin et le Féminin");
+    expect(markdown).toContain("Noms à Double Genre et Sens Différent (Homonymes de Genre)");
+    expect(markdown).toContain("Le Pluriel des Noms");
+    expect(markdown).toContain("Le Genre des Pays et Prépositions Géographiques");
+    expect(markdown).toContain("Prépositions de Provenance (Venir de / Rentrer de / Originaire de...)");
+    expect(markdown).toContain("Vocabulaire Thématique Officiel du Chapitre 20");
+    expect(markdown).toContain("Les 7 Commandements FLE pour Lusophones");
+
+    // Valide le lexique et exemples essentiels
+    expect(markdown.toLowerCase()).toContain("du pain");
+    expect(markdown.toLowerCase()).toContain("ail");
+    expect(markdown.toLowerCase()).toContain("le mexique");
+    expect(markdown.toLowerCase()).toContain("le courage");
+    expect(markdown.toLowerCase()).toContain("la planète");
+    expect(markdown.toLowerCase()).toContain("le livre");
+    expect(markdown.toLowerCase()).toContain("la livre");
+  });
+
+  it('charge les 9 séries d exercices officielles du Chapitre 20 avec les bons types d interaction (90 questions au total)', async () => {
+    const { result } = renderHook(() => useTheory('ch20'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const sets = result.current.data?.exerciseSets || [];
+    expect(sets).toHaveLength(9);
+
+    // 20.1: Articles partitifs -> fill_blank (10)
+    expect(sets[0].id).toBe('ch20-ex01');
+    expect(sets[0].interaction_type).toBe('fill_blank');
+    expect(sets[0].questions_count).toBe(10);
+
+    // 20.2: Masculin ou féminin (le/la) -> fill_blank (10)
+    expect(sets[1].id).toBe('ch20-ex02');
+    expect(sets[1].interaction_type).toBe('fill_blank');
+    expect(sets[1].questions_count).toBe(10);
+
+    // 20.3: Mettre au masculin avec article -> sentence_rewrite (10)
+    expect(sets[2].id).toBe('ch20-ex03');
+    expect(sets[2].interaction_type).toBe('sentence_rewrite');
+    expect(sets[2].questions_count).toBe(10);
+
+    // 20.4: Mettre au féminin -> sentence_rewrite (10)
+    expect(sets[3].id).toBe('ch20-ex04');
+    expect(sets[3].interaction_type).toBe('sentence_rewrite');
+    expect(sets[3].questions_count).toBe(10);
+
+    // 20.5: Genre des pays (le/la/l') -> fill_blank (10)
+    expect(sets[4].id).toBe('ch20-ex05');
+    expect(sets[4].interaction_type).toBe('fill_blank');
+    expect(sets[4].questions_count).toBe(10);
+
+    // 20.6: Prépositions géographiques destination (en/au/aux/à) -> fill_blank (10)
+    expect(sets[5].id).toBe('ch20-ex06');
+    expect(sets[5].interaction_type).toBe('fill_blank');
+    expect(sets[5].questions_count).toBe(10);
+
+    // 20.7: Habiter ville et pays -> ordering (puzzle) (10)
+    expect(sets[6].id).toBe('ch20-ex07');
+    expect(sets[6].interaction_type).toBe('ordering');
+    expect(sets[6].questions_count).toBe(10);
+
+    // 20.8: Prépositions provenance (de/d'/du/des) -> fill_blank (10)
+    expect(sets[7].id).toBe('ch20-ex08');
+    expect(sets[7].interaction_type).toBe('fill_blank');
+    expect(sets[7].questions_count).toBe(10);
+
+    // 20.9: Traduction thématique synthèse -> translation (10)
+    expect(sets[8].id).toBe('ch20-ex09');
+    expect(sets[8].interaction_type).toBe('translation');
+    expect(sets[8].questions_count).toBe(10);
+
+    // Total questions check (90 questions)
+    const totalQ = sets.reduce((acc, s) => acc + s.questions_count, 0);
+    expect(totalQ).toBe(90);
+  });
+
+  it('fournit les 6 sujets principaux du chapitre 20', async () => {
+    const { result } = renderHook(() => useTheory('ch20'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const topics = result.current.data?.topics || [];
+    expect(topics).toHaveLength(6);
+    expect(topics[0].id).toBe('ch20-t01');
+    expect(topics[1].id).toBe('ch20-t02');
+    expect(topics[2].id).toBe('ch20-t03');
+    expect(topics[3].id).toBe('ch20-t04');
+    expect(topics[4].id).toBe('ch20-t05');
+    expect(topics[5].id).toBe('ch20-t06');
+  });
 });
