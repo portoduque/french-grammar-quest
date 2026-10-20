@@ -2665,6 +2665,102 @@ export const ChapterPage: React.FC = () => {
                 </div>
               </div>
             </div>
+          ) : chapterNum === 27 ? (
+            <div className="tips-deck">
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🔄</div>
+                <div className="tip-card-body">
+                  <h3>Le Verbe « MANQUER » : L'Inversion Totale Lusophone !</h3>
+                  <p>
+                    C'est l'un des pièges les plus spectaculaires pour les lusophones ! En portugais, le sujet éprouve le manque (<em>"eu sinto sua falta"</em>). En français affectif, <strong>le sujet grammatical est la personne ou la chose qui FAIT défaut</strong> :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • ❌ <em>*Je te manque</em> = "Você está com saudades de mim" (sens inverse !)<br />
+                    • ✅ <strong>Tu me manques !</strong> = Tu fais défaut à moi / Je ressens ton absence (Sinto sua falta).<br />
+                    • ✅ <strong>Mes enfants me manquent.</strong> = Meus filhos me fazem falta (Sinto falta dos meus filhos).<br />
+                    • <strong>Les 4 nuances de Manquer :</strong><br />
+                    &nbsp;&nbsp;1. <em>Manquer le train</em> (direct = rater / perder).<br />
+                    &nbsp;&nbsp;2. <em>Manquer de temps</em> (de = carecer / faltar).<br />
+                    &nbsp;&nbsp;3. <em>Manquer à sa parole</em> (à = romper promessa / faltar com).<br />
+                    &nbsp;&nbsp;4. <em>Tu me manques</em> (à quelqu'un = sentiment d'absence).
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🎸</div>
+                <div className="tip-card-body">
+                  <h3>Verbes à Préposition : « Jouer À » vs « Jouer De »</h3>
+                  <p>
+                    Le verbe <em>jouer</em> change de préposition selon qu'il s'agit d'un jeu ou d'un instrument :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Jouer À + jeu / sport :</strong> <em>jouer au football</em> (à + le), <em>jouer aux cartes</em> (à + les), <em>jouer aux échecs</em>.<br />
+                    • <strong>Jouer DE + instrument :</strong> <em>jouer du piano</em> (de + le), <em>jouer de la guitare</em>, <em>jouer de la clarinette</em>, <em>jouer des castagnettes</em>.<br />
+                    • <strong>Astuce :</strong> <em>À</em> pour l'Activité ludique, <em>De</em> pour le son Délicat de l'instrument !
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🕊️</div>
+                <div className="tip-card-body">
+                  <h3>« Croire » : Direct vs « À » vs « En »</h3>
+                  <p>
+                    Ne confondez pas les trois degrés de croyance en français :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Croire quelqu'un / quelque chose (direct) :</strong> juger véridique ce qui est dit : <em>Je te crois</em> (acredito em você / no que diz).<br />
+                    • <strong>Croire À + concept / légende :</strong> croire en l'existence : <em>croire au Père Noël</em>, <em>croire aux fantômes</em>, <em>croire au destin</em>.<br />
+                    • <strong>Croire EN + divinité / personne :</strong> foi intime et confiance totale : <em>croire en Dieu</em>, <em>croire en soi</em>, <em>croire en l'avenir</em>.
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">⚖️</div>
+                <div className="tip-card-body">
+                  <h3>« Quoi que » vs « Quoique » vs « Quel que » (+ Subjonctif)</h3>
+                  <p>
+                    Ces trois formules d'indéfinition et de concession exigent TOUTES le <strong>subjonctif</strong>, mais leur orthographe et leur accord diffèrent :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Quoi que (2 mots) :</strong> n'importe quoi que (<em>o que quer que</em>) : <em><strong>Quoi que</strong> tu fasses, préviens-moi.</em><br />
+                    • <strong>Quoique (1 mot) :</strong> bien que / encore que (<em>embora</em>) : <em><strong>Quoiqu'</strong>il soit tard, nous sortons.</em><br />
+                    • <strong>Quel que soit / Quelle que soit (s'accorde avec le nom !) :</strong> <em><strong>Quelle que soit</strong> votre décision</em>, <em><strong>Quels que soient</strong> vos motifs</em>.
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">💎</div>
+                <div className="tip-card-body">
+                  <h3>Pépites Idiomatiques : « Avoir beau » &amp; « Quitte à »</h3>
+                  <p>
+                    Deux tournures très prisées des francophones pour exprimer des nuances fines sans équivalent mot à mot :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Avoir beau + infinitif :</strong> correspond à <em>por mais que... / em vão</em> : <em>J'<strong>ai beau chercher</strong>, je ne trouve pas mes lunettes.</em> (Por mais que eu procure, não acho).<br />
+                    • <strong>Quitte à + infinitif :</strong> correspond à <em>mesmo que para isso tenha que... / com o risco de...</em> : <em>Je prendrai un taxi, <strong>quitte à arriver</strong> avec dix minutes de retard.</em>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🍳</div>
+                <div className="tip-card-body">
+                  <h3>Cuisine et Table : Faux Amis et Accents Essentiels</h3>
+                  <p>
+                    Attention aux détails de genre et de lexique du monde culinaire :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Une poêle (fém. avec accent circonflexe) :</strong> frigideira ! (<em>Un poêle</em> au masculin désigne un appareil de chauffage / aquecedor).<br />
+                    • <strong>Une serviette :</strong> guardanapo (<em>serviette de table</em>) ou toalha de banho (<em>serviette de bain</em>). La toalha de mesa se dit <strong>la nappe</strong> !<br />
+                    • <strong>Une cuisinière :</strong> désigne à la fois le meuble électroménager (fogão) et la personne qui cuisine !
+                  </div>
+                </div>
+              </div>
+            </div>
           ) : (
             <div className="tips-deck">
               <div className="tip-card card card-default">

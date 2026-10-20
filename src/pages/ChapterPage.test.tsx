@@ -452,6 +452,41 @@ vi.mock('@/hooks/useTheory', () => ({
         error: null,
       };
     }
+    if (chapterId === 'ch27') {
+      return {
+        data: {
+          chapter: {
+            id: 'ch27',
+            number: 27,
+            title: 'Pot pourri',
+            slug: 'pot-pourri',
+            world_number: 5,
+            world_name: 'Mundo 5: Le Sommet de la Maîtrise',
+            page_range: '339–352',
+            topics_count: 4,
+            exercise_groups_count: 5,
+            total_questions: 45,
+            theory_markdown: '## Pot-pourri (Constructions Avancées et Nuances Idiomatiques)\n\nVocabulaire de cuisine, verbes à prépositions, le verbe manquer et les subordonnées.',
+            editorial_status: 'published',
+          },
+          topics: [
+            { id: 'ch27-t01', title: 'Vocabulaire de la Cuisine, de la Table et de l\'Électroménager', order_index: 1 },
+            { id: 'ch27-t02', title: 'Verbes à Prépositions Variables : Finir, Commencer, Décider, Jouer, Croire, Tenir', order_index: 2 },
+            { id: 'ch27-t03', title: 'Le Verbe « Manquer » : Les 4 Constructions Clés', order_index: 3 },
+            { id: 'ch27-t04', title: 'Tournures Idiomatiques et les 11 Types de Subordonnées', order_index: 4 },
+          ],
+          exerciseSets: [
+            { id: 'ch27-ex01', title: 'Exercice 27.1', instruction: 'Verbes et prépositions', interaction_type: 'fill_blank', questions_count: 10, order_index: 1 },
+            { id: 'ch27-ex02', title: 'Exercice 27.2', instruction: 'Verbe manquer', interaction_type: 'translation', questions_count: 5, order_index: 2 },
+            { id: 'ch27-ex03', title: 'Exercice 27.3', instruction: 'Locutions indéfinies', interaction_type: 'sentence_rewrite', questions_count: 10, order_index: 3 },
+            { id: 'ch27-ex04', title: 'Exercice 27.4', instruction: 'Avoir beau et quitte à', interaction_type: 'sentence_rewrite', questions_count: 10, order_index: 4 },
+            { id: 'ch27-ex05', title: 'Exercice 27.5', instruction: 'Subordonnées et conjonctions', interaction_type: 'fill_blank', questions_count: 10, order_index: 5 },
+          ],
+        },
+        isLoading: false,
+        error: null,
+      };
+    }
     return { data: null, isLoading: false, error: null };
   }),
 }));
@@ -778,5 +813,33 @@ describe('ChapterPage Component', () => {
     expect(screen.getByText(/Les Ordinaux : « Premier », « Second » et « Deuxième »/i)).toBeInTheDocument();
     expect(screen.getByText(/Les Étages en France : Le Rez-de-chaussée \(RDC\)/i)).toBeInTheDocument();
     expect(screen.getByText(/Prononciation Fine des Consonnes : 5, 6, 8, 10/i)).toBeInTheDocument();
+  });
+
+  it('affiche la théorie, les 5 séries d exercices et les astuces FLE pour le chapitre 27 (Pot pourri)', () => {
+    renderWithProviders('/chapters/ch27');
+
+    expect(screen.getByRole('heading', { level: 1, name: /Pot pourri/i })).toBeInTheDocument();
+
+    // Onglet Théorie actif par défaut
+    expect(screen.getByText(/Vocabulaire de cuisine, verbes à prépositions, le verbe manquer et les subordonnées/i)).toBeInTheDocument();
+
+    // Passage à l'onglet Exercices (5)
+    const exercisesTab = screen.getByRole('tab', { name: /Exercices \(5\)/i });
+    fireEvent.click(exercisesTab);
+
+    expect(screen.getByText('Exercice 27.1')).toBeInTheDocument();
+    expect(screen.getByText('Exercice 27.3')).toBeInTheDocument();
+    expect(screen.getByText('Exercice 27.5')).toBeInTheDocument();
+
+    // Passage à l'onglet Astuces FLE
+    const tipsTab = screen.getByRole('tab', { name: /Astuces FLE/i });
+    fireEvent.click(tipsTab);
+
+    expect(screen.getByText(/Le Verbe « MANQUER » : L'Inversion Totale Lusophone !/i)).toBeInTheDocument();
+    expect(screen.getByText(/Verbes à Préposition : « Jouer À » vs « Jouer De »/i)).toBeInTheDocument();
+    expect(screen.getByText(/« Croire » : Direct vs « À » vs « En »/i)).toBeInTheDocument();
+    expect(screen.getByText(/« Quoi que » vs « Quoique » vs « Quel que » \(\+ Subjonctif\)/i)).toBeInTheDocument();
+    expect(screen.getByText(/Pépites Idiomatiques : « Avoir beau » & « Quitte à »/i)).toBeInTheDocument();
+    expect(screen.getByText(/Cuisine et Table : Faux Amis et Accents Essentiels/i)).toBeInTheDocument();
   });
 });

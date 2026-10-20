@@ -3390,4 +3390,154 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       expect(data?.questions[9].accepted_answers).toContain('huit milliards');
     });
   });
+
+  describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 27 (Pot-pourri)', () => {
+    it('charge la série 27.1 (fill_blank) pour les verbes et prépositions appropriées (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch27-ex01'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+
+      // q1: clarinette -> de
+      expect(data?.questions[0].prompt).toContain('clarinette');
+      expect(data?.questions[0].accepted_answers).toContain('de');
+
+      // q3: donner sur -> sur
+      expect(data?.questions[2].prompt).toContain('donne');
+      expect(data?.questions[2].accepted_answers).toContain('sur');
+
+      // q4: croire à la vertu médicinale -> à
+      expect(data?.questions[3].prompt).toContain('médicinale');
+      expect(data?.questions[3].accepted_answers).toContain('à');
+
+      // q8: croire en Dieu -> en
+      expect(data?.questions[7].prompt).toContain('Dieu');
+      expect(data?.questions[7].accepted_answers).toContain('en');
+
+      // q9: se décider à -> à
+      expect(data?.questions[8].prompt).toContain('décidés');
+      expect(data?.questions[8].accepted_answers).toContain('à');
+    });
+
+    it('charge la série 27.2 (translation) pour les nuances du verbe manquer (5 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch27-ex02'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('translation');
+      expect(data?.questions).toHaveLength(5);
+
+      // q1: Paul me manque
+      expect(data?.questions[0].prompt).toContain('Paul me manque');
+      expect(data?.questions[0].accepted_answers).toContain('I miss Paul.');
+      expect(data?.questions[0].accepted_answers).toContain('Sinto falta do Paul.');
+
+      // q2: Mon frère a manqué à sa parole
+      expect(data?.questions[1].prompt).toContain('sa parole');
+      expect(data?.questions[1].accepted_answers).toContain('Meu irmão faltou com sua palavra.');
+
+      // q3: Cet écrivain manque de talent
+      expect(data?.questions[2].prompt).toContain('manque de talent');
+      expect(data?.questions[2].accepted_answers).toContain('This writer lacks talent.');
+
+      // q4: J'ai manqué le début du cours
+      expect(data?.questions[3].prompt).toContain('le début du cours');
+      expect(data?.questions[3].accepted_answers).toContain('Perdi o início da aula.');
+
+      // q5: Le patron a manqué à ses devoirs
+      expect(data?.questions[4].prompt).toContain('à ses devoirs');
+      expect(data?.questions[4].accepted_answers).toContain('O patrão faltou com seus deveres.');
+    });
+
+    it('charge la série 27.3 (sentence_rewrite) pour les locutions indéfinies au subjonctif (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch27-ex03'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+      expect(data?.questions).toHaveLength(10);
+
+      // q1: Whatever you say -> Quoi que tu dises
+      expect(data?.questions[0].prompt).toContain('Whatever you say');
+      expect(data?.questions[0].accepted_answers).toContain('Quoi que tu dises');
+
+      // q2: Whatever her decision -> Quelle que soit sa décision
+      expect(data?.questions[1].prompt).toContain('Whatever her decision');
+      expect(data?.questions[1].accepted_answers).toContain('Quelle que soit sa décision');
+
+      // q3: Whoever you are -> Qui que tu sois
+      expect(data?.questions[2].prompt).toContain('Whoever you are');
+      expect(data?.questions[2].accepted_answers).toContain('Qui que tu sois');
+
+      // q4: Wherever you go -> Où que tu ailles
+      expect(data?.questions[3].prompt).toContain('Wherever you go');
+      expect(data?.questions[3].accepted_answers).toContain('Où que tu ailles');
+    });
+
+    it('charge la série 27.4 (sentence_rewrite) pour les tournures Avoir beau et Quitte à (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch27-ex04'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+      expect(data?.questions).toHaveLength(10);
+
+      // q1: Even if it means not sleeping -> Quitte à ne pas dormir
+      expect(data?.questions[0].prompt).toContain('sleeping');
+      expect(data?.questions[0].accepted_answers).toContain('Quitte à ne pas dormir, je vais avec toi à cette soirée.');
+
+      // q2: He will resign even if it means having financial problems -> quitte à
+      expect(data?.questions[1].prompt).toContain('financial');
+      expect(data?.questions[1].accepted_answers).toContain('Il démissionnera quitte à avoir des problèmes financiers.');
+
+      // q3: However intelligent he is -> Il a beau être intelligent
+      expect(data?.questions[2].prompt).toContain('intelligent');
+      expect(data?.questions[2].accepted_answers).toContain('Il a beau être intelligent, il est très seul.');
+
+      // q4: Although they are friends -> Ils ont beau être amis
+      expect(data?.questions[3].prompt).toContain('friends');
+      expect(data?.questions[3].accepted_answers).toContain('Ils ont beau être amis, ils ne peuvent pas parler politique ensemble.');
+    });
+
+    it('charge la série 27.5 (fill_blank) pour les connecteurs logiques et subordonnées (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch27-ex05'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+
+      // q1: pendant que
+      expect(data?.questions[0].accepted_answers).toContain('pendant que');
+
+      // q2: complétive que
+      expect(data?.questions[1].accepted_answers).toContain('que');
+
+      // q3: but afin que
+      expect(data?.questions[2].accepted_answers).toContain('afin que');
+
+      // q6: Quand bien même
+      expect(data?.questions[5].accepted_answers).toContain('Quand bien même');
+
+      // q10: Bien que... car
+      expect(data?.questions[9].accepted_answers).toContain('Bien que... car');
+    });
+  });
 });

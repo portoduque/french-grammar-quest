@@ -164,6 +164,12 @@ import {
   CH26_FALLBACK_EXERCISE_SETS
 } from '@/data/chapter26Data';
 
+import {
+  CHAPTER_27_THEORY_MARKDOWN,
+  CH27_FALLBACK_TOPICS,
+  CH27_FALLBACK_EXERCISE_SETS
+} from '@/data/chapter27Data';
+
 
 
 
@@ -742,6 +748,28 @@ const CH26_FALLBACK_THEORY: ChapterTheoryData = {
   exerciseSets: CH26_FALLBACK_EXERCISE_SETS
 };
 
+const CH27_FALLBACK_THEORY: ChapterTheoryData = {
+  chapter: {
+    id: 'ch27',
+    number: 27,
+    title: 'Pot pourri',
+    slug: 'pot-pourri',
+    world_number: 5,
+    world_name: 'Mundo 5: Le Sommet de la Maîtrise',
+    page_range: '339–352',
+    topics_count: 4,
+    exercise_groups_count: 5,
+    total_questions: 45,
+    theory_markdown: CHAPTER_27_THEORY_MARKDOWN,
+    release_id: null,
+    editorial_status: 'published',
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+  },
+  topics: CH27_FALLBACK_TOPICS,
+  exerciseSets: CH27_FALLBACK_EXERCISE_SETS
+};
+
 
 function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch01') return CH01_FALLBACK_THEORY;
@@ -770,6 +798,7 @@ function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch24') return CH24_FALLBACK_THEORY;
   if (chapterId === 'ch25') return CH25_FALLBACK_THEORY;
   if (chapterId === 'ch26') return CH26_FALLBACK_THEORY;
+  if (chapterId === 'ch27') return CH27_FALLBACK_THEORY;
   return null;
 }
 
@@ -881,6 +910,8 @@ export function useTheory(chapterId?: string) {
           ? CHAPTER_25_THEORY_MARKDOWN
           : chapterId === 'ch26'
           ? CHAPTER_26_THEORY_MARKDOWN
+          : chapterId === 'ch27'
+          ? CHAPTER_27_THEORY_MARKDOWN
           : (chapterData as Chapter).theory_markdown;
 
         return {

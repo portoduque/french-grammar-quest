@@ -132,6 +132,11 @@ import {
   CHAPTER_26_QUESTIONS_MAP
 } from '@/data/chapter26Data';
 
+import {
+  CH27_FALLBACK_EXERCISE_SETS,
+  CHAPTER_27_QUESTIONS_MAP
+} from '@/data/chapter27Data';
+
 
 
 
@@ -701,6 +706,30 @@ function getFallbackSet(
     };
   }
 
+  if (CHAPTER_27_QUESTIONS_MAP[exerciseSetId]) {
+    const foundSet = CH27_FALLBACK_EXERCISE_SETS.find(s => s.id === exerciseSetId) || {
+      id: exerciseSetId,
+      chapter_id: 'ch27',
+      order_index: parseInt(exerciseSetId.split('-ex')[1] || '1', 10),
+      title: `Exercice 27.${parseInt(exerciseSetId.split('-ex')[1] || '1', 10)}`,
+      instruction: 'Exercice sur le vocabulaire de la cuisine, les verbes à prépositions et les constructions complexes.',
+      interaction_type: (exerciseSetId.endsWith('ex01') || exerciseSetId.endsWith('ex05'))
+        ? 'fill_blank'
+        : exerciseSetId.endsWith('ex02')
+        ? 'translation'
+        : 'sentence_rewrite',
+      questions_count: CHAPTER_27_QUESTIONS_MAP[exerciseSetId].length,
+      created_at: new Date().toISOString()
+    };
+
+    return {
+      exerciseSet: existingSet || foundSet,
+      questions: (existingQuestions && existingQuestions.length > 0)
+        ? existingQuestions
+        : CHAPTER_27_QUESTIONS_MAP[exerciseSetId]
+    };
+  }
+
 
 
 
@@ -822,7 +851,10 @@ export function useExerciseSet(exerciseSetId: string | undefined) {
           CHAPTER_21_QUESTIONS_MAP[exerciseSetId] ||
           CHAPTER_22_QUESTIONS_MAP[exerciseSetId] ||
           CHAPTER_23_QUESTIONS_MAP[exerciseSetId] ||
-          CHAPTER_24_QUESTIONS_MAP[exerciseSetId];
+          CHAPTER_24_QUESTIONS_MAP[exerciseSetId] ||
+          CHAPTER_25_QUESTIONS_MAP[exerciseSetId] ||
+          CHAPTER_26_QUESTIONS_MAP[exerciseSetId] ||
+          CHAPTER_27_QUESTIONS_MAP[exerciseSetId];
         const enrichedQuestions = fallbackList
           ? (questionsRows as Question[]).map(q => {
               const matchedFallback = fallbackList.find(fb => fb.id === q.id);

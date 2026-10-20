@@ -2339,4 +2339,83 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
     expect(topics[3].id).toBe('ch26-t04');
     expect(topics[4].id).toBe('ch26-t05');
   });
+
+  it('charge les données théoriques du Chapitre 27 (Pot-pourri) avec pédagogie FLE rigoureuse', async () => {
+    const { result } = renderHook(() => useTheory('ch27'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data).toBeDefined();
+    expect(data?.chapter.number).toBe(27);
+    expect(data?.chapter.title).toBe('Pot pourri');
+    expect(data?.chapter.world_number).toBe(5);
+
+    const markdown = data?.chapter.theory_markdown || '';
+    expect(markdown).toContain("Vocabulaire de la Cuisine, de la Table");
+    expect(markdown).toContain("Le Verbe « Manquer »");
+    expect(markdown).toContain("Tu me manques");
+    expect(markdown).toContain("Jouer à");
+    expect(markdown).toContain("Jouer de");
+    expect(markdown).toContain("Avoir beau + infinitif");
+    expect(markdown).toContain("Quitte à + infinitif");
+    expect(markdown).toContain("aspirateur");
+    expect(markdown).toContain("tire-bouchon");
+  });
+
+  it('charge les 5 séries d exercices officielles du Chapitre 27 avec les moteurs de jeu calibrés', async () => {
+    const { result } = renderHook(() => useTheory('ch27'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const sets = result.current.data?.exerciseSets || [];
+    expect(sets).toHaveLength(5);
+
+    // 27.1: Verbes et prépositions appropriées -> fill_blank (10)
+    expect(sets[0].id).toBe('ch27-ex01');
+    expect(sets[0].interaction_type).toBe('fill_blank');
+    expect(sets[0].questions_count).toBe(10);
+
+    // 27.2: Les nuances du verbe « Manquer » -> translation (5)
+    expect(sets[1].id).toBe('ch27-ex02');
+    expect(sets[1].interaction_type).toBe('translation');
+    expect(sets[1].questions_count).toBe(5);
+
+    // 27.3: Locutions indéfinies au subjonctif -> sentence_rewrite (10)
+    expect(sets[2].id).toBe('ch27-ex03');
+    expect(sets[2].interaction_type).toBe('sentence_rewrite');
+    expect(sets[2].questions_count).toBe(10);
+
+    // 27.4: Tournures « Avoir beau » et « Quitte à » -> sentence_rewrite (10)
+    expect(sets[3].id).toBe('ch27-ex04');
+    expect(sets[3].interaction_type).toBe('sentence_rewrite');
+    expect(sets[3].questions_count).toBe(10);
+
+    // 27.5: Connecteurs logiques et subordonnées -> fill_blank (10)
+    expect(sets[4].id).toBe('ch27-ex05');
+    expect(sets[4].interaction_type).toBe('fill_blank');
+    expect(sets[4].questions_count).toBe(10);
+
+    const totalQ = sets.reduce((acc, s) => acc + s.questions_count, 0);
+    expect(totalQ).toBe(45);
+  });
+
+  it('fournit les 4 sujets structurés du chapitre 27', async () => {
+    const { result } = renderHook(() => useTheory('ch27'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const topics = result.current.data?.topics || [];
+    expect(topics).toHaveLength(4);
+    expect(topics[0].id).toBe('ch27-t01');
+    expect(topics[1].id).toBe('ch27-t02');
+    expect(topics[2].id).toBe('ch27-t03');
+    expect(topics[3].id).toBe('ch27-t04');
+  });
 });
