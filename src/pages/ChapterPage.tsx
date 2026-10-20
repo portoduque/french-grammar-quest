@@ -2572,6 +2572,99 @@ export const ChapterPage: React.FC = () => {
                 </div>
               </div>
             </div>
+          ) : chapterNum === 26 ? (
+            <div className="tips-deck">
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🔢</div>
+                <div className="tip-card-body">
+                  <h3>Le Système Vigésimal : 70, 80 et 90 sans Panique !</h3>
+                  <p>
+                    Contrairement au portugais qui compte de façon strictement décimale (<em>setenta, oitenta, noventa</em>), le français de France compte en base 20 :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>70 = soixante-dix</strong> (60 + 10) & <strong>71 = soixante et onze</strong> (60 + 11 avec « et » !)<br />
+                    • <strong>80 = quatre-vingts</strong> (4 × 20) & <strong>81 = quatre-vingt-un</strong> (sans « et » !)<br />
+                    • <strong>90 = quatre-vingt-dix</strong> (4 × 20 + 10) & <strong>91 = quatre-vingt-onze</strong> (sans « et » !)
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">✍️</div>
+                <div className="tip-card-body">
+                  <h3>L'Accord de « Vingt » et « Cent » : Le Secret du Pluriel</h3>
+                  <p>
+                    <em>Vingt</em> et <em>cent</em> ne prennent la marque du pluriel (<strong>-s</strong>) que si deux conditions sont réunies : ils sont <strong>multipliés</strong> ET <strong>terminent le nombre</strong> :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em>quatre-vingt<strong>s</strong></em> (80) mais <em>quatre-vingt-trois</em> (83)<br />
+                    • <em>deux cent<strong>s</strong></em> (200), <em>huit cent<strong>s</strong></em> (800) mais <em>deux cent cinq</em> (205)<br />
+                    • <em>deux cent quatre-vingt<strong>s</strong></em> (280 - s sur vingt, pas sur cent)
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🛑</div>
+                <div className="tip-card-body">
+                  <h3>L'Invariable « Mille » vs les Noms « Million » et « Milliard »</h3>
+                  <p>
+                    Une règle d'or absolue de la grammaire française à ne jamais oublier :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Mille</strong> est un adjectif numéral strictement <strong>INVARIABLE</strong> : <em>trois mille</em>, <em>dix mille</em> (❌ jamais *milles !)<br />
+                    • <strong>Million</strong> et <strong>Milliard</strong> sont des noms communs : ils prennent un <strong>-s</strong> au pluriel et exigent <strong>de / d'</strong> devant un nom : <em>deux millions d'euros</em>, <em>huit milliards d'étoiles</em>.
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🥇</div>
+                <div className="tip-card-body">
+                  <h3>Les Ordinaux : « Premier », « Second » et « Deuxième »</h3>
+                  <p>
+                    Pour classer et ordonner, maîtrisez les nuances de rang :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>premier / première</strong> (1er / 1re) et <strong>dernier / dernière</strong> sont irréguliers.<br />
+                    • <strong>second / seconde</strong> (/sə.ɡɔ̃/) s'emploie lorsqu'il n'y a que 2 éléments dans la série (<em>la Seconde Guerre mondiale</em>).<br />
+                    • <strong>deuxième</strong> s'emploie quand la suite comporte plus de deux éléments (<em>le deuxième chapitre</em>).<br />
+                    • <strong>Neuvième :</strong> le <em>f</em> se change en <em>v</em> (<em>la neuvième symphonie</em>).
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🏢</div>
+                <div className="tip-card-body">
+                  <h3>Les Étages en France : Le Rez-de-chaussée (RDC)</h3>
+                  <p>
+                    Attention au piège culturel de l'architecture européenne :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • Le niveau de la rue est <strong>le rez-de-chaussée (RDC)</strong> (térreo).<br />
+                    • Le niveau supérieur est <strong>le premier étage</strong> (1º andar / american 2nd floor).<br />
+                    • <em>J'habite au deuxième étage</em> = 2 étages au-dessus du sol !
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🗣️</div>
+                <div className="tip-card-body">
+                  <h3>Prononciation Fine des Consonnes : 5, 6, 8, 10</h3>
+                  <p>
+                    La phonétique des chiffres varie selon ce qui les suit :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Seul ou en fin de phrase :</strong> consonne prononcée : <em>j'en ai six</em> (/sis/), <em>huit</em> (/ɥit/).<br />
+                    • <strong>Devant consonne :</strong> consonne muette : <em>six livres</em> (/si livʁ/), <em>dix tables</em> (/di tabl/).<br />
+                    • <strong>Devant voyelle :</strong> liaison sonore en /z/ : <em>six amis</em> (/siz‿ami/), <em>dix heures</em> (/diz‿œʁ/).<br />
+                    • <strong>Sept (/sɛt/) :</strong> le <em>p</em> est TOUJOURS muet (jamais *sɛpt !).
+                  </div>
+                </div>
+              </div>
+            </div>
           ) : (
             <div className="tips-deck">
               <div className="tip-card card card-default">

@@ -127,6 +127,11 @@ import {
   CHAPTER_25_QUESTIONS_MAP
 } from '@/data/chapter25Data';
 
+import {
+  CH26_FALLBACK_EXERCISE_SETS,
+  CHAPTER_26_QUESTIONS_MAP
+} from '@/data/chapter26Data';
+
 
 
 
@@ -669,6 +674,30 @@ function getFallbackSet(
       questions: (existingQuestions && existingQuestions.length > 0)
         ? existingQuestions
         : CHAPTER_25_QUESTIONS_MAP[exerciseSetId]
+    };
+  }
+
+  if (CHAPTER_26_QUESTIONS_MAP[exerciseSetId]) {
+    const foundSet = CH26_FALLBACK_EXERCISE_SETS.find(s => s.id === exerciseSetId) || {
+      id: exerciseSetId,
+      chapter_id: 'ch26',
+      order_index: parseInt(exerciseSetId.split('-ex')[1] || '1', 10),
+      title: `Exercice 26.${parseInt(exerciseSetId.split('-ex')[1] || '1', 10)}`,
+      instruction: 'Exercice sur les nombres cardinaux, ordinaux et les grands nombres.',
+      interaction_type: (exerciseSetId.endsWith('ex02') || exerciseSetId.endsWith('ex05'))
+        ? 'translation'
+        : (exerciseSetId.endsWith('ex04') || exerciseSetId.endsWith('ex06') || exerciseSetId.endsWith('ex07'))
+        ? 'sentence_rewrite'
+        : 'fill_blank',
+      questions_count: CHAPTER_26_QUESTIONS_MAP[exerciseSetId].length,
+      created_at: new Date().toISOString()
+    };
+
+    return {
+      exerciseSet: existingSet || foundSet,
+      questions: (existingQuestions && existingQuestions.length > 0)
+        ? existingQuestions
+        : CHAPTER_26_QUESTIONS_MAP[exerciseSetId]
     };
   }
 

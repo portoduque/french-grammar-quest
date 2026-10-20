@@ -158,6 +158,12 @@ import {
   CHAPTER_25_EXERCISE_SETS
 } from '@/data/chapter25Data';
 
+import {
+  CHAPTER_26_THEORY_MARKDOWN,
+  CH26_FALLBACK_TOPICS,
+  CH26_FALLBACK_EXERCISE_SETS
+} from '@/data/chapter26Data';
+
 
 
 
@@ -714,6 +720,29 @@ const CH25_FALLBACK_THEORY: ChapterTheoryData = {
 };
 
 
+const CH26_FALLBACK_THEORY: ChapterTheoryData = {
+  chapter: {
+    id: 'ch26',
+    number: 26,
+    title: 'Numbers',
+    slug: 'numbers',
+    world_number: 4,
+    world_name: 'Mundo 4: Les Nuances et le Virtuel',
+    page_range: '326–338',
+    topics_count: 5,
+    exercise_groups_count: 8,
+    total_questions: 80,
+    theory_markdown: CHAPTER_26_THEORY_MARKDOWN,
+    release_id: null,
+    editorial_status: 'published',
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+  },
+  topics: CH26_FALLBACK_TOPICS,
+  exerciseSets: CH26_FALLBACK_EXERCISE_SETS
+};
+
+
 function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch01') return CH01_FALLBACK_THEORY;
   if (chapterId === 'ch02') return CH02_FALLBACK_THEORY;
@@ -740,6 +769,7 @@ function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch23') return CH23_FALLBACK_THEORY;
   if (chapterId === 'ch24') return CH24_FALLBACK_THEORY;
   if (chapterId === 'ch25') return CH25_FALLBACK_THEORY;
+  if (chapterId === 'ch26') return CH26_FALLBACK_THEORY;
   return null;
 }
 
@@ -849,6 +879,8 @@ export function useTheory(chapterId?: string) {
           ? CHAPTER_24_THEORY_MARKDOWN
           : chapterId === 'ch25'
           ? CHAPTER_25_THEORY_MARKDOWN
+          : chapterId === 'ch26'
+          ? CHAPTER_26_THEORY_MARKDOWN
           : (chapterData as Chapter).theory_markdown;
 
         return {

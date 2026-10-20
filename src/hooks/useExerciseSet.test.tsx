@@ -3211,5 +3211,183 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       expect(data?.questions[9].prompt).toBe('Come sit next to me.');
       expect(data?.questions[9].accepted_answers).toContain('Venez vous asseoir près de moi.');
     });
+
+    it('charge la série 26.1 (fill_blank) pour les nombres de 0 à 50 en toutes lettres (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch26-ex01'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toContain('6');
+      expect(data?.questions[0].accepted_answers).toContain('six');
+      expect(data?.questions[2].prompt).toContain('23');
+      expect(data?.questions[2].accepted_answers).toContain('vingt-trois');
+      expect(data?.questions[6].prompt).toContain('41');
+      expect(data?.questions[6].accepted_answers).toContain('quarante et un');
+      expect(data?.questions[9].prompt).toContain('52');
+      expect(data?.questions[9].accepted_answers).toContain('cinquante-deux');
+    });
+
+    it('charge la série 26.2 (translation) pour les nombres ordinaux et expressions (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch26-ex02'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('translation');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('Il a perdu pour la troisième fois.');
+      expect(data?.questions[0].accepted_answers).toContain('He lost for the third time.');
+      expect(data?.questions[1].prompt).toBe("J'habite au trente et unième étage.");
+      expect(data?.questions[1].accepted_answers).toContain('I live on the thirty-first floor.');
+      expect(data?.questions[4].prompt).toBe('Nous avons fait du ski pour la première fois.');
+      expect(data?.questions[4].accepted_answers).toContain('We skied for the first time.');
+      expect(data?.questions[7].prompt).toBe("J'adore la neuvième symphonie de Beethoven.");
+      expect(data?.questions[7].accepted_answers).toContain("I love Beethoven's Ninth Symphony.");
+    });
+
+    it('charge la série 26.3 (fill_blank) pour la transcription en chiffres des nombres 50 à 99 (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch26-ex03'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toContain('cinquante-trois');
+      expect(data?.questions[0].accepted_answers).toContain('53');
+      expect(data?.questions[3].prompt).toContain('soixante-dix');
+      expect(data?.questions[3].accepted_answers).toContain('70');
+      expect(data?.questions[4].prompt).toContain('soixante et onze');
+      expect(data?.questions[4].accepted_answers).toContain('71');
+      expect(data?.questions[6].prompt).toContain('quatre-vingt-trois');
+      expect(data?.questions[6].accepted_answers).toContain('83');
+      expect(data?.questions[8].prompt).toContain('quatre-vingt-dix');
+      expect(data?.questions[8].accepted_answers).toContain('90');
+      expect(data?.questions[9].prompt).toContain('quatre-vingt-treize');
+      expect(data?.questions[9].accepted_answers).toContain('93');
+    });
+
+    it('charge la série 26.4 (sentence_rewrite) pour les nombres 100 à 199 en toutes lettres (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch26-ex04'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toContain('101');
+      expect(data?.questions[0].accepted_answers).toContain('cent un');
+      expect(data?.questions[6].prompt).toContain('160');
+      expect(data?.questions[6].accepted_answers).toContain('cent soixante');
+      expect(data?.questions[7].prompt).toContain('178');
+      expect(data?.questions[7].accepted_answers).toContain('cent soixante-dix-huit');
+      expect(data?.questions[8].prompt).toContain('181');
+      expect(data?.questions[8].accepted_answers).toContain('cent quatre-vingt-un');
+      expect(data?.questions[9].prompt).toContain('199');
+      expect(data?.questions[9].accepted_answers).toContain('cent quatre-vingt-dix-neuf');
+    });
+
+    it('charge la série 26.5 (translation) pour la traduction des centaines anglais-français (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch26-ex05'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('translation');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toContain('two hundred twelve');
+      expect(data?.questions[0].accepted_answers).toContain('deux cent douze');
+      expect(data?.questions[2].prompt).toContain('four hundred twenty');
+      expect(data?.questions[2].accepted_answers).toContain('quatre cent vingt');
+      expect(data?.questions[5].prompt).toContain('seven hundred ninety');
+      expect(data?.questions[5].accepted_answers).toContain('sept cent quatre-vingt-dix');
+      expect(data?.questions[9].prompt).toContain('one hundred one');
+      expect(data?.questions[9].accepted_answers).toContain('cent un');
+    });
+
+    it('charge la série 26.6 (sentence_rewrite) pour les règles d accord de cent (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch26-ex06'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toContain('205');
+      expect(data?.questions[0].accepted_answers).toContain('deux cent cinq');
+      expect(data?.questions[6].prompt).toContain('800');
+      expect(data?.questions[6].accepted_answers).toContain('huit cents');
+      expect(data?.questions[7].prompt).toContain('815');
+      expect(data?.questions[7].accepted_answers).toContain('huit cent quinze');
+      expect(data?.questions[8].prompt).toContain('901');
+      expect(data?.questions[8].accepted_answers).toContain('neuf cent un');
+    });
+
+    it('charge la série 26.7 (sentence_rewrite) pour les grands nombres 1 000 et plus (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch26-ex07'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toContain('1 005');
+      expect(data?.questions[0].accepted_answers).toContain('mille cinq');
+      expect(data?.questions[5].prompt).toContain('24 008');
+      expect(data?.questions[5].accepted_answers).toContain('vingt-quatre mille huit');
+      expect(data?.questions[7].prompt).toContain('1 230 000');
+      expect(data?.questions[7].accepted_answers).toContain('un million deux cent trente mille');
+      expect(data?.questions[8].prompt).toContain('30 030 000');
+      expect(data?.questions[8].accepted_answers).toContain('trente millions trente mille');
+      expect(data?.questions[9].prompt).toContain('1 600 000 000');
+      expect(data?.questions[9].accepted_answers).toContain('un milliard six cent millions');
+    });
+
+    it('charge la série 26.8 (fill_blank) pour les nombres réels et dates contemporaines (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch26-ex08'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toContain('2026');
+      expect(data?.questions[0].accepted_answers).toContain('deux mille vingt-six');
+      expect(data?.questions[1].prompt).toContain('750 000');
+      expect(data?.questions[1].accepted_answers).toContain('sept cent cinquante mille');
+      expect(data?.questions[2].prompt).toContain('1978');
+      expect(data?.questions[2].accepted_answers).toContain('mille neuf cent soixante-dix-huit');
+      expect(data?.questions[3].prompt).toContain('2007');
+      expect(data?.questions[3].accepted_answers).toContain('deux mille sept');
+      expect(data?.questions[4].prompt).toContain("1 000 000 000 d'étoiles");
+      expect(data?.questions[4].accepted_answers).toContain('un milliard');
+      expect(data?.questions[5].prompt).toContain('1 500 mètres');
+      expect(data?.questions[5].accepted_answers).toContain('mille cinq cents');
+      expect(data?.questions[7].prompt).toContain('1885');
+      expect(data?.questions[7].accepted_answers).toContain('mille huit cent quatre-vingt-cinq');
+      expect(data?.questions[8].prompt).toContain('5 000 euros');
+      expect(data?.questions[8].accepted_answers).toContain('cinq mille');
+      expect(data?.questions[9].prompt).toContain('8 000 000 000');
+      expect(data?.questions[9].accepted_answers).toContain('huit milliards');
+    });
   });
 });

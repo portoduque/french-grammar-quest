@@ -2246,4 +2246,97 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
     expect(topics[3].id).toBe('ch25-t04');
     expect(topics[4].id).toBe('ch25-t05');
   });
+
+  it('fournit la théorie pédagogique complète et rigoureuse pour ch26 (Numbers)', async () => {
+    const { result } = renderHook(() => useTheory('ch26'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data?.chapter.id).toBe('ch26');
+    expect(data?.chapter.number).toBe(26);
+    expect(data?.chapter.title).toBe('Numbers');
+    expect(data?.chapter.page_range).toBe('326–338');
+    expect(data?.chapter.total_questions).toBe(80);
+
+    const markdown = data?.chapter.theory_markdown || '';
+    expect(markdown).toContain("Les Nombres Cardinaux de 0 à 50");
+    expect(markdown).toContain("Les Nombres Ordinaux, les Étages");
+    expect(markdown).toContain("Système Vigésimal");
+    expect(markdown).toContain("Les Centaines (100 à 999)");
+    expect(markdown).toContain("L'invariabilité absolue de « Mille »");
+    expect(markdown).toContain("deux-mille-vingt-six");
+  });
+
+  it('charge les 8 séries d exercices officielles du Chapitre 26 avec les bons types d interaction (80 questions au total)', async () => {
+    const { result } = renderHook(() => useTheory('ch26'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const sets = result.current.data?.exerciseSets || [];
+    expect(sets).toHaveLength(8);
+
+    // 26.1: Nombres 0 à 50 en toutes lettres -> fill_blank (10)
+    expect(sets[0].id).toBe('ch26-ex01');
+    expect(sets[0].interaction_type).toBe('fill_blank');
+    expect(sets[0].questions_count).toBe(10);
+
+    // 26.2: Ordinaux et expressions -> translation (10)
+    expect(sets[1].id).toBe('ch26-ex02');
+    expect(sets[1].interaction_type).toBe('translation');
+    expect(sets[1].questions_count).toBe(10);
+
+    // 26.3: Transcrire en chiffres -> fill_blank (10)
+    expect(sets[2].id).toBe('ch26-ex03');
+    expect(sets[2].interaction_type).toBe('fill_blank');
+    expect(sets[2].questions_count).toBe(10);
+
+    // 26.4: 100 à 199 en toutes lettres -> sentence_rewrite (10)
+    expect(sets[3].id).toBe('ch26-ex04');
+    expect(sets[3].interaction_type).toBe('sentence_rewrite');
+    expect(sets[3].questions_count).toBe(10);
+
+    // 26.5: Traduire centaines -> translation (10)
+    expect(sets[4].id).toBe('ch26-ex05');
+    expect(sets[4].interaction_type).toBe('translation');
+    expect(sets[4].questions_count).toBe(10);
+
+    // 26.6: Accords de cent -> sentence_rewrite (10)
+    expect(sets[5].id).toBe('ch26-ex06');
+    expect(sets[5].interaction_type).toBe('sentence_rewrite');
+    expect(sets[5].questions_count).toBe(10);
+
+    // 26.7: Grands nombres 1 000+ -> sentence_rewrite (10)
+    expect(sets[6].id).toBe('ch26-ex07');
+    expect(sets[6].interaction_type).toBe('sentence_rewrite');
+    expect(sets[6].questions_count).toBe(10);
+
+    // 26.8: Nombres réels et dates -> fill_blank (10)
+    expect(sets[7].id).toBe('ch26-ex08');
+    expect(sets[7].interaction_type).toBe('fill_blank');
+    expect(sets[7].questions_count).toBe(10);
+
+    const totalQ = sets.reduce((acc, s) => acc + s.questions_count, 0);
+    expect(totalQ).toBe(80);
+  });
+
+  it('fournit les 5 sujets principaux du chapitre 26', async () => {
+    const { result } = renderHook(() => useTheory('ch26'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const topics = result.current.data?.topics || [];
+    expect(topics).toHaveLength(5);
+    expect(topics[0].id).toBe('ch26-t01');
+    expect(topics[1].id).toBe('ch26-t02');
+    expect(topics[2].id).toBe('ch26-t03');
+    expect(topics[3].id).toBe('ch26-t04');
+    expect(topics[4].id).toBe('ch26-t05');
+  });
 });

@@ -413,6 +413,45 @@ vi.mock('@/hooks/useTheory', () => ({
         error: null,
       };
     }
+    if (chapterId === 'ch26') {
+      return {
+        data: {
+          chapter: {
+            id: 'ch26',
+            number: 26,
+            title: 'Numbers',
+            slug: 'numbers',
+            world_number: 4,
+            world_name: 'Mundo 4: Les Nuances et le Virtuel',
+            page_range: '326–338',
+            topics_count: 5,
+            exercise_groups_count: 8,
+            total_questions: 80,
+            theory_markdown: '## Numbers (Les Nombres)\n\nLes nombres cardinaux, ordinaux et les grands nombres.',
+            editorial_status: 'published',
+          },
+          topics: [
+            { id: 'ch26-t01', title: 'Nombres cardinaux de 0 à 50', order_index: 1 },
+            { id: 'ch26-t02', title: 'Nombres ordinaux et vocabulaire du Web', order_index: 2 },
+            { id: 'ch26-t03', title: 'Nombres de 50 à 99 et le système vigésimal', order_index: 3 },
+            { id: 'ch26-t04', title: 'Les centaines et l\'accord de cent', order_index: 4 },
+            { id: 'ch26-t05', title: 'Les grands nombres (1 000+) et dates', order_index: 5 },
+          ],
+          exerciseSets: [
+            { id: 'ch26-ex01', title: 'Exercice 26.1', instruction: 'Nombres 0 à 50', interaction_type: 'fill_blank', questions_count: 10, order_index: 1 },
+            { id: 'ch26-ex02', title: 'Exercice 26.2', instruction: 'Nombres ordinaux', interaction_type: 'translation', questions_count: 10, order_index: 2 },
+            { id: 'ch26-ex03', title: 'Exercice 26.3', instruction: 'Transcrire en chiffres', interaction_type: 'fill_blank', questions_count: 10, order_index: 3 },
+            { id: 'ch26-ex04', title: 'Exercice 26.4', instruction: 'Nombres 100 à 199', interaction_type: 'sentence_rewrite', questions_count: 10, order_index: 4 },
+            { id: 'ch26-ex05', title: 'Exercice 26.5', instruction: 'Traduire centaines', interaction_type: 'translation', questions_count: 10, order_index: 5 },
+            { id: 'ch26-ex06', title: 'Exercice 26.6', instruction: 'Accords de cent', interaction_type: 'sentence_rewrite', questions_count: 10, order_index: 6 },
+            { id: 'ch26-ex07', title: 'Exercice 26.7', instruction: 'Grands nombres', interaction_type: 'sentence_rewrite', questions_count: 10, order_index: 7 },
+            { id: 'ch26-ex08', title: 'Exercice 26.8', instruction: 'Nombres réels et dates', interaction_type: 'fill_blank', questions_count: 10, order_index: 8 },
+          ],
+        },
+        isLoading: false,
+        error: null,
+      };
+    }
     return { data: null, isLoading: false, error: null };
   }),
 }));
@@ -711,5 +750,33 @@ describe('ChapterPage Component', () => {
     expect(screen.getByText(/Durée Passée Achevée : « Pendant » OUI, « Pour » JAMAIS !/i)).toBeInTheDocument();
     expect(screen.getByText(/« Dessus \/ Dessous » \(Adverbes\) vs « Sur \/ Sous » \(Prépositions\)/i)).toBeInTheDocument();
     expect(screen.getByText(/Vocabulaire des Boutiques et le Faux Ami « Librairie »/i)).toBeInTheDocument();
+  });
+
+  it('affiche la théorie, les 8 séries d exercices et les astuces FLE pour le chapitre 26 (Numbers)', () => {
+    renderWithProviders('/chapters/ch26');
+
+    expect(screen.getByRole('heading', { level: 1, name: /Numbers/i })).toBeInTheDocument();
+
+    // Onglet Théorie actif par défaut
+    expect(screen.getByText(/Les nombres cardinaux, ordinaux et les grands nombres/i)).toBeInTheDocument();
+
+    // Passage à l'onglet Exercices (8)
+    const exercisesTab = screen.getByRole('tab', { name: /Exercices \(8\)/i });
+    fireEvent.click(exercisesTab);
+
+    expect(screen.getByText('Exercice 26.1')).toBeInTheDocument();
+    expect(screen.getByText('Exercice 26.4')).toBeInTheDocument();
+    expect(screen.getByText('Exercice 26.8')).toBeInTheDocument();
+
+    // Passage à l'onglet Astuces FLE
+    const tipsTab = screen.getByRole('tab', { name: /Astuces FLE/i });
+    fireEvent.click(tipsTab);
+
+    expect(screen.getByText(/Le Système Vigésimal : 70, 80 et 90 sans Panique !/i)).toBeInTheDocument();
+    expect(screen.getByText(/L'Accord de « Vingt » et « Cent » : Le Secret du Pluriel/i)).toBeInTheDocument();
+    expect(screen.getByText(/L'Invariable « Mille » vs les Noms « Million » et « Milliard »/i)).toBeInTheDocument();
+    expect(screen.getByText(/Les Ordinaux : « Premier », « Second » et « Deuxième »/i)).toBeInTheDocument();
+    expect(screen.getByText(/Les Étages en France : Le Rez-de-chaussée \(RDC\)/i)).toBeInTheDocument();
+    expect(screen.getByText(/Prononciation Fine des Consonnes : 5, 6, 8, 10/i)).toBeInTheDocument();
   });
 });
