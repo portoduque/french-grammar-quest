@@ -122,6 +122,12 @@ import {
   CHAPTER_24_QUESTIONS_MAP
 } from '@/data/chapter24Data';
 
+import {
+  CHAPTER_25_EXERCISE_SETS,
+  CHAPTER_25_QUESTIONS_MAP
+} from '@/data/chapter25Data';
+
+
 
 
 export interface ExerciseSetWithQuestions {
@@ -641,6 +647,31 @@ function getFallbackSet(
         : CHAPTER_24_QUESTIONS_MAP[exerciseSetId]
     };
   }
+
+  if (CHAPTER_25_QUESTIONS_MAP[exerciseSetId]) {
+    const foundSet = CHAPTER_25_EXERCISE_SETS.find(s => s.id === exerciseSetId) || {
+      id: exerciseSetId,
+      chapter_id: 'ch25',
+      order_index: parseInt(exerciseSetId.split('-ex')[1] || '1', 10),
+      title: `Exercice 25.${parseInt(exerciseSetId.split('-ex')[1] || '1', 10)}`,
+      instruction: 'Exercice sur les adverbes et expressions de temps, de fréquence et de lieu.',
+      interaction_type: (exerciseSetId.endsWith('ex02') || exerciseSetId.endsWith('ex08'))
+        ? 'translation'
+        : (exerciseSetId.endsWith('ex04') || exerciseSetId.endsWith('ex05') || exerciseSetId.endsWith('ex06'))
+        ? 'sentence_rewrite'
+        : 'fill_blank',
+      questions_count: CHAPTER_25_QUESTIONS_MAP[exerciseSetId].length,
+      created_at: new Date().toISOString()
+    };
+
+    return {
+      exerciseSet: existingSet || foundSet,
+      questions: (existingQuestions && existingQuestions.length > 0)
+        ? existingQuestions
+        : CHAPTER_25_QUESTIONS_MAP[exerciseSetId]
+    };
+  }
+
 
 
 

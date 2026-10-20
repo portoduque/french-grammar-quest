@@ -2480,6 +2480,98 @@ export const ChapterPage: React.FC = () => {
                 </div>
               </div>
             </div>
+          ) : chapterNum === 25 ? (
+            <div className="tips-deck">
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">⏳</div>
+                <div className="tip-card-body">
+                  <h3>« Depuis » + Présent : Le Piège n°1 des Lusophones !</h3>
+                  <p>
+                    En portugais, on dit souvent <em>"moro aqui há dez anos"</em> ou <em>"faz dez anos que moro aqui"</em>. En français, une action commencée dans le passé et <strong>toujours active dans le présent</strong> se conjugue impérativement au <strong>PRÉSENT</strong> :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • ❌ <em>*J'ai habité à Paris depuis 3 ans</em> (Faux ! C'est du passé)<br />
+                    • ✅ <strong>J'habite à Paris depuis trois ans</strong> (Action toujours active aujourd'hui !)<br />
+                    • ✅ <strong>Il y a trois ans que j'habite à Paris</strong> / <strong>Cela fait trois ans que...</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🎯</div>
+                <div className="tip-card-body">
+                  <h3>« Depuis quand » (Point de départ) vs « Depuis combien de temps » (Durée)</h3>
+                  <p>
+                    Pour poser une question sur le temps, distinguez bien la date d'origine de la quantité de temps écoulée :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Depuis quand ?</strong> (Since when? / Desde quando?) → attend une <strong>date ou un repère fixe</strong> : <em>depuis 1998</em>, <em>depuis jeudi</em>, <em>depuis notre enfance</em>.<br />
+                    • <strong>Depuis combien de temps ?</strong> (How long? / Há quanto tempo?) → attend une <strong>durée mesurée</strong> : <em>depuis cinq ans</em>, <em>depuis trois mois</em>, <em>depuis 45 minutes</em>.
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">⚡</div>
+                <div className="tip-card-body">
+                  <h3>La Place des Adverbes Courts au Passé Composé</h3>
+                  <p>
+                    Au passé composé, les adverbes courts de quantité (<em>beaucoup, trop, assez, peu</em>), de qualité (<em>bien, mal</em>) et de fréquence (<em>souvent, rarement, toujours</em>) s'intercalent <strong>entre l'auxiliaire et le participe passé</strong> :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em>Elle a <strong>beaucoup</strong> dépensé.</em> (❌ pas *dépensé beaucoup)<br />
+                    • <em>On a <strong>bien</strong> mangé chez eux.</em><br />
+                    • <em>Ils ont <strong>souvent</strong> voyagé en Asie.</em><br />
+                    • <em>Nous n'avons pas <strong>assez</strong> travaillé.</em> (placé après le <em>pas</em> !)<br />
+                    • <em>Il s'est <strong>toujours très mal</strong> exprimé.</em>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🛑</div>
+                <div className="tip-card-body">
+                  <h3>Durée Passée Achevée : « Pendant » OUI, « Pour » JAMAIS !</h3>
+                  <p>
+                    Pour exprimer une durée complètement révolue au passé, le français emploie <strong>pendant</strong> (ou simplement la durée sans préposition). L'utilisation de <em>pour</em> est un calque fautif de l'anglais :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • ✅ <em>Il a habité <strong>pendant cinq ans</strong> à Londres.</em> (ou <em>Il a habité cinq ans à Londres.</em>)<br />
+                    • ❌ <em>Jamais *pour cinq ans au passé !</em><br />
+                    • <strong>Rappel :</strong> <em>Pour</em> n'exprime une durée que pour un projet futur (<em>Je pars pour deux semaines</em>).
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">📍</div>
+                <div className="tip-card-body">
+                  <h3>« Dessus / Dessous » (Adverbes) vs « Sur / Sous » (Prépositions)</h3>
+                  <p>
+                    Ne confondez pas les prépositions exigeant un complément nominal et les adverbes autonomes qui s'emploient seuls :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Sur / Sous</strong> (prépositions avec nom) : <em>Mets le sac <strong>sur la table</strong></em> / <em><strong>sous la table</strong></em>.<br />
+                    • <strong>Dessus / Dessous</strong> (adverbes sans nom) : <em>Mets ton sac <strong>dessous</strong></em> / <em>C'est écrit <strong>dessus</strong></em>.
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">📚</div>
+                <div className="tip-card-body">
+                  <h3>Vocabulaire des Boutiques et le Faux Ami « Librairie »</h3>
+                  <p>
+                    En français, les commerces de livres et de culture réservent un piège classique :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Une librairie :</strong> une boutique où l'on <strong>achète</strong> des livres (livraria / bookstore).<br />
+                    • <strong>Une bibliothèque :</strong> l'établissement où l'on <strong>emprunte</strong> des livres (biblioteca / library).<br />
+                    • <strong>Chez vs À :</strong> <em>Je vais <strong>chez le boulanger</strong></em> (personne) mais <em><strong>à la boulangerie</strong></em> (lieu).
+                  </div>
+                </div>
+              </div>
+            </div>
           ) : (
             <div className="tips-deck">
               <div className="tip-card card card-default">

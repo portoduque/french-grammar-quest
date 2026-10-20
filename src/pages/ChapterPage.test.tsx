@@ -374,6 +374,45 @@ vi.mock('@/hooks/useTheory', () => ({
         error: null,
       };
     }
+    if (chapterId === 'ch25') {
+      return {
+        data: {
+          chapter: {
+            id: 'ch25',
+            number: 25,
+            title: 'Adverbs and expressions of time, frequency, and location',
+            slug: 'adverbs-and-expressions-of-time-frequency-and-location',
+            world_number: 4,
+            world_name: 'Mundo 4: Les Nuances et le Virtuel',
+            page_range: '313–325',
+            topics_count: 5,
+            exercise_groups_count: 8,
+            total_questions: 80,
+            theory_markdown: '## Adverbs and expressions of time, frequency, and location\n\nAdverbes et expressions de temps, de fréquence et de lieu.',
+            editorial_status: 'published',
+          },
+          topics: [
+            { id: 'ch25-t01', title: 'Adverbes et expressions de temps', order_index: 1 },
+            { id: 'ch25-t02', title: 'Vocabulaire pratique : commerces et marchands', order_index: 2 },
+            { id: 'ch25-t03', title: "L'expression de la durée : Depuis, Il y a... que", order_index: 3 },
+            { id: 'ch25-t04', title: 'La place des adverbes au passé composé', order_index: 4 },
+            { id: 'ch25-t05', title: 'Mots interrogatifs et adverbes de lieu', order_index: 5 },
+          ],
+          exerciseSets: [
+            { id: 'ch25-ex01', title: 'Exercice 25.1', instruction: 'Adverbes de temps', interaction_type: 'fill_blank', questions_count: 10, order_index: 1 },
+            { id: 'ch25-ex02', title: 'Exercice 25.2', instruction: 'Traduction expressions temps', interaction_type: 'translation', questions_count: 10, order_index: 2 },
+            { id: 'ch25-ex03', title: 'Exercice 25.3', instruction: 'Depuis quand vs combien de temps', interaction_type: 'fill_blank', questions_count: 10, order_index: 3 },
+            { id: 'ch25-ex04', title: 'Exercice 25.4', instruction: 'Réponses avec depuis', interaction_type: 'sentence_rewrite', questions_count: 10, order_index: 4 },
+            { id: 'ch25-ex05', title: 'Exercice 25.5', instruction: 'Transformer en Il y a... que', interaction_type: 'sentence_rewrite', questions_count: 10, order_index: 5 },
+            { id: 'ch25-ex06', title: 'Exercice 25.6', instruction: 'Passé composé avec adverbes', interaction_type: 'sentence_rewrite', questions_count: 10, order_index: 6 },
+            { id: 'ch25-ex07', title: 'Exercice 25.7', instruction: 'Mots interrogatifs', interaction_type: 'fill_blank', questions_count: 10, order_index: 7 },
+            { id: 'ch25-ex08', title: 'Exercice 25.8', instruction: 'Adverbes de lieu', interaction_type: 'translation', questions_count: 10, order_index: 8 },
+          ],
+        },
+        isLoading: false,
+        error: null,
+      };
+    }
     return { data: null, isLoading: false, error: null };
   }),
 }));
@@ -644,5 +683,33 @@ describe('ChapterPage Component', () => {
     expect(screen.getByText(/Temps Composés avec « Que » : L'Accord du Participe Passé/i)).toBeInTheDocument();
     expect(screen.getByText(/Le Pronom « Dont » : Verbes en « De » et Possession/i)).toBeInTheDocument();
     expect(screen.getByText(/Repère Temporel « Où » et Neutres « Ce qui \/ Ce que »/i)).toBeInTheDocument();
+  });
+
+  it('affiche la théorie, les 8 séries d exercices et les astuces FLE pour le chapitre 25 (Adverbs and expressions of time, frequency, and location)', () => {
+    renderWithProviders('/chapters/ch25');
+
+    expect(screen.getByRole('heading', { level: 1, name: /Adverbs and expressions of time/i })).toBeInTheDocument();
+
+    // Onglet Théorie actif par défaut
+    expect(screen.getByText(/Adverbes et expressions de temps, de fréquence et de lieu/i)).toBeInTheDocument();
+
+    // Passage à l'onglet Exercices (8)
+    const exercisesTab = screen.getByRole('tab', { name: /Exercices \(8\)/i });
+    fireEvent.click(exercisesTab);
+
+    expect(screen.getByText('Exercice 25.1')).toBeInTheDocument();
+    expect(screen.getByText('Exercice 25.4')).toBeInTheDocument();
+    expect(screen.getByText('Exercice 25.8')).toBeInTheDocument();
+
+    // Passage à l'onglet Astuces FLE
+    const tipsTab = screen.getByRole('tab', { name: /Astuces FLE/i });
+    fireEvent.click(tipsTab);
+
+    expect(screen.getByText(/« Depuis » \+ Présent : Le Piège n°1 des Lusophones !/i)).toBeInTheDocument();
+    expect(screen.getByText(/« Depuis quand » \(Point de départ\) vs « Depuis combien de temps » \(Durée\)/i)).toBeInTheDocument();
+    expect(screen.getByText(/La Place des Adverbes Courts au Passé Composé/i)).toBeInTheDocument();
+    expect(screen.getByText(/Durée Passée Achevée : « Pendant » OUI, « Pour » JAMAIS !/i)).toBeInTheDocument();
+    expect(screen.getByText(/« Dessus \/ Dessous » \(Adverbes\) vs « Sur \/ Sous » \(Prépositions\)/i)).toBeInTheDocument();
+    expect(screen.getByText(/Vocabulaire des Boutiques et le Faux Ami « Librairie »/i)).toBeInTheDocument();
   });
 });

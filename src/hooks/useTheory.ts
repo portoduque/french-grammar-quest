@@ -152,6 +152,13 @@ import {
   CHAPTER_24_EXERCISE_SETS
 } from '@/data/chapter24Data';
 
+import {
+  CHAPTER_25_THEORY_MARKDOWN,
+  CHAPTER_25_TOPICS,
+  CHAPTER_25_EXERCISE_SETS
+} from '@/data/chapter25Data';
+
+
 
 
 const CH01_FALLBACK_THEORY: ChapterTheoryData = {
@@ -684,6 +691,29 @@ const CH24_FALLBACK_THEORY: ChapterTheoryData = {
 };
 
 
+const CH25_FALLBACK_THEORY: ChapterTheoryData = {
+  chapter: {
+    id: 'ch25',
+    number: 25,
+    title: 'Adverbs and expressions of time, frequency, and location',
+    slug: 'adverbs-and-expressions-of-time-frequency-and-location',
+    world_number: 4,
+    world_name: 'Mundo 4: Les Nuances et le Virtuel',
+    page_range: '313–325',
+    topics_count: 5,
+    exercise_groups_count: 8,
+    total_questions: 80,
+    theory_markdown: CHAPTER_25_THEORY_MARKDOWN,
+    release_id: null,
+    editorial_status: 'published',
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+  },
+  topics: CHAPTER_25_TOPICS,
+  exerciseSets: CHAPTER_25_EXERCISE_SETS
+};
+
+
 function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch01') return CH01_FALLBACK_THEORY;
   if (chapterId === 'ch02') return CH02_FALLBACK_THEORY;
@@ -709,6 +739,7 @@ function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch22') return CH22_FALLBACK_THEORY;
   if (chapterId === 'ch23') return CH23_FALLBACK_THEORY;
   if (chapterId === 'ch24') return CH24_FALLBACK_THEORY;
+  if (chapterId === 'ch25') return CH25_FALLBACK_THEORY;
   return null;
 }
 
@@ -816,6 +847,8 @@ export function useTheory(chapterId?: string) {
           ? CHAPTER_23_THEORY_MARKDOWN
           : chapterId === 'ch24'
           ? CHAPTER_24_THEORY_MARKDOWN
+          : chapterId === 'ch25'
+          ? CHAPTER_25_THEORY_MARKDOWN
           : (chapterData as Chapter).theory_markdown;
 
         return {

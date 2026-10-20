@@ -206,7 +206,7 @@ export const CHAPTERS_SUMMARY: ChapterSummary[] = [
     "title": "Adverbs and expressions of time, frequency, and location",
     "exerciseGroups": 8,
     "pageRange": "313–325",
-    "topicsCount": 3
+    "topicsCount": 5
   },
   {
     "number": 26,

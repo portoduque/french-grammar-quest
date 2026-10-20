@@ -2144,4 +2144,106 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
     expect(topics[4].id).toBe('ch24-t05');
     expect(topics[5].id).toBe('ch24-t06');
   });
+
+  it('fournit la théorie pédagogique complète et rigoureuse pour ch25 (Adverbs and expressions of time, frequency, and location)', async () => {
+    const { result } = renderHook(() => useTheory('ch25'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const data = result.current.data;
+    expect(data).toBeDefined();
+    expect(data?.chapter.number).toBe(25);
+    expect(data?.chapter.title).toBe('Adverbs and expressions of time, frequency, and location');
+    expect(data?.chapter.page_range).toBe('313–325');
+
+    const markdown = data?.chapter.theory_markdown || '';
+    expect(markdown).toContain("Adverbes et Expressions de Temps : Style Direct vs Discours Indirect");
+    expect(markdown).toContain("Expressions de Fréquence et Nuances Temporelles");
+    expect(markdown).toContain("Vocabulaire FLE Essentiel : Commerces, Artisans et Métiers");
+    expect(markdown).toContain("L'Expression de la Durée : « Depuis », « Il y a... que », « Cela fait... que »");
+    expect(markdown).toContain("La Place des Adverbes avec le Passé Composé et la Durée Révolue avec « Pendant »");
+    expect(markdown).toContain("Les Mots Interrogatifs Essentiels");
+    expect(markdown).toContain("Les Adverbes et Expressions de Lieu");
+    expect(markdown).toContain("aujourd'hui");
+    expect(markdown).toContain("après-demain");
+    expect(markdown).toContain("la semaine prochaine");
+    expect(markdown).toContain("la veille");
+    expect(markdown).toContain("le lendemain");
+    expect(markdown).toContain("Depuis quand");
+    expect(markdown).toContain("Depuis combien de temps");
+    expect(markdown).toContain("librairie");
+  });
+
+  it('charge les 8 séries d exercices officielles du Chapitre 25 avec les bons types d interaction', async () => {
+    const { result } = renderHook(() => useTheory('ch25'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const sets = result.current.data?.exerciseSets || [];
+    expect(sets).toHaveLength(8);
+
+    // 25.1: Adverbes de temps directs -> fill_blank (10)
+    expect(sets[0].id).toBe('ch25-ex01');
+    expect(sets[0].interaction_type).toBe('fill_blank');
+    expect(sets[0].questions_count).toBe(10);
+
+    // 25.2: Traduction phrases avec tu et est-ce que -> translation (10)
+    expect(sets[1].id).toBe('ch25-ex02');
+    expect(sets[1].interaction_type).toBe('translation');
+    expect(sets[1].questions_count).toBe(10);
+
+    // 25.3: Depuis quand vs Depuis combien de temps -> fill_blank (10)
+    expect(sets[2].id).toBe('ch25-ex03');
+    expect(sets[2].interaction_type).toBe('fill_blank');
+    expect(sets[2].questions_count).toBe(10);
+
+    // 25.4: Répondre avec depuis -> sentence_rewrite (10)
+    expect(sets[3].id).toBe('ch25-ex04');
+    expect(sets[3].interaction_type).toBe('sentence_rewrite');
+    expect(sets[3].questions_count).toBe(10);
+
+    // 25.5: Transformer en Il y a... que -> sentence_rewrite (10)
+    expect(sets[4].id).toBe('ch25-ex05');
+    expect(sets[4].interaction_type).toBe('sentence_rewrite');
+    expect(sets[4].questions_count).toBe(10);
+
+    // 25.6: Mettre au passé composé avec adverbes -> sentence_rewrite (10)
+    expect(sets[5].id).toBe('ch25-ex06');
+    expect(sets[5].interaction_type).toBe('sentence_rewrite');
+    expect(sets[5].questions_count).toBe(10);
+
+    // 25.7: Mots interrogatifs -> fill_blank (10)
+    expect(sets[6].id).toBe('ch25-ex07');
+    expect(sets[6].interaction_type).toBe('fill_blank');
+    expect(sets[6].questions_count).toBe(10);
+
+    // 25.8: Traduction adverbes de lieu -> translation (10)
+    expect(sets[7].id).toBe('ch25-ex08');
+    expect(sets[7].interaction_type).toBe('translation');
+    expect(sets[7].questions_count).toBe(10);
+
+    // Total questions check (80 questions)
+    const totalQ = sets.reduce((acc, s) => acc + s.questions_count, 0);
+    expect(totalQ).toBe(80);
+  });
+
+  it('fournit les 5 sujets principaux du chapitre 25', async () => {
+    const { result } = renderHook(() => useTheory('ch25'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const topics = result.current.data?.topics || [];
+    expect(topics).toHaveLength(5);
+    expect(topics[0].id).toBe('ch25-t01');
+    expect(topics[1].id).toBe('ch25-t02');
+    expect(topics[2].id).toBe('ch25-t03');
+    expect(topics[3].id).toBe('ch25-t04');
+    expect(topics[4].id).toBe('ch25-t05');
+  });
 });

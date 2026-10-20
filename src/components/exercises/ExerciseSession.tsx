@@ -252,6 +252,7 @@ export const ExerciseSession: React.FC<ExerciseSessionProps> = ({
           <SentenceRewriteInteraction
             prompt={currentQuestion.prompt}
             instruction={currentQuestion.instruction || exerciseSet.instruction}
+            tokens={currentQuestion.tokens as string[] | null}
             value={userAnswer}
             onChange={setUserAnswer}
             onSubmit={handleVerify}
@@ -265,6 +266,7 @@ export const ExerciseSession: React.FC<ExerciseSessionProps> = ({
         return (
           <TranslationInteraction
             prompt={currentQuestion.prompt}
+            tokens={currentQuestion.tokens as string[] | null}
             value={userAnswer}
             onChange={setUserAnswer}
             onSubmit={handleVerify}

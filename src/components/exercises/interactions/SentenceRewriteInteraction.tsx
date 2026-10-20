@@ -4,6 +4,7 @@ import { AccentToolbar } from '../AccentToolbar';
 export interface SentenceRewriteInteractionProps {
   prompt: string;
   instruction?: string | null;
+  tokens?: string[] | null;
   value: string;
   onChange: (value: string) => void;
   onSubmit: () => void;
@@ -13,6 +14,7 @@ export interface SentenceRewriteInteractionProps {
 export const SentenceRewriteInteraction: React.FC<SentenceRewriteInteractionProps> = ({
   prompt,
   instruction,
+  tokens,
   value,
   onChange,
   onSubmit,
@@ -79,6 +81,34 @@ export const SentenceRewriteInteraction: React.FC<SentenceRewriteInteractionProp
           lang="fr"
         />
       </div>
+
+      {tokens && tokens.length > 0 && (
+        <div className="word-bank-container" role="group" aria-label="Banque de mots">
+          <div className="word-bank-tokens">
+            {tokens.map((token, i) => (
+              <button
+                key={`${token}-${i}`}
+                type="button"
+                className="word-token token-available"
+                disabled={disabled}
+                onClick={() => {
+                  const trimmed = value.trim();
+                  if (!trimmed) {
+                    onChange(token);
+                  } else if (['.', ',', '?', '!', ';', ':'].includes(token)) {
+                    onChange(trimmed + token);
+                  } else {
+                    onChange(trimmed + ' ' + token);
+                  }
+                  inputRef.current?.focus();
+                }}
+              >
+                {token}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
 
       <div className="interaction-toolbar-wrapper">
         <AccentToolbar onInsert={handleAccentInsert} disabled={disabled} />

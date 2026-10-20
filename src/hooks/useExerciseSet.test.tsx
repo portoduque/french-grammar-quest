@@ -3038,5 +3038,178 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       expect(data?.questions[9].prompt).toBe("___ est fait, est fait.");
       expect(data?.questions[9].accepted_answers).toContain('Ce qui');
     });
+
+    it('charge la série 25.1 (fill_blank) pour les adverbes de temps (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch25-ex01'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toContain('Virginie arrive (tomorrow)');
+      expect(data?.questions[0].accepted_answers).toContain('demain / demain soir');
+      expect(data?.questions[1].prompt).toContain('Vous êtes libres (next week)');
+      expect(data?.questions[1].accepted_answers).toContain('la semaine prochaine / la semaine prochaine');
+      expect(data?.questions[2].prompt).toContain('Où vas-tu (today)');
+      expect(data?.questions[2].accepted_answers).toContain("aujourd'hui / aujourd'hui");
+      expect(data?.questions[4].prompt).toContain('Tu rentres (late)');
+      expect(data?.questions[4].accepted_answers).toContain('tard');
+      expect(data?.questions[9].prompt).toContain('Il est parti (yesterday)');
+      expect(data?.questions[9].accepted_answers).toContain('hier / avant-hier');
+    });
+
+    it('charge la série 25.2 (translation) pour la traduction d expressions de temps avec tokens (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch25-ex02'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('translation');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('Today is the first day of winter.');
+      expect(data?.questions[0].accepted_answers).toContain("Aujourd'hui, c'est le premier jour de l'hiver.");
+      expect(data?.questions[0].tokens).toBeDefined();
+      expect(data?.questions[2].prompt).toBe('I am never on time. I am always late.');
+      expect(data?.questions[2].accepted_answers).toContain('Je ne suis jamais à l\'heure. Je suis toujours en retard.');
+      expect(data?.questions[7].prompt).toBe('Are you going to the opera tonight?');
+      expect(data?.questions[7].accepted_answers).toContain('Est-ce que tu vas à l\'opéra ce soir ?');
+    });
+
+    it('charge la série 25.3 (fill_blank) pour Depuis quand vs Depuis combien de temps (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch25-ex03'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toContain('(Since when) ___ habites-tu à New York?');
+      expect(data?.questions[0].accepted_answers).toContain('Depuis quand');
+      expect(data?.questions[1].prompt).toContain('(How long) ___ est-ce que ce boulanger est installé ici?');
+      expect(data?.questions[1].accepted_answers).toContain('Depuis combien de temps');
+      expect(data?.questions[5].prompt).toContain('(How long) ___ est-ce que vous attendez?');
+      expect(data?.questions[5].accepted_answers).toContain('Depuis combien de temps / depuis');
+      expect(data?.questions[9].prompt).toContain('Cette laverie se trouve ici (for)');
+      expect(data?.questions[9].accepted_answers).toContain('depuis');
+    });
+
+    it('charge la série 25.4 (sentence_rewrite) pour les réponses avec depuis (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch25-ex04'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toContain('Depuis combien de temps travailles-tu pour cette agence de voyages? (5 ans)');
+      expect(data?.questions[0].accepted_answers).toContain('Je travaille pour cette agence de voyages depuis cinq ans.');
+      expect(data?.questions[3].prompt).toContain('Cela fait longtemps que vous êtes mariés? (14 ans)');
+      expect(data?.questions[3].accepted_answers).toContain('Nous sommes mariés depuis quatorze ans.');
+      expect(data?.questions[8].prompt).toContain('Depuis quand ne fumes-tu plus? (la semaine dernière)');
+      expect(data?.questions[8].accepted_answers).toContain('Je ne fume plus depuis la semaine dernière.');
+    });
+
+    it('charge la série 25.5 (sentence_rewrite) pour la transformation en Il y a... que (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch25-ex05'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe("J'attends depuis une demi-heure.");
+      expect(data?.questions[0].accepted_answers).toContain("Il y a une demi-heure que j'attends.");
+      expect(data?.questions[1].prompt).toBe("Cela fait quatre mois que Valérie a sa voiture.");
+      expect(data?.questions[1].accepted_answers).toContain("Il y a quatre mois que Valérie a sa voiture.");
+      expect(data?.questions[3].prompt).toBe("Il est en voyage d'affaires depuis deux jours.");
+      expect(data?.questions[3].accepted_answers).toContain("Il y a deux jours qu'il est en voyage d'affaires.");
+    });
+
+    it('charge la série 25.6 (sentence_rewrite) pour le passé composé avec adverbes intercalés (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch25-ex06'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('Ils voyagent souvent en Asie.');
+      expect(data?.questions[0].accepted_answers).toContain('Ils ont souvent voyagé en Asie.');
+      expect(data?.questions[1].prompt).toBe('On mange bien chez eux.');
+      expect(data?.questions[1].accepted_answers).toContain('On a bien mangé chez eux.');
+      expect(data?.questions[2].prompt).toBe('Elle dépense beaucoup.');
+      expect(data?.questions[2].accepted_answers).toContain('Elle a beaucoup dépensé.');
+      expect(data?.questions[4].prompt).toBe('Nous ne travaillons pas assez.');
+      expect(data?.questions[4].accepted_answers).toContain("Nous n'avons pas assez travaillé.");
+      expect(data?.questions[8].prompt).toBe("Il s'exprime toujours très mal.");
+      expect(data?.questions[8].accepted_answers).toContain("Il s'est toujours très mal exprimé.");
+    });
+
+    it('charge la série 25.7 (fill_blank) pour les mots interrogatifs (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch25-ex07'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toContain('(How many) ___ livres lisez-vous?');
+      expect(data?.questions[0].accepted_answers).toContain('Combien de');
+      expect(data?.questions[1].prompt).toContain('(How) ___ allons-nous à la plage?');
+      expect(data?.questions[1].accepted_answers).toContain('Comment');
+      expect(data?.questions[2].prompt).toContain('(Who) ___ loue la maison bleue?');
+      expect(data?.questions[2].accepted_answers).toContain('Qui');
+      expect(data?.questions[3].prompt).toContain('(What) ___ pensez-vous de ce roman?');
+      expect(data?.questions[3].accepted_answers).toContain('Que');
+      expect(data?.questions[4].prompt).toContain("(How much) ___ coûte l'appartement de Stéphane?");
+      expect(data?.questions[4].accepted_answers).toContain('Combien');
+      expect(data?.questions[5].prompt).toContain('(Where) ___ travaille votre mari?');
+      expect(data?.questions[5].accepted_answers).toContain('Où');
+      expect(data?.questions[6].prompt).toContain('(When) ___ vont-ils au théâtre?');
+      expect(data?.questions[6].accepted_answers).toContain('Quand');
+      expect(data?.questions[7].prompt).toContain('(Why) ___ étudiez-vous le français?');
+      expect(data?.questions[7].accepted_answers).toContain('Pourquoi');
+    });
+
+    it('charge la série 25.8 (translation) pour la traduction des adverbes de lieu (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch25-ex08'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('translation');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('He planted flowers everywhere.');
+      expect(data?.questions[0].accepted_answers).toContain('Il a planté des fleurs partout.');
+      expect(data?.questions[1].prompt).toBe('Do you want to live here?');
+      expect(data?.questions[1].accepted_answers).toContain('Voulez-vous vivre ici ?');
+      expect(data?.questions[2].prompt).toBe('My car is parked just behind yours.');
+      expect(data?.questions[2].accepted_answers).toContain('Ma voiture est garée juste derrière la vôtre.');
+      expect(data?.questions[3].prompt).toBe("We'll go somewhere else.");
+      expect(data?.questions[3].accepted_answers).toContain('Nous irons ailleurs.');
+      expect(data?.questions[4].prompt).toBe('He is outside.');
+      expect(data?.questions[4].accepted_answers).toContain('Il est dehors.');
+      expect(data?.questions[7].prompt).toBe('I see strange things here and there.');
+      expect(data?.questions[7].accepted_answers).toContain('Je vois des choses bizarres ça et là.');
+      expect(data?.questions[9].prompt).toBe('Come sit next to me.');
+      expect(data?.questions[9].accepted_answers).toContain('Venez vous asseoir près de moi.');
+    });
   });
 });
