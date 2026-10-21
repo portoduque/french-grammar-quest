@@ -8,7 +8,6 @@ import DashboardPage from '@/pages/DashboardPage';
 import LearningPathPage from '@/pages/LearningPathPage';
 import { ChapterPage } from '@/pages/ChapterPage';
 import { ReviewPage } from '@/pages/ReviewPage';
-import { ReferencesPage } from '@/pages/ReferencesPage';
 import { evaluateAnswer } from '@/utils/answerEvaluator';
 
 // Mock do Supabase
@@ -81,7 +80,7 @@ describe('E2E Complete User Journey Flow (PRD §24.1 — Etapa 8)', () => {
     });
   });
 
-  it('executa a jornada completa: convite -> login -> dashboard -> trilha -> teoria -> correção FLE -> referências -> logout', async () => {
+  it('executa a jornada completa: convite -> login -> dashboard -> trilha -> teoria -> correção FLE -> caderno de erros -> logout', async () => {
     // 1. Início na tela de Login com e-mail convidado
     const { unmount } = render(
       <QueryClientProvider client={queryClient}>
@@ -178,23 +177,7 @@ describe('E2E Complete User Journey Flow (PRD §24.1 — Etapa 8)', () => {
 
     unmountChapter();
 
-    // 7. Consulta a página de Referências Gramaticais FLE
-    const { unmount: unmountRef } = render(
-      <QueryClientProvider client={queryClient}>
-        <MemoryRouter initialEntries={['/references']}>
-          <Routes>
-            <Route path="/references" element={<ReferencesPage />} />
-          </Routes>
-        </MemoryRouter>
-      </QueryClientProvider>
-    );
-
-    expect(screen.getByText(/Références & Tables Grammaticales/i)).toBeInTheDocument();
-    expect(screen.getByText('Verbe Auxiliaire : Être')).toBeInTheDocument();
-
-    unmountRef();
-
-    // 8. Consulta o Caderno de Revisão Inteligente (Mon Coffre d'Erreurs)
+    // 7. Consulta o Caderno de Revisão Inteligente (Mon Coffre d'Erreurs)
     const { unmount: unmountReview } = render(
       <QueryClientProvider client={queryClient}>
         <MemoryRouter initialEntries={['/review']}>
@@ -212,7 +195,7 @@ describe('E2E Complete User Journey Flow (PRD §24.1 — Etapa 8)', () => {
 
     unmountReview();
 
-    // 9. Logout
+    // 8. Logout
     await useAuthStore.getState().logout();
     expect(useAuthStore.getState().user).toBeNull();
   });

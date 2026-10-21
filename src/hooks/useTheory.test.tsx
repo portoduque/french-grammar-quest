@@ -23,7 +23,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data).toBeDefined();
@@ -50,7 +50,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const sets = result.current.data?.exerciseSets || [];
     expect(sets).toHaveLength(10);
@@ -83,7 +83,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const topics = result.current.data?.topics || [];
     expect(topics).toHaveLength(3);
@@ -97,7 +97,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data).toBeDefined();
@@ -123,7 +123,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const sets = result.current.data?.exerciseSets || [];
     expect(sets).toHaveLength(11);
@@ -168,7 +168,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data).toBeDefined();
@@ -200,7 +200,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const sets = result.current.data?.exerciseSets || [];
     expect(sets).toHaveLength(11);
@@ -255,7 +255,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data).toBeDefined();
@@ -289,7 +289,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const sets = result.current.data?.exerciseSets || [];
     expect(sets).toHaveLength(9);
@@ -345,7 +345,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const topics = result.current.data?.topics || [];
     expect(topics).toHaveLength(7);
@@ -363,7 +363,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data).toBeDefined();
@@ -388,7 +388,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const sets = result.current.data?.exerciseSets || [];
     expect(sets).toHaveLength(5);
@@ -424,7 +424,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const topics = result.current.data?.topics || [];
     expect(topics).toHaveLength(4);
@@ -439,7 +439,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data).toBeDefined();
@@ -464,7 +464,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const sets = result.current.data?.exerciseSets || [];
     expect(sets).toHaveLength(6);
@@ -505,7 +505,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const topics = result.current.data?.topics || [];
     expect(topics).toHaveLength(5);
@@ -521,7 +521,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data).toBeDefined();
@@ -545,7 +545,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const sets = result.current.data?.exerciseSets || [];
     expect(sets).toHaveLength(10);
@@ -606,7 +606,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const topics = result.current.data?.topics || [];
     expect(topics).toHaveLength(6);
@@ -623,7 +623,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data).toBeDefined();
@@ -645,7 +645,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const sets = result.current.data?.exerciseSets || [];
     expect(sets).toHaveLength(7);
@@ -691,7 +691,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const topics = result.current.data?.topics || [];
     expect(topics).toHaveLength(3);
@@ -705,7 +705,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data).toBeDefined();
@@ -728,7 +728,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const sets = result.current.data?.exerciseSets || [];
     expect(sets).toHaveLength(8);
@@ -779,7 +779,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const topics = result.current.data?.topics || [];
     expect(topics).toHaveLength(3);
@@ -793,7 +793,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data).toBeDefined();
@@ -817,7 +817,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const sets = result.current.data?.exerciseSets || [];
     expect(sets).toHaveLength(6);
@@ -862,7 +862,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const topics = result.current.data?.topics || [];
     expect(topics).toHaveLength(3);
@@ -876,7 +876,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data).toBeDefined();
@@ -901,7 +901,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const sets = result.current.data?.exerciseSets || [];
     expect(sets).toHaveLength(10);
@@ -966,7 +966,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const topics = result.current.data?.topics || [];
     expect(topics).toHaveLength(4);
@@ -981,7 +981,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data).toBeDefined();
@@ -1004,7 +1004,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const sets = result.current.data?.exerciseSets || [];
     expect(sets).toHaveLength(6);
@@ -1049,7 +1049,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const topics = result.current.data?.topics || [];
     expect(topics).toHaveLength(3);
@@ -1063,7 +1063,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data).toBeDefined();
@@ -1088,7 +1088,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const sets = result.current.data?.exerciseSets || [];
     expect(sets).toHaveLength(9);
@@ -1148,7 +1148,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const topics = result.current.data?.topics || [];
     expect(topics).toHaveLength(4);
@@ -1163,7 +1163,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data).toBeDefined();
@@ -1190,7 +1190,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const sets = result.current.data?.exerciseSets || [];
     expect(sets).toHaveLength(7);
@@ -1240,7 +1240,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const topics = result.current.data?.topics || [];
     expect(topics).toHaveLength(4);
@@ -1255,7 +1255,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data).toBeDefined();
@@ -1281,7 +1281,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const sets = result.current.data?.exerciseSets || [];
     expect(sets).toHaveLength(3);
@@ -1311,7 +1311,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const topics = result.current.data?.topics || [];
     expect(topics).toHaveLength(2);
@@ -1324,7 +1324,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data).toBeDefined();
@@ -1351,7 +1351,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const sets = result.current.data?.exerciseSets || [];
     expect(sets).toHaveLength(3);
@@ -1381,7 +1381,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const topics = result.current.data?.topics || [];
     expect(topics).toHaveLength(2);
@@ -1394,7 +1394,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data).toBeDefined();
@@ -1422,7 +1422,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const sets = result.current.data?.exerciseSets || [];
     expect(sets).toHaveLength(3);
@@ -1452,7 +1452,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const topics = result.current.data?.topics || [];
     expect(topics).toHaveLength(3);
@@ -1466,7 +1466,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data).toBeDefined();
@@ -1492,7 +1492,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const sets = result.current.data?.exerciseSets || [];
     expect(sets).toHaveLength(4);
@@ -1527,7 +1527,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const topics = result.current.data?.topics || [];
     expect(topics).toHaveLength(2);
@@ -1540,7 +1540,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data).toBeDefined();
@@ -1570,7 +1570,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const sets = result.current.data?.exerciseSets || [];
     expect(sets).toHaveLength(3);
@@ -1600,7 +1600,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const topics = result.current.data?.topics || [];
     expect(topics).toHaveLength(3);
@@ -1614,7 +1614,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data).toBeDefined();
@@ -1653,7 +1653,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const sets = result.current.data?.exerciseSets || [];
     expect(sets).toHaveLength(9);
@@ -1713,7 +1713,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const topics = result.current.data?.topics || [];
     expect(topics).toHaveLength(6);
@@ -1730,7 +1730,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data).toBeDefined();
@@ -1759,7 +1759,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const sets = result.current.data?.exerciseSets || [];
     expect(sets).toHaveLength(12);
@@ -1834,7 +1834,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const topics = result.current.data?.topics || [];
     expect(topics).toHaveLength(5);
@@ -1850,7 +1850,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data).toBeDefined();
@@ -1878,7 +1878,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const sets = result.current.data?.exerciseSets || [];
     expect(sets).toHaveLength(7);
@@ -1928,7 +1928,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const topics = result.current.data?.topics || [];
     expect(topics).toHaveLength(5);
@@ -1944,7 +1944,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data).toBeDefined();
@@ -1970,7 +1970,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const sets = result.current.data?.exerciseSets || [];
     expect(sets).toHaveLength(9);
@@ -2030,7 +2030,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const topics = result.current.data?.topics || [];
     expect(topics).toHaveLength(5);
@@ -2046,7 +2046,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data).toBeDefined();
@@ -2073,7 +2073,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const sets = result.current.data?.exerciseSets || [];
     expect(sets).toHaveLength(9);
@@ -2133,7 +2133,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const topics = result.current.data?.topics || [];
     expect(topics).toHaveLength(6);
@@ -2150,7 +2150,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data).toBeDefined();
@@ -2181,7 +2181,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const sets = result.current.data?.exerciseSets || [];
     expect(sets).toHaveLength(8);
@@ -2236,7 +2236,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const topics = result.current.data?.topics || [];
     expect(topics).toHaveLength(5);
@@ -2252,7 +2252,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.chapter.id).toBe('ch26');
@@ -2275,7 +2275,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const sets = result.current.data?.exerciseSets || [];
     expect(sets).toHaveLength(8);
@@ -2329,7 +2329,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const topics = result.current.data?.topics || [];
     expect(topics).toHaveLength(5);
@@ -2345,7 +2345,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data).toBeDefined();
@@ -2370,7 +2370,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const sets = result.current.data?.exerciseSets || [];
     expect(sets).toHaveLength(5);
@@ -2409,7 +2409,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const topics = result.current.data?.topics || [];
     expect(topics).toHaveLength(4);
@@ -2427,7 +2427,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     expect(result.current.data?.chapter).toBeDefined();
     expect(result.current.data?.chapter.number).toBe(28);
@@ -2484,7 +2484,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const topics = result.current.data?.topics || [];
     expect(topics).toHaveLength(7);

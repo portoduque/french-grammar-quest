@@ -22,7 +22,6 @@ const ReviewPage = lazy(() => import('@/pages/ReviewPage'));
 const ProfilePage = lazy(() => import('@/pages/ProfilePage'));
 const ExercisePage = lazy(() => import('@/pages/ExercisePage'));
 const AdminPage = lazy(() => import('@/pages/AdminPage'));
-const ReferencesPage = lazy(() => import('@/pages/ReferencesPage'));
 const LoginPage = lazy(() => import('@/pages/LoginPage'));
 const NotFoundPage = lazy(() => import('@/pages/NotFoundPage'));
 
@@ -63,7 +62,6 @@ export const AppRouter: React.FC = () => {
             <Route path="/chapters" element={<LearningPathPage />} />
             <Route path="/chapters/:chapterId" element={<ChapterPage />} />
             <Route path="/review" element={<ReviewPage />} />
-            <Route path="/references" element={<ReferencesPage />} />
             <Route path="/profile" element={<ProfilePage />} />
             <Route
               path="/admin"

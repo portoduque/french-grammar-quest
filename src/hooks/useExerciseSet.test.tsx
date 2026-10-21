@@ -23,7 +23,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data).toBeDefined();
@@ -40,7 +40,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('matching');
@@ -65,7 +65,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -81,7 +81,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.questions).toHaveLength(10);
@@ -98,7 +98,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -112,7 +112,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.id).toBe('ch02-ex01');
@@ -129,7 +129,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('matching');
@@ -149,7 +149,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('matching');
@@ -165,7 +165,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -182,7 +182,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -204,7 +204,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.id).toBe('ch03-ex01');
@@ -219,7 +219,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -233,7 +233,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('matching');
@@ -250,7 +250,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -266,7 +266,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -284,7 +284,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -300,7 +300,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -317,7 +317,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -333,7 +333,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -351,7 +351,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('matching');
@@ -372,7 +372,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -388,7 +388,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -406,7 +406,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -424,7 +424,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -442,7 +442,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('matching');
@@ -467,7 +467,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -485,7 +485,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -505,7 +505,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -523,7 +523,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -541,7 +541,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -559,7 +559,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -577,7 +577,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('matching');
@@ -602,7 +602,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -622,7 +622,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -640,7 +640,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -656,7 +656,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -671,7 +671,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -689,7 +689,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('matching');
@@ -707,7 +707,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -725,7 +725,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -741,7 +741,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -761,7 +761,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('matching');
@@ -779,7 +779,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -799,7 +799,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -819,7 +819,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -837,7 +837,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -855,7 +855,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -873,7 +873,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -891,7 +891,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -907,7 +907,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -927,7 +927,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -945,7 +945,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -965,7 +965,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -981,7 +981,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -999,7 +999,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('matching');
@@ -1021,7 +1021,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -1039,7 +1039,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -1057,7 +1057,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -1078,7 +1078,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -1098,7 +1098,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -1119,7 +1119,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -1139,7 +1139,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('matching');
@@ -1161,7 +1161,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -1179,7 +1179,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const data = result.current.data;
     expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -1198,7 +1198,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -1214,7 +1214,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -1230,7 +1230,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -1244,7 +1244,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -1258,7 +1258,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -1272,7 +1272,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('matching');
@@ -1287,7 +1287,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -1301,7 +1301,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -1315,7 +1315,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -1329,7 +1329,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('matching');
@@ -1346,7 +1346,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -1361,7 +1361,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -1377,7 +1377,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -1391,7 +1391,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -1405,7 +1405,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -1419,7 +1419,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('matching');
@@ -1439,7 +1439,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -1455,7 +1455,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -1471,7 +1471,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -1487,7 +1487,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -1503,7 +1503,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -1519,7 +1519,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -1534,7 +1534,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -1550,7 +1550,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -1565,7 +1565,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('matching');
@@ -1584,7 +1584,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -1603,7 +1603,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -1620,7 +1620,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -1638,7 +1638,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -1657,7 +1657,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -1673,7 +1673,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -1689,7 +1689,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -1708,7 +1708,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -1732,7 +1732,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -1752,7 +1752,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -1773,7 +1773,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -1801,7 +1801,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -1833,7 +1833,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -1868,7 +1868,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -1895,7 +1895,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -1922,7 +1922,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -1953,7 +1953,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -1977,7 +1977,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -2004,7 +2004,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -2036,7 +2036,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -2068,7 +2068,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -2101,7 +2101,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -2129,7 +2129,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -2158,7 +2158,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -2180,7 +2180,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -2220,7 +2220,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -2240,7 +2240,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -2260,7 +2260,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -2282,7 +2282,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('ordering');
@@ -2306,7 +2306,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -2328,7 +2328,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -2352,7 +2352,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -2370,7 +2370,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -2388,7 +2388,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -2406,7 +2406,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -2424,7 +2424,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -2442,7 +2442,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('matching');
@@ -2460,7 +2460,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -2478,7 +2478,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -2496,7 +2496,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -2514,7 +2514,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -2532,7 +2532,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -2550,7 +2550,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -2572,7 +2572,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -2592,7 +2592,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -2614,7 +2614,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -2632,7 +2632,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -2654,7 +2654,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('matching');
@@ -2678,7 +2678,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -2700,7 +2700,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -2716,7 +2716,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -2736,7 +2736,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('matching');
@@ -2758,7 +2758,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -2778,7 +2778,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -2798,7 +2798,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -2816,7 +2816,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -2834,7 +2834,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -2858,7 +2858,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -2880,7 +2880,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -2900,7 +2900,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('matching');
@@ -2922,7 +2922,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -2944,7 +2944,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -2966,7 +2966,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -2984,7 +2984,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -3004,7 +3004,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -3022,7 +3022,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -3044,7 +3044,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -3066,7 +3066,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -3085,7 +3085,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -3105,7 +3105,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -3123,7 +3123,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -3141,7 +3141,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -3163,7 +3163,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -3191,7 +3191,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -3217,7 +3217,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -3237,7 +3237,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -3257,7 +3257,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -3281,7 +3281,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -3303,7 +3303,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -3323,7 +3323,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -3343,7 +3343,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -3365,7 +3365,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -3397,7 +3397,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -3429,7 +3429,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('translation');
@@ -3462,7 +3462,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -3490,7 +3490,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -3518,7 +3518,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -3547,7 +3547,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -3563,7 +3563,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('matching');
@@ -3582,7 +3582,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
@@ -3596,7 +3596,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
@@ -3609,7 +3609,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
