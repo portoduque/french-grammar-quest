@@ -1572,6 +1572,7 @@ dialog.modal::backdrop {
     box-sizing: border-box;
     width: 100%;
     max-width: 100vw;
+    overflow-x: hidden;
   }
 
   .top-status-left {
@@ -1608,17 +1609,22 @@ dialog.modal::backdrop {
     font-size: 1.1rem;
   }
 
+  .top-status-right {
+    flex-shrink: 0;
+    overflow: visible;
+  }
+
   .theme-mini-toggle {
-    width: 34px;
-    height: 34px;
-    min-width: 34px;
-    min-height: 34px;
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    min-height: 32px;
   }
 
   .theme-mini-toggle::before {
     content: '';
     position: absolute;
-    inset: -5px;
+    inset: -2px;
   }
 }
 
@@ -1798,7 +1804,7 @@ dialog.modal::backdrop {
 .theme-mini-toggle::before {
   content: '';
   position: absolute;
-  inset: -4px;
+  inset: -2px;
 }
 
 .theme-mini-toggle:hover {
@@ -1821,6 +1827,8 @@ dialog.modal::backdrop {
   border-radius: var(--radius-full);
   border: 1px solid var(--border-default);
   gap: 2px;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .toggle-btn {
@@ -1833,6 +1841,29 @@ dialog.modal::backdrop {
   font-weight: 600;
   cursor: pointer;
   transition: all var(--transition-fast);
+}
+
+@media (max-width: 360px) {
+  .path-controls {
+    width: 100%;
+  }
+
+  .view-toggle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .toggle-btn {
+    flex: 1;
+    padding: 6px 4px;
+    font-size: 0.75rem;
+    text-align: center;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .toggle-btn:hover {
@@ -1938,6 +1969,19 @@ dialog.modal::backdrop {
   }
 }
 
+@media (max-width: 360px) {
+  .path-offset-left {
+    transform: translateX(-28px);
+  }
+  .path-offset-right {
+    transform: translateX(28px);
+  }
+  .path-node-title {
+    max-width: 105px;
+    font-size: 0.6875rem;
+  }
+}
+
 /* 3D Tactile Nodes */
 .path-node {
   width: 72px;
@@ -2027,6 +2071,8 @@ dialog.modal::backdrop {
 .path-node-active-badge {
   position: absolute;
   top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
   background: #ffffff;
   color: #0f172a;
   font-size: 0.6875rem;
@@ -2036,14 +2082,19 @@ dialog.modal::backdrop {
   box-shadow: var(--shadow-sm);
   white-space: nowrap;
   animation: pulseGlow 1.8s infinite;
+  pointer-events: none;
 }
 
 .path-node-stars {
   position: absolute;
   bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 0.75rem;
   color: var(--accent-amber);
   letter-spacing: 1px;
+  white-space: nowrap;
+  pointer-events: none;
 }
 
 .path-node-title {
@@ -2271,6 +2322,53 @@ dialog.modal::backdrop {
   color: var(--accent-emerald);
 }
 
+.chapter-blocked-alert {
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  background-color: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-sizing: border-box;
+}
+
+.chapter-blocked-icon {
+  font-size: 1.75rem;
+  flex-shrink: 0;
+}
+
+.chapter-blocked-title {
+  color: #EF4444;
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.chapter-blocked-desc {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--color-text-muted, var(--text-muted));
+}
+
+@media (max-width: 360px) {
+  .chapter-blocked-alert {
+    padding: 0.75rem 0.625rem;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .chapter-blocked-icon {
+    font-size: 1.35rem;
+  }
+  .chapter-blocked-title {
+    font-size: 0.875rem;
+  }
+  .chapter-blocked-desc {
+    font-size: 0.75rem;
+  }
+}
+
 .chapter-hero-title {
   font-size: 1.875rem;
   font-weight: 800;
@@ -2333,8 +2431,13 @@ dialog.modal::backdrop {
   }
 
   .chapter-tab-btn {
-    padding: 6px 9px;
+    padding: 8px 12px;
     font-size: 0.8125rem;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
   }
 
   .tab-desktop-text {
@@ -2343,9 +2446,43 @@ dialog.modal::backdrop {
 }
 
 @media (max-width: 360px) {
+  .chapter-overview-card {
+    padding: 12px 10px;
+    margin-bottom: var(--space-4);
+    border-radius: var(--radius-lg);
+  }
+
+  .chapter-hero-title {
+    font-size: 1.15rem;
+    line-height: 1.25;
+    margin-bottom: 8px;
+    word-break: break-word;
+  }
+
+  .chapter-overview-meta {
+    gap: 4px;
+    margin-bottom: var(--space-4);
+  }
+
+  .chapter-overview-meta .badge {
+    font-size: 0.6875rem;
+    padding: 2px 6px;
+  }
+
+  .chapter-tabs {
+    gap: 3px;
+    padding-top: var(--space-2);
+    padding-bottom: 2px;
+  }
+
   .chapter-tab-btn {
-    padding: 5px 7px;
+    padding: 8px 7px;
     font-size: 0.75rem;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
   }
 }
 
@@ -2367,6 +2504,20 @@ dialog.modal::backdrop {
 .theory-container {
   padding: var(--space-6) var(--space-8);
   border-radius: var(--radius-xl);
+}
+
+@media (max-width: 480px) {
+  .theory-container {
+    padding: var(--space-4) var(--space-3);
+    border-radius: var(--radius-lg);
+  }
+}
+
+@media (max-width: 360px) {
+  .theory-container {
+    padding: 12px 8px;
+    border-radius: var(--radius-md);
+  }
 }
 
 @media (max-width: 640px) {
@@ -2644,6 +2795,43 @@ dialog.modal::backdrop {
 
   .tip-card-icon {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .tip-card {
+    padding: 12px 10px;
+    gap: 8px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .tip-card-icon {
+    font-size: 1.35rem;
+    padding-top: 2px;
+  }
+
+  .tip-card-body h3 {
+    font-size: 0.95rem;
+    line-height: 1.3;
+    margin-bottom: 4px;
+    word-break: break-word;
+  }
+
+  .tip-card-body p {
+    font-size: 0.8125rem;
+    line-height: 1.45;
+    margin-bottom: 8px;
+    word-break: break-word;
+  }
+
+  .tip-example {
+    padding: 8px 10px;
+    font-size: 0.8125rem;
+    line-height: 1.45;
+    word-break: break-word;
+    overflow-wrap: break-word;
   }
 }
 

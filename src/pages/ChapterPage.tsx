@@ -114,23 +114,14 @@ export const ChapterPage: React.FC = () => {
       {editorialStatus === 'blocked' && (
         <div
           role="alert"
-          style={{
-            padding: '1rem 1.25rem',
-            marginBottom: '1.5rem',
-            borderRadius: '10px',
-            backgroundColor: 'rgba(239, 68, 68, 0.08)',
-            border: '1px solid rgba(239, 68, 68, 0.3)',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '1rem'
-          }}
+          className="chapter-blocked-alert"
         >
-          <span style={{ fontSize: '1.75rem' }}>⚠️</span>
+          <span className="chapter-blocked-icon" aria-hidden="true">⚠️</span>
           <div>
-            <strong style={{ color: '#EF4444', fontSize: '1rem', display: 'block', marginBottom: '0.2rem' }}>
+            <strong className="chapter-blocked-title">
               Chapitre temporairement suspendu pour révision éditoriale
             </strong>
-            <p style={{ margin: 0, fontSize: '0.875rem', color: 'var(--color-text-muted)' }}>
+            <p className="chapter-blocked-desc">
               Les exercices de ce chapitre sont temporairement inaccessibles pendant l'audit. Votre progression historique et vos points acquis restent intégralement préservés.
             </p>
           </div>
@@ -325,7 +316,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Les Deux Types de Verbes en -IR</h3>
                   <p>
-                    Au 2e groupe (régulier), le pluriel s'enrichit de l'interfixe <strong>-iss-</strong>. Au 3e groupe (irrégulier), pas d'interfixe et le radical du singulier perd souvent sa consonne finale !
+                    No 2º grupo (regular), o plural ganha o clássico interfixo fonético <strong>-iss-</strong> (*nous finissons*). Já no 3º grupo (irregular), não há esse interfixo e o radical do singular frequentemente perde sua consoante final!
                   </p>
                   <div className="tip-example" lang="fr">
                     • <em>Finir</em> (type 1) → <strong>Nous finissons</strong>, <strong>ils finissent</strong><br />
@@ -339,7 +330,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Les « Faux -IR » Conjugués comme des -ER</h3>
                   <p>
-                    Ces 4 verbes terminent en <em>-ir</em>, mais s'habillent avec les terminaisons des verbes en <em>-er</em> au présent :
+                    Estes 4 verbos terminam em <em>-ir</em>, mas vestem com orgulho as terminações idênticas aos verbos regulares em <em>-er</em> no presente do indicativo:
                   </p>
                   <div className="tip-example" lang="fr">
                     • <em>Ouvrir</em> → <strong>J'ouvre</strong>, <strong>tu ouvres</strong>, <strong>il ouvre</strong><br />
@@ -355,7 +346,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Verbes en -RE : Le 'D' à la 3e Personne</h3>
                   <p>
-                    Avec <em>il / elle / on</em>, ne rajoutez rien ! Le <strong>d</strong> du radical reste nu et silencieux :
+                    Com os pronomes <em>il / elle / on</em>, não acrescente terminação nenhuma! O <strong>d</strong> do radical permanece nu e completamente silencioso na pronúncia:
                   </p>
                   <div className="tip-example" lang="fr">
                     • <em>Vendre</em> → <strong>Il vend</strong> (se prononce [vɑ̃])<br />
@@ -370,7 +361,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>La Famille « Prendre » et ses Pièges</h3>
                   <p>
-                    Attention aux changements de radical spectaculaires de <em>prendre</em>, <em>apprendre</em>, <em>comprendre</em> :
+                    Atenção às mudanças de radical expressivas de <em>prendre</em>, <em>apprendre</em> e <em>comprendre</em>: o <strong>d</strong> some em *nous/vous* e a consoante <strong>n</strong> dobra no plural de *ils/elles*!
                   </p>
                   <div className="tip-example" lang="fr">
                     • Avec <em>nous / vous</em> : le <strong>d</strong> disparaît ! → <strong>Nous prenons</strong>, <strong>vous comprenez</strong><br />
@@ -384,7 +375,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>L'Inversion et le « -t- » Euphonique</h3>
                   <p>
-                    Quand le verbe se termine par une voyelle à la 3e personne du singulier, insérez obligatoirement un <strong>-t-</strong> entre traits d'union :
+                    Na interrogação por inversão formal, quando o verbo termina por vogal na 3ª pessoa do singular, insere-se obrigatoriamente um <strong>-t-</strong> entre hifens para evitar o choque sonoro de duas vogais:
                   </p>
                   <div className="tip-example" lang="fr">
                     ❌ <em>*Parle-elle russe ?</em> → ✅ <strong>Parle-t-elle russe ?</strong><br />
@@ -399,7 +390,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>La Règle d'Or de « Ni ... Ni ... » (Cruciale !)</h3>
                   <p>
-                    C'est l'un des pièges les plus fréquents pour les lusophones :
+                    Uma das armadilhas mais frequentes para lusófonos: com artigos definidos (*le, la, l', les*), mantenha os artigos! Mas com artigos partitivos (*du, de la, des*) ou indefinidos, os artigos <strong>desaparecem por completo</strong>:
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>Articles définis (le, la, l', les)</strong> : ON LES GARDE !<br />
@@ -417,7 +408,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Être vs Avoir dans les États Physiques et l'Âge</h3>
                   <p>
-                    Pour exprimer les sensations corporelles, les besoins vitaux et l'âge, le français utilise <strong>toujours AVOIR</strong> (et jamais *être*) :
+                    Para expressar sensações físicas corporais, necessidades vitais e idade, o francês utiliza <strong>sempre o verbo AVOIR</strong> (ter) e nunca *être* (ser/estar):
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>J'ai faim</strong>, <strong>j'ai soif</strong>, <strong>j'ai froid</strong>, <strong>j'ai chaud</strong><br />
@@ -432,7 +423,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Le Piège Phonétique : « Ils ont » [il-z-ɔ̃] vs « Ils sont » [il-s-ɔ̃]</h3>
                   <p>
-                    La différence entre <em>Avoir</em> et <em>Être</em> à la 3e personne du pluriel repose sur la vibration des cordes vocales :
+                    A diferença vital entre <em>Avoir</em> e <em>Être</em> na 3ª pessoa do plural depende exclusivamente da vibração das cordas vocais: [z] sonoro para ter e [s] surdo para ser/estar!
                   </p>
                   <div className="tip-example" lang="fr">
                     • <em>Ils ont</em> → Liaison sonore <strong>[z]</strong> (comme le bourdonnement d'une abeille) ➔ <em>Ils ont une maison</em><br />
@@ -446,7 +437,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Savoir vs Connaître : La Règle Infaillible</h3>
                   <p>
-                    La distinction est purement syntaxique et ne laisse aucune place au doute :
+                    A distinção entre saber e conhecer é puramente sintática e não deixa dúvidas: <strong>savoir</strong> conecta-se a verbos no infinitivo ou orações com *que*, enquanto <strong>connaître</strong> acompanha diretamente pessoas ou lugares (substantivos):
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>Savoir + Verbe à l'infinitif</strong> : <em>Elle sait nager</em>, <em>il sait jouer du piano</em><br />
@@ -461,7 +452,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>L'Inversion Formelle de Pouvoir : « Puis-je »</h3>
                   <p>
-                    En style soutenu ou lors d'une demande polie avec inversion, le français refuse la forme <em>*Peux-je</em> et emploie toujours <strong>Puis-je</strong> :
+                    Em estilo formal ou pedidos de cortesia por inversão, o francês rejeita a forma *Peux-je* e emprega sempre a elegante forma irregular <strong>Puis-je</strong>:
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>Puis-je vous aider ?</strong> (Puis-je vous être utile ?)<br />
@@ -475,7 +466,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Verbes Défectifs Impersonnels : « Il faut » et « Il pleut »</h3>
                   <p>
-                    Ces deux verbes n'ont pas de sujet humain. Ils se conjuguent uniquement à la 3e personne du singulier avec le pronom neutre <strong>il</strong> :
+                    Estes dois verbos impessoais não possuem sujeito humano. Conjugam-se única e exclusivamente na 3ª pessoa do singular com o pronome neutro <strong>il</strong>:
                   </p>
                   <div className="tip-example" lang="fr">
                     • <em>Falloir</em> → <strong>Il faut</strong> apprendre les conjugaisons.<br />
@@ -489,7 +480,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Le Trio Euphonique : Beau, Nouveau, Vieux</h3>
                   <p>
-                    Devant un nom masculin commençant par une voyelle ou un <em>h</em> muet, ces trois adjectifs prennent une forme en <strong>-l</strong> pour préserver l'harmonie sonore :
+                    Diante de um substantivo masculino singular iniciado por vogal ou <em>h</em> mudo, estes três adjetivos ganham uma forma especial em <strong>-l</strong> para garantir a harmonia e fluidez sonora:
                   </p>
                   <div className="tip-example" lang="fr">
                     • <em>Un beau garçon</em> ➔ mais <strong>Un bel appartement</strong><br />
@@ -506,7 +497,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Aller & les Contractions de Lieu : « Au / Aux »</h3>
                   <p>
-                    Pour indiquer une destination avec le verbe <em>aller</em>, utilisez la préposition <strong>à</strong> qui se contracte obligatoirement avec les articles masculins et pluriels (ne dites jamais <em>*en cinéma</em> !) :
+                    Para indicar destino ou deslocamento com o verbo <em>aller</em>, use a preposição <strong>à</strong>, que se contrai obrigatoriamente com os artigos masculinos e plurais (nunca use *en* para cidades ou substantivos masculinos comuns!):
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>au</strong> (+ masc. sing.) : <em>Je vais <strong>au</strong> cinéma, <strong>au</strong> théâtre</em><br />
@@ -522,7 +513,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Le Futur Proche : Aller + Infinitif</h3>
                   <p>
-                    C'est la périphrase temporelle la plus vivante du français oral pour exprimer un projet immédiat ou certain. La négation <strong>ne... pas</strong> entoure UNIQUEMENT l'auxiliaire <em>aller</em> :
+                    É a estrutura temporal mais espontânea e comum do francês falado para expressar intenções ou ações imediatas certas. A negação <strong>ne... pas</strong> abraça UNICAMENTE o verbo auxiliar <em>aller</em>:
                   </p>
                   <div className="tip-example" lang="fr">
                     • <em>Affirmation :</em> <strong>Je vais acheter</strong> une voiture en mai.<br />
@@ -537,7 +528,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Le Passé Récent & l'Élision Obligatoire « D' »</h3>
                   <p>
-                    Construit avec <strong>venir au présent + de + infinitif</strong>, il traduit « acabou de... ». Attention à l'apostrophe obligatoire devant une voyelle ou un <em>h</em> muet :
+                    Construído com <strong>venir no presente + de + infinitivo</strong>, traduz perfeitamente o nosso 'acabar de...'. Atenção à elisão obrigatória de <em>de</em> para <strong>d'</strong> diante de vogal ou <em>h</em> mudo:
                   </p>
                   <div className="tip-example" lang="fr">
                     • ❌ <em>*Il vient de annuler</em> ➔ ✅ <strong>Il vient d'annuler</strong> son vol.<br />
@@ -552,7 +543,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Les Multiples Visages de « Tenir »</h3>
                   <p>
-                    Conjugué exactement comme <em>venir</em>, <em>tenir</em> est un caméléon idiomatique :
+                    Conjugado exatamente igual ao verbo <em>venir</em>, o verbo <em>tenir</em> é um verdadeiro camaleão idiomático em expressões consagradas:
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>Tenir ses promesses :</strong> respecter ses engagements.<br />
@@ -569,7 +560,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Le Verbe Faire : « Vous faites » et [fəzɔ̃]</h3>
                   <p>
-                    Deux pièges morphologiques et une particularité phonétique à retenir absolument :
+                    Duas irregularidades morfológicas decisivas e uma peculiaridade fonética histórica para gravar para sempre no verbo <em>faire</em>:
                   </p>
                   <div className="tip-example" lang="fr">
                     • ❌ <em>*Vous faisez</em> ➔ ✅ <strong>Vous faites</strong><br />
@@ -584,7 +575,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>La Forme Causative : Faire + Infinitif</h3>
                   <p>
-                    Pour exprimer l'idée de « faire faire par autrui » ou « faire en sorte que quelque chose se produise » :
+                    Para expressar a ideia de 'mandar fazer', 'fazer com que outro faça' ou contratar um serviço profissional, use <strong>faire + infinitivo</strong>:
                   </p>
                   <div className="tip-example" lang="fr">
                     • <em>Elle écrit la lettre</em> (elle-même) ➔ <strong>Elle fait écrire la lettre</strong> (par sa secrétaire).<br />
@@ -601,7 +592,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Les 4 Facettes de « Devoir »</h3>
                   <p>
-                    Le verbe <strong>devoir</strong> est un véritable caméléon selon son contexte syntaxique :
+                    O verbo <em>devoir</em> é um verdadeiro camaleão dependendo do contexto sintático: expressa obrigação moral estrita, probabilidade/suposição lógica, dívida financeira ou destino programado:
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>Dette :</strong> <em>Elle me <strong>doit</strong> 1000 euros / Il <strong>doit</strong> une excuse</em><br />
@@ -617,7 +608,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Faux-Ami : « Ne pas devoir » = Interdiction !</h3>
                   <p>
-                    Attention au piège pour les lusophones ! En français, la forme négative de <em>devoir</em> n'exprime pas l'absence d'obligation (« não precisa »), mais une <strong>interdiction formelle</strong> (« não pode / proibido ») :
+                    Em francês a distinção é simples e elegante: use <strong>pourquoi</strong> para fazer a pergunta ('por que...?') e <strong>parce que</strong> (com elisão <em>parce qu'</em> diante de vogal) para introduzir a resposta de causa:
                   </p>
                   <div className="tip-example" lang="fr">
                     • ❌ <em>Vous ne devez pas payer</em> ≠ Você não precisa pagar.<br />
@@ -632,7 +623,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>« Il y a » : Invariable en Toutes Circonstances !</h3>
                   <p>
-                    Tout comme « há » en portugais soigné, <strong>il y a</strong> ne se met JAMAIS au pluriel :
+                    O pronome neutro <strong>en</strong> é indispensável para substituir qualquer complemento introduzido pela preposição <em>de</em>, artigos partitivos ou quando há numerais e quantificadores que se repetem ao final da frase:
                   </p>
                   <div className="tip-example" lang="fr">
                     • ❌ Ne dites jamais : <em>*Ils y ont des livres</em><br />
@@ -648,7 +639,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>« Il s'agit de » : Le Sujet Impersonnel Fixe</h3>
                   <p>
-                    Pour présenter le sujet d'un livre ou d'un film, la langue française exige le pronom neutre <strong>il</strong> :
+                    Na locução <em>avoir l'air</em> (parecer / ter ar de), com pessoas o adjetivo concorda preferencialmente com o sujeito humano. Com objetos inanimados, concorda estritamente com o sujeito da oração:
                   </p>
                   <div className="tip-example" lang="fr">
                     • ❌ <em>*Ce livre s'agit du président</em> (erreur calquée du portugais !)<br />
@@ -664,7 +655,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Verbes en -eindre et -aindre : L'Insolite Son « GN »</h3>
                   <p>
-                    Les verbes comme <em>peindre</em>, <em>craindre</em>, <em>plaindre</em> changent de morphologie :
+                    <em>Vouloir</em> expressa uma vontade direta, forte e decidida. Para soar polido e educado em pedidos no cotidiano francês, prefira sempre o condicional de cortesia <strong>Je voudrais</strong> ou o verbo <em>souhaiter</em>:
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>Singulier (en -s, -s, -t) :</strong> <em>Je peins, tu crains, il craint / peint</em> (avec un t final et non un d !)<br />
@@ -678,7 +669,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Le Conseil Poli : « Vous devriez »</h3>
                   <p>
-                    Pour donner un conseil bienveillant et amical sans sonner autoritaire, privilégiez le conditionnel présent :
+                    Diferente do inglês ('I need it'), a locução francesa exige sempre a preposição <strong>de</strong>. Ao substituir por um pronome, use obrigatoriamente <strong>en</strong> (e nunca *le* ou *la*)!
                   </p>
                   <div className="tip-example" lang="fr">
                     • <em>Autoritaire :</em> <strong>Vous devez</strong> teindre le mur.<br />
@@ -695,7 +686,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Corps Humain : Pas de Possessif Redondant !</h3>
                   <p>
-                    En français, quand le verbe réfléchi indique déjà que l'action s'applique au sujet, on emploie l'article défini (<strong>le, la, les</strong>) et JAMAIS un adjectif possessif :
+                    Em francês, quando o verbo pronominal já esclarece que a ação recai sobre o próprio corpo do sujeito, é proibido usar adjetivo possessivo! Emprega-se sempre o <strong>artigo definido simples</strong>:
                   </p>
                   <div className="tip-example" lang="fr">
                     • ❌ Ne dites pas : <em>*Je me lave mes mains</em><br />
@@ -711,7 +702,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Verbes Réciproques : Uniquement au Pluriel</h3>
                   <p>
-                    Les verbes réciproques expriment une action mutuelle exercée entre deux ou plusieurs personnes (« uns aos outros »). Ils n'existent donc qu'avec <strong>nous</strong>, <strong>vous</strong> ou <strong>ils/elles</strong> :
+                    Os pronomes reflexivos acompanham o sujeito em todas as pessoas gramaticais. Diante de vogal ou <em>h</em> mudo, <em>me, te, se</em> sofrem elisão obrigatória para <strong>m', t', s'</strong>:
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>Ils s'aiment</strong> beaucoup (un à l'autre).<br />
@@ -727,7 +718,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Pronominaux Passifs : Les Incontournables</h3>
                   <p>
-                    Pour exprimer une vérité générale ou une habitude sans mentionner qui agit, le français utilise la tournure pronominale passive à la 3ᵉ personne du singulier :
+                    Distingua os verbos essencialmente pronominais (que só existem com pronome reflexivo, como <em>se souvenir</em>) dos verbos acidentais (que mudam de sentido na voz pronominal, como <em>passer</em> vs <em>se passer</em>):
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>Ça ne se dit pas !</strong> (Isso não se diz / é deselegante).<br />
@@ -743,7 +734,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Verbes Essentiellement Pronominaux</h3>
                   <p>
-                    Certains verbes n'ont aucun sens réfléchi direct : le pronom fait partie intégrante de leur identité lexicale :
+                    Nos verbos reflexivos com o auxiliar <em>être</em>, a concordância do particípio passado faz-se com o pronome reflexivo SE este for Objeto Direto (COD). Se for Objeto Indireto (COI) ou se houver outro COD posterior, o particípio fica invariável!
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>S'en aller :</strong> partir (<em>Je m'en vais !</em>).<br />
@@ -759,7 +750,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>L'Impératif : « Lève-toi ! » vs « Ne te couche pas ! »</h3>
                   <p>
-                    À l'impératif affirmatif, le pronom passe APRÈS le verbe avec un trait d'union et devient <strong>toi</strong>. À la négation, il reprend sa place normale AVANT le verbe avec <strong>te</strong> :
+                    No imperativo afirmativo, o pronome vai para DEPOIS do verbo com hífen e transforma-se em pronome tônico (*-toi*). Na negação, volta para ANTES do verbo na forma átona (*ne te... pas*):
                   </p>
                   <div className="tip-example" lang="fr">
                     • <em>Affirmatif :</em> <strong>Lève-toi !</strong> / <strong>Habillez-vous !</strong><br />
@@ -774,7 +765,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>La Règle d'Or à l'Infinitif : L'Accord Réfléchi</h3>
                   <p>
-                    Quand un verbe pronominal dépend d'un verbe semi-auxiliaire (<em>aimer</em>, <em>aller</em>, <em>pouvoir</em>, <em>devoir</em>), le pronom réfléchi s'accorde TOUJOURS avec le sujet de la phrase :
+                    Duas joias idiomáticas pronominais imprescindíveis para soar natural e autêntico no francês da vida real:
                   </p>
                   <div className="tip-example" lang="fr">
                     • ❌ <em>*J'aime se promener</em> ➔ ✅ J'aime <strong>me</strong> promener.<br />
@@ -791,7 +782,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>La Maison d'Être : Accord avec le Sujet</h3>
                   <p>
-                    Les 14 verbes intransitifs de mouvement et de transformation (<em>aller, venir, naître, mourir, monter, descendre, partir, arriver, etc.</em>) se conjuguent avec <strong>ÊTRE</strong>. Le participe s'accorde toujours avec le sujet :
+                    Os célebres 14 verbos intransitivos de movimento e transformação de vida/estado conjugam-se com <strong>ÊTRE</strong> no passado. O particípio passado concorda <strong>obrigatoriamente em gênero e número com o sujeito</strong>!
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>Il est parti</strong> / <strong>Elle est partie</strong> (+e).<br />
@@ -807,7 +798,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Les 6 Verbes Caméléons : Avoir ou Être ?</h3>
                   <p>
-                    Six verbes (<em>monter, descendre, sortir, rentrer, passer, retourner</em>) changent d'auxiliaire ! S'ils sont suivis d'un <strong>C.O.D. direct</strong>, ils prennent <strong>AVOIR</strong> et ne s'accordent pas :
+                    Estes 6 verbos clássicos usam <strong>ÊTRE</strong> quando não têm objeto direto (sentido intransitivo), mas mudam para o auxiliar <strong>AVOIR</strong> quando acompanhados de um complemento de objeto direto (COD) posterior!
                   </p>
                   <div className="tip-example" lang="fr">
                     • <em>Être (intransitif) :</em> Elle <strong>est sortie</strong> avec des amis.<br />
@@ -823,7 +814,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>L'Accord avec AVOIR : La Règle du C.O.D. Antéposé</h3>
                   <p>
-                    Avec <strong>avoir</strong>, le participe ne s'accorde JAMAIS avec le sujet. Il s'accorde uniquement en genre et nombre avec le <strong>C.O.D. placé AVANT le verbe</strong> :
+                    Muitos verbos do 3º grupo formam particípios passados com padrões fonéticos regulares que facilitam a memorização. Agrupe-os por famílias sonoras:
                   </p>
                   <div className="tip-example" lang="fr">
                     • C.O.D. après (pas d'accord) : <em>Il a pris <strong>la décision</strong></em>.<br />
@@ -839,7 +830,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Verbes Pronominaux & Parties du Corps</h3>
                   <p>
-                    Les pronominaux prennent <strong>être</strong>, mais le participe reste INVARIABLE si le C.O.D. est placé après le verbe (comme les parties du corps avec l'article défini) :
+                    No <em>passé composé</em>, os termos de negação (<strong>ne... pas</strong>, <em>ne... jamais</em>, <em>ne... rien</em>) abraçam <strong>UNICAMENTE o verbo auxiliar</strong> (<em>être</em> ou <em>avoir</em>), e o particípio passado fica solto ao final:
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>Elle s'est lavée</strong> (accord car <em>se</em> est C.O.D.).<br />
@@ -855,7 +846,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Verbes Réciproques Indirects : JAMAIS d'Accord !</h3>
                   <p>
-                    Quand un verbe se construit avec la préposition <em>à</em> (<em>parler à, téléphoner à, écrire à, plaire à</em>), le pronom réfléchi est un <strong>C.O.I.</strong> : aucun accord n'est possible :
+                    Com o auxiliar <em>avoir</em>, a regra universal é: o particípio passado NUNCA concorda com o sujeito. Porém, se um pronome de objeto direto (COD) estiver posicionado <strong>ANTES</strong> do verbo, a concordância de gênero e número é obrigatória!
                   </p>
                   <div className="tip-example" lang="fr">
                     • ❌ <em>*Ils se sont écrits</em> ➔ ✅ <strong>Ils se sont écrit</strong> (sans -s !).<br />
@@ -870,7 +861,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Passé Composé vs Portugais : Faux Ami Temporel</h3>
                   <p>
-                    En portugais, « tenho falado » exprime une action continue dans le présent. En français, <strong>j'ai parlé</strong> exprime une <strong>action ponctuelle achevée</strong> (« falei ») :
+                    No francês moderno falado e escrito informal, o <em>passé composé</em> substituiu integralmente o passado simples histórico (*passé simple*). Serve tanto para ações pontuais concluídas quanto para fatos recentes.
                   </p>
                   <div className="tip-example" lang="fr">
                     • « J'ai habité en Italie » = Morei / vivi na Itália (terminé).<br />
@@ -887,7 +878,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>La Formule Magique du Radical de NOUS</h3>
                   <p>
-                    Pour former l'imparfait de n'importe quel verbe régulier ou irrégulier : prenez <strong>nous au présent</strong>, retirez <strong>-ons</strong> et ajoutez : <strong>-ais, -ais, -ait, -ions, -iez, -aient</strong> :
+                    Para formar o <em>imparfait</em> de praticamente qualquer verbo regular ou irregular da língua francesa, pegue a forma conjugada com <strong>NOUS no presente</strong>, corte a desinência <em>-ons</em> e adicione as terminações universais do imperfeito:
                   </p>
                   <div className="tip-example" lang="fr">
                     • <em>Nous parlons</em> ➔ <strong>je parlais</strong><br />
@@ -903,7 +894,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>ÊTRE : L'Unique Radical Irrégulier (ét-)</h3>
                   <p>
-                    Le verbe <strong>être</strong> est le SEUL verbe de toute la langue française avec un radical irrégulier à l'imparfait : <strong>ét-</strong>. Même <em>avoir</em> est régulier (*nous avons ➔ j'avais*) :
+                    Em toda a língua francesa, existe apenas UM único verbo cujo radical do imperfeito não se origina da forma *nous* do presente: é o verbo <strong>être</strong>, cujo radical universal é <strong>ét-</strong>!
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>J'étais</strong> champion de tennis.<br />
@@ -919,7 +910,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Phonétique : 4 Terminaisons pour un Seul Son /ɛ/</h3>
                   <p>
-                    Les terminaisons <strong>-ais, -ais, -ait, -aient</strong> se prononcent toutes de manière identique : <strong>/ɛ/</strong> (comme dans <em>fête</em> ou <em>café</em>) :
+                    O grande divisor de águas da narrativa francesa: use o <strong>imparfait</strong> para cenários contínuos, descrições e estados prolongados de fundo, e o <strong>passé composé</strong> para ações pontuais, concluídas e marcadas no tempo:
                   </p>
                   <div className="tip-example" lang="fr">
                     • <em>Je parlais, tu parlais, il parlait, ils parlaient</em> ➔ tous prononcés <strong>/paʁlɛ/</strong> !<br />
@@ -933,7 +924,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Pièges Orthographiques : -GER et -CER</h3>
                   <p>
-                    Attention au maintien du son [ʒ] et [s] devant la voyelle *a* :
+                    Sempre que você estiver pintando o quadro de fundo de uma história (o clima, a idade das pessoas, sensações físicas ou costumes habituais repetidos no passado), escolha sem hesitar o <strong>imparfait</strong>:
                   </p>
                   <div className="tip-example" lang="fr">
                     • <em>-GER :</em> On garde le <strong>e</strong> devant <em>a</em> (<strong>je voyageais</strong>, <strong>il encourageait</strong>), mais on le retire devant <em>i</em> (<strong>nous voyagions</strong>).<br />
@@ -947,7 +938,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Imparfait vs Passé Composé : Décor vs Événement</h3>
                   <p>
-                    L'imparfait campe le décor et l'action continue en cours. Le passé composé apporte l'événement soudain qui interrompt l'histoire :
+                    Não estranhe a grafia com duplo <strong>i</strong> em verbos terminados em <em>-ier</em> ou com <strong>yi</strong> em verbos em <em>-yer</em> com *nous* e *vous* no imperfeito: a primeira letra pertence ao radical e a segunda é a terminação gramatical!
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>Je dormais</strong> (imparfait, décor continu)...<br />
@@ -962,7 +953,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>La Suggestion Quotidienne : « Si on + Imparfait »</h3>
                   <p>
-                    En français familier et courant, pour proposer une activité ou inviter quelqu'un (« Que tal se... », « E se a gente... »), on utilise <strong>Si on + imparfait</strong> :
+                    A estrutura com <strong>Si + Imparfait</strong> possui duas funções capitais: criar hipóteses no presente com consequência no condicional, ou formular convites e sugestões de forma extremamente cordial e convidativa:
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>Si on prenait un café ?</strong> (Que tal tomarmos um café?)<br />
@@ -2004,7 +1995,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>L'Article Partitif Obligatoire (Zéro Article en Portugais)</h3>
                   <p>
-                    L'erreur n°1 des lusophones ! En portugais, on dit naturellement <em>« Bebo água »</em> ou <em>« Quero pão »</em> sans déterminant. En français, un nom indénombrable exige TOUJOURS un partitif :
+                    O erro nº 1 dos estudantes lusófonos! Em português dizemos naturalmente 'Bebo café' ou 'Quero pão'. Em francês, um substantivo comum <strong>NUNCA</strong> pode ficar nu sem determinante: para quantidades incontáveis ou porções indefinidas, o artigo partitivo (<strong>du, de la, de l', des</strong>) é estritamente obrigatório!
                   </p>
                   <div className="tip-example" lang="fr">
                     ❌ <em>*Je bois eau</em> ➔ ✅ <strong>Je bois de l'eau</strong><br />
@@ -2019,7 +2010,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>La Règle d'Or de la Négation (DE / D') et l'Exception du Verbe ÊTRE</h3>
                   <p>
-                    À la forme négative, la quantité disparaît : <strong>du, de la, de l', des, un, une</strong> deviennent obligatoirement <strong>DE</strong> (ou <strong>D'</strong> devant voyelle), <strong>SAUF</strong> avec le verbe <strong>être</strong> où ils restent inchangés !
+                    Regra de ouro categórica: numa frase negativa absoluta com <em>ne... pas</em>, todos os artigos partitivos (*du, de la, des*) e indefinidos (*un, une, des*) transformam-se obrigatoriamente em <strong>de</strong> (ou <strong>d'</strong> diante de vogal ou h mudo)!
                   </p>
                   <div className="tip-example" lang="fr">
                     • Verbe ordinaire : <em>J'ai de la chance</em> ➔ <strong>Je n'ai pas de chance</strong><br />
@@ -2034,7 +2025,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Genre des Pays : La Règle Magique du « -E » Final</h3>
                   <p>
-                    Pour savoir quel article ou préposition utiliser avec un pays ou une région :
+                    Cuidado com os verbos de apreço e gosto pessoal (<em>aimer, adorer, détester, préférer</em>): com eles você expressa a ideia da categoria em sua totalidade, por isso usamos <strong>SEMPRE os artigos definidos (le, la, l', les)</strong>, mesmo na forma negativa!
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>Terminé par un « -e » = FÉMININ ➔ préposition EN :</strong> <em>la France</em> (en France), <em>l'Italie</em> (en Italie), <em>l'Espagne</em> (en Espagne), <em>la Chine</em> (en Chine).<br />
@@ -2049,7 +2040,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Faux-Amis de Genre (Masculin vs Féminin)</h3>
                   <p>
-                    Attention aux mots dont le genre est inversé entre le portugais et le français :
+                    Dica mnemônica infalível do professor FLE para saber o gênero geográfico: se o nome do país termina com a letra <strong>-e</strong>, ele é <strong>feminino</strong> e usa a preposição <strong>en</strong>! Se terminar com qualquer outra letra, é <strong>masculino</strong> e usa <strong>au</strong> (ou <strong>aux</strong> no plural).
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>Féminins en français (masculins en pt) :</strong> <em>la planète</em> (o planeta), <em>la mer</em> (o mar), <em>la couleur</em> (a cor), <em>la fin</em> (o fim), <em>la dent</em> (o dente).<br />
@@ -2063,7 +2054,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Homonymes de Genre : Deux Sens Totalement Différents !</h3>
                   <p>
-                    Certains noms changent radicalement de signification selon qu'ils sont masculins ou féminins :
+                    A maioria dos substantivos em <em>-al</em> forma o plural irregular com a terminação <strong>-aux</strong>. Grave os casos clássicos do vocabulário culto e do cotidiano:
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>Le livre</strong> (o livro) vs <strong>La livre</strong> (a moeda libra / peso de 500g)<br />
@@ -2080,7 +2071,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Exprimer la Provenance : De / D' vs Du vs Des</h3>
                   <p>
-                    Pour dire d'où l'on vient (<em>from</em> en anglais, <em>de/do/da</em> en portugais) :
+                    Alguns substantivos em francês mudam totalmente de significado dependendo se são acompanhados por um artigo masculino ou feminino. Fique muito atento aos falsos cognatos de gênero:
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>De / D'</strong> devant pays féminins, continents et villes : <em>Je viens de France</em>, <em>d'Italie</em>, <em>d'Asie</em>, <em>de Paris</em>.<br />
@@ -2097,7 +2088,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>L'Accord du Participe Passé avec le COD Antécédent</h3>
                   <p>
-                    C'est la règle d'or par excellence : au <em>passé composé</em> avec <strong>avoir</strong>, le participe passé s'accorde obligatoirement en genre et en nombre avec le pronom COD placé <strong>avant</strong> l'auxiliaire :
+                    A regra de ouro mais cobrada em exames e na vida real: no <em>passé composé</em> com o auxiliar <em>avoir</em>, o particípio NUNCA concorda com o sujeito. Porém, se o pronome de Objeto Direto (COD) estiver posicionado <strong>ANTES</strong> do verbo, a concordância de gênero e número torna-se obrigatória!
                   </p>
                   <div className="tip-example" lang="fr">
                     • <em>Le journaliste a pris les photos</em> ➔ <strong>Le journaliste les a prises</strong> [fém. pl.]<br />
@@ -2113,7 +2104,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Le Duo « Lui » et « Leur » : Unisexe et Invariable</h3>
                   <p>
-                    Ne cherchez pas de forme féminine pour le complément d'objet indirect :
+                    Não procure forma feminina para os pronomes de Objeto Indireto (COI) de 3ª pessoa: <strong>lui</strong> serve tanto para 'a ele' quanto para 'a ela' no singular, e <strong>leur</strong> serve tanto para 'a eles' quanto para 'a elas' no plural!
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>Lui</strong> s'utilise pour « a ele » ET pour « a ela » : <em>Tu parles à Paul ?</em> ➔ <strong>Tu lui parles</strong>. <em>Tu réponds à Sophie ?</em> ➔ <strong>Tu lui réponds</strong>.<br />
@@ -2127,7 +2118,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Choses vs Personnes : Le Grand Piège de « Y » et « EN »</h3>
                   <p>
-                    Les pronoms <em>y</em> et <em>en</em> ne remplacent en principe que des <strong>choses ou idées</strong>. Pour des êtres humains, conservez la préposition et ajoutez un pronom tonique :
+                    Os pronomes neutros <strong>y</strong> e <strong>en</strong> substituem prioritariamente coisas, lugares ou ideias. Para seres humanos, prefira manter a preposição acompanhada do pronome tônico correspondente (*penser à lui*, *parler d'elle*):
                   </p>
                   <div className="tip-example" lang="fr">
                     • <em>Penser à ce livre</em> ➔ <strong>J'y pense</strong> (chose)<br />
@@ -2143,7 +2134,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>L'Ordre des Doubles Pronoms : Le Schéma Infaillible</h3>
                   <p>
-                    Quand deux pronoms se bousculent devant le verbe, leur ordre est strictement déterminé :
+                    Quando dois pronomes se aglomeram diante do verbo conjugado, sua ordem posicional é rigorosamente fixa: 1º pronomes de pessoa (*me, te, se, nous, vous*) ➔ 2º objeto direto (*le, la, les*) ➔ 3º objeto indireto (*lui, leur*) ➔ 4º *y* ➔ 5º *en*!
                   </p>
                   <div className="tip-example" lang="fr">
                     <strong>Sujet</strong> + [me/te/se/nous/vous] ➔ [le/la/l'/les] ➔ [lui/leur] ➔ [y] ➔ [en] + <strong>Verbe</strong><br />
@@ -2159,7 +2150,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Les 5 Visages du Pronom « On »</h3>
                   <p>
-                    Bien plus que le simple « a gente », <em>on</em> possède cinq fonctions essentielles :
+                    Muito além do clássico 'a gente', o pronome neutro <strong>on</strong> desempenha cinco funções estruturais valiosas no francês moderno: voz passiva impessoal, regras universais, humanidade em geral e coletividade:
                   </p>
                   <div className="tip-example" lang="fr">
                     1. <strong>Indéfini</strong> : <em>On a sonné à la porte</em> (quelqu'un)<br />
@@ -2176,7 +2167,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Mise en Relief : C'est... qui et l'Accord Verbal</h3>
                   <p>
-                    Dans la formule d'insistance <em>C'est... qui</em>, le verbe s'accorde obligatoirement avec la personne du pronom tonique :
+                    Na estrutura de realce e ênfase <em>C'est... qui</em>, o verbo da oração seguinte deve concordar obrigatoriamente com a pessoa do pronome que foi enfatizado, e não com a forma impessoal *c'est*!
                   </p>
                   <div className="tip-example" lang="fr">
                     • <em>C'est <strong>moi qui ai</strong> gagné</em> (et NON <em>*qui a gagné</em> !)<br />
@@ -2194,7 +2185,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>L'Effet Phonétique du « -e » Féminin</h3>
                   <p>
-                    En français, l'ajout du <strong>-e</strong> au féminin a pour rôle fondamental de réveiller la consonne finale muette au masculin :
+                    Em francês, o acréscimo da desinência <strong>-e</strong> no feminino não é meramente estético: sua função fonética primordial é <strong>despertar a consoante final muda</strong> do masculino, fazendo-a soar com nitidez!
                   </p>
                   <div className="tip-example" lang="fr">
                     • <em>grand</em> [ɡʁɑ̃] ➔ <strong>grande</strong> [ɡʁɑ̃d] (le <strong>d</strong> se fait entendre)<br />
@@ -2210,7 +2201,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Les 5 Formes Euphoniques Devant Voyelle</h3>
                   <p>
-                    Cinq adjectifs indispensables adoptent une forme masculine spéciale devant un nom masculin singulier commençant par une voyelle ou un <em>h</em> muet :
+                    Cinco adjetivos essenciais adotam uma forma masculina especial quando posicionados imediatamente antes de um substantivo masculino singular iniciado por vogal ou <em>h</em> mudo, preservando a harmonia sonora:
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>beau</strong> ➔ un <strong>bel</strong> homme / un <strong>bel</strong> appartement<br />
@@ -2227,7 +2218,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>La Règle BANGS : Les Rares Adjectifs Avant le Nom</h3>
                   <p>
-                    La majorité des adjectifs français se place APRÈS le nom (couleurs, nationalités, formes). Seuls les adjectifs courts du groupe <strong>BANGS</strong> se placent AVANT :
+                    A esmagadora maioria dos adjetivos franceses situa-se DEPOIS do substantivo (cores, nacionalidades, formas). Apenas os curtos adjetivos da regra mnemônica <strong>BANGS</strong> (Beauty, Age, Number, Goodness, Size) vêm ANTES do substantivo:
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>B</strong>eauty : un <em>beau</em> jardin, une <em>jolie</em> robe<br />
@@ -2244,7 +2235,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Changement de Sens selon la Place</h3>
                   <p>
-                    Certains adjectifs changent totalement de sens selon qu'ils sont placés avant (sens figuré/affectif) ou après le nom (sens propre/physique) :
+                    Certos adjetivos alteram drasticamente de sentido conforme são colocados antes do substantivo (sentido afetivo ou figurado) ou depois dele (sentido literal, físico e factual):
                   </p>
                   <div className="tip-example" lang="fr">
                     • <em>un <strong>grand</strong> homme</em> (illustre, historique) vs <em>un homme <strong>grand</strong></em> (de haute taille)<br />
@@ -2260,7 +2251,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>L'Invariabilité des Couleurs Composées et Fruits</h3>
                   <p>
-                    Attention au piège d'orthographe le plus célèbre de la langue française :
+                    Atenção à famosa regra de ortografia francesa sobre cores: adjetivos de cor derivados de frutas, flores, pedras preciosas ou compostos por duas palavras são <strong>estritamente invariáveis</strong> (não recebem -s nem -e)!
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>Couleurs issues de noms (fruits/minéraux) : INVARIABLES !</strong><br />
@@ -2276,7 +2267,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Comparatifs : AUSSI vs AUTANT (Le Piège Lusophone)</h3>
                   <p>
-                    Ne confondez pas la comparaison de qualité et la comparaison de quantité :
+                    Não confunda a comparação de qualidade com a de quantidade: use <strong>aussi + adjetivo/advérbio + que</strong> para qualidades, e <strong>autant de + substantivo + que</strong> (ou verbo + autant) para quantidades!
                   </p>
                   <div className="tip-example" lang="fr">
                     • Avec un <strong>adjectif</strong> ➔ <strong>aussi ... que</strong> : <em>Elle est <strong>aussi ambitieuse que</strong> lui.</em><br />
@@ -2293,7 +2284,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>L'Euphonie de « Cet » : Éviter le Choc de Deux Voyelles</h3>
                   <p>
-                    Devant un nom masculin singulier commençant par une voyelle ou un <em>h</em> muet, l'adjectif démonstratif <strong>ce</strong> devient obligatoirement <strong>cet</strong> :
+                    Diante de um substantivo masculino singular iniciado por vogal ou <em>h</em> mudo, o demonstrativo <em>ce</em> transforma-se obrigatoriamente na forma eufônica <strong>cet</strong> para evitar o choque incômodo de duas vogais consecutivas:
                   </p>
                   <div className="tip-example" lang="fr">
                     • <em>ce livre</em>, <em>ce jeu</em> (consonne) vs <strong>cet</strong> <em>homme</em>, <strong>cet</strong> <em>auteur</em>, <strong>cet</strong> <em>appartement</em><br />
@@ -2308,7 +2299,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Adjectifs Possessifs : L'Accord avec l'Objet Possédé !</h3>
                   <p>
-                    En français, le possessif s'accorde <strong>toujours avec le nom possédé</strong>, jamais avec le genre du possesseur comme en portugais (<em>dele / dela</em>) ou anglais (<em>his / her</em>) :
+                    Em francês, o adjetivo possessivo concorda SEMPRE com o gênero e número do <strong>objeto possuído</strong>, e nunca com o gênero do possuidor humano (ao contrário do inglês *his/her*)!
                   </p>
                   <div className="tip-example" lang="fr">
                     • <em>Que penses-tu de <strong>son</strong> roman ?</em> (roman = masculin ➔ <em>son</em>, que l'auteur soit un homme ou une femme !)<br />
@@ -2323,7 +2314,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>La Règle d'Or d'Euphonie : « Mon amie », « Son honnêteté »</h3>
                   <p>
-                    Pour éliminer le hiatus (deux voyelles qui s'entrechoquent), on remplace <em>ma, ta, sa</em> par <strong>mon, ton, son</strong> devant un nom féminin singulier commençant par voyelle ou <em>h</em> muet :
+                    Para eliminar o hiato fonético, substituímos <em>ma, ta, sa</em> por <strong>mon, ton, son</strong> diante de substantivos femininos iniciados por vogal ou <em>h</em> mudo:
                   </p>
                   <div className="tip-example" lang="fr">
                     ❌ <em>*ma amie</em> ➔ ✅ <strong>mon amie</strong> Suzanne<br />
@@ -2338,7 +2329,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Pronoms Possessifs : Circonflexe et Contractions</h3>
                   <p>
-                    Distinguez bien l'adjectif (sans accent) du pronom possessif (avec accent circonflexe sur le <em>o</em>) :
+                    Distingua claramente o adjetivo possessivo (sem acento: *notre*, *votre*) do pronome possessivo equivalente (com acento circunflexo sobre a vogal o: <strong>le nôtre</strong>, <strong>le vôtre</strong>) e precedido de artigo definido:
                   </p>
                   <div className="tip-example" lang="fr">
                     • Adjectif : <em>notre ville</em>, <em>votre chien</em> (sans accent)<br />
@@ -2353,7 +2344,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Pronoms Démonstratifs : Simples vs Composés (-ci / -là)</h3>
                   <p>
-                    Les pronoms simples ne peuvent <strong>JAMAIS</strong> être employés seuls dans la phrase :
+                    Os pronomes demonstrativos simples (*celui, celle, ceux, celles*) NUNCA podem ser usados sozinhos na frase: exigem uma oração relativa com <em>qui/que</em> ou um complemento com <em>de</em>. Para uso isolado, empregue as formas compostas com <strong>-ci</strong> ou <strong>-là</strong>:
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>Simples (+ qui, que, de) :</strong> <em>celui qui</em> vient, <em>celle que</em> j'ai achetée, <em>celui de</em> Juliette.<br />
@@ -2368,7 +2359,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Le Neutre « C'est » et les Expressions Idiomatiques</h3>
                   <p>
-                    Après le présentateur <em>c'est</em>, l'adjectif qualificatif est <strong>toujours au masculin singulier</strong>, quelle que soit la réalité évoquée :
+                    Após a expressão apresentadora neutra <strong>c'est</strong>, o adjetivo qualificativo que expressa um comentário geral fica sempre no <strong>masculino singular</strong>, qualquer que seja o substantivo citado anteriormente!
                   </p>
                   <div className="tip-example" lang="fr">
                     • <em>Les erreurs qu'elle a faites ! <strong>C'est idiot !</strong></em> (jamais *idiotes)<br />
@@ -2385,7 +2376,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Qui vs Que : La Frontière Sujet vs Complément d'Objet</h3>
                   <p>
-                    Contrairement au portugais qui emploie « que » partout, le français sépare strictement le sujet de l'objet direct :
+                    Diferente do português que usa 'que' para quase todas as situações, o francês separa estritamente o pronome sujeito do pronome objeto: use <strong>QUI</strong> quando o pronome for o sujeito da oração seguinte (seguido diretamente de verbo), e <strong>QUE</strong> quando for o objeto direto (seguido de novo sujeito + verbo)!
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>QUI = SUJET :</strong> suivi directement du verbe (<em>la personne <strong>qui parle</strong></em>, <em>le coffre <strong>qui est</strong> dans le salon</em>).<br />
@@ -2399,7 +2390,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>L'Élision Phonétique : « Qui » JAMAIS, « Que » TOUJOURS !</h3>
                   <p>
-                    L'une des fautes les plus pénalisantes chez les apprenants lusophones concerne la chute de voyelle :
+                    Uma das falhas mais frequentes em provas: o pronome <strong>qui</strong> NUNCA sofre elisão fonética (o som [i] é sagrado e não cai!), enquanto o pronome <strong>que</strong> sofre elisão obrigatória tornando-se <strong>qu'</strong> diante de vogal!
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>QUI ne s'élide JAMAIS :</strong> <em>l'artiste <strong>qui a pris</strong> cette photo</em> [ki.a] (❌ jamais *qu'a pris !).<br />
@@ -2413,7 +2404,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>« C'est moi qui... » : Accord Obligatoire du Verbe</h3>
                   <p>
-                    Dans les structures de mise en relief avec pronom tonique, le verbe s'accorde avec l'antécédent, et <strong>non</strong> à la 3e personne :
+                    Nas estruturas enfáticas com pronome tônico (*C'est moi qui...*, *C'est toi qui...*), o verbo da oração seguinte deve concordar estritamente com a pessoa do pronome tônico antecedente, e não na 3ª pessoa!
                   </p>
                   <div className="tip-example" lang="fr">
                     • <em>C'est moi qui <strong>suis</strong> en charge</em> (❌ jamais *est)<br />
@@ -2430,7 +2421,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Temps Composés avec « Que » : L'Accord du Participe Passé</h3>
                   <p>
-                    Quand le pronom relatif <strong>que (qu')</strong> est COD placé avant l'auxiliaire <em>avoir</em>, le participe passé s'accorde en genre et nombre avec l'antécédent :
+                    Quando o pronome relativo <em>que</em> (ou <em>qu'</em>) atua como Objeto Direto antecedente ao verbo auxiliar <em>avoir</em>, o particípio passado concorda obrigatoriamente em gênero e número com o antecedente!
                   </p>
                   <div className="tip-example" lang="fr">
                     • <em>La table [fém. sg.] que nous avons <strong>trouvée</strong></em><br />
@@ -2447,7 +2438,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Le Pronom « Dont » : Verbes en « De » et Possession</h3>
                   <p>
-                    <strong>Dont</strong> remplace tout complément introduit par <em>de</em> (*parler de*, *avoir besoin de*, *se servir de*, *se souvenir de*). Pour la possession (<em>cujo</em>), l'ordre français est strict :
+                    O pronome relativo <strong>dont</strong> substitui qualquer termo oracional introduzido pela preposição <em>de</em> (*parler de*, *avoir besoin de*, *être fier de*) ou indica relação de posse (equivalente ao nosso 'cujo/cuja'):
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>Régence avec de :</strong> <em>l'artisan <strong>dont</strong> tu parles</em>, <em>les pinceaux <strong>dont</strong> elle a besoin</em>.<br />
@@ -2461,7 +2452,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Repère Temporel « Où » et Neutres « Ce qui / Ce que »</h3>
                   <p>
-                    En français, un repère de temps prend <strong>où</strong> (pas *que* comme en portugais). Pour une idée neutre, utilisez les formes avec <strong>ce</strong> :
+                    Em francês, pontos e referências temporais utilizam o pronome <strong>où</strong> (e não *que* como dizemos em português). Quando o antecedente for uma ideia neutra abstrata, utilize <strong>ce qui</strong> (sujeito) ou <strong>ce que</strong> (objeto):
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>Temps :</strong> <em>l'année <strong>où</strong> il a ouvert sa boutique</em>, <em>le jour <strong>où</strong> il a été élu</em>.<br />
@@ -2478,7 +2469,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>« Depuis » + Présent : Le Piège n°1 des Lusophones !</h3>
                   <p>
-                    En portugais, on dit souvent <em>"moro aqui há dez anos"</em> ou <em>"faz dez anos que moro aqui"</em>. En français, une action commencée dans le passé et <strong>toujours active dans le présent</strong> se conjugue impérativement au <strong>PRÉSENT</strong> :
+                    Em português dizemos 'moro aqui há dez anos' ou 'faz dez anos que moro aqui'. Em francês, como a ação começou no passado e ainda continua ativa no presente, a gramática exige o <strong>PRESENTE DO INDICATIVO + DEPUIS</strong> (nunca use passado nem a preposição *pour*)!
                   </p>
                   <div className="tip-example" lang="fr">
                     • ❌ <em>*J'ai habité à Paris depuis 3 ans</em> (Faux ! C'est du passé)<br />
@@ -2493,7 +2484,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>« Depuis quand » (Point de départ) vs « Depuis combien de temps » (Durée)</h3>
                   <p>
-                    Pour poser une question sur le temps, distinguez bien la date d'origine de la quantité de temps écoulée :
+                    Para formular perguntas sobre tempo decorrido, distingua com precisão a data de início da quantidade de tempo acumulado: use <strong>Depuis quand</strong> para uma data/marco pontual, e <strong>Depuis combien de temps</strong> para a duração total de dias, meses ou anos:
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>Depuis quand ?</strong> (Since when? / Desde quando?) → attend une <strong>date ou un repère fixe</strong> : <em>depuis 1998</em>, <em>depuis jeudi</em>, <em>depuis notre enfance</em>.<br />
@@ -2507,7 +2498,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>La Place des Adverbes Courts au Passé Composé</h3>
                   <p>
-                    Au passé composé, les adverbes courts de quantité (<em>beaucoup, trop, assez, peu</em>), de qualité (<em>bien, mal</em>) et de fréquence (<em>souvent, rarement, toujours</em>) s'intercalent <strong>entre l'auxiliaire et le participe passé</strong> :
+                    No <em>passé composé</em>, os advérbios curtos de quantidade (*beaucoup, trop, assez, peu*), de qualidade (*bien, mal*) e de tempo/frequência (*toujours, souvent, déjà, jamais*) posicionam-se <strong>ENTRE o verbo auxiliar e o particípio passado</strong>:
                   </p>
                   <div className="tip-example" lang="fr">
                     • <em>Elle a <strong>beaucoup</strong> dépensé.</em> (❌ pas *dépensé beaucoup)<br />
@@ -2524,7 +2515,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Durée Passée Achevée : « Pendant » OUI, « Pour » JAMAIS !</h3>
                   <p>
-                    Pour exprimer une durée complètement révolue au passé, le français emploie <strong>pendant</strong> (ou simplement la durée sans préposition). L'utilisation de <em>pour</em> est un calque fautif de l'anglais :
+                    Para expressar uma duração temporal que começou e terminou completamente no passado, o francês emprega <strong>pendant</strong> (ou simplesmente o valor de tempo direto). A preposição *pour* NUNCA pode ser usada para durações passadas concluídas!
                   </p>
                   <div className="tip-example" lang="fr">
                     • ✅ <em>Il a habité <strong>pendant cinq ans</strong> à Londres.</em> (ou <em>Il a habité cinq ans à Londres.</em>)<br />
@@ -2539,7 +2530,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>« Dessus / Dessous » (Adverbes) vs « Sur / Sous » (Prépositions)</h3>
                   <p>
-                    Ne confondez pas les prépositions exigeant un complément nominal et les adverbes autonomes qui s'emploient seuls :
+                    Não confunda as preposições que exigem um substantivo complementar logo a seguir (*sur la table*, *sous le lit*) com os advérbios autônomos que finalizam a frase ou oração sem complemento direto (<strong>dessus</strong>, <strong>dessous</strong>):
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>Sur / Sous</strong> (prépositions avec nom) : <em>Mets le sac <strong>sur la table</strong></em> / <em><strong>sous la table</strong></em>.<br />
@@ -2553,7 +2544,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Vocabulaire des Boutiques et le Faux Ami « Librairie »</h3>
                   <p>
-                    En français, les commerces de livres et de culture réservent un piège classique :
+                    Atenção ao clássico falso amigo (*faux ami*): em francês, <strong>une librairie</strong> é uma loja onde se compram livros (livraria!). O local público onde se pegam livros emprestados gratuitamente chama-se <strong>une bibliothèque</strong>!
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>Une librairie :</strong> une boutique où l'on <strong>achète</strong> des livres (livraria / bookstore).<br />
@@ -2570,7 +2561,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Le Système Vigésimal : 70, 80 et 90 sans Panique !</h3>
                   <p>
-                    Contrairement au portugais qui compte de façon strictement décimale (<em>setenta, oitenta, noventa</em>), le français de France compte en base 20 :
+                    Diferente do português que conta de forma estritamente decimal (setenta, oitenta, noventa), o francês da França herdou dos povos celtas a contagem vigesimal (em base 20)! Não se desespere: entenda a lógica mental de adição (60+10, 4x20, 4x20+10) como uma fórmula simples:
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>70 = soixante-dix</strong> (60 + 10) & <strong>71 = soixante et onze</strong> (60 + 11 avec « et » !)<br />
@@ -2585,7 +2576,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>L'Accord de « Vingt » et « Cent » : Le Secret du Pluriel</h3>
                   <p>
-                    <em>Vingt</em> et <em>cent</em> ne prennent la marque du pluriel (<strong>-s</strong>) que si deux conditions sont réunies : ils sont <strong>multipliés</strong> ET <strong>terminent le nombre</strong> :
+                    Os numerais <em>vingt</em> (20) e <em>cent</em> (100) só recebem a marca de plural (<strong>-s</strong>) se atenderem a duas condições simultâneas: forem multiplicados E não forem seguidos por nenhum outro número logo depois:
                   </p>
                   <div className="tip-example" lang="fr">
                     • <em>quatre-vingt<strong>s</strong></em> (80) mais <em>quatre-vingt-trois</em> (83)<br />
@@ -2600,7 +2591,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>L'Invariable « Mille » vs les Noms « Million » et « Milliard »</h3>
                   <p>
-                    Une règle d'or absolue de la grammaire française à ne jamais oublier :
+                    Uma regra de ouro absoluta da gramática francesa para gravar para sempre: a palavra <strong>mille</strong> (mil) é <strong>estritamente invariável</strong> e NUNCA recebe 's'! Por outro lado, <em>million</em> e <em>milliard</em> são substantivos plenos e recebem plural normal e exigem a preposição *de*:
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>Mille</strong> est un adjectif numéral strictement <strong>INVARIABLE</strong> : <em>trois mille</em>, <em>dix mille</em> (❌ jamais *milles !)<br />
@@ -2614,7 +2605,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Les Ordinaux : « Premier », « Second » et « Deuxième »</h3>
                   <p>
-                    Pour classer et ordonner, maîtrisez les nuances de rang :
+                    Para classificar e indicar ordem: empregue <strong>second</strong> preferencialmente quando a série possui apenas dois elementos no total (como Segunda Guerra Mundial), e <strong>deuxième</strong> quando a enumeração continua (terceiro, quarto...):
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>premier / première</strong> (1er / 1re) et <strong>dernier / dernière</strong> sont irréguliers.<br />
@@ -2630,7 +2621,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Les Étages en France : Le Rez-de-chaussée (RDC)</h3>
                   <p>
-                    Attention au piège culturel de l'architecture européenne :
+                    Atenção ao detalhe cultural da numeração predial francesa: o nível térreo ao nível da rua é chamado de <strong>rez-de-chaussée (RDC)</strong>. O 'primeiro andar' francês (*1er étage*) equivale ao segundo pavimento no Brasil!
                   </p>
                   <div className="tip-example" lang="fr">
                     • Le niveau de la rue est <strong>le rez-de-chaussée (RDC)</strong> (térreo).<br />
@@ -2645,7 +2636,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Prononciation Fine des Consonnes : 5, 6, 8, 10</h3>
                   <p>
-                    La phonétique des chiffres varie selon ce qui les suit :
+                    A pronúncia da consoante final dos números <em>cinq, six, huit, dix</em> varia conforme o contexto fonético seguinte: soa forte no fim de frase, vira som de ligação [z] diante de vogal e fica muda diante de palavra iniciada por consoante:
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>Seul ou en fin de phrase :</strong> consonne prononcée : <em>j'en ai six</em> (/sis/), <em>huit</em> (/ɥit/).<br />
@@ -2663,7 +2654,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Le Verbe « MANQUER » : L'Inversion Totale Lusophone !</h3>
                   <p>
-                    C'est l'un des pièges les plus spectaculaires pour les lusophones ! En portugais, le sujet éprouve le manque (<em>"eu sinto sua falta"</em>). En français affectif, <strong>le sujet grammatical est la personne ou la chose qui FAIT défaut</strong> :
+                    Este é um dos choques estruturais mais célebres para estudantes lusófonos! Em português dizemos 'Eu sinto a sua falta' (o sujeito é quem sente). Em francês, a estrutura inverte-se por completo: <strong>é aquilo ou quem faz falta que atua como sujeito da frase</strong>!
                   </p>
                   <div className="tip-example" lang="fr">
                     • ❌ <em>*Je te manque</em> = "Você está com saudades de mim" (sens inverse !)<br />
@@ -2683,7 +2674,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Verbes à Préposition : « Jouer À » vs « Jouer De »</h3>
                   <p>
-                    Le verbe <em>jouer</em> change de préposition selon qu'il s'agit d'un jeu ou d'un instrument :
+                    O verbo <em>jouer</em> muda de preposição conforme a atividade: use a preposição <strong>À</strong> para esportes, jogos e brincadeiras coletivas (*au football*, *aux cartes*), e use a preposição <strong>DE</strong> para instrumentos musicais (*du piano*, *de la guitare*):
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>Jouer À + jeu / sport :</strong> <em>jouer au football</em> (à + le), <em>jouer aux cartes</em> (à + les), <em>jouer aux échecs</em>.<br />
@@ -2698,7 +2689,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>« Croire » : Direct vs « À » vs « En »</h3>
                   <p>
-                    Ne confondez pas les trois degrés de croyance en français :
+                    Distingua com rigor os três níveis de crença do verbo <em>croire</em>: direto para acreditar na veracidade de algo/alguém (*je te crois*), com <strong>à</strong> para conceitos míticos ou ideias abstratas (*croire au destin*), e com <strong>en</strong> para fé religiosa, em Deus ou confiança íntima profunda (*croire en soi*):
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>Croire quelqu'un / quelque chose (direct) :</strong> juger véridique ce qui est dit : <em>Je te crois</em> (acredito em você / no que diz).<br />
@@ -2713,7 +2704,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>« Quoi que » vs « Quoique » vs « Quel que » (+ Subjonctif)</h3>
                   <p>
-                    Ces trois formules d'indéfinition et de concession exigent TOUTES le <strong>subjonctif</strong>, mais leur orthographe et leur accord diffèrent :
+                    Estas três construções de concessão e indefinição exigem SEMPRE o modo subjuntivo, mas possuem sentidos e grafias distintas: <em>quoi que</em> em duas palavras significa 'o que quer que', enquanto <em>quoique</em> em uma só palavra traduz 'embora/ainda que':
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>Quoi que (2 mots) :</strong> n'importe quoi que (<em>o que quer que</em>) : <em><strong>Quoi que</strong> tu fasses, préviens-moi.</em><br />
@@ -2728,7 +2719,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Pépites Idiomatiques : « Avoir beau » &amp; « Quitte à »</h3>
                   <p>
-                    Deux tournures très prisées des francophones pour exprimer des nuances fines sans équivalent mot à mot :
+                    Duas locuções sofisticadas muito utilizadas por falantes nativos: <strong>avoir beau + infinitivo</strong> expressa esforço em vão ('por mais que eu tente/faça'), e <strong>quitte à + infinitivo</strong> traduz 'mesmo que tenha que / ainda que custe':
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>Avoir beau + infinitif :</strong> correspond à <em>por mais que... / em vão</em> : <em>J'<strong>ai beau chercher</strong>, je ne trouve pas mes lunettes.</em> (Por mais que eu procure, não acho).<br />
@@ -2742,7 +2733,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Cuisine et Table : Faux Amis et Accents Essentiels</h3>
                   <p>
-                    Attention aux détails de genre et de lexique du monde culinaire :
+                    Atenção aos detalhes gastronômicos e falsos cognatos da culinária francesa: o verbo <em>goûter</em> exige acento circunflexo (significa degustar/provar), e a refeição leve da tarde é chamada com carinho de <em>le goûter</em>!
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>Une poêle (fém. avec accent circonflexe) :</strong> frigideira ! (<em>Un poêle</em> au masculin désigne un appareil de chauffage / aquecedor).<br />
@@ -2759,7 +2750,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>L'Ordre d'Or des Pronoms Compléments (La Formule Magique)</h3>
                   <p>
-                    Devant le verbe conjugué, l'ordre des pronoms est invariable et rigoureux. Mémorisez cette séquence infaillible :
+                    Diante do verbo conjugado, o alinhamento de múltiplos pronomes complementos obedece a uma ordem matemática rigorosa. Memorize esta fórmula de ouro: <strong>1º me/te/se/nous/vous ➔ 2º le/la/les ➔ 3º lui/leur ➔ 4º y ➔ 5º en</strong>!
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>Ordre :</strong> [me/te/se/nous/vous] → [le/la/les] → [lui/leur] → [y] → [en]<br />
@@ -2775,7 +2766,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Le Pronom « Ça » et la Voix Pronominale Passive</h3>
                   <p>
-                    En français naturel, on préfère souvent la tournure pronominale avec <em>ça</em> plutôt qu'une voix passive lourde :
+                    No francês natural e dinâmico, prefere-se frequentemente a estrutura pronominal com o pronome neutro <strong>ça</strong> em vez de uma voz passiva pesada com o verbo *être*:
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>Ça se voit :</strong> <em>Tu as une tache sur ta robe, mais ça ne se voit pas.</em> (não se nota).<br />
@@ -2792,7 +2783,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Le Chassé-Croisé des Pronoms Relatifs (Simples &amp; Complexes)</h3>
                   <p>
-                    Pour relier deux propositions sans répétition, identifiez la fonction du mot remplacé :
+                    Para conectar orações sem repetições deselegantes, identifique a função sintática do termo substituído: <strong>qui</strong> para sujeito, <strong>que</strong> para objeto direto, <strong>dont</strong> para complementos com *de*, e <strong>où</strong> para tempo ou lugar:
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>QUI :</strong> Sujet (personne ou objet) → <em>L'iPad <strong>qui</strong> se trouve dans la cuisine.</em><br />
@@ -2809,7 +2800,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Le Système Hypothétique avec « SI » (Les 3 Paliers)</h3>
                   <p>
-                    La concordance après <em>si</em> obéit à trois règles mathématiques :
+                    A concordância verbal após a conjunção condicional <em>si</em> obedece a três patamares fixos: <strong>1. Si + Présent ➔ Futur simple</strong>; <strong>2. Si + Imparfait ➔ Conditionnel présent</strong>; <strong>3. Si + Plus-que-parfait ➔ Conditionnel passé</strong>. Lembre-se: 'Les SI n'aiment pas les -RAIS !'
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>1. Réel :</strong> Si + Présent → <strong>Futur simple</strong> (<em>Si tu étudies, tu réussiras.</em>)<br />
@@ -2827,7 +2818,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>« Avoir beau + Infinitif » : La Concession Élégante</h3>
                   <p>
-                    Sublime alternative à <em>bien que</em> et <em>quoique</em>, sans avoir besoin du subjonctif ! Le verbe <em>avoir</em> se conjugue au temps voulu et reste suivi de l'infinitif :
+                    Uma alternativa de alta elegância estilística às conjunções *bien que* e *quoique*, com a enorme vantagem de <strong>não necessitar do modo subjuntivo</strong>! Conjuga-se o verbo <em>avoir</em> no tempo desejado seguido do verbo principal no infinitivo:
                   </p>
                   <div className="tip-example" lang="fr">
                     • <em>Quoiqu'ils aient de l'argent...</em> → <strong>Ils ont beau avoir assez d'argent</strong>, ils préfèrent louer.<br />
@@ -2843,7 +2834,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>L'Expression du Temps avec « DEPUIS »</h3>
                   <p>
-                    Grande différence avec le portugais : pour une action qui a démarré dans le passé et qui est <strong>toujours active au présent</strong>, le français utilise le <strong>PRÉSENT DE L'INDICATIF</strong> :
+                    Diferença crucial com o português: para uma ação que teve início no passado mas que <strong>continua plenamente ativa no momento presente</strong>, o francês exige categoricamente o <strong>PRESENTE DO INDICATIVO + DEPUIS</strong> (e nunca tempos pretéritos ou *pour*):
                   </p>
                   <div className="tip-example" lang="fr">
                     • <strong>Depuis quand ?</strong> (date / point de départ précis) :<br />
@@ -2863,7 +2854,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Les Terminaisons Muettes</h3>
                   <p>
-                    En français, les terminaisons du présent en <strong>-e, -es, -ent</strong> ne se prononcent JAMAIS.
+                    Em francês, as desinências do presente dos verbos do 1º grupo (<strong>-e, -es, -ent</strong>) são <strong>estritamente mudas</strong>! Nunca pronuncie o 'ent' final como som nasal ou ditongo: <em>ils parlent</em> soa exatamente como <em>il parle</em>.
                   </p>
                   <div className="tip-example" lang="fr">
                     <em>Je parle</em>, <em>tu parles</em>, <em>il parle</em>, <em>ils parlent</em> se prononcent tous <strong>/paʁl/</strong>.
@@ -2876,7 +2867,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>L'Élision Obligatoire avec « Je »</h3>
                   <p>
-                    Devant une voyelle ou un <em>h</em> muet, le pronom <strong>je</strong> s'élide obligatoirement en <strong>j'</strong>.
+                    Diante de qualquer palavra iniciada por vogal ou <em>h</em> mudo, o pronome <strong>je</strong> sofre elisão fonética obrigatória tornando-se <strong>j'</strong> para evitar o choque desagradável entre duas vogais (hiato).
                   </p>
                   <div className="tip-example" lang="fr">
                     ❌ <em>*Je aime</em> → ✅ <strong>J'aime</strong><br />
@@ -2890,7 +2881,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>La Liaison Euphonique</h3>
                   <p>
-                    Le <em>-s</em> final de <strong>nous, vous, ils, elles</strong> se lie au verbe débutant par une voyelle avec un son <strong>[z]</strong>.
+                    O <strong>-s</strong> final dos pronomes <em>nous, vous, ils, elles</em> ganha vida quando o verbo começa por vogal ou <em>h</em> mudo, unindo as palavras com um som contínuo e vibrante de <strong>[z]</strong> (como o zumbido de uma abelha).
                   </p>
                   <div className="tip-example" lang="fr">
                     <em>Ils aiment</em> se prononce <strong>[il-z-ɛm]</strong>.
@@ -2903,7 +2894,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Le Pronom « On » (Le "A Gente" Français)</h3>
                   <p>
-                    Dans la langue quotidienne, <strong>on</strong> remplace <em>nous</em> 9 fois sur 10, mais se conjugue toujours au <strong>singulier</strong> comme <em>il/elle</em>.
+                    No francês cotidiano e falado, <strong>on</strong> é o equivalente exato do nosso 'a gente': substitui <em>nous</em> quase sempre com sentido de nós, mas conjuga-se estritamente na <strong>3ª pessoa do singular</strong> (como <em>il/elle</em>).
                   </p>
                   <div className="tip-example" lang="fr">
                     <em>On va au cinéma ce soir ?</em> (On + 3e personne du singulier).
@@ -2916,7 +2907,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>Ajustements Euphoniques (-cer & -ger)</h3>
                   <p>
-                    Pour préserver la prononciation du radical devant la voyelle <em>o</em> de <strong>nous</strong> :
+                    Para manter a pronúncia original do radical diante da terminação <em>-ons</em> de <strong>nous</strong>, usamos a cedilha (<strong>ç</strong>) nos verbos em <em>-cer</em> e intercalamos um <strong>e</strong> mudo nos verbos em <em>-ger</em>.
                   </p>
                   <div className="tip-example" lang="fr">
                     • <em>Commencer</em> → <strong>Nous commençons</strong> (cédille ç = son [s])<br />
@@ -2930,7 +2921,7 @@ export const ChapterPage: React.FC = () => {
                 <div className="tip-card-body">
                   <h3>L'Action Continue avec « Depuis »</h3>
                   <p>
-                    Attention lusophones ! Une action débutée dans le passé qui continue aujourd'hui se dit toujours au <strong>PRÉSENT</strong> en français :
+                    Atenção lusófonos! Em português dizemos 'moro aqui há três anos', mas em francês uma ação iniciada no passado que <strong>continua ativa no presente</strong> exige obrigatoriamente o <strong>PRESENTE DO INDICATIVO + DEPUIS</strong> (nunca o passado!).
                   </p>
                   <div className="tip-example" lang="fr">
                     ❌ <em>*J'ai habité à Nice pendant 3 ans</em> (passé)<br />
