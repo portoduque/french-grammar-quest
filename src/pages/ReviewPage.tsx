@@ -18,6 +18,8 @@ export const ReviewPage: React.FC = () => {
 
   const {
     mistakes,
+    pendingCount,
+    resolvedCount,
     isLoading,
     completeReview
   } = useMistakes({
@@ -59,107 +61,74 @@ export const ReviewPage: React.FC = () => {
   };
 
   return (
-    <div className="page page-review" style={{ maxWidth: '860px', margin: '0 auto', padding: '1.5rem 1rem 5rem' }}>
-      <div className="page-header" style={{ marginBottom: '1.5rem' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '1rem' }}>
-          <div>
-            <h1 className="page-title">
+    <div className="page page-review">
+      <div className="review-header">
+        <div className="review-header-content">
+          <div className="review-title-group">
+            <h1 className="page-title review-title">
               🎯 Mon Coffre d'Erreurs
             </h1>
-            <p className="page-subtitle">
+            <p className="page-subtitle review-subtitle">
               Chaque erreur est une opportunité d’apprentissage. Révisez et maîtrisez vos points faibles.
             </p>
           </div>
 
           {activeTab === 'pending' && mistakes.length > 0 && (
-            <Button
-              variant="primary"
-              size="lg"
-              onClick={handleStartReview}
-              icon="🚀"
-            >
-              Lancer la Révision ({mistakes.length})
-            </Button>
+            <div className="review-launch-wrapper">
+              <Button
+                variant="primary"
+                size="lg"
+                className="review-launch-btn"
+                onClick={handleStartReview}
+                icon="🚀"
+              >
+                Lancer la Révision ({mistakes.length})
+              </Button>
+            </div>
           )}
         </div>
       </div>
 
       {/* Tabs */}
-      <div
-        style={{
-          display: 'flex',
-          gap: '0.75rem',
-          borderBottom: '1px solid var(--color-border)',
-          paddingBottom: '0.75rem',
-          marginBottom: '1.5rem'
-        }}
-      >
+      <div className="review-tabs-container" role="tablist" aria-label="Catégories d'erreurs">
         <button
           type="button"
+          role="tab"
+          aria-selected={activeTab === 'pending'}
           onClick={() => setActiveTab('pending')}
-          style={{
-            background: 'none',
-            border: 'none',
-            fontSize: '1rem',
-            fontWeight: activeTab === 'pending' ? 700 : 500,
-            color: activeTab === 'pending' ? 'var(--color-primary)' : 'var(--color-text-muted)',
-            cursor: 'pointer',
-            padding: '0.5rem 0.75rem',
-            borderRadius: '8px',
-            backgroundColor: activeTab === 'pending' ? 'rgba(37,99,235,0.08)' : 'transparent',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '0.5rem'
-          }}
+          className={`review-tab-btn ${activeTab === 'pending' ? 'review-tab-active' : ''}`}
         >
-          <span>À retravailler</span>
-          {activeTab === 'pending' && (
-            <Badge variant="rose">{mistakes.length}</Badge>
-          )}
+          <span className="review-tab-label">À retravailler</span>
+          <Badge variant={pendingCount > 0 ? 'rose' : 'default'} className="review-tab-badge">
+            {pendingCount}
+          </Badge>
         </button>
 
         <button
           type="button"
+          role="tab"
+          aria-selected={activeTab === 'resolved'}
           onClick={() => setActiveTab('resolved')}
-          style={{
-            background: 'none',
-            border: 'none',
-            fontSize: '1rem',
-            fontWeight: activeTab === 'resolved' ? 700 : 500,
-            color: activeTab === 'resolved' ? 'var(--color-primary)' : 'var(--color-text-muted)',
-            cursor: 'pointer',
-            padding: '0.5rem 0.75rem',
-            borderRadius: '8px',
-            backgroundColor: activeTab === 'resolved' ? 'rgba(37,99,235,0.08)' : 'transparent',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '0.5rem'
-          }}
+          className={`review-tab-btn ${activeTab === 'resolved' ? 'review-tab-active' : ''}`}
         >
-          <span>Erreurs maîtrisées</span>
-          {activeTab === 'resolved' && (
-            <Badge variant="emerald">{mistakes.length}</Badge>
-          )}
+          <span className="review-tab-label">Erreurs maîtrisées</span>
+          <Badge variant="emerald" className="review-tab-badge">
+            {resolvedCount}
+          </Badge>
         </button>
       </div>
 
       {/* Filters */}
       {availableChapters.length > 1 && (
-        <div style={{ marginBottom: '1.5rem', display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
-          <label htmlFor="chapter-filter" style={{ fontSize: '0.875rem', fontWeight: 600 }}>
+        <div className="review-filter-bar">
+          <label htmlFor="chapter-filter" className="review-filter-label">
             Filtrer par chapitre :
           </label>
           <select
             id="chapter-filter"
             value={selectedChapter}
             onChange={(e) => setSelectedChapter(e.target.value)}
-            style={{
-              padding: '0.4rem 0.8rem',
-              borderRadius: '6px',
-              border: '1px solid var(--color-border)',
-              backgroundColor: 'var(--color-bg)',
-              color: 'var(--color-text)'
-            }}
+            className="review-filter-select"
           >
             <option value="all">Tous les chapitres</option>
             {availableChapters.map((ch) => (
@@ -179,21 +148,23 @@ export const ReviewPage: React.FC = () => {
           <Skeleton height="140px" />
         </div>
       ) : mistakes.length === 0 ? (
-        <EmptyState
-          icon={activeTab === 'pending' ? '🌟' : '📚'}
-          title={
-            activeTab === 'pending'
-              ? 'Félicitations ! Aucune erreur en attente'
-              : 'Aucune erreur maîtrisée pour le moment'
-          }
-          description={
-            activeTab === 'pending'
-              ? "Votre carnet d'études est impeccable. Continuez votre progression sur la Trilha pour découvrir de nouvelles leçons !"
-              : "Complétez des sessions de révision pour transformer vos erreurs en notions parfaitement maîtrisées."
-          }
-          actionLabel="Continuer l'Aventure"
-          onAction={() => navigate('/chapters')}
-        />
+        <div className="review-empty-state-wrapper">
+          <EmptyState
+            icon={activeTab === 'pending' ? '🌟' : '📚'}
+            title={
+              activeTab === 'pending'
+                ? 'Félicitations ! Aucune erreur en attente'
+                : 'Aucune erreur maîtrisée pour le moment'
+            }
+            description={
+              activeTab === 'pending'
+                ? "Votre carnet d'études est impeccable. Continuez votre progression sur le parcours d'apprentissage pour découvrir de nouvelles leçons !"
+                : "Complétez des sessions de révision pour transformer vos erreurs en notions parfaitement maîtrisées."
+            }
+            actionLabel="Continuer l'Aventure"
+            onAction={() => navigate('/chapters')}
+          />
+        </div>
       ) : (
         <div className="mistakes-list">
           {mistakes.map((mistake) => (

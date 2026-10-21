@@ -5,10 +5,11 @@ export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> 
   error?: string;
   hint?: string;
   icon?: React.ReactNode;
+  rightElement?: React.ReactNode;
 }
 
 export const Input = forwardRef<HTMLInputElement, InputProps>(
-  ({ label, error, hint, icon, className = '', id, ...props }, ref) => {
+  ({ label, error, hint, icon, rightElement, className = '', id, ...props }, ref) => {
     const inputId = id || (label ? `input-${label.toLowerCase().replace(/\s+/g, '-')}` : undefined);
 
     return (
@@ -23,11 +24,16 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
           <input
             ref={ref}
             id={inputId}
-            className={`input-field ${icon ? 'input-with-icon' : ''}`}
+            className={`input-field ${icon ? 'input-with-icon' : ''} ${rightElement ? 'input-with-right' : ''}`}
             aria-invalid={!!error}
             aria-describedby={error ? `${inputId}-error` : hint ? `${inputId}-hint` : undefined}
             {...props}
           />
+          {rightElement && (
+            <div className="input-right-element">
+              {rightElement}
+            </div>
+          )}
         </div>
         {error && (
           <span id={`${inputId}-error`} className="input-error-text" role="alert">

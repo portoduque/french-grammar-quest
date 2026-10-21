@@ -6,6 +6,7 @@ export interface ModalProps {
   title?: string;
   children: React.ReactNode;
   size?: 'sm' | 'md' | 'lg';
+  className?: string;
 }
 
 export const Modal: React.FC<ModalProps> = ({
@@ -14,6 +15,7 @@ export const Modal: React.FC<ModalProps> = ({
   title,
   children,
   size = 'md',
+  className = '',
 }) => {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const previousFocusRef = useRef<HTMLElement | null>(null);
@@ -58,7 +60,7 @@ export const Modal: React.FC<ModalProps> = ({
   return (
     <dialog
       ref={dialogRef}
-      className={`modal modal-${size}`}
+      className={`modal modal-${size} ${className}`.trim()}
       onClick={handleBackdropClick}
       onKeyDown={handleKeyDown}
       aria-labelledby={title ? 'modal-title' : undefined}

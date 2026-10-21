@@ -41,54 +41,104 @@ const MOCK_MISTAKES: UserMistakeDetail[] = [
   }
 ];
 
+const STORAGE_KEY = 'fgq_user_mistakes';
+
+function getStoredMistakes(): UserMistakeDetail[] {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+    }
+  } catch {
+    // fallback if localStorage is disabled or corrupted
+  }
+  return MOCK_MISTAKES;
+}
+
+function saveStoredMistakes(mistakes: UserMistakeDetail[]) {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(mistakes));
+  } catch {
+    // fallback
+  }
+}
+
 export function useMistakes(options: UseMistakesOptions = {}) {
   const user = useAuthStore((s) => s.user);
+  const isMockMode = useAuthStore((s) => s.isMockMode);
   const queryClient = useQueryClient();
   const { chapterId = null, status = 'pending' } = options;
 
-  const query = useQuery<UserMistakeDetail[]>({
-    queryKey: ['user-mistakes', user?.id, chapterId, status],
-    queryFn: async (): Promise<UserMistakeDetail[]> => {
-      if (!supabase || !user) {
-        let filtered = MOCK_MISTAKES;
+  const query = useQuery<{
+    mistakes: UserMistakeDetail[];
+    pendingCount: number;
+    resolvedCount: number;
+  }>({
+    queryKey: ['user-mistakes', user?.id, isMockMode, chapterId, status],
+    queryFn: async () => {
+      // If unauthenticated or in mock mode
+      if (isMockMode || !supabase || !user) {
+        const stored = getStoredMistakes();
+        const pendingCount = stored.filter((m) => m.status === 'pending').length;
+        const resolvedCount = stored.filter((m) => m.status === 'resolved').length;
+
+        let filtered = stored;
         if (chapterId) {
           filtered = filtered.filter((m) => m.chapter_id === chapterId);
         }
         if (status) {
           filtered = filtered.filter((m) => m.status === status);
         }
-        return filtered;
+        return { mistakes: filtered, pendingCount, resolvedCount };
       }
 
-      const { data, error } = await supabase.rpc('get_user_mistakes', {
-        p_chapter_id: chapterId,
-        p_status: status
-      });
+      try {
+        const res = await supabase.rpc('get_user_mistakes', {
+          p_chapter_id: chapterId,
+          p_status: status
+        });
 
-      if (error) {
-        console.warn('[useMistakes] Erro ao buscar erros:', error.message);
-        return [];
+        if (res?.error) {
+          console.warn('[useMistakes] Erro ao buscar erros via RPC:', res.error.message);
+          return { mistakes: [], pendingCount: 0, resolvedCount: 0 };
+        }
+
+        const mistakes = (res?.data as UserMistakeDetail[]) || [];
+        const pendingCount = status === 'pending' ? mistakes.length : 0;
+        const resolvedCount = status === 'resolved' ? mistakes.length : 0;
+        return { mistakes, pendingCount, resolvedCount };
+      } catch {
+        return { mistakes: [], pendingCount: 0, resolvedCount: 0 };
       }
-
-      return (data as UserMistakeDetail[]) || [];
     }
   });
 
   const completeReviewMutation = useMutation({
     mutationFn: async (resolvedQuestionIds: string[]) => {
-      if (!supabase || !user) {
+      if (isMockMode || !supabase || !user) {
+        const stored = getStoredMistakes();
+        const updated = stored.map((m) => {
+          if (resolvedQuestionIds.includes(m.question_id)) {
+            return { ...m, status: 'resolved' as const };
+          }
+          return m;
+        });
+        saveStoredMistakes(updated);
+        // Award XP
+        await useAuthStore.getState().addXp(5);
         return { success: true, resolved_count: resolvedQuestionIds.length, xp_granted: 5 };
       }
 
-      const { data, error } = await supabase.rpc('complete_review_session', {
+      const res = await supabase.rpc('complete_review_session', {
         p_resolved_question_ids: resolvedQuestionIds
       });
 
-      if (error) {
-        throw new Error(error.message);
+      if (res?.error) {
+        throw new Error(res.error.message);
       }
 
-      return data;
+      return res?.data ?? { success: true, resolved_count: resolvedQuestionIds.length, xp_granted: 5 };
     },
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['user-mistakes'] });
@@ -98,7 +148,9 @@ export function useMistakes(options: UseMistakesOptions = {}) {
   });
 
   return {
-    mistakes: query.data || [],
+    mistakes: query.data?.mistakes || [],
+    pendingCount: query.data?.pendingCount ?? (query.data?.mistakes?.filter((m) => m.status === 'pending').length || 0),
+    resolvedCount: query.data?.resolvedCount ?? (query.data?.mistakes?.filter((m) => m.status === 'resolved').length || 0),
     isLoading: query.isLoading,
     isError: query.isError,
     error: query.error,

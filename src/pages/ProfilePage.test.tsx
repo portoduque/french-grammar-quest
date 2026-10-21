@@ -70,7 +70,7 @@ describe('ProfilePage', () => {
 
     expect(screen.getByText('Profil & Progression')).toBeInTheDocument();
     expect(screen.getByText('Émile Zola')).toBeInTheDocument();
-    expect(screen.getByText('etudiant@frenchgrammarquest.app')).toBeInTheDocument();
+    expect(screen.getAllByText('etudiant@frenchgrammarquest.app').length).toBeGreaterThanOrEqual(1);
     expect(screen.getByText('Étudiant')).toBeInTheDocument();
     expect(screen.getByText('Mode Démo Local')).toBeInTheDocument();
 
@@ -146,5 +146,66 @@ describe('ProfilePage', () => {
 
     // Theme toggled
     expect(document.documentElement.getAttribute('data-theme')).toBeTruthy();
+  });
+
+  it('renders Compte & Sécurité section with email and security buttons', () => {
+    renderWithProviders();
+
+    expect(screen.getByText(/Compte & Sécurité/i)).toBeInTheDocument();
+    expect(screen.getByText(/Session active/i)).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Modifier l'adresse e-mail/i })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Changer le mot de passe/i })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Se déconnecter/i })).toBeInTheDocument();
+  });
+
+  it('opens ChangeEmailModal, validates input, and updates email', async () => {
+    renderWithProviders();
+
+    const emailBtn = screen.getByRole('button', { name: /Modifier l'adresse e-mail/i });
+    fireEvent.click(emailBtn);
+
+    expect(screen.getByText('Modifier mon Adresse E-mail')).toBeInTheDocument();
+    expect(screen.getByLabelText(/^Nouvelle adresse e-mail/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/Confirmer la nouvelle adresse e-mail/i)).toBeInTheDocument();
+
+    const newEmailInput = screen.getByLabelText(/^Nouvelle adresse e-mail/i);
+    const confirmEmailInput = screen.getByLabelText(/Confirmer la nouvelle adresse e-mail/i);
+
+    fireEvent.change(newEmailInput, { target: { value: 'victor.hugo@french.app' } });
+    fireEvent.change(confirmEmailInput, { target: { value: 'victor.hugo@french.app' } });
+
+    const submitBtn = screen.getByRole('button', { name: /Confirmer/i });
+    await act(async () => {
+      fireEvent.click(submitBtn);
+    });
+
+    expect(useAuthStore.getState().profile?.email).toBe('victor.hugo@french.app');
+  });
+
+  it('opens ChangePasswordModal, displays criteria checklist, and updates password', async () => {
+    renderWithProviders();
+
+    const passBtn = screen.getByRole('button', { name: /Changer le mot de passe/i });
+    fireEvent.click(passBtn);
+
+    expect(screen.getByText('Modifier mon Mot de Passe')).toBeInTheDocument();
+    expect(screen.getByText('Exigences de sécurité :')).toBeInTheDocument();
+    expect(screen.getByText('Au moins 8 caractères')).toBeInTheDocument();
+
+    const passInput = screen.getByLabelText(/^Nouveau mot de passe/i);
+    const confirmInput = screen.getByLabelText(/Confirmer le nouveau mot de passe/i);
+
+    // Type strong password
+    fireEvent.change(passInput, { target: { value: 'Paris@2026!' } });
+    fireEvent.change(confirmInput, { target: { value: 'Paris@2026!' } });
+
+    const submitBtn = screen.getByRole('button', { name: /Enregistrer/i });
+    await act(async () => {
+      fireEvent.click(submitBtn);
+    });
+
+    await waitFor(() => {
+      expect(screen.getAllByText(/Votre mot de passe a été mis à jour avec succès/i).length).toBeGreaterThanOrEqual(1);
+    });
   });
 });

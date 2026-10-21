@@ -76,6 +76,9 @@ describe('ReviewPage (Mon Coffre d\'Erreurs)', () => {
       expect(
         screen.getByText(/Votre carnet d'études est impeccable/i)
       ).toBeInTheDocument();
+      expect(
+        screen.getByText(/parcours d'apprentissage/i)
+      ).toBeInTheDocument();
     });
   });
 
@@ -196,6 +199,23 @@ describe('ReviewPage (Mon Coffre d\'Erreurs)', () => {
       expect(supabase!.rpc).toHaveBeenCalledWith('complete_review_session', {
         p_resolved_question_ids: ['q-102']
       });
+    });
+  });
+
+  it('funciona perfeitamente em modo demonstração (isMockMode: true) com mock mistakes locais', async () => {
+    useAuthStore.setState({
+      user: { id: 'demo-student', email: 'etudiant@frenchgrammarquest.app' } as any,
+      profile: { id: 'demo-student', email: 'etudiant@frenchgrammarquest.app' } as any,
+      isMockMode: true,
+      isInitialized: true
+    });
+
+    renderComponent();
+
+    await waitFor(() => {
+      expect(screen.getByText(/Mon Coffre d'Erreurs/i)).toBeInTheDocument();
+      // Em modo demonstração, mock mistakes padrão estão disponíveis
+      expect(screen.getByText(/Lancer la Révision/i)).toBeInTheDocument();
     });
   });
 });

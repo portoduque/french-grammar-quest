@@ -108,94 +108,60 @@ export const ReviewSessionModal: React.FC<ReviewSessionModalProps> = ({
       onClose={handleClose}
       title={isFinished ? '🎉 Session de Révision Terminée !' : `🎯 Révision Active (${currentIndex + 1}/${mistakes.length})`}
       size="md"
+      className="modal-review-session"
     >
       {isFinished ? (
-        <div style={{ textAlign: 'center', padding: '1.5rem 0' }}>
-          <div style={{ fontSize: '3.5rem', marginBottom: '1rem' }} aria-hidden="true">
+        <div className="review-finished-container">
+          <div className="review-finished-icon" aria-hidden="true">
             🌟
           </div>
-          <h2 style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '0.5rem' }}>
+          <h2 className="review-finished-title">
             Félicitations pour vos efforts !
           </h2>
-          <p style={{ color: 'var(--color-text-muted)', marginBottom: '1.5rem' }}>
+          <p className="review-finished-desc">
             Vous avez assimilé et surmonté <strong>{resolvedQuestionIds.length}</strong> erreur{resolvedQuestionIds.length > 1 ? 's' : ''} sur {mistakes.length} révisée{mistakes.length > 1 ? 's' : ''}.
           </p>
 
-          <div
-            style={{
-              display: 'inline-flex',
-              gap: '0.75rem',
-              alignItems: 'center',
-              backgroundColor: 'rgba(16, 185, 129, 0.1)',
-              padding: '0.75rem 1.25rem',
-              borderRadius: '12px',
-              marginBottom: '2rem'
-            }}
-          >
+          <div className="review-finished-xp-pill">
             <span style={{ fontSize: '1.25rem' }} aria-hidden="true">✨</span>
             <span style={{ fontWeight: 600, color: '#10B981' }}>+5 XP de Révision attribués !</span>
           </div>
 
-          <div>
-            <Button variant="primary" size="lg" onClick={handleClose} style={{ width: '100%' }}>
+          <div className="review-finished-actions">
+            <Button variant="primary" size="lg" onClick={handleClose} style={{ width: '100%', minHeight: '44px' }}>
               Retourner au carnet d'erreurs
             </Button>
           </div>
         </div>
       ) : (
-        <div>
+        <div className="review-session-body">
           {/* Progress bar */}
-          <div
-            style={{
-              width: '100%',
-              height: '6px',
-              backgroundColor: 'var(--color-border)',
-              borderRadius: '999px',
-              overflow: 'hidden',
-              marginBottom: '1.5rem'
-            }}
-          >
+          <div className="review-progress-track">
             <div
+              className="review-progress-fill"
               style={{
-                width: `${((currentIndex + 1) / mistakes.length) * 100}%`,
-                height: '100%',
-                backgroundColor: 'var(--color-primary)',
-                transition: 'width 0.3s ease'
+                width: `${((currentIndex + 1) / mistakes.length) * 100}%`
               }}
             />
           </div>
 
-          <div style={{ marginBottom: '1rem' }}>
+          <div className="review-question-meta">
             <Badge variant="cyan">Chapitre {currentMistake.chapter_id.replace(/^ch0?/, '')}</Badge>
-            {currentMistake.instruction && (
-              <p
-                style={{
-                  fontSize: '0.9rem',
-                  fontStyle: 'italic',
-                  color: 'var(--color-text-muted)',
-                  marginTop: '0.5rem'
-                }}
-              >
+            {!hasEvaluated && currentMistake.instruction && (
+              <p className="review-question-instruction">
                 {currentMistake.instruction}
               </p>
             )}
           </div>
 
-          <div
-            style={{
-              padding: '1.25rem',
-              backgroundColor: 'var(--color-bg-secondary, rgba(0,0,0,0.03))',
-              borderRadius: '12px',
-              marginBottom: '1.25rem'
-            }}
-          >
-            <p style={{ fontSize: '1.15rem', fontWeight: 600, margin: 0, color: 'var(--color-text)' }}>
+          <div className="review-question-prompt-box">
+            <p className="review-question-prompt">
               {currentMistake.prompt}
             </p>
           </div>
 
           {!hasEvaluated ? (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            <div className="review-input-section">
               <Input
                 ref={inputRef}
                 label="Votre réponse en français :"
@@ -208,24 +174,26 @@ export const ReviewSessionModal: React.FC<ReviewSessionModalProps> = ({
                 autoFocus
               />
 
-              <AccentToolbar onInsert={handleInsertAccent} />
+              <AccentToolbar
+                className="review-accent-toolbar"
+                onInsert={handleInsertAccent}
+              />
 
               <Button
                 variant="primary"
                 size="lg"
                 onClick={handleCheck}
                 disabled={!userAnswer.trim()}
-                style={{ width: '100%', marginTop: '0.5rem' }}
+                style={{ width: '100%', minHeight: '44px', marginTop: '0.5rem' }}
               >
                 Vérifier 🔍
               </Button>
             </div>
           ) : (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            <div className="review-feedback-section">
               <div
+                className="review-feedback-box"
                 style={{
-                  padding: '1rem',
-                  borderRadius: '10px',
                   backgroundColor: isCorrect ? 'rgba(16, 185, 129, 0.12)' : 'rgba(239, 68, 68, 0.12)',
                   border: isCorrect ? '1px solid rgba(16, 185, 129, 0.3)' : '1px solid rgba(239, 68, 68, 0.3)'
                 }}
@@ -259,7 +227,7 @@ export const ReviewSessionModal: React.FC<ReviewSessionModalProps> = ({
                 size="lg"
                 onClick={handleNext}
                 disabled={isSubmitting}
-                style={{ width: '100%' }}
+                style={{ width: '100%', minHeight: '44px' }}
               >
                 {isSubmitting ? 'Enregistrement...' : currentIndex + 1 < mistakes.length ? 'Question suivante ➔' : 'Terminer la session 🎉'}
               </Button>

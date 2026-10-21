@@ -143,4 +143,76 @@ describe('AuthStore (Zustand & Gamification State)', () => {
       expect(useAuthStore.getState().profile?.streak_days).toBe(1);
     });
   });
+
+  describe('Security & Credential Updates (Email and Password)', () => {
+    it('successfully updates email in mock mode and persists to state', async () => {
+      useAuthStore.getState().setMockUser('original@french.app', 'student');
+      expect(useAuthStore.getState().profile?.email).toBe('original@french.app');
+
+      const result = await useAuthStore.getState().updateEmail('nouveau.etudiant@french.app');
+      expect(result.success).toBe(true);
+      expect(result.message).toContain('succès');
+      expect(useAuthStore.getState().profile?.email).toBe('nouveau.etudiant@french.app');
+      expect(useAuthStore.getState().user?.email).toBe('nouveau.etudiant@french.app');
+    });
+
+    it('rejects invalid email formats', async () => {
+      useAuthStore.getState().setMockUser('user@french.app', 'student');
+
+      const res1 = await useAuthStore.getState().updateEmail('invalide');
+      expect(res1.success).toBe(false);
+      expect(res1.message).toContain('valide');
+
+      const res2 = await useAuthStore.getState().updateEmail('invalide@');
+      expect(res2.success).toBe(false);
+
+      const res3 = await useAuthStore.getState().updateEmail('   ');
+      expect(res3.success).toBe(false);
+    });
+
+    it('rejects email identical to the current one', async () => {
+      useAuthStore.getState().setMockUser('identique@french.app', 'student');
+
+      const res = await useAuthStore.getState().updateEmail('identique@french.app');
+      expect(res.success).toBe(false);
+      expect(res.message).toContain('différente');
+    });
+
+    it('successfully validates and updates strong password meeting all 5 security criteria', async () => {
+      useAuthStore.getState().setMockUser('user@french.app', 'student');
+
+      const res = await useAuthStore.getState().updatePassword('MonMotDePasse!2026');
+      expect(res.success).toBe(true);
+      expect(res.message).toContain('succès');
+    });
+
+    it('enforces all 5 password complexity rules individually', async () => {
+      useAuthStore.getState().setMockUser('user@french.app', 'student');
+
+      // Less than 8 chars
+      const short = await useAuthStore.getState().updatePassword('P@ss1');
+      expect(short.success).toBe(false);
+      expect(short.message).toContain('8 caractères');
+
+      // Missing uppercase
+      const noUpper = await useAuthStore.getState().updatePassword('password!123');
+      expect(noUpper.success).toBe(false);
+      expect(noUpper.message).toContain('majuscule');
+
+      // Missing lowercase
+      const noLower = await useAuthStore.getState().updatePassword('PASSWORD!123');
+      expect(noLower.success).toBe(false);
+      expect(noLower.message).toContain('minuscule');
+
+      // Missing number
+      const noNumber = await useAuthStore.getState().updatePassword('Password!Special');
+      expect(noNumber.success).toBe(false);
+      expect(noNumber.message).toContain('chiffre');
+
+      // Missing special character
+      const noSpecial = await useAuthStore.getState().updatePassword('Password123456');
+      expect(noSpecial.success).toBe(false);
+      expect(noSpecial.message).toContain('caractère spécial');
+    });
+  });
 });

@@ -24,6 +24,8 @@ export interface AuthActions {
   decrementHearts: () => Promise<number>;
   refillHearts: () => Promise<void>;
   incrementStreak: () => Promise<void>;
+  updateEmail: (newEmail: string) => Promise<{ success: boolean; message: string; requiresConfirmation?: boolean }>;
+  updatePassword: (newPassword: string) => Promise<{ success: boolean; message: string }>;
   clearError: () => void;
 }
 
@@ -353,6 +355,143 @@ export const useAuthStore = create<AuthStore>()(
         streak_frozen: newFrozen,
         last_active_date: today,
       });
+    },
+
+    updateEmail: async (newEmail: string) => {
+      const cleanEmail = newEmail.trim().toLowerCase();
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!cleanEmail || !emailRegex.test(cleanEmail)) {
+        return {
+          success: false,
+          message: 'Veuillez saisir une adresse e-mail valide au format nom@exemple.com.',
+        };
+      }
+
+      const currentEmail = (get().profile?.email || get().user?.email || '').toLowerCase();
+      if (currentEmail && cleanEmail === currentEmail) {
+        return {
+          success: false,
+          message: 'La nouvelle adresse e-mail doit être différente de l’adresse actuelle.',
+        };
+      }
+
+      if (get().isMockMode || !isSupabaseConfigured || !supabase) {
+        const currentProfile = get().profile;
+        if (currentProfile) {
+          const updatedProfile = {
+            ...currentProfile,
+            email: cleanEmail,
+            updated_at: new Date().toISOString(),
+          };
+          saveStoredMockProfile(updatedProfile);
+          set({
+            profile: updatedProfile,
+            user: get().user ? { ...get().user!, email: cleanEmail } : null,
+          });
+        }
+        return {
+          success: true,
+          message: '✨ Votre adresse e-mail a été mise à jour avec succès.',
+          requiresConfirmation: false,
+        };
+      }
+
+      try {
+        const { data, error } = await supabase.auth.updateUser({ email: cleanEmail });
+        if (error) throw error;
+
+        // If email was updated immediately
+        if (data?.user?.email === cleanEmail) {
+          const currentProfile = get().profile;
+          if (currentProfile) {
+            await supabase.from('profiles').update({ email: cleanEmail }).eq('id', currentProfile.id);
+            set({
+              profile: { ...currentProfile, email: cleanEmail, updated_at: new Date().toISOString() },
+              user: data.user,
+            });
+          }
+          return {
+            success: true,
+            message: '✨ Votre adresse e-mail a été mise à jour avec succès.',
+            requiresConfirmation: false,
+          };
+        } else {
+          return {
+            success: true,
+            message: '📨 Un e-mail de confirmation a été envoyé à votre nouvelle adresse. Veuillez cliquer sur le lien pour valider le changement.',
+            requiresConfirmation: true,
+          };
+        }
+      } catch (err: unknown) {
+        const raw = err instanceof Error ? err.message : 'Erreur lors de la mise à jour de l’adresse e-mail';
+        let friendly = raw;
+        if (raw.toLowerCase().includes('already registered')) {
+          friendly = 'Cette adresse e-mail est déjà associée à un compte existant.';
+        } else if (raw.toLowerCase().includes('rate limit')) {
+          friendly = 'Trop de requêtes récentes. Veuillez patienter quelques instants avant de réessayer.';
+        } else if (raw.toLowerCase().includes('should be different')) {
+          friendly = 'La nouvelle adresse doit être différente de l’adresse actuelle.';
+        }
+        return { success: false, message: friendly };
+      }
+    },
+
+    updatePassword: async (newPassword: string) => {
+      if (newPassword.length < 8) {
+        return {
+          success: false,
+          message: 'Le mot de passe doit comporter au moins 8 caractères.',
+        };
+      }
+      if (!/[A-Z]/.test(newPassword)) {
+        return {
+          success: false,
+          message: 'Le mot de passe doit contenir au moins une lettre majuscule (A-Z).',
+        };
+      }
+      if (!/[a-z]/.test(newPassword)) {
+        return {
+          success: false,
+          message: 'Le mot de passe doit contenir au moins une lettre minuscule (a-z).',
+        };
+      }
+      if (!/[0-9]/.test(newPassword)) {
+        return {
+          success: false,
+          message: 'Le mot de passe doit contenir au moins un chiffre (0-9).',
+        };
+      }
+      if (!/[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]/.test(newPassword)) {
+        return {
+          success: false,
+          message: 'Le mot de passe doit contenir au moins un caractère spécial (ex: ! @ # $ %).',
+        };
+      }
+
+      if (get().isMockMode || !isSupabaseConfigured || !supabase) {
+        return {
+          success: true,
+          message: '🔒 Votre mot de passe a été mis à jour avec succès.',
+        };
+      }
+
+      try {
+        const { error } = await supabase.auth.updateUser({ password: newPassword });
+        if (error) throw error;
+        return {
+          success: true,
+          message: '🔒 Votre mot de passe a été mis à jour avec succès.',
+        };
+      } catch (err: unknown) {
+        const raw = err instanceof Error ? err.message : 'Erreur lors du changement de mot de passe';
+        let friendly = raw;
+        if (raw.toLowerCase().includes('rate limit')) {
+          friendly = 'Trop de tentatives récentes. Veuillez patienter avant de réessayer.';
+        } else if (raw.toLowerCase().includes('should be different')) {
+          friendly = 'Le nouveau mot de passe doit être différent de l’ancien.';
+        }
+        return { success: false, message: friendly };
+      }
     },
 
     clearError: () => set({ authError: null }),

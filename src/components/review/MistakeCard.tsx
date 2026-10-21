@@ -26,25 +26,15 @@ export const MistakeCard: React.FC<MistakeCardProps> = ({
       className={`mistake-card ${!isPending ? 'mistake-card-resolved' : ''}`}
       style={{
         borderLeft: isPending ? '4px solid #EF4444' : '4px solid #10B981',
-        marginBottom: '1rem',
-        padding: '1.25rem'
+        marginBottom: '1rem'
       }}
     >
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          marginBottom: '0.75rem',
-          flexWrap: 'wrap',
-          gap: '0.5rem'
-        }}
-      >
-        <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+      <div className="mistake-card-header">
+        <div className="mistake-card-tags">
           <Badge variant={isPending ? 'rose' : 'emerald'}>
             {isPending ? 'À retravailler' : 'Maîtrisé'}
           </Badge>
-          <span style={{ fontSize: '0.85rem', color: 'var(--color-text-muted)' }}>
+          <span className="mistake-card-chapter">
             Chapitre {mistake.chapter_id.replace(/^ch0?/, '')}
           </span>
           {mistake.wrong_count > 1 && (
@@ -52,7 +42,7 @@ export const MistakeCard: React.FC<MistakeCardProps> = ({
           )}
         </div>
 
-        <span style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>
+        <span className="mistake-card-date">
           {new Date(mistake.last_attempted_at).toLocaleDateString('fr-FR', {
             day: 'numeric',
             month: 'short'
@@ -61,109 +51,55 @@ export const MistakeCard: React.FC<MistakeCardProps> = ({
       </div>
 
       {mistake.instruction && (
-        <p
-          style={{
-            fontSize: '0.9rem',
-            fontStyle: 'italic',
-            color: 'var(--color-text-muted)',
-            marginBottom: '0.5rem'
-          }}
-        >
+        <p className="mistake-card-instruction">
           {mistake.instruction}
         </p>
       )}
 
-      <h3
-        style={{
-          fontSize: '1.1rem',
-          fontWeight: 600,
-          marginBottom: '1rem',
-          color: 'var(--color-text)'
-        }}
-      >
+      <h3 className="mistake-card-prompt">
         {mistake.prompt}
       </h3>
 
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          gap: '0.5rem',
-          backgroundColor: 'var(--color-bg-secondary, rgba(0, 0, 0, 0.03))',
-          padding: '0.875rem',
-          borderRadius: '8px',
-          marginBottom: '1rem'
-        }}
-      >
-        <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.5rem' }}>
-          <span style={{ fontSize: '0.85rem', fontWeight: 600, color: '#EF4444' }}>
+      <div className="mistake-card-answers-box">
+        <div className="mistake-answer-row">
+          <span className="mistake-answer-label mistake-label-wrong">
             Votre réponse :
           </span>
           <span
-            style={{
-              fontSize: '0.95rem',
-              textDecoration: isPending ? 'line-through' : 'none',
-              color: 'var(--color-text)'
-            }}
+            className="mistake-answer-value"
+            style={{ textDecoration: isPending ? 'line-through' : 'none' }}
           >
             {mistake.last_wrong_answer}
           </span>
         </div>
 
-        <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.5rem' }}>
-          <span style={{ fontSize: '0.85rem', fontWeight: 600, color: '#10B981' }}>
+        <div className="mistake-answer-row">
+          <span className="mistake-answer-label mistake-label-expected">
             Forme attendue :
           </span>
-          <span style={{ fontSize: '0.95rem', fontWeight: 600, color: '#10B981' }}>
+          <span className="mistake-answer-value mistake-expected-text">
             {acceptedText}
           </span>
         </div>
 
         {mistake.explanation && (
-          <div
-            style={{
-              marginTop: '0.25rem',
-              paddingTop: '0.5rem',
-              borderTop: '1px dashed var(--color-border)'
-            }}
-          >
-            <span
-              style={{
-                fontSize: '0.8rem',
-                fontWeight: 600,
-                color: 'var(--color-primary)',
-                display: 'block',
-                marginBottom: '0.25rem'
-              }}
-            >
+          <div className="mistake-explanation-box">
+            <span className="mistake-explanation-title">
               💡 Conseil didactique du professeur :
             </span>
-            <p
-              style={{
-                fontSize: '0.875rem',
-                color: 'var(--color-text)',
-                margin: 0,
-                lineHeight: 1.4
-              }}
-            >
+            <p className="mistake-explanation-text">
               {mistake.explanation}
             </p>
           </div>
         )}
       </div>
 
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'flex-end',
-          gap: '0.5rem',
-          alignItems: 'center'
-        }}
-      >
+      <div className="mistake-card-actions">
         {isPending && onPractice && (
           <Button
             variant="primary"
             size="sm"
+            className="mistake-btn-practice"
             onClick={() => onPractice(mistake)}
           >
             S'entraîner 🎯
@@ -173,6 +109,7 @@ export const MistakeCard: React.FC<MistakeCardProps> = ({
           <Button
             variant="secondary"
             size="sm"
+            className="mistake-btn-resolve"
             onClick={() => onResolve(mistake)}
             disabled={isResolving}
           >

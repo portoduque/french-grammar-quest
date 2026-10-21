@@ -9,10 +9,12 @@ import { useUserProgress } from '@/hooks/useUserProgress';
 import { useAchievements } from '@/hooks/useAchievements';
 import { useNavigate } from 'react-router-dom';
 import { ProfileEditModal } from '@/components/profile/ProfileEditModal';
+import { ChangeEmailModal } from '@/components/profile/ChangeEmailModal';
+import { ChangePasswordModal } from '@/components/profile/ChangePasswordModal';
 
 export const ProfilePage: React.FC = () => {
   const { theme, toggleTheme } = useTheme();
-  const { profile, user, logout, isMockMode, updateProfile } = useAuth();
+  const { profile, user, logout, isMockMode, updateProfile, updateEmail, updatePassword } = useAuth();
   const { data: progressSummary } = useUserProgress();
   const { achievements, unlockedCount, totalCount, isLoading: isAchLoading, checkAndAward, isChecking } = useAchievements();
   const navigate = useNavigate();
@@ -20,6 +22,8 @@ export const ProfilePage: React.FC = () => {
   const [awardFeedback, setAwardFeedback] = useState<string | null>(null);
   const [successFeedback, setSuccessFeedback] = useState<string | null>(null);
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
+  const [isEmailModalOpen, setIsEmailModalOpen] = useState(false);
+  const [isPasswordModalOpen, setIsPasswordModalOpen] = useState(false);
 
   const handleLogout = async () => {
     await logout();
@@ -48,6 +52,24 @@ export const ProfilePage: React.FC = () => {
     await updateProfile(updates);
     setSuccessFeedback('✨ Profil et préférences mis à jour avec succès !');
     setTimeout(() => setSuccessFeedback(null), 4000);
+  };
+
+  const handleUpdateEmail = async (newEmail: string) => {
+    const res = await updateEmail(newEmail);
+    if (res.success) {
+      setSuccessFeedback(res.message);
+      setTimeout(() => setSuccessFeedback(null), 5000);
+    }
+    return res;
+  };
+
+  const handleUpdatePassword = async (newPassword: string) => {
+    const res = await updatePassword(newPassword);
+    if (res.success) {
+      setSuccessFeedback(res.message);
+      setTimeout(() => setSuccessFeedback(null), 5000);
+    }
+    return res;
   };
 
   const roleLabel =
@@ -406,21 +428,54 @@ export const ProfilePage: React.FC = () => {
         </Card>
 
         {/* Account actions */}
-        <Card variant="elevated" className="profile-card">
-          <h2 style={{ fontSize: '1.2rem', fontWeight: 700, marginBottom: '0.5rem' }}>
-            🔐 Compte & Sécurité
-          </h2>
-          <p style={{ color: 'var(--color-text-muted)', marginBottom: '1.25rem', fontSize: '0.9rem' }}>
-            Session chiffrée sécurisée via Supabase Authentication avec isolation stricte des données (RLS actif).
-          </p>
-          <Button
-            variant="ghost"
-            size="md"
-            onClick={handleLogout}
-            style={{ color: '#EF4444', minHeight: '44px' }}
-          >
-            Se déconnecter 🚪
-          </Button>
+        <Card variant="elevated" className="profile-card profile-security-card">
+          <div className="profile-security-header">
+            <div className="profile-security-title-row">
+              <h2 className="profile-security-title">
+                🔐 Compte & Sécurité
+              </h2>
+              <Badge variant="emerald">Session active</Badge>
+            </div>
+            <p className="profile-security-sub">
+              Gestion de vos identifiants d'accès et protection cryptographique de session
+            </p>
+          </div>
+
+          <div className="profile-security-account-info">
+            <div className="profile-account-row">
+              <span className="profile-account-key">Adresse e-mail associée</span>
+              <span className="profile-account-value">{profile?.email || user?.email || 'Non connecté'}</span>
+            </div>
+          </div>
+
+          <div className="profile-security-actions-grid">
+            <Button
+              variant="secondary"
+              size="md"
+              onClick={() => setIsEmailModalOpen(true)}
+              icon="✉️"
+              className="security-action-btn"
+            >
+              Modifier l'adresse e-mail
+            </Button>
+            <Button
+              variant="secondary"
+              size="md"
+              onClick={() => setIsPasswordModalOpen(true)}
+              icon="🔑"
+              className="security-action-btn"
+            >
+              Changer le mot de passe
+            </Button>
+            <Button
+              variant="ghost"
+              size="md"
+              onClick={handleLogout}
+              className="security-action-btn security-logout-btn"
+            >
+              Se déconnecter 🚪
+            </Button>
+          </div>
         </Card>
       </div>
 
@@ -430,6 +485,21 @@ export const ProfilePage: React.FC = () => {
         onClose={() => setIsEditModalOpen(false)}
         profile={profile}
         onSave={handleSaveProfile}
+      />
+
+      {/* Change Email Modal */}
+      <ChangeEmailModal
+        open={isEmailModalOpen}
+        onClose={() => setIsEmailModalOpen(false)}
+        currentEmail={profile?.email || user?.email || ''}
+        onUpdateEmail={handleUpdateEmail}
+      />
+
+      {/* Change Password Modal */}
+      <ChangePasswordModal
+        open={isPasswordModalOpen}
+        onClose={() => setIsPasswordModalOpen(false)}
+        onUpdatePassword={handleUpdatePassword}
       />
     </div>
   );

@@ -17,6 +17,8 @@ export function useAuth() {
   const decrementHearts = useAuthStore((state) => state.decrementHearts);
   const refillHearts = useAuthStore((state) => state.refillHearts);
   const incrementStreak = useAuthStore((state) => state.incrementStreak);
+  const updateEmail = useAuthStore((state) => state.updateEmail);
+  const updatePassword = useAuthStore((state) => state.updatePassword);
   const clearError = useAuthStore((state) => state.clearError);
 
   const isAuthenticated = Boolean(user);
@@ -44,6 +46,8 @@ export function useAuth() {
     decrementHearts,
     refillHearts,
     incrementStreak,
+    updateEmail,
+    updatePassword,
     clearError,
   };
 }
