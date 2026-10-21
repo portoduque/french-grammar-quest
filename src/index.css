@@ -5241,3 +5241,40 @@ dialog.modal::backdrop {
     grid-template-columns: 1fr 1.6fr;
   }
 }
+
+/* ─── Admin Student Management Styles ────────────────────────── */
+.page-admin-students {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .page-admin-students {
+    padding-bottom: calc(var(--mobile-nav-height, 64px) + 2rem);
+  }
+}
+
+.student-mobile-card {
+  box-sizing: border-box;
+  width: 100%;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.student-mobile-card button,
+.first-login-modal-card button,
+.first-login-modal-card input {
+  min-height: 44px;
+}
+
+@media (max-width: 360px) {
+  .page-admin-students .page-title {
+    font-size: 1.25rem !important;
+  }
+  .first-login-modal-card {
+    padding: 1rem !important;
+    border-radius: 12px !important;
+  }
+}

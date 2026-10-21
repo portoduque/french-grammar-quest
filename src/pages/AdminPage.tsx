@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Card } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
 import { Button } from '@/components/ui/Button';
@@ -133,7 +134,26 @@ export const AdminPage: React.FC = () => {
               Gestion sécurisée des accès, conformité éditoriale, gouvernance de contenu et audit
             </p>
           </div>
-          <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+          <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', flexWrap: 'wrap' }}>
+            <Link
+              to="/admin/students"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.4rem',
+                padding: '0.45rem 0.85rem',
+                borderRadius: '8px',
+                backgroundColor: 'var(--color-primary, #6366f1)',
+                color: '#ffffff',
+                fontWeight: 600,
+                fontSize: '0.85rem',
+                textDecoration: 'none',
+                minHeight: '44px',
+                boxSizing: 'border-box'
+              }}
+            >
+              <span>🎓 Inscription des Élèves</span>
+            </Link>
             <Badge variant="rose">Mode Administrateur</Badge>
             <Badge variant="cyan">RLS Actif</Badge>
           </div>

@@ -3,6 +3,7 @@ import { subscribeWithSelector } from 'zustand/middleware';
 import type { User, Session } from '@supabase/supabase-js';
 import { supabase, isSupabaseConfigured, sendMagicLink, signOutUser } from '@/lib/supabase';
 import type { Profile } from '@/types/database';
+import { validateStudentMockCredentials, markStudentFirstLoginHandled } from '@/services/studentService';
 
 export interface AuthState {
   user: User | null;
@@ -12,11 +13,15 @@ export interface AuthState {
   isInitialized: boolean;
   authError: string | null;
   isMockMode: boolean;
+  isTemporaryPassword: boolean;
+  firstLoginPromptDismissed: boolean;
 }
 
 export interface AuthActions {
   initialize: () => Promise<void>;
+  loginWithPassword: (email: string, password: string) => Promise<{ success: boolean; message: string; isTemporaryPassword?: boolean }>;
   loginWithMagicLink: (email: string) => Promise<{ success: boolean; message: string }>;
+  dismissFirstLoginNotice: () => void;
   logout: () => Promise<void>;
   setMockUser: (email?: string, role?: 'student' | 'teacher' | 'admin') => void;
   updateProfile: (updates: Partial<Profile>) => Promise<void>;
@@ -80,6 +85,8 @@ export const useAuthStore = create<AuthStore>()(
     isInitialized: false,
     authError: null,
     isMockMode: !isSupabaseConfigured,
+    isTemporaryPassword: false,
+    firstLoginPromptDismissed: false,
 
     initialize: async () => {
       const isMockActive = typeof window !== 'undefined' && localStorage.getItem(MOCK_ACTIVE_KEY) === 'true';
@@ -180,6 +187,115 @@ export const useAuthStore = create<AuthStore>()(
       }
     },
 
+    loginWithPassword: async (email: string, password: string) => {
+      set({ isLoading: true, authError: null });
+      const cleanEmail = email.trim().toLowerCase();
+
+      try {
+        if (get().isMockMode || !isSupabaseConfigured || !supabase) {
+          const val = validateStudentMockCredentials(cleanEmail, password);
+          if (!val.valid) {
+            const errorMsg = val.errorMessage || 'Identifiants incorrects.';
+            set({ authError: errorMsg, isLoading: false });
+            return { success: false, message: errorMsg };
+          }
+
+          const student = val.student;
+          const role = cleanEmail.includes('professeur') || cleanEmail.includes('admin') ? 'admin' : 'student';
+          const mockProfile: Profile = {
+            ...DEFAULT_MOCK_PROFILE,
+            id: student?.id || DEFAULT_MOCK_PROFILE.id,
+            email: cleanEmail,
+            display_name: student?.full_name || cleanEmail.split('@')[0],
+            role,
+          };
+
+          saveStoredMockProfile(mockProfile);
+          try {
+            localStorage.setItem(MOCK_ACTIVE_KEY, 'true');
+          } catch {
+            // ignore
+          }
+
+          set({
+            user: { id: mockProfile.id, email: cleanEmail } as User,
+            profile: mockProfile,
+            isLoading: false,
+            isMockMode: true,
+            isTemporaryPassword: Boolean(val.isTemporaryPassword),
+            firstLoginPromptDismissed: false,
+          });
+
+          return {
+            success: true,
+            message: 'Connexion réussie !',
+            isTemporaryPassword: Boolean(val.isTemporaryPassword),
+          };
+        }
+
+        // Live Supabase Mode
+        const { data, error } = await supabase.auth.signInWithPassword({
+          email: cleanEmail,
+          password,
+        });
+
+        if (error) {
+          let friendly = error.message;
+          if (error.message.toLowerCase().includes('invalid login credentials')) {
+            friendly = 'Adresse e-mail ou mot de passe incorrect. Vérifiez vos identifiants ou contactez votre professeur.';
+          }
+          set({ authError: friendly, isLoading: false });
+          return { success: false, message: friendly };
+        }
+
+        // Check if user is in access_grants allowlist and active
+        const { data: grant } = await supabase
+          .from('access_grants')
+          .select('status')
+          .eq('email', cleanEmail)
+          .single();
+
+        if (grant && grant.status === 'revoked') {
+          await supabase.auth.signOut();
+          const msg = "Votre compte a été suspendu par l'administration. Veuillez contacter votre professeur.";
+          set({ authError: msg, isLoading: false, user: null, session: null, profile: null });
+          return { success: false, message: msg };
+        }
+
+        const { data: profileData } = await supabase
+          .from('profiles')
+          .select('*')
+          .eq('id', data.user.id)
+          .single();
+
+        const isTemp = Boolean((profileData as any)?.is_temporary_password);
+
+        set({
+          user: data.user,
+          session: data.session,
+          profile: profileData || null,
+          isLoading: false,
+          isMockMode: false,
+          isTemporaryPassword: isTemp,
+          firstLoginPromptDismissed: false,
+        });
+
+        return {
+          success: true,
+          message: 'Connexion réussie !',
+          isTemporaryPassword: isTemp,
+        };
+      } catch (err: unknown) {
+        const msg = err instanceof Error ? err.message : 'Erreur lors de la connexion.';
+        set({ authError: msg, isLoading: false });
+        return { success: false, message: msg };
+      }
+    },
+
+    dismissFirstLoginNotice: () => {
+      set({ firstLoginPromptDismissed: true });
+    },
+
     loginWithMagicLink: async (email: string) => {
       set({ isLoading: true, authError: null });
       try {
@@ -231,6 +347,8 @@ export const useAuthStore = create<AuthStore>()(
           isLoading: false,
           authError: null,
           isMockMode: !isSupabaseConfigured,
+          isTemporaryPassword: false,
+          firstLoginPromptDismissed: false,
         });
       } catch (err: unknown) {
         console.error('Logout error:', err);
@@ -469,6 +587,9 @@ export const useAuthStore = create<AuthStore>()(
       }
 
       if (get().isMockMode || !isSupabaseConfigured || !supabase) {
+        const email = get().user?.email || '';
+        markStudentFirstLoginHandled(email, true);
+        set({ isTemporaryPassword: false });
         return {
           success: true,
           message: '🔒 Votre mot de passe a été mis à jour avec succès.',
@@ -478,6 +599,11 @@ export const useAuthStore = create<AuthStore>()(
       try {
         const { error } = await supabase.auth.updateUser({ password: newPassword });
         if (error) throw error;
+        const currentProfile = get().profile;
+        if (currentProfile) {
+          await (supabase.from('profiles') as any).update({ is_temporary_password: false }).eq('id', currentProfile.id);
+        }
+        set({ isTemporaryPassword: false });
         return {
           success: true,
           message: '🔒 Votre mot de passe a été mis à jour avec succès.',

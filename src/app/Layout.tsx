@@ -3,6 +3,7 @@ import { Outlet } from 'react-router-dom';
 import { Sidebar } from '@/components/ui/Sidebar';
 import { MobileNav } from '@/components/ui/MobileNav';
 import { TopStatusBar } from '@/components/ui/TopStatusBar';
+import { FirstLoginPasswordModal } from '@/components/auth/FirstLoginPasswordModal';
 import { isSupabaseConfigured } from '@/lib/supabase';
 
 export const Layout: React.FC = () => {
@@ -16,6 +17,7 @@ export const Layout: React.FC = () => {
       />
       <div className="app-main-wrapper">
         <TopStatusBar />
+        <FirstLoginPasswordModal />
         {!isSupabaseConfigured && (
           <div
             className="demo-mode-banner"

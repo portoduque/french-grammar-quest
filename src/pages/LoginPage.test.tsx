@@ -15,9 +15,10 @@ describe('LoginPage', () => {
       authError: null,
       isMockMode: true,
     });
+    localStorage.clear();
   });
 
-  it('renders login form with title, email input and submit button', () => {
+  it('renders login form with brand header, password tab and inputs', () => {
     render(
       <MemoryRouter>
         <LoginPage />
@@ -25,14 +26,15 @@ describe('LoginPage', () => {
     );
 
     expect(screen.getByText('French Grammar Quest')).toBeInTheDocument();
-    expect(screen.getByText('Connexion par Lien Magique')).toBeInTheDocument();
+    expect(screen.getByText('Connexion avec Mot de Passe')).toBeInTheDocument();
     expect(screen.getByLabelText(/Adresse e-mail/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/^Mot de passe$/i)).toBeInTheDocument();
 
-    const submitBtn = screen.getByRole('button', { name: /Recevoir mon lien magique/i });
+    const submitBtn = screen.getByRole('button', { name: /Se connecter/i });
     expect(submitBtn).toBeDisabled();
   });
 
-  it('enables submit button when valid email is entered', () => {
+  it('enables submit button and allows login with password', async () => {
     render(
       <MemoryRouter>
         <LoginPage />
@@ -40,28 +42,57 @@ describe('LoginPage', () => {
     );
 
     const emailInput = screen.getByLabelText(/Adresse e-mail/i);
-    fireEvent.change(emailInput, { target: { value: 'marie.curie@sorbonne.fr' } });
+    const passwordInput = screen.getByLabelText(/^Mot de passe$/i);
 
-    const submitBtn = screen.getByRole('button', { name: /Recevoir mon lien magique/i });
+    fireEvent.change(emailInput, { target: { value: 'etudiant@frenchgrammarquest.app' } });
+    fireEvent.change(passwordInput, { target: { value: 'Quest2026!' } });
+
+    const submitBtn = screen.getByRole('button', { name: /Se connecter/i });
     expect(submitBtn).not.toBeDisabled();
-  });
 
-  it('logs in and displays feedback when submitting demo form', async () => {
-    render(
-      <MemoryRouter>
-        <LoginPage />
-      </MemoryRouter>
-    );
-
-    const emailInput = screen.getByLabelText(/Adresse e-mail/i);
-    fireEvent.change(emailInput, { target: { value: 'etudiant@exemple.fr' } });
-
-    const submitBtn = screen.getByRole('button', { name: /Recevoir mon lien magique/i });
     await act(async () => {
       fireEvent.click(submitBtn);
     });
 
-    // In mock mode, immediately logs in and shows success or demo banner
+    expect(useAuthStore.getState().user).not.toBeNull();
+    expect(useAuthStore.getState().profile?.role).toBe('student');
+  });
+
+  it('toggles password visibility with accessible eye button', () => {
+    render(
+      <MemoryRouter>
+        <LoginPage />
+      </MemoryRouter>
+    );
+
+    const passwordInput = screen.getByLabelText(/^Mot de passe$/i);
+    expect(passwordInput).toHaveAttribute('type', 'password');
+
+    const toggleBtn = screen.getByRole('button', { name: /Afficher le mot de passe/i });
+    fireEvent.click(toggleBtn);
+
+    expect(passwordInput).toHaveAttribute('type', 'text');
+    expect(screen.getByRole('button', { name: /Masquer le mot de passe/i })).toBeInTheDocument();
+  });
+
+  it('switches to magic link tab and renders magic link form', async () => {
+    render(
+      <MemoryRouter initialEntries={['/login?tab=magic']}>
+        <LoginPage />
+      </MemoryRouter>
+    );
+
+    expect(screen.getByText('Connexion par Lien Magique')).toBeInTheDocument();
+    const emailInput = screen.getByLabelText(/Adresse e-mail pour lien magique/i);
+    fireEvent.change(emailInput, { target: { value: 'etudiant@exemple.fr' } });
+
+    const submitBtn = screen.getByRole('button', { name: /Recevoir mon lien magique/i });
+    expect(submitBtn).not.toBeDisabled();
+
+    await act(async () => {
+      fireEvent.click(submitBtn);
+    });
+
     expect(useAuthStore.getState().user).not.toBeNull();
   });
 

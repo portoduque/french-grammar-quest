@@ -214,5 +214,50 @@ describe('AuthStore (Zustand & Gamification State)', () => {
       expect(noSpecial.success).toBe(false);
       expect(noSpecial.message).toContain('caractère spécial');
     });
+
+    describe('loginWithPassword (Restricted Student Authentication)', () => {
+      it('successfully logs in with registered student credentials and detects temporary password', async () => {
+        const res = await useAuthStore.getState().loginWithPassword('etudiant@frenchgrammarquest.app', 'Quest2026!');
+        expect(res.success).toBe(true);
+        expect(res.isTemporaryPassword).toBe(true);
+
+        const state = useAuthStore.getState();
+        expect(state.user?.email).toBe('etudiant@frenchgrammarquest.app');
+        expect(state.profile?.role).toBe('student');
+        expect(state.isTemporaryPassword).toBe(true);
+        expect(state.firstLoginPromptDismissed).toBe(false);
+      });
+
+      it('rejects unregistered email with formative error message', async () => {
+        const res = await useAuthStore.getState().loginWithPassword('inconnu@inconnu.fr', 'NimporteQuelPass123!');
+        expect(res.success).toBe(false);
+        expect(res.message).toContain("Ce compte n'est pas encore inscrit");
+        expect(useAuthStore.getState().user).toBeNull();
+      });
+
+      it('rejects suspended student accounts', async () => {
+        const res = await useAuthStore.getState().loginWithPassword('lucas.moreau@example.com', 'Lucas#2026');
+        expect(res.success).toBe(false);
+        expect(res.message).toContain('suspendu');
+        expect(useAuthStore.getState().user).toBeNull();
+      });
+
+      it('allows student to dismiss the first login notice without changing password', async () => {
+        await useAuthStore.getState().loginWithPassword('etudiant@frenchgrammarquest.app', 'Quest2026!');
+        expect(useAuthStore.getState().firstLoginPromptDismissed).toBe(false);
+
+        useAuthStore.getState().dismissFirstLoginNotice();
+        expect(useAuthStore.getState().firstLoginPromptDismissed).toBe(true);
+      });
+
+      it('clears temporary password flag upon successful password change', async () => {
+        await useAuthStore.getState().loginWithPassword('etudiant@frenchgrammarquest.app', 'Quest2026!');
+        expect(useAuthStore.getState().isTemporaryPassword).toBe(true);
+
+        const res = await useAuthStore.getState().updatePassword('NouveauPassSecurise!2026');
+        expect(res.success).toBe(true);
+        expect(useAuthStore.getState().isTemporaryPassword).toBe(false);
+      });
+    });
   });
 });

@@ -8,8 +8,12 @@ export function useAuth() {
   const isInitialized = useAuthStore((state) => state.isInitialized);
   const authError = useAuthStore((state) => state.authError);
   const isMockMode = useAuthStore((state) => state.isMockMode);
+  const isTemporaryPassword = useAuthStore((state) => state.isTemporaryPassword);
+  const firstLoginPromptDismissed = useAuthStore((state) => state.firstLoginPromptDismissed);
 
+  const loginWithPassword = useAuthStore((state) => state.loginWithPassword);
   const loginWithMagicLink = useAuthStore((state) => state.loginWithMagicLink);
+  const dismissFirstLoginNotice = useAuthStore((state) => state.dismissFirstLoginNotice);
   const logout = useAuthStore((state) => state.logout);
   const setMockUser = useAuthStore((state) => state.setMockUser);
   const updateProfile = useAuthStore((state) => state.updateProfile);
@@ -34,11 +38,15 @@ export function useAuth() {
     isInitialized,
     authError,
     isMockMode,
+    isTemporaryPassword,
+    firstLoginPromptDismissed,
     isAuthenticated,
     isAdmin,
     isTeacher,
     isStudent,
+    loginWithPassword,
     loginWithMagicLink,
+    dismissFirstLoginNotice,
     logout,
     setMockUser,
     updateProfile,
@@ -50,4 +58,4 @@ export function useAuth() {
     updatePassword,
     clearError,
   };
-}
+};

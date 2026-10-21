@@ -22,7 +22,11 @@ export const Sidebar: React.FC<SidebarProps> = ({ collapsed, onToggle }) => {
   const location = useLocation();
 
   const allItems = isAdmin
-    ? [...NAV_ITEMS, { path: '/admin', label: 'Admin', icon: '🛠️' }]
+    ? [
+        ...NAV_ITEMS,
+        { path: '/admin', label: 'Admin', icon: '🛠️' },
+        { path: '/admin/students', label: 'Élèves', icon: '🎓' },
+      ]
     : NAV_ITEMS;
 
   return (
