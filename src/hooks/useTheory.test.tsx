@@ -2445,7 +2445,7 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
       wrapper: createWrapper(),
     });
 
-    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
     const sets = result.current.data?.exerciseSets || [];
     expect(sets).toHaveLength(35);

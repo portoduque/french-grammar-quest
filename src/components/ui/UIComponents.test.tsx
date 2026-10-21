@@ -1,5 +1,6 @@
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
 import { Button } from './Button';
 import { Card } from './Card';
 import { Badge } from './Badge';
@@ -95,9 +96,11 @@ describe('UI Base Components', () => {
   describe('TopStatusBar', () => {
     it('renders hearts, streak, xp and toggles theme', () => {
       render(
-        <ThemeProvider>
-          <TopStatusBar hearts={4} streakDays={7} hasFreeze totalXp={350} level={3} />
-        </ThemeProvider>
+        <MemoryRouter>
+          <ThemeProvider>
+            <TopStatusBar hearts={4} streakDays={7} hasFreeze totalXp={350} level={3} />
+          </ThemeProvider>
+        </MemoryRouter>
       );
 
       expect(screen.getByLabelText(/4 vidas/i)).toBeInTheDocument();
@@ -115,9 +118,11 @@ describe('UI Base Components', () => {
 
     it('safely handles negative or NaN values for hearts, streak and XP', () => {
       render(
-        <ThemeProvider>
-          <TopStatusBar hearts={-1} streakDays={-4} totalXp={-100} level={NaN} />
-        </ThemeProvider>
+        <MemoryRouter>
+          <ThemeProvider>
+            <TopStatusBar hearts={-1} streakDays={-4} totalXp={-100} level={NaN} />
+          </ThemeProvider>
+        </MemoryRouter>
       );
 
       expect(screen.getByLabelText(/0 vidas/i)).toBeInTheDocument();

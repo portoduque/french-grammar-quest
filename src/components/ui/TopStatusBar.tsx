@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import { StreakBadge } from '@/components/gamification/StreakBadge';
 import { XpCounter } from '@/components/gamification/XpCounter';
 import { useTheme } from '@/app/providers/ThemeProvider';
@@ -35,8 +35,15 @@ export const TopStatusBar: React.FC<TopStatusBarProps> = ({
   return (
     <header className={`top-status-bar ${className}`} role="banner">
       <div className="top-status-left">
-        <span className="brand-mini-icon" aria-hidden="true">⚜️</span>
-        <span className="brand-mini-title">Grammar Quest</span>
+        <Link
+          to="/dashboard"
+          className="brand-mini-link"
+          aria-label="Tableau de bord — French Grammar Quest"
+          title="Accueil / Tableau de bord"
+        >
+          <span className="brand-mini-icon" aria-hidden="true">⚜️</span>
+          <span className="brand-mini-title">Grammar Quest</span>
+        </Link>
       </div>
 
       <div className="top-status-center">

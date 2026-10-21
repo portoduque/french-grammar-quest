@@ -99,19 +99,38 @@ const MOCK_ACHIEVEMENTS: Achievement[] = [
   }
 ];
 
+function evaluateLocalAchievements(profile: any, catalog: Achievement[]): EnrichedAchievement[] {
+  const xp = profile?.xp ?? 0;
+  const streak = profile?.streak_days ?? 0;
+  const level = profile?.level ?? 1;
+
+  return catalog.map((ach) => {
+    let unlocked = false;
+    if (ach.id === 'first_mission' && xp >= 20) unlocked = true;
+    if (ach.id === 'three_day_streak' && streak >= 3) unlocked = true;
+    if (ach.id === 'seven_day_streak' && streak >= 7) unlocked = true;
+    if (ach.id === 'centurion_xp' && xp >= 100) unlocked = true;
+    if (ach.id === 'perfect_stars' && level >= 2) unlocked = true;
+
+    return {
+      ...ach,
+      unlocked,
+      unlocked_at: unlocked ? (profile?.updated_at || new Date().toISOString()) : null
+    };
+  });
+}
+
 export function useAchievements() {
   const user = useAuthStore((s) => s.user);
+  const profile = useAuthStore((s) => s.profile);
+  const isMockMode = useAuthStore((s) => s.isMockMode);
   const queryClient = useQueryClient();
 
   const query = useQuery<{ catalog: Achievement[]; userAchievements: UserAchievement[]; enriched: EnrichedAchievement[] }>({
-    queryKey: ['user-achievements', user?.id],
+    queryKey: ['user-achievements', user?.id, isMockMode],
     queryFn: async () => {
-      if (!supabase || !user) {
-        const enriched: EnrichedAchievement[] = MOCK_ACHIEVEMENTS.map((ach, idx) => ({
-          ...ach,
-          unlocked: idx < 2,
-          unlocked_at: idx < 2 ? new Date().toISOString() : null
-        }));
+      if (isMockMode || !supabase || !user) {
+        const enriched = evaluateLocalAchievements(profile, MOCK_ACHIEVEMENTS);
         return {
           catalog: MOCK_ACHIEVEMENTS,
           userAchievements: [],
@@ -119,49 +138,68 @@ export function useAchievements() {
         };
       }
 
-      const [catRes, userRes] = await Promise.all([
-        supabase.from('achievements').select('*').order('xp_reward', { ascending: true }),
-        supabase.from('user_achievements').select('*').eq('user_id', user.id)
-      ]);
+      try {
+        const [catRes, userRes] = await Promise.all([
+          supabase.from('achievements').select('*').order('xp_reward', { ascending: true }),
+          supabase.from('user_achievements').select('*').eq('user_id', user.id)
+        ]);
 
-      if (catRes.error) {
-        console.warn('[useAchievements] Erro ao buscar catálogo de conquistas:', catRes.error.message);
+        if (catRes.error) {
+          console.warn('[useAchievements] Erro ao buscar catálogo de conquistas:', catRes.error.message);
+        }
+        if (userRes.error) {
+          console.warn('[useAchievements] Erro ao buscar conquistas do usuário:', userRes.error.message);
+        }
+
+        // If userRes failed due to permission or offline, fall back locally
+        if (userRes.error) {
+          const catalog = (catRes.data as Achievement[]) || MOCK_ACHIEVEMENTS;
+          const enriched = evaluateLocalAchievements(profile, catalog);
+          return { catalog, userAchievements: [], enriched };
+        }
+
+        const catalog = (catRes.data as Achievement[]) || MOCK_ACHIEVEMENTS;
+        const userAchievements = (userRes.data as UserAchievement[]) || [];
+
+        const userMap = new Map<string, string>();
+        for (const ua of userAchievements) {
+          userMap.set(ua.achievement_id, ua.unlocked_at);
+        }
+
+        const enriched: EnrichedAchievement[] = catalog.map((ach) => ({
+          ...ach,
+          unlocked: userMap.has(ach.id),
+          unlocked_at: userMap.get(ach.id) || null
+        }));
+
+        return { catalog, userAchievements, enriched };
+      } catch {
+        const enriched = evaluateLocalAchievements(profile, MOCK_ACHIEVEMENTS);
+        return { catalog: MOCK_ACHIEVEMENTS, userAchievements: [], enriched };
       }
-      if (userRes.error) {
-        console.warn('[useAchievements] Erro ao buscar conquistas do usuário:', userRes.error.message);
-      }
-
-      const catalog = (catRes.data as Achievement[]) || MOCK_ACHIEVEMENTS;
-      const userAchievements = (userRes.data as UserAchievement[]) || [];
-
-      const userMap = new Map<string, string>();
-      for (const ua of userAchievements) {
-        userMap.set(ua.achievement_id, ua.unlocked_at);
-      }
-
-      const enriched: EnrichedAchievement[] = catalog.map((ach) => ({
-        ...ach,
-        unlocked: userMap.has(ach.id),
-        unlocked_at: userMap.get(ach.id) || null
-      }));
-
-      return { catalog, userAchievements, enriched };
     }
   });
 
   const checkAndAwardMutation = useMutation({
     mutationFn: async () => {
-      if (!supabase || !user) {
-        return { success: true, newly_awarded: [], total_unlocked: 2 };
+      if (isMockMode || !supabase || !user) {
+        const enriched = evaluateLocalAchievements(profile, MOCK_ACHIEVEMENTS);
+        return { success: true, newly_awarded: [], total_unlocked: enriched.filter((a) => a.unlocked).length };
       }
 
-      const { data, error } = await supabase.rpc('check_and_award_achievements');
-      if (error) {
-        console.warn('[useAchievements] Erro na RPC check_and_award_achievements:', error.message);
-        throw new Error(error.message);
-      }
+      try {
+        const { data, error } = await supabase.rpc('check_and_award_achievements');
+        if (error) {
+          console.warn('[useAchievements] Erro na RPC check_and_award_achievements:', error.message);
+          const enriched = evaluateLocalAchievements(profile, MOCK_ACHIEVEMENTS);
+          return { success: true, newly_awarded: [], total_unlocked: enriched.filter((a) => a.unlocked).length };
+        }
 
-      return data as { success: boolean; newly_awarded: string[]; total_unlocked: number };
+        return data as { success: boolean; newly_awarded: string[]; total_unlocked: number };
+      } catch {
+        const enriched = evaluateLocalAchievements(profile, MOCK_ACHIEVEMENTS);
+        return { success: true, newly_awarded: [], total_unlocked: enriched.filter((a) => a.unlocked).length };
+      }
     },
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['user-achievements'] });

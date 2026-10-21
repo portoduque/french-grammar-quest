@@ -63,10 +63,10 @@ export const ReviewPage: React.FC = () => {
       <div className="page-header" style={{ marginBottom: '1.5rem' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '1rem' }}>
           <div>
-            <h1 className="page-title" style={{ fontSize: '1.75rem', fontWeight: 800, margin: '0 0 0.5rem 0' }}>
+            <h1 className="page-title">
               🎯 Mon Coffre d'Erreurs
             </h1>
-            <p className="page-subtitle" style={{ color: 'var(--color-text-muted)', margin: 0 }}>
+            <p className="page-subtitle">
               Chaque erreur est une opportunité d’apprentissage. Révisez et maîtrisez vos points faibles.
             </p>
           </div>

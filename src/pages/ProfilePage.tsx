@@ -8,14 +8,18 @@ import { useAuth } from '@/hooks/useAuth';
 import { useUserProgress } from '@/hooks/useUserProgress';
 import { useAchievements } from '@/hooks/useAchievements';
 import { useNavigate } from 'react-router-dom';
+import { ProfileEditModal } from '@/components/profile/ProfileEditModal';
 
 export const ProfilePage: React.FC = () => {
   const { theme, toggleTheme } = useTheme();
-  const { profile, user, logout, isMockMode } = useAuth();
+  const { profile, user, logout, isMockMode, updateProfile } = useAuth();
   const { data: progressSummary } = useUserProgress();
   const { achievements, unlockedCount, totalCount, isLoading: isAchLoading, checkAndAward, isChecking } = useAchievements();
   const navigate = useNavigate();
+
   const [awardFeedback, setAwardFeedback] = useState<string | null>(null);
+  const [successFeedback, setSuccessFeedback] = useState<string | null>(null);
+  const [isEditModalOpen, setIsEditModalOpen] = useState(false);
 
   const handleLogout = async () => {
     await logout();
@@ -36,6 +40,16 @@ export const ProfilePage: React.FC = () => {
     }
   };
 
+  const handleSaveProfile = async (updates: {
+    display_name: string;
+    avatar_url: string | null;
+    preferences: Record<string, any>;
+  }) => {
+    await updateProfile(updates);
+    setSuccessFeedback('✨ Profil et préférences mis à jour avec succès !');
+    setTimeout(() => setSuccessFeedback(null), 4000);
+  };
+
   const roleLabel =
     profile?.role === 'admin'
       ? 'Administrateur'
@@ -54,49 +68,103 @@ export const ProfilePage: React.FC = () => {
   const totalStars = progressSummary?.totalStars ?? 0;
   const accuracyAvg = progressSummary?.accuracyAverage ?? 0;
 
+  const currentPreferences = (profile?.preferences as Record<string, any>) || {};
+  const dailyGoalXp = currentPreferences.daily_goal_xp || 50;
+
+  const isImageAvatar = profile?.avatar_url?.startsWith('data:image/') || profile?.avatar_url?.startsWith('http');
+  const isGlyphAvatar = profile?.avatar_url && !isImageAvatar;
+
   return (
-    <div className="page page-profile" style={{ maxWidth: '960px', margin: '0 auto', width: '100%', boxSizing: 'border-box' }}>
-      <div className="page-header" style={{ marginBottom: '1.5rem' }}>
-        <h1 className="page-title" style={{ fontSize: '1.75rem', fontWeight: 800, margin: '0 0 0.5rem 0' }}>
+    <div className="page page-profile">
+      <div className="page-header">
+        <h1 className="page-title">
           Profil & Progression
         </h1>
-        <p className="page-subtitle" style={{ color: 'var(--color-text-muted)', margin: 0 }}>
+        <p className="page-subtitle">
           Votre passeport d'apprentissage, statistiques et récompenses en langue française
         </p>
       </div>
 
+      {successFeedback && (
+        <div
+          role="status"
+          style={{
+            padding: '0.75rem 1rem',
+            borderRadius: '10px',
+            backgroundColor: 'rgba(16, 185, 129, 0.12)',
+            border: '1px solid rgba(16, 185, 129, 0.3)',
+            color: '#10B981',
+            fontWeight: 600,
+            fontSize: '0.9rem',
+            marginBottom: '1rem',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.5rem'
+          }}
+        >
+          {successFeedback}
+        </div>
+      )}
+
       <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
         {/* User Card */}
         <Card variant="elevated" className="profile-card profile-user-card">
-          <div style={{ display: 'flex', gap: '1.25rem', alignItems: 'center', flexWrap: 'wrap' }}>
-            <div
-              className="profile-avatar-circle"
-              aria-hidden="true"
-              style={{
-                width: '64px',
-                height: '64px',
-                borderRadius: '50%',
-                backgroundColor: 'var(--color-primary)',
-                color: '#fff',
-                fontSize: '1.75rem',
-                fontWeight: 700,
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                boxShadow: '0 4px 12px rgba(37,99,235,0.25)',
-                flexShrink: 0
-              }}
-            >
-              {profile?.display_name ? profile.display_name.charAt(0).toUpperCase() : '👤'}
+          <div className="profile-user-card-inner">
+            <div className="profile-avatar-wrapper">
+              <div
+                className="profile-avatar-circle"
+                role="button"
+                tabIndex={0}
+                onClick={() => setIsEditModalOpen(true)}
+                onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') setIsEditModalOpen(true); }}
+                title="Modifier mon avatar"
+                aria-label="Modifier l'avatar du profil"
+              >
+                {isImageAvatar ? (
+                  <img
+                    src={profile!.avatar_url!}
+                    alt={`Avatar de ${profile?.display_name || 'l\'étudiant'}`}
+                    className="profile-avatar-img"
+                  />
+                ) : isGlyphAvatar ? (
+                  <span style={{ fontSize: '2.2rem', lineHeight: 1 }}>{profile!.avatar_url}</span>
+                ) : (
+                  <span>{profile?.display_name ? profile.display_name.charAt(0).toUpperCase() : '👤'}</span>
+                )}
+              </div>
+              <button
+                type="button"
+                className="profile-avatar-badge"
+                onClick={() => setIsEditModalOpen(true)}
+                aria-label="Modifier l'avatar et la photo"
+                title="Modifier l'avatar"
+              >
+                ✏️
+              </button>
             </div>
-            <div className="profile-user-info" style={{ flex: 1, minWidth: 0, width: '100%' }}>
-              <h2 style={{ fontSize: '1.35rem', fontWeight: 700, margin: '0 0 0.25rem 0' }}>
-                {profile?.display_name || 'Étudiant'}
-              </h2>
-              <p style={{ color: 'var(--color-text-muted)', margin: '0 0 0.5rem 0', fontSize: '0.9rem', wordBreak: 'break-all' }}>
+
+            <div className="profile-user-info">
+              <div className="profile-user-name-row">
+                <h2 className="profile-display-name">
+                  {profile?.display_name || 'Étudiant'}
+                </h2>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={() => setIsEditModalOpen(true)}
+                  icon="✏️"
+                  aria-label="Modifier le profil"
+                  style={{ minHeight: '36px', padding: '4px 10px', fontSize: '0.8125rem' }}
+                >
+                  Modifier
+                </Button>
+              </div>
+
+              <p className="profile-user-email">
                 {profile?.email || user?.email || 'Non connecté'}
               </p>
-              <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', alignItems: 'center' }}>
+
+              <div className="profile-badges-row">
                 <Badge variant={roleBadgeVariant}>{roleLabel}</Badge>
                 {isMockMode && <Badge variant="amber">Mode Démo Local</Badge>}
                 {profile?.role === 'admin' && (
@@ -104,6 +172,7 @@ export const ProfilePage: React.FC = () => {
                     variant="secondary"
                     size="sm"
                     onClick={() => navigate('/admin')}
+                    style={{ minHeight: '36px' }}
                   >
                     Panneau Admin 🛠️
                   </Button>
@@ -118,51 +187,45 @@ export const ProfilePage: React.FC = () => {
           <h2 style={{ fontSize: '1.2rem', fontWeight: 700, marginBottom: '1.25rem' }}>
             📊 Statistiques d'Apprentissage & Gamification
           </h2>
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(130px, 1fr))',
-              gap: '1rem'
-            }}
-          >
-            <div style={{ textAlign: 'center', padding: '1rem', borderRadius: '10px', backgroundColor: 'var(--color-bg-secondary, rgba(0,0,0,0.03))' }}>
-              <div style={{ fontSize: '1.75rem', marginBottom: '0.25rem' }} aria-hidden="true">⭐</div>
-              <div style={{ fontSize: '1.4rem', fontWeight: 800, color: 'var(--color-primary)' }}>
+          <div className="profile-stats-grid">
+            <div className="profile-stat-box">
+              <div className="profile-stat-icon" aria-hidden="true">⭐</div>
+              <div className="profile-stat-num" style={{ color: 'var(--color-primary)' }}>
                 {(profile?.xp ?? 0).toLocaleString('fr-FR')}
               </div>
-              <div style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '0.25rem' }}>XP Total</div>
+              <div className="profile-stat-label">XP Total</div>
             </div>
 
-            <div style={{ textAlign: 'center', padding: '1rem', borderRadius: '10px', backgroundColor: 'var(--color-bg-secondary, rgba(0,0,0,0.03))' }}>
-              <div style={{ fontSize: '1.75rem', marginBottom: '0.25rem' }} aria-hidden="true">🔥</div>
-              <div style={{ fontSize: '1.4rem', fontWeight: 800, color: '#F59E0B' }}>
+            <div className="profile-stat-box">
+              <div className="profile-stat-icon" aria-hidden="true">🔥</div>
+              <div className="profile-stat-num" style={{ color: '#F59E0B' }}>
                 {profile?.streak_days ?? 0}
               </div>
-              <div style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '0.25rem' }}>Jours de Streak</div>
+              <div className="profile-stat-label">Jours de Streak</div>
             </div>
 
-            <div style={{ textAlign: 'center', padding: '1rem', borderRadius: '10px', backgroundColor: 'var(--color-bg-secondary, rgba(0,0,0,0.03))' }}>
-              <div style={{ fontSize: '1.75rem', marginBottom: '0.25rem' }} aria-hidden="true">🎯</div>
-              <div style={{ fontSize: '1.4rem', fontWeight: 800, color: '#10B981' }}>
+            <div className="profile-stat-box">
+              <div className="profile-stat-icon" aria-hidden="true">🎯</div>
+              <div className="profile-stat-num" style={{ color: '#10B981' }}>
                 {completedSets}
               </div>
-              <div style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '0.25rem' }}>Séries Terminées</div>
+              <div className="profile-stat-label">Séries Terminées</div>
             </div>
 
-            <div style={{ textAlign: 'center', padding: '1rem', borderRadius: '10px', backgroundColor: 'var(--color-bg-secondary, rgba(0,0,0,0.03))' }}>
-              <div style={{ fontSize: '1.75rem', marginBottom: '0.25rem' }} aria-hidden="true">🌟</div>
-              <div style={{ fontSize: '1.4rem', fontWeight: 800, color: '#EAB308' }}>
+            <div className="profile-stat-box">
+              <div className="profile-stat-icon" aria-hidden="true">🌟</div>
+              <div className="profile-stat-num" style={{ color: '#EAB308' }}>
                 {totalStars}
               </div>
-              <div style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '0.25rem' }}>Étoiles Maîtrisées</div>
+              <div className="profile-stat-label">Étoiles Maîtrisées</div>
             </div>
 
-            <div style={{ textAlign: 'center', padding: '1rem', borderRadius: '10px', backgroundColor: 'var(--color-bg-secondary, rgba(0,0,0,0.03))' }}>
-              <div style={{ fontSize: '1.75rem', marginBottom: '0.25rem' }} aria-hidden="true">📈</div>
-              <div style={{ fontSize: '1.4rem', fontWeight: 800, color: '#6366F1' }}>
+            <div className="profile-stat-box span-full">
+              <div className="profile-stat-icon" aria-hidden="true">📈</div>
+              <div className="profile-stat-num" style={{ color: '#6366F1' }}>
                 {accuracyAvg}%
               </div>
-              <div style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '0.25rem' }}>Précision Moyenne</div>
+              <div className="profile-stat-label">Précision Moyenne</div>
             </div>
           </div>
         </Card>
@@ -185,6 +248,7 @@ export const ProfilePage: React.FC = () => {
               onClick={handleCheckAchievements}
               disabled={isChecking}
               icon="🔄"
+              style={{ minHeight: '44px' }}
             >
               {isChecking ? 'Évaluation...' : 'Actualiser mes Badges'}
             </Button>
@@ -266,15 +330,16 @@ export const ProfilePage: React.FC = () => {
                       alignItems: 'center',
                       justifyContent: 'center',
                       backgroundColor: ach.unlocked ? 'rgba(245, 158, 11, 0.15)' : 'rgba(0,0,0,0.06)',
-                      filter: ach.unlocked ? 'none' : 'grayscale(1)'
+                      filter: ach.unlocked ? 'none' : 'grayscale(1)',
+                      flexShrink: 0
                     }}
                     aria-hidden="true"
                   >
                     {ach.icon}
                   </div>
 
-                  <div style={{ flex: 1 }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.25rem' }}>
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.25rem', flexWrap: 'wrap', gap: '4px' }}>
                       <h3 style={{ fontSize: '0.95rem', fontWeight: 700, margin: 0, color: 'var(--color-text)' }}>
                         {ach.title}
                       </h3>
@@ -300,9 +365,10 @@ export const ProfilePage: React.FC = () => {
         {/* Preferences */}
         <Card variant="elevated" className="profile-card">
           <h2 style={{ fontSize: '1.2rem', fontWeight: 700, marginBottom: '1rem' }}>
-            ⚙️ Préférences d'Interface
+            ⚙️ Préférences d'Interface & Apprentissage
           </h2>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
+
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', marginBottom: '1rem' }}>
             <div>
               <span style={{ fontWeight: 600, display: 'block' }}>Thème Visuel</span>
               <span style={{ fontSize: '0.85rem', color: 'var(--color-text-muted)' }}>
@@ -314,8 +380,27 @@ export const ProfilePage: React.FC = () => {
               size="sm"
               onClick={toggleTheme}
               icon={theme === 'dark' ? '☀️' : '🌙'}
+              style={{ minHeight: '44px' }}
             >
               {theme === 'dark' ? 'Mode Clair' : 'Mode Sombre'}
+            </Button>
+          </div>
+
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', paddingTop: '1rem', borderTop: '1px solid var(--border-subtle)' }}>
+            <div>
+              <span style={{ fontWeight: 600, display: 'block' }}>Objectif Quotidien</span>
+              <span style={{ fontSize: '0.85rem', color: 'var(--color-text-muted)' }}>
+                {dailyGoalXp} XP / jour ({dailyGoalXp === 20 ? 'Découverte • ~5 min' : dailyGoalXp === 100 ? 'Intensif • ~30 min' : 'Régulier • ~15 min'})
+              </span>
+            </div>
+            <Button
+              variant="secondary"
+              size="sm"
+              onClick={() => setIsEditModalOpen(true)}
+              icon="🎯"
+              style={{ minHeight: '44px' }}
+            >
+              Ajuster l'Objectif
             </Button>
           </div>
         </Card>
@@ -332,12 +417,20 @@ export const ProfilePage: React.FC = () => {
             variant="ghost"
             size="md"
             onClick={handleLogout}
-            style={{ color: '#EF4444' }}
+            style={{ color: '#EF4444', minHeight: '44px' }}
           >
             Se déconnecter 🚪
           </Button>
         </Card>
       </div>
+
+      {/* Edit Profile Modal */}
+      <ProfileEditModal
+        open={isEditModalOpen}
+        onClose={() => setIsEditModalOpen(false)}
+        profile={profile}
+        onSave={handleSaveProfile}
+      />
     </div>
   );
 };

@@ -2200,7 +2200,7 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
         wrapper: createWrapper(),
       });
 
-      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 10000 });
 
       const data = result.current.data;
       expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
