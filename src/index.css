@@ -393,7 +393,8 @@ a:hover {
   bottom: 0;
   left: 0;
   right: 0;
-  height: var(--mobile-nav-height);
+  height: calc(var(--mobile-nav-height) + env(safe-area-inset-bottom, 0px));
+  padding-bottom: env(safe-area-inset-bottom, 0px);
   background: var(--bg-glass);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -401,21 +402,27 @@ a:hover {
   z-index: 50;
   justify-content: space-around;
   align-items: center;
-  padding: 0 var(--space-2);
+  padding-left: var(--space-2);
+  padding-right: var(--space-2);
+  box-sizing: border-box;
 }
 
 .mobile-nav-item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 2px;
-  padding: var(--space-2) var(--space-3);
+  padding: 4px 6px;
+  min-width: 44px;
+  min-height: 48px;
   border-radius: var(--radius-md);
   color: var(--text-muted);
   text-decoration: none;
   font-size: 0.6875rem;
   font-weight: 500;
   transition: all var(--transition-fast);
+  box-sizing: border-box;
 }
 
 .mobile-nav-item:hover,
@@ -428,7 +435,8 @@ a:hover {
 }
 
 .mobile-nav-icon {
-  font-size: 22px;
+  font-size: 20px;
+  line-height: 1;
 }
 
 /* ─── Buttons ─────────────────────────────────────────── */
@@ -944,6 +952,24 @@ dialog.modal::backdrop {
   gap: var(--space-4);
 }
 
+@media (max-width: 480px) {
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+    margin-bottom: var(--space-4);
+  }
+  .section-title {
+    font-size: 1.125rem;
+  }
+  .section-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    font-size: 0.8125rem;
+  }
+}
+
 .section-title {
   font-family: var(--font-display);
   font-size: 1.25rem;
@@ -973,6 +999,11 @@ dialog.modal::backdrop {
 
 .dashboard-hero-tag {
   display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  box-sizing: border-box;
   padding: 4px 14px;
   border-radius: var(--radius-full);
   font-size: 0.75rem;
@@ -1388,16 +1419,44 @@ dialog.modal::backdrop {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   .dashboard-stats {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-3);
+    margin-bottom: var(--space-8);
+  }
+  .stat-card {
+    padding: var(--space-3);
+  }
+  .stat-icon {
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+  .stat-value {
+    font-size: 1.35rem;
+    margin-bottom: 2px;
+  }
+  .stat-label {
+    font-size: 0.75rem;
+    line-height: 1.25;
   }
 }
 
-/* Ensure minimum 320px works without collapsing bottom-nav safe clearance */
 @media (max-width: 360px) {
   .main-content {
-    padding: var(--space-3) var(--space-2) calc(var(--mobile-nav-height) + var(--space-8)) var(--space-2);
+    padding: var(--space-3) var(--space-2) calc(var(--mobile-nav-height) + env(safe-area-inset-bottom, 0px) + var(--space-8)) var(--space-2);
+  }
+  .dashboard-stats {
+    gap: 8px;
+  }
+  .stat-card {
+    padding: 10px 8px;
+  }
+  .stat-value {
+    font-size: 1.15rem;
+  }
+  .stat-label {
+    font-size: 0.6875rem;
   }
 }
 
@@ -1420,7 +1479,10 @@ dialog.modal::backdrop {
   top: 0;
   z-index: 40;
   backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   gap: var(--space-4);
+  max-width: 100vw;
+  box-sizing: border-box;
 }
 
 @media (max-width: 640px) {
@@ -1452,7 +1514,8 @@ dialog.modal::backdrop {
   }
 
   .top-status-center {
-    gap: 4px;
+    gap: 3px;
+    min-width: 0;
   }
 
   .hearts-display,
@@ -1461,10 +1524,15 @@ dialog.modal::backdrop {
     padding: 2px 5px;
     font-size: 0.7rem;
     gap: 2px;
+    height: 28px;
   }
 
-  .xp-level-badge {
+  .xp-level-pill {
     display: none;
+  }
+
+  .brand-mini-icon {
+    font-size: 1.1rem;
   }
 }
 
@@ -1500,7 +1568,10 @@ dialog.modal::backdrop {
 .top-status-center {
   display: flex;
   align-items: center;
-  gap: var(--space-4);
+  justify-content: center;
+  gap: var(--space-3);
+  min-width: 0;
+  flex: 1;
 }
 
 .hearts-display {
@@ -1508,16 +1579,22 @@ dialog.modal::backdrop {
   align-items: center;
   gap: var(--space-1);
   padding: 4px 10px;
+  height: 32px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  flex-shrink: 0;
   background: rgba(244, 63, 94, 0.12);
   border: 1px solid rgba(244, 63, 94, 0.25);
   border-radius: var(--radius-full);
   font-weight: 700;
   font-size: 0.8125rem;
   color: var(--accent-rose);
+  line-height: 1;
 }
 
 .heart-icon {
   font-size: 0.875rem;
+  line-height: 1;
 }
 
 .streak-badge {
@@ -1525,9 +1602,14 @@ dialog.modal::backdrop {
   align-items: center;
   gap: var(--space-1);
   padding: 4px 10px;
+  height: 32px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  flex-shrink: 0;
   border-radius: var(--radius-full);
   font-weight: 700;
   font-size: 0.8125rem;
+  line-height: 1;
 }
 
 .streak-active {
@@ -1544,10 +1626,12 @@ dialog.modal::backdrop {
 
 .streak-flame {
   font-size: 0.875rem;
+  line-height: 1;
 }
 
 .streak-freeze-shield {
   font-size: 0.75rem;
+  line-height: 1;
   margin-left: 2px;
 }
 
@@ -1556,12 +1640,29 @@ dialog.modal::backdrop {
   align-items: center;
   gap: var(--space-1);
   padding: 4px 10px;
+  height: 32px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  min-width: 0;
+  flex-shrink: 1;
   background: var(--accent-violet-dim);
   border: 1px solid var(--border-highlight);
   border-radius: var(--radius-full);
   font-weight: 700;
   font-size: 0.8125rem;
   color: var(--accent-violet-light);
+  line-height: 1;
+}
+
+.xp-star {
+  line-height: 1;
+}
+
+.xp-value {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1;
 }
 
 .xp-level-pill {
@@ -1572,6 +1673,9 @@ dialog.modal::backdrop {
   font-size: 0.6875rem;
   font-weight: 800;
   margin-left: 4px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  line-height: 1.2;
 }
 
 .xp-combo-badge {
@@ -1581,6 +1685,8 @@ dialog.modal::backdrop {
   border-radius: var(--radius-full);
   font-size: 0.6875rem;
   font-weight: 800;
+  white-space: nowrap;
+  flex-shrink: 0;
   animation: pulseGlow 1.5s infinite;
 }
 
@@ -1588,14 +1694,25 @@ dialog.modal::backdrop {
   background: var(--bg-surface);
   border: 1px solid var(--border-default);
   border-radius: var(--radius-full);
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  min-height: 36px;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   font-size: 0.875rem;
+  flex-shrink: 0;
   transition: all var(--transition-fast);
+  box-sizing: border-box;
+}
+
+.theme-mini-toggle::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
 }
 
 .theme-mini-toggle:hover {

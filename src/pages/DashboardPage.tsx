@@ -25,7 +25,7 @@ const DashboardPage: React.FC = () => {
     : '/chapters';
 
   const continueLabel = recentSession?.exercise_set_id
-    ? `Reprendre la Série (${recentSession.exercise_set_id})`
+    ? 'Reprendre la Série en cours'
     : progressData?.recentProgress?.exercise_set_id
     ? 'Continuer l’Apprentissage'
     : 'Commencer l’Aventure';
@@ -82,7 +82,7 @@ const DashboardPage: React.FC = () => {
           <div className="stat-icon" aria-hidden="true">🎯</div>
           <div className="stat-value">
             {progressPercent}%
-            {accuracyAverage > 0 && <span className="stat-sub"> ({accuracyAverage}% réc.)</span>}
+            {accuracyAverage > 0 && <span className="stat-sub"> ({accuracyAverage}% réussite)</span>}
           </div>
           <div className="stat-label">Progression Globale</div>
         </Card>

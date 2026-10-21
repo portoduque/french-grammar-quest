@@ -40,7 +40,11 @@ export const TopStatusBar: React.FC<TopStatusBarProps> = ({
       </div>
 
       <div className="top-status-center">
-        <div className="hearts-display" title={`${safeHearts} vidas restantes`} aria-label={`${safeHearts} vidas`}>
+        <div
+          className="hearts-display"
+          title={`${safeHearts} vie${safeHearts > 1 ? 's' : ''} restante${safeHearts > 1 ? 's' : ''}`}
+          aria-label={`${safeHearts} vidas`}
+        >
           <span className="heart-icon" aria-hidden="true">❤️</span>
           <span className="heart-count">{safeHearts}</span>
         </div>
@@ -56,7 +60,7 @@ export const TopStatusBar: React.FC<TopStatusBarProps> = ({
           className="theme-mini-toggle"
           onClick={toggleTheme}
           aria-label={`Alternar para tema ${theme === 'dark' ? 'claro' : 'escuro'}`}
-          title={`Alternar para tema ${theme === 'dark' ? 'claro' : 'escuro'}`}
+          title={`Passer au thème ${theme === 'dark' ? 'clair' : 'sombre'}`}
         >
           {theme === 'dark' ? '☀️' : '🌙'}
         </button>

@@ -16,7 +16,7 @@ export const StreakBadge: React.FC<StreakBadgeProps> = ({
   return (
     <div
       className={`streak-badge ${safeDays > 0 ? 'streak-active' : 'streak-inactive'} ${className}`}
-      title={`${safeDays} dias consecutivos de estudo`}
+      title={`${safeDays} jour${safeDays > 1 ? 's' : ''} consécutif${safeDays > 1 ? 's' : ''} d’apprentissage`}
       aria-label={`${safeDays} dias de streak`}
     >
       <span className="streak-flame" aria-hidden="true">
@@ -26,7 +26,7 @@ export const StreakBadge: React.FC<StreakBadgeProps> = ({
       {hasFreeze && (
         <span
           className="streak-freeze-shield"
-          title="Streak Freeze ativo (protegido contra perda)"
+          title="Gel de série actif (série protégée)"
           aria-label="Streak Freeze ativo"
         >
           🛡️
