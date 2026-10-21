@@ -170,6 +170,12 @@ import {
   CH27_FALLBACK_EXERCISE_SETS
 } from '@/data/chapter27Data';
 
+import {
+  CHAPTER_28_THEORY_MARKDOWN,
+  CH28_FALLBACK_TOPICS,
+  CH28_FALLBACK_EXERCISE_SETS
+} from '@/data/chapter28Data';
+
 
 
 
@@ -771,6 +777,29 @@ const CH27_FALLBACK_THEORY: ChapterTheoryData = {
 };
 
 
+const CH28_FALLBACK_THEORY: ChapterTheoryData = {
+  chapter: {
+    id: 'ch28',
+    number: 28,
+    title: 'Review exercises',
+    slug: 'review-exercises',
+    world_number: 5,
+    world_name: 'Mundo 5: Le Sommet de la Maîtrise',
+    page_range: '353–385',
+    topics_count: 7,
+    exercise_groups_count: 35,
+    total_questions: 345,
+    theory_markdown: CHAPTER_28_THEORY_MARKDOWN,
+    release_id: null,
+    editorial_status: 'published',
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+  },
+  topics: CH28_FALLBACK_TOPICS,
+  exerciseSets: CH28_FALLBACK_EXERCISE_SETS
+};
+
+
 function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch01') return CH01_FALLBACK_THEORY;
   if (chapterId === 'ch02') return CH02_FALLBACK_THEORY;
@@ -799,6 +828,7 @@ function getFallbackTheory(chapterId: string): ChapterTheoryData | null {
   if (chapterId === 'ch25') return CH25_FALLBACK_THEORY;
   if (chapterId === 'ch26') return CH26_FALLBACK_THEORY;
   if (chapterId === 'ch27') return CH27_FALLBACK_THEORY;
+  if (chapterId === 'ch28') return CH28_FALLBACK_THEORY;
   return null;
 }
 
@@ -912,6 +942,8 @@ export function useTheory(chapterId?: string) {
           ? CHAPTER_26_THEORY_MARKDOWN
           : chapterId === 'ch27'
           ? CHAPTER_27_THEORY_MARKDOWN
+          : chapterId === 'ch28'
+          ? CHAPTER_28_THEORY_MARKDOWN
           : (chapterData as Chapter).theory_markdown;
 
         return {

@@ -141,28 +141,19 @@ export const ChapterPage: React.FC = () => {
         <div
           role="region"
           aria-label="Épreuve Finale"
-          style={{
-            padding: '1.25rem 1.5rem',
-            marginBottom: '1.5rem',
-            borderRadius: '12px',
-            background: 'linear-gradient(135deg, rgba(245, 158, 11, 0.12), rgba(59, 130, 246, 0.08))',
-            border: '2px solid rgba(245, 158, 11, 0.4)',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '1.25rem'
-          }}
+          className="final-boss-banner"
         >
-          <span style={{ fontSize: '2.5rem' }}>👑</span>
-          <div>
-            <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', marginBottom: '0.35rem' }}>
+          <span className="final-boss-icon" aria-hidden="true">👑</span>
+          <div style={{ minWidth: 0, flex: 1 }}>
+            <div className="final-boss-badges">
               <Badge variant="amber">Épreuve Finale</Badge>
               <Badge variant="cyan">35 séries · 345 questions</Badge>
               <Badge variant="emerald">7 Checkpoints</Badge>
             </div>
-            <strong style={{ fontSize: '1.1rem', display: 'block', color: 'var(--color-text)' }}>
+            <strong style={{ fontSize: '1.1rem', display: 'block', color: 'var(--text-primary)' }}>
               Le Grand Boss : Pot-pourri des 28 Chapitres
             </strong>
-            <p style={{ margin: '0.25rem 0 0', fontSize: '0.875rem', color: 'var(--color-text-muted)' }}>
+            <p style={{ margin: '0.25rem 0 0', fontSize: '0.875rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
               Relevez l'ultime défi de grammaire française ! Votre avancée est sauvegardée automatiquement toutes les 5 séries.
             </p>
           </div>
@@ -2757,6 +2748,110 @@ export const ChapterPage: React.FC = () => {
                     • <strong>Une poêle (fém. avec accent circonflexe) :</strong> frigideira ! (<em>Un poêle</em> au masculin désigne un appareil de chauffage / aquecedor).<br />
                     • <strong>Une serviette :</strong> guardanapo (<em>serviette de table</em>) ou toalha de banho (<em>serviette de bain</em>). La toalha de mesa se dit <strong>la nappe</strong> !<br />
                     • <strong>Une cuisinière :</strong> désigne à la fois le meuble électroménager (fogão) et la personne qui cuisine !
+                  </div>
+                </div>
+              </div>
+            </div>
+          ) : chapterNum === 28 ? (
+            <div className="tips-deck">
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">👑</div>
+                <div className="tip-card-body">
+                  <h3>L'Ordre d'Or des Pronoms Compléments (La Formule Magique)</h3>
+                  <p>
+                    Devant le verbe conjugué, l'ordre des pronoms est invariable et rigoureux. Mémorisez cette séquence infaillible :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Ordre :</strong> [me/te/se/nous/vous] → [le/la/les] → [lui/leur] → [y] → [en]<br />
+                    • <em>L'architecte la leur a présentée.</em> (la = COD féminin antéposé → <strong>accordée</strong> !)<br />
+                    • <em>Charlie s'est résigné à les lui donner.</em> (placés devant l'infinitif régissant).<br />
+                    • <em>Les lui as-tu donnés ?</em> (les = colliers masc. pluriel → <strong>donnés</strong> !).
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🎭</div>
+                <div className="tip-card-body">
+                  <h3>Le Pronom « Ça » et la Voix Pronominale Passive</h3>
+                  <p>
+                    En français naturel, on préfère souvent la tournure pronominale avec <em>ça</em> plutôt qu'une voix passive lourde :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Ça se voit :</strong> <em>Tu as une tache sur ta robe, mais ça ne se voit pas.</em> (não se nota).<br />
+                    • <strong>Ça ne se fait pas :</strong> <em>Ne mets pas les coudes sur la table, ça ne se fait pas !</em> (não se faz / falta de educação).<br />
+                    • <strong>Ça se mange :</strong> <em>Pas besoin de couverts, ça se mange avec les doigts.</em><br />
+                    • <strong>Ça se lit :</strong> <em>Le début est difficile, mais ça se lit bien finalement.</em><br />
+                    • <strong>Ça se vend :</strong> <em>Il faut recommander du champagne, car ça se vend très bien.</em>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🧭</div>
+                <div className="tip-card-body">
+                  <h3>Le Chassé-Croisé des Pronoms Relatifs (Simples &amp; Complexes)</h3>
+                  <p>
+                    Pour relier deux propositions sans répétition, identifiez la fonction du mot remplacé :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>QUI :</strong> Sujet (personne ou objet) → <em>L'iPad <strong>qui</strong> se trouve dans la cuisine.</em><br />
+                    • <strong>QUE :</strong> Complément d'Objet Direct → <em>Le polar <strong>que</strong> je viens de lire.</em><br />
+                    • <strong>DONT :</strong> Complément de <em>de</em> → <em>Le garçon <strong>dont</strong> tu as oublié le nom.</em><br />
+                    • <strong>OÙ :</strong> Lieu ou moment → <em>La maison <strong>où</strong> il habite ; L'année <strong>où</strong> ils sont partis.</em><br />
+                    • <strong>Avec préposition :</strong> <em>La table sur <strong>laquelle</strong> nous mangeons</em> ; <em>Les jouets <strong>auxquels</strong> elle pense</em>.
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">🎲</div>
+                <div className="tip-card-body">
+                  <h3>Le Système Hypothétique avec « SI » (Les 3 Paliers)</h3>
+                  <p>
+                    La concordance après <em>si</em> obéit à trois règles mathématiques :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>1. Réel :</strong> Si + Présent → <strong>Futur simple</strong> (<em>Si tu étudies, tu réussiras.</em>)<br />
+                    • <strong>2. Potentiel / Irréel du Présent :</strong> Si + Imparfait → <strong>Conditionnel Présent</strong><br />
+                    &nbsp;&nbsp;→ <em>Si tu <strong>voyais</strong> cette maison, tu <strong>voudrais</strong> l'acheter.</em><br />
+                    • <strong>3. Irréel du Passé :</strong> Si + Plus-que-parfait → <strong>Conditionnel Passé</strong><br />
+                    &nbsp;&nbsp;→ <em>Si tu me l'<strong>avais dit</strong>, nous <strong>aurions pris</strong> une autre route.</em><br />
+                    ⚠️ <strong>Règle d'or :</strong> Jamais de conditionnel directement dans la subordonnée avec <em>si</em> !
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">💡</div>
+                <div className="tip-card-body">
+                  <h3>« Avoir beau + Infinitif » : La Concession Élégante</h3>
+                  <p>
+                    Sublime alternative à <em>bien que</em> et <em>quoique</em>, sans avoir besoin du subjonctif ! Le verbe <em>avoir</em> se conjugue au temps voulu et reste suivi de l'infinitif :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <em>Quoiqu'ils aient de l'argent...</em> → <strong>Ils ont beau avoir assez d'argent</strong>, ils préfèrent louer.<br />
+                    • <em>Bien qu'il soit innocent...</em> → <strong>Il a beau être innocent</strong>, il a été incarcéré.<br />
+                    • <em>Quoique la mer soit très agitée...</em> → <strong>La mer a beau être très agitée</strong>, ils surfent.<br />
+                    • Équivalent portugais : <em>Por mais que tenham dinheiro... / Por mais inocente que seja...</em>
+                  </div>
+                </div>
+              </div>
+
+              <div className="tip-card card card-default">
+                <div className="tip-card-icon">⏳</div>
+                <div className="tip-card-body">
+                  <h3>L'Expression du Temps avec « DEPUIS »</h3>
+                  <p>
+                    Grande différence avec le portugais : pour une action qui a démarré dans le passé et qui est <strong>toujours active au présent</strong>, le français utilise le <strong>PRÉSENT DE L'INDICATIF</strong> :
+                  </p>
+                  <div className="tip-example" lang="fr">
+                    • <strong>Depuis quand ?</strong> (date / point de départ précis) :<br />
+                    &nbsp;&nbsp;→ <strong>J'apprends le japonais depuis janvier.</strong> (Estudo japonês desde janeiro).<br />
+                    &nbsp;&nbsp;→ <strong>Je suis citoyen français depuis juin 2010.</strong><br />
+                    • <strong>Depuis combien de temps ?</strong> (durée écoulée) :<br />
+                    &nbsp;&nbsp;→ <strong>Je suis avocate depuis trois ans.</strong> (Sou advogada há três anos).<br />
+                    &nbsp;&nbsp;→ <strong>Je travaille dans cet atelier depuis six mois.</strong>
                   </div>
                 </div>
               </div>

@@ -2418,4 +2418,82 @@ describe('useTheory Hook — Pédagogie FLE du Chapitre 1', () => {
     expect(topics[2].id).toBe('ch27-t03');
     expect(topics[3].id).toBe('ch27-t04');
   });
+
+  // ========================================================
+  // CHAPITRE 28 : REVIEW EXERCISES (LE GRAND BILAN CUMULATIF)
+  // ========================================================
+  it('fournit la théorie pédagogique complète et rigoureuse pour ch28 (Grand Bilan)', async () => {
+    const { result } = renderHook(() => useTheory('ch28'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    expect(result.current.data?.chapter).toBeDefined();
+    expect(result.current.data?.chapter.number).toBe(28);
+    expect(result.current.data?.chapter.title).toBe('Review exercises');
+    expect(result.current.data?.chapter.exercise_groups_count).toBe(35);
+    expect([345, 350]).toContain(result.current.data?.chapter.total_questions);
+    expect(result.current.data?.chapter.page_range).toBe('353–385');
+    expect(result.current.data?.chapter.theory_markdown).toContain('# Chapter 28 — Review exercises');
+    expect(result.current.data?.chapter.theory_markdown).toContain('Le Grand Bilan');
+    expect(result.current.data?.chapter.theory_markdown).toContain('7 Checkpoints');
+  });
+
+  it('charge les 35 séries officielles du Chapitre 28 avec les bons types d\'interaction', async () => {
+    const { result } = renderHook(() => useTheory('ch28'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const sets = result.current.data?.exerciseSets || [];
+    expect(sets).toHaveLength(35);
+
+    // 28.1: Pronoms compléments -> sentence_rewrite (10)
+    expect(sets[0].id).toBe('ch28-ex01');
+    expect(sets[0].interaction_type).toBe('sentence_rewrite');
+    expect(sets[0].questions_count).toBe(10);
+
+    // 28.15: Voix pronominale passive avec « Ça » -> matching (5)
+    expect(sets[14].id).toBe('ch28-ex15');
+    expect(sets[14].interaction_type).toBe('matching');
+    expect(sets[14].questions_count).toBe(5);
+
+    // 28.18: Pronoms relatifs qui / que -> fill_blank (10)
+    expect(sets[17].id).toBe('ch28-ex18');
+    expect(sets[17].interaction_type).toBe('fill_blank');
+    expect(sets[17].questions_count).toBe(10);
+
+    // 28.33: Concession avec Avoir beau -> sentence_rewrite (10)
+    expect(sets[32].id).toBe('ch28-ex33');
+    expect(sets[32].interaction_type).toBe('sentence_rewrite');
+    expect(sets[32].questions_count).toBe(10);
+
+    // 28.35: Durée avec Depuis -> sentence_rewrite (10)
+    expect(sets[34].id).toBe('ch28-ex35');
+    expect(sets[34].interaction_type).toBe('sentence_rewrite');
+    expect(sets[34].questions_count).toBe(10);
+
+    const totalQ = sets.reduce((acc, s) => acc + s.questions_count, 0);
+    expect(totalQ).toBe(345);
+  });
+
+  it('fournit les 7 sujets / checkpoints structurés du chapitre 28', async () => {
+    const { result } = renderHook(() => useTheory('ch28'), {
+      wrapper: createWrapper(),
+    });
+
+    await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+    const topics = result.current.data?.topics || [];
+    expect(topics).toHaveLength(7);
+    expect(topics[0].id).toBe('ch28-t01');
+    expect(topics[1].id).toBe('ch28-t02');
+    expect(topics[2].id).toBe('ch28-t03');
+    expect(topics[3].id).toBe('ch28-t04');
+    expect(topics[4].id).toBe('ch28-t05');
+    expect(topics[5].id).toBe('ch28-t06');
+    expect(topics[6].id).toBe('ch28-t07');
+  });
 });

@@ -230,6 +230,6 @@ export const CHAPTERS_SUMMARY: ChapterSummary[] = [
     "title": "Review exercises",
     "exerciseGroups": 35,
     "pageRange": "353–385",
-    "topicsCount": 0
+    "topicsCount": 7
   }
 ];

@@ -3540,4 +3540,82 @@ describe('useExerciseSet Hook — Séries et Moteurs de Jeu du Chapitre 1', () =
       expect(data?.questions[9].accepted_answers).toContain('Bien que... car');
     });
   });
+
+  describe('useExerciseSet Hook — Chapitre 28 (Review exercises / Le Grand Bilan)', () => {
+    it('charge la série 28.1 (sentence_rewrite) pour les pronoms COD et COI (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch28-ex01'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].prompt).toBe('Raphaël aime la peinture hollandaise.');
+      expect(data?.questions[0].accepted_answers).toContain("Raphaël l'aime.");
+      expect(data?.questions[1].prompt).toBe('La mise en scène n’a pas plu à l’auteur.');
+      expect(data?.questions[1].accepted_answers).toContain("La mise en scène ne lui a pas plu.");
+    });
+
+    it('charge la série 28.15 (matching) pour la voix pronominale passive avec « Ça » (5 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch28-ex15'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('matching');
+      expect(data?.questions).toHaveLength(5);
+      expect(data?.questions[0].prompt).toBe('Tu as fait une tache sur ta robe, mais...');
+      expect(data?.questions[0].accepted_answers).toContain('c');
+      expect(data?.questions[1].prompt).toBe('Axel, ne mets pas les coudes sur la table,...');
+      expect(data?.questions[1].accepted_answers).toContain('a');
+      expect(data?.questions[2].accepted_answers).toContain('e');
+      expect(data?.questions[3].accepted_answers).toContain('b');
+      expect(data?.questions[4].accepted_answers).toContain('d');
+    });
+
+    it('charge la série 28.18 (fill_blank) pour le choix entre qui et que (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch28-ex18'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('fill_blank');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].accepted_answers).toContain('que');
+      expect(data?.questions[1].accepted_answers).toContain('qui');
+    });
+
+    it('charge la série 28.33 (sentence_rewrite) pour la tournure « Avoir beau » (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch28-ex33'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].accepted_answers).toContain('Ils ont beau avoir assez d’argent pour acheter une maison, ils préfèrent louer.');
+    });
+
+    it('charge la série 28.35 (sentence_rewrite) pour l\'expression de la durée avec « Depuis » (10 questions)', async () => {
+      const { result } = renderHook(() => useExerciseSet('ch28-ex35'), {
+        wrapper: createWrapper(),
+      });
+
+      await waitFor(() => expect(result.current.isSuccess).toBe(true), { timeout: 4000 });
+
+      const data = result.current.data;
+      expect(data?.exerciseSet.interaction_type).toBe('sentence_rewrite');
+      expect(data?.questions).toHaveLength(10);
+      expect(data?.questions[0].accepted_answers).toContain('J’apprends le japonais depuis janvier.');
+      expect(data?.questions[1].accepted_answers).toContain('Je suis avocate depuis trois ans.');
+    });
+  });
 });
