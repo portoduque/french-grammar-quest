@@ -108,16 +108,24 @@ describe('LoginPage', () => {
     expect(screen.getByText(/Ce compte n'est pas encore inscrit/i)).toBeInTheDocument();
   });
 
-  it('allows direct administrator login for portoduque@outlook.com', async () => {
+  it('allows administrator to log in via form credentials (portoduque@outlook.com)', async () => {
     render(
       <MemoryRouter>
         <LoginPage />
       </MemoryRouter>
     );
 
-    const demoAdminBtn = screen.getByRole('button', { name: /Entrer comme Administrateur/i });
+    const emailInput = screen.getByLabelText(/Adresse e-mail/i);
+    const passwordInput = screen.getByLabelText(/^Mot de passe$/i);
+
+    fireEvent.change(emailInput, { target: { value: DEFAULT_ADMIN_EMAIL } });
+    fireEvent.change(passwordInput, { target: { value: DEFAULT_ADMIN_PASSWORD } });
+
+    const submitBtn = screen.getByRole('button', { name: /Se connecter/i });
+    expect(submitBtn).not.toBeDisabled();
+
     await act(async () => {
-      fireEvent.click(demoAdminBtn);
+      fireEvent.click(submitBtn);
     });
 
     expect(useAuthStore.getState().user).not.toBeNull();
@@ -125,20 +133,14 @@ describe('LoginPage', () => {
     expect(useAuthStore.getState().profile?.role).toBe('admin');
   });
 
-  it('prefills form inputs with administrator credentials on helper click', () => {
+  it('does not display any backdoor demo login or prefill buttons in production', () => {
     render(
       <MemoryRouter>
         <LoginPage />
       </MemoryRouter>
     );
 
-    const prefillBtn = screen.getByRole('button', { name: /Préremplir le formulaire/i });
-    fireEvent.click(prefillBtn);
-
-    const emailInput = screen.getByLabelText(/Adresse e-mail/i) as HTMLInputElement;
-    const passwordInput = screen.getByLabelText(/^Mot de passe$/i) as HTMLInputElement;
-
-    expect(emailInput.value).toBe(DEFAULT_ADMIN_EMAIL);
-    expect(passwordInput.value).toBe(DEFAULT_ADMIN_PASSWORD);
+    expect(screen.queryByRole('button', { name: /Entrer comme Administrateur/i })).not.toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: /Préremplir le formulaire/i })).not.toBeInTheDocument();
   });
 });

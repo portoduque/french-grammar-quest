@@ -4,12 +4,11 @@ import { useAuth } from '@/hooks/useAuth';
 import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
 import { Card } from '@/components/ui/Card';
-import { DEFAULT_ADMIN_EMAIL, DEFAULT_ADMIN_PASSWORD } from '@/services/studentService';
 
 export const LoginPage: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const { loginWithPassword, setMockUser, isLoading, authError, clearError } = useAuth();
+  const { loginWithPassword, isLoading, authError, clearError } = useAuth();
 
   const searchParams = new URLSearchParams(location.search);
   const initialEmail = searchParams.get('email') || '';
@@ -32,12 +31,6 @@ export const LoginPage: React.FC = () => {
     if (res.success) {
       navigate(redirectTarget, { replace: true });
     }
-  };
-
-  const handleAdminDirectLogin = () => {
-    clearError();
-    setMockUser(DEFAULT_ADMIN_EMAIL, 'admin');
-    navigate(redirectTarget, { replace: true });
   };
 
   return (
@@ -116,34 +109,6 @@ export const LoginPage: React.FC = () => {
               Se connecter 🚀
             </Button>
           </form>
-
-          <div className="login-divider">
-            <span>accès réservé</span>
-          </div>
-
-          <div className="admin-login-actions">
-            <Button
-              type="button"
-              variant="secondary"
-              size="sm"
-              onClick={handleAdminDirectLogin}
-              className="btn-full-width btn-admin-demo"
-            >
-              Entrer comme Administrateur ({DEFAULT_ADMIN_EMAIL}) 👨‍🏫
-            </Button>
-            <Button
-              type="button"
-              variant="ghost"
-              size="sm"
-              onClick={() => {
-                setEmail(DEFAULT_ADMIN_EMAIL);
-                setPassword(DEFAULT_ADMIN_PASSWORD);
-              }}
-              className="btn-full-width btn-admin-prefill"
-            >
-              🔑 Préremplir le formulaire avec l'Admin
-            </Button>
-          </div>
         </Card>
 
         <footer className="login-footer">
