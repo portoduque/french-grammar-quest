@@ -289,6 +289,18 @@ export const useAuthStore = create<AuthStore>()(
             };
           }
 
+          if (localVal.errorCode === 'NOT_REGISTERED') {
+            const notRegMsg = localVal.errorMessage || "Ce compte n'est pas encore inscrit. L'accès est strictement réservé aux élèves enregistrés par l'administration. Veuillez contacter votre professeur.";
+            set({ authError: notRegMsg, isLoading: false });
+            return { success: false, message: notRegMsg };
+          }
+
+          if (localVal.errorCode === 'ACCOUNT_SUSPENDED') {
+            const suspMsg = localVal.errorMessage || "Votre compte élève a été suspendu par l'administration. Veuillez vous rapprocher de votre professeur.";
+            set({ authError: suspMsg, isLoading: false });
+            return { success: false, message: suspMsg };
+          }
+
           let friendly = error.message;
           if (error.message.toLowerCase().includes('invalid login credentials')) {
             friendly = 'Adresse e-mail ou mot de passe incorrect. Vérifiez vos identifiants ou contactez votre professeur.';
@@ -304,11 +316,15 @@ export const useAuthStore = create<AuthStore>()(
           .eq('email', cleanEmail)
           .single();
 
-        if (grant && grant.status === 'revoked') {
-          await supabase.auth.signOut();
-          const msg = "Votre compte a été suspendu par l'administration. Veuillez contacter votre professeur.";
-          set({ authError: msg, isLoading: false, user: null, session: null, profile: null });
-          return { success: false, message: msg };
+        if (cleanEmail !== DEFAULT_ADMIN_EMAIL) {
+          if (!grant || grant.status === 'revoked') {
+            await supabase.auth.signOut();
+            const msg = grant?.status === 'revoked'
+              ? "Votre compte a été suspendu par l'administration. Veuillez contacter votre professeur."
+              : "Accès restreint. Seuls les élèves inscrits par l'administration ont accès à la plateforme.";
+            set({ authError: msg, isLoading: false, user: null, session: null, profile: null });
+            return { success: false, message: msg };
+          }
         }
 
         const { data: profileData } = await supabase

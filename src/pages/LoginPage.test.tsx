@@ -83,25 +83,29 @@ describe('LoginPage', () => {
     expect(screen.getByRole('button', { name: /Masquer le mot de passe/i })).toBeInTheDocument();
   });
 
-  it('switches to magic link tab and renders magic link form', async () => {
+  it('displays error and rejects login for unregistered student', async () => {
     render(
-      <MemoryRouter initialEntries={['/login?tab=magic']}>
+      <MemoryRouter>
         <LoginPage />
       </MemoryRouter>
     );
 
-    expect(screen.getByText('Connexion par Lien Magique')).toBeInTheDocument();
-    const emailInput = screen.getByLabelText(/Adresse e-mail pour lien magique/i);
-    fireEvent.change(emailInput, { target: { value: 'eleve@exemple.fr' } });
+    const emailInput = screen.getByLabelText(/Adresse e-mail/i);
+    const passwordInput = screen.getByLabelText(/^Mot de passe$/i);
 
-    const submitBtn = screen.getByRole('button', { name: /Recevoir mon lien magique/i });
+    fireEvent.change(emailInput, { target: { value: 'non.inscrit@ecole.fr' } });
+    fireEvent.change(passwordInput, { target: { value: 'Pass12345!' } });
+
+    const submitBtn = screen.getByRole('button', { name: /Se connecter/i });
     expect(submitBtn).not.toBeDisabled();
 
     await act(async () => {
       fireEvent.click(submitBtn);
     });
 
-    expect(useAuthStore.getState().user).not.toBeNull();
+    expect(useAuthStore.getState().user).toBeNull();
+    expect(screen.getByRole('alert')).toBeInTheDocument();
+    expect(screen.getByText(/Ce compte n'est pas encore inscrit/i)).toBeInTheDocument();
   });
 
   it('allows direct administrator login for portoduque@outlook.com', async () => {
