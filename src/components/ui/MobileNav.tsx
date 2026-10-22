@@ -1,7 +1,8 @@
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
+import { useAuth } from '@/hooks/useAuth';
 
-const MOBILE_NAV_ITEMS = [
+const BASE_NAV_ITEMS = [
   { path: '/dashboard', label: 'Home', icon: '🏠' },
   { path: '/chapters', label: 'Learn', icon: '📚' },
   { path: '/review', label: 'Review', icon: '🔄' },
@@ -10,10 +11,19 @@ const MOBILE_NAV_ITEMS = [
 
 export const MobileNav: React.FC = () => {
   const location = useLocation();
+  const { isAdmin } = useAuth();
+
+  const navItems = isAdmin
+    ? [
+        ...BASE_NAV_ITEMS,
+        { path: '/admin', label: 'Admin', icon: '🛠️' },
+        { path: '/admin/students', label: 'Élèves', icon: '🎓' },
+      ]
+    : BASE_NAV_ITEMS;
 
   return (
-    <nav className="mobile-nav" aria-label="Mobile navigation">
-      {MOBILE_NAV_ITEMS.map((item) => (
+    <nav className={`mobile-nav ${isAdmin ? 'mobile-nav-admin' : ''}`} aria-label="Mobile navigation">
+      {navItems.map((item) => (
         <NavLink
           key={item.path}
           to={item.path}

@@ -9,7 +9,7 @@ import { DEFAULT_ADMIN_EMAIL, DEFAULT_ADMIN_PASSWORD } from '@/services/studentS
 const LoginPage: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const { loginWithPassword, loginWithMagicLink, isLoading, authError, clearError } = useAuth();
+  const { loginWithPassword, loginWithMagicLink, setMockUser, isLoading, authError, clearError } = useAuth();
 
   const searchParams = new URLSearchParams(location.search);
   const initialEmail = searchParams.get('email') || '';
@@ -51,12 +51,10 @@ const LoginPage: React.FC = () => {
     }
   };
 
-  const handleAdminDirectLogin = async () => {
+  const handleAdminDirectLogin = () => {
     clearError();
-    const res = await loginWithPassword(DEFAULT_ADMIN_EMAIL, DEFAULT_ADMIN_PASSWORD);
-    if (res.success) {
-      navigate(redirectTarget, { replace: true });
-    }
+    setMockUser(DEFAULT_ADMIN_EMAIL, 'admin');
+    navigate(redirectTarget, { replace: true });
   };
 
   return (

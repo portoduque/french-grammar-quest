@@ -124,27 +124,26 @@ export const AdminPage: React.FC = () => {
 
   return (
     <div className="page page-admin">
-      <div className="page-header" style={{ marginBottom: '1.5rem' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '1rem' }}>
-          <div>
-            <h1 className="page-title" style={{ fontSize: '1.75rem', fontWeight: 800, margin: '0 0 0.5rem 0' }}>
+      <div className="admin-header">
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.75rem' }}>
+          <div style={{ minWidth: 0, flex: 1 }}>
+            <h1 className="admin-header-title">
               🛠️ Centre d'Administration & Publication
             </h1>
-            <p className="page-subtitle" style={{ color: 'var(--color-text-muted)', margin: 0 }}>
+            <p className="admin-header-subtitle">
               Gestion sécurisée des accès, conformité éditoriale, gouvernance de contenu et audit
             </p>
           </div>
-          <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', flexWrap: 'wrap' }}>
+          <div className="admin-header-actions">
             <Link
               to="/admin/students"
+              className="btn btn-primary btn-sm"
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
                 gap: '0.4rem',
                 padding: '0.45rem 0.85rem',
                 borderRadius: '8px',
-                backgroundColor: 'var(--color-primary, #6366f1)',
-                color: '#ffffff',
                 fontWeight: 600,
                 fontSize: '0.85rem',
                 textDecoration: 'none',
@@ -168,7 +167,8 @@ export const AdminPage: React.FC = () => {
             backgroundColor: statusMessage.startsWith('✅') ? 'rgba(16, 185, 129, 0.12)' : 'rgba(239, 68, 68, 0.12)',
             color: statusMessage.startsWith('✅') ? '#10B981' : '#EF4444',
             fontWeight: 600,
-            marginBottom: '1.5rem'
+            marginBottom: '1.25rem',
+            wordBreak: 'break-word',
           }}
         >
           {statusMessage}
@@ -178,37 +178,15 @@ export const AdminPage: React.FC = () => {
       {/* Tabs */}
       <div
         className="admin-tabs"
-        style={{
-          display: 'flex',
-          gap: '0.75rem',
-          borderBottom: '1px solid var(--color-border)',
-          paddingBottom: '0.75rem',
-          marginBottom: '1.5rem',
-          overflowX: 'auto',
-          maxWidth: '100%',
-          scrollbarWidth: 'none',
-          WebkitOverflowScrolling: 'touch'
-        }}
+        role="tablist"
+        aria-label="Sections administratives"
       >
         <button
           type="button"
+          role="tab"
+          aria-selected={activeTab === 'invites'}
           onClick={() => setActiveTab('invites')}
-          style={{
-            background: 'none',
-            border: 'none',
-            fontSize: '0.95rem',
-            fontWeight: activeTab === 'invites' ? 700 : 500,
-            color: activeTab === 'invites' ? 'var(--color-primary)' : 'var(--color-text-muted)',
-            cursor: 'pointer',
-            padding: '0.5rem 0.85rem',
-            borderRadius: '8px',
-            backgroundColor: activeTab === 'invites' ? 'rgba(37,99,235,0.08)' : 'transparent',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '0.5rem',
-            whiteSpace: 'nowrap',
-            flexShrink: 0
-          }}
+          className={`admin-tab-btn ${activeTab === 'invites' ? 'active' : ''}`}
         >
           <span>✉️ Invitations & Accès</span>
           <Badge variant="default">{grants.length}</Badge>
@@ -216,23 +194,10 @@ export const AdminPage: React.FC = () => {
 
         <button
           type="button"
+          role="tab"
+          aria-selected={activeTab === 'releases'}
           onClick={() => setActiveTab('releases')}
-          style={{
-            background: 'none',
-            border: 'none',
-            fontSize: '0.95rem',
-            fontWeight: activeTab === 'releases' ? 700 : 500,
-            color: activeTab === 'releases' ? 'var(--color-primary)' : 'var(--color-text-muted)',
-            cursor: 'pointer',
-            padding: '0.5rem 0.85rem',
-            borderRadius: '8px',
-            backgroundColor: activeTab === 'releases' ? 'rgba(37,99,235,0.08)' : 'transparent',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '0.5rem',
-            whiteSpace: 'nowrap',
-            flexShrink: 0
-          }}
+          className={`admin-tab-btn ${activeTab === 'releases' ? 'active' : ''}`}
         >
           <span>📦 Releases & Workflow</span>
           <Badge variant="amber">{releases.length}</Badge>
@@ -240,23 +205,10 @@ export const AdminPage: React.FC = () => {
 
         <button
           type="button"
+          role="tab"
+          aria-selected={activeTab === 'content'}
           onClick={() => setActiveTab('content')}
-          style={{
-            background: 'none',
-            border: 'none',
-            fontSize: '0.95rem',
-            fontWeight: activeTab === 'content' ? 700 : 500,
-            color: activeTab === 'content' ? 'var(--color-primary)' : 'var(--color-text-muted)',
-            cursor: 'pointer',
-            padding: '0.5rem 0.85rem',
-            borderRadius: '8px',
-            backgroundColor: activeTab === 'content' ? 'rgba(37,99,235,0.08)' : 'transparent',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '0.5rem',
-            whiteSpace: 'nowrap',
-            flexShrink: 0
-          }}
+          className={`admin-tab-btn ${activeTab === 'content' ? 'active' : ''}`}
         >
           <span>📚 Chapitres & Pilote</span>
           <Badge variant="cyan">{chapters.length}</Badge>
@@ -264,23 +216,10 @@ export const AdminPage: React.FC = () => {
 
         <button
           type="button"
+          role="tab"
+          aria-selected={activeTab === 'audit'}
           onClick={() => setActiveTab('audit')}
-          style={{
-            background: 'none',
-            border: 'none',
-            fontSize: '0.95rem',
-            fontWeight: activeTab === 'audit' ? 700 : 500,
-            color: activeTab === 'audit' ? 'var(--color-primary)' : 'var(--color-text-muted)',
-            cursor: 'pointer',
-            padding: '0.5rem 0.85rem',
-            borderRadius: '8px',
-            backgroundColor: activeTab === 'audit' ? 'rgba(37,99,235,0.08)' : 'transparent',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '0.5rem',
-            whiteSpace: 'nowrap',
-            flexShrink: 0
-          }}
+          className={`admin-tab-btn ${activeTab === 'audit' ? 'active' : ''}`}
         >
           <span>📜 Audit Log & Issues</span>
           <Badge variant="rose">{issues.filter((i) => i.status === 'open').length}</Badge>
@@ -303,7 +242,7 @@ export const AdminPage: React.FC = () => {
                   Inviter un Nouvel Utilisateur (Allowlist)
                 </h2>
                 <form onSubmit={handleCreateInvite} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1rem' }}>
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '1rem' }}>
                     <Input
                       label="Adresse E-mail :"
                       type="email"
@@ -369,75 +308,124 @@ export const AdminPage: React.FC = () => {
                 </form>
               </Card>
 
-              {/* Grants Table */}
-              <Card variant="elevated" style={{ padding: '1.5rem', overflowX: 'auto' }}>
+              {/* Grants Table with Responsive Horizontal Scroll & Mobile Cards */}
+              <Card variant="elevated" style={{ padding: 'clamp(0.85rem, 3vw, 1.5rem)' }}>
                 <h2 style={{ fontSize: '1.2rem', fontWeight: 700, margin: '0 0 1rem 0' }}>
                   Invitations & Accès Enregistrés ({grants.length})
                 </h2>
 
-                <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', fontSize: '0.9rem' }}>
-                  <thead>
-                    <tr style={{ borderBottom: '2px solid var(--color-border)' }}>
-                      <th style={{ padding: '0.75rem 0.5rem' }}>E-mail</th>
-                      <th style={{ padding: '0.75rem 0.5rem' }}>Rôle</th>
-                      <th style={{ padding: '0.75rem 0.5rem' }}>Statut</th>
-                      <th style={{ padding: '0.75rem 0.5rem' }}>Expiration</th>
-                      <th style={{ padding: '0.75rem 0.5rem', textAlign: 'right' }}>Actions</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {grants.map((grant) => {
-                      const expired = isExpired(grant);
-                      return (
-                        <tr key={grant.id} style={{ borderBottom: '1px solid var(--color-border)' }}>
-                          <td style={{ padding: '0.75rem 0.5rem', fontWeight: 600 }}>{grant.email}</td>
-                          <td style={{ padding: '0.75rem 0.5rem' }}>
-                            <Badge variant={grant.role === 'admin' ? 'rose' : grant.role === 'teacher' ? 'violet' : 'default'}>
-                              {grant.role}
-                            </Badge>
-                          </td>
-                          <td style={{ padding: '0.75rem 0.5rem' }}>
-                            {grant.status === 'revoked' ? (
-                              <Badge variant="rose">Révoqué</Badge>
-                            ) : expired ? (
-                              <Badge variant="amber">Expiré</Badge>
-                            ) : grant.status === 'active' ? (
-                              <Badge variant="emerald">Actif</Badge>
-                            ) : (
-                              <Badge variant="cyan">En attente</Badge>
-                            )}
-                          </td>
-                          <td style={{ padding: '0.75rem 0.5rem', color: 'var(--color-text-muted)' }}>
-                            {grant.expires_at ? new Date(grant.expires_at).toLocaleDateString('fr-FR') : 'Permanente'}
-                          </td>
-                          <td style={{ padding: '0.75rem 0.5rem', textAlign: 'right' }}>
-                            <div style={{ display: 'inline-flex', gap: '0.5rem', justifyContent: 'flex-end' }}>
-                              {grant.status !== 'revoked' && (
-                                <>
-                                  <Button
-                                    variant="secondary"
-                                    size="sm"
-                                    onClick={() => handleCopyInviteLink(grant.email)}
-                                  >
-                                    Copier 📋
-                                  </Button>
-                                  <Button
-                                    variant="secondary"
-                                    size="sm"
-                                    disabled={isRevokingInvite}
-                                    onClick={() => handleRevoke(grant.id, grant.email)}
-                                  >
-                                    Révoquer ✕
-                                  </Button>
-                                </>
+                <div className="admin-table-desktop" style={{ overflowX: 'auto', width: '100%', WebkitOverflowScrolling: 'touch' }}>
+                  <table style={{ width: '100%', minWidth: '480px', borderCollapse: 'collapse', textAlign: 'left', fontSize: '0.875rem' }}>
+                    <thead>
+                      <tr style={{ borderBottom: '2px solid var(--color-border)' }}>
+                        <th style={{ padding: '0.75rem 0.5rem' }}>E-mail</th>
+                        <th style={{ padding: '0.75rem 0.5rem' }}>Rôle</th>
+                        <th style={{ padding: '0.75rem 0.5rem' }}>Statut</th>
+                        <th style={{ padding: '0.75rem 0.5rem' }}>Expiration</th>
+                        <th style={{ padding: '0.75rem 0.5rem', textAlign: 'right' }}>Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {grants.map((grant) => {
+                        const expired = isExpired(grant);
+                        return (
+                          <tr key={grant.id} style={{ borderBottom: '1px solid var(--color-border)' }}>
+                            <td style={{ padding: '0.75rem 0.5rem', fontWeight: 600 }}>{grant.email}</td>
+                            <td style={{ padding: '0.75rem 0.5rem' }}>
+                              <Badge variant={grant.role === 'admin' ? 'rose' : grant.role === 'teacher' ? 'violet' : 'default'}>
+                                {grant.role}
+                              </Badge>
+                            </td>
+                            <td style={{ padding: '0.75rem 0.5rem' }}>
+                              {grant.status === 'revoked' ? (
+                                <Badge variant="rose">Révoqué</Badge>
+                              ) : expired ? (
+                                <Badge variant="amber">Expiré</Badge>
+                              ) : grant.status === 'active' ? (
+                                <Badge variant="emerald">Actif</Badge>
+                              ) : (
+                                <Badge variant="cyan">En attente</Badge>
                               )}
-                            </div>
-                          </td>
-                        </tr>
-                      );
-                    })}
-                  </tbody>
-                </table>
+                            </td>
+                            <td style={{ padding: '0.75rem 0.5rem', color: 'var(--color-text-muted)' }}>
+                              {grant.expires_at ? new Date(grant.expires_at).toLocaleDateString('fr-FR') : 'Permanente'}
+                            </td>
+                            <td style={{ padding: '0.75rem 0.5rem', textAlign: 'right' }}>
+                              <div style={{ display: 'inline-flex', gap: '0.5rem', justifyContent: 'flex-end' }}>
+                                {grant.status !== 'revoked' && (
+                                  <>
+                                    <Button
+                                      variant="secondary"
+                                      size="sm"
+                                      onClick={() => handleCopyInviteLink(grant.email)}
+                                    >
+                                      Copier 📋
+                                    </Button>
+                                    <Button
+                                      variant="secondary"
+                                      size="sm"
+                                      disabled={isRevokingInvite}
+                                      onClick={() => handleRevoke(grant.id, grant.email)}
+                                    >
+                                      Révoquer ✕
+                                    </Button>
+                                  </>
+                                )}
+                              </div>
+                            </td>
+                          </tr>
+                        );
+                      })}
+                    </tbody>
+                  </table>
+                </div>
+
+                <div className="admin-cards-mobile">
+                  {grants.map((grant) => {
+                    const expired = isExpired(grant);
+                    return (
+                      <div key={grant.id} className="admin-grant-card">
+                        <div className="admin-grant-email">{grant.email}</div>
+                        <div className="admin-grant-meta">
+                          <Badge variant={grant.role === 'admin' ? 'rose' : grant.role === 'teacher' ? 'violet' : 'default'}>
+                            {grant.role}
+                          </Badge>
+                          {grant.status === 'revoked' ? (
+                            <Badge variant="rose">Révoqué</Badge>
+                          ) : expired ? (
+                            <Badge variant="amber">Expiré</Badge>
+                          ) : grant.status === 'active' ? (
+                            <Badge variant="emerald">Actif</Badge>
+                          ) : (
+                            <Badge variant="cyan">En attente</Badge>
+                          )}
+                          <span>
+                            {grant.expires_at ? `Exp : ${new Date(grant.expires_at).toLocaleDateString('fr-FR')}` : 'Permanente'}
+                          </span>
+                        </div>
+                        {grant.status !== 'revoked' && (
+                          <div className="admin-grant-actions">
+                            <Button
+                              variant="secondary"
+                              size="sm"
+                              onClick={() => handleCopyInviteLink(grant.email)}
+                            >
+                              Copier 📋
+                            </Button>
+                            <Button
+                              variant="secondary"
+                              size="sm"
+                              disabled={isRevokingInvite}
+                              onClick={() => handleRevoke(grant.id, grant.email)}
+                            >
+                              Révoquer ✕
+                            </Button>
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
               </Card>
             </div>
           )}
@@ -538,7 +526,7 @@ export const AdminPage: React.FC = () => {
                   <Badge variant="emerald">Ch01 Pilote : 100 questions vérifiées</Badge>
                 </div>
 
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1rem' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '1rem' }}>
                   {chapters.map((ch) => {
                     const isChPublished = ch.editorial_status === 'published';
                     const isBlocked = ch.editorial_status === 'blocked';
@@ -658,30 +646,24 @@ export const AdminPage: React.FC = () => {
                   Journal d'Audit Immuable (Audit Log — RF-067)
                 </h2>
 
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
                   {auditLogs.map((log) => (
                     <div
                       key={log.id}
-                      style={{
-                        padding: '0.75rem 1rem',
-                        borderRadius: '6px',
-                        backgroundColor: 'var(--color-bg-secondary, rgba(0,0,0,0.02))',
-                        borderLeft: '3px solid var(--color-primary)',
-                        display: 'flex',
-                        justifyContent: 'space-between',
-                        alignItems: 'center',
-                        fontSize: '0.85rem'
-                      }}
+                      className="admin-audit-log-item"
                     >
-                      <div>
-                        <strong>{log.event}</strong> · <span style={{ color: 'var(--color-text-muted)' }}>{log.target_type} ({log.target_id})</span>
+                      <div style={{ wordBreak: 'break-word', overflowWrap: 'anywhere', minWidth: 0, flex: 1 }}>
+                        <div style={{ display: 'flex', gap: '6px', alignItems: 'center', flexWrap: 'wrap', marginBottom: '2px' }}>
+                          <strong>{log.event}</strong>
+                          <span style={{ color: 'var(--color-text-muted)' }}>· {log.target_type} ({log.target_id})</span>
+                        </div>
                         {log.metadata && (
-                          <div style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '0.2rem' }}>
+                          <div style={{ fontSize: '0.775rem', color: 'var(--color-text-muted)', marginTop: '0.2rem', wordBreak: 'break-all' }}>
                             {JSON.stringify(log.metadata)}
                           </div>
                         )}
                       </div>
-                      <span style={{ color: 'var(--color-text-muted)' }}>
+                      <span style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', flexShrink: 0 }}>
                         {new Date(log.created_at).toLocaleString('fr-FR')}
                       </span>
                     </div>

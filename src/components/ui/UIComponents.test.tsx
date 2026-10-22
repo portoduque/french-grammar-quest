@@ -130,4 +130,82 @@ describe('UI Base Components', () => {
       expect(screen.getByLabelText(/0 XP/i)).toBeInTheDocument();
     });
   });
+
+  describe('MobileNav', () => {
+    it('renders standard navigation links for regular students', async () => {
+      const { MobileNav } = await import('./MobileNav');
+      const { useAuthStore } = await import('@/stores/authStore');
+      useAuthStore.setState({
+        profile: {
+          id: 's-1',
+          email: 'eleve@ecole.fr',
+          display_name: 'Élève',
+          role: 'student',
+          avatar_url: null,
+          timezone: 'UTC',
+          preferences: {},
+          hearts: 5,
+          max_hearts: 5,
+          xp: 100,
+          level: 2,
+          streak_days: 1,
+          streak_frozen: false,
+          last_active_date: null,
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString(),
+        },
+      });
+
+      render(
+        <MemoryRouter>
+          <MobileNav />
+        </MemoryRouter>
+      );
+
+      expect(screen.getByText('Home')).toBeInTheDocument();
+      expect(screen.getByText('Learn')).toBeInTheDocument();
+      expect(screen.getByText('Review')).toBeInTheDocument();
+      expect(screen.getByText('Profile')).toBeInTheDocument();
+      expect(screen.queryByText('Admin')).not.toBeInTheDocument();
+      expect(screen.queryByText('Élèves')).not.toBeInTheDocument();
+    });
+
+    it('renders Admin and Élèves links in MobileNav when user is administrator', async () => {
+      const { MobileNav } = await import('./MobileNav');
+      const { useAuthStore } = await import('@/stores/authStore');
+      useAuthStore.setState({
+        profile: {
+          id: 'admin-1',
+          email: 'portoduque@outlook.com',
+          display_name: 'Porto Duque',
+          role: 'admin',
+          avatar_url: null,
+          timezone: 'America/Sao_Paulo',
+          preferences: {},
+          hearts: 5,
+          max_hearts: 5,
+          xp: 150,
+          level: 2,
+          streak_days: 3,
+          streak_frozen: false,
+          last_active_date: null,
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString(),
+        },
+      });
+
+      render(
+        <MemoryRouter>
+          <MobileNav />
+        </MemoryRouter>
+      );
+
+      expect(screen.getByText('Home')).toBeInTheDocument();
+      expect(screen.getByText('Learn')).toBeInTheDocument();
+      expect(screen.getByText('Review')).toBeInTheDocument();
+      expect(screen.getByText('Profile')).toBeInTheDocument();
+      expect(screen.getByText('Admin')).toBeInTheDocument();
+      expect(screen.getByText('Élèves')).toBeInTheDocument();
+    });
+  });
 });

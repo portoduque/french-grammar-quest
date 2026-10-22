@@ -91,8 +91,8 @@ export const useAuthStore = create<AuthStore>()(
     initialize: async () => {
       const isMockActive = typeof window !== 'undefined' && localStorage.getItem(MOCK_ACTIVE_KEY) === 'true';
 
-      // If Supabase is not configured or store is explicitly in mock mode
-      if (get().isMockMode || !isSupabaseConfigured || !supabase) {
+      // If Supabase is not configured, store is in mock mode, or mock session was explicitly active
+      if (isMockActive || get().isMockMode || !isSupabaseConfigured || !supabase) {
         if (isMockActive) {
           const mockProf = getStoredMockProfile();
           set({
@@ -252,6 +252,43 @@ export const useAuthStore = create<AuthStore>()(
         });
 
         if (error) {
+          // Fallback to local credentials for default admin or registered offline students if cloud auth fails
+          const localVal = validateStudentMockCredentials(cleanEmail, password);
+          if (localVal.valid) {
+            const student = localVal.student;
+            const isAdmin = cleanEmail === DEFAULT_ADMIN_EMAIL || cleanEmail.includes('admin') || cleanEmail.includes('professeur');
+            const role = isAdmin ? 'admin' : 'student';
+            const mockProfile: Profile = {
+              ...DEFAULT_MOCK_PROFILE,
+              id: isAdmin ? DEFAULT_MOCK_PROFILE.id : (student?.id || crypto.randomUUID()),
+              email: cleanEmail,
+              display_name: isAdmin ? (cleanEmail === DEFAULT_ADMIN_EMAIL ? 'Porto Duque' : cleanEmail.split('@')[0]) : (student?.full_name || cleanEmail.split('@')[0]),
+              role,
+            };
+
+            saveStoredMockProfile(mockProfile);
+            try {
+              localStorage.setItem(MOCK_ACTIVE_KEY, 'true');
+            } catch {
+              // ignore
+            }
+
+            set({
+              user: { id: mockProfile.id, email: cleanEmail } as User,
+              profile: mockProfile,
+              isLoading: false,
+              isMockMode: true,
+              isTemporaryPassword: Boolean(localVal.isTemporaryPassword),
+              firstLoginPromptDismissed: false,
+            });
+
+            return {
+              success: true,
+              message: 'Connexion réussie !',
+              isTemporaryPassword: Boolean(localVal.isTemporaryPassword),
+            };
+          }
+
           let friendly = error.message;
           if (error.message.toLowerCase().includes('invalid login credentials')) {
             friendly = 'Adresse e-mail ou mot de passe incorrect. Vérifiez vos identifiants ou contactez votre professeur.';

@@ -219,10 +219,12 @@ a:hover {
 
 .main-content {
   flex: 1;
+  min-width: 0;
   margin-left: var(--sidebar-width);
   padding: var(--space-8) var(--space-6);
   max-width: var(--content-max-width);
   width: 100%;
+  box-sizing: border-box;
   transition: margin-left var(--transition-smooth);
   padding-bottom: var(--space-16);
 }
@@ -1445,6 +1447,9 @@ dialog.modal::backdrop {
     margin-left: 0;
     padding: var(--space-5) var(--space-4);
     padding-bottom: calc(var(--mobile-nav-height) + var(--space-8));
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .sidebar-collapsed .main-content {
@@ -1503,6 +1508,9 @@ dialog.modal::backdrop {
 @media (max-width: 360px) {
   .main-content {
     padding: var(--space-3) var(--space-2) calc(var(--mobile-nav-height) + env(safe-area-inset-bottom, 0px) + var(--space-8)) var(--space-2);
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
   }
   .dashboard-stats {
     gap: 8px;
@@ -5276,5 +5284,256 @@ dialog.modal::backdrop {
   .first-login-modal-card {
     padding: 1rem !important;
     border-radius: 12px !important;
+  }
+}
+
+/* ─── Admin Page Responsive Styles (316px & Narrow Mobile) ───── */
+.page-admin {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .page-admin {
+    padding-bottom: calc(var(--mobile-nav-height, 64px) + env(safe-area-inset-bottom, 0px) + 2rem) !important;
+  }
+}
+
+.admin-header-title {
+  font-size: clamp(1.2rem, 4vw, 1.75rem);
+  font-weight: 800;
+  margin: 0 0 0.35rem 0;
+  line-height: 1.25;
+  word-break: break-word;
+}
+
+.admin-header-subtitle {
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.admin-header-actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.admin-tabs {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.25rem;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.admin-tabs::-webkit-scrollbar {
+  height: 3px;
+}
+
+.admin-tabs::-webkit-scrollbar-thumb {
+  background: var(--border-subtle);
+  border-radius: 4px;
+}
+
+.admin-tab-btn {
+  background: none;
+  border: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  padding: 0.45rem 0.75rem;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+  min-height: 40px;
+  transition: all var(--transition-fast);
+}
+
+.admin-tab-btn.active {
+  font-weight: 700;
+  color: var(--color-primary);
+  background-color: rgba(37, 99, 235, 0.1);
+}
+
+.admin-grant-card {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.85rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-subtle);
+  background-color: var(--bg-surface-elevated, rgba(255, 255, 255, 0.03));
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.admin-grant-email {
+  font-weight: 700;
+  font-size: 0.875rem;
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
+
+.admin-grant-meta {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.admin-grant-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.admin-grant-actions button {
+  min-height: 40px;
+  flex: 1;
+}
+
+.admin-audit-log-item {
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  background-color: var(--color-bg-secondary, rgba(0, 0, 0, 0.02));
+  border-left: 3px solid var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  box-sizing: border-box;
+}
+
+@media (max-width: 640px) {
+  .admin-table-desktop {
+    display: none !important;
+  }
+  .admin-cards-mobile {
+    display: flex !important;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .admin-audit-log-item {
+    flex-direction: column;
+    padding: 0.65rem 0.75rem;
+  }
+}
+
+@media (min-width: 641px) {
+  .admin-table-desktop {
+    display: table !important;
+  }
+  .admin-cards-mobile {
+    display: none !important;
+  }
+}
+
+/* ─── MobileNav Extra Narrow Optimization (316px) ─────────────── */
+@media (max-width: 360px) {
+  .mobile-nav {
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+    height: calc(56px + env(safe-area-inset-bottom, 0px)) !important;
+  }
+
+  .mobile-nav-item {
+    min-width: 0 !important;
+    padding: 2px 1px !important;
+    flex: 1 1 0 !important;
+    min-height: 44px !important;
+    gap: 1px !important;
+  }
+
+  .mobile-nav-icon {
+    font-size: 16px !important;
+  }
+
+  .mobile-nav-label {
+    font-size: 0.56rem !important;
+    max-width: 44px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    text-align: center !important;
+    line-height: 1 !important;
+  }
+
+  .admin-header-title {
+    font-size: 1.15rem !important;
+  }
+
+  .admin-tab-btn {
+    padding: 0.35rem 0.5rem !important;
+    font-size: 0.775rem !important;
+    gap: 0.25rem !important;
+  }
+
+  .admin-header-actions a,
+  .admin-header-actions button {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  .review-tabs-container {
+    display: flex !important;
+    gap: 4px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+  }
+
+  .review-tab-btn {
+    flex: 1 1 0 !important;
+    min-width: 0 !important;
+    padding: 6px 4px !important;
+    font-size: 0.725rem !important;
+    justify-content: center !important;
+    gap: 3px !important;
+  }
+
+  .review-tab-label {
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+}
+
+/* ─── Global Bottom Clearance for Fixed Mobile Nav ───────────── */
+@media (max-width: 768px) {
+  .page,
+  .page-admin,
+  .page-admin-students,
+  .page-learning-path,
+  .page-review {
+    padding-bottom: calc(var(--mobile-nav-height, 64px) + env(safe-area-inset-bottom, 0px) + 3rem) !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .page,
+  .page-admin,
+  .page-admin-students,
+  .page-learning-path,
+  .page-review {
+    padding-bottom: calc(var(--mobile-nav-height, 64px) + env(safe-area-inset-bottom, 0px) + 4rem) !important;
   }
 }

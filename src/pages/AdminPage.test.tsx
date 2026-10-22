@@ -175,7 +175,7 @@ describe('AdminPage & AdminGuard (Etapa 7)', () => {
     expect(screen.getByText(/Mode Administrateur/i)).toBeInTheDocument();
 
     await waitFor(() => {
-      expect(screen.getByText('invite.test@fqg.com')).toBeInTheDocument();
+      expect(screen.getAllByText('invite.test@fqg.com')[0]).toBeInTheDocument();
     });
   });
 
@@ -183,7 +183,7 @@ describe('AdminPage & AdminGuard (Etapa 7)', () => {
     renderComponent();
 
     await waitFor(() => {
-      expect(screen.getByText('invite.test@fqg.com')).toBeInTheDocument();
+      expect(screen.getAllByText('invite.test@fqg.com')[0]).toBeInTheDocument();
     });
 
     // Alternar para aba Releases
@@ -212,7 +212,7 @@ describe('AdminPage & AdminGuard (Etapa 7)', () => {
     renderComponent();
 
     await waitFor(() => {
-      expect(screen.getByText('invite.test@fqg.com')).toBeInTheDocument();
+      expect(screen.getAllByText('invite.test@fqg.com')[0]).toBeInTheDocument();
     });
 
     const emailInput = screen.getByLabelText(/Adresse E-mail/i);
@@ -239,10 +239,10 @@ describe('AdminPage & AdminGuard (Etapa 7)', () => {
     renderComponent();
 
     await waitFor(() => {
-      expect(screen.getByText('invite.test@fqg.com')).toBeInTheDocument();
+      expect(screen.getAllByText('invite.test@fqg.com')[0]).toBeInTheDocument();
     });
 
-    const copyBtn = screen.getByRole('button', { name: /Copier 📋/i });
+    const copyBtn = screen.getAllByRole('button', { name: /Copier 📋/i })[0];
     fireEvent.click(copyBtn);
 
     await waitFor(() => {
