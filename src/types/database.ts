@@ -21,6 +21,9 @@ export type Database = {
           invited_by: string | null
           role: string
           status: string
+          full_name?: string | null
+          initial_level?: string | null
+          notes?: string | null
           updated_at: string
         }
         Insert: {
@@ -31,6 +34,9 @@ export type Database = {
           invited_by?: string | null
           role?: string
           status?: string
+          full_name?: string | null
+          initial_level?: string | null
+          notes?: string | null
           updated_at?: string
         }
         Update: {
@@ -41,6 +47,9 @@ export type Database = {
           invited_by?: string | null
           role?: string
           status?: string
+          full_name?: string | null
+          initial_level?: string | null
+          notes?: string | null
           updated_at?: string
         }
         Relationships: []
@@ -803,6 +812,21 @@ export type Database = {
       admin_create_access_grant: {
         Args: { p_email: string; p_expires_days?: number; p_role?: string }
         Returns: Json
+      }
+      admin_register_student_account: {
+        Args: {
+          p_email: string
+          p_password: string
+          p_full_name: string
+          p_initial_level?: string
+          p_notes?: string | null
+        }
+        Returns: {
+          success: boolean
+          user_id?: string
+          email?: string
+          student?: AccessGrant
+        }
       }
       admin_publish_release: {
         Args: { p_release_id: string }

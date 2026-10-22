@@ -160,16 +160,28 @@ export async function registerNewStudent(input: StudentCreateInput): Promise<{
   passwords[cleanEmail] = initialPassword;
   saveStoredPasswords(passwords);
 
-  // If Supabase is connected, sync with access_grants
+  // If Supabase is connected, sync with database via admin_register_student_account
   if (isSupabaseConfigured && supabase) {
     try {
-      await supabase.from('access_grants').upsert({
-        email: cleanEmail,
-        role: 'student',
-        status: 'active',
+      const { data, error } = await supabase.rpc('admin_register_student_account', {
+        p_email: cleanEmail,
+        p_password: initialPassword,
+        p_full_name: cleanName,
+        p_initial_level: input.initial_level || 'A1',
+        p_notes: input.notes?.trim() || null,
       });
+
+      if (error) {
+        console.warn('Sync student account warning:', error.message);
+      } else {
+        const studentData = (data as any)?.student;
+        if (studentData?.id) {
+          newStudent.id = studentData.id;
+          saveStoredStudents([newStudent, ...students]);
+        }
+      }
     } catch (err) {
-      console.warn('Sync access_grants warning:', err);
+      console.warn('Sync student account warning:', err);
     }
   }
 
@@ -240,6 +252,20 @@ export async function resetStudentPassword(
   const passwords = getStoredPasswords();
   passwords[updated.email.toLowerCase()] = newPassword;
   saveStoredPasswords(passwords);
+
+  if (isSupabaseConfigured && supabase) {
+    try {
+      await supabase.rpc('admin_register_student_account', {
+        p_email: updated.email.toLowerCase(),
+        p_password: newPassword,
+        p_full_name: updated.full_name,
+        p_initial_level: updated.initial_level || 'A1',
+        p_notes: updated.notes || null,
+      });
+    } catch (err) {
+      console.warn('Sync reset student password warning:', err);
+    }
+  }
 
   return { student: updated, newPassword };
 }
