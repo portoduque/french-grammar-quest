@@ -4,11 +4,12 @@ import { useAuth } from '@/hooks/useAuth';
 import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
 import { Card } from '@/components/ui/Card';
+import { DEFAULT_ADMIN_EMAIL, DEFAULT_ADMIN_PASSWORD } from '@/services/studentService';
 
 const LoginPage: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const { loginWithPassword, loginWithMagicLink, setMockUser, isLoading, authError, clearError } = useAuth();
+  const { loginWithPassword, loginWithMagicLink, isLoading, authError, clearError } = useAuth();
 
   const searchParams = new URLSearchParams(location.search);
   const initialEmail = searchParams.get('email') || '';
@@ -50,9 +51,12 @@ const LoginPage: React.FC = () => {
     }
   };
 
-  const handleDemoLogin = (role: 'student' | 'admin') => {
-    setMockUser(role === 'admin' ? 'professeur@frenchgrammarquest.app' : 'etudiant@frenchgrammarquest.app', role);
-    navigate(redirectTarget, { replace: true });
+  const handleAdminDirectLogin = async () => {
+    clearError();
+    const res = await loginWithPassword(DEFAULT_ADMIN_EMAIL, DEFAULT_ADMIN_PASSWORD);
+    if (res.success) {
+      navigate(redirectTarget, { replace: true });
+    }
   };
 
   return (
@@ -276,29 +280,32 @@ const LoginPage: React.FC = () => {
               )}
 
               <div className="login-divider" style={{ margin: '1.25rem 0' }}>
-                <span>ou continuez pour tester l’application</span>
+                <span>accès réservé</span>
               </div>
 
-              <div className="demo-login-actions" style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+              <div className="admin-login-actions" style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                 <Button
                   type="button"
                   variant="secondary"
                   size="md"
-                  onClick={() => handleDemoLogin('student')}
-                  className="btn-full-width"
+                  onClick={handleAdminDirectLogin}
+                  className="btn-full-width btn-admin-demo"
                   style={{ minHeight: '44px' }}
                 >
-                  Entrer comme Étudiant (Démo) 🎒
+                  Entrer comme Administrateur ({DEFAULT_ADMIN_EMAIL}) 👨‍🏫
                 </Button>
                 <Button
                   type="button"
                   variant="ghost"
                   size="sm"
-                  onClick={() => handleDemoLogin('admin')}
-                  className="btn-full-width btn-admin-demo"
-                  style={{ minHeight: '44px' }}
+                  onClick={() => {
+                    setEmail(DEFAULT_ADMIN_EMAIL);
+                    setPassword(DEFAULT_ADMIN_PASSWORD);
+                  }}
+                  className="btn-full-width"
+                  style={{ minHeight: '44px', fontSize: '0.825rem' }}
                 >
-                  Entrer comme Professeur / Admin 👨‍🏫
+                  🔑 Préremplir le formulaire avec l'Admin
                 </Button>
               </div>
             </div>

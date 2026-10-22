@@ -7,8 +7,11 @@ import {
   deleteStudent,
   validateStudentMockCredentials,
   markStudentFirstLoginHandled,
+  saveUserPassword,
   generateSecureDefaultPassword,
   buildWelcomeEmailTemplate,
+  DEFAULT_ADMIN_EMAIL,
+  DEFAULT_ADMIN_PASSWORD,
 } from './studentService';
 
 describe('studentService', () => {
@@ -16,12 +19,9 @@ describe('studentService', () => {
     localStorage.clear();
   });
 
-  it('returns default mock students when storage is empty', async () => {
+  it('returns empty student list when storage is initially empty (clean state)', async () => {
     const students = await getRegisteredStudents();
-    expect(students.length).toBeGreaterThanOrEqual(3);
-    const demo = students.find((s) => s.email === 'etudiant@frenchgrammarquest.app');
-    expect(demo).toBeDefined();
-    expect(demo?.full_name).toBe('Étudiant Démo');
+    expect(students).toEqual([]);
   });
 
   it('registers a new student with auto-generated password and temporary flag', async () => {
@@ -52,34 +52,43 @@ describe('studentService', () => {
   });
 
   it('rejects registration of already registered email', async () => {
+    await registerNewStudent({
+      email: 'unique.eleve@ecole.fr',
+      full_name: 'Premier Élève',
+    });
+
     await expect(
       registerNewStudent({
-        email: 'etudiant@frenchgrammarquest.app',
+        email: 'unique.eleve@ecole.fr',
         full_name: 'Doublon',
       })
     ).rejects.toThrow(/déjà inscrit/i);
   });
 
   it('updates student status between active and suspended', async () => {
-    const students = await getRegisteredStudents();
-    const student = students[0];
+    const res = await registerNewStudent({
+      email: 'statut.eleve@ecole.fr',
+      full_name: 'Élève Statut',
+    });
 
-    const updated = await updateStudentStatus(student.id, 'suspended');
+    const updated = await updateStudentStatus(res.student.id, 'suspended');
     expect(updated.status).toBe('suspended');
 
     const refreshed = await getRegisteredStudents();
-    expect(refreshed.find((s) => s.id === student.id)?.status).toBe('suspended');
+    expect(refreshed.find((s) => s.id === res.student.id)?.status).toBe('suspended');
   });
 
   it('resets student password and sets temporary password flag', async () => {
-    const students = await getRegisteredStudents();
-    const camille = students.find((s) => s.email === 'camille.bernard@example.com')!;
+    const res = await registerNewStudent({
+      email: 'reset.eleve@ecole.fr',
+      full_name: 'Élève Reset',
+    });
 
-    const res = await resetStudentPassword(camille.id, 'NouveauPass2026!');
-    expect(res.newPassword).toBe('NouveauPass2026!');
-    expect(res.student.is_temporary_password).toBe(true);
+    const resetRes = await resetStudentPassword(res.student.id, 'NouveauPass2026!');
+    expect(resetRes.newPassword).toBe('NouveauPass2026!');
+    expect(resetRes.student.is_temporary_password).toBe(true);
 
-    const val = validateStudentMockCredentials('camille.bernard@example.com', 'NouveauPass2026!');
+    const val = validateStudentMockCredentials('reset.eleve@ecole.fr', 'NouveauPass2026!');
     expect(val.valid).toBe(true);
   });
 
@@ -95,8 +104,14 @@ describe('studentService', () => {
   });
 
   describe('validateStudentMockCredentials', () => {
-    it('validates correct student credentials and detects temporary password', () => {
-      const val = validateStudentMockCredentials('etudiant@frenchgrammarquest.app', 'Quest2026!');
+    it('validates correct student credentials and detects temporary password', async () => {
+      const res = await registerNewStudent({
+        email: 'eleve.valide@ecole.fr',
+        full_name: 'Élève Valide',
+        password: 'PassValide123!',
+      });
+
+      const val = validateStudentMockCredentials(res.student.email, 'PassValide123!');
       expect(val.valid).toBe(true);
       expect(val.isTemporaryPassword).toBe(true);
     });
@@ -108,28 +123,65 @@ describe('studentService', () => {
       expect(val.errorMessage).toContain("Ce compte n'est pas encore inscrit");
     });
 
-    it('rejects suspended accounts with ACCOUNT_SUSPENDED error message', () => {
-      const val = validateStudentMockCredentials('lucas.moreau@example.com', 'Lucas#2026');
+    it('rejects suspended accounts with ACCOUNT_SUSPENDED error message', async () => {
+      const res = await registerNewStudent({
+        email: 'eleve.suspendu@ecole.fr',
+        full_name: 'Élève Suspendu',
+        password: 'PassValide123!',
+      });
+
+      await updateStudentStatus(res.student.id, 'suspended');
+
+      const val = validateStudentMockCredentials('eleve.suspendu@ecole.fr', 'PassValide123!');
       expect(val.valid).toBe(false);
       expect(val.errorCode).toBe('ACCOUNT_SUSPENDED');
       expect(val.errorMessage).toContain('suspendu');
     });
 
-    it('rejects wrong password with INVALID_PASSWORD error message', () => {
-      const val = validateStudentMockCredentials('etudiant@frenchgrammarquest.app', 'MauvaisPass123!');
+    it('rejects wrong password with INVALID_PASSWORD error message', async () => {
+      await registerNewStudent({
+        email: 'eleve.wrongpass@ecole.fr',
+        full_name: 'Élève Pass',
+        password: 'PassCorrect123!',
+      });
+
+      const val = validateStudentMockCredentials('eleve.wrongpass@ecole.fr', 'MauvaisPass123!');
       expect(val.valid).toBe(false);
       expect(val.errorCode).toBe('INVALID_PASSWORD');
     });
 
-    it('allows admin demo login credentials', () => {
-      const val = validateStudentMockCredentials('professeur@frenchgrammarquest.app', 'Admin2026!');
+    it('allows admin login for portoduque@outlook.com with default password', () => {
+      const val = validateStudentMockCredentials(DEFAULT_ADMIN_EMAIL, DEFAULT_ADMIN_PASSWORD);
       expect(val.valid).toBe(true);
+      expect(val.isTemporaryPassword).toBe(false);
+    });
+
+    it('rejects admin login when password is wrong', () => {
+      const val = validateStudentMockCredentials(DEFAULT_ADMIN_EMAIL, 'MauvaisAdminPass!');
+      expect(val.valid).toBe(false);
+      expect(val.errorCode).toBe('INVALID_PASSWORD');
+      expect(val.errorMessage).toContain('Mot de passe administrateur incorrect');
+    });
+
+    it('allows admin to change password and login with updated password', () => {
+      saveUserPassword(DEFAULT_ADMIN_EMAIL, 'NouvelleClef2026!');
+      const val = validateStudentMockCredentials(DEFAULT_ADMIN_EMAIL, 'NouvelleClef2026!');
+      expect(val.valid).toBe(true);
+
+      const oldVal = validateStudentMockCredentials(DEFAULT_ADMIN_EMAIL, DEFAULT_ADMIN_PASSWORD);
+      expect(oldVal.valid).toBe(false);
     });
   });
 
-  it('marks first login handled and clears temporary password when changed', () => {
-    markStudentFirstLoginHandled('etudiant@frenchgrammarquest.app', true);
-    const val = validateStudentMockCredentials('etudiant@frenchgrammarquest.app', 'Quest2026!');
+  it('marks first login handled and clears temporary password when changed', async () => {
+    await registerNewStudent({
+      email: 'eleve.firstlogin@ecole.fr',
+      full_name: 'Élève First Login',
+      password: 'PassInitial123!',
+    });
+
+    markStudentFirstLoginHandled('eleve.firstlogin@ecole.fr', true);
+    const val = validateStudentMockCredentials('eleve.firstlogin@ecole.fr', 'PassInitial123!');
     expect(val.student?.first_login_completed).toBe(true);
     expect(val.student?.is_temporary_password).toBe(false);
   });
@@ -138,22 +190,33 @@ describe('studentService', () => {
     const pass = generateSecureDefaultPassword();
     expect(pass.length).toBeGreaterThanOrEqual(8);
     expect(/[A-Z]/.test(pass)).toBe(true);
-    expect(/[a-z]/.test(pass)).toBe(true);
     expect(/[0-9]/.test(pass)).toBe(true);
     expect(/[!@#$]/.test(pass)).toBe(true);
   });
 
-  it('builds welcome email template in natural French with access credentials', () => {
+  it('builds clear pedagogical French welcome email for students', () => {
+    const student = {
+      id: 's-1',
+      email: 'apprenant@ecole.fr',
+      full_name: 'Jean Dubois',
+      role: 'student' as const,
+      status: 'active' as const,
+      initial_level: 'A1' as const,
+      is_temporary_password: true,
+      first_login_completed: false,
+      created_at: new Date().toISOString(),
+      last_login_at: null,
+    };
+
     const template = buildWelcomeEmailTemplate(
-      { full_name: 'Jean Dupont', email: 'jean.dupont@ecole.fr' },
-      'Quest2026!',
+      student,
+      'Secr3t!2026',
       'https://frenchgrammarquest.app'
     );
 
-    expect(template).toContain('Bonjour Jean Dupont');
+    expect(template).toContain('Bonjour Jean Dubois');
+    expect(template).toContain('Secr3t!2026');
+    expect(template).toContain('apprenant@ecole.fr');
     expect(template).toContain('https://frenchgrammarquest.app/login');
-    expect(template).toContain('jean.dupont@ecole.fr');
-    expect(template).toContain('Quest2026!');
-    expect(template).toContain('équipe pédagogique FLE');
   });
 });

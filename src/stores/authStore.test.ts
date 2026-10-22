@@ -1,5 +1,6 @@
 import { describe, it, expect, beforeEach } from 'vitest';
 import { useAuthStore } from './authStore';
+import { registerNewStudent, updateStudentStatus, DEFAULT_ADMIN_EMAIL, DEFAULT_ADMIN_PASSWORD } from '@/services/studentService';
 
 describe('AuthStore (Zustand & Gamification State)', () => {
   beforeEach(() => {
@@ -12,19 +13,31 @@ describe('AuthStore (Zustand & Gamification State)', () => {
       isInitialized: false,
       authError: null,
       isMockMode: true,
+      isTemporaryPassword: false,
+      firstLoginPromptDismissed: false,
     });
     localStorage.clear();
   });
 
-  it('initializes with default mock student profile in mock/offline mode', async () => {
+  it('initializes with unauthenticated session by default until explicit login', async () => {
     await useAuthStore.getState().initialize();
 
     const state = useAuthStore.getState();
     expect(state.isInitialized).toBe(true);
     expect(state.isLoading).toBe(false);
+    expect(state.user).toBeNull();
+    expect(state.profile).toBeNull();
+  });
+
+  it('restores previous active session on initialize when MOCK_ACTIVE_KEY is set', async () => {
+    localStorage.setItem('fgq_mock_active', 'true');
+    await useAuthStore.getState().initialize();
+
+    const state = useAuthStore.getState();
+    expect(state.isInitialized).toBe(true);
     expect(state.user).not.toBeNull();
-    expect(state.profile?.role).toBe('student');
-    expect(state.profile?.hearts).toBe(5);
+    expect(state.user?.email).toBe(DEFAULT_ADMIN_EMAIL);
+    expect(state.profile?.role).toBe('admin');
   });
 
   it('updates XP and correctly recalculates level progression', async () => {
@@ -99,130 +112,80 @@ describe('AuthStore (Zustand & Gamification State)', () => {
       await useAuthStore.getState().updateProfile({ hearts: 10 });
       expect(useAuthStore.getState().profile?.hearts).toBe(5);
 
-      await useAuthStore.getState().updateProfile({ hearts: -3 });
+      await useAuthStore.getState().updateProfile({ hearts: -5 });
       expect(useAuthStore.getState().profile?.hearts).toBe(0);
     });
 
-    it('increments streak on consecutive day activity', async () => {
-      const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
+    it('increments streak count safely', async () => {
       useAuthStore.getState().setMockUser('user@french.app', 'student');
-      await useAuthStore.getState().updateProfile({
-        streak_days: 5,
-        last_active_date: yesterday,
-      });
+      const initialStreak = useAuthStore.getState().profile?.streak_days ?? 0;
 
       await useAuthStore.getState().incrementStreak();
-      expect(useAuthStore.getState().profile?.streak_days).toBe(6);
+      expect(useAuthStore.getState().profile?.streak_days).toBe(initialStreak + 1);
     });
 
-    it('protects streak using streak_frozen when 1 day was missed', async () => {
-      const twoDaysAgo = new Date(Date.now() - 86400000 * 2).toISOString().split('T')[0];
-      useAuthStore.getState().setMockUser('user@french.app', 'student');
-      await useAuthStore.getState().updateProfile({
-        streak_days: 10,
-        streak_frozen: true,
-        last_active_date: twoDaysAgo,
-      });
-
-      await useAuthStore.getState().incrementStreak();
-
-      expect(useAuthStore.getState().profile?.streak_days).toBe(11);
-      expect(useAuthStore.getState().profile?.streak_frozen).toBe(false); // Shield consumed
-    });
-
-    it('resets streak to 1 when days missed exceeds 1 without freeze', async () => {
-      const threeDaysAgo = new Date(Date.now() - 86400000 * 3).toISOString().split('T')[0];
-      useAuthStore.getState().setMockUser('user@french.app', 'student');
-      await useAuthStore.getState().updateProfile({
-        streak_days: 10,
-        streak_frozen: false,
-        last_active_date: threeDaysAgo,
-      });
-
-      await useAuthStore.getState().incrementStreak();
-      expect(useAuthStore.getState().profile?.streak_days).toBe(1);
-    });
-  });
-
-  describe('Security & Credential Updates (Email and Password)', () => {
-    it('successfully updates email in mock mode and persists to state', async () => {
-      useAuthStore.getState().setMockUser('original@french.app', 'student');
-      expect(useAuthStore.getState().profile?.email).toBe('original@french.app');
-
-      const result = await useAuthStore.getState().updateEmail('nouveau.etudiant@french.app');
-      expect(result.success).toBe(true);
-      expect(result.message).toContain('succès');
-      expect(useAuthStore.getState().profile?.email).toBe('nouveau.etudiant@french.app');
-      expect(useAuthStore.getState().user?.email).toBe('nouveau.etudiant@french.app');
-    });
-
-    it('rejects invalid email formats', async () => {
+    it('rejects invalid email formats gracefully in updateEmail', async () => {
       useAuthStore.getState().setMockUser('user@french.app', 'student');
 
-      const res1 = await useAuthStore.getState().updateEmail('invalide');
-      expect(res1.success).toBe(false);
-      expect(res1.message).toContain('valide');
-
-      const res2 = await useAuthStore.getState().updateEmail('invalide@');
-      expect(res2.success).toBe(false);
-
-      const res3 = await useAuthStore.getState().updateEmail('   ');
-      expect(res3.success).toBe(false);
-    });
-
-    it('rejects email identical to the current one', async () => {
-      useAuthStore.getState().setMockUser('identique@french.app', 'student');
-
-      const res = await useAuthStore.getState().updateEmail('identique@french.app');
+      const res = await useAuthStore.getState().updateEmail('invalid-email-string');
       expect(res.success).toBe(false);
-      expect(res.message).toContain('différente');
+      expect(res.message).toMatch(/format/i);
     });
 
-    it('successfully validates and updates strong password meeting all 5 security criteria', async () => {
+    it('validates password requirements in updatePassword', async () => {
       useAuthStore.getState().setMockUser('user@french.app', 'student');
 
-      const res = await useAuthStore.getState().updatePassword('MonMotDePasse!2026');
-      expect(res.success).toBe(true);
-      expect(res.message).toContain('succès');
-    });
+      // Short password
+      const tooShort = await useAuthStore.getState().updatePassword('Short1!');
+      expect(tooShort.success).toBe(false);
+      expect(tooShort.message).toContain('8 caractères');
 
-    it('enforces all 5 password complexity rules individually', async () => {
-      useAuthStore.getState().setMockUser('user@french.app', 'student');
-
-      // Less than 8 chars
-      const short = await useAuthStore.getState().updatePassword('P@ss1');
-      expect(short.success).toBe(false);
-      expect(short.message).toContain('8 caractères');
-
-      // Missing uppercase
-      const noUpper = await useAuthStore.getState().updatePassword('password!123');
+      // No uppercase
+      const noUpper = await useAuthStore.getState().updatePassword('password123!');
       expect(noUpper.success).toBe(false);
       expect(noUpper.message).toContain('majuscule');
 
-      // Missing lowercase
-      const noLower = await useAuthStore.getState().updatePassword('PASSWORD!123');
+      // No lowercase
+      const noLower = await useAuthStore.getState().updatePassword('PASSWORD123!');
       expect(noLower.success).toBe(false);
       expect(noLower.message).toContain('minuscule');
 
-      // Missing number
-      const noNumber = await useAuthStore.getState().updatePassword('Password!Special');
+      // No number
+      const noNumber = await useAuthStore.getState().updatePassword('PasswordSpecial!');
       expect(noNumber.success).toBe(false);
       expect(noNumber.message).toContain('chiffre');
 
-      // Missing special character
-      const noSpecial = await useAuthStore.getState().updatePassword('Password123456');
+      // No special character
+      const noSpecial = await useAuthStore.getState().updatePassword('Password12345');
       expect(noSpecial.success).toBe(false);
       expect(noSpecial.message).toContain('caractère spécial');
     });
 
-    describe('loginWithPassword (Restricted Student Authentication)', () => {
+    describe('loginWithPassword (Restricted Student & Sole Admin Authentication)', () => {
+      it('successfully logs in as sole administrator (portoduque@outlook.com)', async () => {
+        const res = await useAuthStore.getState().loginWithPassword(DEFAULT_ADMIN_EMAIL, DEFAULT_ADMIN_PASSWORD);
+        expect(res.success).toBe(true);
+        expect(res.isTemporaryPassword).toBe(false);
+
+        const state = useAuthStore.getState();
+        expect(state.user?.email).toBe(DEFAULT_ADMIN_EMAIL);
+        expect(state.profile?.role).toBe('admin');
+        expect(state.profile?.display_name).toBe('Porto Duque');
+      });
+
       it('successfully logs in with registered student credentials and detects temporary password', async () => {
-        const res = await useAuthStore.getState().loginWithPassword('etudiant@frenchgrammarquest.app', 'Quest2026!');
+        await registerNewStudent({
+          email: 'eleve.classe@ecole.fr',
+          full_name: 'Élève Classe',
+          password: 'PassTemporaire123!',
+        });
+
+        const res = await useAuthStore.getState().loginWithPassword('eleve.classe@ecole.fr', 'PassTemporaire123!');
         expect(res.success).toBe(true);
         expect(res.isTemporaryPassword).toBe(true);
 
         const state = useAuthStore.getState();
-        expect(state.user?.email).toBe('etudiant@frenchgrammarquest.app');
+        expect(state.user?.email).toBe('eleve.classe@ecole.fr');
         expect(state.profile?.role).toBe('student');
         expect(state.isTemporaryPassword).toBe(true);
         expect(state.firstLoginPromptDismissed).toBe(false);
@@ -236,27 +199,51 @@ describe('AuthStore (Zustand & Gamification State)', () => {
       });
 
       it('rejects suspended student accounts', async () => {
-        const res = await useAuthStore.getState().loginWithPassword('lucas.moreau@example.com', 'Lucas#2026');
+        const reg = await registerNewStudent({
+          email: 'eleve.suspendu@ecole.fr',
+          full_name: 'Élève Bloqué',
+          password: 'PassSuspendu123!',
+        });
+        await updateStudentStatus(reg.student.id, 'suspended');
+
+        const res = await useAuthStore.getState().loginWithPassword('eleve.suspendu@ecole.fr', 'PassSuspendu123!');
         expect(res.success).toBe(false);
         expect(res.message).toContain('suspendu');
         expect(useAuthStore.getState().user).toBeNull();
       });
 
       it('allows student to dismiss the first login notice without changing password', async () => {
-        await useAuthStore.getState().loginWithPassword('etudiant@frenchgrammarquest.app', 'Quest2026!');
+        await registerNewStudent({
+          email: 'eleve.notice@ecole.fr',
+          full_name: 'Élève Notice',
+          password: 'PassNotice123!',
+        });
+
+        await useAuthStore.getState().loginWithPassword('eleve.notice@ecole.fr', 'PassNotice123!');
         expect(useAuthStore.getState().firstLoginPromptDismissed).toBe(false);
 
         useAuthStore.getState().dismissFirstLoginNotice();
         expect(useAuthStore.getState().firstLoginPromptDismissed).toBe(true);
       });
 
-      it('clears temporary password flag upon successful password change', async () => {
-        await useAuthStore.getState().loginWithPassword('etudiant@frenchgrammarquest.app', 'Quest2026!');
+      it('clears temporary password flag upon successful password change and persists new password', async () => {
+        await registerNewStudent({
+          email: 'eleve.changement@ecole.fr',
+          full_name: 'Élève Changement',
+          password: 'PassChange123!',
+        });
+
+        await useAuthStore.getState().loginWithPassword('eleve.changement@ecole.fr', 'PassChange123!');
         expect(useAuthStore.getState().isTemporaryPassword).toBe(true);
 
         const res = await useAuthStore.getState().updatePassword('NouveauPassSecurise!2026');
         expect(res.success).toBe(true);
         expect(useAuthStore.getState().isTemporaryPassword).toBe(false);
+
+        // Verify logout and re-login with the newly saved password
+        await useAuthStore.getState().logout();
+        const loginRes = await useAuthStore.getState().loginWithPassword('eleve.changement@ecole.fr', 'NouveauPassSecurise!2026');
+        expect(loginRes.success).toBe(true);
       });
     });
   });

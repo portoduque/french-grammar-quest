@@ -3,6 +3,7 @@ import { render, screen, fireEvent, act } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import LoginPage from './LoginPage';
 import { useAuthStore } from '@/stores/authStore';
+import { DEFAULT_ADMIN_EMAIL, DEFAULT_ADMIN_PASSWORD, registerNewStudent } from '@/services/studentService';
 
 describe('LoginPage', () => {
   beforeEach(() => {
@@ -34,7 +35,13 @@ describe('LoginPage', () => {
     expect(submitBtn).toBeDisabled();
   });
 
-  it('enables submit button and allows login with password', async () => {
+  it('enables submit button and allows login with registered student credentials', async () => {
+    await registerNewStudent({
+      email: 'etudiant.inscrit@ecole.fr',
+      full_name: 'Étudiant Inscrit',
+      password: 'PassSecurise123!',
+    });
+
     render(
       <MemoryRouter>
         <LoginPage />
@@ -44,8 +51,8 @@ describe('LoginPage', () => {
     const emailInput = screen.getByLabelText(/Adresse e-mail/i);
     const passwordInput = screen.getByLabelText(/^Mot de passe$/i);
 
-    fireEvent.change(emailInput, { target: { value: 'etudiant@frenchgrammarquest.app' } });
-    fireEvent.change(passwordInput, { target: { value: 'Quest2026!' } });
+    fireEvent.change(emailInput, { target: { value: 'etudiant.inscrit@ecole.fr' } });
+    fireEvent.change(passwordInput, { target: { value: 'PassSecurise123!' } });
 
     const submitBtn = screen.getByRole('button', { name: /Se connecter/i });
     expect(submitBtn).not.toBeDisabled();
@@ -55,6 +62,7 @@ describe('LoginPage', () => {
     });
 
     expect(useAuthStore.getState().user).not.toBeNull();
+    expect(useAuthStore.getState().user?.email).toBe('etudiant.inscrit@ecole.fr');
     expect(useAuthStore.getState().profile?.role).toBe('student');
   });
 
@@ -84,7 +92,7 @@ describe('LoginPage', () => {
 
     expect(screen.getByText('Connexion par Lien Magique')).toBeInTheDocument();
     const emailInput = screen.getByLabelText(/Adresse e-mail pour lien magique/i);
-    fireEvent.change(emailInput, { target: { value: 'etudiant@exemple.fr' } });
+    fireEvent.change(emailInput, { target: { value: 'eleve@exemple.fr' } });
 
     const submitBtn = screen.getByRole('button', { name: /Recevoir mon lien magique/i });
     expect(submitBtn).not.toBeDisabled();
@@ -96,31 +104,37 @@ describe('LoginPage', () => {
     expect(useAuthStore.getState().user).not.toBeNull();
   });
 
-  it('allows one-click demo login as student', () => {
+  it('allows direct administrator login for portoduque@outlook.com', async () => {
     render(
       <MemoryRouter>
         <LoginPage />
       </MemoryRouter>
     );
 
-    const demoStudentBtn = screen.getByRole('button', { name: /Entrer comme Étudiant/i });
-    fireEvent.click(demoStudentBtn);
+    const demoAdminBtn = screen.getByRole('button', { name: /Entrer comme Administrateur/i });
+    await act(async () => {
+      fireEvent.click(demoAdminBtn);
+    });
 
     expect(useAuthStore.getState().user).not.toBeNull();
-    expect(useAuthStore.getState().profile?.role).toBe('student');
+    expect(useAuthStore.getState().user?.email).toBe(DEFAULT_ADMIN_EMAIL);
+    expect(useAuthStore.getState().profile?.role).toBe('admin');
   });
 
-  it('allows one-click demo login as administrator', () => {
+  it('prefills form inputs with administrator credentials on helper click', () => {
     render(
       <MemoryRouter>
         <LoginPage />
       </MemoryRouter>
     );
 
-    const demoAdminBtn = screen.getByRole('button', { name: /Entrer comme Professeur \/ Admin/i });
-    fireEvent.click(demoAdminBtn);
+    const prefillBtn = screen.getByRole('button', { name: /Préremplir le formulaire/i });
+    fireEvent.click(prefillBtn);
 
-    expect(useAuthStore.getState().user).not.toBeNull();
-    expect(useAuthStore.getState().profile?.role).toBe('admin');
+    const emailInput = screen.getByLabelText(/Adresse e-mail/i) as HTMLInputElement;
+    const passwordInput = screen.getByLabelText(/^Mot de passe$/i) as HTMLInputElement;
+
+    expect(emailInput.value).toBe(DEFAULT_ADMIN_EMAIL);
+    expect(passwordInput.value).toBe(DEFAULT_ADMIN_PASSWORD);
   });
 });

@@ -3,7 +3,7 @@ import { subscribeWithSelector } from 'zustand/middleware';
 import type { User, Session } from '@supabase/supabase-js';
 import { supabase, isSupabaseConfigured, sendMagicLink, signOutUser } from '@/lib/supabase';
 import type { Profile } from '@/types/database';
-import { validateStudentMockCredentials, markStudentFirstLoginHandled } from '@/services/studentService';
+import { validateStudentMockCredentials, markStudentFirstLoginHandled, saveUserPassword, DEFAULT_ADMIN_EMAIL } from '@/services/studentService';
 
 export interface AuthState {
   user: User | null;
@@ -41,10 +41,10 @@ const MOCK_ACTIVE_KEY = 'fgq_mock_active';
 
 const DEFAULT_MOCK_PROFILE: Profile = {
   id: '00000000-0000-0000-0000-000000000001',
-  email: 'etudiant@frenchgrammarquest.app',
-  display_name: 'Étudiant Démo',
+  email: DEFAULT_ADMIN_EMAIL,
+  display_name: 'Porto Duque',
   avatar_url: null,
-  role: 'student',
+  role: 'admin',
   timezone: 'America/Sao_Paulo',
   preferences: { theme: 'dark', sound: true, daily_goal_xp: 50 },
   hearts: 5,
@@ -53,7 +53,7 @@ const DEFAULT_MOCK_PROFILE: Profile = {
   level: 2,
   streak_days: 3,
   streak_frozen: false,
-  last_active_date: new Date().toISOString().split('T')[0],
+  last_active_date: new Date(Date.now() - 86400000).toISOString().split('T')[0],
   created_at: new Date().toISOString(),
   updated_at: new Date().toISOString(),
 };
@@ -91,23 +91,34 @@ export const useAuthStore = create<AuthStore>()(
     initialize: async () => {
       const isMockActive = typeof window !== 'undefined' && localStorage.getItem(MOCK_ACTIVE_KEY) === 'true';
 
-      // If store is in mock mode, mock session was explicitly active, or Supabase is not configured, fall back to mock profile
-      if (get().isMockMode || isMockActive || !isSupabaseConfigured || !supabase) {
-        const mockProf = getStoredMockProfile();
-        set({
-          user: {
-            id: mockProf.id,
-            email: mockProf.email,
-            app_metadata: {},
-            user_metadata: { full_name: mockProf.display_name },
-            aud: 'authenticated',
-            created_at: mockProf.created_at,
-          } as User,
-          profile: mockProf,
-          isLoading: false,
-          isInitialized: true,
-          isMockMode: true,
-        });
+      // If Supabase is not configured or store is explicitly in mock mode
+      if (get().isMockMode || !isSupabaseConfigured || !supabase) {
+        if (isMockActive) {
+          const mockProf = getStoredMockProfile();
+          set({
+            user: {
+              id: mockProf.id,
+              email: mockProf.email,
+              app_metadata: {},
+              user_metadata: { full_name: mockProf.display_name },
+              aud: 'authenticated',
+              created_at: mockProf.created_at,
+            } as User,
+            profile: mockProf,
+            isLoading: false,
+            isInitialized: true,
+            isMockMode: true,
+          });
+        } else {
+          set({
+            user: null,
+            session: null,
+            profile: null,
+            isLoading: false,
+            isInitialized: true,
+            isMockMode: true,
+          });
+        }
         return;
       }
 
@@ -201,12 +212,13 @@ export const useAuthStore = create<AuthStore>()(
           }
 
           const student = val.student;
-          const role = cleanEmail.includes('professeur') || cleanEmail.includes('admin') ? 'admin' : 'student';
+          const isAdmin = cleanEmail === DEFAULT_ADMIN_EMAIL || cleanEmail.includes('admin') || cleanEmail.includes('professeur');
+          const role = isAdmin ? 'admin' : 'student';
           const mockProfile: Profile = {
             ...DEFAULT_MOCK_PROFILE,
-            id: student?.id || DEFAULT_MOCK_PROFILE.id,
+            id: isAdmin ? DEFAULT_MOCK_PROFILE.id : (student?.id || crypto.randomUUID()),
             email: cleanEmail,
-            display_name: student?.full_name || cleanEmail.split('@')[0],
+            display_name: isAdmin ? (cleanEmail === DEFAULT_ADMIN_EMAIL ? 'Porto Duque' : cleanEmail.split('@')[0]) : (student?.full_name || cleanEmail.split('@')[0]),
             role,
           };
 
@@ -346,7 +358,7 @@ export const useAuthStore = create<AuthStore>()(
           profile: null,
           isLoading: false,
           authError: null,
-          isMockMode: !isSupabaseConfigured,
+          isMockMode: get().isMockMode,
           isTemporaryPassword: false,
           firstLoginPromptDismissed: false,
         });
@@ -356,12 +368,12 @@ export const useAuthStore = create<AuthStore>()(
       }
     },
 
-    setMockUser: (email = 'etudiant@frenchgrammarquest.app', role = 'student') => {
+    setMockUser: (email = DEFAULT_ADMIN_EMAIL, role = 'admin') => {
       const mock: Profile = {
         ...DEFAULT_MOCK_PROFILE,
         email,
         role,
-        display_name: email.split('@')[0],
+        display_name: email === DEFAULT_ADMIN_EMAIL ? 'Porto Duque' : email.split('@')[0],
       };
       saveStoredMockProfile(mock);
       try {
@@ -587,8 +599,9 @@ export const useAuthStore = create<AuthStore>()(
       }
 
       if (get().isMockMode || !isSupabaseConfigured || !supabase) {
-        const email = get().user?.email || '';
+        const email = (get().user?.email || get().profile?.email || '').trim().toLowerCase();
         markStudentFirstLoginHandled(email, true);
+        saveUserPassword(email, newPassword);
         set({ isTemporaryPassword: false });
         return {
           success: true,

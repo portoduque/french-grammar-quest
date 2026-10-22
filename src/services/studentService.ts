@@ -4,53 +4,13 @@ import { supabase, isSupabaseConfigured } from '@/lib/supabase';
 const MOCK_STUDENTS_KEY = 'fgq_mock_students';
 const MOCK_PASSWORDS_KEY = 'fgq_mock_passwords';
 
-export const DEFAULT_MOCK_STUDENTS: RegisteredStudent[] = [
-  {
-    id: '00000000-0000-0000-0000-000000000001',
-    email: 'etudiant@frenchgrammarquest.app',
-    full_name: 'Étudiant Démo',
-    role: 'student',
-    status: 'active',
-    initial_level: 'A1',
-    is_temporary_password: true,
-    first_login_completed: false,
-    notes: 'Compte de démonstration pédagogique FLE',
-    created_at: new Date('2026-01-10T10:00:00Z').toISOString(),
-    last_login_at: null,
-  },
-  {
-    id: '00000000-0000-0000-0000-000000000002',
-    email: 'camille.bernard@example.com',
-    full_name: 'Camille Bernard',
-    role: 'student',
-    status: 'active',
-    initial_level: 'A2',
-    is_temporary_password: false,
-    first_login_completed: true,
-    notes: 'Groupe B - Grammaire intermédiaire',
-    created_at: new Date('2026-02-15T14:30:00Z').toISOString(),
-    last_login_at: new Date('2026-02-20T18:00:00Z').toISOString(),
-  },
-  {
-    id: '00000000-0000-0000-0000-000000000003',
-    email: 'lucas.moreau@example.com',
-    full_name: 'Lucas Moreau',
-    role: 'student',
-    status: 'suspended',
-    initial_level: 'B1',
-    is_temporary_password: false,
-    first_login_completed: true,
-    notes: 'Accès suspendu temporairement',
-    created_at: new Date('2026-01-20T09:15:00Z').toISOString(),
-    last_login_at: new Date('2026-01-25T11:00:00Z').toISOString(),
-  },
-];
+export const DEFAULT_ADMIN_EMAIL = 'portoduque@outlook.com';
+export const DEFAULT_ADMIN_PASSWORD = 'Admin123!';
+
+export const DEFAULT_MOCK_STUDENTS: RegisteredStudent[] = [];
 
 export const DEFAULT_MOCK_PASSWORDS: Record<string, string> = {
-  'etudiant@frenchgrammarquest.app': 'Quest2026!',
-  'camille.bernard@example.com': 'Camille#2026',
-  'lucas.moreau@example.com': 'Lucas#2026',
-  'professeur@frenchgrammarquest.app': 'Admin2026!',
+  [DEFAULT_ADMIN_EMAIL]: DEFAULT_ADMIN_PASSWORD,
 };
 
 function getStoredStudents(): RegisteredStudent[] {
@@ -305,6 +265,13 @@ export async function deleteStudent(id: string): Promise<void> {
   }
 }
 
+export function saveUserPassword(email: string, newPassword: string): void {
+  const cleanEmail = email.trim().toLowerCase();
+  const passwords = getStoredPasswords();
+  passwords[cleanEmail] = newPassword;
+  saveStoredPasswords(passwords);
+}
+
 export function validateStudentMockCredentials(
   email: string,
   passwordAttempt: string
@@ -319,11 +286,19 @@ export function validateStudentMockCredentials(
   const students = getStoredStudents();
   const passwords = getStoredPasswords();
 
-  // Allow admin demo login
-  if (cleanEmail === 'professeur@frenchgrammarquest.app' && passwordAttempt === (passwords[cleanEmail] || 'Admin2026!')) {
+  // Allow administrator login (portoduque@outlook.com)
+  if (cleanEmail === DEFAULT_ADMIN_EMAIL) {
+    const expectedAdminPassword = passwords[cleanEmail] || DEFAULT_ADMIN_PASSWORD;
+    if (passwordAttempt === expectedAdminPassword) {
+      return {
+        valid: true,
+        isTemporaryPassword: false,
+      };
+    }
     return {
-      valid: true,
-      isTemporaryPassword: false,
+      valid: false,
+      errorCode: 'INVALID_PASSWORD',
+      errorMessage: 'Mot de passe administrateur incorrect.',
     };
   }
 
