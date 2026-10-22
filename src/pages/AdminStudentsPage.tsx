@@ -211,19 +211,28 @@ export const AdminStudentsPage: React.FC = () => {
     >
       {/* Header */}
       <div style={{ marginBottom: '1.25rem' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
+        <div className="admin-students-top-bar">
           <Link
             to="/admin"
-            className="btn btn-ghost btn-sm"
-            style={{ padding: '4px 8px', fontSize: '0.85rem' }}
+            className="btn btn-ghost btn-sm admin-students-back-btn"
           >
-            ← Centre d'Admin
+            <span className="admin-back-full">← Centre d'Admin</span>
+            <span className="admin-back-short">← Admin</span>
           </Link>
-          <Badge variant="rose">Mode Administrateur</Badge>
-          <Badge variant="cyan">Accès Privé</Badge>
+          <div className="admin-students-badges">
+            <Badge variant="rose">
+              <span className="admin-badge-full">Mode Administrateur</span>
+              <span className="admin-badge-short">Admin</span>
+            </Badge>
+            <Badge variant="cyan">
+              <span className="admin-badge-full">Accès Privé</span>
+              <span className="admin-badge-short">Privé</span>
+            </Badge>
+          </div>
         </div>
 
         <h1
+          className="admin-students-title"
           style={{
             fontSize: 'clamp(1.25rem, 4vw, 1.75rem)',
             fontWeight: 800,
@@ -259,36 +268,26 @@ export const AdminStudentsPage: React.FC = () => {
         </div>
       )}
 
-      {/* Metrics Cards: 2x2 grid on mobile <= 360px */}
-      <div
-        className="admin-metrics-grid"
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(135px, 1fr))',
-          gap: '8px',
-          marginBottom: '1.5rem',
-          width: '100%',
-          boxSizing: 'border-box',
-        }}
-      >
-        <Card variant="elevated" style={{ padding: '0.75rem' }}>
-          <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)' }}>Total Inscrits</div>
-          <div style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--color-primary)' }}>{totalCount}</div>
+      {/* Metrics Cards: 2x2 grid on mobile <= 640px, 4 in a row on desktop */}
+      <div className="admin-metrics-grid">
+        <Card variant="elevated" className="admin-metric-card">
+          <div className="admin-metric-label">Total Inscrits</div>
+          <div className="admin-metric-val" style={{ color: 'var(--color-primary)' }}>{totalCount}</div>
         </Card>
 
-        <Card variant="elevated" style={{ padding: '0.75rem' }}>
-          <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)' }}>Élèves Actifs</div>
-          <div style={{ fontSize: '1.5rem', fontWeight: 800, color: '#10B981' }}>{activeCount}</div>
+        <Card variant="elevated" className="admin-metric-card">
+          <div className="admin-metric-label">Élèves Actifs</div>
+          <div className="admin-metric-val" style={{ color: '#10B981' }}>{activeCount}</div>
         </Card>
 
-        <Card variant="elevated" style={{ padding: '0.75rem' }}>
-          <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)' }}>1er Accès En Attente</div>
-          <div style={{ fontSize: '1.5rem', fontWeight: 800, color: '#F59E0B' }}>{tempCount}</div>
+        <Card variant="elevated" className="admin-metric-card">
+          <div className="admin-metric-label">1er Accès En Attente</div>
+          <div className="admin-metric-val" style={{ color: '#F59E0B' }}>{tempCount}</div>
         </Card>
 
-        <Card variant="elevated" style={{ padding: '0.75rem' }}>
-          <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)' }}>Protection RLS</div>
-          <div style={{ fontSize: '1rem', fontWeight: 700, color: '#06B6D4', marginTop: '4px' }}>🔒 Active</div>
+        <Card variant="elevated" className="admin-metric-card">
+          <div className="admin-metric-label">Protection RLS</div>
+          <div className="admin-metric-val admin-metric-rls" style={{ color: '#06B6D4' }}>🔒 Active</div>
         </Card>
       </div>
 
@@ -499,72 +498,32 @@ export const AdminStudentsPage: React.FC = () => {
           </div>
 
           {/* Status filters */}
-          <div style={{ display: 'flex', gap: '4px', flexWrap: 'wrap' }}>
+          <div className="student-filter-tabs">
             <button
               type="button"
               onClick={() => setStatusFilter('all')}
-              style={{
-                padding: '4px 8px',
-                fontSize: '0.75rem',
-                borderRadius: '6px',
-                border: 'none',
-                cursor: 'pointer',
-                fontWeight: statusFilter === 'all' ? 700 : 500,
-                backgroundColor: statusFilter === 'all' ? 'var(--color-primary)' : 'var(--color-bg-subtle, rgba(255,255,255,0.06))',
-                color: statusFilter === 'all' ? '#fff' : 'inherit',
-                minHeight: '36px',
-              }}
+              className={`student-filter-btn ${statusFilter === 'all' ? 'active-all' : ''}`}
             >
               Tous ({students.length})
             </button>
             <button
               type="button"
               onClick={() => setStatusFilter('active')}
-              style={{
-                padding: '4px 8px',
-                fontSize: '0.75rem',
-                borderRadius: '6px',
-                border: 'none',
-                cursor: 'pointer',
-                fontWeight: statusFilter === 'active' ? 700 : 500,
-                backgroundColor: statusFilter === 'active' ? '#10B981' : 'var(--color-bg-subtle, rgba(255,255,255,0.06))',
-                color: statusFilter === 'active' ? '#fff' : 'inherit',
-                minHeight: '36px',
-              }}
+              className={`student-filter-btn ${statusFilter === 'active' ? 'active-active' : ''}`}
             >
               Actifs ({activeCount})
             </button>
             <button
               type="button"
               onClick={() => setStatusFilter('suspended')}
-              style={{
-                padding: '4px 8px',
-                fontSize: '0.75rem',
-                borderRadius: '6px',
-                border: 'none',
-                cursor: 'pointer',
-                fontWeight: statusFilter === 'suspended' ? 700 : 500,
-                backgroundColor: statusFilter === 'suspended' ? '#EF4444' : 'var(--color-bg-subtle, rgba(255,255,255,0.06))',
-                color: statusFilter === 'suspended' ? '#fff' : 'inherit',
-                minHeight: '36px',
-              }}
+              className={`student-filter-btn ${statusFilter === 'suspended' ? 'active-suspended' : ''}`}
             >
               Suspendus ({suspendedCount})
             </button>
             <button
               type="button"
               onClick={() => setStatusFilter('temporary')}
-              style={{
-                padding: '4px 8px',
-                fontSize: '0.75rem',
-                borderRadius: '6px',
-                border: 'none',
-                cursor: 'pointer',
-                fontWeight: statusFilter === 'temporary' ? 700 : 500,
-                backgroundColor: statusFilter === 'temporary' ? '#F59E0B' : 'var(--color-bg-subtle, rgba(255,255,255,0.06))',
-                color: statusFilter === 'temporary' ? '#fff' : 'inherit',
-                minHeight: '36px',
-              }}
+              className={`student-filter-btn ${statusFilter === 'temporary' ? 'active-temporary' : ''}`}
             >
               1er Accès ({tempCount})
             </button>

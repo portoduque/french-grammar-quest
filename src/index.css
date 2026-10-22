@@ -5445,6 +5445,153 @@ dialog.modal::backdrop {
     display: none !important;
   }
 }
+/* ─── Admin Students Page Responsive Styles ─────────────────── */
+.admin-students-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.admin-students-badges {
+  display: flex;
+  gap: 0.35rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.admin-back-short,
+.admin-badge-short {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .admin-back-full,
+  .admin-badge-full {
+    display: none !important;
+  }
+  .admin-back-short,
+  .admin-badge-short {
+    display: inline !important;
+  }
+}
+
+.admin-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 1.25rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.admin-metric-card {
+  padding: 0.75rem !important;
+}
+
+.admin-metric-label {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.admin-metric-val {
+  font-size: 1.4rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.admin-metric-rls {
+  font-size: 0.95rem !important;
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+.student-filter-tabs {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.student-filter-btn {
+  padding: 6px 10px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 6px;
+  border: 1px solid var(--border-default);
+  background: var(--bg-surface);
+  color: var(--text-secondary);
+  cursor: pointer;
+  min-height: 36px;
+  transition: all var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.student-filter-btn:hover {
+  color: var(--text-primary);
+  border-color: var(--border-highlight);
+  background: var(--bg-surface-elevated);
+}
+
+.student-filter-btn.active-all {
+  background: var(--accent-violet);
+  color: #ffffff;
+  border-color: var(--accent-violet);
+  font-weight: 700;
+  box-shadow: 0 2px 6px rgba(139, 92, 246, 0.35);
+}
+
+.student-filter-btn.active-active {
+  background: var(--accent-emerald);
+  color: #ffffff;
+  border-color: var(--accent-emerald);
+  font-weight: 700;
+  box-shadow: 0 2px 6px rgba(16, 185, 129, 0.35);
+}
+
+.student-filter-btn.active-suspended {
+  background: var(--accent-rose);
+  color: #ffffff;
+  border-color: var(--accent-rose);
+  font-weight: 700;
+  box-shadow: 0 2px 6px rgba(244, 63, 94, 0.35);
+}
+
+.student-filter-btn.active-temporary {
+  background: var(--accent-amber);
+  color: #0f172a;
+  border-color: var(--accent-amber);
+  font-weight: 700;
+  box-shadow: 0 2px 6px rgba(245, 158, 11, 0.35);
+}
+
+@media (max-width: 640px) {
+  .admin-metrics-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 6px !important;
+  }
+
+  .admin-metric-card {
+    padding: 0.5rem 0.65rem !important;
+  }
+
+  .admin-metric-val {
+    font-size: 1.2rem !important;
+  }
+
+  .admin-students-top-bar {
+    gap: 0.35rem;
+  }
+
+  .student-filter-btn {
+    flex: 1 1 calc(50% - 4px);
+    text-align: center;
+  }
+}
 
 /* ─── MobileNav Extra Narrow Optimization (316px) ─────────────── */
 @media (max-width: 360px) {
@@ -5514,6 +5661,19 @@ dialog.modal::backdrop {
     white-space: nowrap !important;
     overflow: hidden !important;
     text-overflow: ellipsis !important;
+  }
+
+  .admin-students-back-btn {
+    padding: 2px 6px !important;
+    font-size: 0.75rem !important;
+  }
+
+  .admin-metric-val {
+    font-size: 1.1rem !important;
+  }
+
+  .admin-metric-label {
+    font-size: 0.6875rem !important;
   }
 }
 

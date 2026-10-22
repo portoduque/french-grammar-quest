@@ -27,6 +27,7 @@ export const MobileNav: React.FC = () => {
         <NavLink
           key={item.path}
           to={item.path}
+          end={item.path === '/admin'}
           className={({ isActive }) =>
             `mobile-nav-item ${isActive ? 'mobile-nav-active' : ''}`
           }
