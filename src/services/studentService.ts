@@ -160,27 +160,33 @@ export async function registerNewStudent(input: StudentCreateInput): Promise<{
   passwords[cleanEmail] = initialPassword;
   saveStoredPasswords(passwords);
 
-  // If Supabase is connected, sync with database via admin_register_student_account
+  // If Supabase is connected and has an active session, sync with database via admin_register_student_account
   if (isSupabaseConfigured && supabase) {
     try {
-      const { data, error } = await supabase.rpc('admin_register_student_account', {
-        p_email: cleanEmail,
-        p_password: initialPassword,
-        p_full_name: cleanName,
-        p_initial_level: input.initial_level || 'A1',
-        p_notes: input.notes?.trim() || null,
-      });
+      const { data: sessionData } = await supabase.auth.getSession();
+      if (sessionData?.session?.user) {
+        const { data, error } = await supabase.rpc('admin_register_student_account', {
+          p_email: cleanEmail,
+          p_password: initialPassword,
+          p_full_name: cleanName,
+          p_initial_level: input.initial_level || 'A1',
+          p_notes: input.notes?.trim() || null,
+        });
 
-      if (error) {
-        console.warn('Sync student account warning:', error.message);
-      } else {
+        if (error) {
+          throw new Error(`Erreur lors de l'inscription : ${error.message}`);
+        }
+
         const studentData = (data as any)?.student;
         if (studentData?.id) {
           newStudent.id = studentData.id;
           saveStoredStudents([newStudent, ...students]);
         }
       }
-    } catch (err) {
+    } catch (err: any) {
+      if (err?.message?.startsWith("Erreur lors de l'inscription")) {
+        throw err;
+      }
       console.warn('Sync student account warning:', err);
     }
   }

@@ -89,10 +89,106 @@ export const useAuthStore = create<AuthStore>()(
     firstLoginPromptDismissed: false,
 
     initialize: async () => {
-      const isMockActive = typeof window !== 'undefined' && localStorage.getItem(MOCK_ACTIVE_KEY) === 'true';
+      // 1. If Supabase is configured, prioritize live Supabase session
+      if (isSupabaseConfigured && supabase) {
+        try {
+          const client = supabase;
+          set({ isLoading: true, authError: null });
 
-      // If Supabase is not configured, store is in mock mode, or mock session was explicitly active
-      if (isMockActive || get().isMockMode || !isSupabaseConfigured || !supabase) {
+          const { data: { session }, error: sessionError } = await client.auth.getSession();
+          if (sessionError) throw sessionError;
+
+          if (session?.user) {
+            const { data: profileData, error: profileError } = await client
+              .from('profiles')
+              .select('*')
+              .eq('id', session.user.id)
+              .single();
+
+            if (profileError && profileError.code !== 'PGRST116') {
+              console.warn('Erro ao carregar perfil do Supabase:', profileError);
+            }
+
+            set({
+              session,
+              user: session.user,
+              profile: profileData || null,
+              isLoading: false,
+              isInitialized: true,
+              isMockMode: false,
+            });
+
+            try {
+              localStorage.removeItem(MOCK_ACTIVE_KEY);
+              localStorage.removeItem(MOCK_STORAGE_KEY);
+            } catch {
+              // ignore
+            }
+          } else {
+            const isMockActive = typeof window !== 'undefined' && localStorage.getItem(MOCK_ACTIVE_KEY) === 'true';
+            if (isMockActive) {
+              const mockProf = getStoredMockProfile();
+              set({
+                user: {
+                  id: mockProf.id,
+                  email: mockProf.email,
+                  app_metadata: {},
+                  user_metadata: { full_name: mockProf.display_name },
+                  aud: 'authenticated',
+                  created_at: mockProf.created_at,
+                } as User,
+                profile: mockProf,
+                isLoading: false,
+                isInitialized: true,
+                isMockMode: true,
+              });
+            } else {
+              set({
+                session: null,
+                user: null,
+                profile: null,
+                isLoading: false,
+                isInitialized: true,
+                isMockMode: false,
+              });
+            }
+          }
+
+          // Setup real-time auth state listener
+          client.auth.onAuthStateChange(async (event, newSession) => {
+            if (newSession?.user) {
+              const { data: prof } = await client
+                .from('profiles')
+                .select('*')
+                .eq('id', newSession.user.id)
+                .single();
+
+              set({
+                session: newSession,
+                user: newSession.user,
+                profile: prof || null,
+                isLoading: false,
+                isMockMode: false,
+              });
+            } else if (event === 'SIGNED_OUT') {
+              set({
+                session: null,
+                user: null,
+                profile: null,
+                isLoading: false,
+                isMockMode: false,
+              });
+            }
+          });
+          return;
+        } catch (err: unknown) {
+          console.warn('Erro na inicialização da sessão Supabase:', err);
+        }
+      }
+
+      // 2. Offline / Mock fallback (only when no Supabase or in test environments)
+      const isMockActive = typeof window !== 'undefined' && localStorage.getItem(MOCK_ACTIVE_KEY) === 'true';
+      if (isMockActive || !isSupabaseConfigured || !supabase) {
         if (isMockActive) {
           const mockProf = getStoredMockProfile();
           set({
@@ -116,86 +212,20 @@ export const useAuthStore = create<AuthStore>()(
             profile: null,
             isLoading: false,
             isInitialized: true,
-            isMockMode: true,
+            isMockMode: !isSupabaseConfigured,
           });
         }
         return;
       }
 
-      try {
-        const client = supabase;
-        if (!client) return;
-
-        set({ isLoading: true, authError: null });
-
-        const { data: { session }, error: sessionError } = await client.auth.getSession();
-        if (sessionError) throw sessionError;
-
-        if (session?.user) {
-          // Fetch user profile from public.profiles
-          const { data: profileData, error: profileError } = await client
-            .from('profiles')
-            .select('*')
-            .eq('id', session.user.id)
-            .single();
-
-          if (profileError && profileError.code !== 'PGRST116') {
-            console.warn('Erro ao carregar perfil do Supabase:', profileError);
-          }
-
-          set({
-            session,
-            user: session.user,
-            profile: profileData || null,
-            isLoading: false,
-            isInitialized: true,
-            isMockMode: false,
-          });
-        } else {
-          set({
-            session: null,
-            user: null,
-            profile: null,
-            isLoading: false,
-            isInitialized: true,
-            isMockMode: false,
-          });
-        }
-
-        // Setup real-time auth state listener
-        client.auth.onAuthStateChange(async (event, newSession) => {
-          if (newSession?.user) {
-            const { data: prof } = await client
-              .from('profiles')
-              .select('*')
-              .eq('id', newSession.user.id)
-              .single();
-
-            set({
-              session: newSession,
-              user: newSession.user,
-              profile: prof || null,
-              isLoading: false,
-              isMockMode: false,
-            });
-          } else if (event === 'SIGNED_OUT') {
-            set({
-              session: null,
-              user: null,
-              profile: null,
-              isLoading: false,
-              isMockMode: false,
-            });
-          }
-        });
-      } catch (err: unknown) {
-        const message = err instanceof Error ? err.message : 'Falha na autenticação';
-        set({
-          authError: message,
-          isLoading: false,
-          isInitialized: true,
-        });
-      }
+      set({
+        user: null,
+        session: null,
+        profile: null,
+        isLoading: false,
+        isInitialized: true,
+        isMockMode: false,
+      });
     },
 
     loginWithPassword: async (email: string, password: string) => {
