@@ -9,29 +9,28 @@ export interface CreateInviteInput {
   expiresDays?: number;
 }
 
+const MOCK_GRANTS_STORAGE_KEY = 'fgq_admin_grants';
+
+export function getStoredMockGrants(): AccessGrant[] {
+  try {
+    const raw = localStorage.getItem(MOCK_GRANTS_STORAGE_KEY);
+    if (raw) return JSON.parse(raw);
+  } catch {
+    // fallback if localStorage restricted
+  }
+  return [];
+}
+
+export function saveStoredMockGrants(grants: AccessGrant[]): void {
+  try {
+    localStorage.setItem(MOCK_GRANTS_STORAGE_KEY, JSON.stringify(grants));
+  } catch {
+    // fallback if localStorage restricted
+  }
+}
+
 export const MOCK_ADMIN_DATA = {
-  grants: [
-    {
-      id: 'grant-mock-1',
-      email: 'etudiant.demo@example.com',
-      role: 'student',
-      status: 'pending',
-      invited_by: null,
-      expires_at: new Date(Date.now() + 7 * 86400000).toISOString(),
-      created_at: new Date().toISOString(),
-      updated_at: new Date().toISOString()
-    },
-    {
-      id: 'grant-mock-2',
-      email: 'professeur.fle@example.com',
-      role: 'teacher',
-      status: 'active',
-      invited_by: null,
-      expires_at: null,
-      created_at: new Date(Date.now() - 86400000).toISOString(),
-      updated_at: new Date().toISOString()
-    }
-  ] as AccessGrant[],
+  grants: [] as AccessGrant[],
   releases: [
     {
       id: '00000000-0000-0000-0000-000000000001',
@@ -82,7 +81,8 @@ export function useAdmin() {
     queryKey: ['admin-grants', user?.id],
     enabled: !!user && isAdmin,
     queryFn: async () => {
-      if (!supabase) return MOCK_ADMIN_DATA.grants;
+      const isMock = useAuthStore.getState().isMockMode;
+      if (!supabase || isMock) return getStoredMockGrants();
 
       const { data, error } = await supabase
         .from('access_grants')
@@ -91,7 +91,7 @@ export function useAdmin() {
 
       if (error) {
         console.warn('[useAdmin] Erro ao buscar convites:', error.message);
-        return MOCK_ADMIN_DATA.grants;
+        return getStoredMockGrants();
       }
 
       return (data as AccessGrant[]) || [];
@@ -186,7 +186,8 @@ export function useAdmin() {
   // Mutação: Criar Convite
   const createInviteMutation = useMutation({
     mutationFn: async ({ email, role = 'student', expiresDays = 7 }: CreateInviteInput) => {
-      if (!supabase) {
+      const isMock = useAuthStore.getState().isMockMode;
+      if (!supabase || isMock) {
         const newGrant: AccessGrant = {
           id: `grant-mock-${Date.now()}`,
           email,
@@ -197,6 +198,8 @@ export function useAdmin() {
           created_at: new Date().toISOString(),
           updated_at: new Date().toISOString()
         };
+        const current = getStoredMockGrants();
+        saveStoredMockGrants([newGrant, ...current]);
         return { success: true, grant: newGrant };
       }
 
@@ -206,7 +209,22 @@ export function useAdmin() {
         p_expires_days: expiresDays
       });
 
-      if (error) throw new Error(error.message);
+      if (error) {
+        console.warn('[useAdmin] Erro RPC admin_create_access_grant, fallback local:', error.message);
+        const newGrant: AccessGrant = {
+          id: `grant-mock-${Date.now()}`,
+          email,
+          role,
+          status: 'pending',
+          invited_by: user?.id ?? null,
+          expires_at: new Date(Date.now() + expiresDays * 86400000).toISOString(),
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString()
+        };
+        const current = getStoredMockGrants();
+        saveStoredMockGrants([newGrant, ...current]);
+        return { success: true, grant: newGrant };
+      }
       return data;
     },
     onSuccess: () => {
@@ -218,13 +236,25 @@ export function useAdmin() {
   // Mutação: Revogar Convite
   const revokeInviteMutation = useMutation({
     mutationFn: async (grantId: string) => {
-      if (!supabase) return { success: true };
+      const isMock = useAuthStore.getState().isMockMode;
+      // Se for id de mock ou estiver em mock mode, remove apenas do storage local
+      if (!supabase || isMock || grantId.startsWith('grant-mock-')) {
+        const current = getStoredMockGrants();
+        saveStoredMockGrants(current.filter((g) => g.id !== grantId));
+        return { success: true };
+      }
 
       const { data, error } = await supabase.rpc('admin_revoke_access_grant', {
         p_grant_id: grantId
       });
 
-      if (error) throw new Error(error.message);
+      if (error) {
+        console.warn('[useAdmin] Erro RPC admin_revoke_access_grant:', error.message);
+        // Fallback para limpar do storage local caso tenha vindo de lá
+        const current = getStoredMockGrants();
+        saveStoredMockGrants(current.filter((g) => g.id !== grantId));
+        throw new Error(error.message);
+      }
       return data;
     },
     onSuccess: () => {

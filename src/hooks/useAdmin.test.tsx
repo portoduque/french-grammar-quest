@@ -145,6 +145,15 @@ describe('useAdmin hook', () => {
     expect(res).toEqual({ success: true });
   });
 
+  it('permite revogar convite mock sem chamar RPC', async () => {
+    const { result } = renderHook(() => useAdmin(), { wrapper });
+
+    const res = await result.current.revokeInvite('grant-mock-123');
+
+    expect(supabase!.rpc).not.toHaveBeenCalled();
+    expect(res).toEqual({ success: true });
+  });
+
   it('permite publicar release via RPC admin_publish_release', async () => {
     (supabase!.from as any).mockImplementation(() => ({
       select: vi.fn().mockReturnValue({
